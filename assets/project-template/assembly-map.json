@@ -1,0 +1,15 @@
+{
+  "backend": null,
+  "output": null,
+  "sha256": null,
+  "slides": [
+    {
+      "slide_id": "S01",
+      "component_ids": ["C01"],
+      "fill_slot_ids": ["F01"],
+      "flattened_concept_used": false,
+      "output_index": 1,
+      "pptx_part": null
+    }
+  ]
+}

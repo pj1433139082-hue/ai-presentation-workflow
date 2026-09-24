@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "providers": [
+    {
+      "id": "guizang-material-illustration",
+      "skill_name": "guizang-material-illustration",
+      "tier": "core-auto",
+      "auto_route": true,
+      "supported_page_roles": [
+        "conceptual-illustration",
+        "structural-diagram",
+        "process",
+        "mechanism"
+      ],
+      "supported_component_roles": [
+        "illustration",
+        "icon",
+        "arrow",
+        "basic-shape",
+        "decorative-shape",
+        "panel",
+        "table-shell",
+        "chart-shell",
+        "diagram-node"
+      ],
+      "source_requirements": [
+        "approved-concept-render",
+        "approved-style-contract"
+      ],
+      "truth_policy": "reject-truth-sensitive",
+      "text_policy": "no-ordinary-text-or-data",
+      "aspect_ratio_behavior": "one-component-per-transparent-canvas",
+      "transparency_behavior": "required-real-alpha",
+      "approval_requirements": [
+        "G3-style-anchors",
+        "G4-concept-contact-sheet"
+      ],
+      "output_class": "transparent-png-component",
+      "adapter": "material-illustration-v1"
+    },
+    {
+      "id": "photo-postprocess-coach",
+      "skill_name": "photo-postprocess-coach",
+      "tier": "core-auto",
+      "auto_route": true,
+      "supported_page_roles": [
+        "ordinary-photo",
+        "portrait-cutout",
+        "atmosphere-photo"
+      ],
+      "supported_component_roles": [
+        "photo-cutout"
+      ],
+      "source_requirements": [
+        "user-supplied-ordinary-photo",
+        "approved-style-contract"
+      ],
+      "truth_policy": "preserve-source-truth",
+      "text_policy": "preserve-source-text-without-reconstruction",
+      "aspect_ratio_behavior": "preserve-subject-with-approved-crop",
+      "transparency_behavior": "optional-subject-cutout",
+      "approval_requirements": [
+        "G3-style-anchors",
+        "source-rights-confirmed"
+      ],
+      "output_class": "photo-or-transparent-cutout",
+      "adapter": "photo-postprocess-v1"
+    },
+    {
+      "id": "scene-distillation-zine-v1-3",
+      "skill_name": "scene-distillation-zine-v1-3",
+      "tier": "core-auto",
+      "auto_route": true,
+      "supported_page_roles": [
+        "opening",
+        "transition",
+        "closing",
+        "abstract-metaphor"
+      ],
+      "supported_component_roles": [
+        "illustration"
+      ],
+      "source_requirements": [
+        "approved-source-scene",
+        "approved-style-contract"
+      ],
+      "truth_policy": "reject-truth-sensitive",
+      "text_policy": "no-ordinary-text-or-data",
+      "aspect_ratio_behavior": "distill-to-slide-anchor",
+      "transparency_behavior": "transparent-subject-preferred",
+      "approval_requirements": [
+        "G3-style-anchors",
+        "G4-concept-contact-sheet"
+      ],
+      "output_class": "transparent-png-component",
+      "adapter": "scene-distillation-v1"
+    },
+    {
+      "id": "gc-minimal-zine-poster-v0-3",
+      "skill_name": "gc-minimal-zine-poster-v0-3",
+      "tier": "explicit-style",
+      "auto_route": false,
+      "supported_page_roles": [
+        "cover",
+        "section-opener",
+        "special-poster"
+      ],
+      "supported_component_roles": [
+        "illustration",
+        "decorative-shape",
+        "special-typography"
+      ],
+      "source_requirements": [
+        "explicit-provider-opt-in",
+        "approved-style-contract"
+      ],
+      "truth_policy": "reject-truth-sensitive",
+      "text_policy": "no-ordinary-text-or-data",
+      "aspect_ratio_behavior": "compose-for-approved-special-page",
+      "transparency_behavior": "transparent-elements-or-approved-page-art",
+      "approval_requirements": [
+        "G3-style-anchors",
+        "G4-explicit-special-page-approval"
+      ],
+      "output_class": "special-page-art",
+      "adapter": "minimal-zine-v1"
+    },
+    {
+      "id": "scenes-gathered-zine-v1-3",
+      "skill_name": "scenes-gathered-zine-v1-3",
+      "tier": "explicit-style",
+      "auto_route": false,
+      "supported_page_roles": [
+        "editorial-montage",
+        "section-opener",
+        "narrative-collage"
+      ],
+      "supported_component_roles": [
+        "illustration",
+        "decorative-shape"
+      ],
+      "source_requirements": [
+        "explicit-provider-opt-in",
+        "approved-source-scenes"
+      ],
+      "truth_policy": "reject-truth-sensitive",
+      "text_policy": "no-ordinary-text-or-data",
+      "aspect_ratio_behavior": "gather-scenes-for-approved-special-page",
+      "transparency_behavior": "transparent-elements-or-approved-page-art",
+      "approval_requirements": [
+        "G3-style-anchors",
+        "G4-explicit-special-page-approval"
+      ],
+      "output_class": "special-page-art",
+      "adapter": "gathered-scenes-v1"
+    },
+    {
+      "id": "surreal-pop-collage",
+      "skill_name": "surreal-pop-collage",
+      "tier": "explicit-style",
+      "auto_route": false,
+      "supported_page_roles": [
+        "campaign-opener",
+        "creative-opener",
+        "closing"
+      ],
+      "supported_component_roles": [
+        "illustration",
+        "decorative-shape"
+      ],
+      "source_requirements": [
+        "explicit-provider-opt-in",
+        "approved-source-image"
+      ],
+      "truth_policy": "reject-truth-sensitive",
+      "text_policy": "no-ordinary-text-or-data",
+      "aspect_ratio_behavior": "compose-for-approved-special-page",
+      "transparency_behavior": "transparent-elements-or-approved-page-art",
+      "approval_requirements": [
+        "G3-style-anchors",
+        "G4-explicit-special-page-approval"
+      ],
+      "output_class": "special-page-art",
+      "adapter": "surreal-pop-v1"
+    },
+    {
+      "id": "guizang-social-card-skill",
+      "skill_name": "guizang-social-card-skill",
+      "tier": "post-release-derivative",
+      "auto_route": false,
+      "supported_page_roles": [
+        "post-release-social-card"
+      ],
+      "supported_component_roles": [
+        "post-release-social-card"
+      ],
+      "source_requirements": [
+        "released-deck",
+        "approved-derivative-brief"
+      ],
+      "truth_policy": "derive-only-from-released-deck",
+      "text_policy": "derivative-copy-must-match-released-deck",
+      "aspect_ratio_behavior": "adapt-to-approved-social-format",
+      "transparency_behavior": "not-required-for-final-card",
+      "approval_requirements": [
+        "G5-release-approval",
+        "post-release-derivative-approval"
+      ],
+      "output_class": "post-release-social-card",
+      "adapter": "social-card-derivative-v1"
+    }
+  ]
+}

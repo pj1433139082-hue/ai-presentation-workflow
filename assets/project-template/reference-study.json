@@ -1,0 +1,53 @@
+{
+  "version": "replace-with-approved-version",
+  "status": "analyzed",
+  "reference_contact_sheet": {
+    "path": "references/reference-contact-sheet.png",
+    "sha256": "replace-with-sha256"
+  },
+  "references": [
+    {
+      "id": "REF01",
+      "source_kind": "local-style-library",
+      "source_locator": "awesome-gpt-image-2:<category/template/case-id>",
+      "image_path": "references/REF01.png",
+      "sha256": "replace-with-sha256",
+      "usage_note": "design grammar only; do not reproduce source copy, logos, characters, or exact composition",
+      "status": "analyzed",
+      "observations": {
+        "composition": ["replace with reading-order observations"],
+        "hierarchy": ["replace with focal-point observations"],
+        "density": ["replace with density and whitespace observations"],
+        "image_treatment": ["replace with material, lighting, and edge observations"]
+      },
+      "transferable_rules": ["replace with a concrete reusable rule"],
+      "project_translation": ["replace with how the rule changes for this deck"],
+      "do_not_copy": ["source wording, logos, characters, exact composition"],
+      "target_slide_roles": ["opening", "mechanism"]
+    }
+  ],
+  "direction_options": [
+    {
+      "id": "D1",
+      "name": "replace with direction name",
+      "reference_ids": ["REF01"],
+      "structure": "replace with observable layout system",
+      "palette": "replace with palette behavior",
+      "density": "replace with density behavior",
+      "imagery": "replace with image treatment",
+      "tradeoffs": ["replace with a real tradeoff"]
+    },
+    {
+      "id": "D2",
+      "name": "replace with alternative direction",
+      "reference_ids": ["REF01"],
+      "structure": "replace with alternative layout system",
+      "palette": "replace with alternative palette behavior",
+      "density": "replace with alternative density behavior",
+      "imagery": "replace with alternative image treatment",
+      "tradeoffs": ["replace with a real tradeoff"]
+    }
+  ],
+  "recommended_direction_id": "D1",
+  "selected_reference_ids": ["REF01"]
+}

@@ -1,0 +1,52 @@
+{
+  "version": "replace-with-approved-version",
+  "direction": "replace with selected direction",
+  "selected_direction_id": "replace with approved reference direction ID",
+  "selected_calibration_variant_id": "replace with human-selected calibration variant ID",
+  "style_strength": "balanced",
+  "layout_density": "standard",
+  "primary_visual_family": "guizang-material-illustration",
+  "secondary_provider_roles": {
+    "photo-postprocess-coach": [
+      "ordinary-photo",
+      "portrait-cutout",
+      "atmosphere-photo"
+    ],
+    "scene-distillation-zine-v1-3": [
+      "opening",
+      "transition",
+      "closing",
+      "abstract-metaphor"
+    ]
+  },
+  "explicit_visual_opt_ins": [],
+  "rejected_directions": [],
+  "palette": ["#0F172A", "#F8FAFC", "#38BDF8"],
+  "typography_intent": "editorial hierarchy with editable ordinary copy",
+  "spacing_rhythm": "generous safe margins and repeatable module gaps",
+  "shape_language": "replace with observable rules",
+  "image_treatment": "isolated transparent components",
+  "density": "medium",
+  "selected_reference_ids": ["REF01"],
+  "concept_reference_mode": "image-and-analysis",
+  "pass_selected_images_to_image_gen": true,
+  "composition_profile": {
+    "quality_profile": "production",
+    "visual_richness": "balanced-rich",
+    "layout_archetype_minimum": 3,
+    "max_consecutive_same_archetype": 2,
+    "min_information_units_per_content_slide": 3,
+    "min_visual_layers_per_content_slide": 2,
+    "sparse_allowed_roles": ["opening", "transition", "closing"]
+  },
+  "rules": [
+    "structure before decoration",
+    "ordinary text and data stay in fill slots"
+  ],
+  "prohibited_motifs": [],
+  "anchor_concepts": [
+    {"role": "opening", "slide_id": "S01", "path": "concepts/S01.png"},
+    {"role": "typical", "slide_id": "S01", "path": "concepts/S01.png"},
+    {"role": "highest-risk", "slide_id": "S01", "path": "concepts/S01.png"}
+  ]
+}

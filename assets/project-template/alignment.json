@@ -1,0 +1,105 @@
+{
+  "version": "v1",
+  "material_review": {
+    "status": "pending",
+    "source_material_provided": false,
+    "inspected_sources": [],
+    "inspection_notes": null
+  },
+  "discovered_facts": [],
+  "decisions": [
+    {
+      "id": "audience",
+      "status": "open",
+      "value": null,
+      "basis": null,
+      "recommendation": {
+        "value": null,
+        "reason": null,
+        "impact": null
+      }
+    },
+    {
+      "id": "decision_goal",
+      "status": "open",
+      "value": null,
+      "basis": null,
+      "recommendation": {
+        "value": null,
+        "reason": null,
+        "impact": null
+      }
+    },
+    {
+      "id": "source_authority",
+      "status": "open",
+      "value": null,
+      "basis": null,
+      "recommendation": {
+        "value": null,
+        "reason": null,
+        "impact": null
+      }
+    },
+    {
+      "id": "truth_boundaries",
+      "status": "open",
+      "value": null,
+      "basis": null,
+      "recommendation": {
+        "value": null,
+        "reason": null,
+        "impact": null
+      }
+    },
+    {
+      "id": "research_permission",
+      "status": "open",
+      "value": null,
+      "basis": null,
+      "recommendation": {
+        "value": null,
+        "reason": null,
+        "impact": null
+      }
+    },
+    {
+      "id": "delivery_form",
+      "status": "open",
+      "value": null,
+      "basis": null,
+      "recommendation": {
+        "value": null,
+        "reason": null,
+        "impact": null
+      }
+    },
+    {
+      "id": "editability_commitment",
+      "status": "open",
+      "value": null,
+      "basis": null,
+      "recommendation": {
+        "value": null,
+        "reason": null,
+        "impact": null
+      }
+    }
+  ],
+  "question_frontier": {
+    "round": 1,
+    "decision_ids": [
+      "audience",
+      "decision_goal",
+      "source_authority",
+      "truth_boundaries",
+      "research_permission"
+    ]
+  },
+  "approval_packet": {
+    "gate": "brief_authority",
+    "version": "v1",
+    "decision_ids": [],
+    "recommendations_visible": false
+  }
+}

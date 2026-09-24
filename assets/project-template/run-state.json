@@ -1,0 +1,18 @@
+{
+  "stage": "intake",
+  "production_route": {
+    "mode": "full-tracked",
+    "planning_artifacts": "required",
+    "basis": "default until fast-route eligibility is explicitly approved"
+  },
+  "gates": {
+    "brief_authority": {"status": "pending", "approver": null, "approved_at": null, "artifact_version": null, "approval_mode": null, "approval_phrase": null, "approved_artifacts": {}},
+    "story": {"status": "pending", "approver": null, "approved_at": null, "artifact_version": null, "approval_mode": null, "approval_phrase": null, "approval_packet": null, "approved_artifacts": {}},
+    "style_anchors": {"status": "pending", "approver": null, "approved_at": null, "artifact_version": null, "approval_mode": null, "approval_phrase": null, "approval_packet": null, "approved_artifacts": {}, "calibration_selection": {"status": "pending", "selected_variant_id": null, "approver": null, "approved_at": null, "artifact_version": null, "approval_mode": null, "approval_phrase": null, "approved_artifacts": {}}},
+    "concept_contact_sheet": {"status": "pending", "approver": null, "approved_at": null, "artifact_version": null, "approval_mode": null, "approval_phrase": null, "approval_packet": null, "approved_artifacts": {}},
+    "release": {"status": "pending", "approver": null, "approved_at": null, "artifact_version": null, "approval_mode": null, "approval_phrase": null, "approval_packet": null, "approved_artifacts": {}}
+  },
+  "artifact_versions": {},
+  "blockers": [],
+  "rollback": null
+}

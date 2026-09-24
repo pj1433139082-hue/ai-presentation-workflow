@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Presentation Workflow"
+  short_description: "Align requirements, then build decks from transparent components"
+  default_prompt: "Use $ai-presentation-workflow to inspect my materials, align consequential requirements, and turn the approved brief into a concept deck, transparent PNG component library, and optional assembled PPTX."

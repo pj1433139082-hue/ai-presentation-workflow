@@ -1,0 +1,14 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "Replace with an action title",
+      "message": "Replace with one audience-relevant message.",
+      "narrative_role": "opening",
+      "evidence_policy": "not-applicable",
+      "evidence_ids": [],
+      "evidence_not_required_reason": "Opening framing contains no factual claim.",
+      "visual_intent": "Describe the intended visual relationship, not decoration."
+    }
+  ]
+}

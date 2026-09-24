@@ -1,0 +1,16 @@
+{
+  "version": "replace-with-current-version",
+  "status": "pending",
+  "slide_id": "S01",
+  "fixed_content": {
+    "title": "replace with approved storyboard title",
+    "message": "replace with approved storyboard message",
+    "evidence_ids": [],
+    "visual_intent": "replace with approved storyboard visual intent"
+  },
+  "fixed_fill_slots": [{"id": "F01", "kind": "ordinary-text", "purpose": "editable title or copy"}],
+  "contact_sheet": {"path": "calibration/contact-sheet.png", "sha256": null},
+  "variants": [],
+  "recommended_variant_id": null,
+  "recommendation": {"reason": null, "impact": null}
+}

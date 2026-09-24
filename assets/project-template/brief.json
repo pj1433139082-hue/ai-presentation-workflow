@@ -1,0 +1,31 @@
+{
+  "project_id": "replace-with-project-id",
+  "audience": "replace with the primary audience",
+  "goal": "replace with the decision or change this deck should produce",
+  "quality_profile": "production",
+  "delivery": {
+    "formats": ["component-library"],
+    "aspect_ratio": "16:9"
+  },
+  "editability": {
+    "ordinary_text": "native-editable",
+    "data": "native-editable",
+    "visual_components": "component-editable",
+    "internal_vector_paths": false
+  },
+  "capacity_budget": {
+    "component_limit": 80,
+    "generation_call_limit": 320,
+    "retry_limit_per_asset": 3,
+    "deadline": null,
+    "fallback_delivery": "component-library"
+  },
+  "slide_count_range": [8, 12],
+  "language": "zh-CN",
+  "brand_constraints": [],
+  "source_authority": [],
+  "truth_sensitive_items": [],
+  "must_include": [],
+  "must_avoid": [],
+  "assembly_preference": "component-library-first"
+}

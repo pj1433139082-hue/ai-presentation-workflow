@@ -1,0 +1,24 @@
+{
+  "status": "generated",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "tool": "codex-image_gen",
+      "model": "record when available",
+      "prompt": "store the exact structured concept prompt",
+      "selected_calibration_variant_id": "V01",
+      "style_strength": "balanced",
+      "layout_density": "standard",
+      "reference_images": [
+        {
+          "reference_id": "REF01",
+          "path": "references/REF01.png",
+          "sha256": "replace-with-sha256"
+        }
+      ],
+      "output_path": "concepts/S01.png",
+      "output_sha256": "replace-with-sha256",
+      "status": "generated"
+    }
+  ]
+}

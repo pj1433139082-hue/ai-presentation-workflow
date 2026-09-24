@@ -1,0 +1,22 @@
+{
+  "probed_at": null,
+  "research": {
+    "status": "unverified",
+    "route": null
+  },
+  "image_generation": {
+    "status": "unverified",
+    "provider": "codex-image_gen"
+  },
+  "transparent_output": {
+    "status": "unverified",
+    "sample_path": null
+  },
+  "assembly": {
+    "status": "not-requested",
+    "backend": null
+  },
+  "render_inspection": {
+    "status": "unverified"
+  }
+}

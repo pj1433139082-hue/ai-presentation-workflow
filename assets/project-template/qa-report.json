@@ -1,0 +1,21 @@
+{
+  "status": "pending",
+  "subject_sha256": null,
+  "checks_performed": [],
+  "evidence_files": [],
+  "final_contact_sheet": null,
+  "exception_register": null,
+  "deliverable_index": null,
+  "differences": [],
+  "slides": [
+    {
+      "slide_id": "S01",
+      "status": "pending",
+      "issues": [],
+      "evidence_files": []
+    }
+  ],
+  "exceptions": [],
+  "repairs": [],
+  "final_reviewer": null
+}
