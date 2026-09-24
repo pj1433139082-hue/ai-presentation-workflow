@@ -55,7 +55,11 @@ REQUIRED_BY_STAGE = {
     ],
     "spec": ["deck-spec.json"],
     "concept": ["concept-generation-log.json"],
-    "inventory": ["scene-graph.json", "asset-manifest.json"],
+    "inventory": [
+        "scene-graph.json",
+        "asset-manifest.json",
+        "component-master-manifest.json",
+    ],
     "assets": [],
     "assembly": ["assembly-map.json"],
     "qa": ["qa-report.json"],
@@ -113,6 +117,7 @@ GATE_REQUIRED_DECISIONS = {
         "reference_selection",
         "concept_calibration",
         "composition_profile",
+        "readability_profile",
         "visual_direction",
         "style_rules",
         "anchor_opening",
@@ -121,6 +126,8 @@ GATE_REQUIRED_DECISIONS = {
     },
     "concept_contact_sheet": {
         "full_deck_contact_sheet",
+        "contentful_copy_source_review",
+        "readability_review",
         "layout_richness_review",
         "blank_table_chart_regions",
         "special_typography_exceptions",
@@ -157,6 +164,20 @@ GATE_ROLLBACK_OWNERS = {
 VAGUE_APPROVAL_PHRASES = {"按推荐", "全部按推荐", "推荐", "同意", "可以", "好的", "ok"}
 
 QUALITY_PROFILES = {"production", "draft", "validation-fixture"}
+READABILITY_FONT_FLOORS = {
+    "action-title": ("action_title_min_pt", 32),
+    "body": ("body_min_pt", 20),
+    "key-caption": ("key_caption_min_pt", 18),
+    "source-qualifier": ("source_qualifier_min_pt", 16),
+}
+READABILITY_VISUAL_FLOORS = {
+    "evidence_min_width": 0.42,
+    "evidence_min_height": 0.43,
+    "fine_ui_preferred_width": 0.50,
+    "fine_ui_preferred_height": 0.46,
+    "illustration_min_width": 0.30,
+    "illustration_min_height": 0.25,
+}
 REFERENCE_OBSERVATION_FIELDS = {
     "composition",
     "hierarchy",
@@ -164,6 +185,12 @@ REFERENCE_OBSERVATION_FIELDS = {
     "image_treatment",
 }
 SPARSE_DEFAULT_ROLES = {"opening", "transition", "closing"}
+COPY_SOURCE_MODES = {"storyboard-exact", "source-exact", "approved-paraphrase"}
+CONCEPT_IMAGE_CLASSIFICATIONS = {
+    "illustrative",
+    "verified-source",
+    "pending-placeholder",
+}
 NARRATIVE_ROLES = {
     "opening",
     "context",
@@ -231,6 +258,8 @@ class ProjectValidator:
         for stage in STAGES[: self.stage_index + 1]:
             names.extend(REQUIRED_BY_STAGE[stage])
         for name in dict.fromkeys(names):
+            if name == "component-master-manifest.json" and self.is_fixture_profile():
+                continue
             path = self.root / name
             if not path.is_file():
                 self.error(name, "required artifact is missing")
@@ -264,6 +293,14 @@ class ProjectValidator:
         doc = self.docs.get("brief.json")
         if not isinstance(doc, dict):
             return
+        template_placeholders = {
+            "project_id": "replace-with-project-id",
+            "audience": "replace with the primary audience",
+            "goal": "replace with the decision or change this deck should produce",
+        }
+        for field, placeholder in template_placeholders.items():
+            if doc.get(field) == placeholder:
+                self.error("brief.json", f"{field} still contains a template placeholder")
         quality_profile = doc.get("quality_profile")
         if quality_profile not in QUALITY_PROFILES:
             self.error(
@@ -698,6 +735,292 @@ class ProjectValidator:
         ) not in direction_ids:
             self.error(name, "recommended_direction_id must identify a direction option")
 
+    def validate_content_source_lineage(
+        self, records: Any, location: str
+    ) -> dict[str, dict[str, Any]]:
+        if not isinstance(records, list) or not records:
+            self.error(location, "source_lineage must contain approved or verified sources")
+            return {}
+        self.check_unique(records, "id", location)
+        sources: dict[str, dict[str, Any]] = {}
+        for index, source in enumerate(records):
+            source_location = f"{location}[{index}]"
+            if not isinstance(source, dict):
+                self.error(source_location, "must be an object")
+                continue
+            source_id = source.get("id")
+            kind = source.get("kind")
+            if not isinstance(source_id, str) or not source_id.strip():
+                self.error(source_location, "id must be a non-empty string")
+                continue
+            if not isinstance(kind, str) or not kind.strip():
+                self.error(source_location, "kind must identify the source authority")
+            if source.get("status") not in {"approved", "verified"}:
+                self.error(source_location, "status must be approved or verified")
+            if not isinstance(source.get("locator"), str) or not source["locator"].strip():
+                self.error(source_location, "locator must identify the relevant source passage or region")
+            path_value = source.get("path")
+            path = self.validate_relative_file(path_value, f"{source_location}.path")
+            digest = source.get("sha256")
+            if not re.fullmatch(r"[0-9a-fA-F]{64}", str(digest)):
+                self.error(source_location, "sha256 must be a SHA-256 hex digest")
+            elif path and hashlib.sha256(path.read_bytes()).hexdigest() != str(digest).lower():
+                self.error(source_location, "source_lineage sha256 does not match file")
+            sources[source_id] = source
+        return sources
+
+    def validate_content_copy_map(
+        self,
+        copy_map: Any,
+        sources: dict[str, dict[str, Any]],
+        story_slide: Any,
+        location: str,
+    ) -> set[str]:
+        if not isinstance(copy_map, list) or not copy_map:
+            self.error(location, "copy_map must contain every visible text item")
+            return set()
+        self.check_unique(copy_map, "id", location)
+        used_sources: set[str] = set()
+        copy_by_story_field: dict[str, list[dict[str, Any]]] = {"title": [], "message": []}
+        for index, item in enumerate(copy_map):
+            item_location = f"{location}[{index}]"
+            if not isinstance(item, dict):
+                self.error(item_location, "must be an object")
+                continue
+            if not isinstance(item.get("id"), str) or not item["id"].strip():
+                self.error(item_location, "id must be a non-empty string")
+            if not isinstance(item.get("role"), str) or not item["role"].strip():
+                self.error(item_location, "role must be a non-empty string")
+            text_value = item.get("text")
+            if not isinstance(text_value, str) or not text_value.strip():
+                self.error(item_location, "text must be the exact visible wording")
+                text_value = ""
+            truth_status = item.get("truth_status")
+            if truth_status not in {
+                "verified",
+                "planned",
+                "pending",
+                "unverified",
+                "not-applicable",
+            }:
+                self.error(item_location, "truth_status must distinguish verified, planned, pending, or not-applicable copy")
+            elif truth_status != "not-applicable" and (
+                not isinstance(item.get("status_label"), str)
+                or not item["status_label"].strip()
+            ):
+                self.error(item_location, "factual copy needs a visible status_label")
+            story_field = item.get("storyboard_field")
+            if story_field is not None:
+                if story_field not in {"title", "message"}:
+                    self.error(item_location, "storyboard_field must be title or message")
+                elif isinstance(story_slide, dict):
+                    copy_by_story_field[story_field].append(item)
+                    if text_value != story_slide.get(story_field):
+                        self.error(
+                            item_location,
+                            f"storyboard {story_field} must match the approved storyboard exactly",
+                        )
+            evidence = item.get("sources")
+            if not isinstance(evidence, list) or not evidence:
+                self.error(item_location, "every copy item needs source IDs, locators, and excerpts")
+                continue
+            for source_index, reference in enumerate(evidence):
+                ref_location = f"{item_location}.sources[{source_index}]"
+                if not isinstance(reference, dict):
+                    self.error(ref_location, "must be an object")
+                    continue
+                source_id = reference.get("source_id")
+                source = sources.get(source_id) if isinstance(source_id, str) else None
+                if not isinstance(source, dict):
+                    self.error(ref_location, "source_id must identify a source_lineage record")
+                    continue
+                used_sources.add(source_id)
+                if not isinstance(reference.get("locator"), str) or not reference["locator"].strip():
+                    self.error(ref_location, "locator must identify the quoted passage or visual region")
+                quote = reference.get("quote")
+                if not isinstance(quote, str) or not quote.strip():
+                    self.error(ref_location, "quote must preserve the supporting source text")
+                    continue
+                mode = reference.get("mode")
+                if mode not in COPY_SOURCE_MODES:
+                    self.error(ref_location, "mode must be storyboard-exact, source-exact, or approved-paraphrase")
+                    continue
+                if mode == "storyboard-exact":
+                    field = item.get("storyboard_field")
+                    if (
+                        source.get("kind") != "approved-storyboard"
+                        or field not in {"title", "message"}
+                        or source.get("path") != "storyboard.json"
+                        or quote != text_value
+                        or not isinstance(story_slide, dict)
+                        or quote != story_slide.get(field)
+                    ):
+                        self.error(ref_location, "storyboard-exact evidence must match the approved storyboard field")
+                else:
+                    source_path = self.root / str(source.get("path", ""))
+                    if mode == "source-exact" and quote != text_value:
+                        self.error(ref_location, "source-exact quote must match visible copy")
+                    if source_path.is_file():
+                        try:
+                            source_text = source_path.read_text(encoding="utf-8")
+                        except (UnicodeError, OSError):
+                            source_text = None
+                        if source_text is not None and quote not in source_text:
+                            self.error(ref_location, "quoted source text is not present at the recorded source path")
+        if isinstance(story_slide, dict):
+            for field in ("title", "message"):
+                matching = copy_by_story_field[field]
+                if len(matching) != 1:
+                    self.error(location, f"copy_map must contain exactly one approved storyboard {field}")
+        return used_sources
+
+    def validate_concept_image_inventory(
+        self,
+        records: Any,
+        sources: dict[str, dict[str, Any]],
+        location: str,
+    ) -> set[str]:
+        if not isinstance(records, list) or not records:
+            self.error(location, "image_inventory must identify representative imagery")
+            return set()
+        self.check_unique(records, "id", location)
+        used_sources: set[str] = set()
+        has_representative = False
+        for index, visual in enumerate(records):
+            visual_location = f"{location}[{index}]"
+            if not isinstance(visual, dict):
+                self.error(visual_location, "must be an object")
+                continue
+            if not isinstance(visual.get("id"), str) or not visual["id"].strip():
+                self.error(visual_location, "id must be a non-empty string")
+            if not isinstance(visual.get("visual_role"), str) or not visual["visual_role"].strip():
+                self.error(visual_location, "visual_role must describe the image's role")
+            has_representative = has_representative or visual.get("visual_role") == "representative"
+            classification = visual.get("classification")
+            if classification not in CONCEPT_IMAGE_CLASSIFICATIONS:
+                self.error(visual_location, "classification must be illustrative, verified-source, or pending-placeholder")
+                continue
+            if classification == "illustrative":
+                if not isinstance(visual.get("label"), str) or not visual["label"].strip():
+                    self.error(visual_location, "illustrative images need an explicit illustrative label")
+                if visual.get("evidence_role") != "illustration-only":
+                    self.error(visual_location, "illustrative images cannot be presented as evidence")
+            elif classification == "pending-placeholder":
+                if not isinstance(visual.get("label"), str) or not visual["label"].strip():
+                    self.error(visual_location, "pending imagery needs an explicit placeholder label")
+                if visual.get("evidence_role") != "placeholder-only":
+                    self.error(visual_location, "pending imagery must remain a placeholder")
+            else:
+                source_id = visual.get("source_id")
+                source = sources.get(source_id) if isinstance(source_id, str) else None
+                if not isinstance(source, dict) or source.get("kind") not in {
+                    "verified-image",
+                    "authoritative-image",
+                }:
+                    self.error(visual_location, "verified-source imagery must link a verified local image source")
+                else:
+                    used_sources.add(source_id)
+                    if visual.get("source_sha256") != source.get("sha256"):
+                        self.error(visual_location, "verified-source image hash must match source_lineage")
+                    if visual.get("preservation") != "unchanged":
+                        self.error(visual_location, "verified-source imagery must be preserved unchanged")
+        if not has_representative:
+            self.error(location, "image_inventory needs a representative visual")
+        return used_sources
+
+    def validate_content_text_review(
+        self,
+        review: Any,
+        copy_map: Any,
+        output_path: str | None,
+        output_sha256: str | None,
+        location: str,
+    ) -> set[str]:
+        if not isinstance(review, dict):
+            self.error(location, "text_review must link exact text to a reviewed transcript")
+            return set()
+        if review.get("method") not in {"human-transcription", "ocr-transcript-reviewed"}:
+            self.error(location, "method must identify a human-checked transcript")
+        expected_copy_hash = value_sha256(copy_map)
+        if review.get("copy_map_sha256") != expected_copy_hash:
+            self.error(location, "copy_map_sha256 does not match the exact visible copy")
+        transcript_path_value = review.get("transcript_path")
+        transcript_path = self.validate_relative_file(
+            transcript_path_value, f"{location}.transcript_path"
+        )
+        transcript_hash = review.get("transcript_sha256")
+        transcript_text: str | None = None
+        if not re.fullmatch(r"[0-9a-fA-F]{64}", str(transcript_hash)):
+            self.error(location, "transcript_sha256 must be a SHA-256 hex digest")
+        elif transcript_path:
+            actual_hash = hashlib.sha256(transcript_path.read_bytes()).hexdigest()
+            if actual_hash != str(transcript_hash).lower():
+                self.error(location, "transcript_sha256 does not match transcript evidence")
+            try:
+                transcript_text = transcript_path.read_text(encoding="utf-8")
+            except (UnicodeError, OSError):
+                self.error(location, "transcript evidence must be readable UTF-8 text")
+        copy_records = {
+            item.get("id"): item
+            for item in copy_map
+            if isinstance(item, dict) and isinstance(item.get("id"), str)
+        } if isinstance(copy_map, list) else {}
+        observations = review.get("observations")
+        if not isinstance(observations, list):
+            self.error(location, "observations must transcribe every copy_map item")
+            observations = []
+        self.check_unique(observations, "copy_id", f"{location}.observations")
+        observed_ids: set[str] = set()
+        for index, observation in enumerate(observations):
+            observation_location = f"{location}.observations[{index}]"
+            if not isinstance(observation, dict):
+                self.error(observation_location, "must be an object")
+                continue
+            copy_id = observation.get("copy_id")
+            expected = copy_records.get(copy_id)
+            observed_text = observation.get("observed_text")
+            if not isinstance(expected, dict):
+                self.error(observation_location, "copy_id must identify a copy_map item")
+                continue
+            if observed_text != expected.get("text"):
+                self.error(observation_location, "observed_text must exactly match copy_map")
+            if isinstance(transcript_text, str) and isinstance(observed_text, str) and observed_text not in transcript_text:
+                self.error(observation_location, "observed_text must appear in transcript evidence")
+            status_label = expected.get("status_label")
+            if status_label is not None:
+                if observation.get("observed_status_label") != status_label:
+                    self.error(observation_location, "observed_status_label must exactly match copy_map")
+                if isinstance(transcript_text, str) and status_label not in transcript_text:
+                    self.error(observation_location, "observed_status_label must appear in transcript evidence")
+            if isinstance(copy_id, str):
+                observed_ids.add(copy_id)
+        if observed_ids != set(copy_records):
+            self.error(location, "text_review observations must cover every copy_map item")
+        evidence_paths = {transcript_path_value} if isinstance(transcript_path_value, str) else set()
+        repair = review.get("repair")
+        if repair is not None:
+            repair_location = f"{location}.repair"
+            if not isinstance(repair, dict) or repair.get("kind") != "deterministic-overlay":
+                self.error(repair_location, "repair must record deterministic-overlay evidence")
+                return evidence_paths
+            if not isinstance(repair.get("tool"), str) or not repair["tool"].strip():
+                self.error(repair_location, "tool must identify the deterministic overlay method")
+            input_value = repair.get("input_path")
+            input_path = self.validate_relative_file(input_value, f"{repair_location}.input_path")
+            if input_value == output_path:
+                self.error(repair_location, "input_path must preserve a prior image version")
+            if input_path and hashlib.sha256(input_path.read_bytes()).hexdigest() != repair.get("input_sha256"):
+                self.error(repair_location, "input_sha256 does not match preserved prior image")
+            if repair.get("output_path") != output_path or repair.get("output_sha256") != output_sha256:
+                self.error(repair_location, "overlay output must match the contentful concept image")
+            evidence_value = repair.get("evidence_path")
+            evidence_path = self.validate_relative_file(evidence_value, f"{repair_location}.evidence_path")
+            if isinstance(evidence_value, str):
+                evidence_paths.add(evidence_value)
+            if evidence_path and hashlib.sha256(evidence_path.read_bytes()).hexdigest() != repair.get("evidence_sha256"):
+                self.error(repair_location, "evidence_sha256 does not match overlay evidence")
+        return evidence_paths
+
     def validate_concept_calibration(self) -> None:
         name = "concept-calibration.json"
         doc = self.docs.get(name)
@@ -748,6 +1071,18 @@ class ProjectValidator:
                 tracked_paths.append(item["path"])
                 if item.get("sha256") != hashlib.sha256(path.read_bytes()).hexdigest():
                     self.error(location, "sha256 does not match file")
+        source_records: dict[str, dict[str, Any]] = {}
+        copy_map = doc.get("copy_map")
+        if self.quality_profile() in {"production", "draft"}:
+            source_records = self.validate_content_source_lineage(
+                doc.get("source_lineage"), f"{name}.source_lineage"
+            )
+            self.validate_content_copy_map(
+                copy_map, source_records, slide, f"{name}.copy_map"
+            )
+            for source in source_records.values():
+                if isinstance(source.get("path"), str):
+                    tracked_paths.append(source["path"])
         variants = doc.get("variants")
         if not isinstance(variants, list) or not 2 <= len(variants) <= 3:
             self.error(name, "variants must contain 2-3 real concept images")
@@ -796,6 +1131,21 @@ class ProjectValidator:
                 tracked_paths.append(variant["output_path"])
                 if variant.get("output_sha256") != hashlib.sha256(path.read_bytes()).hexdigest():
                     self.error(location, "output_sha256 does not match concept image")
+            if self.quality_profile() in {"production", "draft"}:
+                self.validate_concept_image_inventory(
+                    variant.get("image_inventory"),
+                    source_records,
+                    f"{location}.image_inventory",
+                )
+                tracked_paths.extend(
+                    self.validate_content_text_review(
+                        variant.get("text_review"),
+                        copy_map,
+                        variant.get("output_path"),
+                        variant.get("output_sha256"),
+                        f"{location}.text_review",
+                    )
+                )
         if len(comparisons) < 2:
             self.error(name, "variants must visibly vary direction, strength, or density")
         if doc.get("recommended_variant_id") not in ids:
@@ -846,6 +1196,143 @@ class ProjectValidator:
                 if path and hashes.get(path_value) != hashlib.sha256(path.read_bytes()).hexdigest():
                     self.error(location, f"approved artifact hash is stale: {path_value}")
 
+    def validate_readability_profile(self, profile: Any) -> None:
+        location = "style-contract.json.readability_profile"
+        if not isinstance(profile, dict):
+            self.error(location, "readability_profile is required")
+            return
+        for field, floor in READABILITY_FONT_FLOORS.values():
+            value = profile.get(field)
+            if isinstance(value, bool) or not isinstance(value, (int, float)) or value < floor:
+                self.error(location, f"{field} must be at least {floor} pt")
+        for field, floor in READABILITY_VISUAL_FLOORS.items():
+            value = profile.get(field)
+            if isinstance(value, bool) or not isinstance(value, (int, float)) or not floor <= value < 1:
+                self.error(location, f"{field} must be at least {floor} and less than 1")
+
+    def validate_slide_readability(
+        self, slide: dict[str, Any], fill_slots: list[Any], profile: Any, location: str
+    ) -> None:
+        plan = slide.get("readability")
+        review_location = f"{location}.readability"
+        if not isinstance(plan, dict):
+            self.error(review_location, "readability plan is required")
+            return
+        if not isinstance(profile, dict):
+            return
+        slots = {
+            slot.get("id"): slot
+            for slot in fill_slots
+            if isinstance(slot, dict) and isinstance(slot.get("id"), str)
+        }
+        ordinary_ids = {
+            slot_id for slot_id, slot in slots.items()
+            if slot.get("kind") in {"ordinary-text", "ordinary-data"}
+        }
+        regions = plan.get("text_regions")
+        if not isinstance(regions, list) or not regions:
+            self.error(review_location, "text_regions must cover visible ordinary copy")
+            regions = []
+        self.check_unique(regions, "fill_slot_id", f"{review_location}.text_regions")
+        represented: set[str] = set()
+        violations: set[str] = set()
+        for index, region in enumerate(regions):
+            region_location = f"{review_location}.text_regions[{index}]"
+            if not isinstance(region, dict):
+                self.error(region_location, "must be an object")
+                continue
+            slot_id = region.get("fill_slot_id")
+            if not isinstance(slot_id, str) or slot_id not in ordinary_ids:
+                self.error(region_location, "fill_slot_id must identify an ordinary text/data fill slot")
+                continue
+            represented.add(slot_id)
+            role = region.get("role")
+            if role not in READABILITY_FONT_FLOORS:
+                self.error(region_location, "role must be action-title, body, key-caption, or source-qualifier")
+                continue
+            font = region.get("planned_font_pt")
+            floor_key, baseline = READABILITY_FONT_FLOORS[role]
+            floor = profile.get(floor_key, baseline)
+            if isinstance(font, bool) or not isinstance(font, (int, float)) or font <= 0:
+                self.error(region_location, "planned_font_pt must be a positive number")
+            elif isinstance(floor, (int, float)) and font < floor:
+                violations.add(f"font:{slot_id}")
+            line_count = region.get("line_count")
+            if isinstance(line_count, bool) or not isinstance(line_count, int) or line_count < 1:
+                self.error(region_location, "line_count must be a positive integer")
+        if represented != ordinary_ids:
+            self.error(review_location, f"text_regions must cover ordinary fill slots: {sorted(ordinary_ids - represented)}")
+        visual = plan.get("main_visual")
+        if not isinstance(visual, dict):
+            self.error(review_location, "main_visual is required")
+        else:
+            kind = visual.get("kind")
+            if kind not in {"evidence", "fine-ui", "illustration", "not-applicable"}:
+                self.error(review_location, "main_visual.kind is invalid")
+            elif kind == "not-applicable":
+                if not isinstance(visual.get("reason"), str) or not visual["reason"].strip():
+                    self.error(review_location, "not-applicable main_visual needs a reason")
+            else:
+                bbox = visual.get("bbox")
+                self.validate_bbox(bbox, f"{review_location}.main_visual.bbox")
+                if isinstance(bbox, list) and len(bbox) == 4 and all(
+                    isinstance(value, (int, float)) and not isinstance(value, bool) for value in bbox
+                ):
+                    if kind in {"evidence", "fine-ui"} and not any(
+                        isinstance(slot, dict)
+                        and slot.get("kind") == "fixed-evidence"
+                        and slot.get("bbox") == bbox
+                        for slot in fill_slots
+                    ):
+                        self.error(review_location, "evidence main_visual bbox must match a fixed-evidence fill slot")
+                    if kind == "illustration":
+                        width_key, height_key = "illustration_min_width", "illustration_min_height"
+                    elif kind == "fine-ui" and visual.get("detail_mode") == "full-interface":
+                        width_key, height_key = "fine_ui_preferred_width", "fine_ui_preferred_height"
+                    else:
+                        width_key, height_key = "evidence_min_width", "evidence_min_height"
+                    if kind == "fine-ui" and visual.get("detail_mode") not in {"full-interface", "focus-crop"}:
+                        self.error(review_location, "fine-ui detail_mode must be full-interface or focus-crop")
+                    width_floor = profile.get(width_key)
+                    height_floor = profile.get(height_key)
+                    if isinstance(width_floor, (int, float)) and isinstance(height_floor, (int, float)) and (
+                        bbox[2] < width_floor or bbox[3] < height_floor
+                    ):
+                        violations.add("visual:main")
+        exception = plan.get("exception")
+        if exception is not None:
+            if not isinstance(exception, dict):
+                self.error(review_location, "exception must be an object or null")
+            else:
+                declared = exception.get("violations")
+                if not isinstance(declared, list) or any(not isinstance(value, str) for value in declared):
+                    self.error(review_location, "exception.violations must list exact floor IDs")
+                    declared = []
+                for field in ("reason", "alternative_viewing_route"):
+                    if not isinstance(exception.get(field), str) or not exception[field].strip():
+                        self.error(review_location, f"exception.{field} is required")
+                if violations - set(declared):
+                    self.error(review_location, f"underfloor regions need an explicit exception: {sorted(violations - set(declared))}")
+        elif violations:
+            self.error(review_location, f"underfloor regions need an explicit exception: {sorted(violations)}")
+        if self.reaches("concept"):
+            full_review = plan.get("full_size_review")
+            full_location = f"{review_location}.full_size_review"
+            if not isinstance(full_review, dict):
+                self.error(full_location, "full_size_review is required for the current contentful concept")
+                return
+            if full_review.get("status") != "passed" or full_review.get("display_scale_percent") != 100:
+                self.error(full_location, "full_size_review must pass at 100% display scale")
+            if not isinstance(full_review.get("reviewer"), str) or not full_review["reviewer"].strip():
+                self.error(full_location, "reviewer is required")
+            evidence_path = self.validate_relative_file(full_review.get("path"), f"{full_location}.path")
+            if evidence_path and full_review.get("sha256") != hashlib.sha256(evidence_path.read_bytes()).hexdigest():
+                self.error(full_location, "full_size_review sha256 does not match evidence")
+            concept_path_value = slide.get("concept_path")
+            concept_path = self.root / concept_path_value if isinstance(concept_path_value, str) else None
+            if concept_path and concept_path.is_file() and full_review.get("reviewed_concept_sha256") != hashlib.sha256(concept_path.read_bytes()).hexdigest():
+                self.error(full_location, "full_size_review must bind the current contentful concept hash")
+
     def validate_style(self) -> None:
         self.require_fields(
             "style-contract.json",
@@ -885,6 +1372,7 @@ class ProjectValidator:
                     if doc.get(style_field) != selected.get(field):
                         self.error("style-contract.json", f"{style_field} must match selected calibration variant")
         profile = self.quality_profile()
+        self.validate_readability_profile(doc.get("readability_profile"))
         composition = doc.get("composition_profile")
         if not isinstance(composition, dict):
             self.error("style-contract.json", "composition_profile is required")
@@ -1032,6 +1520,9 @@ class ProjectValidator:
             return
         self.check_unique(slides, "id", f"{name}.slides")
         style = self.docs.get("style-contract.json", {})
+        readability_profile = (
+            style.get("readability_profile") if isinstance(style, dict) else None
+        )
         composition_profile = (
             style.get("composition_profile", {}) if isinstance(style, dict) else {}
         )
@@ -1158,6 +1649,7 @@ class ProjectValidator:
                     self.error(f"{location}.fill_slots[{slot_index}]", "must be an object")
                     continue
                 self.validate_bbox(slot.get("bbox"), f"{location}.fill_slots[{slot_index}].bbox")
+            self.validate_slide_readability(slide, fill_slots, readability_profile, location)
             if self.reaches("concept"):
                 concept_path = slide.get("concept_path")
                 if not concept_path:
@@ -1207,6 +1699,31 @@ class ProjectValidator:
             return
         if doc.get("status") != "generated":
             self.error(name, "status must be 'generated'")
+        if self.quality_profile() in {"production", "draft"}:
+            for artifact_name, artifact in self.docs.items():
+                if not isinstance(artifact, dict):
+                    continue
+                baseline = artifact.get("current_style_rebaseline")
+                if isinstance(baseline, dict) and baseline.get("status") == "pending_user_selection":
+                    self.error(
+                        f"{artifact_name}.current_style_rebaseline",
+                        "style rebaseline is pending user selection; concepts cannot proceed on the old G3 approval",
+                    )
+            if not isinstance(doc.get("version"), str) or not doc["version"].strip():
+                self.error(name, "version must identify the contentful concept set")
+            contact_sheet = doc.get("review_contact_sheet")
+            if not isinstance(contact_sheet, dict):
+                self.error(name, "review_contact_sheet must bind the contentful contact sheet")
+            else:
+                contact_path = self.validate_relative_file(
+                    contact_sheet.get("path"), f"{name}.review_contact_sheet.path"
+                )
+                if not re.fullmatch(r"[0-9a-fA-F]{64}", str(contact_sheet.get("sha256"))):
+                    self.error(name, "review_contact_sheet.sha256 must be a SHA-256 hex digest")
+                elif contact_path and hashlib.sha256(contact_path.read_bytes()).hexdigest() != str(
+                    contact_sheet["sha256"]
+                ).lower():
+                    self.error(name, "review_contact_sheet hash does not match file")
         records = doc.get("slides")
         if not isinstance(records, list) or not records:
             self.error(name, "slides must be a non-empty list")
@@ -1236,6 +1753,13 @@ class ProjectValidator:
             if isinstance(reference, dict) and reference.get("id")
         }
         style = self.docs.get("style-contract.json", {})
+        storyboard = self.docs.get("storyboard.json", {})
+        storyboard_slides = {
+            item.get("id"): item
+            for item in storyboard.get("slides", [])
+            if isinstance(item, dict) and item.get("id")
+        } if isinstance(storyboard, dict) else {}
+        output_paths: set[str] = set()
         for index, slide in enumerate(deck_slides):
             if not isinstance(slide, dict):
                 continue
@@ -1258,6 +1782,14 @@ class ProjectValidator:
             expected_output = slide.get("concept_path")
             if record.get("output_path") != expected_output:
                 self.error(location, "output_path must match deck-spec concept_path")
+            if self.quality_profile() in {"production", "draft"}:
+                version = record.get("version")
+                if not isinstance(version, str) or not version.strip():
+                    self.error(location, "version must identify this immutable contentful concept revision")
+                if record.get("output_path") in output_paths:
+                    self.error(location, "contentful concept output paths must be unique by slide revision")
+                if isinstance(record.get("output_path"), str):
+                    output_paths.add(record["output_path"])
             output_path = self.validate_relative_file(
                 record.get("output_path"), f"{location}.output_path"
             )
@@ -1268,6 +1800,29 @@ class ProjectValidator:
                 output_sha
             ).lower():
                 self.error(location, "output_sha256 does not match the concept file")
+            if self.quality_profile() in {"production", "draft"}:
+                source_records = self.validate_content_source_lineage(
+                    record.get("source_lineage"), f"{location}.source_lineage"
+                )
+                copy_map = record.get("copy_map")
+                self.validate_content_copy_map(
+                    copy_map,
+                    source_records,
+                    storyboard_slides.get(slide_id),
+                    f"{location}.copy_map",
+                )
+                self.validate_concept_image_inventory(
+                    record.get("image_inventory"),
+                    source_records,
+                    f"{location}.image_inventory",
+                )
+                self.validate_content_text_review(
+                    record.get("text_review"),
+                    copy_map,
+                    record.get("output_path"),
+                    record.get("output_sha256"),
+                    f"{location}.text_review",
+                )
             expected_reference_ids = set(
                 slide.get("composition", {}).get("reference_ids", [])
                 if isinstance(slide.get("composition"), dict)
@@ -1302,6 +1857,135 @@ class ProjectValidator:
                     source.get("sha256", "")
                 ).lower():
                     self.error(item_location, "sha256 must match reference-study")
+
+    def validate_component_master_manifest(self) -> None:
+        name = "component-master-manifest.json"
+        if self.is_fixture_profile():
+            return
+        doc = self.docs.get(name)
+        if not isinstance(doc, dict):
+            self.error(name, "is required before inventory can begin")
+            return
+        if doc.get("status") != "generated":
+            self.error(name, "status must be generated after G4 approval")
+        state = self.docs.get("run-state.json", {})
+        gates = state.get("gates", {}) if isinstance(state, dict) else {}
+        g4 = gates.get("concept_contact_sheet", {}) if isinstance(gates, dict) else {}
+        if not isinstance(g4, dict) or g4.get("status") != "approved":
+            self.error(name, "G4 contentful concept approval is required before component masters")
+        approved_artifacts = g4.get("approved_artifacts", {}) if isinstance(g4, dict) else {}
+        concept_log = self.docs.get("concept-generation-log.json", {})
+        if not isinstance(concept_log, dict):
+            self.error(name, "concept-generation-log.json must be present before component masters")
+            concept_log = {}
+        log_path = self.root / "concept-generation-log.json"
+        log_sha256 = hashlib.sha256(log_path.read_bytes()).hexdigest() if log_path.is_file() else None
+        if not isinstance(approved_artifacts, dict) or approved_artifacts.get(
+            "concept-generation-log.json"
+        ) != log_sha256:
+            self.error(name, "component masters must link the current G4-approved concept-generation-log.json")
+        deck = self.docs.get("deck-spec.json", {})
+        slides = deck.get("slides", []) if isinstance(deck, dict) else []
+        master_records = doc.get("slides")
+        if not isinstance(master_records, list) or not master_records:
+            self.error(name, "slides must contain one textless master per deck slide")
+            return
+        self.check_unique(master_records, "slide_id", f"{name}.slides")
+        concepts_by_slide = {
+            record.get("slide_id"): record
+            for record in concept_log.get("slides", [])
+            if isinstance(record, dict) and record.get("slide_id")
+        } if isinstance(concept_log.get("slides"), list) else {}
+        masters_by_slide = {
+            record.get("slide_id"): record
+            for record in master_records
+            if isinstance(record, dict) and record.get("slide_id")
+        }
+        expected_ids = {slide.get("id") for slide in slides if isinstance(slide, dict)}
+        if set(masters_by_slide) != expected_ids:
+            self.error(name, "slide coverage must match deck-spec.json exactly")
+        for index, slide in enumerate(slides):
+            if not isinstance(slide, dict):
+                continue
+            slide_id = slide.get("id")
+            record = masters_by_slide.get(slide_id)
+            location = f"{name}.slides[{index}]"
+            if not isinstance(record, dict):
+                continue
+            concept = concepts_by_slide.get(slide_id)
+            if not isinstance(concept, dict):
+                self.error(location, "must link an existing contentful concept record")
+                continue
+            concept_path = slide.get("concept_path")
+            concept_sha256 = concept.get("output_sha256")
+            approved_concept_sha256 = (
+                approved_artifacts.get(concept_path)
+                if isinstance(approved_artifacts, dict) and isinstance(concept_path, str)
+                else None
+            )
+            if record.get("approved_contentful_path") != concept_path:
+                self.error(location, "approved_contentful_path must match deck-spec concept_path")
+            if record.get("approved_contentful_sha256") != concept_sha256:
+                self.error(location, "approved_contentful_sha256 must match the contentful concept log")
+            if record.get("approved_contentful_sha256") != approved_concept_sha256:
+                self.error(location, "contentful concept hash is not approved by G4")
+            if record.get("concept_generation_log_sha256") != log_sha256:
+                self.error(location, "concept_generation_log_sha256 must match the current G4-approved log")
+            if record.get("version") != concept.get("version"):
+                self.error(location, "version must match the approved contentful concept")
+            master_path_value = record.get("component_master_path")
+            if master_path_value == concept_path:
+                self.error(location, "component master cannot reuse the contentful full-slide image")
+            master_path = self.validate_relative_file(
+                master_path_value, f"{location}.component_master_path"
+            )
+            master_hash = record.get("component_master_sha256")
+            if not re.fullmatch(r"[0-9a-fA-F]{64}", str(master_hash)):
+                self.error(location, "component_master_sha256 must be a SHA-256 hex digest")
+            elif master_path and hashlib.sha256(master_path.read_bytes()).hexdigest() != str(
+                master_hash
+            ).lower():
+                self.error(location, "component_master_sha256 does not match file")
+            if record.get("text_policy") != "textless":
+                self.error(location, "text_policy must be textless")
+            if record.get("ordinary_text_removed") is not True:
+                self.error(location, "ordinary_text_removed must be true")
+            if record.get("contains_ordinary_text") is not False:
+                self.error(location, "contains_ordinary_text must be false")
+            expected_slots = [
+                {"id": slot.get("id"), "kind": slot.get("kind"), "bbox": slot.get("bbox")}
+                for slot in slide.get("fill_slots", [])
+                if isinstance(slot, dict)
+            ]
+            preserved_slots = record.get("preserved_fill_slots")
+            if preserved_slots != expected_slots:
+                self.error(location, "preserved_fill_slots must preserve deck-spec geometry exactly")
+            geometry_review = record.get("geometry_review")
+            review_location = f"{location}.geometry_review"
+            if not isinstance(geometry_review, dict):
+                self.error(review_location, "geometry_review is required before component inventory")
+                continue
+            if geometry_review.get("status") != "passed" or geometry_review.get("display_scale_percent") != 100:
+                self.error(review_location, "geometry_review must pass at 100% display scale")
+            if not isinstance(geometry_review.get("reviewer"), str) or not geometry_review["reviewer"].strip():
+                self.error(review_location, "geometry_review reviewer is required")
+            comparison_value = geometry_review.get("comparison_path")
+            if comparison_value in (concept_path, master_path_value):
+                self.error(review_location, "geometry_review comparison_path must be a separate comparison image")
+            comparison_path = self.validate_relative_file(comparison_value, f"{review_location}.comparison_path")
+            if comparison_path and geometry_review.get("comparison_sha256") != hashlib.sha256(comparison_path.read_bytes()).hexdigest():
+                self.error(review_location, "geometry_review comparison_sha256 does not match evidence")
+            if (
+                geometry_review.get("reviewed_contentful_sha256") != concept_sha256
+                or geometry_review.get("reviewed_master_sha256") != master_hash
+            ):
+                self.error(review_location, "geometry_review must bind the current contentful and master images")
+            checks = geometry_review.get("checks")
+            if not isinstance(checks, dict) or any(
+                checks.get(field) is not True
+                for field in ("composition_preserved", "fill_slots_preserved", "ordinary_text_removed")
+            ):
+                self.error(review_location, "geometry_review checks must confirm composition, fill slots and text removal")
 
     def validate_scene_graph(self) -> None:
         name = "scene-graph.json"
@@ -1756,7 +2440,7 @@ class ProjectValidator:
         elif self.reaches("release"):
             required_checks = {"contract", "alpha", "inventory", "overlay"}
             if self.quality_profile() == "production":
-                required_checks.update({"reference-transfer", "composition-richness"})
+                required_checks.update({"reference-transfer", "composition-richness", "readability-full-size"})
             missing_checks = required_checks - {
                 check for check in checks if isinstance(check, str)
             }
@@ -1794,6 +2478,7 @@ class ProjectValidator:
         style = self.docs.get("style-contract.json", {})
         reference_study = self.docs.get("reference-study.json", {})
         calibration = self.docs.get("concept-calibration.json", {})
+        concept_log = self.docs.get("concept-generation-log.json", {})
         deck = self.docs.get("deck-spec.json", {})
         manifest = self.docs.get("asset-manifest.json", {})
         assembly = self.docs.get("assembly-map.json", {})
@@ -1846,6 +2531,7 @@ class ProjectValidator:
                     "reason": calibration.get("reason") if isinstance(calibration, dict) else None,
                 },
                 "composition_profile": style.get("composition_profile"),
+                "readability_profile": style.get("readability_profile"),
                 "visual_direction": style.get("direction"),
                 "style_rules": style.get("rules"),
                 "anchor_opening": anchors.get("opening"),
@@ -1853,13 +2539,77 @@ class ProjectValidator:
                 "anchor_highest_risk": anchors.get("highest-risk"),
             }
         if gate == "concept_contact_sheet" and all(
-            isinstance(doc, dict) for doc in (deck, manifest)
+            isinstance(doc, dict) for doc in (deck, manifest, concept_log)
         ):
             slides = [slide for slide in deck.get("slides", []) if isinstance(slide, dict)]
             assets = [asset for asset in manifest.get("assets", []) if isinstance(asset, dict)]
-            return {
-                "full_deck_contact_sheet": {
+            concept_records = {
+                record.get("slide_id"): record
+                for record in concept_log.get("slides", [])
+                if isinstance(record, dict) and record.get("slide_id")
+            } if isinstance(concept_log.get("slides"), list) else {}
+            generated_contentful_log = concept_log.get("status") == "generated"
+            if generated_contentful_log:
+                copy_source_review: dict[str, Any] = {
+                    "slides": {
+                        slide_id: {
+                            "version": record.get("version"),
+                            "copy_map_sha256": value_sha256(record.get("copy_map")),
+                            "source_lineage": {
+                                source.get("id"): source.get("sha256")
+                                for source in record.get("source_lineage", [])
+                                if isinstance(source, dict) and source.get("id")
+                            },
+                            "text_review": {
+                                "transcript_path": record.get("text_review", {}).get(
+                                    "transcript_path"
+                                ),
+                                "transcript_sha256": record.get("text_review", {}).get(
+                                    "transcript_sha256"
+                                ),
+                            },
+                        }
+                        for slide_id, record in concept_records.items()
+                    }
+                }
+                contact_sheet_record = concept_log.get("review_contact_sheet")
+                contact_path = (
+                    self.root / contact_sheet_record["path"]
+                    if isinstance(contact_sheet_record, dict)
+                    and isinstance(contact_sheet_record.get("path"), str)
+                    else None
+                )
+                full_deck_review = {
+                    "concept_paths": [slide.get("concept_path") for slide in slides],
+                    "contentful_image_sha256": {
+                        slide_id: record.get("output_sha256")
+                        for slide_id, record in concept_records.items()
+                    },
+                    "review_contact_sheet": contact_sheet_record,
+                    "concept_generation_log_sha256": hashlib.sha256(
+                        (self.root / "concept-generation-log.json").read_bytes()
+                    ).hexdigest()
+                    if (self.root / "concept-generation-log.json").is_file()
+                    else None,
+                }
+            else:
+                copy_source_review = {
+                    "status": "not-required",
+                    "reason": concept_log.get("reason"),
+                }
+                full_deck_review = {
                     "concept_paths": [slide.get("concept_path") for slide in slides]
+                }
+            expected_decisions = {
+                "full_deck_contact_sheet": full_deck_review,
+                "contentful_copy_source_review": copy_source_review,
+                "readability_review": {
+                    "policy": "full-size-human-review",
+                    "profile": style.get("readability_profile") if isinstance(style, dict) else None,
+                    "slides": {
+                        slide.get("id"): slide.get("readability")
+                        for slide in slides
+                    },
                 },
                 "layout_richness_review": {
                     "slides": {
@@ -1900,6 +2650,7 @@ class ProjectValidator:
                 },
                 "slide_specific_deviations": {"items": [], "policy": "declared"},
             }
+            return expected_decisions
         if gate == "release" and all(
             isinstance(doc, dict) for doc in (manifest, assembly, qa)
         ):
@@ -2009,9 +2760,42 @@ class ProjectValidator:
                 "capability-report.json",
             }
             | anchor_paths,
-            "concept_contact_sheet": concept_paths | {"concept-generation-log.json"},
+            "concept_contact_sheet": concept_paths | {"concept-generation-log.json", "deck-spec.json"},
             "release": {"asset-manifest.json", "assembly-map.json", "qa-report.json"},
         }
+        concept_log = self.docs.get("concept-generation-log.json", {})
+        if isinstance(deck, dict):
+            for slide in deck.get("slides", []):
+                if not isinstance(slide, dict):
+                    continue
+                readability = slide.get("readability")
+                review = readability.get("full_size_review") if isinstance(readability, dict) else None
+                if isinstance(review, dict) and isinstance(review.get("path"), str):
+                    required_gate_artifacts["concept_contact_sheet"].add(review["path"])
+        if isinstance(concept_log, dict) and concept_log.get("status") == "generated":
+            review_contact_sheet = concept_log.get("review_contact_sheet")
+            if isinstance(review_contact_sheet, dict):
+                contact_path = review_contact_sheet.get("path")
+                if isinstance(contact_path, str) and contact_path:
+                    required_gate_artifacts["concept_contact_sheet"].add(contact_path)
+            for record in concept_log.get("slides", []):
+                if not isinstance(record, dict):
+                    continue
+                for source in record.get("source_lineage", []):
+                    if isinstance(source, dict) and isinstance(source.get("path"), str):
+                        required_gate_artifacts["concept_contact_sheet"].add(source["path"])
+                review = record.get("text_review", {})
+                if isinstance(review, dict):
+                    for path_field in ("transcript_path",):
+                        path_value = review.get(path_field)
+                        if isinstance(path_value, str) and path_value:
+                            required_gate_artifacts["concept_contact_sheet"].add(path_value)
+                    repair = review.get("repair")
+                    if isinstance(repair, dict):
+                        for path_field in ("input_path", "evidence_path"):
+                            path_value = repair.get(path_field)
+                            if isinstance(path_value, str) and path_value:
+                                required_gate_artifacts["concept_contact_sheet"].add(path_value)
         reference_study = self.docs.get("reference-study.json", {})
         if isinstance(reference_study, dict):
             contact_sheet = reference_study.get("reference_contact_sheet")
@@ -2028,6 +2812,22 @@ class ProjectValidator:
             for variant in calibration.get("variants", []):
                 if isinstance(variant, dict) and isinstance(variant.get("output_path"), str):
                     required_gate_artifacts["style_anchors"].add(variant["output_path"])
+                if isinstance(variant, dict):
+                    text_review = variant.get("text_review", {})
+                    if isinstance(text_review, dict):
+                        for field in ("transcript_path",):
+                            path_value = text_review.get(field)
+                            if isinstance(path_value, str) and path_value:
+                                required_gate_artifacts["style_anchors"].add(path_value)
+                        repair = text_review.get("repair")
+                        if isinstance(repair, dict):
+                            for field in ("input_path", "evidence_path"):
+                                path_value = repair.get(field)
+                                if isinstance(path_value, str) and path_value:
+                                    required_gate_artifacts["style_anchors"].add(path_value)
+            for source in calibration.get("source_lineage", []):
+                if isinstance(source, dict) and isinstance(source.get("path"), str):
+                    required_gate_artifacts["style_anchors"].add(source["path"])
         qa = self.docs.get("qa-report.json", {})
         if isinstance(qa, dict):
             release_paths: set[str] = set()
@@ -2904,6 +3704,7 @@ class ProjectValidator:
             self.validate_scene_graph()
             self.validate_manifest()
             self.validate_cross_references()
+            self.validate_component_master_manifest()
         if self.reaches("assembly"):
             self.validate_assembly()
         if self.reaches("qa"):

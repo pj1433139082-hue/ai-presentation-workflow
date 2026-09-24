@@ -8,6 +8,49 @@
     "evidence_ids": [],
     "visual_intent": "replace with approved storyboard visual intent"
   },
+  "copy_map": [
+    {
+      "id": "COPY-TITLE",
+      "role": "title",
+      "text": "replace with approved storyboard title",
+      "truth_status": "not-applicable",
+      "storyboard_field": "title",
+      "sources": [
+        {
+          "source_id": "STORY01",
+          "locator": "slides[S01].title",
+          "quote": "replace with approved storyboard title",
+          "mode": "storyboard-exact"
+        }
+      ]
+    },
+    {
+      "id": "COPY-BODY",
+      "role": "body",
+      "text": "replace with approved storyboard message",
+      "truth_status": "verified",
+      "status_label": "replace with visible truth label",
+      "storyboard_field": "message",
+      "sources": [
+        {
+          "source_id": "STORY01",
+          "locator": "slides[S01].message",
+          "quote": "replace with approved storyboard message",
+          "mode": "storyboard-exact"
+        }
+      ]
+    }
+  ],
+  "source_lineage": [
+    {
+      "id": "STORY01",
+      "kind": "approved-storyboard",
+      "path": "storyboard.json",
+      "sha256": "replace-with-sha256",
+      "locator": "slides[S01].title and slides[S01].message",
+      "status": "approved"
+    }
+  ],
   "fixed_fill_slots": [{"id": "F01", "kind": "ordinary-text", "purpose": "editable title or copy"}],
   "contact_sheet": {"path": "calibration/contact-sheet.png", "sha256": null},
   "variants": [],

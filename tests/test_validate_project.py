@@ -2,6 +2,8 @@ import json
 import hashlib
 import importlib.util
 import struct
+import subprocess
+import sys
 import tempfile
 import unittest
 import zlib
@@ -64,6 +66,9 @@ def gate_decision_values(root: Path, gate: str) -> dict[str, object]:
     manifest = json.loads((root / "asset-manifest.json").read_text(encoding="utf-8"))
     assembly = json.loads((root / "assembly-map.json").read_text(encoding="utf-8"))
     qa = json.loads((root / "qa-report.json").read_text(encoding="utf-8"))
+    concept_log = json.loads(
+        (root / "concept-generation-log.json").read_text(encoding="utf-8")
+    )
     if gate == "story":
         slides = storyboard["slides"]
         return {
@@ -110,6 +115,7 @@ def gate_decision_values(root: Path, gate: str) -> dict[str, object]:
                 "reason": calibration.get("reason"),
             },
             "composition_profile": style["composition_profile"],
+            "readability_profile": style.get("readability_profile"),
             "visual_direction": style["direction"],
             "style_rules": style["rules"],
             "anchor_opening": anchors["opening"],
@@ -117,9 +123,62 @@ def gate_decision_values(root: Path, gate: str) -> dict[str, object]:
             "anchor_highest_risk": anchors["highest-risk"],
         }
     if gate == "concept_contact_sheet":
-        return {
-            "full_deck_contact_sheet": {
+        concept_records = {
+            record["slide_id"]: record
+            for record in concept_log.get("slides", [])
+            if isinstance(record, dict) and record.get("slide_id")
+        }
+        if concept_log.get("status") == "generated":
+            contentful_review: dict[str, object] = {
+                "slides": {
+                    slide_id: {
+                        "version": record.get("version"),
+                        "copy_map_sha256": value_sha256(record.get("copy_map")),
+                        "source_lineage": {
+                            source["id"]: source.get("sha256")
+                            for source in record.get("source_lineage", [])
+                            if isinstance(source, dict) and source.get("id")
+                        },
+                        "text_review": {
+                            "transcript_path": record.get("text_review", {}).get(
+                                "transcript_path"
+                            ),
+                            "transcript_sha256": record.get("text_review", {}).get(
+                                "transcript_sha256"
+                            ),
+                        },
+                    }
+                    for slide_id, record in concept_records.items()
+                }
+            }
+            full_contact_sheet: dict[str, object] = {
+                "concept_paths": [slide["concept_path"] for slide in deck["slides"]],
+                "contentful_image_sha256": {
+                    slide_id: record.get("output_sha256")
+                    for slide_id, record in concept_records.items()
+                },
+                "review_contact_sheet": concept_log.get("review_contact_sheet"),
+                "concept_generation_log_sha256": hashlib.sha256(
+                    (root / "concept-generation-log.json").read_bytes()
+                ).hexdigest(),
+            }
+        else:
+            contentful_review = {
+                "status": "not-required",
+                "reason": concept_log.get("reason"),
+            }
+            full_contact_sheet = {
                 "concept_paths": [slide["concept_path"] for slide in deck["slides"]]
+            }
+        return {
+            "full_deck_contact_sheet": full_contact_sheet,
+            "contentful_copy_source_review": contentful_review,
+            "readability_review": {
+                "policy": "full-size-human-review",
+                "profile": style.get("readability_profile"),
+                "slides": {
+                    slide["id"]: slide.get("readability") for slide in deck["slides"]
+                },
             },
             "layout_richness_review": {
                 "slides": {
@@ -352,6 +411,18 @@ def make_valid_project(root: Path) -> None:
                 "min_visual_layers_per_content_slide": 1,
                 "sparse_allowed_roles": ["opening", "transition", "closing"],
             },
+            "readability_profile": {
+                "action_title_min_pt": 32,
+                "body_min_pt": 20,
+                "key_caption_min_pt": 18,
+                "source_qualifier_min_pt": 16,
+                "evidence_min_width": 0.42,
+                "evidence_min_height": 0.43,
+                "fine_ui_preferred_width": 0.50,
+                "fine_ui_preferred_height": 0.46,
+                "illustration_min_width": 0.30,
+                "illustration_min_height": 0.25,
+            },
             "rules": ["structure before decoration", "ordinary copy stays editable"],
             "anchor_concepts": [
                 {"role": "opening", "slide_id": "S01", "path": "concepts/S01.png"},
@@ -393,6 +464,21 @@ def make_valid_project(root: Path) -> None:
                     "fill_slots": [
                         {"id": "F01", "kind": "ordinary-text", "bbox": [0.1, 0.1, 0.3, 0.1]}
                     ],
+                    "readability": {
+                        "text_regions": [
+                            {"fill_slot_id": "F01", "role": "action-title", "planned_font_pt": 34, "line_count": 1}
+                        ],
+                        "main_visual": {"kind": "illustration", "bbox": [0.45, 0.25, 0.40, 0.50]},
+                        "exception": None,
+                        "full_size_review": {
+                            "status": "passed",
+                            "display_scale_percent": 100,
+                            "reviewer": "fixture-reviewer",
+                            "path": "concepts/S01.png",
+                            "sha256": hashlib.sha256(b"placeholder-concept").hexdigest(),
+                            "reviewed_concept_sha256": hashlib.sha256(b"placeholder-concept").hexdigest(),
+                        },
+                    },
                 }
             ]
         },
@@ -531,7 +617,7 @@ def make_valid_project(root: Path) -> None:
             "capability-report.json",
             "concepts/S01.png",
         ],
-        "concept_contact_sheet": ["concepts/S01.png", "concept-generation-log.json"],
+        "concept_contact_sheet": ["concepts/S01.png", "concept-generation-log.json", "deck-spec.json"],
         "release": [
             "asset-manifest.json",
             "assembly-map.json",
@@ -775,15 +861,153 @@ def promote_fixture_to_production(root: Path) -> None:
     write_json(root, "deck-spec.json", deck)
 
     qa = json.loads((root / "qa-report.json").read_text(encoding="utf-8"))
-    qa["checks_performed"].extend(["reference-transfer", "composition-richness"])
+    qa["checks_performed"].extend(["reference-transfer", "composition-richness", "readability-full-size"])
     write_json(root, "qa-report.json", qa)
 
     concept_path = root / "concepts" / "S01.png"
+    source_dir = root / "sources"
+    source_dir.mkdir(parents=True, exist_ok=True)
+    source_path = source_dir / "approved-outline.md"
+    storyboard = json.loads((root / "storyboard.json").read_text(encoding="utf-8"))
+    story_slide = storyboard["slides"][0]
+    source_path.write_text(
+        f"# Approved outline\n\n{story_slide['title']}\n\n{story_slide['message']}\n",
+        encoding="utf-8",
+    )
+    copy_map = [
+        {
+            "id": "COPY-TITLE",
+            "role": "title",
+            "text": story_slide["title"],
+            "truth_status": "not-applicable",
+            "storyboard_field": "title",
+            "sources": [
+                {
+                    "source_id": "STORY01",
+                    "locator": "slides[S01].title",
+                    "quote": story_slide["title"],
+                    "mode": "storyboard-exact",
+                }
+            ],
+        },
+        {
+            "id": "COPY-BODY",
+            "role": "body",
+            "text": story_slide["message"],
+            "truth_status": "verified",
+            "status_label": "已验证",
+            "storyboard_field": "message",
+            "sources": [
+                {
+                    "source_id": "STORY01",
+                    "locator": "slides[S01].message",
+                    "quote": story_slide["message"],
+                    "mode": "storyboard-exact",
+                },
+                {
+                    "source_id": "SRC01",
+                    "locator": "# Approved outline",
+                    "quote": story_slide["message"],
+                    "mode": "source-exact",
+                },
+            ],
+        },
+    ]
+    transcript_path = root / "text-review" / "S01-v1.txt"
+    transcript_path.parent.mkdir(parents=True, exist_ok=True)
+    transcript_path.write_text(
+        "\n".join(
+            "\n".join(
+                value
+                for value in (item["text"], item.get("status_label"))
+                if value
+            )
+            for item in copy_map
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    source_lineage = [
+        {
+            "id": "STORY01",
+            "kind": "approved-storyboard",
+            "path": "storyboard.json",
+            "sha256": hashlib.sha256((root / "storyboard.json").read_bytes()).hexdigest(),
+            "locator": "slides[S01].title and slides[S01].message",
+            "status": "approved",
+        },
+        {
+            "id": "SRC01",
+            "kind": "authoritative-source",
+            "path": "sources/approved-outline.md",
+            "sha256": hashlib.sha256(source_path.read_bytes()).hexdigest(),
+            "locator": "# Approved outline",
+            "status": "verified",
+        },
+    ]
+    calibration = json.loads(
+        (root / "concept-calibration.json").read_text(encoding="utf-8")
+    )
+    calibration["copy_map"] = copy_map
+    calibration["source_lineage"] = source_lineage
+    for variant in calibration["variants"]:
+        variant_transcript = root / "text-review" / f"{variant['id']}-v1.txt"
+        variant_transcript.write_text(
+            "\n".join(
+                "\n".join(
+                    value
+                    for value in (item["text"], item.get("status_label"))
+                    if value
+                )
+                for item in copy_map
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        variant["image_inventory"] = [
+            {
+                "id": f"IMG-{variant['id']}",
+                "visual_role": "representative",
+                "classification": "illustrative",
+                "label": "示意",
+                "evidence_role": "illustration-only",
+            }
+        ]
+        variant["text_review"] = {
+            "method": "human-transcription",
+            "copy_map_sha256": value_sha256(copy_map),
+            "transcript_path": f"text-review/{variant['id']}-v1.txt",
+            "transcript_sha256": hashlib.sha256(
+                variant_transcript.read_bytes()
+            ).hexdigest(),
+            "observations": [
+                {
+                    "copy_id": item["id"],
+                    "observed_text": item["text"],
+                    **(
+                        {"observed_status_label": item["status_label"]}
+                        if item.get("status_label")
+                        else {}
+                    ),
+                }
+                for item in copy_map
+            ],
+            "repair": None,
+        }
+    write_json(root, "concept-calibration.json", calibration)
+
+    contact_sheet_path = root / "concepts" / "contact-sheet-v1.png"
+    contact_sheet_path.write_bytes(transparent_png())
     write_json(
         root,
         "concept-generation-log.json",
         {
             "status": "generated",
+            "version": "v1",
+            "review_contact_sheet": {
+                "path": "concepts/contact-sheet-v1.png",
+                "sha256": hashlib.sha256(contact_sheet_path.read_bytes()).hexdigest(),
+            },
             "slides": [
                 {
                     "slide_id": "S01",
@@ -801,9 +1025,107 @@ def promote_fixture_to_production(root: Path) -> None:
                     "output_path": "concepts/S01.png",
                     "output_sha256": hashlib.sha256(concept_path.read_bytes()).hexdigest(),
                     "status": "generated",
+                    "version": "v1",
+                    "copy_map": copy_map,
+                    "source_lineage": source_lineage,
+                    "image_inventory": [
+                        {
+                            "id": "IMG01",
+                            "visual_role": "representative",
+                            "classification": "illustrative",
+                            "label": "示意",
+                            "evidence_role": "illustration-only",
+                        }
+                    ],
+                    "text_review": {
+                        "method": "human-transcription",
+                        "copy_map_sha256": value_sha256(copy_map),
+                        "transcript_path": "text-review/S01-v1.txt",
+                        "transcript_sha256": hashlib.sha256(
+                            transcript_path.read_bytes()
+                        ).hexdigest(),
+                        "observations": [
+                            {
+                                "copy_id": item["id"],
+                                "observed_text": item["text"],
+                                **(
+                                    {"observed_status_label": item["status_label"]}
+                                    if item.get("status_label")
+                                    else {}
+                                ),
+                            }
+                            for item in copy_map
+                        ],
+                        "repair": None,
+                    },
                     "selected_calibration_variant_id": "V01",
                     "style_strength": "balanced",
                     "layout_density": "standard",
+                }
+            ],
+        },
+    )
+
+    component_master_path = root / "components" / "masters" / "S01-v1.png"
+    component_master_path.parent.mkdir(parents=True, exist_ok=True)
+    component_master_path.write_bytes(transparent_png())
+    geometry_comparison_path = root / "reviews" / "S01-master-geometry.png"
+    geometry_comparison_path.parent.mkdir(parents=True, exist_ok=True)
+    geometry_comparison_path.write_bytes(transparent_png())
+    concept_log_path = root / "concept-generation-log.json"
+    deck = json.loads((root / "deck-spec.json").read_text(encoding="utf-8"))
+    deck_slide = deck["slides"][0]
+    write_json(
+        root,
+        "component-master-manifest.json",
+        {
+            "status": "generated",
+            "slides": [
+                {
+                    "slide_id": "S01",
+                    "version": "v1",
+                    "approved_contentful_path": deck_slide["concept_path"],
+                    "approved_contentful_sha256": hashlib.sha256(
+                        concept_path.read_bytes()
+                    ).hexdigest(),
+                    "concept_generation_log_sha256": hashlib.sha256(
+                        concept_log_path.read_bytes()
+                    ).hexdigest(),
+                    "component_master_path": "components/masters/S01-v1.png",
+                    "component_master_sha256": hashlib.sha256(
+                        component_master_path.read_bytes()
+                    ).hexdigest(),
+                    "text_policy": "textless",
+                    "ordinary_text_removed": True,
+                    "contains_ordinary_text": False,
+                    "preserved_fill_slots": [
+                        {
+                            "id": slot["id"],
+                            "kind": slot["kind"],
+                            "bbox": slot["bbox"],
+                        }
+                        for slot in deck_slide["fill_slots"]
+                    ],
+                    "geometry_review": {
+                        "status": "passed",
+                        "reviewer": "owner@example",
+                        "display_scale_percent": 100,
+                        "comparison_path": "reviews/S01-master-geometry.png",
+                        "comparison_sha256": hashlib.sha256(
+                            geometry_comparison_path.read_bytes()
+                        ).hexdigest(),
+                        "reviewed_contentful_sha256": hashlib.sha256(
+                            concept_path.read_bytes()
+                        ).hexdigest(),
+                        "reviewed_master_sha256": hashlib.sha256(
+                            component_master_path.read_bytes()
+                        ).hexdigest(),
+                        "checks": {
+                            "composition_preserved": True,
+                            "fill_slots_preserved": True,
+                            "ordinary_text_removed": True,
+                        },
+                    },
                 }
             ],
         },
@@ -831,10 +1153,21 @@ def promote_fixture_to_production(root: Path) -> None:
             "style-contract.json",
             "capability-report.json",
             "concepts/S01.png",
+            "storyboard.json",
+            "sources/approved-outline.md",
+            "text-review/V01-v1.txt",
+            "text-review/V02-v1.txt",
         ],
         "concept_contact_sheet": [
             "concepts/S01.png",
+            "concepts/contact-sheet-v1.png",
             "concept-generation-log.json",
+            "deck-spec.json",
+            "storyboard.json",
+            "sources/approved-outline.md",
+            "text-review/S01-v1.txt",
+            "text-review/V01-v1.txt",
+            "text-review/V02-v1.txt",
         ],
         "release": list(state["gates"]["release"]["approved_artifacts"]),
     }
@@ -847,6 +1180,10 @@ def promote_fixture_to_production(root: Path) -> None:
         "calibration/contact-sheet.png",
         "calibration/V01.png",
         "calibration/V02.png",
+        "sources/approved-outline.md",
+        "storyboard.json",
+        "text-review/V01-v1.txt",
+        "text-review/V02-v1.txt",
     ]
     state["gates"]["style_anchors"]["calibration_selection"] = {
         "status": "approved",
@@ -888,6 +1225,26 @@ class ValidateProjectTests(unittest.TestCase):
             stderr="",
         )
 
+    def run_public_validator(self, root: Path, stage: str) -> subprocess.CompletedProcess[str]:
+        return subprocess.run(
+            [sys.executable, str(SCRIPT), str(root.resolve()), "--stage", stage],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+
+    def test_template_placeholders_do_not_pass_intake(self):
+        template = Path(__file__).resolve().parents[1] / "assets" / "project-template"
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for name in ("brief.json", "run-state.json"):
+                write_json(root, name, json.loads((template / name).read_text(encoding="utf-8")))
+
+            result = self.run_public_validator(root, "intake")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("template placeholder", result.stdout)
+
     def test_valid_release_project_passes(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -905,6 +1262,158 @@ class ValidateProjectTests(unittest.TestCase):
             result = self.run_validator(root)
 
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_public_concept_entry_accepts_contentful_copy_and_lineage(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+
+            result = self.run_public_validator(root, "concept")
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertIn("PASS", result.stdout)
+
+    def test_public_concept_entry_rejects_missing_copy_lineage(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            log = json.loads((root / "concept-generation-log.json").read_text(encoding="utf-8"))
+            log["slides"][0].pop("copy_map")
+            write_json(root, "concept-generation-log.json", log)
+
+            result = self.run_public_validator(root, "concept")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("copy_map must contain", result.stdout)
+
+    def test_public_concept_entry_rejects_stale_authoritative_source_hash(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            (root / "sources" / "approved-outline.md").write_text(
+                "# Changed after concept generation\n", encoding="utf-8"
+            )
+
+            result = self.run_public_validator(root, "concept")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("source_lineage sha256 does not match file", result.stdout)
+
+    def test_public_concept_entry_rejects_unverified_rendered_glyphs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            log = json.loads((root / "concept-generation-log.json").read_text(encoding="utf-8"))
+            log["slides"][0]["text_review"]["observations"][0]["observed_text"] = "wrong title"
+            write_json(root, "concept-generation-log.json", log)
+
+            result = self.run_public_validator(root, "concept")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("observed_text must exactly match copy_map", result.stdout)
+
+    def test_public_concept_entry_blocks_pending_style_rebaseline(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["current_style_rebaseline"] = {"status": "pending_user_selection"}
+            write_json(root, "run-state.json", state)
+
+            result = self.run_public_validator(root, "concept")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("style rebaseline is pending user selection", result.stdout)
+
+    def test_public_inventory_entry_rejects_master_without_current_g4_binding(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["gates"]["concept_contact_sheet"]["approved_artifacts"].pop(
+                "concept-generation-log.json"
+            )
+            write_json(root, "run-state.json", state)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("approved_artifacts missing", result.stdout)
+
+    def test_public_inventory_entry_accepts_g4_linked_textless_master(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertIn("PASS", result.stdout)
+
+    def test_public_inventory_entry_rejects_copy_log_changed_after_g4(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            log = json.loads((root / "concept-generation-log.json").read_text(encoding="utf-8"))
+            log["slides"][0]["copy_map"][1]["sources"][1]["quote"] = "Changed source quote"
+            write_json(root, "concept-generation-log.json", log)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("approved artifact hash is stale: concept-generation-log.json", result.stdout)
+
+    def test_public_inventory_entry_rejects_changed_fill_slot_geometry(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            manifest = json.loads(
+                (root / "component-master-manifest.json").read_text(encoding="utf-8")
+            )
+            manifest["slides"][0]["preserved_fill_slots"][0]["bbox"] = [0.1, 0.1, 0.2, 0.1]
+            write_json(root, "component-master-manifest.json", manifest)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("preserved_fill_slots must preserve deck-spec geometry", result.stdout)
+
+    def test_public_inventory_entry_requires_full_size_master_geometry_review(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            manifest = json.loads((root / "component-master-manifest.json").read_text(encoding="utf-8"))
+            manifest["slides"][0].pop("geometry_review", None)
+            write_json(root, "component-master-manifest.json", manifest)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("geometry_review is required", result.stdout)
+
+    def test_public_inventory_entry_rejects_stale_master_geometry_review(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            manifest = json.loads((root / "component-master-manifest.json").read_text(encoding="utf-8"))
+            manifest["slides"][0]["geometry_review"]["reviewed_master_sha256"] = "0" * 64
+            write_json(root, "component-master-manifest.json", manifest)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("geometry_review must bind the current contentful and master images", result.stdout)
 
     def test_calibration_requires_human_selection_before_anchors(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -2224,6 +2733,127 @@ class ValidateProjectTests(unittest.TestCase):
             result = self.run_validator(root)
             self.assertEqual(result.returncode, 1)
             self.assertIn("approved artifact hash", result.stdout)
+
+    def test_public_style_entry_requires_readability_profile(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            style = json.loads((root / "style-contract.json").read_text(encoding="utf-8"))
+            style.pop("readability_profile")
+            write_json(root, "style-contract.json", style)
+            result = self.run_public_validator(root, "style")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("readability_profile", result.stdout)
+
+    def test_public_spec_entry_requires_per_slide_readability_plan(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            deck = json.loads((root / "deck-spec.json").read_text(encoding="utf-8"))
+            deck["slides"][0].pop("readability")
+            write_json(root, "deck-spec.json", deck)
+            result = self.run_public_validator(root, "spec")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("readability", result.stdout)
+
+    def test_public_spec_entry_rejects_small_title_without_exception(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            deck = json.loads((root / "deck-spec.json").read_text(encoding="utf-8"))
+            deck["slides"][0]["readability"]["text_regions"][0]["planned_font_pt"] = 18
+            write_json(root, "deck-spec.json", deck)
+            result = self.run_public_validator(root, "spec")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("font:F01", result.stdout)
+
+    def test_public_spec_entry_rejects_tiny_main_picture_without_exception(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            deck = json.loads((root / "deck-spec.json").read_text(encoding="utf-8"))
+            deck["slides"][0]["readability"]["main_visual"]["bbox"] = [0.7, 0.7, 0.1, 0.1]
+            write_json(root, "deck-spec.json", deck)
+            result = self.run_public_validator(root, "spec")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("visual:main", result.stdout)
+
+    def test_public_spec_entry_rejects_unbacked_evidence_area(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            deck = json.loads((root / "deck-spec.json").read_text(encoding="utf-8"))
+            deck["slides"][0]["fill_slots"].append(
+                {"id": "F-EVIDENCE", "kind": "fixed-evidence", "bbox": [0.50, 0.25, 0.20, 0.20]}
+            )
+            deck["slides"][0]["readability"]["main_visual"] = {
+                "kind": "evidence", "bbox": [0.45, 0.25, 0.45, 0.50]
+            }
+            write_json(root, "deck-spec.json", deck)
+            result = self.run_public_validator(root, "spec")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("fixed-evidence fill slot", result.stdout)
+
+    def test_public_spec_entry_accepts_specific_readability_exception_for_planning(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            deck = json.loads((root / "deck-spec.json").read_text(encoding="utf-8"))
+            plan = deck["slides"][0]["readability"]
+            plan["text_regions"][0]["planned_font_pt"] = 18
+            plan["exception"] = {
+                "violations": ["font:F01"],
+                "reason": "A legacy title must be quoted without changing its wording.",
+                "alternative_viewing_route": "Show the full-size handout before the slide.",
+            }
+            write_json(root, "deck-spec.json", deck)
+            result = self.run_public_validator(root, "spec")
+            self.assertEqual(result.returncode, 0, result.stdout)
+
+    def test_public_concept_entry_requires_full_size_review_bound_to_image(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            deck = json.loads((root / "deck-spec.json").read_text(encoding="utf-8"))
+            deck["slides"][0]["readability"]["full_size_review"] = None
+            write_json(root, "deck-spec.json", deck)
+            result = self.run_public_validator(root, "concept")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("full_size_review", result.stdout)
+
+    def test_public_inventory_entry_requires_g4_readability_decision(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["gates"]["concept_contact_sheet"]["approval_packet"]["decisions"].pop("readability_review")
+            write_json(root, "run-state.json", state)
+            result = self.run_public_validator(root, "inventory")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("readability_review", result.stdout)
+
+    def test_public_concept_entry_requires_g3_readability_profile_decision(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["gates"]["style_anchors"]["approval_packet"]["decisions"].pop("readability_profile", None)
+            write_json(root, "run-state.json", state)
+            result = self.run_public_validator(root, "concept")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("readability_profile", result.stdout)
+
+    def test_production_release_requires_full_size_readability_qa(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            qa = json.loads((root / "qa-report.json").read_text(encoding="utf-8"))
+            qa["checks_performed"].remove("readability-full-size")
+            write_json(root, "qa-report.json", qa)
+            result = self.run_public_validator(root, "release")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("readability-full-size", result.stdout)
 
 
 if __name__ == "__main__":

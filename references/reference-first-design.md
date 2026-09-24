@@ -23,7 +23,7 @@ Create a numbered reference contact sheet and present 2–3 direction options. E
 
 ## Same-content concept calibration
 
-Before the three anchors, choose one representative storyboard slide and create `concept-calibration.json`. Use Codex `image_gen` to make 2–3 real 16:9 concept images. Hold the slide's title, message, evidence IDs, visual intent, and blank editable regions constant. Label each candidate's `direction_id`, `style_strength` (`restrained` / `balanced` / `expressive`), and `layout_density` (`airy` / `standard` / `dense`). Describe the actual difference in hierarchy, layering, whitespace, material, and image treatment; the labels alone do not establish variety. This comparison should help the user choose how strongly designed and how dense the deck should feel, not choose between different arguments.
+Before the three anchors, choose one representative storyboard slide and create `concept-calibration.json`. Use Codex `image_gen` to make 2–3 real 16:9 contentful review concepts. Hold the approved title, message, evidence IDs, visual intent, exact copy map, truth-status labels, and representative imagery constant. Show remaining editable regions as blank slots. Label each candidate's `direction_id`, `style_strength` (`restrained` / `balanced` / `expressive`), and `layout_density` (`airy` / `standard` / `dense`). Describe the actual difference in hierarchy, layering, whitespace, material, and image treatment; the labels alone do not establish variety. This comparison should help the user choose how strongly designed and how dense the deck should feel, not choose between different arguments.
 
 Record the exact prompt, attached local reference images and hashes, tool/model, output file/hash, a contact sheet, recommended candidate, reason, and impact. Show the real images side by side. The human may pick a candidate, reject all, or request a hybrid; a hybrid is a new candidate to generate and review. Save a hash-bound `calibration_selection` approval before producing anchors. The final style contract records the selected candidate ID, direction ID, strength, and density. The three anchors and every later concept inherit that selection. G4 remains a separate review of the whole deck's visual rhythm.
 
@@ -31,21 +31,21 @@ For `awesome-gpt-image-2`, consult only relevant categories/templates/cases. Rec
 
 ## Concept generation
 
-Production concepts use `image-and-analysis` reference mode:
+Production contentful concepts use `image-and-analysis` reference mode:
 
 1. Pass the selected project-local images to Codex `image_gen` as reference images, and apply the human-selected calibration variant's direction, strength, and density.
 2. Include the extracted transferable rules, project translation, and do-not-copy boundaries in the structured prompt.
-3. Combine those references with the approved storyboard, fill slots, layout archetype, information units, and visual layers.
+3. Combine those references with the approved storyboard, exact visible copy, truth-status labels, representative imagery, remaining fill slots, layout archetype, information units, and visual layers.
 4. Record exact prompt text, reference paths/hashes, model/tool identity, and output hash.
 
-References guide design grammar. They never override truth, brand, editability, blank table/chart regions, or the prohibition on baked ordinary text/data.
+References guide design grammar. They never override truth, brand, editability, readable text/image regions, or blank table/chart regions. Ordinary copy may appear in the temporary contentful review image, but must not be baked into the final component art.
 
 ## Quality profiles
 
 `brief.json.quality_profile` is one of:
 
 - `production`: real deliverable; reference-first and richness checks are mandatory.
-- `draft`: exploratory deliverable; references and composition planning remain required, but thresholds may be lower.
+- `draft`: exploratory deliverable; references and composition planning remain required, but **composition/richness** thresholds may be lower. The same readability planning floors still apply; use a named per-slide G4 exception for a deliberate compact region.
 - `validation-fixture`: contract/tool test only; it must also set `run-state.json.fixture_only: true` and must never be presented as a production-quality deck.
 
 The default is `production`. Do not silently downgrade because the run is automated or time-boxed.
@@ -82,4 +82,4 @@ Unless the approved direction explicitly requires a restrained minimal system, a
 
 ## Resuming an older project
 
-If a project predates `quality_profile`, `reference-study.json`, or the composition fields, preserve its files and approvals as historical versions. Add the missing artifacts to a new version, then show the new reference board and composition profile at G3. Changes to the style contract, anchor images, deck spec, or concept images invalidate only the approvals bound to those changed hashes; request fresh G3/G4 approval before continuing. Do not relabel an old test deck as production or silently upgrade an approved artifact in place.
+If a project predates `quality_profile`, `reference-study.json`, the composition/readability fields, or contentful-first concepts, preserve its files and approvals as historical versions. Add the missing artifacts to a new version, then show the new reference board, composition profile, and readability profile at G3. Changes to the style contract, anchor images, deck spec, or concept images invalidate only the approvals bound to those changed hashes; request fresh G3/G4 approval before continuing. Do not relabel an old test deck as production or silently upgrade an approved artifact in place.

@@ -1,11 +1,17 @@
 {
-  "status": "generated",
+  "status": "pending",
+  "version": "v1",
+  "review_contact_sheet": {
+    "path": "concepts/contact-sheet-v1.png",
+    "sha256": null
+  },
   "slides": [
     {
       "slide_id": "S01",
+      "version": "v1",
       "tool": "codex-image_gen",
       "model": "record when available",
-      "prompt": "store the exact structured concept prompt",
+      "prompt": "store the exact structured contentful review prompt",
       "selected_calibration_variant_id": "V01",
       "style_strength": "balanced",
       "layout_density": "standard",
@@ -16,9 +22,93 @@
           "sha256": "replace-with-sha256"
         }
       ],
-      "output_path": "concepts/S01.png",
+      "output_path": "concepts/contentful/S01-v1.png",
       "output_sha256": "replace-with-sha256",
-      "status": "generated"
+      "status": "generated",
+      "copy_map": [
+        {
+          "id": "COPY-TITLE",
+          "role": "title",
+          "text": "replace with approved storyboard title",
+          "truth_status": "not-applicable",
+          "storyboard_field": "title",
+          "sources": [
+            {
+              "source_id": "STORY01",
+              "locator": "slides[S01].title",
+              "quote": "replace with approved storyboard title",
+              "mode": "storyboard-exact"
+            }
+          ]
+        },
+        {
+          "id": "COPY-BODY",
+          "role": "body",
+          "text": "replace with exact approved concise copy",
+          "truth_status": "verified",
+          "status_label": "replace with visible truth label",
+          "storyboard_field": "message",
+          "sources": [
+            {
+              "source_id": "STORY01",
+              "locator": "slides[S01].message",
+              "quote": "replace with exact approved concise copy",
+              "mode": "storyboard-exact"
+            },
+            {
+              "source_id": "SRC01",
+              "locator": "replace with heading, page, or visual region",
+              "quote": "replace with the supporting source wording",
+              "mode": "source-exact"
+            }
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "id": "STORY01",
+          "kind": "approved-storyboard",
+          "path": "storyboard.json",
+          "sha256": "replace-with-sha256",
+          "locator": "slides[S01].title and slides[S01].message",
+          "status": "approved"
+        },
+        {
+          "id": "SRC01",
+          "kind": "authoritative-source",
+          "path": "sources/approved-material.ext",
+          "sha256": "replace-with-sha256",
+          "locator": "replace with heading, page, or visual region",
+          "status": "verified"
+        }
+      ],
+      "image_inventory": [
+        {
+          "id": "IMG01",
+          "visual_role": "representative",
+          "classification": "illustrative",
+          "label": "示意",
+          "evidence_role": "illustration-only"
+        }
+      ],
+      "text_review": {
+        "method": "human-transcription",
+        "copy_map_sha256": "replace-with-canonical-copy-map-sha256",
+        "transcript_path": "text-review/S01-v1.txt",
+        "transcript_sha256": "replace-with-sha256",
+        "observations": [
+          {
+            "copy_id": "COPY-TITLE",
+            "observed_text": "replace with approved storyboard title"
+          },
+          {
+            "copy_id": "COPY-BODY",
+            "observed_text": "replace with exact approved concise copy",
+            "observed_status_label": "replace with visible truth label"
+          }
+        ],
+        "repair": null
+      }
     }
   ]
 }

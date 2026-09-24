@@ -12,6 +12,8 @@ python scripts/validate_project.py <project-dir> --stage release
 
 Any failure blocks transition.
 
+The concept gate also checks contentful copy/source lineage, source and image hashes, text-review transcripts, and the G4 binding. It checks declared point sizes, usable image-frame geometry, and each current concept's 100%-scale review record; G4's `readability_review` supplies the human visual decision. Inventory rejects a component master that predates G4 or changes the approved fill-slot geometry.
+
 ## B. Asset checks
 
 For every manifest asset:
@@ -29,15 +31,24 @@ For every manifest asset:
 
 ## C. Inventory checks
 
-Compare concept render, semantic inventory, residual inventory, scene graph, and manifest:
+Compare the G4-approved contentful concept, textless component master, semantic inventory, residual inventory, scene graph, and manifest:
 
 - every visible concept item maps to one component or fill slot;
 - every manifest asset appears in the scene graph;
 - no component is accidentally merged with a neighbor;
 - repeated assets declare reuse rather than silently duplicating identity;
 - z-order and overlaps are explicit.
+- the contentful concept and textless master have matching composition and reserved fill-slot geometry;
+- ordinary copy/data is removed from the master, while verified source imagery remains exact and pending evidence stays labeled as a placeholder.
 
-## D. Assembly checks
+## D. Content and text checks
+
+- compare every visible title, body line, and truth-status label with its `copy_map` entry;
+- confirm title/message wording matches the approved storyboard and other claims cite a verified/approved source locator;
+- inspect the actual image against the hash-bound transcript and any deterministic overlay evidence; a recorded OCR result by itself is not a pass;
+- confirm illustrative imagery is labeled and never appears as factual evidence.
+
+## E. Assembly checks
 
 Render the assembled output and compare with the approved concept using:
 
@@ -48,7 +59,9 @@ Render the assembled output and compare with the approved concept using:
 
 Check geometry, crop, orientation, color, hierarchy, whitespace, fill-slot usability, missing assets, overflow, and clipping. Confirm `flattened_concept_used: false`. For PPTX, verify the package opens, page count matches, QA is bound to its SHA-256, and approved concept renders are not embedded as media.
 
-## E. Communication and accessibility checks
+For production release, record `readability-full-size` after inspecting the actual assembled text and image regions at presentation size, not just the concept or a contact sheet. Compare the usable image pane and text sizes with the G4-approved record. Repair by reducing copy, truthful cropping/enlargement, recomposition, or splitting a slide; do not conceal crowding by shrinking.
+
+## F. Communication and accessibility checks
 
 - title-only narrative still works;
 - each slide communicates one message;
@@ -58,7 +71,7 @@ Check geometry, crop, orientation, color, hierarchy, whitespace, fill-slot usabi
 - placeholders clearly distinguish editable text/data from artwork;
 - no generated decoration is mistaken for factual data.
 
-## F. Reference and richness checks
+## G. Reference and richness checks
 
 - selected references are analyzed and hash-locked, not just named;
 - production concept logs contain the exact prompt and attached selected reference paths/hashes;
@@ -71,7 +84,7 @@ Check geometry, crop, orientation, color, hierarchy, whitespace, fill-slot usabi
 
 ## Severity
 
-- **Blocker**: false/missing evidence, concept used as flattened final, embedded ordinary text/data, missing component, unapproved special typography, missing production reference provenance, unreadable output, or validator failure.
+- **Blocker**: false/missing evidence, concept used as flattened final, ordinary text/data embedded in final component art, missing component, unapproved special typography, missing production reference provenance, unreadable output, or validator failure.
 - **Major**: significant composition drift, wrong hierarchy, unusable fill slot, transparency defect, or accessibility failure.
 - **Minor**: small spacing, edge cleanup, or non-semantic visual mismatch.
 

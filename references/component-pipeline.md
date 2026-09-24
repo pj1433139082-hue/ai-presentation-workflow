@@ -1,12 +1,18 @@
 # Concept-to-component pipeline
 
-## 1. Freeze the approved concept
+## 1. Freeze the G4-approved contentful concept
 
-Treat the approved concept render as the canonical visual reference for the slide version. Save its path and hash. Any later concept revision creates a new version and invalidates only dependent components.
+Treat the approved contentful concept as the canonical visual reference for copy, truth labels, imagery, and composition. G4 binds its version, path, image hash, copy map, source lineage, text-review transcript, and contact sheet. Any revision uses a new image path and keeps the former image as history; affected G4 and downstream artifacts must be approved again.
+
+## 2. Derive the textless component master after G4
+
+Only after the current G4 approval, create one textless component master per slide. Remove ordinary titles, body copy, labels, values, and data while preserving the approved composition and each fill-slot coordinate. Record the master path/hash, approved contentful image path/hash, concept-log hash, version, and fill-slot geometry in `component-master-manifest.json`. Before inventory, a human must compare the contentful concept and textless master side by side at 100% scale, save a separate comparison image, and record the reviewer, evidence hash, both reviewed image hashes, and explicit composition/fill-slot/text-removal checks in `geometry_review`. The validator enforces those links and the review record; metadata alone cannot prove visual equivalence.
 
 Before production, prove the selected image route can create a real transparent PNG with a small test call and record it in `capability-report.json`. Reference-guided generation is reconstruction, not guaranteed lossless layer extraction.
 
-## 2. Inventory in two passes
+## 3. Inventory in two passes
+
+Compare both the approved contentful concept and its textless master. The concept preserves approved message and source context; the master exposes the blank geometry used for editable copy and later extraction.
 
 ### Pass A — semantic inventory
 
@@ -29,11 +35,11 @@ Do not merge components merely to reduce call count if the user needs to recombi
 
 After inventory, select a provider from `visual-provider-registry.json` and run its PPT adapter. For Material Illustration, the adapter must reject truth-sensitive requests, unsupported page/component roles, caller-written component prompts, embedded text/data, opaque output contracts, and table/chart shells without valid blank fill slots. The adapter derives the actual extraction prompt only from the approved reference, normalized crop, and component role. Merge only accepted adapted records into the asset manifest.
 
-## 3. Create a crop reference
+## 4. Create a crop reference
 
 For each component, prepare the full concept plus a local crop/reference when possible. The full concept preserves style and role; the crop disambiguates the target. Do not use a crop that cuts off the intended silhouette.
 
-## 4. Generate one isolated component per call
+## 5. Generate one isolated component per call
 
 Use Codex built-in `image_gen` with the installed `imagegen` skill. Each call requests exactly one component on a fully transparent canvas with generous transparent padding.
 
@@ -49,7 +55,7 @@ Required constraints:
 
 If the result contains extra material, repair or regenerate the individual asset rather than editing the concept.
 
-## 5. Special role rules
+## 6. Special role rules
 
 ### Tables
 
@@ -73,7 +79,7 @@ Preserve a supplied factual visual pixel-for-pixel if reuse is permitted. If val
 
 Preserve the approved raster/vector byte-for-byte. These assets may remain rectangular and need not be forced through transparent regeneration. Do not mask or alter truth-sensitive pixels until a deterministic outside-mask comparison is available.
 
-## 6. Validate and approve
+## 7. Validate and approve
 
 For each asset:
 
@@ -85,7 +91,7 @@ For each asset:
 - confirm its manifest role and content policy;
 - mark `approved` only after checks pass.
 
-## 7. Repair loop
+## 8. Repair loop
 
 Use at most three focused repair attempts for one defect class. Keep the best prior version. If the defect persists, record a blocker with evidence and request a human decision; never flatten the entire slide to hide the failure.
 

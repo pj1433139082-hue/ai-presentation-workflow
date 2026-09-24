@@ -39,14 +39,26 @@
     "min_visual_layers_per_content_slide": 2,
     "sparse_allowed_roles": ["opening", "transition", "closing"]
   },
+  "readability_profile": {
+    "action_title_min_pt": 32,
+    "body_min_pt": 20,
+    "key_caption_min_pt": 18,
+    "source_qualifier_min_pt": 16,
+    "evidence_min_width": 0.42,
+    "evidence_min_height": 0.43,
+    "fine_ui_preferred_width": 0.50,
+    "fine_ui_preferred_height": 0.46,
+    "illustration_min_width": 0.30,
+    "illustration_min_height": 0.25
+  },
   "rules": [
     "structure before decoration",
     "ordinary text and data stay in fill slots"
   ],
   "prohibited_motifs": [],
   "anchor_concepts": [
-    {"role": "opening", "slide_id": "S01", "path": "concepts/S01.png"},
-    {"role": "typical", "slide_id": "S01", "path": "concepts/S01.png"},
-    {"role": "highest-risk", "slide_id": "S01", "path": "concepts/S01.png"}
+    {"role": "opening", "slide_id": "S01", "path": "concepts/contentful/S01-v1.png"},
+    {"role": "typical", "slide_id": "S01", "path": "concepts/contentful/S01-v1.png"},
+    {"role": "highest-risk", "slide_id": "S01", "path": "concepts/contentful/S01-v1.png"}
   ]
 }

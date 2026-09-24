@@ -2,7 +2,8 @@
 
 ## Canonical terms
 
-- **Concept render**: a full-slide raster reference that fixes composition and visual intent. It is not a final slide background.
+- **Contentful review concept**: a versioned full-slide image containing the approved title, concise on-slide copy, visible truth-status labels, and representative imagery. It is for human review and is never a final slide background.
+- **Textless component master**: the post-G4 visual master derived from an approved contentful concept after ordinary copy and data are removed; it preserves the approved composition and fill-slot geometry.
 - **Transparent component**: one isolated visual layer with alpha. This includes arrows and basic shapes, not just illustrations.
 - **Fill slot**: a blank reserved region for ordinary text, labels, values, or user-supplied data.
 - **Scene graph**: normalized placements and z-order for every component on a slide.
@@ -24,7 +25,7 @@ Use this state sequence:
 
 It also records `production_route`. `full-tracked` is the default and requires planning artifacts; use the `grill-with-docs → to-spec → to-tickets → implement` chain when installed. `fast` is valid only with exact confirmation `确认快速路线`, current G1 approval, all consequential decisions approved, `high_stakes: false`, and `multi_session: false`. Fast skips only the external Spec/Tickets planning documents. It does not skip any project artifact, validation stage, or G1–G5 approval.
 
-G2 packet decisions are slide sequence, action titles, slide messages, evidence mapping, and appendix boundary. G3 covers reference selection, an intermediate human-approved same-content concept calibration, the approved composition/richness profile, visual direction, observable style rules, and three representative anchors. G4 covers the full contact sheet, slide-by-slide layout/richness review, blank table/chart regions, special typography, and slide deviations. G5 covers final render, concept differences, QA exceptions, component usability, and the deliverable index. G2–G4 allow explicit approval or the exact batch phrase `全部按推荐`; G5 accepts only `approval_mode: release` with `确认发布`.
+G2 packet decisions are slide sequence, action titles, slide messages, evidence mapping, and appendix boundary. G3 covers reference selection, contentful same-content concept calibration, the approved composition/richness and readability profiles, visual direction, observable style rules, and three representative contentful anchors. G4 covers `contentful_copy_source_review`, the full contentful contact sheet, per-slide full-size `readability_review`, slide-by-slide layout/richness review, blank table/chart regions, special typography, and slide deviations. G5 covers final render, concept differences, QA exceptions, component usability, and the deliverable index. G2–G4 allow explicit approval or the exact batch phrase `全部按推荐`; G5 accepts only `approval_mode: release` with `确认发布`.
 
 `rollback` is null during normal progress. On rejection it records `trigger: rejection`, `source_gate`, `owner_stage`, and reason; the rejected gate clears its prior approval epoch before it can advance again. On QA failure it records `trigger: qa-defect`, `defect_class`, `owner_stage`, and reason. Every rejected gate requires the matching rollback record. The owner mapping is deterministic: research, story, style, concept, inventory, assets, assembly, or QA. Only the owning stage is reopened; unrelated earlier approvals remain unless their artifacts change.
 
@@ -103,7 +104,7 @@ Selected reference images are passed to `image_gen` for production concepts. Use
 
 ### `concept-calibration.json`
 
-For production/draft, record `version`, `status: generated`, one storyboard `slide_id`, `fixed_content` copied exactly from that slide (`title`, `message`, `evidence_ids`, `visual_intent`), and shared `fixed_fill_slots` for the editable blank regions. Record a `contact_sheet` path/hash and 2–3 `variants`. Each variant has a stable ID, known `direction_id`, `style_strength`, `layout_density`, exact prompt, Codex `image_gen` tool/model, generation time, attached reference IDs/paths/hashes, and output path/hash. The candidates must differ in at least one of direction, strength, or density. Record `recommended_variant_id` plus recommendation reason and impact. The G3 `calibration_selection` approval binds this artifact, comparison sheet, and all images by SHA-256 before anchors are generated. Fixture-only runs may use `status: not-required` with a reason.
+For production/draft, record `version`, `status: generated`, one storyboard `slide_id`, and `fixed_content` copied exactly from that slide (`title`, `message`, `evidence_ids`, `visual_intent`). Calibration images show that exact title and message plus representative imagery. Store shared `copy_map` and `source_lineage` records; each variant records its image classification and a hash-bound human-checked text transcript. Keep any remaining editable regions in `fixed_fill_slots`. Record a `contact_sheet` path/hash and 2–3 `variants`. Each variant has a stable ID, known `direction_id`, `style_strength`, `layout_density`, exact prompt, Codex `image_gen` tool/model, generation time, attached reference IDs/paths/hashes, and output path/hash. The candidates must differ in at least one of direction, strength, or density. Record `recommended_variant_id` plus recommendation reason and impact. The G3 `calibration_selection` approval binds this artifact, source files, transcript evidence, comparison sheet, and all images by SHA-256 before anchors are generated. Fixture-only runs may use `status: not-required` with a reason.
 
 ### `style-contract.json`
 
@@ -116,6 +117,7 @@ Record:
 - `concept_reference_mode`; production uses `image-and-analysis`
 - `pass_selected_images_to_image_gen`; production requires `true`
 - `composition_profile`: quality profile, visual richness, minimum layout-archetype count, maximum consecutive repeated archetypes, minimum information units and visual layers for ordinary content slides, and allowed sparse narrative roles
+- `readability_profile`: minimum action-title/body/caption/source font sizes and usable main evidence, fine-UI, and illustration area floors; see `references/readability-contract.md`
 - any `awesome-gpt-image-2` category/template/case IDs used
 - invariants and prohibited motifs
 - exactly three `anchor_concepts`: opening, typical, and highest-risk, each with slide ID and file path
@@ -128,7 +130,7 @@ Record time-stamped probes for research, Codex `image_gen`, real transparent PNG
 
 ### `concept-generation-log.json`
 
-For every production concept, record the slide ID, exact prompt, `codex-image_gen` tool/model identity when available, selected calibration variant ID, visual strength, layout density, every attached reference ID/path/SHA-256, output path/SHA-256, and status. The calibration fields must match the style contract, the reference list must match the slide's approved `composition.reference_ids`, and the output must match its `concept_path`. Preserve a tool call receipt when available. This log is an audit record; compare it with the actual tool call when reviewing provenance.
+For every production contentful concept, record the slide ID and immutable version, exact prompt, `codex-image_gen` tool/model identity when available, selected calibration variant ID, visual strength, layout density, every attached reference ID/path/SHA-256, output path/SHA-256, and status. `copy_map` records every visible word and exact title/message mappings to the approved storyboard. Other copy cites a source quote or an explicit paraphrase for G4 review. `source_lineage` accepts any user-authoritative source format plus the approved storyboard or brief; each source has a project-local path, SHA-256, approved/verified status, and locator. `image_inventory` classifies representative imagery as `illustrative`, `verified-source`, or `pending-placeholder`; illustrations are labeled and never used as evidence, while factual images link to unchanged, hash-verified sources. `text_review` records observed text per copy ID and a transcript artifact/hash. If deterministic overlays repair glyphs, retain the prior image and record input/output hashes and overlay evidence. The validator checks records and hashes; metadata or OCR alone is not proof that an image is correct. G4 binds the log, transcript evidence, source files, contact sheet, and every contentful image. The output must match its `concept_path`.
 
 ### `deck-spec.json`
 
@@ -137,10 +139,11 @@ At the root, add `production_estimate` with unique component count, planned gene
 Each slide requires:
 
 - `id`, `title`, `message`
-- `concept_path` after S5
+- `concept_path` after S5, pointing to the current contentful review concept, not its textless master
 - `components`: stable component IDs
 - `fill_slots`: stable ID, kind, normalized `[x,y,w,h]`, intended editable content
 - `composition`: layout archetype, complexity (`sparse`, `standard`, or `rich`), information units, visual layers, selected reference IDs, and variation from the previous slide
+- `readability`: every ordinary text/data fill slot's planned font and line count, the usable main-visual bbox, any specific underfloor exception, and a 100%-scale review record bound to the current contentful image hash from the Concept stage
 - optionally `speaker_notes`, `citations`, `transition`, `accessibility_notes`
 
 Normalized coordinates are in the range 0..1 and must stay within the canvas.
@@ -158,6 +161,10 @@ Each slide records its canvas and every visual element:
 - optional `rotation`, `opacity`, `crop`, `blend_notes`, `reused_from`
 
 Run two passes: semantic inventory first, residual pixel inventory second. The second pass catches decorative fragments, shadows, separators, masks, and connectors omitted by semantic labeling.
+
+### `component-master-manifest.json`
+
+Create this only after the current G4 approval. Record one textless master per slide with its versioned path/hash, approved contentful concept path/hash, and current approved `concept-generation-log.json` hash. Set `text_policy: textless`, `ordinary_text_removed: true`, and `contains_ordinary_text: false`. `preserved_fill_slots` must exactly match the slide's fill-slot IDs, kinds, and normalized bounding boxes in `deck-spec.json`. Add a `geometry_review` with a separate side-by-side comparison image path/hash, reviewer, 100%-scale passed status, hashes of both reviewed images, and passed composition/fill-slot/text-removal checks; it is a mandatory human check before inventory. Never use a contentful concept as a component master or final flattened slide.
 
 ### `asset-manifest.json`
 
@@ -194,7 +201,7 @@ For each slide record component IDs, fill-slot IDs, unique continuous `output_in
 
 ### `qa-report.json`
 
-Record overall status, per-slide status, checks performed, evidence files, differences from the concept, exceptions, repairs, and final reviewer. Production release requires explicit `reference-transfer` and `composition-richness` checks. Release also requires `final_contact_sheet`, `exception_register`, and `deliverable_index` paths. G5 approval hashes those three files plus every global and per-slide QA evidence file. For PPTX, `subject_sha256` binds QA to the assembled file. A declared exception identifies the owner, reason, and user acceptance.
+Record overall status, per-slide status, checks performed, evidence files, differences from the concept, exceptions, repairs, and final reviewer. Production release requires explicit `reference-transfer`, `composition-richness`, and `readability-full-size` checks. Release also requires `final_contact_sheet`, `exception_register`, and `deliverable_index` paths. G5 approval hashes those three files plus every global and per-slide QA evidence file. For PPTX, `subject_sha256` binds QA to the assembled file. A declared exception identifies the owner, reason, and user acceptance.
 
 ## Transition ownership
 

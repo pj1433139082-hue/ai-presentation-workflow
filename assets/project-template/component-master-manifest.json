@@ -1,0 +1,38 @@
+{
+  "status": "pending-g4-approval",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "version": "v1",
+      "approved_contentful_path": "concepts/contentful/S01-v1.png",
+      "approved_contentful_sha256": "replace-with-g4-approved-image-sha256",
+      "concept_generation_log_sha256": "replace-with-g4-approved-log-sha256",
+      "component_master_path": "components/masters/S01-v1.png",
+      "component_master_sha256": "replace-with-master-sha256",
+      "text_policy": "textless",
+      "ordinary_text_removed": true,
+      "contains_ordinary_text": false,
+      "preserved_fill_slots": [
+        {
+          "id": "F01",
+          "kind": "ordinary-text",
+          "bbox": [0.1, 0.1, 0.35, 0.1]
+        }
+      ],
+      "geometry_review": {
+        "status": "pending",
+        "reviewer": "replace-with-human-reviewer",
+        "display_scale_percent": 100,
+        "comparison_path": "reviews/S01-master-geometry.png",
+        "comparison_sha256": "replace-with-comparison-image-sha256",
+        "reviewed_contentful_sha256": "replace-with-current-contentful-sha256",
+        "reviewed_master_sha256": "replace-with-current-master-sha256",
+        "checks": {
+          "composition_preserved": false,
+          "fill_slots_preserved": false,
+          "ordinary_text_removed": false
+        }
+      }
+    }
+  ]
+}

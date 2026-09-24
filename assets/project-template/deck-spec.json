@@ -10,7 +10,7 @@
       "id": "S01",
       "title": "Replace with an action title",
       "message": "Replace with one audience-relevant message.",
-      "concept_path": "concepts/S01.png",
+      "concept_path": "concepts/contentful/S01-v1.png",
       "components": ["C01"],
       "composition": {
         "layout_archetype": "asymmetric-hero",
@@ -35,6 +35,21 @@
           "intended_content": "editable slide title"
         }
       ],
+      "readability": {
+        "text_regions": [
+          {"fill_slot_id": "F01", "role": "action-title", "planned_font_pt": 36, "line_count": 1}
+        ],
+        "main_visual": {"kind": "illustration", "bbox": [0.50, 0.24, 0.40, 0.50]},
+        "exception": null,
+        "full_size_review": {
+          "status": "pending",
+          "display_scale_percent": 100,
+          "reviewer": "replace after inspecting current contentful concept",
+          "path": "concepts/contentful/S01-v1.png",
+          "sha256": "replace with full-size review image SHA-256",
+          "reviewed_concept_sha256": "replace with approved contentful concept SHA-256"
+        }
+      },
       "citations": [],
       "accessibility_notes": []
     }
