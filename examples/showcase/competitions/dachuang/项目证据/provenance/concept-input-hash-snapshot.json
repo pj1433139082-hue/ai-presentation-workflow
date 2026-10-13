@@ -1,0 +1,12 @@
+{
+  "snapshot_type": "pre-concept-generation-inputs",
+  "created_at": "2026-10-13T17:55:08.870221+08:00",
+  "inputs": {
+    "brief.json": "aa54ecfb8d0c6cbaa8f7be6f73a4501b2f457aa8ea13c830c7bb0d136a9bf49d",
+    "deck-spec.json": "04f078d35ce37cadd4c8e4b24c50bca1523810a8e1a295f6a5d1e13e9c6fff82",
+    "reference-study.json": "bbd509772fb744f31e0f273b119ef1a679fefa5adb260eb488ea5cfe30e243c3",
+    "style-contract.json": "51660ad2941aa5b29b3363f61c522ed01737821148b991f7a43af5bb163ce6ca"
+  },
+  "scope": "全七页生成前冻结",
+  "authority": "agent-authored direction; not user acceptance"
+}

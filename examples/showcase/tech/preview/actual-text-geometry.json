@@ -1,0 +1,1541 @@
+[
+  {
+    "slide": 1,
+    "name": "TextBox 3",
+    "text": "产品概念展示   /   01",
+    "box_pt": [
+      59.04,
+      44.64,
+      331.2,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      45.36,
+      176.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 4",
+    "text": "讯桥",
+    "box_pt": [
+      59.04,
+      102.24,
+      396.0,
+      51.84
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      102.96,
+      73.5,
+      37.93
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 5",
+    "text": "让知识\n有迹可循",
+    "box_pt": [
+      59.04,
+      156.96,
+      421.2,
+      97.2
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      157.68,
+      137.5,
+      78.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 7",
+    "text": "把团队知识，变成可追问的线索",
+    "box_pt": [
+      59.04,
+      300.96,
+      421.2,
+      60.48
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      301.68,
+      314.5,
+      26.08
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 8",
+    "text": "检索概念 · 引用可查 · 人来判断",
+    "box_pt": [
+      60.48,
+      380.88,
+      403.2,
+      38.88
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      381.6,
+      251.63,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 11",
+    "text": "虚构展示方案｜功能、流程与示例均为概念稿，不代表现有产品能力",
+    "box_pt": [
+      54.0,
+      505.44,
+      810.0,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      55.08,
+      506.16,
+      484.75,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 12",
+    "text": "01",
+    "box_pt": [
+      872.64,
+      504.0,
+      32.4,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      885.1,
+      504.72,
+      23.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.56
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 1",
+    "text": "01 / THE TENSION",
+    "box_pt": [
+      54.72,
+      30.24,
+      345.6,
+      20.16
+    ],
+    "rendered_text_bounds_pt": [
+      55.8,
+      30.96,
+      153.13,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 2",
+    "text": "团队难找的，常常不是答案",
+    "box_pt": [
+      54.72,
+      59.04,
+      842.4,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      55.8,
+      59.76,
+      393.5,
+      37.93
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 3",
+    "text": "更难的是找回当时的来源、版本与决策背景。",
+    "box_pt": [
+      56.16,
+      110.16,
+      799.2,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      110.88,
+      365.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 6",
+    "text": "上下文",
+    "box_pt": [
+      398.88,
+      203.04,
+      142.56,
+      46.8
+    ],
+    "rendered_text_bounds_pt": [
+      434.16,
+      212.21,
+      79.12,
+      28.45
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 7",
+    "text": "从哪里来？",
+    "box_pt": [
+      401.76,
+      250.56,
+      136.8,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      425.16,
+      251.28,
+      95.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 8",
+    "text": "「规范现行版是哪份？」",
+    "box_pt": [
+      68.4,
+      156.24,
+      277.2,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      69.48,
+      156.96,
+      226.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 9",
+    "text": "「为何调整交付节奏？」",
+    "box_pt": [
+      630.72,
+      151.2,
+      267.84,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      631.8,
+      151.92,
+      226.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 10",
+    "text": "「客户约束记在哪？」",
+    "box_pt": [
+      70.56,
+      336.96,
+      253.44,
+      40.32
+    ],
+    "rendered_text_bounds_pt": [
+      71.64,
+      337.68,
+      206.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 11",
+    "text": "资料分散于\n多个项目空间",
+    "box_pt": [
+      648.0,
+      327.6,
+      223.2,
+      63.36
+    ],
+    "rendered_text_bounds_pt": [
+      649.08,
+      328.32,
+      125.88,
+      48.91
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 16",
+    "text": "示意情境：找答案之前，先找回“这句话从哪里来”。",
+    "box_pt": [
+      70.56,
+      416.16,
+      784.8,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      71.64,
+      416.88,
+      460.88,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 18",
+    "text": "问题语句均为虚构情境，不代表用户访谈或产品实测结论",
+    "box_pt": [
+      54.0,
+      505.44,
+      810.0,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      55.08,
+      506.16,
+      404.75,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 19",
+    "text": "02",
+    "box_pt": [
+      872.64,
+      504.0,
+      32.4,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      885.1,
+      504.72,
+      23.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.56
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 1",
+    "text": "02 / THE CONCEPT",
+    "box_pt": [
+      54.72,
+      30.24,
+      345.6,
+      20.16
+    ],
+    "rendered_text_bounds_pt": [
+      55.8,
+      30.96,
+      156.29,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 2",
+    "text": "从问题走到原文，回答才有落点",
+    "box_pt": [
+      54.72,
+      59.04,
+      842.4,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      55.8,
+      59.76,
+      457.5,
+      37.93
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 3",
+    "text": "把检索结果做成可核对的线索，而不是封闭的结论。",
+    "box_pt": [
+      56.16,
+      110.16,
+      799.2,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      110.88,
+      419.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 4",
+    "text": "概念流程",
+    "box_pt": [
+      60.48,
+      147.6,
+      255.6,
+      26.64
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      148.32,
+      77.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 6",
+    "text": "01",
+    "box_pt": [
+      64.08,
+      187.2,
+      31.68,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      70.04,
+      190.68,
+      24.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 7",
+    "text": "提出问题",
+    "box_pt": [
+      113.76,
+      185.04,
+      255.6,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      114.84,
+      185.76,
+      86.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 8",
+    "text": "说清想找的决定",
+    "box_pt": [
+      113.76,
+      210.24,
+      255.6,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      114.84,
+      210.96,
+      131.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 11",
+    "text": "02",
+    "box_pt": [
+      64.08,
+      249.12,
+      31.68,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      70.04,
+      252.6,
+      24.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 12",
+    "text": "定位资料",
+    "box_pt": [
+      113.76,
+      246.96,
+      255.6,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      114.84,
+      247.68,
+      86.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 13",
+    "text": "限定项目和资料范围",
+    "box_pt": [
+      113.76,
+      272.16,
+      255.6,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      114.84,
+      272.88,
+      167.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 16",
+    "text": "03",
+    "box_pt": [
+      64.08,
+      311.04,
+      31.68,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      70.04,
+      314.52,
+      24.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 17",
+    "text": "展示出处",
+    "box_pt": [
+      113.76,
+      308.88,
+      255.6,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      114.84,
+      309.6,
+      86.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 18",
+    "text": "保留文件、段落与日期",
+    "box_pt": [
+      113.76,
+      334.08,
+      255.6,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      114.84,
+      334.8,
+      185.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 21",
+    "text": "04",
+    "box_pt": [
+      64.08,
+      372.96,
+      31.68,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      70.04,
+      376.44,
+      24.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 22",
+    "text": "回到原文",
+    "box_pt": [
+      113.76,
+      370.8,
+      255.6,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      114.84,
+      371.52,
+      86.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 23",
+    "text": "由团队成员核对适用性",
+    "box_pt": [
+      113.76,
+      396.0,
+      255.6,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      114.84,
+      396.72,
+      185.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 25",
+    "text": "概念界面 / 搜索示意",
+    "box_pt": [
+      404.64,
+      164.16,
+      194.4,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      405.72,
+      164.88,
+      149.88,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 27",
+    "text": "我们为什么选这个发布窗口？",
+    "box_pt": [
+      426.24,
+      210.96,
+      410.4,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      427.32,
+      211.68,
+      265.88,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 29",
+    "text": "相关线索  01",
+    "box_pt": [
+      408.96,
+      267.84,
+      116.64,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      410.04,
+      268.56,
+      110.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0.46,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 30",
+    "text": "项目复盘 · 决策纪要 · 2025.04",
+    "box_pt": [
+      408.96,
+      298.08,
+      428.4,
+      37.44
+    ],
+    "rendered_text_bounds_pt": [
+      410.04,
+      298.8,
+      287.5,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 32",
+    "text": "“发布日期需避开客户活动；上线窗口由项目负责人复核。”",
+    "box_pt": [
+      408.96,
+      355.68,
+      421.2,
+      46.8
+    ],
+    "rendered_text_bounds_pt": [
+      410.04,
+      356.4,
+      402.75,
+      44.02
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 33",
+    "text": "查看原文  →",
+    "box_pt": [
+      408.96,
+      411.84,
+      223.2,
+      23.76
+    ],
+    "rendered_text_bounds_pt": [
+      410.04,
+      412.56,
+      106.13,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 34",
+    "text": "资料范围：项目空间",
+    "box_pt": [
+      682.56,
+      411.12,
+      178.56,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      683.64,
+      411.84,
+      148.75,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 37",
+    "text": "概念界面与引用句均为虚构示例，不代表已有系统或能力",
+    "box_pt": [
+      54.0,
+      505.44,
+      810.0,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      55.08,
+      506.16,
+      404.75,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 38",
+    "text": "03",
+    "box_pt": [
+      872.64,
+      504.0,
+      32.4,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      885.1,
+      504.72,
+      23.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.56
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 1",
+    "text": "03 / THE FLOW",
+    "box_pt": [
+      54.72,
+      30.24,
+      345.6,
+      20.16
+    ],
+    "rendered_text_bounds_pt": [
+      55.8,
+      30.96,
+      126.18,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 2",
+    "text": "检索给出线索，判断仍由团队完成",
+    "box_pt": [
+      54.72,
+      59.04,
+      842.4,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      55.8,
+      59.76,
+      489.5,
+      37.93
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 3",
+    "text": "一条有用的路径，需要把范围、引用与人工核对连在一起。",
+    "box_pt": [
+      56.16,
+      110.16,
+      799.2,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      110.88,
+      473.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 6",
+    "text": "01",
+    "box_pt": [
+      98.64,
+      214.56,
+      48.96,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      113.25,
+      217.32,
+      24.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 7",
+    "text": "限定范围",
+    "box_pt": [
+      71.28,
+      277.2,
+      111.6,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      87.08,
+      277.92,
+      86.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 8",
+    "text": "项目 / 时间 / 权限",
+    "box_pt": [
+      52.56,
+      316.08,
+      147.6,
+      39.6
+    ],
+    "rendered_text_bounds_pt": [
+      53.86,
+      316.8,
+      150.37,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 4.08
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 10",
+    "text": "02",
+    "box_pt": [
+      300.24,
+      214.56,
+      48.96,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      314.85,
+      217.32,
+      24.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 11",
+    "text": "匹配片段",
+    "box_pt": [
+      272.88,
+      277.2,
+      111.6,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      288.68,
+      277.92,
+      86.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 12",
+    "text": "保留命中上下文",
+    "box_pt": [
+      254.16,
+      316.08,
+      147.6,
+      39.6
+    ],
+    "rendered_text_bounds_pt": [
+      264.96,
+      316.8,
+      131.37,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 14",
+    "text": "03",
+    "box_pt": [
+      504.0,
+      214.56,
+      48.96,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      518.6,
+      217.32,
+      24.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 15",
+    "text": "标出来源",
+    "box_pt": [
+      476.64,
+      277.2,
+      111.6,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      492.44,
+      277.92,
+      86.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 16",
+    "text": "文件 / 段落 / 日期",
+    "box_pt": [
+      457.92,
+      316.08,
+      147.6,
+      39.6
+    ],
+    "rendered_text_bounds_pt": [
+      459.22,
+      316.8,
+      150.37,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 4.07
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 18",
+    "text": "04",
+    "box_pt": [
+      708.48,
+      214.56,
+      48.96,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      723.09,
+      217.32,
+      24.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 19",
+    "text": "人工核对",
+    "box_pt": [
+      681.12,
+      277.2,
+      111.6,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      696.92,
+      277.92,
+      86.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 20",
+    "text": "回到原文再判断",
+    "box_pt": [
+      662.4,
+      316.08,
+      147.6,
+      39.6
+    ],
+    "rendered_text_bounds_pt": [
+      673.2,
+      316.8,
+      131.37,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 23",
+    "text": "上线前需要验证：资料权限是否正确？旧版本是否可辨？引用能否回到原文？",
+    "box_pt": [
+      80.64,
+      392.4,
+      784.8,
+      38.88
+    ],
+    "rendered_text_bounds_pt": [
+      81.72,
+      393.12,
+      685.88,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 25",
+    "text": "流程为产品设计假设，权限与来源能力尚未验证",
+    "box_pt": [
+      54.0,
+      505.44,
+      810.0,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      55.08,
+      506.16,
+      340.75,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 26",
+    "text": "04",
+    "box_pt": [
+      872.64,
+      504.0,
+      32.4,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      885.1,
+      504.72,
+      23.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.56
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 1",
+    "text": "04 / THE PILOT",
+    "box_pt": [
+      54.72,
+      30.24,
+      345.6,
+      20.16
+    ],
+    "rendered_text_bounds_pt": [
+      55.8,
+      30.96,
+      125.24,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 2",
+    "text": "先用一小组问题，设计可验证的试点",
+    "box_pt": [
+      54.72,
+      59.04,
+      842.4,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      55.8,
+      59.76,
+      521.5,
+      37.93
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 3",
+    "text": "先看边界是否清楚，再讨论效率或规模。",
+    "box_pt": [
+      56.16,
+      110.16,
+      799.2,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      110.88,
+      329.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 6",
+    "text": "01",
+    "box_pt": [
+      75.6,
+      220.32,
+      48.96,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      90.21,
+      221.04,
+      24.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 7",
+    "text": "范围",
+    "box_pt": [
+      74.16,
+      159.84,
+      100.8,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      75.24,
+      160.56,
+      41.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 8",
+    "text": "一个项目组",
+    "box_pt": [
+      74.16,
+      275.76,
+      175.68,
+      28.08
+    ],
+    "rendered_text_bounds_pt": [
+      75.24,
+      276.48,
+      106.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 9",
+    "text": "限定资料目录，\n确认访问人群",
+    "box_pt": [
+      74.16,
+      314.64,
+      180.0,
+      61.92
+    ],
+    "rendered_text_bounds_pt": [
+      75.24,
+      315.36,
+      131.38,
+      44.02
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 11",
+    "text": "02",
+    "box_pt": [
+      280.08,
+      220.32,
+      48.96,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      294.68,
+      221.04,
+      24.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 12",
+    "text": "观察",
+    "box_pt": [
+      278.64,
+      159.84,
+      100.8,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      279.72,
+      160.56,
+      41.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 13",
+    "text": "一批真实问题",
+    "box_pt": [
+      278.64,
+      275.76,
+      175.68,
+      28.08
+    ],
+    "rendered_text_bounds_pt": [
+      279.72,
+      276.48,
+      126.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 14",
+    "text": "记录来源命中、\n引用复核与误差",
+    "box_pt": [
+      278.64,
+      314.64,
+      180.0,
+      61.92
+    ],
+    "rendered_text_bounds_pt": [
+      279.72,
+      315.36,
+      131.38,
+      44.02
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 16",
+    "text": "03",
+    "box_pt": [
+      486.0,
+      220.32,
+      48.96,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      500.61,
+      221.04,
+      24.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 17",
+    "text": "复盘",
+    "box_pt": [
+      484.56,
+      159.84,
+      100.8,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      485.64,
+      160.56,
+      41.38,
+      21.34
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 18",
+    "text": "共同决定下一步",
+    "box_pt": [
+      484.56,
+      275.76,
+      175.68,
+      28.08
+    ],
+    "rendered_text_bounds_pt": [
+      485.64,
+      276.48,
+      146.0,
+      23.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 19",
+    "text": "核对权限与版本，\n修正后再决定扩展",
+    "box_pt": [
+      484.56,
+      314.64,
+      180.0,
+      61.92
+    ],
+    "rendered_text_bounds_pt": [
+      485.64,
+      315.36,
+      149.38,
+      44.02
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 21",
+    "text": "建议验证项\n非效果承诺",
+    "box_pt": [
+      660.96,
+      349.2,
+      208.8,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      720.36,
+      349.92,
+      95.38,
+      44.02
+    ],
+    "vertical_overflow_pt": 2.98,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 22",
+    "text": "讯桥｜把答案带回证据里",
+    "box_pt": [
+      68.4,
+      416.16,
+      792.0,
+      31.68
+    ],
+    "rendered_text_bounds_pt": [
+      69.48,
+      416.88,
+      248.5,
+      26.08
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 24",
+    "text": "虚构方案｜试点范围、指标与成效均待实际设计和验证",
+    "box_pt": [
+      54.0,
+      505.44,
+      810.0,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      55.08,
+      506.16,
+      388.75,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 25",
+    "text": "05",
+    "box_pt": [
+      872.64,
+      504.0,
+      32.4,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      885.1,
+      504.72,
+      23.5,
+      18.97
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.56
+  }
+]

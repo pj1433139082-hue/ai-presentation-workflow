@@ -1,0 +1,53 @@
+{
+  "version": "research-concepts-v2",
+  "selected_reference_ids": [
+    "R175",
+    "R341"
+  ],
+  "direction_actor": "agent",
+  "direction_reason": "按本地科研概念迭代任务，将已查看参考中的编辑层级与科学关系表达转译为本项目方向；不代表用户接受或正式品牌决定。",
+  "canvas": {
+    "aspect_ratio": "16:9"
+  },
+  "palette": {
+    "background": "#F6F2E9",
+    "primary_text": "#26231F",
+    "line": "#514A42",
+    "accent": "#A87548",
+    "accent_tint": "#E6D9CA"
+  },
+  "typography": {
+    "direction": "中文出版式排版，标题、结论、正文与页脚清楚分级；根据每页内容调整比例，不套固定网格。",
+    "text_color_rule": "正文、标题、页脚用墨黑；暖赭/浅铜只用于少量线条、节点或重点标记。"
+  },
+  "graphic_language": [
+    "精细二维线刻式科研示意图，使用清晰几何关系表达观察或计划。",
+    "可使用克制的微点纹理辅助层次，不让纹理干扰文字或数据。",
+    "以单一低饱和暖赭/浅铜做小面积强调；图表数值与文字保持墨黑。"
+  ],
+  "slide_roles": {
+    "S01": "卷首式研究问题",
+    "S02": "观察、解释与验证的证据层次",
+    "S03": "方法计划路线",
+    "S04": "唯一示例数据的大图",
+    "S05": "候选解释关系图",
+    "S06": "下一步行动路线"
+  },
+  "layout_policy": "逐页按叙事任务采用不同构图；保留不对称层级与留白，不套统一卡片、四列版式或重复模板。",
+  "avoid": [
+    "炫酷假3D、照片式水流、伪装成真实设备或实验现场的图像。",
+    "大红警告框、紫色渐变、商业品牌或软件界面元素。",
+    "四列卡片、密集手写讲义、多色分栏和整页信息墙。"
+  ],
+  "readability_profile": {
+    "font_floors_pt": {
+      "title": 38,
+      "key-takeaway": 26,
+      "body": 20,
+      "secondary": 18,
+      "caption": 16,
+      "source": 14
+    },
+    "minimum_contrast_ratio": 4.5
+  }
+}

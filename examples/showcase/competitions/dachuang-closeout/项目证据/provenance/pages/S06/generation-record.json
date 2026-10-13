@@ -1,0 +1,145 @@
+{
+  "slide_id": "S06",
+  "status": "generated",
+  "generator": "Codex built-in image_gen",
+  "generated_at_utc": "2026-10-13 13:21:49 UTC",
+  "prompt_path": "provenance/pages/S06/prompt.txt",
+  "prompt_sha256": "e4e9933b6a0822b41fd17079c2396e27b3482e0334a17fd7ecc5dd8451a1c305",
+  "input_snapshot_path": "provenance/pages/S06/input-snapshot.json",
+  "input_snapshot_sha256": "3c3c381ffcb6cb2870bae0dab7b542b7830aaa0c77ca78a065aea195310e60c7",
+  "contract_input_sha256": {
+    "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+    "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "copy_map": [
+    {
+      "id": "title",
+      "role": "title",
+      "text": "结论留有边界，后续先扩样再判断",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "takeaway",
+      "role": "key-takeaway",
+      "text": "本例仅提供研究线索，不能承诺普适效果。",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "scope1",
+      "role": "body",
+      "text": "样本范围｜单一虚构样地；6 次记录（5 完整、1 缺失）",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "scope2",
+      "role": "body",
+      "text": "对照范围｜2 类基质，各 3 次台架重复",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "limit",
+      "role": "body",
+      "text": "结论边界｜不足以支持普适性、实际改善或显著性判断",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "next1",
+      "role": "body",
+      "text": "后续建议｜扩展样地与降雨条件；统一观测条件",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "next2",
+      "role": "body",
+      "text": "重复对照，保留缺失与异常记录，再讨论维护价值",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "source",
+      "role": "source",
+      "text": "结题情境示例 · 后续建议非已批准计划",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "page",
+      "role": "page-number",
+      "text": "06 / 06",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    }
+  ],
+  "copy_map_sha256": "2abb8c9943df2fa37efd3fb6b173a0d3119d7d52fde9b5c159f07e687fb4d9c3",
+  "selected_reference_images": [
+    {
+      "reference_id": "RPROPOSAL-S01",
+      "path": "references/proposal-S01-style-anchor.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "actual_passed_reference_images": [],
+  "actual_tool_call": {
+    "request_type": "new full-page concept image",
+    "prompt_sha256": "e4e9933b6a0822b41fd17079c2396e27b3482e0334a17fd7ecc5dd8451a1c305",
+    "reference_images_passed": [],
+    "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-4df94a18-92c0-48c9-99eb-86e62f49690c.png",
+    "tool_output_sha256": "9f228b2825ebef099f76d5771cccc13814d3692c56a1464bdca02e8de9d9439f",
+    "tool_output_hint": "Generated image saved by Codex built-in image_gen; original retained."
+  },
+  "output_path": "concepts/S06.png",
+  "output_sha256": "9f228b2825ebef099f76d5771cccc13814d3692c56a1464bdca02e8de9d9439f",
+  "design_copy_path": "design/S06/concept.png",
+  "design_copy_sha256": "9f228b2825ebef099f76d5771cccc13814d3692c56a1464bdca02e8de9d9439f",
+  "image_dimensions_px": {
+    "width": 1672,
+    "height": 941,
+    "aspect_ratio": "1672:941"
+  },
+  "history": [
+    {
+      "attempt": 1,
+      "status": "generated",
+      "prompt_sha256": "e4e9933b6a0822b41fd17079c2396e27b3482e0334a17fd7ecc5dd8451a1c305",
+      "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-4df94a18-92c0-48c9-99eb-86e62f49690c.png",
+      "tool_output_sha256": "9f228b2825ebef099f76d5771cccc13814d3692c56a1464bdca02e8de9d9439f",
+      "output_sha256": "9f228b2825ebef099f76d5771cccc13814d3692c56a1464bdca02e8de9d9439f",
+      "note": "Initial generation; tool output was copied without modification."
+    }
+  ],
+  "agent_inspection": {
+    "reviewed_page": "S06",
+    "finding": "The finite scope, limited record counts, conclusion boundary, and proposed next steps are legible and separated visually. The page says it cannot promise generalizable effects and labels the follow-up suggestions as not yet approved."
+  }
+}

@@ -1,0 +1,9 @@
+Use case: background-extraction
+Asset type: one independently movable, scalable transparent PNG product illustration
+Input images: Image 1 is the full original S01 concept and establishes the exact product appearance, lighting, and relative scale. Image 2 is the existing transparent device cutout and is the closest product-identity reference.
+Primary request: Rebuild only the desktop knowledge-collaboration terminal as one clean isolated object on genuine transparency.
+Subject: Preserve the same wide smoked-glass display, three-quarter perspective, rounded black bezel, low brushed-aluminum dock, right circular control, display proportions, screen perspective, floating abstract document cards, and luminous blue/coral network lines visible inside the screen. Keep the internal screen illustration as part of this single device object.
+Edit instructions: Remove all exterior Chinese cover text, the studio background, horizon, floor, floor reflection, contact shadow, and every external glow patch. Retain the blue and coral light only as physical reflections and rim lighting on the device. Clean the prior cutout's red/blue fringe outside the physical silhouette without changing the silhouette or removing the colored rim light on its inside edge.
+Composition/framing: Preserve the original full terminal and all hardware, including the right circular control. Center it with generous transparent padding. Do not crop any part.
+Materials/textures: Smoked reflective glass, crisp polished dark bezel, brushed silver aluminum, subtle blue edge light on the left and coral rim reflections on the right; retain the source's refined product-render finish.
+Constraints: Outside the complete device silhouette, pixels must be genuinely transparent, not black, white, gray, or checkerboard. One standalone device only. No extra shadow plane, environment, floor, text, logo, frame, watermark, parts, or objects. Do not redesign or simplify the device.

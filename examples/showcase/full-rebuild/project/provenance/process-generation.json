@@ -1,0 +1,27 @@
+{
+  "generatedAtUtc": "2026-10-12T15:25:30.552Z",
+  "tool": "Codex built-in image_gen.imagegen",
+  "editTarget": {
+    "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\industry-explorations\\A-process\\mechanism-余热回用-概念.png",
+    "sha256": "337EF5EC2615899852F05287D64C3F9AD0F9E8BDF7A1C5993E1DCF2CDC1E5BE4",
+    "modified": false
+  },
+  "output": {
+    "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\hybrid-sampler\\assets\\process-equipment.png",
+    "generatedOriginalPath": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-44baa057-0144-46d8-b98f-6311fa938ca9.png",
+    "sha256": "059ceceb695caf9f97d84d58d718006fd4eb606e445d8d0879801d2a8411ad2a",
+    "format": "PNG",
+    "mode": "RGBA",
+    "dimensionsPx": [
+      1672,
+      941
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "alphaZeroPixels": 985193,
+    "alphaNonzeroPixels": 588159
+  },
+  "prompt": "Image 1 is the exact edit target. Extract and preserve ONLY the five existing industrial equipment units as one transparent PNG scene. Keep their original machine forms, metallic materials, approximate scale, and relative positions in the same wide landscape arrangement:\n1) heating furnace at upper left,\n2) production machine/line at upper center,\n3) exhaust tower at upper right,\n4) heat-recovery vessel and pump assembly at lower middle,\n5) heat exchanger at lower right.\n\nPreserve the equipment silhouettes and useful internal details, including small pipes that belong to a machine itself, brackets, legs, and structural supports. Keep the same left-to-right, upper-row/lower-row placement and spacing so this scene can later be assembled with separate editable native connector lines. Do not merge any of the five units.\n\nRemove completely:\n- every word, title, subtitle, label, numbered caption, badge, and all typography;\n- the entire off-white paper background, floor plane, grid, drafting lines, blueprint sketches, and all background texture;\n- every glowing orange or cyan flow path, arrow, glow, and connecting pipe between separate equipment units;\n- any other line, pipe, tube, cable, or route that bridges one equipment unit to another.\n\nThere must be clear transparent gaps between all five separate units, with no inter-device connections whatsoever. Do not invent replacement flow arrows, connectors, hoses, pipes, labels, scenery, or extra equipment. Keep only the original five equipment subjects.\n\nOutput as one genuine transparent-background PNG with alpha transparency. Preserve clean, finely antialiased edges around the metal equipment; no solid fill, white matte, paper, grid, common background, frame, or text. A very subtle local contact shadow attached beneath an individual machine is acceptable only if the surrounding pixels remain truly transparent. The final result is an isolated group of five unconnected machines, not a complete process diagram."
+}

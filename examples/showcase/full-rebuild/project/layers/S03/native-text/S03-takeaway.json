@@ -1,0 +1,24 @@
+{
+  "id": "S03-takeaway",
+  "role": "text",
+  "representation": "native",
+  "type": "text",
+  "text": "机理判断仍需重复与对照。",
+  "bbox": [
+    1209,
+    398,
+    452,
+    59
+  ],
+  "z": 30,
+  "font_family": "Noto Sans SC",
+  "font_size_px": 37,
+  "font_weight": 500,
+  "color": "#001e46",
+  "text_align": "left",
+  "line_height": 1.46,
+  "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+  "file": "components/takeaway.json",
+  "semantic_role": "text",
+  "path": "layers/S03/native-text/S03-takeaway.json"
+}

@@ -1,0 +1,19 @@
+{
+  "slide_id": "S05",
+  "actor": "root",
+  "prepared_at": "2026-10-13T01:51:04.261328+08:00",
+  "snapshot": {
+    "snapshot_type": "pre-concept-generation-inputs",
+    "created_at": "2026-10-13T01:48:26+08:00",
+    "inputs": {
+      "brief.json": "7b009b1dafc976b1f71aace05613f4d5aab55254f634e57a4858d3af466db046",
+      "deck-spec.json": "297700de30467546431014256c5f378ec6bf228c94e4eb4047172114124658d2",
+      "reference-study.json": "9962ab5b65f307f55f8fed2af43dd812ea9e5a703b47fe25930b14af4a661acf",
+      "style-contract.json": "e09f06ff66335a425c17fa6b18805757d9a95dc20f434c3369c2a486eca3d6a9"
+    },
+    "scope": "四项当前概念输入在 S02-S05 概念生成前冻结；S01 封面为既有成图，历史生成使用其单独保存的旧提示词与记录。",
+    "authority": "agent-authored-project-direction; not user visual acceptance or a human gate",
+    "generation_log": "partial; S01 imported, S02-S05 not generated"
+  },
+  "generation_status": "not-started"
+}

@@ -1,0 +1,15 @@
+Create a replacement for page 6 of a fictional engineering proposal. ONE single 16:9 landscape slide, with no reference images attached. Follow the project's written style direction: premium industrial engineering editorial, charcoal / graphite / midnight navy, cool white type, concrete gray, one restrained amber route line. This is a designed concept slide, not documentary evidence.
+
+Render only this exact Simplified Chinese copy:
+large title: “筛查只给线索，不替代工程判断”
+large takeaway: “从标注试件走向受控现场验证，证据仍未形成。”
+boundary statement: “边界｜只讨论可见表面，不推断内部缺陷”
+next step: “下一步｜复测漏标、误报与能耗”
+later step: “再下一步｜在受控条件下开展现场试验”
+footer: “概念计划 · 尚未执行”
+
+Composition: an elegant closing engineering plate with a compact, plainly mechanical fictional sensor on the left of a bridge-deck surface cross-section; only a surface cue is illuminated, while the deeper opaque interior is deliberately shown as unknown. From the surface sample, a thin amber open route line moves through a small abstract marked specimen toward a simplified future bridge-test outline. The route remains visibly unfinished, with open circles rather than checkmarks. Make the boundary and proposed next steps easy to read; use different spatial zones connected by the single route line, not cards.
+
+The device must be an ordinary compact metal inspection carriage with a small lens and guide wheels. It must not resemble a person, animal, mascot, toy, robot, penguin, or character. No figures or faces at all. Do not attach any object to a character. No cute styling.
+
+Keep every line of Chinese copy exact and comfortably legible at original size. Leave calm negative space between the big title, takeaway, boundary, two steps, and footer. No charts, data, performance numbers, measurements, awards, brands, logos, school names, patents, real bridges, or evidence photos. Do not imply that any experiment, field trial, safety judgement, or deployment has already occurred.

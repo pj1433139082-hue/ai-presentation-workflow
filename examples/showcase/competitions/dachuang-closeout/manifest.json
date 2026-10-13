@@ -1,0 +1,27 @@
+{
+  "id": "dachuang-closeout",
+  "label": "大创结题答辩",
+  "page_count": 6,
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "delivery_mode": "concept",
+  "concept_hashes": {
+    "S01": "fb759ca0d909c309e739eab49ae536a890f2b6c1c7ed4a5807a7e6da7ae51ab4",
+    "S02": "1acd5b4da7a42728b7284bdc6227de975ad293325f9b95a81f1b96750bb1cc89",
+    "S03": "f59d6fb2e31f18426b34e8c9d230ec68480b5e553e27c102b885bc6940076ce9",
+    "S04": "2d625db4410627387909851e265c07bd3c19dd76c16fea7faf2a9336a01cdd6d",
+    "S05": "6657c5da75f1fbc29000f02862a8355598be8ec6f10db72c9d3ac09d4d30ae19",
+    "S06": "9f228b2825ebef099f76d5771cccc13814d3692c56a1464bdca02e8de9d9439f"
+  },
+  "review_sha256": "cf0ae5bc5d9bb506df32efe21f52dff4b0413b3b71411c85f5be69714838fa42",
+  "archive_sha256": "d44b4c2aa879854bf50ce4d63ae9f35eaef9c9aa7a7d3898df4cd08c1ade159f",
+  "export_verified": true,
+  "user_visual_acceptance": "not-recorded",
+  "pptx": "not-requested"
+}

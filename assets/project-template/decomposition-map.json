@@ -1,0 +1,61 @@
+{
+  "version": "v1",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "concept_path": "concepts/contentful/S01-v1.png",
+      "concept_sha256": "replace-with-current-g4-approved-concept-sha256",
+      "master_path": "components/masters/S01-v1.png",
+      "master_sha256": "replace-with-current-textless-master-sha256",
+      "items": [
+        {
+          "id": "D01",
+          "kind": "visual",
+          "inventory_pass": "semantic",
+          "label": "one independently movable visual object",
+          "role": "arrow",
+          "source_class": "design-object",
+          "bbox": [0.55, 0.25, 0.25, 0.2],
+          "z": 1,
+          "instance_id": "I01",
+          "component_id": "C01",
+          "treatment": "reconstruct-single",
+          "occlusion": "none",
+          "overlaps": [],
+          "crop_padding": [0.01, 0.01, 0.01, 0.01],
+          "contains_ordinary_text_or_data": false,
+          "text_data_decision": "none"
+        },
+        {
+          "id": "D02",
+          "kind": "fill-slot",
+          "inventory_pass": "semantic",
+          "label": "editable slide title",
+          "role": "ordinary-text",
+          "bbox": [0.1, 0.1, 0.35, 0.1],
+          "fill_slot_id": "F01",
+          "treatment": "editable"
+        }
+      ],
+      "review_image": {
+        "path": "reviews/S01-decomposition-v1.png",
+        "sha256": "replace-after-rendering-numbered-review",
+        "reviewed_concept_sha256": "replace-with-current-g4-approved-concept-sha256",
+        "reviewed_items_sha256": "replace-after-rendering-current-item-inventory",
+        "display_scale_percent": 100
+      },
+      "review_packet": {
+        "path": "reviews/S01-decomposition-v1.md",
+        "sha256": "replace-after-rendering-readable-list",
+        "reviewed_items_sha256": "replace-after-rendering-current-item-inventory"
+      },
+      "coverage_review": {
+        "reviewer": "replace-after-human-review",
+        "semantic_passed": false,
+        "residual_passed": false,
+        "independence_passed": false,
+        "missing_items": []
+      }
+    }
+  ]
+}

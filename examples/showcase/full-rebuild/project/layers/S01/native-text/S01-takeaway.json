@@ -1,0 +1,27 @@
+{
+  "id": "S01-takeaway",
+  "role": "text",
+  "text": "让每次讨论，都接得上下一步。",
+  "bbox": [
+    100,
+    516,
+    510,
+    35
+  ],
+  "z": 6,
+  "font_size": 36,
+  "letter_spacing_px": 0,
+  "color": "#C7DCF4",
+  "representation": "native",
+  "font_family": "Microsoft YaHei UI",
+  "font_size_unit": "px",
+  "font_weight": 400,
+  "alignment": "left",
+  "truth_status": "illustrative",
+  "semantic_role": "key-takeaway",
+  "type": "text",
+  "font_size_px": 36,
+  "path": "layers/S01/native-text/S01-takeaway.json",
+  "line_height": 1.1,
+  "text_align": "left"
+}

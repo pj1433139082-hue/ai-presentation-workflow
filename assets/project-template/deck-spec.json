@@ -10,6 +10,7 @@
       "id": "S01",
       "title": "Replace with an action title",
       "message": "Replace with one audience-relevant message.",
+      "speaker_notes": "",
       "concept_path": "concepts/contentful/S01-v1.png",
       "components": ["C01"],
       "composition": {
@@ -31,13 +32,27 @@
         {
           "id": "F01",
           "kind": "ordinary-text",
-          "bbox": [0.1, 0.1, 0.35, 0.1],
+          "bbox": [0.05, 0.05, 0.70, 0.13],
           "intended_content": "editable slide title"
+        },
+        {
+          "id": "F02",
+          "kind": "ordinary-text",
+          "bbox": [0.05, 0.88, 0.62, 0.08],
+          "content": "Replace with one concise key takeaway"
+        },
+        {
+          "id": "F03",
+          "kind": "ordinary-text",
+          "bbox": [0.74, 0.88, 0.21, 0.08],
+          "content": "Source or status boundary"
         }
       ],
       "readability": {
         "text_regions": [
-          {"fill_slot_id": "F01", "role": "action-title", "planned_font_pt": 36, "line_count": 1}
+          {"fill_slot_id": "F01", "role": "action-title", "font_role": "action-title", "planned_font_pt": 36, "line_count": 1},
+          {"fill_slot_id": "F02", "role": "key-caption", "font_role": "key-takeaway", "planned_font_pt": 22, "line_count": 1},
+          {"fill_slot_id": "F03", "role": "source-qualifier", "font_role": "status-qualifier", "planned_font_pt": 16, "line_count": 1}
         ],
         "main_visual": {"kind": "illustration", "bbox": [0.50, 0.24, 0.40, 0.50]},
         "exception": null,
@@ -49,6 +64,11 @@
           "sha256": "replace with full-size review image SHA-256",
           "reviewed_concept_sha256": "replace with approved contentful concept SHA-256"
         }
+      },
+      "semantic_design": {
+        "region_slots": {"page-title": "F01", "key-statement": "F02", "status-qualifier": "F03"},
+        "frame_instances": [],
+        "exceptions": []
       },
       "citations": [],
       "accessibility_notes": []

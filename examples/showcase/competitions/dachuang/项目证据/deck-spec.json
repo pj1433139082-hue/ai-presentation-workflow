@@ -1,0 +1,484 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "雨序",
+      "message": "校园雨水花园观察与优化",
+      "concept_path": "concepts/S01.png",
+      "reference_ids": [
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "雨序",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "校园雨水花园观察与优化",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line1",
+          "role": "body",
+          "text": "大创 · 创新训练项目立项答辩",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line2",
+          "role": "body",
+          "text": "从一次降雨，读懂一处校园微环境。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line3",
+          "role": "source",
+          "text": "虚构项目示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "仅为虚构项目立项提案。所有计划与预算是示例，无真实调查或实测结果。"
+    },
+    {
+      "id": "S02",
+      "title": "雨落之后，水去了哪里？",
+      "message": "把校园积水观察转化为一项可执行的研究。",
+      "concept_path": "concepts/S02.png",
+      "reference_ids": [
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "雨落之后，水去了哪里？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "把校园积水观察转化为一项可执行的研究。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line1",
+          "role": "body",
+          "text": "观察对象｜校园雨水花园",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line2",
+          "role": "body",
+          "text": "研究边界｜汇流、滞留与维护",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line3",
+          "role": "body",
+          "text": "问题来源｜拟开展现场观察",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line4",
+          "role": "source",
+          "text": "场景示意 · 非实地调查",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "仅为虚构项目立项提案。所有计划与预算是示例，无真实调查或实测结果。"
+    },
+    {
+      "id": "S03",
+      "title": "把问题写成可检验的目标",
+      "message": "先定义比较条件，再讨论改善。",
+      "concept_path": "concepts/S03.png",
+      "reference_ids": [
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把问题写成可检验的目标",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "先定义比较条件，再讨论改善。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line1",
+          "role": "body",
+          "text": "目标一｜记录降雨后水位变化",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line2",
+          "role": "body",
+          "text": "目标二｜比较两种基质的入渗表现",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line3",
+          "role": "body",
+          "text": "目标三｜提出维护与优化建议",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line4",
+          "role": "body",
+          "text": "对照设计｜同容器、同水量、同记录间隔",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line5",
+          "role": "source",
+          "text": "研究设计示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "仅为虚构项目立项提案。所有计划与预算是示例，无真实调查或实测结果。"
+    },
+    {
+      "id": "S04",
+      "title": "一场降雨，一份可追溯记录",
+      "message": "把现场、条件和读数留在同一条证据链上。",
+      "concept_path": "concepts/S04.png",
+      "reference_ids": [
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "一场降雨，一份可追溯记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "把现场、条件和读数留在同一条证据链上。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line1",
+          "role": "body",
+          "text": "样地观察 → 条件记录 → 定时读数 → 比较分析",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line2",
+          "role": "body",
+          "text": "记录字段｜时间、降雨、基质、水位",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line3",
+          "role": "body",
+          "text": "异常记录｜溢流、堵塞、缺失读数",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line4",
+          "role": "source",
+          "text": "方法方案示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "仅为虚构项目立项提案。所有计划与预算是示例，无真实调查或实测结果。"
+    },
+    {
+      "id": "S05",
+      "title": "先把条件准备好",
+      "message": "分工、资源和范围一起落实。",
+      "concept_path": "concepts/S05.png",
+      "reference_ids": [
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "先把条件准备好",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "分工、资源和范围一起落实。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line1",
+          "role": "body",
+          "text": "分工｜样地记录、装置搭建、数据整理、报告撰写",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line2",
+          "role": "body",
+          "text": "资源｜容器、基质、标尺与记录表",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line3",
+          "role": "body",
+          "text": "预算假设｜材料 1200元；工具 800元；调研 500元",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line4",
+          "role": "body",
+          "text": "拟申请支持｜样地许可与方法指导",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line5",
+          "role": "source",
+          "text": "资源与预算示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "仅为虚构项目立项提案。所有计划与预算是示例，无真实调查或实测结果。"
+    },
+    {
+      "id": "S06",
+      "title": "十二周，把观察变成报告",
+      "message": "每一步都对应一个可检查的输出。",
+      "concept_path": "concepts/S06.png",
+      "reference_ids": [
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "十二周，把观察变成报告",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "每一步都对应一个可检查的输出。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line1",
+          "role": "body",
+          "text": "第1—2周｜样地确认与方案细化",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line2",
+          "role": "body",
+          "text": "第3—5周｜装置搭建与预观察",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line3",
+          "role": "body",
+          "text": "第6—9周｜降雨记录与对照观察",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line4",
+          "role": "body",
+          "text": "第10—12周｜分析、建议与报告",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line5",
+          "role": "source",
+          "text": "进度计划示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "仅为虚构项目立项提案。所有计划与预算是示例，无真实调查或实测结果。"
+    },
+    {
+      "id": "S07",
+      "title": "以可核查的成果收尾",
+      "message": "结题回到目标，解释结果与限制。",
+      "concept_path": "concepts/S07.png",
+      "reference_ids": [
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "以可核查的成果收尾",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "结题回到目标，解释结果与限制。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line1",
+          "role": "body",
+          "text": "预计成果｜观察记录、对照数据、优化建议、研究报告",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line2",
+          "role": "body",
+          "text": "风险｜降雨不足、装置误差、样地许可延迟",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line3",
+          "role": "body",
+          "text": "应对｜延长观察、校准工具、缩小研究范围",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line4",
+          "role": "source",
+          "text": "成果目标示例 · 尚无实测结论",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "仅为虚构项目立项提案。所有计划与预算是示例，无真实调查或实测结果。"
+    }
+  ]
+}

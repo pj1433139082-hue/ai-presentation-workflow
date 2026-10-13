@@ -1,0 +1,51 @@
+{
+  "call_id": "S01-reflection-02",
+  "item_id": "device-floor-reflection",
+  "tool": "Codex built-in image_gen",
+  "operation": "edit / transparent reflection-light reconstruction",
+  "prompt_path": "attempts/S01-reflection-02.prompt.txt",
+  "prompt_sha256": "db960d431999b2fe5618211f3b29ba114ef4f694c7b11061537166ae06096654",
+  "references": [
+    {
+      "role": "edit target and source color/placement",
+      "sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+      "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\delivery-modes\\assets-three\\concepts\\S01.png",
+      "index": 1
+    }
+  ],
+  "num_last_images_to_include": 1,
+  "transparent_background_requested": true,
+  "imagegen_original_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1360c-0feb-76f1-bf15-2ea32830cb09\\exec-6c0842b7-80a2-4948-9c9f-618578bd2361.png",
+  "imagegen_original_sha256": "5f1db4147c6d3d20b6ad3ba3eb6381503e8d0c142e1f1f0415d4bf4a090e673a",
+  "attempt_path": "attempts/S01-reflection-02.png",
+  "attempt_sha256": "5f1db4147c6d3d20b6ad3ba3eb6381503e8d0c142e1f1f0415d4bf4a090e673a",
+  "accepted_asset_path": "assets/floor-reflection.png",
+  "accepted_asset_sha256": "5f1db4147c6d3d20b6ad3ba3eb6381503e8d0c142e1f1f0415d4bf4a090e673a",
+  "source_concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+  "dimensions_px": [
+    2203,
+    714
+  ],
+  "pixel_format": "Format32bppArgb",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_counts": {
+    "fully_transparent": 1090186,
+    "low_alpha_1_to_7": 95451,
+    "partial_alpha_8_to_254": 387305,
+    "opaque": 0
+  },
+  "visible_alpha_ge_8_bbox_xyxy": [
+    298,
+    366,
+    2010,
+    665
+  ],
+  "alpha_ge_8_touching_canvas_edge": 0,
+  "candidate_selected": true,
+  "formal_isolation_review_passed": false,
+  "user_accepted": false,
+  "inspection": "Actual image_gen output displayed; selected because it is a clean soft blue/coral oval on transparency with no floor plane or horizon. Alpha metadata measured read-only."
+}

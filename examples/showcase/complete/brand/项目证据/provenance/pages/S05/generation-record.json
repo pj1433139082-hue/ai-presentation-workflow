@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "slide_id": "S05",
+  "artifact_kind": "generated-concept",
+  "actor": "agent",
+  "recorded_at_utc": "2026-10-13T00:47:47.6164124Z",
+  "generator": {
+    "mode": "generate",
+    "tool": "built-in image_gen",
+    "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-364069af-6ad8-40b6-9b54-2d84126cec4e.png",
+    "original_output_sha256": "31C9A49B8BF692DC8DB61D5FD80E018B26444BE477DC1127778B1D4AC1B89623"
+  },
+  "prompt": {
+    "path": "prompt.txt",
+    "sha256": "94925D5ABC667367AD2991BAB566510C1D8A678EAF10E53B165BBF2572895CE8"
+  },
+  "input_snapshot": {
+    "sha256": "92E14EE6A86F335956F42319AE0DB0942F865A696260E0A19209A3BD078B085B",
+    "path": "../../project/provenance/concept-input-hash-snapshot.json",
+    "inputs": {
+      "brief.json": "64b99eca979368c119f8f900a9cb4a0f345ef6865651a7bf096cdc9e1ba3251f",
+      "deck-spec.json": "6d6ea3fe6c71d8ac5adb3d264421dc9cd9adddd9ff36931576252524115f92d9",
+      "reference-study.json": "06ea7fa3cfc50b7adfd07f90750a190c6b61a8d04337fab4a2158ad9371d90cf",
+      "style-contract.json": "16927aeadcf293a3ef807847841c53749e4bbe736bfdfb99f61dae9a217eab30"
+    }
+  },
+  "references": [
+    {
+      "sha256": "9FB9EE495BDE2456FE4B43C5CF9E4D5EFEC4912A351B6A964D9800059B12EF8C",
+      "path": "../../project/concepts/S01.png",
+      "role": "style and internal project reference",
+      "id": "BRAND-S01"
+    },
+    {
+      "sha256": "98602C5EE9033E5D80C656ABC5409391B181F4D207F43E404D49A1057A2034CE",
+      "path": "../../project/references/case362.jpg",
+      "role": "analyzed external visual reference",
+      "id": "R362"
+    }
+  ],
+  "output": {
+    "width_px": 1672,
+    "copies": [
+      {
+        "path": "concept.png",
+        "sha256": "31C9A49B8BF692DC8DB61D5FD80E018B26444BE477DC1127778B1D4AC1B89623"
+      },
+      {
+        "path": "../../project/concepts/S05.png",
+        "sha256": "31C9A49B8BF692DC8DB61D5FD80E018B26444BE477DC1127778B1D4AC1B89623"
+      }
+    ],
+    "height_px": 941,
+    "copies_are_byte_identical": true
+  },
+  "visual_acceptance": "not claimed; concept-only local showcase artifact"
+}

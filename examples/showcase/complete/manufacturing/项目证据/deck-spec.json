@@ -1,0 +1,361 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "余热回用，从匹配开始",
+      "message": "先看热源与用热是否同时、适配。",
+      "concept_path": "concepts/S01.png",
+      "reference_ids": [
+        "R70"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "余热回用，从匹配开始",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "subtitle",
+          "role": "secondary",
+          "text": "制造业余热回收 · 概念示意",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "先看热源与用热是否同时、适配。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "虚构方案 · 非现场工程设计",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        }
+      ],
+      "speaker_notes": "开场只提出流程匹配的概念问题，不是某家工厂的节能方案或工程建议。"
+    },
+    {
+      "id": "S02",
+      "title": "先问四件事，再谈是否匹配",
+      "message": "热源、用热点、时间与距离需要放在一起看。",
+      "concept_path": "concepts/S02.png",
+      "reference_ids": [
+        "R70"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "先问四件事，再谈是否匹配",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "热源、用热点、时间与距离需要放在一起看。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "source_q",
+          "role": "body",
+          "text": "热源：热量来自哪一段？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "use_q",
+          "role": "body",
+          "text": "用热点：哪里同时需要热？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "time_q",
+          "role": "body",
+          "text": "时间：供给与需求何时重叠？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "distance_q",
+          "role": "body",
+          "text": "距离：连接条件是否允许？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "示例分析框架 · 需现场资料验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        }
+      ],
+      "speaker_notes": "这是供讨论的非定量提问框架，不包含任何现场测量、设备规格或匹配结论。"
+    },
+    {
+      "id": "S03",
+      "title": "把损失，接回流程。",
+      "message": "先找到稳定热源，再匹配同时发生的用热需求。",
+      "concept_path": "concepts/S03.png",
+      "reference_ids": [
+        "R70"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把损失，接回流程。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "先找到稳定热源，再匹配同时发生的用热需求。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "heat",
+          "role": "body",
+          "text": "加热",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "production",
+          "role": "body",
+          "text": "生产",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "exhaust",
+          "role": "body",
+          "text": "排热",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "reuse",
+          "role": "body",
+          "text": "回用",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "exchange",
+          "role": "body",
+          "text": "换热",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "流程为机制示意，不构成工程设计参数。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        }
+      ],
+      "speaker_notes": "复用先前已生成的机制示意页；其工业设备与管线为AI概念插图，不能作为真实现场证据或工程设计图。"
+    },
+    {
+      "id": "S04",
+      "title": "按步骤验证可行性",
+      "message": "现场资料先行，方案须经专业复核。",
+      "concept_path": "concepts/S04.png",
+      "reference_ids": [
+        "R70"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "按步骤验证可行性",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "现场资料先行，方案须经专业复核。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "step1",
+          "role": "body",
+          "text": "梳理可用热源和目标用热点",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "step2",
+          "role": "body",
+          "text": "核对供给与需求的时间关系",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "step3",
+          "role": "body",
+          "text": "初选换热路径并检查接口条件",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "step4",
+          "role": "body",
+          "text": "由专业团队复核安全与运维",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "方法建议 · 尚未用于真实工厂",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        }
+      ],
+      "speaker_notes": "步骤是概念提案的检查顺序，不代表已完成现场调查或已制定施工方案。"
+    },
+    {
+      "id": "S05",
+      "title": "用现场证据决定下一步",
+      "message": "概念流程不能替代现场测量与工程评审。",
+      "concept_path": "concepts/S05.png",
+      "reference_ids": [
+        "R70"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "用现场证据决定下一步",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "概念流程不能替代现场测量与工程评审。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "check1",
+          "role": "body",
+          "text": "确认热源与用热时段",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "check2",
+          "role": "body",
+          "text": "核对必要参数与系统边界",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "check3",
+          "role": "body",
+          "text": "检查安全、空间与维护条件",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "check4",
+          "role": "body",
+          "text": "专业评审后再决定是否试点",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "验证路径建议 · 尚未执行",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-HEAT-REUSE-MECHANISM"
+          ]
+        }
+      ],
+      "speaker_notes": "项目没有真实工厂数据、工程方案、施工/安全审查或收益评估。参数类别只作为后续资料核对提示，不提供虚构数值。"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "apw-concept-generation-record/v1",
+  "slide_id": "S01",
+  "artifact_kind": "standalone-slide-concept",
+  "actor": "agent",
+  "tool": "Codex built-in image_gen",
+  "tool_call": "image_gen.imagegen",
+  "operation": "generate",
+  "generated_at": "2026-10-13T08:40:11+08:00",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-57f8-7b41-8255-833b48138fbc\\exec-7cfae582-b794-41b8-ac4c-48207bd0997a.png",
+  "original_output_sha256": "1c88e913c65f1fe6bacc8b4d395ee7bf7b2046aff44ad93b6b33589f6c51008b",
+  "output_path": "concepts/S01.png",
+  "output_sha256": "1c88e913c65f1fe6bacc8b4d395ee7bf7b2046aff44ad93b6b33589f6c51008b",
+  "dimensions_px": [
+    1672,
+    941
+  ],
+  "format": "PNG",
+  "design_concept_path": "concept.png",
+  "design_concept_sha256": "1c88e913c65f1fe6bacc8b4d395ee7bf7b2046aff44ad93b6b33589f6c51008b",
+  "prompt_path": "provenance/pages/S01/prompt.txt",
+  "prompt_sha256": "a53b40771cd1abaf9d7af3d77f619d9a3dbbf69769c39b883e79ede7b4de4566",
+  "prompt": "Use case: productivity-visual\nAsset type: one complete 16:9 Chinese concept slide for a local showcase presentation.\nScene/backdrop: warm ivory technical-paper atmosphere with a quiet, abstract manufacturing context; no identifiable factory or real site.\nSubject: a clear concept of waste heat finding a possible next use, expressed as a visual relationship rather than engineering drawing.\nStyle/medium: polished editorial engineering explainer, fine technical linework, dimensional accents used sparingly, warm and cool route colors from the frozen style contract.\nComposition/framing: a confident opening page with strong Chinese headline hierarchy and a single open process motif; do not copy the reused S03 pipe-loop composition.\nText (verbatim; render each line exactly once, with no other words): “余热回用，从匹配开始” “制造业余热回收 · 概念示意” “先看热源与用热是否同时、适配。” “虚构方案 · 非现场工程设计”\nConstraints: all text is a fictional, non-quantified proposal. Keep every line legible and correctly spelled. Do not suggest a specific plant, equipment design, implementation, measured benefit, or engineering feasibility.\nAvoid: temperatures, pressure, flow values, dimensions, efficiency, savings, cost, timelines, plant names, logos, fake technical labels, extra text, dashboard cards, or watermark.",
+  "input_snapshot_path": "provenance/concept-input-hash-snapshot.json",
+  "input_sha256": {
+    "brief.json": "6bde1d583820bf88222c9cf0baad6e4a5f3a79493a8d757b097ba60d1a9d2a05",
+    "deck-spec.json": "b689def7a5a464bab2448bbcff8028ea61730ec3d64379325a7d51b97c88e5a6",
+    "reference-study.json": "afc11e8f463627a2cc0f829031bc528df3477a2a065edbcfdc760e1ba5cb3286",
+    "style-contract.json": "85531d12b12559dff5ea3e28fe74be83bbaf917013f0c08b3f5337afc05e7688"
+  },
+  "input_snapshot_for_this_slide_sha256": "8c2a50f54a76adea2a01003d4d6af56737f280686e931d515ccb129c80b33f06",
+  "reference_ids_in_project_contract": [
+    "R70"
+  ],
+  "direct_image_inputs_sent_to_tool": [],
+  "history_note": "This image was generated after the four project inputs were frozen. The prompt uses the analyzed reference direction in words; no reference image file was passed as a direct image_gen input.",
+  "user_visual_acceptance": "not-claimed",
+  "formal_gates": "not-claimed"
+}

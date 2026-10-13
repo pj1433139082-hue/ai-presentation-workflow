@@ -1,0 +1,229 @@
+{
+  "research_date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "retrieval_method": "D:/obsidian_work/cangku/paper_work/scripts/search/search_engine.py via proxy http://127.0.0.1:7897; official pages downloaded with curl.exe through same proxy",
+  "review_file": "structure-review.md",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "教育部关于印发《国家级大学生创新创业训练计划管理办法》的通知",
+      "issuing_body": "中华人民共和国教育部",
+      "host": "moe.gov.cn",
+      "url": "https://www.moe.gov.cn/srcsite/A08/s5672/201907/t20190724_392132.html",
+      "dates": {
+        "generated": "2019-07-15",
+        "body_published": "2019-07-31",
+        "accessed": "2026-10-13"
+      },
+      "scope": "National program management; 2019 policy referenced by the 2026 notice.",
+      "primary": true,
+      "local_files": [
+        "moe-2019-dachuang-management.html",
+        "moe-2019-dachuang-management.txt"
+      ],
+      "sha256": {
+        "moe-2019-dachuang-management.html": "c51118c07b8fccfebf665ce53cb7783dad22690f4db1eb46f8101e0e7a2d0288",
+        "moe-2019-dachuang-management.txt": "8ac980dad12c9903aac864f72557bd61c38ec041e8c2c901c18696c2908c8ed7"
+      }
+    },
+    {
+      "id": "S2",
+      "title": "教育部高等教育司关于开展2026年国家级大学生创新训练计划立项和结题验收工作的通知",
+      "issuing_body": "教育部高等教育司",
+      "host": "lise.edu.cn institutional repost; attached scan names MOE Higher Education Department",
+      "url": "https://www.lise.edu.cn/sites/html/cxcyxy/2026_03/16_16/content-42290.html",
+      "attachment_url": "https://www.lise.edu.cn/attachment/sites/item/2026_06/24_16/5daf090c3e53311b.pdf",
+      "dates": {
+        "signed": "2026-03-16",
+        "host_page": "2026-03-16",
+        "accessed": "2026-10-13"
+      },
+      "scope": "Annual 2026 project initiation and conclusion acceptance. Not a future schedule.",
+      "primary_document_copy": true,
+      "hosting_note": "Host is a university webpage; original scanned notice carries MOE Higher Education Department seal/date.",
+      "local_files": [
+        "moe-national-dachuang-2026-repost.html",
+        "moe-national-dachuang-2026-repost.txt",
+        "moe-2026-dachuang-notice.pdf",
+        "moe-2026-dachuang-notice.txt"
+      ],
+      "visually_checked_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8
+      ],
+      "extraction_note": "Scanned/image-only PDF; text extraction produced no text. PDF retained as original body.",
+      "sha256": {
+        "moe-national-dachuang-2026-repost.html": "8ff92227acb5aa9b976cbbe8e0a25b8b3f6dd372daa732d2983633cb8dfe6eab",
+        "moe-national-dachuang-2026-repost.txt": "81d2a091e2c9c12bc6a5f0a6f7f870f1c7de8176e797965a51e6929493349360",
+        "moe-2026-dachuang-notice.pdf": "065155835a99c94f665d966aa5274ddc5fc834f98a855f62da071bf96647b3e5",
+        "moe-2026-dachuang-notice.txt": "a61f149fa51d21a7666743f05977a61c858db20e63ecc70834dd3885b3062550"
+      }
+    },
+    {
+      "id": "S3",
+      "title": "教育部关于举办中国国际大学生创新大赛（2026）的通知（教高函〔2026〕26号）",
+      "issuing_body": "中华人民共和国教育部",
+      "host": "moe.gov.cn",
+      "url": "https://www.moe.gov.cn/srcsite/A08/s5672/202607/t20260731_1445670.html",
+      "dates": {
+        "signed": "2026-07-20",
+        "generated": "2026-07-23",
+        "accessed": "2026-10-13"
+      },
+      "scope": "2026 competition notice; announces five tracks and references forthcoming rules; rules later published as S4.",
+      "primary": true,
+      "local_files": [
+        "moe-2026-china-innovation-competition.html",
+        "moe-2026-china-innovation-competition.txt"
+      ],
+      "sha256": {
+        "moe-2026-china-innovation-competition.html": "fe87464f25edb699a41fb10f73e81c633f9712aef56a5771f2cec879812953fc",
+        "moe-2026-china-innovation-competition.txt": "d441d1a13e24c366ec0b86c9062430c927082593ad5c6967cfe1372e1b6ab5f6"
+      }
+    },
+    {
+      "id": "S4",
+      "title": "关于公布中国国际大学生创新大赛（2026）评审规则通知及附件",
+      "issuing_body": "教育部学生服务与素质发展中心 / 全国大学生创业服务网",
+      "host": "cy.ncss.cn",
+      "url": "https://cy.ncss.cn/information/2c93f4c6a00f063201a01815a08e0022",
+      "dates": {
+        "published": "2026-08-19",
+        "accessed": "2026-10-13"
+      },
+      "scope": "Official 2026-specific evaluation rules, with lane/group-specific dimensions.",
+      "primary": true,
+      "local_files": [
+        "ncss-2026-criteria-announcement.html",
+        "ncss-2026-criteria-announcement.txt",
+        "ncss-2026-rules.pdf",
+        "ncss-2026-rules.txt"
+      ],
+      "sha256": {
+        "ncss-2026-criteria-announcement.html": "221b69728670f762659df800f8b9d5f53833d6551e6047b0b3aed3ced5a50a20",
+        "ncss-2026-criteria-announcement.txt": "ff773cf84fe728c63b29386a55afc5ba5f02dbcf86a48ef7aa33d0dd6ed680e8",
+        "ncss-2026-rules.pdf": "89b1ab44baed82eae9fad896086ad484d601db9628135e50a9d39348aa6769a7",
+        "ncss-2026-rules.txt": "c69fe36df3fb9044d0e0c80dc7bbfc3686c0ad756d84ba1562d1900278b0f966"
+      }
+    },
+    {
+      "id": "S5",
+      "title": "第十九届‘挑战杯’全国大学生课外学术科技作品竞赛通知及 2025 届评审规则",
+      "issuing_body": "第十九届‘挑战杯’组委会",
+      "host": "tiaozhanbei.net official organizer site",
+      "url": "https://www.tiaozhanbei.net/article/15795/",
+      "dates": {
+        "published": "2025-06-13",
+        "accessed": "2026-10-13"
+      },
+      "scope": "Edition-specific 2025 academic/technology competition. Do not present as 2026 rules.",
+      "primary": true,
+      "attachments_page": "https://www.tiaozhanbei.net/article/15795/",
+      "local_files": [
+        "challengecup-2025-academic-tech-notice.html",
+        "challengecup-2025-academic-tech-notice.txt",
+        "challengecup-2025-evaluation-rules.pdf",
+        "challengecup-2025-evaluation-rules.txt"
+      ],
+      "sha256": {
+        "challengecup-2025-academic-tech-notice.html": "e43ffd574c60ce4bdfc340f9fdc549d19090480cd26e50b83d444082b51c4667",
+        "challengecup-2025-academic-tech-notice.txt": "02b9f5a6f796c67865f0154ca11370d7fcafea055d569f1099d8b27f655a532d",
+        "challengecup-2025-evaluation-rules.pdf": "dd01acd3b3d9d5c14b5f342a3d615ae46b18bf03cf32270f4de559e192826465",
+        "challengecup-2025-evaluation-rules.txt": "aea57238612399b27d8ce2378fb03132afb4475ae0ec961fbbc7c6313bc8fda6"
+      }
+    },
+    {
+      "id": "S6",
+      "title": "第十五届‘挑战杯’建设银行中国大学生创业计划竞赛通知",
+      "issuing_body": "第十五届‘挑战杯’组委会",
+      "host": "tiaozhanbei.net official organizer site",
+      "url": "https://www.tiaozhanbei.net/article/15842/",
+      "dates": {
+        "published": "2026-05-23",
+        "accessed": "2026-10-13"
+      },
+      "scope": "2026 entrepreneurship plan competition; eight subject tracks; distinct from the academic/technology cup and CII.",
+      "primary": true,
+      "season_site": "https://2026.tiaozhanbei.net/d51/competion_notice",
+      "local_files": [
+        "challengecup-2026-notice-main.html",
+        "challengecup-2026-notice-main.txt",
+        "challengecup-2026-entrepreneurship-notice.html",
+        "challengecup-2026-entrepreneurship-notice.txt"
+      ],
+      "sha256": {
+        "challengecup-2026-notice-main.html": "a7548e8f9b6df23df415957e80870037da56e3abec1485113ccd01ce7d61e71a",
+        "challengecup-2026-notice-main.txt": "bfebf0bf51a387513696634bd935692dfb61e591dbd5fb9e02424f168a1b8a59",
+        "challengecup-2026-entrepreneurship-notice.html": "d1d82dc7438ef66384393ec94a649f47b003e78fd7f376683a82d5607eb66658",
+        "challengecup-2026-entrepreneurship-notice.txt": "db739536c2f81c05ed836199352780f61b540b6235611a46dadf3a094d8fe3f5"
+      }
+    },
+    {
+      "id": "S7",
+      "title": "‘挑战杯’全国大学生课外学术科技作品竞赛章程",
+      "issuing_body": "‘挑战杯’组委会",
+      "host": "tiaozhanbei.net official organizer site",
+      "url": "https://www.tiaozhanbei.net/rules",
+      "dates": {
+        "page_date": "not shown",
+        "accessed": "2026-10-13"
+      },
+      "scope": "General charter page, states biennial competition and category framing. Per-edition notice/rules still govern.",
+      "primary": true,
+      "local_files": [
+        "challengecup-rules.html",
+        "challengecup-rules.txt"
+      ],
+      "sha256": {
+        "challengecup-rules.html": "b36a67a9be19966fbb4282705e43eb4938f29f2967ffe6a0bb224f1ed70a9505",
+        "challengecup-rules.txt": "2b00541f6a9c623e5ec1a57d8fd0780e8a316bcbf079fd170c9d52c96f6fdd8b"
+      }
+    },
+    {
+      "id": "S8",
+      "title": "第十五届‘挑战杯’参赛指导手册副本",
+      "issuing_body": "Challenge Cup 2026 organizer (as named by document)",
+      "host": "zihuan.cau.edu.cn university mirror",
+      "url": "https://zihuan.cau.edu.cn/module/download/downfile.jsp?classid=0&filename=5b6c834b4e534de689c3f42ed3528276.pdf",
+      "dates": {
+        "document_month": "2026-06",
+        "accessed": "2026-10-13"
+      },
+      "scope": "Secondary host copy; used only for online application flow, not as a scoring rule.",
+      "primary": false,
+      "local_files": [
+        "challengecup-2026-participant-guide.pdf",
+        "challengecup-2026-participant-guide.txt"
+      ],
+      "sha256": {
+        "challengecup-2026-participant-guide.pdf": "d4016a6218a380f7b26f5794c3534a95332a40ed2eec58486caa8524508b4877",
+        "challengecup-2026-participant-guide.txt": "bb455142f2d1259a1c0d71d0ab53405db4b1a5f1028064a49716bcbc36e21e35"
+      }
+    },
+    {
+      "id": "S9",
+      "title": "教育部关于举办中国国际大学生创新大赛（2025）的通知",
+      "issuing_body": "中华人民共和国教育部",
+      "host": "moe.gov.cn",
+      "url": "https://www.moe.gov.cn/srcsite/A08/s5672/202505/t20250509_1189810.html",
+      "dates": {
+        "published": "2025-04-29",
+        "accessed": "2026-10-13"
+      },
+      "scope": "Prior-season comparator only; current claims use S3/S4.",
+      "primary": true,
+      "local_files": [
+        "moe-2025-china-innovation-competition.html",
+        "moe-2025-china-innovation-competition.txt"
+      ],
+      "sha256": {
+        "moe-2025-china-innovation-competition.html": "d9f367295e50c318be3d8db88a5a6633f840390ed8a636544d413af56ba5a900",
+        "moe-2025-china-innovation-competition.txt": "3e9642199e9a9c62cc96b2d2c29f9d24ea477ba80fd99631e24ab3f0c077fef8"
+      }
+    }
+  ]
+}

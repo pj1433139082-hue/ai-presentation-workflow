@@ -1,0 +1,45 @@
+{
+  "delivery_mode": "concept",
+  "set_count": 6,
+  "page_count": 29,
+  "sets": [
+    {
+      "id": "research",
+      "label": "科研汇报",
+      "pages": 6,
+      "gallery": "../research-v3/index.html"
+    },
+    {
+      "id": "tech",
+      "label": "科技产品",
+      "pages": 5,
+      "gallery": "tech/index.html"
+    },
+    {
+      "id": "manufacturing",
+      "label": "制造业",
+      "pages": 5,
+      "gallery": "manufacturing/index.html"
+    },
+    {
+      "id": "education",
+      "label": "教育课程",
+      "pages": 4,
+      "gallery": "education/index.html"
+    },
+    {
+      "id": "brand",
+      "label": "消费品牌",
+      "pages": 5,
+      "gallery": "brand/index.html"
+    },
+    {
+      "id": "library",
+      "label": "公共服务",
+      "pages": 4,
+      "gallery": "library/index.html"
+    }
+  ],
+  "user_visual_acceptance": "not-recorded",
+  "automatic_assembly": "not-requested"
+}

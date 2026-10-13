@@ -1,0 +1,34 @@
+{
+  "slide_id": "S02",
+  "record_type": "actual-new-generation",
+  "generation_tool": "Codex built-in image_gen.imagegen",
+  "recorded_at": "2026-10-13T17:59:05.597803+08:00",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12a23-3a19-7570-91f2-105f733eefbf\\exec-efbd00bf-0a51-46f6-9ceb-7533b4840d9d.png",
+  "original_output_sha256": "577cfaf8b66d5443ab4da776e7f7b1dd541998a03f4ab00556edc98ac006e489",
+  "output_path": "concept.png",
+  "output_sha256": "577cfaf8b66d5443ab4da776e7f7b1dd541998a03f4ab00556edc98ac006e489",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "dadb1d2e8e603ed4b147a4b2edfd180caec478097af6caa82efc146c0adf97e7",
+  "input_sha256": {
+    "brief.json": "aa54ecfb8d0c6cbaa8f7be6f73a4501b2f457aa8ea13c830c7bb0d136a9bf49d",
+    "deck-spec.json": "04f078d35ce37cadd4c8e4b24c50bca1523810a8e1a295f6a5d1e13e9c6fff82",
+    "reference-study.json": "bbd509772fb744f31e0f273b119ef1a679fefa5adb260eb488ea5cfe30e243c3",
+    "style-contract.json": "51660ad2941aa5b29b3363f61c522ed01737821148b991f7a43af5bb163ce6ca"
+  },
+  "referenced_images": [
+    {
+      "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang\\project\\references\\case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    },
+    {
+      "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang\\design\\S01\\concept.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    }
+  ],
+  "visual_review": {
+    "actor": "root",
+    "method": "actual view_image of original output",
+    "user_acceptance": "not-recorded"
+  },
+  "history_note": "Tool consumed stored prompt and actual referenced images. JSON hashes freeze project inputs, not a claim that the image tool directly read JSON."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "S01-features",
+  "role": "text",
+  "text": "会后脉络留存 · 资料语义检索 · 任务线索串联",
+  "bbox": [
+    103,
+    615,
+    551,
+    21
+  ],
+  "z": 7,
+  "font_size": 25,
+  "letter_spacing_px": 1,
+  "color": "#DDE2ED",
+  "representation": "native",
+  "font_family": "Microsoft YaHei UI",
+  "font_size_unit": "px",
+  "font_weight": 400,
+  "alignment": "left",
+  "truth_status": "illustrative",
+  "semantic_role": "secondary",
+  "type": "text",
+  "font_size_px": 25,
+  "path": "layers/S01/native-text/S01-features.json",
+  "line_height": 1.1,
+  "text_align": "left"
+}

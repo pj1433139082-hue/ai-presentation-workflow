@@ -1,0 +1,9 @@
+Use case: productivity-visual
+Asset type: one complete 16:9 Chinese information-guide concept slide for a fictional neighborhood library presentation.
+Scene/backdrop: a bright and calm public library setting with open space, warm paper texture, navy typography and small blue-green wayfinding accents.
+Subject: show how a visitor can find the rules for their own library and ask for help if something is unclear.
+Style/medium: approachable civic-culture editorial illustration, clean wayfinding symbols, readable Chinese text; no institutional branding and no official notice styling.
+Composition/framing: a simple two-route information path linking a formal service explanation and an in-person service desk. The page should feel like a useful help page, not another route overview or policy poster.
+Text (verbatim; render each line exactly once, with no other words): “不确定时，先核对规则入口” “以所在图书馆发布的信息或现场答复为准。” “优先查看所在图书馆的正式服务说明” “核对办理、借期与续借等事项” “信息不清时，到服务台询问” “本页未指定任何馆规、费用或期限” “通用信息入口 · 非某馆官方通知”
+Constraints: mention only a general advice path. Do not imply that a particular website, self-service channel, policy, or rule exists for every library.
+Avoid: named institutions, municipal seals, opening hours, fees, due dates, renewal limits, fines, real website mockups, extra labels, or watermark.

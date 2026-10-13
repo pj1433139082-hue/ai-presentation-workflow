@@ -49,6 +49,7 @@
         "atmosphere-photo"
       ],
       "supported_component_roles": [
+        "ordinary-photo",
         "photo-cutout"
       ],
       "source_requirements": [

@@ -1,0 +1,28 @@
+{
+  "project_id": "industry-library-v2",
+  "audience": "第一次了解通用社区图书馆借阅流程的演示观众",
+  "goal": "用四页概念说明借阅流程概览、借还动作、规则核对入口与现场求助方式。",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "concept-images",
+    "aspect_ratio": "16:9",
+    "scope": "local-showcase-only",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04"
+    ]
+  },
+  "source_map": [
+    {
+      "id": "EXAMPLE-LIBRARY-GUIDE",
+      "kind": "locally-authored-fictional-service-example",
+      "locator": "本地自编的虚构社区图书馆通用流程；不是任何真实图书馆的官方馆规或服务记录。",
+      "path": "sources/source-notes.md",
+      "sha256": "6c6181d45ee46140ccbb6e455d2e823043cede18e4022cb294dc5ea3e1570f17",
+      "truth_status": "illustrative"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "S01-descriptor",
+  "role": "text",
+  "text": "桌面知识协作终端",
+  "bbox": [
+    101,
+    422,
+    459,
+    49
+  ],
+  "z": 5,
+  "font_size": 54,
+  "letter_spacing_px": 4,
+  "color": "#E9ECF2",
+  "representation": "native",
+  "font_family": "Microsoft YaHei UI",
+  "font_size_unit": "px",
+  "font_weight": 400,
+  "alignment": "left",
+  "truth_status": "illustrative",
+  "semantic_role": "body",
+  "type": "text",
+  "font_size_px": 54,
+  "path": "layers/S01/native-text/S01-descriptor.json",
+  "line_height": 1.1,
+  "text_align": "left"
+}

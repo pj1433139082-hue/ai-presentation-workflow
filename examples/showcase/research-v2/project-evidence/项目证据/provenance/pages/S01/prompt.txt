@@ -1,0 +1,16 @@
+Use case: scientific-educational
+Asset type: one finished 16:9 landscape Chinese research-presentation cover concept; concept-only, not an editable slide.
+Input images: Image 1 (Case 175) is a reference for asymmetrical editorial hierarchy and whitespace only. Image 2 (Case 341) is a reference for precise scientific linework and clear geometric explanation only. Invent a new composition; do not copy either layout, text, or subject.
+Primary request: Create a high-end scientific-journal opening page for a membrane-treatment research meeting. A single, substantial two-dimensional editorial illustration of a membrane-like porous layer is the visual anchor: a close cutaway with fine ink contours, layered fibers, orderly pores, and restrained stippled texture. Keep it conceptually neutral; it should evoke a research question without illustrating or asserting any particular mechanism.
+Scene/backdrop: quiet ivory paper field (#F6F2E9), clean and warm but not aged or yellowed; subtle print texture only.
+Style/medium: refined contemporary science-magazine art direction, precise engraved linework and stipple, editorial typography, tactile printed surface; flat 2D illustration rather than a glossy render.
+Composition/framing: asymmetrical 16:9 landscape. Give the illustration strong visual mass across the right half, cropped with confidence at the right edge. Place the title and supporting copy in a calm left-side field with clear reading order and generous but purposeful whitespace. Let the linework and typography create the hierarchy; do not divide the page into cards or a rigid dashboard. Keep the main title prominent but moderate in scale, not an oversized black block. The page should feel composed and complete, not empty.
+Color palette: ink black (#26231F) for type and linework, ivory (#F6F2E9) for the field, and one restrained warm-ochre/copper accent (#A87548) used sparingly for a few structural marks. No additional accent colors.
+Text (verbatim; use only these four strings, once each, in clear Simplified Chinese):
+“从通量衰减到验证路径”
+“膜处理研究汇报”
+“通量下降，发生了什么？”
+“演示示例 · 非实验结果”
+Typography: an elegant Chinese Song/Ming-style display face for the title and research question, paired with clean readable Chinese sans-serif for the subtitle and footer. Preserve every character and punctuation exactly. Keep all four strings legible at presentation size; footer is small but readable.
+Constraints: no chart or data points on this cover; no claims, values, labels, annotations, units, scales, or text beyond the four strings above. The membrane image is a conceptual editorial illustration only, not a micrograph, real device, or evidence of an observed structure. Do not imply fouling, blockage, performance, or a proven causal mechanism. Keep the accent color limited to the warm ochre/copper specified above.
+Avoid: giant heavy headline, stock water photography, glossy 3D, fake waves or floating droplets, glow effects, laboratory scenes, pseudo-micrograph detail, causal arrows, warning boxes, rounded cards, repeated columns, UI elements, logos, watermarks, dense explanatory text, random symbols, duplicated text, or garbled Chinese.

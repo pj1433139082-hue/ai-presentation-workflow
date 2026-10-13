@@ -1,0 +1,59 @@
+{
+  "slide_id": "S01",
+  "record_type": "actual-new-generation",
+  "generation_tool": "Codex built-in image_gen.imagegen",
+  "recorded_at": "2026-10-13T21:15:10+08:00",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355b-ca74-7120-a55c-20db9a9946d1\\exec-67a2a264-8605-40f5-b752-3ff17343c956.png",
+  "original_output_sha256": "0ef681d2924025c79df2badb9fe26f590829e05793a46678360da0a60107c3ad",
+  "output_path": "concept.png",
+  "output_sha256": "0ef681d2924025c79df2badb9fe26f590829e05793a46678360da0a60107c3ad",
+  "canonical_output_path": "concepts/S01.png",
+  "dimensions": {
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB"
+  },
+  "prompt": "Asset type: 完整中文演示页概念图（第1页，共6页），用于大创第6周过程检查汇报。\nInput images: Image 1 是上一阶段“雨序”立项封面，仅供同项目色彩和自然材质连续性参考；Image 2 是 case339 自然科普海报，仅参考白底质感、主体细节与编辑留白。两图都不是本项目过程证据。\nScene/backdrop: 横向16:9完整页面，温润浅白底，深墨绿色主标题（#183D2E）、柔和叶绿与浅水蓝（#789A57、#8DC9D9），清透自然光。高级中文编辑式展示设计，清晰、克制、细节真实。\nSubject: 生成式示意的微缩校园雨水花园剖面，浅水流过植被、土层和碎石层；它是插画/概念场景，不是真实现场或实物照片。\nComposition/framing: 采用“阶段观察手记”式居中构图：标题在上方留白区，雨滴路径成为一条轻盈的纵向视觉线，连接下方横向展开的微缩剖面。主体沿页面下方舒展，不做“左侧文字、右侧主图”的立项页原构图；不要信息卡片网格，不要底部四栏。\nText (verbatim, only these visible words): “雨序”；“校园雨水花园观察与优化”；“大创 · 创新训练项目过程汇报”；“第6周｜阶段检查”；“过程情境示例”。\nTypography: 中文文字逐字准确、清楚可读；“雨序”为最大标题，其他文字有明显层级和充足留白；示例标识放在视线能看到的位置。\nConstraints: 仅展示上面指定文字，不添加数据、读数、日期、校名、团队名、审批、奖项、标识或额外小字；不复制参考图的构图、动物、四栏信息区或品牌元素；整页为概念示意，不伪装成真实记录或现场照片。",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "1e2d02f140ad9e97bfc880d6b5df1f74c88c21e2986edfeaae9f8cf3ed38c4d7",
+  "input_sha256": {
+    "brief.json": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+    "deck-spec.json": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+    "reference-study.json": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+    "style-contract.json": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+  },
+  "actual_tool_inputs": {
+    "referenced_image_paths": [
+      {
+        "reference_id": "R-PROPOSAL-S01",
+        "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\previous-proposal-S01.png",
+        "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+      },
+      {
+        "reference_id": "R339",
+        "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\case339.jpg",
+        "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+      }
+    ],
+    "transparent_background": false
+  },
+  "design_reviewed_references": [
+    {
+      "reference_id": "R-PROPOSAL-S01",
+      "project_path": "references/previous-proposal-S01.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "project_path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "visual_review": {
+    "actor": "Codex subagent",
+    "method": "view_image of copied original output",
+    "finding": "Five requested Chinese lines are legible; centered field-note composition and continuous rain-garden cross-section are clear. All scene elements are illustrative.",
+    "user_acceptance": "not-recorded"
+  },
+  "history_note": "The image tool received the exact prompt and image paths in actual_tool_inputs. Frozen APW JSON hashes bind this project version but do not claim the image tool read those JSON files. design_reviewed_references records studied lineage; actual tool inputs are listed separately."
+}

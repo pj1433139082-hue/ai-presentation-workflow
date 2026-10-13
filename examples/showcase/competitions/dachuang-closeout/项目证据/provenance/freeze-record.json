@@ -1,0 +1,27 @@
+{
+  "status": "frozen-before-generation",
+  "frozen_at_utc": "2026-10-13",
+  "project_id": "dachuang-closeout-example",
+  "delivery_mode": "concept",
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "contract_input_sha256": {
+    "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+    "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "selected_design_reference_ids": [
+    "RPROPOSAL-S01",
+    "R339"
+  ],
+  "external_input_snapshot_path": "provenance/reference-input-snapshot.json",
+  "copy_scope": "Four task inputs copied byte-for-byte into this project; original source files remain unchanged.",
+  "truth_boundary": "All six pages are illustrative fictional closeout concepts; no real field results or financial records are claimed."
+}

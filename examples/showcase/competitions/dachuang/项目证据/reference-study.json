@@ -1,0 +1,30 @@
+{
+  "selected_reference_ids": [
+    "R339"
+  ],
+  "references": [
+    {
+      "id": "R339",
+      "status": "analyzed",
+      "image_path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642",
+      "source_locator": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-339",
+      "usage_note": "已阅读原始案例提示词并实际查看原图，借鉴白底自然主体的质感与编辑留白；不是科研事实来源。",
+      "transferable_rules": [
+        "放大有意义的自然主体形成清晰入口",
+        "真实感材质和柔和光影支持说明",
+        "文字少而准，层次和留白明确"
+      ],
+      "project_translation": [
+        "将动物主体改为雨水花园与研究装置",
+        "每页匹配立项任务，采用场景、对照剖面、记录链、资源和时间路径",
+        "从竖版海报转为连续横向演示"
+      ],
+      "do_not_copy": [
+        "原案例动物和科普事实",
+        "固定四栏底部及多图海报结构",
+        "Apple或其他品牌标识"
+      ]
+    }
+  ]
+}

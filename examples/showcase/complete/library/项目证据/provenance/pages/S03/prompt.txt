@@ -1,0 +1,9 @@
+Use case: productivity-visual
+Asset type: one complete 16:9 Chinese service-explainer concept slide for a fictional community library guide.
+Scene/backdrop: bright public reading environment with calm warm paper, deep blue and teal guidance accents; no named institution.
+Subject: clarify a few general actions around borrowing and returning, plus a way to ask for help. Keep the content general because local procedures vary.
+Style/medium: clear civic information illustration with human-scale details and restrained colored-paper texture; readable editorial Chinese typography, welcoming but not childish.
+Composition/framing: an open sequence of moments around a book moving from selection to checkout to return; vary the layout from the reused route overview and avoid a row of identical cards.
+Text (verbatim; render each line exactly once, with no other words): “借阅与归还，记住这几步” “先确认书目与账户，再按所在馆流程办理。” “借出前｜确认书名与可借状态” “办理时｜按馆内指定方式完成借阅” “归还后｜留意记录是否更新” “遇到异常｜向服务人员询问” “通用流程提示 · 具体规则以所在馆为准”
+Constraints: generic checklist only. Do not invent local rules or promise that every library offers self-checkout or a particular service.
+Avoid: library name/logo, membership requirements, fees, due dates, renewal counts, overdue rules, fake screen text, extra copy, or watermark.

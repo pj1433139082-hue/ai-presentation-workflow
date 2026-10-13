@@ -1,0 +1,19 @@
+{
+  "truth_status": "illustrative",
+  "source": "source concept S03; demonstration only",
+  "x": [
+    0,
+    20,
+    40,
+    60
+  ],
+  "y": [
+    1.0,
+    0.93,
+    0.85,
+    0.78
+  ],
+  "x_label": "时间 (min)",
+  "y_label": "J/J₀",
+  "inference": "single illustrative curve; no significance inference"
+}

@@ -1,0 +1,42 @@
+{
+  "version": "industry-tech-v2",
+  "selected_reference_ids": [
+    "R17"
+  ],
+  "direction_actor": "agent",
+  "direction_reason": "本地概念样稿按既有知栈封面与已查看视觉参考延展；这是代理提出的方向，不代表用户视觉接受或正式品牌决策。",
+  "canvas": {
+    "aspect_ratio": "16:9"
+  },
+  "palette": {
+    "background": "#08245C",
+    "primary_text": "#F4F6FF",
+    "secondary_text": "#BDCAE4",
+    "accent": "#FF927D",
+    "cool_light": "#51C8FF",
+    "metal": "#AEBBD0"
+  },
+  "typography": {
+    "direction": "中文产品发布式编辑排版；标题有力量，说明短而清楚，字号按具体页面内容决定。",
+    "text_color_rule": "高对比浅色字用于暗蓝背景；珊瑚色和冷光色只作少量强调。"
+  },
+  "graphic_language": [
+    "深蓝与冷光建立科技气质，珊瑚色作为克制的焦点。",
+    "可用抽象关系线、轻量节点或有质感的设备概念图表达线索连接。",
+    "需要产品画面时保持虚构特征，避免可辨认的真实界面与品牌元素。"
+  ],
+  "slide_roles": {
+    "S01": "既有产品概念封面",
+    "S02": "会后知识断点场景",
+    "S03": "讨论—资料—行动概念机制",
+    "S04": "团队例会情境示例",
+    "S05": "小范围试用建议"
+  },
+  "layout_policy": "逐页匹配叙事任务，封面以主视觉建立入口；后续页改变阅读节奏和结构，不重复同一种产品主图或功能卡布局。",
+  "avoid": [
+    "真实产品界面伪装",
+    "未经证实的功能/性能/客户/ROI主张",
+    "Meta/Quest品牌与头显形态",
+    "每页重复同一组卡片或封面构图"
+  ]
+}

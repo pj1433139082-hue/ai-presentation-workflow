@@ -1,0 +1,35 @@
+{
+  "record_type": "actual-image-generation",
+  "slide_id": "S05",
+  "generation_tool": "Codex built-in image_gen",
+  "recorded_at": "2026-10-13T18:16:41+08:00",
+  "generation_time_note": "Exact tool-call timestamp was not exposed; original returned PNG path and bytes are preserved.",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "488563b1d3689236fb4fc3f77a5430e7658e15f92cf01ded60d3c533b068067f",
+  "output_path": "concept.png",
+  "output_sha256": "2332ea9f88d1f7021f129347f729785e5da27babb0c9078543406a38d8cc4f6e",
+  "original_tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-57f8-7b41-8255-833b48138fbc\\exec-311cf38b-b817-4c22-8280-3fe9d6e0643b.png",
+  "copy_method": "byte-for-byte file copy; no image editing",
+  "input_sha256": {
+    "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+    "deck_spec": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+    "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+    "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+  },
+  "input_snapshot_path": "provenance/concept-input-hash-snapshot.json",
+  "reference_images": [
+    {
+      "reference_id": "R475",
+      "path": "references/case475.jpg",
+      "sha256": "61ffe2cbcc2bac37eeb2b73cf40b8a057148bdbc080ab16e2354043fac4ed653",
+      "source_locator": "https://x.com/iamaiistudio/status/2059305097897914664"
+    }
+  ],
+  "tool_result_note": "Built-in image_gen returned this saved PNG; exact prompt and selected reference lineage are retained alongside the copied output.",
+  "visual_review": {
+    "reviewer_role": "producing agent",
+    "reviewed_at": "2026-10-13T18:16:41+08:00",
+    "result": "Viewed the original 1672x941 PNG. The six sample marks visually match the declared 3 line marks, 2 scratches and 1 stain; candidate rings show 2 line-like marks and 2 scratches, while one line and the stain are unmarked. All declared numbers and the adjacent non-experimental-data warning are legible. No accuracy, repetitions or measured result is shown."
+  },
+  "provenance_limit": "This record binds the actual prompt, selected reference and copied file hash; it is not user visual acceptance, a human gate, or competition compliance approval."
+}

@@ -1,0 +1,34 @@
+{
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-57f8-7b41-8255-833b48138fbc\\exec-799dd0d5-e2ed-4639-a4a9-ccec21c72f76.png",
+  "generated_at": "2026-10-13T08:43:27+08:00",
+  "tool_call": "image_gen.imagegen",
+  "prompt_path": "prompt.txt",
+  "attempt": "01",
+  "artifact_kind": "standalone-slide-concept",
+  "input_snapshot_path": "input-snapshot.json",
+  "user_visual_acceptance": "not-claimed",
+  "visual_issue": "Illustrations included completed-looking clipboard and shield checks plus an apparent measured curve in a magnifier; retained as attempt history and revised before current binding.",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: productivity-visual\nAsset type: one complete 16:9 Chinese closing concept slide for an illustrative industrial heat-reuse presentation.\nScene/backdrop: warm ivory technical-paper field, calm and analytical, no identifiable factory.\nSubject: a decision path that starts with evidence and ends at a possible pilot decision, with the absence of site data made clear but not dramatized.\nStyle/medium: polished editorial engineering explainer with fine linework, restrained navy, warm-heat and cool-reuse accents, clean Chinese typography.\nComposition/framing: use an open decision route or layered evidence path with visible breathing room; avoid a warning-poster look and avoid repeating earlier page layouts.\nText (verbatim; render each line exactly once, with no other words): “用现场证据决定下一步” “概念流程不能替代现场测量与工程评审。” “确认热源与用热时段” “核对必要参数与系统边界” “检查安全、空间与维护条件” “专业评审后再决定是否试点” “验证路径建议 · 尚未执行”\nConstraints: no measurements or conclusions are provided in this project. Keep every item framed as a proposed check, not evidence or a decision already made.\nAvoid: numbers, temperatures, pressures, flows, costs, savings, performance guarantees, real facilities, completed-study checkmarks, certification marks, extra text, logos, or watermark.",
+  "operation": "generate",
+  "actor": "agent",
+  "slide_id": "S05",
+  "original_output_sha256": "7ceaa112daec1a4ab2fb015619525f28ca8512124accc545b904639c8fe062d3",
+  "record_status": "retrospectively-captured-from-local-tool-output-file-and-persisted-prompt",
+  "formal_gates": "not-claimed",
+  "dimensions_px": [
+    1672,
+    941
+  ],
+  "input_sha256": {
+    "brief.json": "6bde1d583820bf88222c9cf0baad6e4a5f3a79493a8d757b097ba60d1a9d2a05",
+    "deck-spec.json": "b689def7a5a464bab2448bbcff8028ea61730ec3d64379325a7d51b97c88e5a6",
+    "reference-study.json": "afc11e8f463627a2cc0f829031bc528df3477a2a065edbcfdc760e1ba5cb3286",
+    "style-contract.json": "85531d12b12559dff5ea3e28fe74be83bbaf917013f0c08b3f5337afc05e7688"
+  },
+  "schema": "apw-concept-generation-record/v1",
+  "current_status": "superseded-by-revision-02",
+  "input_snapshot_for_this_slide_sha256": "41ecaab77e31ae0540f311aa17cea1e65cb2a97eb459f43c750ceea11c64e3bb",
+  "prompt_sha256": "f44c808ba353bebfb71fb3d98d84e8af4443640d707ba200e1395d6958615362",
+  "format": "PNG"
+}

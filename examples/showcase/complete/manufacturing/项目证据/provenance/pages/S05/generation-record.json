@@ -1,0 +1,50 @@
+{
+  "design_concept_sha256": "0af1cc2b7bb4a43d049c9d9b4efdcdf3e0597ec839cffd9dc3d30299c92b6c78",
+  "slide_id": "S05",
+  "output_path": "concepts/S05.png",
+  "direct_image_inputs_sent_to_tool": [
+    {
+      "path": "provenance/revision-history/S05/attempt-01/concept.png",
+      "sha256": "7ceaa112daec1a4ab2fb015619525f28ca8512124accc545b904639c8fe062d3"
+    }
+  ],
+  "tool": "Codex built-in image_gen",
+  "prompt_path": "provenance/pages/S05/prompt.txt",
+  "format": "PNG",
+  "operation": "edit",
+  "history_note": "The supplied image was agent-generated S05 attempt-01. The first image and its prompt/snapshot/record are retained. This revised image was generated after the four frozen project inputs; current input bindings do not claim attempt-01 used those later JSON files.",
+  "reference_ids_in_project_contract": [
+    "R70"
+  ],
+  "original_output_sha256": "0af1cc2b7bb4a43d049c9d9b4efdcdf3e0597ec839cffd9dc3d30299c92b6c78",
+  "schema": "apw-concept-generation-record/v1",
+  "input_snapshot_path": "provenance/concept-input-hash-snapshot.json",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-57f8-7b41-8255-833b48138fbc\\exec-84b9a989-29e6-4499-9c95-452cc620af2e.png",
+  "prompt": "Use case: productivity-visual\nAsset type: a revision of one complete 16:9 Chinese concept slide for an illustrative industrial heat-reuse presentation.\nEdit the supplied concept image, preserving its overall layout, composition, colors, visual style, and every Chinese text line exactly as shown. Keep all seven existing text lines in their current wording and order; do not add, remove, or rewrite text.\nMake only these targeted illustration changes so the page clearly shows a proposed, not completed, validation path: remove every tick/check mark from the clipboard; leave each checklist box visibly empty. Remove the check symbol inside the safety shield and leave the shield as an unfilled outline. Remove the plotted curve from the magnifying glass and replace it with a blank, neutral inspection field with no axes, numbers, marks, or trace. Keep the industrial pipe as a generic conceptual illustration, not a measured site object. Preserve all arrows as sequence connectors, not proof of completed steps.\nThe exact visible text must remain: “用现场证据决定下一步” “概念流程不能替代现场测量与工程评审。” “确认热源与用热时段” “核对必要参数与系统边界” “检查安全、空间与维护条件” “专业评审后再决定是否试点” “验证路径建议 · 尚未执行”.\nNo measurements, data plots, numeric labels, completed-study checkmarks, certification symbols, claims, extra words, logos, or watermark. Keep a calm editorial engineering explainer with warm ivory paper, restrained navy, warm-heat and cool-reuse accents, fine linework, and generous breathing room.",
+  "revision_of": {
+    "attempt": "01",
+    "image_sha256": "7ceaa112daec1a4ab2fb015619525f28ca8512124accc545b904639c8fe062d3"
+  },
+  "tool_call": "image_gen.imagegen",
+  "revision": "02",
+  "dimensions_px": [
+    1672,
+    940
+  ],
+  "revision_scope": "Removed every checklist tick, shield checkmark, and magnifier trace; retained remaining illustration, layout, color, and exact text.",
+  "actor": "agent",
+  "artifact_kind": "standalone-slide-concept",
+  "user_visual_acceptance": "not-claimed",
+  "prompt_sha256": "18ab8828ddf4fd9c2f2d8dde9484443663d268e7e8dbc21bc187896037d13e52",
+  "input_sha256": {
+    "brief.json": "6bde1d583820bf88222c9cf0baad6e4a5f3a79493a8d757b097ba60d1a9d2a05",
+    "deck-spec.json": "b689def7a5a464bab2448bbcff8028ea61730ec3d64379325a7d51b97c88e5a6",
+    "reference-study.json": "afc11e8f463627a2cc0f829031bc528df3477a2a065edbcfdc760e1ba5cb3286",
+    "style-contract.json": "85531d12b12559dff5ea3e28fe74be83bbaf917013f0c08b3f5337afc05e7688"
+  },
+  "input_snapshot_for_this_slide_sha256": "fa9979177d170139b756ae82120adc00d22c2ef7a8b3f1ea6bf7f9096aea3058",
+  "generated_at_utc": "2026-10-13T00:48:34Z",
+  "output_sha256": "0af1cc2b7bb4a43d049c9d9b4efdcdf3e0597ec839cffd9dc3d30299c92b6c78",
+  "formal_gates": "not-claimed",
+  "design_concept_path": "concept.png"
+}

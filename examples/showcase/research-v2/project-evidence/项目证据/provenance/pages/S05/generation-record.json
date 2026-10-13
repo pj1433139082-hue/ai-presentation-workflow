@@ -1,0 +1,90 @@
+{
+  "schema": "apw-concept-generation-record/v1",
+  "slide_id": "S05",
+  "artifact_kind": "standalone-slide-concept",
+  "created_at_utc": "2026-10-12T17:39:44Z",
+  "tool": "Codex built-in image_gen",
+  "tool_call": "image_gen.imagegen",
+  "actor": "agent",
+  "operation": "image edit of prior image_gen draft to remove unintended numeric dial marks",
+  "source_output": {
+    "path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-a1add939-b562-46c8-8399-da42e9b90a3d.png",
+    "sha256": "B746711FF09146A7BDA74EEF5D087856D1D87719A9E856902F012BEB469E4DDA",
+    "format": "PNG",
+    "dimensions_px": [
+      1672,
+      941
+    ],
+    "color_mode": "RGB"
+  },
+  "copies": [
+    {
+      "path": "design/S05/concept.png",
+      "sha256": "B746711FF09146A7BDA74EEF5D087856D1D87719A9E856902F012BEB469E4DDA"
+    },
+    {
+      "path": "project/concepts/S05.png",
+      "sha256": "B746711FF09146A7BDA74EEF5D087856D1D87719A9E856902F012BEB469E4DDA"
+    }
+  ],
+  "prompt": {
+    "path": "design/S05/prompt.txt",
+    "sha256": "52F757600A68F22E0A702D074445E4A3BA1FFFAEC62A00743EB11B0CBE39080D",
+    "kind": "revision prompt"
+  },
+  "revision_of": {
+    "source_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-0fefaaf1-8f0c-486f-a9d9-9970c3c0bf56.png",
+    "source_sha256": "EEC2CCC35960B9B4E4E0C1F671A303634691BF90475912D9F05F079AABFCE9F8",
+    "reason": "prior dial included unintended numerical markings that could be mistaken for data"
+  },
+  "frozen_input_snapshot": {
+    "path": "project/provenance/concept-input-hash-snapshot.json",
+    "sha256": "65B96FA6B34336F3A9A1B6A2EEE87AD7EDC9094DA801CDFAA6D44FF9564F215A"
+  },
+  "frozen_inputs": {
+    "brief.json": "381AE4068A88C0F0636A68D0EB516B17EEC76C256A23B10C7B3F6C1538BF175B",
+    "deck-spec.json": "EF2E9EFE4D99CE728B6FEE94F7AD575C132777D70D6A4FE4667B7545A7024DE8",
+    "reference-study.json": "7BEAF82ABDD10DBCE006EDB1D61CAB4ED3783B209975FDF4E0D6E07B49CBA70C",
+    "style-contract.json": "D74D6C36362C0EAEEAAA5579182A93D1AE628F0C8D44EDC5EBC17513C3DA2BE4"
+  },
+  "style_reference": {
+    "slide_id": "S01",
+    "path": "design/S01/concept.png",
+    "sha256": "75CE88FD82D195E5DA0DDDC7500C75D748E49624BE309257A9CB140A7F248B88",
+    "direction_status": "agent-selected; reviewed by root for continuation"
+  },
+  "references": [
+    {
+      "id": "R175",
+      "path": "project/references/case175.jpg",
+      "sha256": "3614CA30899BD62956DE104B4E75ECA1A681582504E916544B5405ADAC6E5B46",
+      "use": "asymmetric editorial hierarchy and purposeful whitespace"
+    },
+    {
+      "id": "R341",
+      "path": "project/references/case341.jpg",
+      "sha256": "A8E0C2D57A2C4CDD0DBBAB23A7914016C219BD706EBDB430B837B506AFBA2C3D",
+      "use": "clear scientific relationships and precise linework"
+    },
+    {
+      "id": "S03",
+      "path": "design/S03/concept.png",
+      "sha256": "FF31EBC4CDD9BECB65E4F0E0C985ED9579D49D318C9F95AACE96B07210372307",
+      "use": "series typography, palette, and line engraving"
+    }
+  ],
+  "review_state": {
+    "user_visual_acceptance": "not claimed",
+    "formal_gates": "not claimed",
+    "pending": "root visual review"
+  },
+  "limitations": [
+    "The concept is a flattened PNG; internal text and illustration elements are not individually editable.",
+    "No PPTX has been assembled for this slide.",
+    "The scientific vignettes are candidate schematics only and not evidence of any mechanism."
+  ],
+  "initial_prompt": {
+    "path": "design/S05/initial-prompt.txt",
+    "sha256": "FC450B1DC34011439A353413FAF77E36D25609AAD8BB426C52B7DA826E607AEB"
+  }
+}

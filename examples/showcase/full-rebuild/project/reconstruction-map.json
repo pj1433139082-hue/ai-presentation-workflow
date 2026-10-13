@@ -1,0 +1,1291 @@
+{
+  "version": "apw-reconstruction-v1",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "slides": [
+    {
+      "slide_id": "S01",
+      "concept_path": "concepts/S01.png",
+      "concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+      "items": [
+        {
+          "id": "S01-background",
+          "role": "background",
+          "bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "z": 0,
+          "representation": "asset",
+          "asset_id": "S01-background"
+        },
+        {
+          "id": "S01-floor-reflection",
+          "role": "decoration",
+          "bbox": [
+            727,
+            756,
+            864,
+            151
+          ],
+          "z": 1,
+          "representation": "asset",
+          "asset_id": "S01-floor-reflection"
+        },
+        {
+          "id": "S01-contact-shadow",
+          "role": "decoration",
+          "bbox": [
+            727,
+            781,
+            864,
+            53
+          ],
+          "z": 2,
+          "representation": "asset",
+          "asset_id": "S01-contact-shadow"
+        },
+        {
+          "id": "S01-device-terminal",
+          "role": "illustration",
+          "bbox": [
+            725,
+            128,
+            862,
+            688
+          ],
+          "z": 3,
+          "representation": "asset",
+          "asset_id": "S01-device-terminal"
+        },
+        {
+          "id": "S01-wordmark",
+          "role": "special-typography",
+          "bbox": [
+            96,
+            227,
+            352,
+            166
+          ],
+          "z": 4,
+          "representation": "asset",
+          "asset_id": "S01-wordmark"
+        },
+        {
+          "id": "S01-descriptor",
+          "role": "text",
+          "bbox": [
+            101,
+            422,
+            459,
+            49
+          ],
+          "z": 5,
+          "representation": "native",
+          "source_path": "layers/S01/native-text/S01-descriptor.json",
+          "source_sha256": "5559d843571cac52426ea16269b02503bd1ac61c36ada6ff1f473a3a336a34ca"
+        },
+        {
+          "id": "S01-takeaway",
+          "role": "text",
+          "bbox": [
+            100,
+            516,
+            510,
+            35
+          ],
+          "z": 6,
+          "representation": "native",
+          "source_path": "layers/S01/native-text/S01-takeaway.json",
+          "source_sha256": "22e8f1bb36e55692ac878a44b9f3fd61373b781227993b0a23e6cdacfcd73bc9"
+        },
+        {
+          "id": "S01-features",
+          "role": "text",
+          "bbox": [
+            103,
+            615,
+            551,
+            21
+          ],
+          "z": 7,
+          "representation": "native",
+          "source_path": "layers/S01/native-text/S01-features.json",
+          "source_sha256": "bb2c397f2b99746af90c8cced75e468fd31279e9df5f09313d14844ba1f7bfe8"
+        },
+        {
+          "id": "S01-example",
+          "role": "text",
+          "bbox": [
+            58,
+            869,
+            147,
+            17
+          ],
+          "z": 8,
+          "representation": "native",
+          "source_path": "layers/S01/native-text/S01-example.json",
+          "source_sha256": "7f9e20fbf3a881fc8727f88941d50934d7fcd56789ef3f8a3b7f584e05d176af"
+        }
+      ],
+      "render_path": "renders/S01.png",
+      "render_sha256": "ca00de68c27954a8edd7e487c2a52b33721902947f5dcf4657f566974ae9723d",
+      "renderer_path": "render-S01.html",
+      "renderer_sha256": "0db5ae1f61648c4e6005d4875767958a94924a55b74678b2724cc703c5633826",
+      "review": {
+        "actor": "agent",
+        "concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+        "render_sha256": "ca00de68c27954a8edd7e487c2a52b33721902947f5dcf4657f566974ae9723d",
+        "coverage": "all-inventoried-elements",
+        "outcome": "agent-reviewed",
+        "user_acceptance": "not-recorded"
+      }
+    },
+    {
+      "slide_id": "S02",
+      "concept_path": "concepts/S02.png",
+      "concept_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+      "items": [
+        {
+          "id": "S02-background-paper",
+          "role": "background",
+          "bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "z": 0,
+          "representation": "asset",
+          "asset_id": "S02-background-paper"
+        },
+        {
+          "id": "S02-flow-orange-heat-production",
+          "role": "connector",
+          "bbox": [
+            404,
+            324,
+            322,
+            116
+          ],
+          "z": 10,
+          "representation": "native",
+          "source_path": "layers/S02/components/flow-orange-heater-production.svg",
+          "source_sha256": "6ca2450d1cea7bd419144b3fabe7e95d32a2eb28a8316e47f8723a9e9d471a9b"
+        },
+        {
+          "id": "S02-flow-orange-production-exhaust",
+          "role": "connector",
+          "bbox": [
+            1084,
+            314,
+            342,
+            126
+          ],
+          "z": 10,
+          "representation": "native",
+          "source_path": "layers/S02/components/flow-orange-production-exhaust.svg",
+          "source_sha256": "a1e6f910d058f04360d9f5d830a358c2853f09da625725842dbf4676e6722fc4"
+        },
+        {
+          "id": "S02-flow-orange-exhaust-exchanger",
+          "role": "connector",
+          "bbox": [
+            1374,
+            314,
+            52,
+            272
+          ],
+          "z": 10,
+          "representation": "native",
+          "source_path": "layers/S02/components/flow-orange-exhaust-exchanger.svg",
+          "source_sha256": "fea4d1f253e68415a5eae1039a48dbd571b3e2a6bf4528cd748740d318d3610c"
+        },
+        {
+          "id": "S02-flow-teal-return",
+          "role": "connector",
+          "bbox": [
+            270,
+            405,
+            1081,
+            313
+          ],
+          "z": 10,
+          "representation": "native",
+          "source_path": "layers/S02/components/flow-teal-return-loop.svg",
+          "source_sha256": "40ea97961f2cdd0657b5ffe6356e34a5df4178cb5d59be53a66facfd224232bb"
+        },
+        {
+          "id": "S02-device-heating",
+          "role": "illustration",
+          "bbox": [
+            65.22,
+            183,
+            397.57,
+            328
+          ],
+          "z": 20,
+          "representation": "asset",
+          "asset_id": "S02-device-heating"
+        },
+        {
+          "id": "S02-device-production",
+          "role": "illustration",
+          "bbox": [
+            641,
+            311.63,
+            497,
+            197.73
+          ],
+          "z": 20,
+          "representation": "asset",
+          "asset_id": "S02-device-production"
+        },
+        {
+          "id": "S02-device-exhaust",
+          "role": "illustration",
+          "bbox": [
+            1367.55,
+            182,
+            182.91,
+            318
+          ],
+          "z": 20,
+          "representation": "asset",
+          "asset_id": "S02-device-exhaust"
+        },
+        {
+          "id": "S02-device-recovery",
+          "role": "illustration",
+          "bbox": [
+            650,
+            540.57,
+            370,
+            218.86
+          ],
+          "z": 20,
+          "representation": "asset",
+          "asset_id": "S02-device-recovery"
+        },
+        {
+          "id": "S02-device-exchanger",
+          "role": "illustration",
+          "bbox": [
+            1195.41,
+            536,
+            407.18,
+            246
+          ],
+          "z": 20,
+          "representation": "asset",
+          "asset_id": "S02-device-exchanger"
+        },
+        {
+          "id": "S02-flow-orange-exchanger-side",
+          "role": "connector",
+          "bbox": [
+            1404,
+            568,
+            188,
+            152
+          ],
+          "z": 22,
+          "representation": "native",
+          "source_path": "layers/S02/components/flow-orange-exchanger-side.svg",
+          "source_sha256": "ae2e65b391eef521fb6debf0830511abf98209060a8ec2594eacccc33a9c90c4"
+        },
+        {
+          "id": "S02-arrow-hot-heat-production",
+          "role": "arrow",
+          "bbox": [
+            568,
+            399,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "source_path": "layers/S02/components/arrow-orange-heat-to-production.svg",
+          "source_sha256": "0bf04d57f7503e9b46721ddf619b050548c62ddfb98906e2e51d7a4a26a2c424"
+        },
+        {
+          "id": "S02-arrow-hot-production-exhaust",
+          "role": "arrow",
+          "bbox": [
+            1235,
+            399,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "source_path": "layers/S02/components/arrow-orange-production-to-exhaust.svg",
+          "source_sha256": "22c05259c2919a35d4e977e9a555917836c71afff8ff70b481f3f8cf256c477b"
+        },
+        {
+          "id": "S02-arrow-hot-exhaust-down",
+          "role": "arrow",
+          "bbox": [
+            1405,
+            503,
+            30,
+            45
+          ],
+          "z": 24,
+          "representation": "native",
+          "source_path": "layers/S02/components/arrow-orange-exhaust-down.svg",
+          "source_sha256": "fed330869bb537757cb0d313e89e1c9a268a24445019ee8d6890e849286752d6"
+        },
+        {
+          "id": "S02-arrow-hot-exchanger-out",
+          "role": "arrow",
+          "bbox": [
+            1485,
+            579,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "source_path": "layers/S02/components/arrow-orange-exchanger-outlet.svg",
+          "source_sha256": "ecb72292ce4404c0a58689a23dc320817f6423b01a059a753d95c749623db819"
+        },
+        {
+          "id": "S02-arrow-return-left-1",
+          "role": "arrow",
+          "bbox": [
+            1219.5,
+            677,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "source_path": "layers/S02/components/arrow-teal-return-1.svg",
+          "source_sha256": "e9dd2beb529d8d4e26ee094c8cfc658ecc372c4a6ee12156eab113989d5612b0"
+        },
+        {
+          "id": "S02-arrow-return-left-2",
+          "role": "arrow",
+          "bbox": [
+            1030.5,
+            677,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "source_path": "layers/S02/components/arrow-teal-return-2.svg",
+          "source_sha256": "18aca1594c4aef81144d8548411221ce75db97118aeb037923b7f8832342a0ca"
+        },
+        {
+          "id": "S02-arrow-return-left-3",
+          "role": "arrow",
+          "bbox": [
+            525.5,
+            677,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "source_path": "layers/S02/components/arrow-teal-return-3.svg",
+          "source_sha256": "dc55d81b247f466bc7838e159672616a6895a8af52e0dffc603e21254e5ee50a"
+        },
+        {
+          "id": "S02-arrow-return-up-1",
+          "role": "arrow",
+          "bbox": [
+            281,
+            565,
+            30,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "source_path": "layers/S02/components/arrow-teal-up-1.svg",
+          "source_sha256": "ec1cb462619b51d9118b9263cba6dbbca0b55855b50a7d8951117a91ed77409e"
+        },
+        {
+          "id": "S02-arrow-return-up-2",
+          "role": "arrow",
+          "bbox": [
+            258.5,
+            418.5,
+            75,
+            75
+          ],
+          "z": 24,
+          "representation": "native",
+          "source_path": "layers/S02/components/arrow-teal-up-2.svg",
+          "source_sha256": "3151cf0f5097499077a516652ffc4011c4ac35a6342b66f9f8c752d858217cc3"
+        },
+        {
+          "id": "S02-badge-shell-heating",
+          "role": "decoration",
+          "bbox": [
+            254,
+            220,
+            205,
+            56
+          ],
+          "z": 30,
+          "representation": "native",
+          "source_path": "layers/S02/components/badge-shell-heating.svg",
+          "source_sha256": "5efc1399bfe085134459e915d35f00d92d509f8df90444b15c48f8b8aff99248"
+        },
+        {
+          "id": "S02-badge-shell-production",
+          "role": "decoration",
+          "bbox": [
+            795,
+            220,
+            188,
+            56
+          ],
+          "z": 30,
+          "representation": "native",
+          "source_path": "layers/S02/components/badge-shell-production.svg",
+          "source_sha256": "fa93f5213700f37c10115d413268d70f761cab5646e127613a4677cb556ca94e"
+        },
+        {
+          "id": "S02-badge-shell-exhaust",
+          "role": "decoration",
+          "bbox": [
+            1268,
+            220,
+            198,
+            56
+          ],
+          "z": 30,
+          "representation": "native",
+          "source_path": "layers/S02/components/badge-shell-exhaust.svg",
+          "source_sha256": "57881d49d38085e54f0f77eb210c48be8af31794a9be46a027fbcfb17dfcdc76"
+        },
+        {
+          "id": "S02-badge-shell-reuse",
+          "role": "decoration",
+          "bbox": [
+            737,
+            770,
+            199,
+            56
+          ],
+          "z": 30,
+          "representation": "native",
+          "source_path": "layers/S02/components/badge-shell-reuse.svg",
+          "source_sha256": "be50e06b1d1c72ec462adc4fd50819ea750d556849c527ff47cc8786ef76c477"
+        },
+        {
+          "id": "S02-badge-shell-exchanger",
+          "role": "decoration",
+          "bbox": [
+            1270,
+            770,
+            196,
+            56
+          ],
+          "z": 30,
+          "representation": "native",
+          "source_path": "layers/S02/components/badge-shell-exchanger.svg",
+          "source_sha256": "5bfeea7b44a4ca7f7941cc162625ce507837ff650531f14539d0cbc436b4f3bb"
+        },
+        {
+          "id": "S02-text-badge-heating",
+          "role": "text",
+          "bbox": [
+            306,
+            224,
+            100,
+            42
+          ],
+          "z": 31,
+          "representation": "native",
+          "source_path": "layers/S02/native-text/S02-text-badge-heating.json",
+          "source_sha256": "7eba93f40794a5770f3241d4b5d37362864ff472b64fcbb0a43790d3a3f00441"
+        },
+        {
+          "id": "S02-text-badge-production",
+          "role": "text",
+          "bbox": [
+            836,
+            224,
+            107,
+            42
+          ],
+          "z": 31,
+          "representation": "native",
+          "source_path": "layers/S02/native-text/S02-text-badge-production.json",
+          "source_sha256": "c7e8a63566dbcc8663b93ffe98f43d3cef68401258a2c2ebf47cefdf37bd70e8"
+        },
+        {
+          "id": "S02-text-badge-exhaust",
+          "role": "text",
+          "bbox": [
+            1307,
+            224,
+            121,
+            42
+          ],
+          "z": 31,
+          "representation": "native",
+          "source_path": "layers/S02/native-text/S02-text-badge-exhaust.json",
+          "source_sha256": "4617134c4450f97c9cb6f41f83471305e1965cf8245e2f30a930cc4cd800a8a8"
+        },
+        {
+          "id": "S02-text-badge-reuse",
+          "role": "text",
+          "bbox": [
+            787,
+            774,
+            99,
+            42
+          ],
+          "z": 31,
+          "representation": "native",
+          "source_path": "layers/S02/native-text/S02-text-badge-reuse.json",
+          "source_sha256": "9e203222529bbccb6d2f94ed71d0d97ef43756a717f351eb24493b567d6983b7"
+        },
+        {
+          "id": "S02-text-badge-exchanger",
+          "role": "text",
+          "bbox": [
+            1309,
+            774,
+            119,
+            42
+          ],
+          "z": 31,
+          "representation": "native",
+          "source_path": "layers/S02/native-text/S02-text-badge-exchanger.json",
+          "source_sha256": "eedbfa16499c340b34d48517ac4ea792fd4c1ee4d6a1cfcd83a04a3d7c29817b"
+        },
+        {
+          "id": "S02-divider-title",
+          "role": "decoration",
+          "bbox": [
+            808,
+            131.8,
+            73,
+            2.4
+          ],
+          "z": 35,
+          "representation": "native",
+          "source_path": "layers/S02/components/divider-title.svg",
+          "source_sha256": "1f3b210195edf303d43d0aca837b7d0b5464960811b5461799664d9a6e9b2de1"
+        },
+        {
+          "id": "S02-divider-footer-left",
+          "role": "decoration",
+          "bbox": [
+            500,
+            891.2,
+            83,
+            1.6
+          ],
+          "z": 35,
+          "representation": "native",
+          "source_path": "layers/S02/components/divider-footer-left.svg",
+          "source_sha256": "e5216de7c24fda399ccf4c90fd16232f2811e0ce246009fb5474d2e8a7415bf6"
+        },
+        {
+          "id": "S02-divider-footer-right",
+          "role": "decoration",
+          "bbox": [
+            1090,
+            891.2,
+            83,
+            1.6
+          ],
+          "z": 35,
+          "representation": "native",
+          "source_path": "layers/S02/components/divider-footer-right.svg",
+          "source_sha256": "5d413df042a8c529b2c1b31edff12704e4bc49fc1e931956fd19a87ba8dbb37b"
+        },
+        {
+          "id": "S02-text-title",
+          "role": "text",
+          "bbox": [
+            449,
+            22,
+            820,
+            104
+          ],
+          "z": 40,
+          "representation": "native",
+          "source_path": "layers/S02/native-text/S02-text-title.json",
+          "source_sha256": "6c6ae0226eef506637c624c969fc94e6a7bf6c3202110f0a851912cc549530f6"
+        },
+        {
+          "id": "S02-text-subtitle",
+          "role": "text",
+          "bbox": [
+            440,
+            145,
+            800,
+            44
+          ],
+          "z": 40,
+          "representation": "native",
+          "source_path": "layers/S02/native-text/S02-text-subtitle.json",
+          "source_sha256": "a375ff915859578e8d04cfd97ae9afebfcffa8b99d39174ad46634074329f578"
+        },
+        {
+          "id": "S02-text-footer",
+          "role": "text",
+          "bbox": [
+            610,
+            880,
+            459,
+            24
+          ],
+          "z": 40,
+          "representation": "native",
+          "source_path": "layers/S02/native-text/S02-text-footer.json",
+          "source_sha256": "9396c655eb1ed7cb400e233af511a3616e70afdfae07884c7a4555b7ec4a0f57"
+        },
+        {
+          "id": "S02-collar-teal-return-left",
+          "role": "decoration",
+          "bbox": [
+            388,
+            667,
+            22,
+            50
+          ],
+          "z": 22,
+          "representation": "native",
+          "source_path": "layers/S02/components/collar-teal-return-left.svg",
+          "source_sha256": "2d248b7e0a632a102ebd0145ca18a81e40816bf957aa446ecbac1a7c97812dd9"
+        },
+        {
+          "id": "S02-collar-hot-production-inlet",
+          "role": "decoration",
+          "bbox": [
+            676,
+            389,
+            22,
+            50
+          ],
+          "z": 22,
+          "representation": "native",
+          "source_path": "layers/S02/components/collar-hot-production-inlet.svg",
+          "source_sha256": "74b30711c4cee135a7e0b46733e1f0e6ed3ea745ff69a3b3ce16063536d1bd24"
+        },
+        {
+          "id": "S02-collar-hot-production-outlet",
+          "role": "decoration",
+          "bbox": [
+            1102,
+            389,
+            22,
+            50
+          ],
+          "z": 22,
+          "representation": "native",
+          "source_path": "layers/S02/components/collar-hot-production-outlet.svg",
+          "source_sha256": "e8a066fda7143fb000052a36c7220b93e63604961f17165809c7240756a5cba5"
+        },
+        {
+          "id": "S02-collar-hot-downcomer",
+          "role": "decoration",
+          "bbox": [
+            1375,
+            549,
+            50,
+            22
+          ],
+          "z": 22,
+          "representation": "native",
+          "source_path": "layers/S02/components/collar-hot-downcomer.svg",
+          "source_sha256": "6a90b6cf37a5de566001b97ef9598cd08b47afc81f1a72654fd84edfcf96ab29"
+        },
+        {
+          "id": "S02-collar-exchanger-outlet",
+          "role": "decoration",
+          "bbox": [
+            1449,
+            569,
+            22,
+            50
+          ],
+          "z": 22,
+          "representation": "native",
+          "source_path": "layers/S02/components/collar-exchanger-outlet.svg",
+          "source_sha256": "0d94e4f3a663b29c30c448c411a83e0fc690e6a65b8ee181b0f9fb32afe6392a"
+        },
+        {
+          "id": "S02-support-ground-384",
+          "role": "decoration",
+          "bbox": [
+            366,
+            702,
+            36,
+            56
+          ],
+          "z": 21,
+          "representation": "native",
+          "source_path": "layers/S02/components/support-ground-384.svg",
+          "source_sha256": "f49eafe90df429adfc128e16e32ff32998e7c54e2e520848f42afcf9d29240cb"
+        },
+        {
+          "id": "S02-support-ground-529",
+          "role": "decoration",
+          "bbox": [
+            511,
+            702,
+            36,
+            56
+          ],
+          "z": 21,
+          "representation": "native",
+          "source_path": "layers/S02/components/support-ground-529.svg",
+          "source_sha256": "83b2a504007b51681d65b60efa326c43fe53ea33d2f9c9ae4c6e33149326de65"
+        },
+        {
+          "id": "S02-support-ground-653",
+          "role": "decoration",
+          "bbox": [
+            635,
+            702,
+            36,
+            56
+          ],
+          "z": 21,
+          "representation": "native",
+          "source_path": "layers/S02/components/support-ground-653.svg",
+          "source_sha256": "0e04bd94313caa0175de4dcd7670fefd1f86889548cd5928c28c26ed466006c6"
+        },
+        {
+          "id": "S02-support-ground-1150",
+          "role": "decoration",
+          "bbox": [
+            1132,
+            702,
+            36,
+            56
+          ],
+          "z": 21,
+          "representation": "native",
+          "source_path": "layers/S02/components/support-ground-1150.svg",
+          "source_sha256": "a67ef325e5d375d0ae5b9699c989efcba45ea1b05bcd9ff3e7be8e023e8e05f4"
+        }
+      ],
+      "render_path": "renders/S02.png",
+      "render_sha256": "fed0dd94ab40bd42b37ccc5fa10edad9bd08a8a2d8863d2cecae25d8478fd7ce",
+      "renderer_path": "render-S02.html",
+      "renderer_sha256": "0ca92c5d6e7b31a5768c2cb5a04c6652109ebeb2a22178f3939338d14aa0ef5d",
+      "review": {
+        "actor": "agent",
+        "concept_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+        "render_sha256": "fed0dd94ab40bd42b37ccc5fa10edad9bd08a8a2d8863d2cecae25d8478fd7ce",
+        "coverage": "all-inventoried-elements",
+        "outcome": "agent-reviewed",
+        "user_acceptance": "not-recorded"
+      }
+    },
+    {
+      "slide_id": "S03",
+      "concept_path": "concepts/S03.png",
+      "concept_sha256": "08157d04fa08c681ce8c6f7cf5151f4a2549e11786dd37969aa99f8da0163f90",
+      "items": [
+        {
+          "id": "S03-background",
+          "role": "background",
+          "bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "z": 0,
+          "representation": "asset",
+          "asset_id": "S03-background"
+        },
+        {
+          "id": "S03-membrane",
+          "role": "illustration",
+          "bbox": [
+            1150,
+            484,
+            522,
+            277
+          ],
+          "z": 10,
+          "representation": "asset",
+          "asset_id": "S03-membrane"
+        },
+        {
+          "id": "S03-title",
+          "role": "text",
+          "bbox": [
+            74,
+            31,
+            1150,
+            139
+          ],
+          "z": 30,
+          "representation": "native",
+          "source_path": "layers/S03/native-text/S03-title.json",
+          "source_sha256": "b0902a64086a10fce8afecb0f845554e9f31be6fe46fe380bab386ff2fd65555"
+        },
+        {
+          "id": "S03-chart-heading",
+          "role": "text",
+          "bbox": [
+            71,
+            183,
+            720,
+            81
+          ],
+          "z": 30,
+          "representation": "native",
+          "source_path": "layers/S03/native-text/S03-chart-heading.json",
+          "source_sha256": "2b042885fc401bbc5c1dfefd1e971336b8f99d919eeb530689027c7f50a6003c"
+        },
+        {
+          "id": "S03-chart",
+          "role": "chart",
+          "bbox": [
+            28,
+            254,
+            1070,
+            644
+          ],
+          "z": 15,
+          "representation": "native",
+          "source_path": "layers/S03/components/chart.svg",
+          "source_sha256": "79aca53b6648000d3a20352bec30c11b18095726c5494c876428b91559d3be54"
+        },
+        {
+          "id": "S03-divider",
+          "role": "decoration",
+          "bbox": [
+            1133,
+            201,
+            2,
+            686
+          ],
+          "z": 20,
+          "representation": "native",
+          "source_path": "layers/S03/components/divider.svg",
+          "source_sha256": "cb520ec482d9f078c8454637616d4431e5b8663822f4cff1a867fc435e49aaed"
+        },
+        {
+          "id": "S03-bullet-1",
+          "role": "decoration",
+          "bbox": [
+            1167,
+            272,
+            16,
+            16
+          ],
+          "z": 20,
+          "representation": "native",
+          "source_path": "layers/S03/components/bullet-1.svg",
+          "source_sha256": "7a4ff34c9232be6a353694ea7cf081f331a3a780f6e741a6a4eeb953bc9fe05e"
+        },
+        {
+          "id": "S03-bullet-2",
+          "role": "decoration",
+          "bbox": [
+            1167,
+            413,
+            16,
+            16
+          ],
+          "z": 20,
+          "representation": "native",
+          "source_path": "layers/S03/components/bullet-2.svg",
+          "source_sha256": "7a4ff34c9232be6a353694ea7cf081f331a3a780f6e741a6a4eeb953bc9fe05e"
+        },
+        {
+          "id": "S03-single",
+          "role": "text",
+          "bbox": [
+            1209,
+            253,
+            446,
+            108
+          ],
+          "z": 30,
+          "representation": "native",
+          "source_path": "layers/S03/native-text/S03-single.json",
+          "source_sha256": "9486a6115ab6c0e4816b40ea521af07ce1dae6f18b64cbe1469871c0dd1933ad"
+        },
+        {
+          "id": "S03-takeaway",
+          "role": "text",
+          "bbox": [
+            1209,
+            398,
+            452,
+            59
+          ],
+          "z": 30,
+          "representation": "native",
+          "source_path": "layers/S03/native-text/S03-takeaway.json",
+          "source_sha256": "dfdc6747598528d69f58c597ddc6ce0e4b384160b2431f325803bac024639a34"
+        },
+        {
+          "id": "S03-qualifier-frame",
+          "role": "decoration",
+          "bbox": [
+            1168,
+            787,
+            470,
+            88
+          ],
+          "z": 20,
+          "representation": "native",
+          "source_path": "layers/S03/components/qualifier-frame.svg",
+          "source_sha256": "fb6bdf51a415247dbc6a9b4e4838a8f4e18e17ad00ff078641e163ce12589e19"
+        },
+        {
+          "id": "S03-qualifier",
+          "role": "text",
+          "bbox": [
+            1197,
+            803,
+            424,
+            62
+          ],
+          "z": 30,
+          "representation": "native",
+          "source_path": "layers/S03/native-text/S03-qualifier.json",
+          "source_sha256": "d789fafa540451b863dd74265b025bf3e84b501d81d082e3ba39b3a01d4b90e7"
+        }
+      ],
+      "render_path": "renders/S03.png",
+      "render_sha256": "ba5d807ad6504eb8e85987eb344f0b906d99c0294d011baffa122d02e142c5a8",
+      "renderer_path": "render-S03.html",
+      "renderer_sha256": "e598b259c818ba815822efaa8dca061dc7b62c44c9234ae246bc20b26c9c8703",
+      "review": {
+        "actor": "agent",
+        "concept_sha256": "08157d04fa08c681ce8c6f7cf5151f4a2549e11786dd37969aa99f8da0163f90",
+        "render_sha256": "ba5d807ad6504eb8e85987eb344f0b906d99c0294d011baffa122d02e142c5a8",
+        "coverage": "all-inventoried-elements",
+        "outcome": "agent-reviewed",
+        "user_acceptance": "not-recorded"
+      }
+    }
+  ],
+  "dependency_files": [
+    {
+      "path": "scene.json",
+      "sha256": "64782c0d289772caeae10c6b193d7ae44aedd3e2e3530436622299deb72bfe68"
+    },
+    {
+      "path": "layers/S01/inventory.json",
+      "sha256": "8e0da9db98cecf2c8c1a9ed7ad7fd61b0ac00887f4a8d87d7837a699d06c82ad"
+    },
+    {
+      "path": "layers/S01/scene.json",
+      "sha256": "362a489de0b15ba339521059c0aba67d5139dcf9229e4e2a58ec9fb38acfbee5"
+    },
+    {
+      "path": "layers/S02/finalize_metadata.py",
+      "sha256": "09660d89db842d372bb523a4b9de5aebc76ef7c15b1e2fb5b4b7b506a75cd525"
+    },
+    {
+      "path": "layers/S02/fix_pipe_gradients.py",
+      "sha256": "e191a45b09546eb48a5b611563ed34f0133f0da69d7b64ada7b6a8ef94fe44b6"
+    },
+    {
+      "path": "layers/S02/inventory.json",
+      "sha256": "12ed3a4c2ae6649d0ea4fb88b8562936e5b2d8d8bda1c31adc1847d491658322"
+    },
+    {
+      "path": "layers/S02/qa_report.json",
+      "sha256": "7bf55d62c32678817690b3e2a166f4be0400a530baaa5aacae3c1236f72af750"
+    },
+    {
+      "path": "layers/S02/scene.json",
+      "sha256": "9b262907d25bb237c1b77bb5e1cc8d5492b472b42ec04aa5af6dedbd2803152a"
+    },
+    {
+      "path": "layers/S02/stage_manifest.py",
+      "sha256": "95a45e5a2e948e67d27b3c27ef50ccc31576337fde4387fc9daa30c5a5e659dd"
+    },
+    {
+      "path": "layers/S02/update_flows.py",
+      "sha256": "5360c1645d0d7ca2bc6729ef3d48c68aed26a5bb7de700d402a55e422bc2e015"
+    },
+    {
+      "path": "layers/S02/verify_shard.py",
+      "sha256": "e660dc0e1811dde8a81636c75d76b6d294bd6f56959611c70beaadbf2f9f77c1"
+    },
+    {
+      "path": "layers/S03/inventory.json",
+      "sha256": "6be594c915e81fe6d3ae8fd9c88d75adde947ba2eb9595f2b87f7076070d2094"
+    },
+    {
+      "path": "layers/S03/scene.json",
+      "sha256": "6854fdf098b1c09f7ce113d0a29abd5e7488a5fa3c1f8826d93d3c4f2875d1e0"
+    },
+    {
+      "path": "layers/S03/attempts/background-generation.json",
+      "sha256": "4cb124909d0bdbe739776bc877c7fe6a8b68e30c184def7f267b62eabc32b4c0"
+    },
+    {
+      "path": "layers/S03/attempts/membrane-generation.json",
+      "sha256": "330dada5f16dda096171c6e881664f3638567358d0346f7a36c161f04c577d57"
+    },
+    {
+      "path": "layers/S03/attempts/membrane-repair-generation.json",
+      "sha256": "17833ba6953e4efd5f5b9a5df533ba8ca9d754c273ff65d57f06b37d3715798b"
+    },
+    {
+      "path": "layers/S03/attempts/membrane-v1.png",
+      "sha256": "6faf2d0006ef13caa3c4af6f9cddb1e399999cecd30d29a123e96e9297abae83"
+    },
+    {
+      "path": "layers/S03/components/chart-data.json",
+      "sha256": "e1739136eddccbe620a4b446c96ac3020c89e3599938898c694cd25cd8156563"
+    },
+    {
+      "path": "layers/S03/components/chart-heading.json",
+      "sha256": "59e77e147ddce9ba75c1b6322fa9775a0a09db37c8872540cd8e56264c3fdb2d"
+    },
+    {
+      "path": "layers/S03/components/qualifier.json",
+      "sha256": "f878b6faa078818172e1a7b0a3440eef6c78efdb9867eed7c0bf9ac382343b24"
+    },
+    {
+      "path": "layers/S03/components/single.json",
+      "sha256": "955d2afa0325e0afda91c9820e5cb5aa687c24532c119eca079e890195294a7c"
+    },
+    {
+      "path": "layers/S03/components/takeaway.json",
+      "sha256": "312d6e3f13248da10841f4c8b9b75d407e33d68a4ac02558ff752177e20f03be"
+    },
+    {
+      "path": "layers/S03/components/title.json",
+      "sha256": "ff229f50d9e62dbca574fa4c052aefefa0157b583178cc668448618851d73bc0"
+    },
+    {
+      "path": "layers/S02/components/heating-furnace.png",
+      "sha256": "13d8b8b83e286fe9cde84ae324c023d3ff1b488c669cc7f40981c7429c5628b2"
+    },
+    {
+      "path": "layers/S02/components/text-badge-exchanger.svg",
+      "sha256": "edc25b07eba2fc842a41ebce19959744b14211ddfd56bdb5a07f139cb88b3b58"
+    },
+    {
+      "path": "layers/S02/components/text-badge-exhaust.svg",
+      "sha256": "ffa4108ba27eab2e93c5b17a98cb2efe4bdd86486d7c2fd26fdb403dfc30007d"
+    },
+    {
+      "path": "layers/S02/components/text-badge-heating.svg",
+      "sha256": "049648ac02812041ed2aee8b6809eb1ef54934058231a76149bb3bf606d8f152"
+    },
+    {
+      "path": "layers/S02/components/text-badge-production.svg",
+      "sha256": "fd52b9e22c5c0bed172347ef7e72f41f0bf541dcb508a6a2e786c2781f7c2efb"
+    },
+    {
+      "path": "layers/S02/components/text-badge-reuse.svg",
+      "sha256": "7e7ba9c087a79bd1ce31672c7a55b83cd879ee6d6b82a9d012aa7dbf03c83878"
+    },
+    {
+      "path": "layers/S02/components/text-footer.svg",
+      "sha256": "004c6229cbd410806b5d60e2efad47d2e0f15744aa6d223c2cbfcbeae4a600b4"
+    },
+    {
+      "path": "layers/S02/components/text-subtitle.svg",
+      "sha256": "9ef68b66f7ba99f491c02657ee687bf654efae1039471e6e06bb544929012bd2"
+    },
+    {
+      "path": "layers/S02/components/text-title.svg",
+      "sha256": "017daa7c3f491a5971cc95f8d4cb11189e8258d6b6e6ec56c8f168327ba99d6c"
+    },
+    {
+      "path": "layers/S02/attempts/01-background-plate/output.png",
+      "sha256": "c630a304669e61e2e098ba429ab94a35f4588c75603bf08030ff15841f04c01b"
+    },
+    {
+      "path": "layers/S02/attempts/01-background-plate/record.json",
+      "sha256": "2e418a9b1cc6926b5b7ac7bad8e9b3f0130aeb4ae2e8986304d43410fd85569e"
+    },
+    {
+      "path": "layers/S02/attempts/02-heating-furnace/component-candidate.png",
+      "sha256": "13d8b8b83e286fe9cde84ae324c023d3ff1b488c669cc7f40981c7429c5628b2"
+    },
+    {
+      "path": "layers/S02/attempts/02-heating-furnace/output.png",
+      "sha256": "13d8b8b83e286fe9cde84ae324c023d3ff1b488c669cc7f40981c7429c5628b2"
+    },
+    {
+      "path": "layers/S02/attempts/02-heating-furnace/record.json",
+      "sha256": "44e6e988a691bc6531b09ab990e949364047b436dfd95221d40fdd2f947eedbb"
+    },
+    {
+      "path": "layers/S02/attempts/03-heating-furnace-repair/output.png",
+      "sha256": "6142c9890b2d42970e7643eee4e524c2cc123d5134a007169cfb8392e2e887b8"
+    },
+    {
+      "path": "layers/S02/attempts/03-heating-furnace-repair/record.json",
+      "sha256": "8880df7eb6b896be1ede424c4fd286cfd2ce953d2515b1061b2d84c72922a957"
+    },
+    {
+      "path": "layers/S02/attempts/04-production-machine/output.png",
+      "sha256": "db0e232daa48df8b7abc21154c22ac1656f8847c12b6933b834061e0b10ef2ab"
+    },
+    {
+      "path": "layers/S02/attempts/04-production-machine/record.json",
+      "sha256": "d055223db87139b74bce1ac5179b9a45186adc7e41a041c8c4c787ea9f95c1c7"
+    },
+    {
+      "path": "layers/S02/attempts/05-exhaust-tower/output.png",
+      "sha256": "09a7ecb8a3a54cab972ef6b7e7ecc482f2c2693caa6dff1c2e2fb34df89ba8c6"
+    },
+    {
+      "path": "layers/S02/attempts/05-exhaust-tower/record.json",
+      "sha256": "df3bde9bf0e6313af728f5e36cf21232e6d4e1b0cd21a698d011baceb2f6f497"
+    },
+    {
+      "path": "layers/S02/attempts/06-recovery-vessel-pump/output.png",
+      "sha256": "97fb535164ad3536ae64826b81c3836982b8f65c8a92aec8ced0192f66462551"
+    },
+    {
+      "path": "layers/S02/attempts/06-recovery-vessel-pump/record.json",
+      "sha256": "50b85224ab189999d8ab72a5accc3367d1f7dfef662cf84c1caee5854269c635"
+    },
+    {
+      "path": "layers/S02/attempts/07-heat-exchanger/output.png",
+      "sha256": "ab4bbc68c71242cfa15dfd4d9636bebe80cbd7c36bbc53ec08042a72c7fefbfa"
+    },
+    {
+      "path": "layers/S02/attempts/07-heat-exchanger/record.json",
+      "sha256": "9572e692f3de42cd0327f644176e5fa912453075c82f43b04571a04b70185e4f"
+    },
+    {
+      "path": "layers/S01/attempts/S01-bg-01.json",
+      "sha256": "d2bbc0f0d8ba9ca508b88abfb34a1ce820d587ab280e0b65f093d74302eee50c"
+    },
+    {
+      "path": "layers/S01/attempts/S01-bg-01.png",
+      "sha256": "7d0d38635b550a7707a99433b73fe3f161b945193d21bd598c3acaad57f0e4c6"
+    },
+    {
+      "path": "layers/S01/attempts/S01-bg-01.prompt.txt",
+      "sha256": "95e3038c290fae48ab7fc34abbffb139ef2d3064723b45dc741ed9e629ba2734"
+    },
+    {
+      "path": "layers/S01/attempts/S01-contact-shadow-01.json",
+      "sha256": "38c8cf6071b9860493c34afb3d13aad87ff912208a77e8680a61f91587e8e6ed"
+    },
+    {
+      "path": "layers/S01/attempts/S01-contact-shadow-01.png",
+      "sha256": "8233b6cdb7056235b565f34a9aa53253e11744375aca400126217de3ac01d27c"
+    },
+    {
+      "path": "layers/S01/attempts/S01-contact-shadow-01.prompt.txt",
+      "sha256": "942561b4123ce7505b36368979769699452c2dcbbd0c5f639e1668723b615394"
+    },
+    {
+      "path": "layers/S01/attempts/S01-device-01.json",
+      "sha256": "808657afb78fb32229d27116dd9775e8db232d922a0ceea1702c06f660926918"
+    },
+    {
+      "path": "layers/S01/attempts/S01-device-01.png",
+      "sha256": "fb0ea48bbbc6fb539f645b6775db6fc18ad5f6ab69e70bead53ba9c7d35d954e"
+    },
+    {
+      "path": "layers/S01/attempts/S01-device-01.prompt.txt",
+      "sha256": "76927dceedbbcd76bd67c0209ab4aafba6eb706fa58bd3a808cd96c935c3d475"
+    },
+    {
+      "path": "layers/S01/attempts/S01-reflection-01.json",
+      "sha256": "fe408ead6308144355caa2dd77b780ddafdf48cf5c8ecd4184a72d6048fa7584"
+    },
+    {
+      "path": "layers/S01/attempts/S01-reflection-01.png",
+      "sha256": "4d65af38cf59ceb9062f8a182aa4f61fe418bd6595289834d00a97fcf7ad5c37"
+    },
+    {
+      "path": "layers/S01/attempts/S01-reflection-01.prompt.txt",
+      "sha256": "c608bdd9427020ab9ca17a2d6dee77622c813c6f5c8edbadd8dd114e5b98cbe5"
+    },
+    {
+      "path": "layers/S01/attempts/S01-reflection-02.json",
+      "sha256": "c67e617f424a8c46de312e9f5dc63f59cf52589e66ce54fdfe8cd947b358333b"
+    },
+    {
+      "path": "layers/S01/attempts/S01-reflection-02.png",
+      "sha256": "5f1db4147c6d3d20b6ad3ba3eb6381503e8d0c142e1f1f0415d4bf4a090e673a"
+    },
+    {
+      "path": "layers/S01/attempts/S01-reflection-02.prompt.txt",
+      "sha256": "db960d431999b2fe5618211f3b29ba114ef4f694c7b11061537166ae06096654"
+    },
+    {
+      "path": "layers/S01/attempts/S01-wordmark-01.json",
+      "sha256": "6fdb7cb17adbbbfff9e4f03807bf94ea722aa1861bb3845f3a2f6a9c5d59fa5d"
+    },
+    {
+      "path": "layers/S01/attempts/S01-wordmark-01.png",
+      "sha256": "bb77440ee9b7d89aa62666c9cea8fd17ade08d1570b7f162dfc48b0f8fe78743"
+    },
+    {
+      "path": "layers/S01/attempts/S01-wordmark-01.prompt.txt",
+      "sha256": "0dc3da0df0e0557f4e91eb67ffb58211dcf35383cf411e0bfe20765a58eae41f"
+    },
+    {
+      "path": "layers/S01/attempts/S01-wordmark-02.json",
+      "sha256": "6c559657b6ba3f1a7e2d00a3f79faca872ecbe2e0f0fd3ceb7ec397313a97233"
+    },
+    {
+      "path": "layers/S01/attempts/S01-wordmark-02.png",
+      "sha256": "8256cf8431d75f8e1b48d54d5de1ab848924d926e861fcdb9424ee12bd62001d"
+    },
+    {
+      "path": "layers/S01/attempts/S01-wordmark-02.prompt.txt",
+      "sha256": "6725abf7ddce9bce0c8c5781756f81864c1e09a133d11486394822d768b9989f"
+    },
+    {
+      "path": "layers/S01/attempts/S01-wordmark-03.json",
+      "sha256": "3484573bd8148c98cb5007daced00a4eed6a3e6fbb011604a769ac7639c610e4"
+    },
+    {
+      "path": "layers/S01/attempts/S01-wordmark-03.png",
+      "sha256": "8ace4a5ae48155437dfc4c824f6e960135527e893f4c51edf29cfd9495181c55"
+    },
+    {
+      "path": "layers/S01/attempts/S01-wordmark-03.prompt.txt",
+      "sha256": "edd1e620be72ed0b2b170d1b5dd7450bdc869b74db4a6cf5170722cf8c2a7c38"
+    },
+    {
+      "path": "index.html",
+      "sha256": "874c1b82ddf4503eb2965c7629c15ecdc69fd68c9d336eae897411b8ee4d155c"
+    },
+    {
+      "path": "isolations.html",
+      "sha256": "c1e1e66b089b5bfc2cc4c4eeb5f1b9fd4ce18d12e1fb13e6aacda426bd5c4cb9"
+    },
+    {
+      "path": "rebuild-S01.html",
+      "sha256": "3a5bbe548edfc68ac41ef169e9f59ca0f5c39403dcbdecec0c05b5b232499fb0"
+    },
+    {
+      "path": "rebuild-S02.html",
+      "sha256": "3b74ac3c9a9afcbc90ec6bbe7deb71679f4a8c620a56012da015bbdb09caf3e4"
+    },
+    {
+      "path": "rebuild-S03.html",
+      "sha256": "fd0bf50f35c36ead528b053b584b1106c909a067f0d1eddd9d231a0d0dbd5f7d"
+    },
+    {
+      "path": "review/visual-review.json",
+      "sha256": "81c6fad2271a7926de1280269f487494ec16bf532bce550ea5cd541fd18ce094"
+    },
+    {
+      "path": "review/visual-review.md",
+      "sha256": "c9f12ff1d1d374f12997b54a6ae5cbafc1bcf8b65bc4d708083b24ad38923610"
+    }
+  ]
+}

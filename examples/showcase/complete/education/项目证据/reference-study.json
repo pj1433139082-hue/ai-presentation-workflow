@@ -1,0 +1,55 @@
+{
+  "status": "analyzed",
+  "selected_reference_ids": [
+    "R469",
+    "EDUCATION-S01"
+  ],
+  "references": [
+    {
+      "id": "R469",
+      "status": "analyzed",
+      "image_path": "references/case469.jpg",
+      "sha256": "0D63EA96B6F5BE08AE0C9FF8040EEB90597D116BEBF9958680B5171ED6C7B12D",
+      "source_locator": "Case 469, awesome-gpt-image-2 local library; https://x.com/MrLarus/status/2058773446167773521",
+      "usage_note": "原案例是儿童导览式科普绘本；本项目只借鉴阅读路径清楚的说明方式。",
+      "transferable_rules": [
+        "路径和站点能帮助读者辨认先后关系",
+        "视觉对象应支持一个具体学习动作",
+        "标题、引导线索与说明文本要形成可扫描的阅读顺序"
+      ],
+      "project_translation": [
+        "用成人视觉表达练习替代儿童绘本主题",
+        "在读图、拆解和评阅页显示明确操作或判断问题",
+        "让版面本身成为练习对象，不伪造课堂记录"
+      ],
+      "do_not_copy": [
+        "不使用儿童角色、火箭、发射场或儿童绘本画风",
+        "不引入真实机构、教师资质、认证或学员成果",
+        "不把三阶段总览布局固定复用于后续页面"
+      ]
+    },
+    {
+      "id": "EDUCATION-S01",
+      "status": "analyzed",
+      "image_path": "concepts/S01.png",
+      "sha256": "B2AE250C8DF800F9898B48A01C45DAEA62F6DD9582E390A8CF4DE8406E3D6A24",
+      "source_locator": "Imported prior single-page concept: pilots/industry-explorations/B-education/slide.png; original prompt and generation record retained under project/provenance/imports.",
+      "usage_note": "这是已生成的成人视觉表达工作坊概念页，按用户要求作为本项目 S01 导入；页面内缩略示例的微小装饰文字不承担事实。",
+      "transferable_rules": [
+        "纸张拼贴和手绘标记营造动手学习的气氛",
+        "高对比标题、编号和颜色帮助快速定位阶段",
+        "课程解释应清楚连接学习动作与产出"
+      ],
+      "project_translation": [
+        "保留温暖纸面、手作批注和清晰色彩线索",
+        "新页面根据读图练习、版面实作和评阅目的改变构图",
+        "练习任务与成果都标记为示例"
+      ],
+      "do_not_copy": [
+        "不把 S01 的三阶段横向流程原样重复到每一页",
+        "不复用其虚构海报微字作为真实示例数据",
+        "不采用儿童角色、学校徽章或认证式视觉"
+      ]
+    }
+  ]
+}

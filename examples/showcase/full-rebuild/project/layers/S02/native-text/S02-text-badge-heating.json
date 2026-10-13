@@ -1,0 +1,47 @@
+{
+  "id": "S02-text-badge-heating",
+  "role": "text",
+  "text": "加热",
+  "bbox": [
+    306,
+    224,
+    100,
+    42
+  ],
+  "position": {
+    "x": 356.5,
+    "y": 261,
+    "anchor": "middle"
+  },
+  "font_family": "Noto Sans SC",
+  "font_weight": 800,
+  "font_size_px": 38,
+  "letter_spacing_px": 6,
+  "color": "#FFFFFF",
+  "editable": true,
+  "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+  "z": 31,
+  "representation": "native",
+  "type": "text",
+  "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+  "semantic_role": "heating badge label",
+  "file": "components/text-badge-heating.svg",
+  "text_width_px": 100,
+  "source_format": "editable SVG text node",
+  "sha256": "049648ac02812041ed2aee8b6809eb1ef54934058231a76149bb3bf606d8f152",
+  "asset_frame_bbox": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "svg_viewbox": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "path": "layers/S02/native-text/S02-text-badge-heating.json",
+  "line_height": 1.1,
+  "text_align": "center"
+}

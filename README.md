@@ -1,55 +1,82 @@
 # AI Presentation Workflow
 
-一个面向 Codex 的分阶段 PPT 制作技能：先对齐需求、事实和风格，再用**带真实文字与代表性图片的完整概念图**审定页面，最后拆成可复用的透明 PNG 组件。最终普通文字和数据由原生可编辑对象承载；PPTX 拼装是可选交付，不把整张概念图当作“可编辑 PPT”。
+**先把内容设计好，再交付到你需要的那一步。**
 
-## 适合什么任务
+完整概念图 → 按需拆独立素材 → 按需组装可编辑 PPTX。构图、配色、字体、材质和页面数随内容决定，概念设计先成立，拆件与拼装按需求选择。
 
-- 从简报、资料或参考 PPT 制作/改造演示文稿，需要明确每阶段输入、输出和人工确认点。
-- 希望先看有完整图文的页面效果，再决定版式、视觉风格和内容取舍。
-- 需要单独重组人物、插图、箭头、基础形、图表/表格外壳等透明 PNG 组件；表格、图表中的文字和数据留空，供后续填写。
-- 需要保留截图、图表和结论的来源与状态，不让生图改写事实。
+[**打开在线展示**](https://pj1433139082-hue.github.io/ai-presentation-workflow/) · [六行业完整概念](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/complete/) · [竞赛与大创答辩](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/competitions/) · [从空白逐层重建](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/full-rebuild/) · [下载包](https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/tag/showcase-2026-10-14)
 
-## 安装与使用
+[![知栈产品发布概念](examples/showcase/complete/tech/概念图/01-S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/complete/tech/)
 
-```bash
-git clone https://github.com/pj1433139082-hue/ai-presentation-workflow.git
-```
+## 不同行业，不同的表达
 
-将克隆得到的整个 `ai-presentation-workflow` 目录放入你的 Agent 技能目录，例如 `~/.agents/skills/ai-presentation-workflow/`。不同客户端的技能发现路径可能不同，请以该客户端的配置为准。技能入口是 [SKILL.md](SKILL.md)；实际生图依赖 Codex 内置 `image_gen` 和可用的 `imagegen` 子技能，不会静默改用其他服务。
+六套完整概念共 **29 页**。每套先组织故事线，再逐页设计。页面里的产品、项目、方案与数据为明确标注的示例。
 
-在 Codex 中可这样开始：
+| 科研汇报 · 6 页 | 制造业流程 · 5 页 |
+| --- | --- |
+| [![科研概念](examples/showcase/research-v3/assets/S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/research-v3/) | [![工业流程概念](examples/showcase/complete/manufacturing/概念图/01-S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/complete/manufacturing/) |
 
-> 使用 `$ai-presentation-workflow`，先检查我提供的资料，和我确认受众、目标、事实边界与交付形式，然后制作带文字和图片的完整概念图；概念图批准后再拆透明组件。
+| 科技产品 · 5 页 | 教育课程 · 4 页 |
+| --- | --- |
+| [![科技产品概念](examples/showcase/complete/tech/概念图/01-S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/complete/tech/) | [![课程概念](examples/showcase/complete/education/概念图/01-S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/complete/education/) |
 
-新项目从 [`assets/project-template/`](assets/project-template/) 复制一份工作目录，填写 `brief.json`、`run-state.json` 等阶段文件。模板中的 `replace-...` 占位内容不能当作真实需求通过入口校验。每完成一个阶段，可运行：
+| 消费品牌 · 5 页 | 公共服务 · 4 页 |
+| --- | --- |
+| [![品牌概念](examples/showcase/complete/brand/概念图/01-S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/complete/brand/) | [![公共服务概念](examples/showcase/complete/library/概念图/01-S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/complete/library/) |
 
-```bash
-python scripts/validate_project.py <project-dir> --stage intake
-python scripts/validate_project.py <project-dir> --stage concept
-python scripts/validate_project.py <project-dir> --stage release
-```
+## 比赛与项目答辩
 
-只有当前阶段的必需产物、批准记录和哈希关联齐全时才继续。校验器检查结构与证据链，**不能替代逐页人眼审图**。
+五套完整概念共 **31 页**。大创沿用同一虚构项目，覆盖立项、过程和结题；另有科技创新作品答辩、创新创业路演。正式备赛按实际项目与当届任务书替换内容。
 
-## 工作流
-
-| 阶段 | 主要产物 | 人工确认 |
+| 大创立项 · 7 页 | 大创过程 · 6 页 | 大创结题 · 6 页 |
 | --- | --- | --- |
-| 需求与研究 | 简报、资料清单、来源/事实边界 | G1：受众、目标、来源权威性、交付与可编辑要求 |
-| 叙事 | 逐页故事线与行动标题 | G2：页面顺序、核心观点和证据映射 |
-| 风格与版面 | 参考板、同内容风格校准图、三类锚点、可读性规划 | G3：方向、风格强度、密度、图文展示空间 |
-| 完整概念图 | 每页带真实文案和代表性图片的版本化整图、整套联系表 | G4：逐页全尺寸审图、文字/来源、画面与可读性 |
-| 母版与组件 | 无普通文字的母版、100% 并排复核证据、透明 PNG、摆放清单 | G4 批准后才能制作；逐项检查构图、留白、透明度 |
-| 拼装与验收 | 可选 PPTX、QA 报告和交付包 | G5：最终交付确认 |
+| [![大创立项](examples/showcase/competitions/dachuang/概念图/01-S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/competitions/dachuang/) | [![大创过程](examples/showcase/competitions/dachuang-process/概念图/01-S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/competitions/dachuang-process/) | [![大创结题](examples/showcase/competitions/dachuang-closeout/概念图/01-S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/competitions/dachuang-closeout/) |
 
-核心约束：概念图**只用于审定**，不能作为最终整页背景；普通标题、标签、数字和用户数据不烘焙进组件。图表/表格外壳去掉文字、数值和数据编码标记；特殊造型文字需锁定原文并单独获批。主要文字和证据图的可用空间有明确底线，不能靠持续缩小字号或截图蒙混过关。详见 [阶段契约](references/stage-contracts.md)、[人工闸门](references/human-gates.md)、[可读性约束](references/readability-contract.md)和[组件流程](references/component-pipeline.md)。
+[科技创新作品答辩 · 6 页](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/competitions/tech-innovation/) · [创新创业路演 · 6 页](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/competitions/entrepreneurship/)
 
-## 仓库内容
+## 三种模式，按需求结束
 
-- [`SKILL.md`](SKILL.md)：技能入口与不可跳过的约束。
-- [`assets/project-template/`](assets/project-template/)：可复制的项目阶段文件模板。
-- [`references/`](references/)：研究、提示词、风格、可读性、组件、拼装与 QA 细则。
-- [`scripts/`](scripts/)：项目合约校验及视觉适配脚本。
-- [`tests/`](tests/)：合约、适配器与安装一致性测试。
+| 模式 | 交付内容 |
+| --- | --- |
+| **概念图（默认）** | 每页完整内容概念、提示词与来源记录。 |
+| **概念图 + 独立素材** | 按需提供透明插画、背景底板、字形图、SVG 组件和文字源；全页素材需从空白重建验证覆盖。 |
+| **概念图 + 素材 + 自动组装** | 按编辑需求使用原生文字/数据和独立图片，检查实际 PPTX 渲染及承诺的编辑操作。 |
 
-本仓库提供制作流程与校验工具，不附带用户项目素材、最终 PPTX 或生成图片。正式交付仍以当前项目的人工批准和最终 QA 为准。
+单页风格探索不能替代整套概念。技术检查、代理视觉审阅和用户反馈分别记录。
+
+## 从空白拼回原构图
+
+三页样例共 **66 个独立对象**：13 张 PNG、36 个 SVG 源、17 份普通文字 JSON。背景、箭头、管线、字形、阴影反射、法兰支架、图表和说明分别保留。在线页面提供逐层开关、原尺寸查看、原图叠加与浅/深底检查。
+
+| 原概念 | 从独立组件重建 |
+| --- | --- |
+| ![原概念](examples/showcase/full-rebuild/project/concepts/S02.png) | ![组件重建](examples/showcase/full-rebuild/project/renders/S02.png) |
+
+[**查看三页完整对照**](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/full-rebuild/) · [下载素材包与 PPTX 试验](https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/tag/showcase-2026-10-14)
+
+PPTX 试验已实测保存重开、文字修改、组件移动与撤销。17 个文字框可编辑，SVG 在 PPTX 中是独立图片对象。生成式设备、字形和管线材质仍有差异，不承诺逐像素一致；未记录用户对当前 PPTX 的视觉接受，也不代表完成正式 assembly 合同。特殊标题是透明字形图，普通文字记录真实字体映射，字体软件未从栅格图恢复或嵌入。
+
+## 局部提示词编辑
+
+支持附实际原图，用提示词改选定对象、补干净背景、修透明边缘或补遮挡。每次保留真实输入、完整提示词、工具返回原文件与新版本，并检查目标区域及周边。事实图件与数据证据不交给生图重新编造。
+
+[全页重建与局部编辑流程](references/full-slide-reconstruction.md) · [本地展示流程](references/showcase-workflow.md) · [技能入口](SKILL.md)
+
+## 安装与开始
+
+~~~bash
+git clone --depth 1 https://github.com/pj1433139082-hue/ai-presentation-workflow.git
+~~~
+
+将仓库放到客户端的技能目录，例如 ~/.agents/skills/ai-presentation-workflow/。实际生图使用 Codex 内置 image_gen 与可用的 imagegen 技能；客户端、权限与后端能力需在本机检查。
+
+> 使用 ai-presentation-workflow，基于这些资料，为【受众】设计用于【用途】的中文演示。交付选择【只做概念 / 概念加素材 / 再自动组装】。素材若需全页复用，请连背景、箭头、字形和残余装饰一起清点，并从空白重建对照。请先把概念设计好，不提前套用拼装模板。
+
+~~~bash
+python scripts/apw.py init my-presentation --mode concept
+python scripts/apw.py status my-presentation
+~~~
+
+项目资料填好后按模式检查、导出。校验器检查声明结构、文件与关联，无法替代视觉判断。现有正式项目继续遵循其 G1–G5、来源与发布合同，不自动转为展示路线。
+
+参考探索借鉴了 [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) 的公开案例与提示词（MIT）；逐页借鉴说明、原提示词与工具记录保留在展示目录。大体积完整交付包放在 Release，预览、项目证据、流程与检查代码保留在仓库。

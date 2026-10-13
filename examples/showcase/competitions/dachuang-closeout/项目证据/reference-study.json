@@ -1,0 +1,53 @@
+{
+  "selected_reference_ids": [
+    "RPROPOSAL-S01",
+    "R339"
+  ],
+  "references": [
+    {
+      "id": "RPROPOSAL-S01",
+      "status": "analyzed",
+      "image_path": "references/proposal-S01-style-anchor.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46",
+      "source_locator": "BASE/dachuang/project/concepts/S01.png",
+      "usage_note": "已实际查看原立项概念S01；借用白底、深墨绿中文大字、自然微缩雨水花园和水层材质作为全套风格锚点。该图是先前虚构提案概念，不是实地证据。",
+      "transferable_rules": [
+        "白色留白与深绿标题形成清晰入口",
+        "雨水、植被和土层用细致但克制的自然材质",
+        "正文优先确保结题证据边界清楚可读"
+      ],
+      "project_translation": [
+        "沿用白底、深绿与浅水蓝，按结题主题使用记录、目标映射、档案、资源和边界路线构图",
+        "只在封面使用大面积雨水花园微缩场景，内容页转为不同信息结构"
+      ],
+      "do_not_copy": [
+        "立项封面的原布局与页码",
+        "把概念微缩场景说成实地照片或实验结果",
+        "原提案中的12周计划作为本轮实际时长"
+      ]
+    },
+    {
+      "id": "R339",
+      "status": "analyzed",
+      "image_path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642",
+      "source_locator": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-339",
+      "usage_note": "已阅读原始案例提示词并实际查看拼版参考；借鉴纯白底、放大自然主体、柔和光影与编辑留白，不作为研究事实来源。",
+      "transferable_rules": [
+        "自然主体能形成视觉锚点",
+        "高细节材质和柔和光影提升质感",
+        "文案短而分层，避免复杂边框和拥挤"
+      ],
+      "project_translation": [
+        "将动物主体替换为雨水花园、记录物和自然材料",
+        "从竖版多图样式转为横向逐页概念",
+        "按结题页的记录计数、档案、资源账目或限制主题选择不同构图"
+      ],
+      "do_not_copy": [
+        "动物、物种文字与科普事实",
+        "竖版多图拼版、四栏底部结构或品牌元素",
+        "把自然图像表达成真实研究证据"
+      ]
+    }
+  ]
+}

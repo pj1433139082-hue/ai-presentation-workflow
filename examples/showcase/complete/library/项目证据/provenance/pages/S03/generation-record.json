@@ -1,0 +1,39 @@
+{
+  "schema": "apw-concept-generation-record/v1",
+  "slide_id": "S03",
+  "artifact_kind": "standalone-slide-concept",
+  "actor": "agent",
+  "tool": "Codex built-in image_gen",
+  "tool_call": "image_gen.imagegen",
+  "operation": "generate",
+  "generated_at": "2026-10-13T08:52:53+08:00",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-57f8-7b41-8255-833b48138fbc\\exec-74e0852b-8f88-4c2f-8b60-3408962366e6.png",
+  "original_output_sha256": "dc90d9ba8d60fdfd136e7ccd288cf9ff9573c41ce02e7e70229834eda022f5f9",
+  "output_path": "concepts/S03.png",
+  "output_sha256": "dc90d9ba8d60fdfd136e7ccd288cf9ff9573c41ce02e7e70229834eda022f5f9",
+  "dimensions_px": [
+    1672,
+    941
+  ],
+  "format": "PNG",
+  "design_concept_path": "concept.png",
+  "design_concept_sha256": "dc90d9ba8d60fdfd136e7ccd288cf9ff9573c41ce02e7e70229834eda022f5f9",
+  "prompt_path": "provenance/pages/S03/prompt.txt",
+  "prompt_sha256": "ff9e83ff376a8046919225d9c7478d679cd4b93b1337e1e2054c14b43f692c86",
+  "prompt": "Use case: productivity-visual\nAsset type: one complete 16:9 Chinese service-explainer concept slide for a fictional community library guide.\nScene/backdrop: bright public reading environment with calm warm paper, deep blue and teal guidance accents; no named institution.\nSubject: clarify a few general actions around borrowing and returning, plus a way to ask for help. Keep the content general because local procedures vary.\nStyle/medium: clear civic information illustration with human-scale details and restrained colored-paper texture; readable editorial Chinese typography, welcoming but not childish.\nComposition/framing: an open sequence of moments around a book moving from selection to checkout to return; vary the layout from the reused route overview and avoid a row of identical cards.\nText (verbatim; render each line exactly once, with no other words): “借阅与归还，记住这几步” “先确认书目与账户，再按所在馆流程办理。” “借出前｜确认书名与可借状态” “办理时｜按馆内指定方式完成借阅” “归还后｜留意记录是否更新” “遇到异常｜向服务人员询问” “通用流程提示 · 具体规则以所在馆为准”\nConstraints: generic checklist only. Do not invent local rules or promise that every library offers self-checkout or a particular service.\nAvoid: library name/logo, membership requirements, fees, due dates, renewal counts, overdue rules, fake screen text, extra copy, or watermark.",
+  "input_snapshot_path": "provenance/concept-input-hash-snapshot.json",
+  "input_sha256": {
+    "brief.json": "9c82d65f4156a37db44f86c771ad9dcd1b2217fcd0f3b26e0ed993b27f72e458",
+    "deck-spec.json": "ea4496ab3a49f7775d72021063608f9d28b7b9bb75d1922955c1e6ad225f7d88",
+    "reference-study.json": "2096fd84da1debc82497e2a0ea3004c406f83c952a47e99ec7c8e5d023709dc4",
+    "style-contract.json": "3c1cd8312323597c5f64f71a8eb347c9e1ac8a66d64d14d011ea33366508b1e7"
+  },
+  "input_snapshot_for_this_slide_sha256": "02066a5b9fcd2f91262ddfe170f76d72da3a56fa4afc52fe446d813080bdb4b7",
+  "reference_ids_in_project_contract": [
+    "R469"
+  ],
+  "direct_image_inputs_sent_to_tool": [],
+  "history_note": "This image was generated after the four project inputs were frozen. The prompt uses the analyzed reference direction in words; no reference image file was passed as a direct image_gen input.",
+  "user_visual_acceptance": "not-claimed",
+  "formal_gates": "not-claimed"
+}

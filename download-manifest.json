@@ -1,0 +1,95 @@
+{
+  "release": "showcase-2026-10-14",
+  "archives": {
+    "examples/showcase/competitions/dachuang/整套概念与证据.zip": {
+      "name": "competitions-dachuang-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/competitions-dachuang-complete-package.zip",
+      "sha256": "060772b313ec3c9196c40124be84d90704358014dfbff1bd498128220b2e2b70",
+      "bytes": 56375129
+    },
+    "examples/showcase/competitions/dachuang-closeout/整套概念与证据.zip": {
+      "name": "competitions-dachuang-closeout-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/competitions-dachuang-closeout-complete-package.zip",
+      "sha256": "d44b4c2aa879854bf50ce4d63ae9f35eaef9c9aa7a7d3898df4cd08c1ade159f",
+      "bytes": 26108705
+    },
+    "examples/showcase/competitions/dachuang-process/整套概念与证据.zip": {
+      "name": "competitions-dachuang-process-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/competitions-dachuang-process-complete-package.zip",
+      "sha256": "d91ec042ec39bd818c1a7cc7e33c789949c7490ff388ea8da02e792086b889df",
+      "bytes": 46371776
+    },
+    "examples/showcase/competitions/entrepreneurship/整套概念与证据.zip": {
+      "name": "competitions-entrepreneurship-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/competitions-entrepreneurship-complete-package.zip",
+      "sha256": "fffe70cae41a185e0f2431e33d9c2fd66c032cd63267ec680fb5174aafe602e6",
+      "bytes": 47871452
+    },
+    "examples/showcase/competitions/tech-innovation/整套概念与证据.zip": {
+      "name": "competitions-tech-innovation-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/competitions-tech-innovation-complete-package.zip",
+      "sha256": "461f5db17a12b383697284bec4dd3b1a6b0da1da7c46b69be57e9921474fbe81",
+      "bytes": 27678557
+    },
+    "examples/showcase/complete/brand/整套概念与证据.zip": {
+      "name": "complete-brand-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/complete-brand-complete-package.zip",
+      "sha256": "4abeb450d9c4d8f0da8f36a1b93e6cf37faa894843d021ca728a7858811bb62f",
+      "bytes": 39706782
+    },
+    "examples/showcase/complete/education/整套概念与证据.zip": {
+      "name": "complete-education-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/complete-education-complete-package.zip",
+      "sha256": "3192805379dcc5e7522655c5a870347aee4ffffd9b1f8543eb368fb7c8370403",
+      "bytes": 34721030
+    },
+    "examples/showcase/complete/library/整套概念与证据.zip": {
+      "name": "complete-library-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/complete-library-complete-package.zip",
+      "sha256": "829e506906f440aa40918b4f1c5800d4f90d194175766135f89b6cad47315fa6",
+      "bytes": 27693413
+    },
+    "examples/showcase/complete/manufacturing/整套概念与证据.zip": {
+      "name": "complete-manufacturing-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/complete-manufacturing-complete-package.zip",
+      "sha256": "3a3ad991dfeb52e75850dde9f58bd363b279981ea8e218eaed22ef1c1226260d",
+      "bytes": 34304470
+    },
+    "examples/showcase/complete/tech/整套概念与证据.zip": {
+      "name": "complete-tech-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/complete-tech-complete-package.zip",
+      "sha256": "5c7534a72ce57d1c4214dbd51076adb4c31629da45ba9d4bad9e4a54650208e3",
+      "bytes": 28325619
+    },
+    "examples/showcase/full-rebuild/完整全页素材包-三页.zip": {
+      "name": "full-rebuild-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/full-rebuild-complete-package.zip",
+      "sha256": "7766de04252d8d5c5585bba80c0884c8d53a377a975f371bea0f83846db14129",
+      "bytes": 70005594
+    },
+    "examples/showcase/modes/packages/assets-交付包.zip": {
+      "name": "modes-packages-assets----.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/modes-packages-assets----.zip",
+      "sha256": "5049f4cf2c6743f601d5e8e498c1493dd016b3df9754478ab4f434ddab1c48f5",
+      "bytes": 18463596
+    },
+    "examples/showcase/modes/packages/concept-交付包.zip": {
+      "name": "modes-packages-concept----.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/modes-packages-concept----.zip",
+      "sha256": "4d5e802146feb7441c9d56ab016208bd046c326497edc9f7f9d2e427cdc70362",
+      "bytes": 11649245
+    },
+    "examples/showcase/research-v2/科研六页概念-图库.zip": {
+      "name": "research-v2-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/research-v2-complete-package.zip",
+      "sha256": "22a918ec5902a83c3f12867119f7a1da0b3bc12db91dddda3de149e5f1f627b1",
+      "bytes": 57068313
+    },
+    "examples/showcase/research-v3/科研六页概念-图库.zip": {
+      "name": "research-v3-complete-package.zip",
+      "url": "https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/research-v3-complete-package.zip",
+      "sha256": "e9aa6fe36fa28d6550614ed1e2a5b364fe65cfb7643b5e6a10756c2163c2b0ee",
+      "bytes": 57076359
+    }
+  }
+}

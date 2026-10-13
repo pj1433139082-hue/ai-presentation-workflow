@@ -1,0 +1,9 @@
+Use case: productivity-visual
+Asset type: one complete 16:9 Chinese concept cover for a fictional neighborhood community library guide.
+Scene/backdrop: bright, welcoming reading space with warm paper, bookshelves, soft daylight and human-scale wayfinding; no real city or named institution.
+Subject: an approachable first-visit guide to borrowing a book, clearly marked as a general example.
+Style/medium: calm civic-culture editorial illustration, crisp friendly linework with subtle paper texture, deep ink-blue type, cobalt and teal route accents, small marigold/coral touches. Friendly and dignified, not childish or official-government styling.
+Composition/framing: a strong readable title with a light visual route that invites a reader into the guide; make this a cover, distinct from the reused four-stop route page.
+Text (verbatim; render each line exactly once, with no other words): “第一次借阅，从这里开始” “社区图书馆借阅指南 · 流程示例” “一张图看懂进入、选书、办理与归还。” “实际步骤与规则以所在图书馆为准”
+Constraints: no actual library name, logo, city, fee, opening hours, membership rule, due date, or claim about a specific service. Keep all copy legible and exact.
+Avoid: official seals, real service policies, fake web interface, invented dates, signage microtext, fees, extra words, or watermark.

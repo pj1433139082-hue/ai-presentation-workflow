@@ -1,0 +1,427 @@
+{
+  "status": "complete",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "status": "generated",
+      "output_path": "concepts/S01.png",
+      "output_sha256": "9fb9ee495bde2456fe4b43c5cf9e4d5efec4912a351b6a964d9800059b12ef8c",
+      "input_sha256": {
+        "brief": "64b99eca979368c119f8f900a9cb4a0f345ef6865651a7bf096cdc9e1ba3251f",
+        "deck_spec": "6d6ea3fe6c71d8ac5adb3d264421dc9cd9adddd9ff36931576252524115f92d9",
+        "reference_study": "06ea7fa3cfc50b7adfd07f90750a190c6b61a8d04337fab4a2158ad9371d90cf",
+        "style_contract": "16927aeadcf293a3ef807847841c53749e4bbe736bfdfb99f61dae9a217eab30"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "山间茶事",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "headline",
+          "role": "key-takeaway",
+          "text": "开盒之后，慢下来。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "sleeve",
+          "role": "caption",
+          "text": "抽象山形纸套",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "sachet",
+          "role": "caption",
+          "text": "棉纸茶样袋",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "card",
+          "role": "caption",
+          "text": "冲泡提示卡",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "虚构品牌 · 包装概念",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R362",
+          "path": "references/case362.jpg",
+          "sha256": "98602C5EE9033E5D80C656ABC5409391B181F4D207F43E404D49A1057A2034CE"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S01/generation-record.json",
+      "generation_record_sha256": "9b47d3579668eb99eb6c5a9c4ecc582d55444cb974211c5984af39bdd8cb48e4",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S02",
+      "status": "generated",
+      "output_path": "concepts/S02.png",
+      "output_sha256": "4527619577109cf95fe99551e76c95388ae56ecd307dfedb3d78037731c3f6d7",
+      "input_sha256": {
+        "brief": "64b99eca979368c119f8f900a9cb4a0f345ef6865651a7bf096cdc9e1ba3251f",
+        "deck_spec": "6d6ea3fe6c71d8ac5adb3d264421dc9cd9adddd9ff36931576252524115f92d9",
+        "reference_study": "06ea7fa3cfc50b7adfd07f90750a190c6b61a8d04337fab4a2158ad9371d90cf",
+        "style_contract": "16927aeadcf293a3ef807847841c53749e4bbe736bfdfb99f61dae9a217eab30"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把一盒茶，放进三种生活时刻",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "这是一份从具体使用情境展开的品牌提案。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "moment-1",
+          "role": "body",
+          "text": "独处时刻：一袋茶样，一杯慢饮",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "moment-2",
+          "role": "body",
+          "text": "午后短歇：开盒、取样、停一停",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "moment-3",
+          "role": "body",
+          "text": "朋友相聚：把一份小心意带去见面",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "情境提案 · 非用户调研",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R362",
+          "path": "references/case362.jpg",
+          "sha256": "98602C5EE9033E5D80C656ABC5409391B181F4D207F43E404D49A1057A2034CE"
+        },
+        {
+          "reference_id": "BRAND-S01",
+          "path": "concepts/S01.png",
+          "sha256": "9FB9EE495BDE2456FE4B43C5CF9E4D5EFEC4912A351B6A964D9800059B12EF8C"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S02/generation-record.json",
+      "generation_record_sha256": "e2e2e22a95863a213844f7d2c7e04f4fd5426b4ecd94a13a6094fce57fbe98fb",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S03",
+      "status": "generated",
+      "output_path": "concepts/S03.png",
+      "output_sha256": "658d61ef36abed4c638232567dedd3dcd85afe158062734db72cdd5c102c9b15",
+      "input_sha256": {
+        "brief": "64b99eca979368c119f8f900a9cb4a0f345ef6865651a7bf096cdc9e1ba3251f",
+        "deck_spec": "6d6ea3fe6c71d8ac5adb3d264421dc9cd9adddd9ff36931576252524115f92d9",
+        "reference_study": "06ea7fa3cfc50b7adfd07f90750a190c6b61a8d04337fab4a2158ad9371d90cf",
+        "style_contract": "16927aeadcf293a3ef807847841c53749e4bbe736bfdfb99f61dae9a217eab30"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "拆开一盒，读懂包装层次",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "从纸套到提示卡，逐层讲清设计意图。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "sleeve",
+          "role": "body",
+          "text": "纸套：抽象山形纹",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "box",
+          "role": "body",
+          "text": "内盒：收纳茶样",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "sachet",
+          "role": "body",
+          "text": "棉纸袋：独立茶样袋",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "card",
+          "role": "body",
+          "text": "提示卡：冲泡步骤",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "包装结构示意 · 虚构概念",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R362",
+          "path": "references/case362.jpg",
+          "sha256": "98602C5EE9033E5D80C656ABC5409391B181F4D207F43E404D49A1057A2034CE"
+        },
+        {
+          "reference_id": "BRAND-S01",
+          "path": "concepts/S01.png",
+          "sha256": "9FB9EE495BDE2456FE4B43C5CF9E4D5EFEC4912A351B6A964D9800059B12EF8C"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S03/generation-record.json",
+      "generation_record_sha256": "9500071cc15a7c5b0455bb599d814c0cbfcacb8aab306f0604dd0a0caee37123",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S04",
+      "status": "generated",
+      "output_path": "concepts/S04.png",
+      "output_sha256": "01f0bba56bea95e51b08b3e710129bcb05fc15b665cf822be39f0e75387477f9",
+      "input_sha256": {
+        "brief": "64b99eca979368c119f8f900a9cb4a0f345ef6865651a7bf096cdc9e1ba3251f",
+        "deck_spec": "6d6ea3fe6c71d8ac5adb3d264421dc9cd9adddd9ff36931576252524115f92d9",
+        "reference_study": "06ea7fa3cfc50b7adfd07f90750a190c6b61a8d04337fab4a2158ad9371d90cf",
+        "style_contract": "16927aeadcf293a3ef807847841c53749e4bbe736bfdfb99f61dae9a217eab30"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "让品牌触点，连上日常动作",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "从看见包装，到亲手冲泡，再到把茶样递给朋友。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "touchpoint-1",
+          "role": "body",
+          "text": "开盒：认出山形纹与品牌名",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "touchpoint-2",
+          "role": "body",
+          "text": "冲泡：跟随一张简单提示卡",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "touchpoint-3",
+          "role": "body",
+          "text": "分享：递出一份茶样",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "触点概念 · 虚构品牌",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R362",
+          "path": "references/case362.jpg",
+          "sha256": "98602C5EE9033E5D80C656ABC5409391B181F4D207F43E404D49A1057A2034CE"
+        },
+        {
+          "reference_id": "BRAND-S01",
+          "path": "concepts/S01.png",
+          "sha256": "9FB9EE495BDE2456FE4B43C5CF9E4D5EFEC4912A351B6A964D9800059B12EF8C"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S04/generation-record.json",
+      "generation_record_sha256": "bbb89c642955d5c9afe55c281aaf26e460c084a68acea7efaff4b1c44c68f386",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S05",
+      "status": "generated",
+      "output_path": "concepts/S05.png",
+      "output_sha256": "31c9a49b8bf692dc8db61d5fd80e018b26444be477dc1127778b1d4ac1b89623",
+      "input_sha256": {
+        "brief": "64b99eca979368c119f8f900a9cb4a0f345ef6865651a7bf096cdc9e1ba3251f",
+        "deck_spec": "6d6ea3fe6c71d8ac5adb3d264421dc9cd9adddd9ff36931576252524115f92d9",
+        "reference_study": "06ea7fa3cfc50b7adfd07f90750a190c6b61a8d04337fab4a2158ad9371d90cf",
+        "style_contract": "16927aeadcf293a3ef807847841c53749e4bbe736bfdfb99f61dae9a217eab30"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "下一步：把包装体验试清楚",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "先检查开盒、冲泡与携带这三段。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "test-open",
+          "role": "body",
+          "text": "开盒：茶样是否容易找到？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "test-brew",
+          "role": "body",
+          "text": "冲泡：提示卡是否容易读懂？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "test-carry",
+          "role": "body",
+          "text": "携带：茶样袋是否方便带出？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "示例试验计划 · 尚未执行",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R362",
+          "path": "references/case362.jpg",
+          "sha256": "98602C5EE9033E5D80C656ABC5409391B181F4D207F43E404D49A1057A2034CE"
+        },
+        {
+          "reference_id": "BRAND-S01",
+          "path": "concepts/S01.png",
+          "sha256": "9FB9EE495BDE2456FE4B43C5CF9E4D5EFEC4912A351B6A964D9800059B12EF8C"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S05/generation-record.json",
+      "generation_record_sha256": "508382b03df52e0ecb2b72ddb339cf7bfe932b3835233fb67475885c735f1d74",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    }
+  ],
+  "binding_role": "current-complete-set-with-preserved-actual-generation-history",
+  "binding_created_at": "2026-10-13T09:12:43.110106+08:00",
+  "user_visual_acceptance": "not-recorded"
+}

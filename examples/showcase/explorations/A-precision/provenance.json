@@ -1,0 +1,103 @@
+{
+  "task": "A precision industrial product/editorial cover exploration",
+  "workspace": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012",
+  "output_directory": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\style-explorations\\A-precision",
+  "source_repository": "freestylefly/awesome-gpt-image-2 (local curated case library; includes GPT Image 2/2.5 prompt cases)",
+  "source_cases": [
+    {
+      "case_id": 355,
+      "title": "概念字体海报 Prompt",
+      "source_label": "@dotey",
+      "source_url": "https://x.com/dotey/status/2048793351290327381",
+      "category": "Posters & Typography",
+      "styles": [
+        "Poster",
+        "Realistic",
+        "Brand"
+      ],
+      "original_prompt": "Create ONE finished premium conceptual typography poster for the exact title:\n\n“[INPUT_TEXT]”\n\nSingle poster only. No moodboard, grid, presentation board, mockup, captions, prompt text, process sheet, or sample labels.\n\nThe title “[INPUT_TEXT]” must be the dominant visual structure of the poster: huge, readable, powerful, and spelled exactly. Do not translate, shorten, replace, or misspell it. Do not add other large readable text. Optional micro catalog text is allowed only if it stays subtle and secondary.\n\nSilently interpret the title’s meaning, mood, cultural aura, symbolic associations, psychological tension, and visual rhythm. Turn that interpretation into one strong visual metaphor.\n\nTypography is the hero. Design custom-looking letterforms whose weight, width, contrast, spacing, rhythm, distortion, negative space, edge quality, and ink texture express the temperament of the title. The type should feel intentionally designed, not like a default font.\n\nIf “[INPUT_TEXT]” refers to a widely known person, make a large editorial portrait or full / half-body figure a major visual presence, occupying roughly 40–70% of the composition. The figure should feel recognizable through aura, posture, styling, era, expression, lighting, and symbolic atmosphere, but should not copy a specific existing photograph, official poster, campaign image, logo, slogan, or copyrighted composition. The portrait must interact with the typography: overlapping the letters, emerging from them, being framed by them, casting shadows on them, breaking through them, or being partially hidden behind them.\n\nFor all other titles, use a human figure, landscape, object, or atmospheric setting only when it strengthens the meaning. It must interact with the typography and deepen the concept, not decorate it.\n\nUse a rich but restrained 4–6 color system matched to the theme: dominant background color, primary typography color, figure / landscape tone, emotional accent color, muted support color, and subtle paper / ink texture tone. Avoid flat black-white-red defaults unless conceptually necessary.\n\nComposition style: high-end editorial poster, museum-quality graphic design, dramatic scale, strong hierarchy, few elements, intelligent whitespace, bold flat color areas, sharp cropping, silkscreen / lithograph / risograph grain, paper fibers, subtle ink imperfections, refined visual tension.\n\nThe final image should feel like a complete visual sentence: the title, the figure or setting, the color, and the typography explain each other.\n\nAvoid generic word art, glossy 3D lettering, random icons, stock-photo realism, cluttered collage, excessive grunge, tourist clichés, official logos, copied slogans, copied campaign aesthetics, unrelated text, and misspelled typography.\n\n-----\n\nINPUT_TEXT：Phoenix Rebirth",
+      "cases_json_path": "D:\\obsidian_work\\cangku\\paper_work\\.claude\\skills\\design-shared\\component-library\\sources\\awesome-gpt-image-2\\data\\cases.json",
+      "cases_json_sha256": "2f75f94f5cbe65b19436793671b2cd5bb434c4cf2080a1aaf82653460b584ebe",
+      "image_source_path": "D:\\obsidian_work\\cangku\\paper_work\\.claude\\skills\\design-shared\\component-library\\sources\\awesome-gpt-image-2\\data\\images\\case355.jpg",
+      "image_sha256": "f9ac45416e60558523f45fb0d6fc39a73f8aabe656ae734b837d28a9ba4ccf35",
+      "local_reference_copy": "references/case355.jpg",
+      "image_dimensions": [
+        1055,
+        1491
+      ]
+    },
+    {
+      "case_id": 367,
+      "title": "VELORA 奢华香水广告海报",
+      "source_label": "@akkiwani703",
+      "source_url": "https://x.com/akkiwani703/status/2049778680969437564",
+      "category": "Posters & Typography",
+      "styles": [
+        "UI",
+        "Poster",
+        "Realistic"
+      ],
+      "original_prompt": "{\n  \"image_type\": \"luxury perfume advertisement poster\",\n  \"resolution\": \"4K ultra HD (4096x5120)\",\n  \"aspect_ratio\": \"portrait (4:5)\",\n  \"style\": {\n    \"aesthetic\": \"high-end fragrance campaign (Tom Ford, Dior inspired)\",\n    \"tone\": \"dark luxury, sensual, elegant, powerful\",\n    \"color_grading\": \"deep black shadows with rich golden highlights and warm amber glow\",\n    \"lighting\": \"cinematic spotlight + golden rim light + soft fill light, dramatic shadows\",\n    \"contrast\": \"high cinematic contrast\",\n    \"depth_of_field\": \"shallow, sharp focus on face and perfume bottle\"\n  },\n  \"camera\": {\n    \"type\": \"85mm portrait lens\",\n    \"aperture\": \"f/1.6\",\n    \"angle\": \"slightly low angle, premium perspective\",\n    \"framing\": \"model upper body + product foreground\"\n  },\n  \"subject\": {\n    \"gender\": \"female\",\n    \"age_appearance\": \"young adult\",\n    \"expression\": \"confident, sensual, calm\",\n    \"styling\": {\n      \"hair\": \"voluminous, slightly messy, glossy strands with golden highlights\",\n      \"makeup\": \"soft glam, glowing skin, bold lips\",\n      \"outfit\": \"brown tailored blazer with patterned silk scarf\",\n      \"accessory\": \"thin transparent eyeglasses\"\n    }\n  },\n  \"product\": {\n    \"type\": \"luxury perfume bottle\",\n    \"brand\": \"VELORA PARFUMS\",\n    \"label\": \"EAU DE PARFUM\",\n    \"design\": \"clear crystal glass bottle, golden liquid inside, metallic gold cap\",\n    \"placement\": \"bottom center foreground on glossy black marble surface\",\n    \"effects\": \"strong reflections, golden glow, subtle condensation, cinematic shine\"\n  },\n  \"environment\": {\n    \"background\": \"dark blurred luxury interior with warm golden light streaks\",\n    \"surface\": \"black marble with reflections\",\n    \"extra_elements\": \"small flowers near bottle, golden particles, soft smoke\"\n  },\n  \"typography\": {\n    \"logo\": \"V monogram + VELORA PARFUMS\",\n    \"headline\": \"Not just a scent, It’s your Signature.\",\n    \"tagline\": \"A fragrance that speaks before you do.\",\n    \"secondary\": \"Own your essence. Leave a legacy.\",\n    \"features\": [\n      \"Long Lasting\",\n      \"Premium Ingredients\",\n      \"Crafted with Passion\"\n    ],\n    \"notes\": [\n      \"Top: Pear, Bergamot, Pink Pepper\",\n      \"Heart: Jasmine, Rose, Orris\",\n      \"Base: Vanilla, Patchouli, Musk\"\n    ],\n    \"font_style\": \"luxury serif + elegant handwritten script\",\n    \"color\": \"gold metallic\",\n    \"placement\": \"top left + mid left + bottom balanced layout\"\n  },\n  \"post_processing\": {\n    \"sharpness\": \"ultra sharp on face and bottle\",\n    \"glow\": \"golden cinematic glow\",\n    \"retouch\": \"high-end editorial finish\",\n    \"vignette\": \"subtle dark vignette\"\n  },\n  \"mood\": \"premium luxury perfume campaign, cinematic, bold brand identity\",\n  \"quality\": \"hyper-realistic, 4K ultra HD, commercial grade, award-winning fragrance ad\"\n}",
+      "cases_json_path": "D:\\obsidian_work\\cangku\\paper_work\\.claude\\skills\\design-shared\\component-library\\sources\\awesome-gpt-image-2\\data\\cases.json",
+      "cases_json_sha256": "2f75f94f5cbe65b19436793671b2cd5bb434c4cf2080a1aaf82653460b584ebe",
+      "image_source_path": "D:\\obsidian_work\\cangku\\paper_work\\.claude\\skills\\design-shared\\component-library\\sources\\awesome-gpt-image-2\\data\\images\\case367.jpg",
+      "image_sha256": "0d481899ba6e0dd23ec7c751efd462e1e9c1d1358603670f45864c693a6ecc8e",
+      "local_reference_copy": "references/case367.jpg",
+      "image_dimensions": [
+        1149,
+        1369
+      ]
+    }
+  ],
+  "additional_local_reference": {
+    "role": "user-provided-local-industrial-style-reference",
+    "source_path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\energy-editorial\\references\\case453-reference.jpg",
+    "local_reference_copy": "references/case453-industrial-reference.jpg",
+    "sha256": "e0bfb87118cfb50004940dd5b84b242705b785650ad3568f182ebf5808574036",
+    "image_dimensions": [
+      1086,
+      1448
+    ],
+    "usage": "industrial product/sector mood only; explicitly not layout, branding, grid or panel composition"
+  },
+  "prompt_migration": {
+    "case355": [
+      "Keep one finished poster rather than a moodboard or process board.",
+      "Keep title as a dominant graphic structure, use a visual metaphor, sparse hierarchy and deliberate negative space.",
+      "Drop Phoenix/Rebirth subject, portrait condition, vertical 4:5/9:16 assumptions, and exact visual composition."
+    ],
+    "case367": [
+      "Keep premium product-lighting logic: controlled rim light, readable material reflections, foreground product presence.",
+      "Drop perfume bottle, model, cosmetics language, gold-luxury styling, feature badges, and dense lower-edge copy."
+    ],
+    "case453-reference": [
+      "Use only industrial manufacturing context and restrained tonal atmosphere.",
+      "Reject its multi-page brochure contact-sheet, card/grid structure, exact images, logo and copy."
+    ]
+  },
+  "generation_mode": "built-in Codex image_gen; no CLI/API key or external image-generation service",
+  "claim_boundary": "single image is an AI visual concept for a fictional example brand; not a real device, performance claim, APW qualification, user acceptance, or production PPTX.",
+  "generation": {
+    "generated_at": "2026-10-12T22:52:09+08:00",
+    "tool": "built-in Codex image_gen",
+    "input_images": [
+      "Image 1: references/case355.jpg",
+      "Image 2: references/case367.jpg",
+      "Image 3: references/case453-industrial-reference.jpg"
+    ],
+    "num_last_images_to_include": 3,
+    "transparent_background": false,
+    "returned_original_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-b7ab-7ad1-8e6a-e05dcb9c2b88\\exec-019dd270-9839-4410-9c6e-3d74f9b6a798.png",
+    "workspace_copy": "imagegen-returned-original.png",
+    "sha256": "a7cd34d4a15fff4af98cb68e50b2e926bbec1e15aedb7055d7a5cb56827dde18",
+    "bytes": 2573961,
+    "dimensions_px": [
+      1672,
+      941
+    ],
+    "aspect_ratio": 1.776833,
+    "prompt_file": "imagegen-prompt.md",
+    "prompt_sha256": "c1d026c51bc49c5abf2ac13003a22640749a0eff7b2db4ae87ef191badb28b8c",
+    "visual_inspection": "Opened the full-size generated PNG. The concept contains the specified brand/headline/subheadline/process label/example label/disclaimer; it has one large industrial-machine hero and a looping thermal ribbon without a card grid or data panel. The machine is visibly labeled as AI concept, not a real product."
+  }
+}

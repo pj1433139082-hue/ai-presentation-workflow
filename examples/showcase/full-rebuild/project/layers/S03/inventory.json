@@ -1,0 +1,25 @@
+{
+  "slide_id": "S03",
+  "semantic": [
+    "S03-background",
+    "S03-membrane",
+    "S03-title",
+    "S03-chart-heading",
+    "S03-chart",
+    "S03-single",
+    "S03-takeaway",
+    "S03-qualifier"
+  ],
+  "residual": [
+    "S03-divider",
+    "S03-bullet-1",
+    "S03-bullet-2",
+    "S03-qualifier-frame"
+  ],
+  "omissions": [],
+  "limits": [
+    "Concept raster has no recoverable original font metadata.",
+    "The membrane is a reference-guided reconstruction; edges and water geometry may differ."
+  ],
+  "user_acceptance": "not-recorded"
+}

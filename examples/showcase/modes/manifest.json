@@ -1,0 +1,187 @@
+{
+  "schema_version": "apw-showcase-modes-v1",
+  "created_at": "2026-10-13",
+  "scope": "static_examples_of_three_delivery_modes",
+  "mode_cli_status": "implemented_and_exercised",
+  "modes": [
+    {
+      "id": "concept",
+      "label": "只做概念",
+      "default": true,
+      "completion_point": "完整页面概念与参考/来源链路",
+      "example_index": "../industries/index.html",
+      "examples": [
+        {
+          "id": "A-tech",
+          "label": "科技产品发布",
+          "path": "../industries/A-tech/cover-知栈-概念.png"
+        },
+        {
+          "id": "A-process",
+          "label": "制造业机制说明",
+          "path": "../industries/A-process/mechanism-余热回用-概念.png"
+        },
+        {
+          "id": "B-research",
+          "label": "科研示例数据",
+          "path": "../industries/B-research/slide.png"
+        },
+        {
+          "id": "B-education",
+          "label": "教育课程说明",
+          "path": "../industries/B-education/slide.png"
+        },
+        {
+          "id": "C-brand",
+          "label": "消费品牌产品故事",
+          "path": "../industries/C-brand/product-story.png"
+        },
+        {
+          "id": "C-library",
+          "label": "公共服务借阅流程",
+          "path": "../industries/C-library/library-flow.png"
+        }
+      ]
+    },
+    {
+      "id": "assets",
+      "label": "概念 + 透明资产",
+      "default": false,
+      "completion_point": "概念与用户请求的独立透明图片资产；不自动组装 PPTX",
+      "display_background": "CSS transparency checkerboard; source PNG bytes remain unchanged",
+      "asset_editability": "Each PNG is independently placeable; internal pixels are not native editable shapes or text.",
+      "files": [
+        {
+          "path": "assets/process-equipment.png",
+          "source": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/pilots/hybrid-sampler/assets/process-equipment.png",
+          "bytes": 1247286,
+          "sha256": "059ceceb695caf9f97d84d58d718006fd4eb606e445d8d0879801d2a8411ad2a",
+          "format": "PNG",
+          "mode": "RGBA",
+          "dimensions_px": [
+            1672,
+            941
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "exact_copy_verified": true
+        },
+        {
+          "path": "assets/research-membrane.png",
+          "source": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/pilots/hybrid-sampler/assets/research-membrane.png",
+          "bytes": 1174578,
+          "sha256": "56d58f871e735ed1e1e5d10dabee132e40a8e3e3f4ce8868dbcfef3ac09af250",
+          "format": "PNG",
+          "mode": "RGBA",
+          "dimensions_px": [
+            1774,
+            887
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "exact_copy_verified": true
+        },
+        {
+          "path": "assets/tech-device.png",
+          "source": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/pilots/hybrid-sampler/assets/tech-device.png",
+          "bytes": 1195760,
+          "sha256": "6cc07de77b72b10b59b55481deb64e9b1cb83643c3cb7553abdd738df3a9c72b",
+          "format": "PNG",
+          "mode": "RGBA",
+          "dimensions_px": [
+            1672,
+            940
+          ],
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "exact_copy_verified": true
+        }
+      ]
+    },
+    {
+      "id": "assembly",
+      "label": "概念 + 透明资产 + 自动组装",
+      "default": false,
+      "completion_point": "PPTX、实际渲染、对象编辑/结构检查与有范围的视觉反馈",
+      "status": "technical_checks_and_agent_qa_passed_user_visual_rejected",
+      "showcase_position": "retained as an honest assembly-gap case; not promoted as a quality exemplar or accepted deliverable",
+      "user_feedback": {
+        "scope": "the current three-slide hybrid sampler v4 shown to the user",
+        "verbatim": "概念图不错，到你拼接就开始丑",
+        "interpretation": "The concept was praised; the assembled visual result was rejected. Do not generalize to other concepts or future assemblies."
+      },
+      "technical_checks": [
+        "PowerPoint actual rendering",
+        "save and reopen the PPTX",
+        "native chart value edit"
+      ],
+      "deck": {
+        "path": "assembly/deck-v4.pptx",
+        "source": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/pilots/hybrid-sampler/project/assembly/showcase/v4/deck-v4.pptx",
+        "bytes": 3452565,
+        "sha256": "e42bc69c3f4e59570ba8cec37b5c39cb1b79ef6a1747aaf6de7b781f0a4dc38f",
+        "exact_copy_verified": true
+      },
+      "renders": [
+        {
+          "path": "assembly/slide-01.png",
+          "source": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/pilots/hybrid-sampler/project/assembly/showcase/v4/renders/slide-01.png",
+          "bytes": 1017552,
+          "sha256": "4a0f0ee75de0912382813a85ea7f676d25e69819f2f5a2db6176eacc4785f5a4",
+          "dimensions_px": [
+            1920,
+            1080
+          ],
+          "exact_copy_verified": true
+        },
+        {
+          "path": "assembly/slide-02.png",
+          "source": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/pilots/hybrid-sampler/project/assembly/showcase/v4/renders/slide-02.png",
+          "bytes": 1062413,
+          "sha256": "5bb46a5ca73adb5e182613356b615324c0c88da914a610b529f2c16031195bef",
+          "dimensions_px": [
+            1920,
+            1080
+          ],
+          "exact_copy_verified": true
+        },
+        {
+          "path": "assembly/slide-03.png",
+          "source": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/pilots/hybrid-sampler/project/assembly/showcase/v4/renders/slide-03.png",
+          "bytes": 137229,
+          "sha256": "08851341c17ba10c60528f8916937f12a7ee521416767de9e2915675ef068fe9",
+          "dimensions_px": [
+            1920,
+            1080
+          ],
+          "exact_copy_verified": true
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "mode": "concept",
+      "path": "packages/concept-交付包.zip",
+      "sha256": "4d5e802146feb7441c9d56ab016208bd046c326497edc9f7f9d2e427cdc70362",
+      "file_count": 36,
+      "has_pptx": false,
+      "project_evidence_can_be_checked_again": true
+    },
+    {
+      "mode": "assets",
+      "path": "packages/assets-交付包.zip",
+      "sha256": "5049f4cf2c6743f601d5e8e498c1493dd016b3df9754478ab4f434ddab1c48f5",
+      "file_count": 43,
+      "has_pptx": false,
+      "project_evidence_can_be_checked_again": true
+    }
+  ],
+  "mode_evidence": "Actual concept/assets project status, export and verify passed; neither project contains a scene graph or PPTX."
+}

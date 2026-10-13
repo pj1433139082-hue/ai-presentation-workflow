@@ -1,0 +1,30 @@
+{
+  "project_id": "dachuang-process-example",
+  "audience": "大学生创新训练项目阶段检查评审与指导教师",
+  "goal": "以第6周虚构过程检查情境，展示阶段进度、计划偏差、阶段产物、记录质量、拟议调整与下一步行动。",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "concept-images",
+    "aspect_ratio": "16:9",
+    "scope": "local-showcase-only",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ]
+  },
+  "source_map": [
+    {
+      "id": "EXAMPLE",
+      "kind": "locally-authored-fictional-showcase-content",
+      "locator": "共享虚构案例 scenario.md 的第6周过程检查部分；本地整理见 sources/source-notes.md",
+      "path": "sources/source-notes.md",
+      "sha256": "236b0b2abbb96ddf1d8b3cc607e01df4081b2132bba4b5d535da6c5da60140a4",
+      "truth_status": "illustrative"
+    }
+  ]
+}

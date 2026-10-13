@@ -1,0 +1,13 @@
+{
+  "snapshot_type": "pre-concept-generation-inputs",
+  "created_at": "2026-10-13T18:03:35+08:00",
+  "inputs": {
+    "brief.json": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+    "deck-spec.json": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+    "reference-study.json": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+    "style-contract.json": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+  },
+  "scope": "Six complete page concepts; all four canonical inputs frozen before image generation.",
+  "authority": "agent-selected showcase direction within explicit local concept scope; not human visual acceptance.",
+  "generation_state": "pending; no concept output is claimed by this snapshot."
+}

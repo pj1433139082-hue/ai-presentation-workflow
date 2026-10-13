@@ -1,0 +1,352 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "知栈",
+      "message": "让每次讨论，都接得上下一步。",
+      "concept_path": "concepts/S01.png",
+      "reference_ids": [
+        "R17"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "知栈",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "descriptor",
+          "role": "secondary",
+          "text": "桌面知识协作终端",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "让每次讨论，都接得上下一步。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "features",
+          "role": "body",
+          "text": "会后脉络留存 · 资料语义检索 · 任务线索串联",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "example",
+          "role": "source",
+          "text": "概念产品 · 示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        }
+      ],
+      "speaker_notes": "复用先前已生成的知栈封面，不把本项目当前冻结输入说成其历史生成依据。产品名称、定位和列出的功能均属虚构概念文案；不代表真实产品、已实现能力或性能。"
+    },
+    {
+      "id": "S02",
+      "title": "一次讨论之后，线索落在哪里？",
+      "message": "示例场景：问题、资料与行动分散在不同记录里。",
+      "concept_path": "concepts/S02.png",
+      "reference_ids": [
+        "R17"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "一次讨论之后，线索落在哪里？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "示例场景：问题、资料与行动分散在不同记录里。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "question",
+          "role": "body",
+          "text": "讨论留下问题",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "context",
+          "role": "body",
+          "text": "资料提供背景",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "next",
+          "role": "body",
+          "text": "行动需要有人接续",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "scenario",
+          "role": "source",
+          "text": "场景示意 · 非用户研究",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        }
+      ],
+      "speaker_notes": "围绕一个虚构团队场景提出知识断点问题。不得将示例描述写成调查结果、普遍事实或真实客户痛点。"
+    },
+    {
+      "id": "S03",
+      "title": "从讨论、资料到行动",
+      "message": "概念机制：每一步都保留来路与下一步。",
+      "concept_path": "concepts/S03.png",
+      "reference_ids": [
+        "R17"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "从讨论、资料到行动",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "概念机制：每一步都保留来路与下一步。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "question",
+          "role": "body",
+          "text": "提出问题",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "body",
+          "text": "关联背景资料",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "lineage",
+          "role": "body",
+          "text": "标记资料来源",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "action",
+          "role": "body",
+          "text": "整理下一步行动",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "概念流程 · 非实际功能验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        }
+      ],
+      "speaker_notes": "使用讨论—资料—来源—行动的概念路径说明产品设想，不声称知栈真实具备这些功能。"
+    },
+    {
+      "id": "S04",
+      "title": "把概念放进一次团队例会",
+      "message": "会前准备，会中记录，会后接续。",
+      "concept_path": "concepts/S04.png",
+      "reference_ids": [
+        "R17"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把概念放进一次团队例会",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "会前准备，会中记录，会后接续。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "before",
+          "role": "body",
+          "text": "会前｜整理议题与背景材料",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "during",
+          "role": "body",
+          "text": "会中｜标注问题与出处",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "after",
+          "role": "body",
+          "text": "会后｜汇总可执行的下一步",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "scenario",
+          "role": "secondary",
+          "text": "小团队会议 · 虚构情境",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示场景 · 非真实用户案例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        }
+      ],
+      "speaker_notes": "用单一虚构团队会议展示概念适用场景。没有真实用户、执行过程或产品实现证据。"
+    },
+    {
+      "id": "S05",
+      "title": "从一个小范围试用开始",
+      "message": "先选一种重复讨论，再观察线索能否接得上。",
+      "concept_path": "concepts/S05.png",
+      "reference_ids": [
+        "R17"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "从一个小范围试用开始",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "先选一种重复讨论，再观察线索能否接得上。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "scope",
+          "role": "body",
+          "text": "选定一个常见议题类型",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "record",
+          "role": "body",
+          "text": "记录问题、资料来源与行动项",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "feedback",
+          "role": "body",
+          "text": "请参与者反馈哪里仍有断点",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "principle",
+          "role": "secondary",
+          "text": "先观察流程，不预设成效",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "试用方案示意 · 尚未执行",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        }
+      ],
+      "speaker_notes": "建议从受限的小范围试用设计开始；本页只是提案示意，未执行、未评价，不构成效果或 ROI 主张。"
+    }
+  ]
+}

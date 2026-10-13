@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-label="S02-arrow-hot-heat-production">
+  <title>S02-arrow-hot-heat-production</title>
+  <defs><filter id="arrowHalo" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3.5" result="b"/><feFlood flood-color="#ff7b00" flood-opacity=".9"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <polygon points="568,405 591,405 591,399 613,414 591,429 591,423 568,423" fill="#ffffff" filter="url(#arrowHalo)"/>
+</svg>

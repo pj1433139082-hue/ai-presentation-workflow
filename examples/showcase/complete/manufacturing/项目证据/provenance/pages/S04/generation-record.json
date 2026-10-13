@@ -1,0 +1,39 @@
+{
+  "schema": "apw-concept-generation-record/v1",
+  "slide_id": "S04",
+  "artifact_kind": "standalone-slide-concept",
+  "actor": "agent",
+  "tool": "Codex built-in image_gen",
+  "tool_call": "image_gen.imagegen",
+  "operation": "generate",
+  "generated_at": "2026-10-13T08:42:35+08:00",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-57f8-7b41-8255-833b48138fbc\\exec-f4c3d799-6a98-4939-ac9c-2770089073a2.png",
+  "original_output_sha256": "2a1922b757a55957c6bde3de507f6595aafad560b14ee65281c3f89a2fb8d845",
+  "output_path": "concepts/S04.png",
+  "output_sha256": "2a1922b757a55957c6bde3de507f6595aafad560b14ee65281c3f89a2fb8d845",
+  "dimensions_px": [
+    1672,
+    941
+  ],
+  "format": "PNG",
+  "design_concept_path": "concept.png",
+  "design_concept_sha256": "2a1922b757a55957c6bde3de507f6595aafad560b14ee65281c3f89a2fb8d845",
+  "prompt_path": "provenance/pages/S04/prompt.txt",
+  "prompt_sha256": "3d4f0976e4b7b1129c4d8bd0b864f604b764caf3690d171a272d59096dc8bf9c",
+  "prompt": "Use case: productivity-visual\nAsset type: one complete 16:9 Chinese concept slide for a local showcase presentation.\nScene/backdrop: warm ivory drafting-paper field with understated technical linework; no real plant or project background.\nSubject: a proposed path from gathering site information to professional review. Show a clear progression and make the review step visible without implying any work has happened.\nStyle/medium: refined editorial engineering explainer, fine dark-blue linework with restrained warm/cool accents, crisp high-contrast Chinese typography.\nComposition/framing: a spacious route or branching sequence with four distinct stages; let the flow shape the page rather than using a repeated card grid.\nText (verbatim; render each line exactly once, with no other words): “按步骤验证可行性” “现场资料先行，方案须经专业复核。” “梳理可用热源和目标用热点” “核对供给与需求的时间关系” “初选换热路径并检查接口条件” “由专业团队复核安全与运维” “方法建议 · 尚未用于真实工厂”\nConstraints: these are proposed review steps only. Do not claim a site visit, engineering study, safety audit, or implementation has occurred.\nAvoid: invented project stages with dates, quantified engineering values, plant names, costs, savings, performance claims, safety certification, fake measurements, extra text, logos, or watermark.",
+  "input_snapshot_path": "provenance/concept-input-hash-snapshot.json",
+  "input_sha256": {
+    "brief.json": "6bde1d583820bf88222c9cf0baad6e4a5f3a79493a8d757b097ba60d1a9d2a05",
+    "deck-spec.json": "b689def7a5a464bab2448bbcff8028ea61730ec3d64379325a7d51b97c88e5a6",
+    "reference-study.json": "afc11e8f463627a2cc0f829031bc528df3477a2a065edbcfdc760e1ba5cb3286",
+    "style-contract.json": "85531d12b12559dff5ea3e28fe74be83bbaf917013f0c08b3f5337afc05e7688"
+  },
+  "input_snapshot_for_this_slide_sha256": "bfb72cf62720c2da5b98d5af92cd20f946c2496dfd7dbf9d5cb014e9e1e37c54",
+  "reference_ids_in_project_contract": [
+    "R70"
+  ],
+  "direct_image_inputs_sent_to_tool": [],
+  "history_note": "This image was generated after the four project inputs were frozen. The prompt uses the analyzed reference direction in words; no reference image file was passed as a direct image_gen input.",
+  "user_visual_acceptance": "not-claimed",
+  "formal_gates": "not-claimed"
+}

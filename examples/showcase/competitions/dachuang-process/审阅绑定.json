@@ -1,0 +1,40 @@
+{
+  "status": "agent-reviewed-draft",
+  "full": true,
+  "page_count": 6,
+  "reviewed_at_utc": "2026-10-13 14:37:58 UTC",
+  "updated_at_utc": "2026-10-13 14:37:58 UTC",
+  "reviewer": "Codex independent reviewer",
+  "user_acceptance": "not-recorded",
+  "review_method": "All six current design/S01-S06/concept.png files were opened and inspected individually at original resolution. Frozen brief, deck spec, source notes, reference study, style contract, prompts, per-page generation records, retained originals, and generation log were reviewed; the APW showcase concept check was run against the current project root.",
+  "concept_sha256": {
+    "S01": "e7f40a317bf38f884f57f2eb135cbfda13c65ef92431a93c8cb9ec3e80b966b0",
+    "S02": "46391f0a2a0e045c4c011c5c7e8da83a861d00d5c52a74f7a9e8a28253fdab4b",
+    "S03": "c3fcf820caf56dbe5f57abaa9cc8d236ab37245f7e2ce39bdb8d5ba94225943a",
+    "S04": "b2ca5b453ad93026598591d6b7660f883c58d973084c2fc9b7bc08287b19db15",
+    "S05": "0110b3ad5b1a8fcb5d8961977859b0ec5c4d2311763f928f8f35f050f53f81f0",
+    "S06": "ab3a8a9694d0333ebc3dbcb1aa391cc85b50383171b0570548a9218042a2787a"
+  },
+  "input_sha256": {
+    "brief.json": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+    "deck-spec.json": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+    "reference-study.json": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+    "style-contract.json": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+  },
+  "findings_summary": {
+    "P0_open": 0,
+    "P1_open": 0,
+    "P2_open": 0
+  },
+  "open_findings": [],
+  "resolved_findings": [],
+  "review_notes": {
+    "story_and_data": "The six-week checkpoint has a target of three complete rain records, with two complete and one missing record currently represented. The missing record is excluded from the complete sample count. The proposed analysis/report schedule shifts from week 12 to week 14 because complete rain records are insufficient; the change is explicitly unapproved. The sequence from progress comparison through prepared-stage examples, record-quality handling, schedule rationale, and next actions agrees with the brief and source notes.",
+    "fictional_labels": "S01 marks this as a process-scenario example; S02 labels the counts as example/non-measured; S03 labels the stage artifacts as examples; S04 labels the record as example/non-measured and states there are no measured readings or effect conclusions; S05 marks the adjustment as an example and not approved; S06 marks the future actions as examples and the support request as pending. No real measurements, treatment effects, institutional approval, or completed formal review are claimed.",
+    "visual_review": "The six pages use varied compositions while retaining a coherent natural, paper-based visual language. Main titles, counts, missing-data qualifiers, comparison labels, schedule change, and approval boundaries were legible at original size. No material clipping or unsupported result chart was observed.",
+    "hash_integrity": "For all six pages, the current design image, project concept copy, provenance-page copy, generation-log output hash, per-page record output hash, and retained image-generation original hash agree. The record and prompt file hashes agree with the generation log. The four current frozen-input hashes match the pre-generation snapshot and all six page records.",
+    "reference_handling": "Per-page records distinguish references reviewed as design lineage from images attached to the actual image call. S01 and the final S06 edit record the prior concept as the edit target; S02-S05 record the actual reference-image paths used. The records do not claim that image_gen read the frozen JSON inputs.",
+    "apw_validation": "The current APW showcase-v1 concept check passed with no errors or warnings and declared slide IDs S01-S06. Its facts preserve human_gates and formal_release as not-claimed.",
+    "scope_limit": "This review covers the concept-only local handoff. It does not claim PPTX assembly, portable package export, formal competition verification, or user visual acceptance."
+  }
+}

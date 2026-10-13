@@ -1,0 +1,13 @@
+{
+  "snapshot_type": "post-generation-current-concept-binding",
+  "created_at": "2026-10-13T18:23:58+08:00",
+  "inputs": {
+    "brief.json": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+    "deck-spec.json": "6dab13b9d1fc8c3ce3b5caec7035c2f857f040a5c31795977c08e614eb285ed7",
+    "reference-study.json": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+    "style-contract.json": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+  },
+  "scope": "Current canonical hashes after adding output-path bindings required by APW concept validation.",
+  "change_boundary": "Only deck-spec.json slides[].concept_path was added after the original pre-generation snapshot. Slide copy, story, reference selection and style direction are unchanged.",
+  "history_note": "This is not a pre-generation snapshot and does not claim the image generator consumed the path-only revision."
+}

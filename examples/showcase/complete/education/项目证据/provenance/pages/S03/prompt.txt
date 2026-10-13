@@ -1,0 +1,9 @@
+Create one wide 16:9 concept page for an adult visual-design workshop, preserving the handmade paper-collage texture, black expressive lettering, and yellow/blue/coral marks from reference image 1. Reference image 2 contributes only the idea that a route can guide attention; do not use its children, rocket, mascots, cartoon style, or repeated route-card layout. Show a fictional poster being physically taken apart and recomposed on a paper-covered studio table: the main message is lifted as one sheet, related details are grouped near each other, and open blank paper creates breathing rhythm. Include one person's hands actively arranging the pieces, without showing a finished real student work. The composition can be diagonal, layered, or close-up and should feel like a real making process. Render these exact Chinese lines once each, large and readable:
+“把版面拆开，再动手重组”
+“将观察转成可以尝试的设计动作。”
+“定主次：先挑出一条主信息”
+“理关系：让相关内容彼此靠近”
+“调节奏：用留白区分段落”
+“动手：完成一页自己的作品”
+“练习示例 · 非真实学员作品”
+No scores, real student names, school marks, or additional readable text. 16:9 wide slide.

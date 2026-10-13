@@ -1,0 +1,11 @@
+Create one wide 16:9 concept page for an adult visual-design workshop, keeping the warm paper, hand-drawn annotations, black expressive title and yellow/blue/coral accents from reference image 1. Reference image 2 is only a cue for clear reading order; do not show rockets, children, cartoon mascots, real classrooms, or copy a route map. Show a fictional printed poster under thoughtful peer review on a workshop table. Three handwritten observation marks point to hierarchy, visual relationships and reading path; nearby, a small revision note suggests preserving one effective choice, changing only one thing next, then looking again at the whole page. Use empty margin space and an in-progress paper feel; avoid scorecards, grades, ticks implying success, performance metrics, or completed student work. Compose it like an editorial close-up of critique in action, not a generic three-column rubric. Render exactly these Chinese lines once each, in clear readable type:
+“作品评阅，指向下一轮选择”
+“先说明哪里有效，再指出下一步怎么试。”
+“信息层级：第一眼是否明确？”
+“视觉关系：相关内容是否连贯？”
+“阅读路径：下一步是否清楚？”
+“保留一处有效选择”
+“下一轮只试一项调整”
+“再看整体是否更顺”
+“课程练习示例 · 非真实学习成果”
+The poster itself must contain no readable filler text. No real learner work, scores, outcomes, institutions, or claims of measured impact. 16:9 wide slide.

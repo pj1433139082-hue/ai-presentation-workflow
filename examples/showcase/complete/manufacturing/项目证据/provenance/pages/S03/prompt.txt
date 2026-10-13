@@ -1,0 +1,22 @@
+Use case: infographic-diagram
+Asset type: 16:9 explanatory slide concept for an industrial heat-recovery mechanism
+Input images: Image 1 is a structural and visual reference only. Borrow its clear causal sequence, precise technical linework, and diagram-first hierarchy. Do not reproduce the camera, brand, source labels, measurements, or dense multi-column layout.
+Primary request: Explain a generic manufacturing heat-reuse mechanism with an unmistakable process loop. The diagram must make this exact relationship easy to follow: main production flow “加热 → 生产 → 排热”; recovery branch “排热 → 换热 → 回用 → 加热”. Show the recovery branch physically reconnecting to the original heating step.
+Scene/backdrop: A restrained warm-gray technical-paper field with faint drafting texture and a clean factory-process schematic; no particular real site or equipment layout.
+Subject: A simple, elegant process illustration with three primary stages across the upper flow and a return loop beneath them. Use small, legible symbolic vignettes for heating, production, exhaust heat, heat exchange, and reuse. The mechanism and arrow directions must dominate; machinery is supporting context only.
+Style/medium: Editorial engineering explainer, crisp ink linework with a small amount of dimensional industrial illustration, precise but approachable.
+Composition/framing: Wide 16:9. Put the headline and one short explanatory sentence in a clear title area. Use a strong left-to-right primary path across the upper area. From “排热”, route a distinct recovery line downward through “换热”, continue through “回用”, then visibly rise and reconnect to “加热”. Make arrows large enough to read at a glance and preserve the exact order. Keep the footer caution separate and legible.
+Lighting/mood: Quiet, analytical, constructive; no dramatic smoke or disaster imagery.
+Color palette: Warm ivory-gray paper, deep ink-blue primary flow, muted amber exhaust path, calm teal recovery path. Use color to distinguish paths, not to encode quantities.
+Text (verbatim; render each line exactly once, with no added labels):
+“把损失，接回流程。”
+“先找到稳定热源，再匹配同时发生的用热需求。”
+“加热”
+“生产”
+“排热”
+“换热”
+“回用”
+“流程为机制示意，不构成工程设计参数。”
+Typography: Precise, high-contrast Chinese sans-serif; clear headline, short subhead, compact process labels, readable caution line.
+Constraints: This is a mechanism illustration, not an engineering design. Do not add temperatures, pressures, pipe dimensions, efficiency or savings percentages, equipment sizing, performance guarantees, site-specific facts, or real-plant claims. Exact arrow order: 加热 → 生产 → 排热 → 换热 → 回用 → 加热, with the last three stages forming the return path.
+Avoid: Source camera imagery, fake data, invented engineering values, excessive labels, pseudo-equations, confusing crossovers, tiny text, logos, or watermark.

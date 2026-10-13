@@ -1,0 +1,325 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "从看懂，到做出来",
+      "message": "读图 → 拆解 → 实作",
+      "concept_path": "concepts/S01.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "从看懂，到做出来",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "读图 → 拆解 → 实作",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "read",
+          "role": "body",
+          "text": "读图：找到信息层级",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "breakdown",
+          "role": "body",
+          "text": "拆解：理解视觉关系",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "practice",
+          "role": "body",
+          "text": "实作：完成一页作品",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "schedule",
+          "role": "caption",
+          "text": "课程安排示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "goal",
+          "role": "body",
+          "text": "课程目标：独立完成一页清晰的视觉表达。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "导入此前已经生成的成人视觉表达课程概念页，保留原始图像与历史提示词。该课程为虚构练习，不对应真实机构、教师资质或学习成果；原图缩略示例中的微小装饰字不承担课程事实。",
+      "reference_ids": [
+        "R469"
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "先读一页，抓住信息层级",
+      "message": "观察视线如何从主标题走向补充信息。",
+      "concept_path": "concepts/S02.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "先读一页，抓住信息层级",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "观察视线如何从主标题走向补充信息。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "sample",
+          "role": "caption",
+          "text": "练习对象：一张虚构活动海报",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "task-1",
+          "role": "body",
+          "text": "第一眼落在哪里？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "task-2",
+          "role": "body",
+          "text": "标题、主信息与补充信息如何区分？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "task-3",
+          "role": "body",
+          "text": "读完以后，下一步看哪里？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "读图练习示例 · 非真实课程记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "练习页使用假想活动海报作为视觉对象，任务聚焦标题层级、主次信息和阅读顺序。没有引用真实课程材料或学员记录。",
+      "reference_ids": [
+        "R469",
+        "EDUCATION-S01"
+      ]
+    },
+    {
+      "id": "S03",
+      "title": "把版面拆开，再动手重组",
+      "message": "将观察转成可以尝试的设计动作。",
+      "concept_path": "concepts/S03.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把版面拆开，再动手重组",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "将观察转成可以尝试的设计动作。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "priority",
+          "role": "body",
+          "text": "定主次：先挑出一条主信息",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "relations",
+          "role": "body",
+          "text": "理关系：让相关内容彼此靠近",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rhythm",
+          "role": "body",
+          "text": "调节奏：用留白区分段落",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "practice",
+          "role": "body",
+          "text": "动手：完成一页自己的作品",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "练习示例 · 非真实学员作品",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "把拆解所得转成可操作的版面选择：主次、关联与节奏。作品是示例练习，不是学员成果或评估结果。",
+      "reference_ids": [
+        "R469",
+        "EDUCATION-S01"
+      ]
+    },
+    {
+      "id": "S04",
+      "title": "作品评阅，指向下一轮选择",
+      "message": "先说明哪里有效，再指出下一步怎么试。",
+      "concept_path": "concepts/S04.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "作品评阅，指向下一轮选择",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "先说明哪里有效，再指出下一步怎么试。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "criterion-1",
+          "role": "body",
+          "text": "信息层级：第一眼是否明确？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "criterion-2",
+          "role": "body",
+          "text": "视觉关系：相关内容是否连贯？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "criterion-3",
+          "role": "body",
+          "text": "阅读路径：下一步是否清楚？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "next-1",
+          "role": "body",
+          "text": "保留一处有效选择",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "next-2",
+          "role": "body",
+          "text": "下一轮只试一项调整",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "next-3",
+          "role": "body",
+          "text": "再看整体是否更顺",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "课程练习示例 · 非真实学习成果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "用三条具体问题组织同伴评阅，再把反馈变成下一轮可尝试的修改动作。示例没有引用真实学员作品、分数或学习成效。",
+      "reference_ids": [
+        "R469",
+        "EDUCATION-S01"
+      ]
+    }
+  ]
+}

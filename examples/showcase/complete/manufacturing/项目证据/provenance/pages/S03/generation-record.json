@@ -1,0 +1,20 @@
+{
+  "slide_id": "S03",
+  "record_type": "imported-existing-concept",
+  "generation_tool": "built-in Codex image_gen (per preserved original provenance.json)",
+  "prompt": "Use case: infographic-diagram\nAsset type: 16:9 explanatory slide concept for an industrial heat-recovery mechanism\nInput images: Image 1 is a structural and visual reference only. Borrow its clear causal sequence, precise technical linework, and diagram-first hierarchy. Do not reproduce the camera, brand, source labels, measurements, or dense multi-column layout.\nPrimary request: Explain a generic manufacturing heat-reuse mechanism with an unmistakable process loop. The diagram must make this exact relationship easy to follow: main production flow “加热 → 生产 → 排热”; recovery branch “排热 → 换热 → 回用 → 加热”. Show the recovery branch physically reconnecting to the original heating step.\nScene/backdrop: A restrained warm-gray technical-paper field with faint drafting texture and a clean factory-process schematic; no particular real site or equipment layout.\nSubject: A simple, elegant process illustration with three primary stages across the upper flow and a return loop beneath them. Use small, legible symbolic vignettes for heating, production, exhaust heat, heat exchange, and reuse. The mechanism and arrow directions must dominate; machinery is supporting context only.\nStyle/medium: Editorial engineering explainer, crisp ink linework with a small amount of dimensional industrial illustration, precise but approachable.\nComposition/framing: Wide 16:9. Put the headline and one short explanatory sentence in a clear title area. Use a strong left-to-right primary path across the upper area. From “排热”, route a distinct recovery line downward through “换热”, continue through “回用”, then visibly rise and reconnect to “加热”. Make arrows large enough to read at a glance and preserve the exact order. Keep the footer caution separate and legible.\nLighting/mood: Quiet, analytical, constructive; no dramatic smoke or disaster imagery.\nColor palette: Warm ivory-gray paper, deep ink-blue primary flow, muted amber exhaust path, calm teal recovery path. Use color to distinguish paths, not to encode quantities.\nText (verbatim; render each line exactly once, with no added labels):\n“把损失，接回流程。”\n“先找到稳定热源，再匹配同时发生的用热需求。”\n“加热”\n“生产”\n“排热”\n“换热”\n“回用”\n“流程为机制示意，不构成工程设计参数。”\nTypography: Precise, high-contrast Chinese sans-serif; clear headline, short subhead, compact process labels, readable caution line.\nConstraints: This is a mechanism illustration, not an engineering design. Do not add temperatures, pressures, pipe dimensions, efficiency or savings percentages, equipment sizing, performance guarantees, site-specific facts, or real-plant claims. Exact arrow order: 加热 → 生产 → 排热 → 换热 → 回用 → 加热, with the last three stages forming the return path.\nAvoid: Source camera imagery, fake data, invented engineering values, excessive labels, pseudo-equations, confusing crossovers, tiny text, logos, or watermark.\n",
+  "prompt_sha256": "9d3b8b909f1117ed1e5a4d10c6d05c617413ddb2c3a99598fd1babe82c82fe34",
+  "output_path": "concept.png",
+  "output_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+  "original_generation_record_path": "original-generation-record.json",
+  "original_generation_record_sha256": "444a54e2951f771f18dc14c57db5965628ebbd87bbf62c6f95e7b10379defdb4",
+  "case_prompt_path": "../../project/provenance/reference-prompts/case70-original-prompt.txt",
+  "case_prompt_sha256": "1f18e74b0e10ca3da838e9fdb49611b0150a1570838283d987cd1f9096a8f04d",
+  "current_input_sha256": {
+    "brief.json": "6bde1d583820bf88222c9cf0baad6e4a5f3a79493a8d757b097ba60d1a9d2a05",
+    "deck-spec.json": "b689def7a5a464bab2448bbcff8028ea61730ec3d64379325a7d51b97c88e5a6",
+    "reference-study.json": "afc11e8f463627a2cc0f829031bc528df3477a2a065edbcfdc760e1ba5cb3286",
+    "style-contract.json": "85531d12b12559dff5ea3e28fe74be83bbaf917013f0c08b3f5337afc05e7688"
+  },
+  "history_note": "图像早于当前项目JSON生成；当前哈希仅绑定本轮导入，不证明旧生成工具读取本项目输入。原图、原提示词与原工具记录均保留。"
+}

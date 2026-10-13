@@ -1,0 +1,8 @@
+Use case: background-extraction
+Asset type: one isolated transparent special-typography wordmark
+Input images: Image 1 is the original S01 concept. Copy only the wordmark from its upper-left area.
+Primary request: Rebuild the source wordmark as exactly two Chinese glyphs: `知栈` (first 知, second 栈), with the source's wide, compact proportions and custom angular character silhouettes.
+Text (verbatim): `知栈`. Exactly two characters and no other marks.
+Style/medium: Match the source closely: broad pale-silver/white faces, subtle cool-blue shading at the left, restrained warm-coral shading at the lower right, and only a very fine clean beveled edge. Keep the type bold and crisp without deep extrusion.
+Composition/framing: Center both complete glyphs in a horizontal wordmark with generous genuine transparent padding. Keep the original character order and relative size.
+Constraints: Keep only the two glyph silhouettes. Outside the glyphs must be fully transparent. No extra characters, no dots or particles, no sparks, no stars, no floating accents, no underline, no border, no plate, no glow cloud, no perspective tilt, no watermark. This is a glyph artwork asset, not a font file.

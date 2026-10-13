@@ -1,0 +1,71 @@
+{
+  "slide_id": "S06",
+  "record_type": "actual-image-edit",
+  "generation_tool": "Codex built-in image_gen.imagegen",
+  "recorded_at": "2026-10-13T22:25:44.7075607+08:00",
+  "version": "v2",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1358e-1e87-7093-ad01-730050e566bf\\exec-04a269d9-b432-4bc6-a74e-b47699003d08.png",
+  "original_output_sha256": "ab3a8a9694d0333ebc3dbcb1aa391cc85b50383171b0570548a9218042a2787a",
+  "output_path": "concept.png",
+  "output_sha256": "ab3a8a9694d0333ebc3dbcb1aa391cc85b50383171b0570548a9218042a2787a",
+  "canonical_output_path": "concepts/S06.png",
+  "dimensions": {
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB"
+  },
+  "prompt": "Make a minimal text-only edit to Image 1, the existing S06 full-page concept. Add the one missing truth label and preserve all existing content.\n\nKeep Image 1 as the base. Preserve the 16:9 canvas, research-workbench composition, rain marks, balanced substrate columns, blank archive binder, folded request note, lighting, colors, and every existing line of Chinese copy exactly as it is. Do not redesign, replace, or rearrange the page.\n\nAdd exactly this additional line, verbatim: “计划行动示例”\n\nPlace it in the clear lower-right page margin beneath the existing pending support text, as a small but clearly legible dark-green label on a restrained pale-leaf brushstroke or pill consistent with the existing visual style. Keep it separated from the support-request copy. Leave the title, takeaway, four action labels, and the existing “拟请求支持｜复核比较条件与记录规则（待沟通）” wording unchanged and readable.\n\nDo not add any other words, numbers, marks, icons, or objects.",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "e76a7172c15de852e8eb018fa80a3b099b00deffb02a5b72e99dd51ca2c3f0be",
+  "input_sha256": {
+    "brief.json": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+    "deck-spec.json": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+    "reference-study.json": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+    "style-contract.json": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+  },
+  "actual_tool_inputs": {
+    "referenced_image_paths": [
+      "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/design/S06/revisions/v1/concept.png"
+    ],
+    "referenced_image_bindings": [
+      {
+        "role": "edit-target",
+        "path": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/design/S06/revisions/v1/concept.png",
+        "sha256": "d2ceaff22eacd490b1b77065f195cb4b2a65410ca66d6463f8de8bf1beb96ea6",
+        "portable_project_path": "provenance/pages/S06/revisions/v1/concept.png"
+      }
+    ],
+    "transparent_background": false
+  },
+  "design_reviewed_references": [
+    {
+      "reference_id": "R-PROPOSAL-S01",
+      "project_path": "references/previous-proposal-S01.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "project_path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "v1",
+      "image_path": "revisions/v1/concept.png",
+      "image_sha256": "d2ceaff22eacd490b1b77065f195cb4b2a65410ca66d6463f8de8bf1beb96ea6",
+      "prompt_path": "revisions/v1/prompt.txt",
+      "prompt_sha256": "44940104635a860f04d350890fbb260e283e86ee56cb9a1de349cb74a1565d81",
+      "generation_record_path": "revisions/v1/generation-record.json",
+      "generation_record_sha256": "67ced534eaac0b5802b2719cc83c9d11de7ed6191fc003f95ec5c1e792b9aeaa",
+      "revision_reason": "The first image omitted the deck-declared truth label “计划行动示例”."
+    }
+  ],
+  "visual_review": {
+    "actor": "Codex subagent",
+    "method": "view_image of copied current output",
+    "finding": "The exact truth label “计划行动示例” is now legible at lower right. The title, takeaway, four action labels, pending support request, and diagonal workbench composition remain readable; no measurements, results, or completed support are implied.",
+    "user_acceptance": "not-recorded"
+  },
+  "history_note": "The final edit call received only the preserved v1 S06 concept as its edit target. The two design references were passed in the initial v1 generation and remain documented in revisions/v1/generation-record.json; they were not passed in this edit call. Frozen APW input hashes bind this project version; they do not claim the image tool read those JSON files."
+}

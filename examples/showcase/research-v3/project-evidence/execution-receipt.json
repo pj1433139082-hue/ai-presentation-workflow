@@ -1,0 +1,28 @@
+{
+  "delivery_mode": "concept",
+  "technical_contract": {
+    "delivery_mode": "concept",
+    "slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ],
+    "asset_ids": [],
+    "concept_input_sha256": {
+      "brief": "381ae4068a88c0f0636a68d0eb516b17eec76c256a23b10c7b3f6c1538bf175b",
+      "deck_spec": "ef2e9efe4d99ce728b6fee94f7ad575c132777d70d6a4fe4667b7545a7024de8",
+      "reference_study": "7beaf82abdd10dbce006edb1d61cab4ed3783b209975fdf4e0d6e07b49cba70c",
+      "style_contract": "d74d6c36362c0eaeeaaa5579182a93d1ae628f0c8d44edc5ebc17513c3da2be4"
+    },
+    "mode_source": "project-setting",
+    "human_gates": "not-claimed",
+    "formal_release": "not-claimed"
+  },
+  "assembly": "not-requested",
+  "pptx": "not-produced",
+  "human_gates": "not-claimed",
+  "user_visual_feedback": "not-claimed"
+}

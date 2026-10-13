@@ -1,0 +1,16 @@
+Create ONE single widescreen 16:9 landscape concept slide, page 2 of a fictional Chinese engineering invention presentation. Use the attached reference image only for industrial-design line discipline and the idea of supporting a hero surface with a few technical views; do not copy its penguin, package, colors, wording, dimensions, marks, or layout. This is an imagined scenario, not field evidence.
+
+Render ONLY this exact Simplified Chinese copy, with no extra words:
+large title: “同一处疑点，怎样再看一次？”
+large takeaway: “巡检线索要能定位、成像、复核。”
+three short callouts, exactly:
+“设定场景：细裂纹可能与表面纹理相混”
+“换位后，复拍位置不易对齐”
+“持续采集与端侧能耗需要权衡”
+small but comfortably readable boundary label: “问题设定 · 非现场调研”
+
+Composition should feel like a premium engineering editorial page, not business cards. Place the title and takeaway in a generous upper-left text zone. On the right and lower area, show one dramatic macro illustration of a fictional bridge-concrete surface with a fine abstract surface fissure, plus two slightly offset inspection viewpoints returning to the same amber-marked spot. Use thin drafting lines to suggest re-alignment and near-surface review, without coordinates, scale bars, measurement numbers, or dashboard UI. Integrate the three callouts as clean editorial margin notes tied by hairline leaders to the surface; do not enclose them in repeated boxes.
+
+Visual language: graphite/navy, concrete gray, cool white, restrained warm amber. Crisp high-end hardware publication typography and restrained studio light. Render the crack as an illustrative concept texture, not a real inspection photo. Keep all Chinese words exact, large, clean and sharply legible.
+
+Avoid extra text, pseudo-labels, numerical data, measured claims, actual bridge names, real cracks presented as evidence, logos, awards, school names, patents, cards, collage, or extra panels.

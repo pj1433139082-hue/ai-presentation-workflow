@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import NamedTuple
 
 
-IGNORED_DIRECTORY_NAMES = {"__pycache__", ".pytest_cache"}
+IGNORED_DIRECTORY_NAMES = {"__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache"}
 IGNORED_SUFFIXES = {".pyc", ".pyo"}
 
 

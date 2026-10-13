@@ -1,0 +1,473 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "让闲置物品，在校园里多走一程",
+      "message": "拾集｜校园旧物循环服务概念",
+      "concept_path": "concepts/S01.png",
+      "reference_ids": [
+        "R479",
+        "R297"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "让闲置物品，在校园里多走一程",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "拾集｜校园旧物循环服务概念",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "brand",
+          "role": "brand",
+          "text": "拾集",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "descriptor",
+          "role": "secondary",
+          "text": "让仍可使用的物品，在同学之间继续流转。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "创新创业路演示例 · 虚构项目",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        }
+      ],
+      "speaker_notes": "虚构校园旧物循环服务的创新创业路演示例。页面所述场景、计划、团队及收支全部为说明性假设，不是实际调研、试点、营收或成果证据。"
+    },
+    {
+      "id": "S02",
+      "title": "搬出宿舍的省事需求，遇上新生的基础需求",
+      "message": "用一次可信、就近的交接，把两端接起来。",
+      "concept_path": "concepts/S02.png",
+      "reference_ids": [
+        "R479"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "搬出宿舍的省事需求，遇上新生的基础需求",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "用一次可信、就近的交接，把两端接起来。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "leaving",
+          "role": "body",
+          "text": "离校：台灯、收纳箱还能用，却难处理",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "arriving",
+          "role": "body",
+          "text": "入住：想找状态清楚、价格合适的日用品",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "task",
+          "role": "key-detail",
+          "text": "用户任务：快速发布｜看清状况｜校内交接",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "需求情境推演 · 非用户调研",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        }
+      ],
+      "speaker_notes": "虚构校园旧物循环服务的创新创业路演示例。页面所述场景、计划、团队及收支全部为说明性假设，不是实际调研、试点、营收或成果证据。"
+    },
+    {
+      "id": "S03",
+      "title": "把旧物循环，设计成一条看得见的服务路径",
+      "message": "登记、检查、匹配、交接，每一步都留下清楚信息。",
+      "concept_path": "concepts/S03.png",
+      "reference_ids": [
+        "R297"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把旧物循环，设计成一条看得见的服务路径",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "登记、检查、匹配、交接，每一步都留下清楚信息。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "register",
+          "role": "body",
+          "text": "登记：照片与基本信息",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "check",
+          "role": "body",
+          "text": "检查：清洁后标注成色",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "match",
+          "role": "body",
+          "text": "匹配：按需求预约",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "handoff",
+          "role": "body",
+          "text": "交接：校内当面确认",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "difference",
+          "role": "key-detail",
+          "text": "状态说明统一 · 校内就近流转 · 交接留记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "服务机制示意 · 未上线",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        }
+      ],
+      "speaker_notes": "虚构校园旧物循环服务的创新创业路演示例。页面所述场景、计划、团队及收支全部为说明性假设，不是实际调研、试点、营收或成果证据。"
+    },
+    {
+      "id": "S04",
+      "title": "先在一栋宿舍楼，试跑四周",
+      "message": "以小范围试点验证周转、等待时间和运营负担。",
+      "concept_path": "concepts/S04.png",
+      "reference_ids": [
+        "R297"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "先在一栋宿舍楼，试跑四周",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "以小范围试点验证周转、等待时间和运营负担。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "scope",
+          "role": "key-detail",
+          "text": "范围假设｜1栋楼 · 4周 · 最多40件",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "week1",
+          "role": "body",
+          "text": "第1周｜定规则，设登记点",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "week23",
+          "role": "body",
+          "text": "第2–3周｜登记、检查、匹配、交接",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "week4",
+          "role": "body",
+          "text": "第4周｜复盘流程与参与意愿",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "metrics",
+          "role": "body",
+          "text": "观察指标｜成功交接数 / 匹配时长 / 人工用时",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "试点方案示例 · 尚未实施",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        }
+      ],
+      "speaker_notes": "虚构校园旧物循环服务的创新创业路演示例。页面所述场景、计划、团队及收支全部为说明性假设，不是实际调研、试点、营收或成果证据。"
+    },
+    {
+      "id": "S05",
+      "title": "先把小账摊开，再判断模式能否跑通",
+      "message": "示例测算：单月收入假设 ¥150，成本估算 ¥450。",
+      "concept_path": "concepts/S05.png",
+      "reference_ids": [
+        "R297"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "先把小账摊开，再判断模式能否跑通",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "示例测算：单月收入假设 ¥150，成本估算 ¥450。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "income",
+          "role": "body",
+          "text": "收入假设｜30次 × ¥5/次 = ¥150",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "costs",
+          "role": "body",
+          "text": "成本假设｜耗材 ¥90 + 运送 ¥120 + 运营工时折算 ¥240 = ¥450",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "balance",
+          "role": "key-detail",
+          "text": "示例差额｜¥150 − ¥450 = −¥300",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "validate",
+          "role": "body",
+          "text": "优先验证｜愿付金额 · 单件运营耗时 · 周转率",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "示例测算 · 非真实经营数据",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        }
+      ],
+      "speaker_notes": "虚构校园旧物循环服务的创新创业路演示例。页面所述场景、计划、团队及收支全部为说明性假设，不是实际调研、试点、营收或成果证据。"
+    },
+    {
+      "id": "S06",
+      "title": "先跑通一栋楼，再决定要不要扩",
+      "message": "分清角色与验证顺序，让下一步由证据决定。",
+      "concept_path": "concepts/S06.png",
+      "reference_ids": [
+        "R479"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "先跑通一栋楼，再决定要不要扩",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "分清角色与验证顺序，让下一步由证据决定。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "coordination",
+          "role": "body",
+          "text": "协调｜规则与点位",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "operations",
+          "role": "body",
+          "text": "运营｜登记、检查、交接",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "product",
+          "role": "body",
+          "text": "产品｜表单与记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "outreach",
+          "role": "body",
+          "text": "传播｜招募与说明",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "month1",
+          "role": "key-detail",
+          "text": "第1月｜验证流程",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "month2",
+          "role": "key-detail",
+          "text": "第2月｜复核单位经济",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "month3",
+          "role": "key-detail",
+          "text": "第3月｜决定是否扩点",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "团队分工与发展计划示例 · 虚构设定",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE"
+          ]
+        }
+      ],
+      "speaker_notes": "虚构校园旧物循环服务的创新创业路演示例。页面所述场景、计划、团队及收支全部为说明性假设，不是实际调研、试点、营收或成果证据。"
+    }
+  ]
+}

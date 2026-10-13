@@ -1,0 +1,9 @@
+Use case: productivity-visual
+Asset type: one complete 16:9 Chinese concept slide for an illustrative manufacturing heat-reuse presentation.
+Scene/backdrop: warm ivory technical-paper field, minimal drafting marks, no identifiable factory location.
+Subject: a readable analysis framework that places a potential heat source and potential heat use in relation to timing and connection conditions. Use a visual question path, not a recommendation or calculation.
+Style/medium: precise editorial engineering explainer with fine linework and the warm-heat/cool-reuse accents in the frozen project style. Keep generous breathing room and clear Chinese labels.
+Composition/framing: an asymmetrical open page with connected prompts, not four identical cards; each question should be easy to associate with its visual cue.
+Text (verbatim; render each line exactly once, with no other words): “先问四件事，再谈是否匹配” “热源、用热点、时间与距离需要放在一起看。” “热源：热量来自哪一段？” “用热点：哪里同时需要热？” “时间：供给与需求何时重叠？” “距离：连接条件是否允许？” “示例分析框架 · 需现场资料验证”
+Constraints: questions are generic prompts, not findings. No numeric values or real-world site facts. Preserve exact wording and punctuation.
+Avoid: temperature/pressure/flow numbers, pipe sizes, efficiency or savings claims, unsupported feasibility conclusions, real equipment layouts, copied camera imagery, dense multi-column cards, extra text, or watermark.

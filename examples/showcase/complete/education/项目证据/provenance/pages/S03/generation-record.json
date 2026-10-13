@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "slide_id": "S03",
+  "artifact_kind": "generated-concept",
+  "actor": "agent",
+  "recorded_at_utc": "2026-10-13T00:59:48.2353795Z",
+  "generator": {
+    "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-6f4a571f-19ad-424d-9cf9-fac8ede43835.png",
+    "mode": "generate",
+    "original_output_sha256": "7E1BD11FB4153A7C6B50E399AAE9A74D1C3033519F6BA1F44FB3FFCD5C016A0F",
+    "tool": "built-in image_gen"
+  },
+  "prompt": {
+    "sha256": "E89A126624C24335089BA7D01F71706BC3D051A60EE837F8D03A95CECF65066D",
+    "path": "prompt.txt"
+  },
+  "input_snapshot": {
+    "path": "../../project/provenance/concept-input-hash-snapshot.json",
+    "inputs": {
+      "brief.json": "bfbcb2ead73eddca359972fe6d620ba58dd3d0f022483e3b58f37ebb39a6fc21",
+      "deck-spec.json": "ab98a0e2e5249de05089ea74fca11275f1237635241618d84cf5da954996023a",
+      "reference-study.json": "73a60989d0ef1ab98a0aacc860edbe2bebbe967d8411e807c816c795c64ad470",
+      "style-contract.json": "bb811f7cc26896f5c61b7d5cb53843c7a857aa9c0cd0ed37428a2819873786d0"
+    },
+    "sha256": "34321A4F3B1F49BA424305856B8B39A731183FF22EE883E6483CE732E1DED8A7"
+  },
+  "reference_images_in_tool_order": [
+    {
+      "path": "../../project/concepts/S01.png",
+      "role": "style and internal project reference; passed as image 1",
+      "sha256": "B2AE250C8DF800F9898B48A01C45DAEA62F6DD9582E390A8CF4DE8406E3D6A24",
+      "id": "EDUCATION-S01"
+    },
+    {
+      "path": "../../project/references/case469.jpg",
+      "role": "analyzed external visual reference; passed as image 2",
+      "sha256": "0D63EA96B6F5BE08AE0C9FF8040EEB90597D116BEBF9958680B5171ED6C7B12D",
+      "id": "R469"
+    }
+  ],
+  "output": {
+    "width_px": 1672,
+    "height_px": 941,
+    "copies": [
+      {
+        "sha256": "7E1BD11FB4153A7C6B50E399AAE9A74D1C3033519F6BA1F44FB3FFCD5C016A0F",
+        "path": "concept.png"
+      },
+      {
+        "sha256": "7E1BD11FB4153A7C6B50E399AAE9A74D1C3033519F6BA1F44FB3FFCD5C016A0F",
+        "path": "../../project/concepts/S03.png"
+      }
+    ],
+    "copies_are_byte_identical": true
+  },
+  "visual_acceptance": "not claimed; concept-only local showcase artifact"
+}

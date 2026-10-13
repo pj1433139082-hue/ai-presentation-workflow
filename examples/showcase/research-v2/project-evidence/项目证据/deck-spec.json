@@ -1,0 +1,424 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "从通量衰减到验证路径",
+      "message": "通量下降，发生了什么？",
+      "concept_path": "concepts/S01.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "从通量衰减到验证路径",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "subtitle",
+          "role": "secondary",
+          "text": "膜处理研究汇报",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "通量下降，发生了什么？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "speaker_notes": "封面标题、受众说明与研究问题按当前任务冻结；以研究问题开场，再引出观察、解释和验证之间的边界。所有内容均为示例。",
+      "reference_ids": [
+        "R175",
+        "R341"
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "把观察、解释与验证分开",
+      "message": "一条曲线，回答不了所有问题。",
+      "concept_path": "concepts/S02.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把观察、解释与验证分开",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "一条曲线，回答不了所有问题。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "observation",
+          "role": "body",
+          "text": "观察：示例通量随时间下降",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "explanation",
+          "role": "body",
+          "text": "解释：原因仍是候选假说",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "validation",
+          "role": "body",
+          "text": "验证：需要针对性的证据",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "speaker_notes": "将示例曲线放在观察、解释、验证三个层次中：只把通量随时间下降作为观察；原因仍是候选假说；验证需要针对性证据。不补写真实实验条件或结果。",
+      "reference_ids": [
+        "R175",
+        "R341"
+      ]
+    },
+    {
+      "id": "S03",
+      "title": "方法与观测：先定义，再记录",
+      "message": "计划示意，尚未执行。",
+      "concept_path": "concepts/S03.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "方法与观测：先定义，再记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "计划示意，尚未执行。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "baseline",
+          "role": "body",
+          "text": "定义初始基线 J₀",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "conditions",
+          "role": "body",
+          "text": "固定待研究的运行条件",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "measure",
+          "role": "body",
+          "text": "按时间记录归一化通量 J/J₀",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "controls",
+          "role": "body",
+          "text": "预先安排重复与对照",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "speaker_notes": "这是拟议的观测流程，不表示实验已实施。重复和对照仅作为设计原则提出，数量及具体方案留待研究设计。",
+      "reference_ids": [
+        "R175",
+        "R341"
+      ]
+    },
+    {
+      "id": "S04",
+      "title": "先看通量变化，再决定验证什么",
+      "message": "示例曲线不能推断显著性。",
+      "concept_path": "concepts/S04.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "先看通量变化，再决定验证什么",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "示例曲线不能推断显著性。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "chart-title",
+          "role": "secondary",
+          "text": "归一化通量（示例数据）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "x-axis",
+          "role": "caption",
+          "text": "时间（min）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "x-values",
+          "role": "body",
+          "text": "0 / 20 / 40 / 60",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "y-axis",
+          "role": "caption",
+          "text": "J/J₀",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "y-values",
+          "role": "body",
+          "text": "1 / 0.93 / 0.85 / 0.78",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "speaker_notes": "只呈现一条示例曲线，时间和值必须与本地 source-notes.md 相同。不要添加第二条曲线、误差条、显著性符号或真实实验参数。",
+      "reference_ids": [
+        "R175",
+        "R341"
+      ]
+    },
+    {
+      "id": "S05",
+      "title": "机理解释仍待验证",
+      "message": "通量下降本身不能确定原因。",
+      "concept_path": "concepts/S05.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "机理解释仍待验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "通量下降本身不能确定原因。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "deposit",
+          "role": "body",
+          "text": "表面沉积？待验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "structure",
+          "role": "body",
+          "text": "膜结构变化？待验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "operation",
+          "role": "body",
+          "text": "运行或测量因素？待验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "speaker_notes": "列举的都是待检验候选问题，目前没有证据支持其中任一解释。版面需持续显著标记“待验证”。",
+      "reference_ids": [
+        "R175",
+        "R341"
+      ]
+    },
+    {
+      "id": "S06",
+      "title": "下一步：把问题变成可检验计划",
+      "message": "先设计对照与重复，再收集证据。",
+      "concept_path": "concepts/S06.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "下一步：把问题变成可检验计划",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "先设计对照与重复，再收集证据。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "conditions",
+          "role": "body",
+          "text": "明确运行条件和记录项",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "control",
+          "role": "body",
+          "text": "设置针对性的对照",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "replicates",
+          "role": "body",
+          "text": "安排重复观测（数量待方案确定）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "criteria",
+          "role": "body",
+          "text": "预先定义比较与判断方法",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "speaker_notes": "结尾把候选解释转成后续设计任务。具体对照、重复数量和判断方法需由真实研究方案确定；当前内容不表示已经执行。",
+      "reference_ids": [
+        "R175",
+        "R341"
+      ]
+    }
+  ]
+}

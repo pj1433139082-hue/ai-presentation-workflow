@@ -1,0 +1,13 @@
+{
+  "project_id": "replace-with-project-id",
+  "audience": "replace with intended local showcase audience",
+  "goal": "replace with the presentation communication goal",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "editable-pptx",
+    "aspect_ratio": "16:9",
+    "scope": "local-showcase-only"
+  },
+  "source_map": []
+}

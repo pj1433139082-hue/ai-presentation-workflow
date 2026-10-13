@@ -1,0 +1,81 @@
+{
+  "project_id": "dachuang-closeout-example",
+  "delivery_mode": "concept",
+  "page_order": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "current_contract_input_sha256": {
+    "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+    "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "pages": {
+    "S01": {
+      "prompt_path": "provenance/pages/S01/prompt.txt",
+      "prompt_sha256": "0d855b1a3560e4bcc92aca45c7b94415114f1e08e153c3a4c82b18ea837b2985",
+      "design_prompt_path": "design/S01/prompt.txt",
+      "actual_reference_images_passed": [],
+      "selected_design_reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ]
+    },
+    "S02": {
+      "prompt_path": "provenance/pages/S02/prompt.txt",
+      "prompt_sha256": "e1aa11bfe28ddd0c6e6b413d0b50b56217948a2e928593a371696af7b6d471bb",
+      "design_prompt_path": "design/S02/prompt.txt",
+      "actual_reference_images_passed": [],
+      "selected_design_reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ]
+    },
+    "S03": {
+      "prompt_path": "provenance/pages/S03/prompt.txt",
+      "prompt_sha256": "8152cacd183a1b28f2503daed134e67fa608951c3a43381b8619f47b453a3c4f",
+      "design_prompt_path": "design/S03/prompt.txt",
+      "actual_reference_images_passed": [],
+      "selected_design_reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ]
+    },
+    "S04": {
+      "prompt_path": "provenance/pages/S04/prompt.txt",
+      "prompt_sha256": "b26517ce29ed1da0b4e0058d8981511ad614487c26fd42ee218dd2594264520e",
+      "design_prompt_path": "design/S04/prompt.txt",
+      "actual_reference_images_passed": [],
+      "selected_design_reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ]
+    },
+    "S05": {
+      "prompt_path": "provenance/pages/S05/prompt.txt",
+      "prompt_sha256": "a2adbb7cc1c047cc5d9cd417ef441282beaa16b4c6932001333f4df8fc5779dc",
+      "design_prompt_path": "design/S05/prompt.txt",
+      "actual_reference_images_passed": [],
+      "selected_design_reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ]
+    },
+    "S06": {
+      "prompt_path": "provenance/pages/S06/prompt.txt",
+      "prompt_sha256": "e4e9933b6a0822b41fd17079c2396e27b3482e0334a17fd7ecc5dd8451a1c305",
+      "design_prompt_path": "design/S06/prompt.txt",
+      "actual_reference_images_passed": [],
+      "selected_design_reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ]
+    }
+  },
+  "all_claims_source_id": "EXAMPLE"
+}

@@ -1,0 +1,42 @@
+{
+  "input_count": 4,
+  "inputs": [
+    {
+      "id": "shared-scenario",
+      "original_path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-all-stages\\scenario.md",
+      "copy_path": "sources/shared-scenario.md",
+      "original_sha256": "65b5b48cd96c7410a4df495a30db4f25032783b2ae177cd8ac4cd788ab1b8c4a",
+      "copy_sha256": "65b5b48cd96c7410a4df495a30db4f25032783b2ae177cd8ac4cd788ab1b8c4a",
+      "role": "fictional content source; used to freeze copy; not an image tool input"
+    },
+    {
+      "id": "proposal-S01",
+      "original_path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang\\project\\concepts\\S01.png",
+      "copy_path": "references/proposal-S01-style-anchor.png",
+      "original_sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46",
+      "copy_sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46",
+      "role": "viewed design reference; principles used in prompts; not passed as image_gen attachment"
+    },
+    {
+      "id": "case339-image",
+      "original_path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang\\project\\references\\case339.jpg",
+      "copy_path": "references/case339.jpg",
+      "original_sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642",
+      "copy_sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642",
+      "role": "viewed design reference; principles used in prompts; not passed as image_gen attachment"
+    },
+    {
+      "id": "case339-original-prompt",
+      "original_path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang\\project\\provenance\\reference-prompts\\case339-original-prompt.txt",
+      "copy_path": "provenance/reference-prompts/case339-original-prompt.txt",
+      "original_sha256": "cda9979704699bb64cc5c7a58012ba1982d5697176236b214213af277efd0af9",
+      "copy_sha256": "cda9979704699bb64cc5c7a58012ba1982d5697176236b214213af277efd0af9",
+      "role": "read for reference study; not passed to image_gen"
+    }
+  ],
+  "preservation_check": "source and copy hashes are equal",
+  "record_type": "post-generation-description-correction",
+  "supersedes_descriptive_roles_in": "provenance/reference-input-snapshot.json",
+  "preserved_original_sha256": "f82121fb4aeeaea2fe469b1060b1ef48dbf9c8eeec212f76df93f932b0fe57ff",
+  "history_note": "Original pre-generation snapshot and its freeze-record hash remain unchanged. Actual per-page tool records all declare no attached reference images."
+}

@@ -1,5 +1,19 @@
 # Pressure scenarios
 
+## Presenter notes and personal-style reuse
+
+The user requests Chinese presenter notes for a research deck whose evidence covers only dataset A. A previous personal preset exists, but this project's calibration has not been reviewed. Later, the user reorders slides and asks for a single-page S07 preview.
+
+Pass criteria:
+
+- visible and spoken claims retain the dataset boundary; pending experiments do not become results in notes;
+- page jobs guide composition, while existing readability and semantic contracts remain active;
+- notes are canonical strings tied to stable slide IDs and appear in native PPTX notes, including the selected preview;
+- changing deck order alone cannot bypass the current storyboard sequence, even when a newer G4 hash is recorded;
+- required missing notes, edited/deleted/injected PPTX notes, and stale note hashes fail validation;
+- the earlier preset feeds the new reference study/calibration and cannot inherit approvals;
+- a reusable save writes only requested, content-free visual rules outside the skill installation, preserving an existing preset by default.
+
 These scenarios test the skill as a production discipline, not as prose recall.
 
 ## Baseline observations before the new skill
@@ -61,4 +75,3 @@ Pass criteria:
 - open original primary sources before creating claims;
 - keep unsupported claims in `gaps` or `assumptions`;
 - do not ask the human to debug routine search syntax.
-

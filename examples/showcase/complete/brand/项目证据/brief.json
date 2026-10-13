@@ -1,0 +1,49 @@
+{
+  "project_id": "industry-brand-v2",
+  "audience": "消费品牌提案评审者与包装设计协作者（示例受众）",
+  "goal": "以五页说明虚构品牌“山间茶事”的新品包装故事、假想使用情境、包装结构、品牌触点和上市前示例试验计划。",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "concept-png-set",
+    "aspect_ratio": "16:9",
+    "scope": "authorized-local-showcase-concepts-only",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05"
+    ]
+  },
+  "narrative": [
+    {
+      "slide_id": "S01",
+      "role": "以产品开盒与冲泡时刻建立品牌提案"
+    },
+    {
+      "slide_id": "S02",
+      "role": "把产品放入三个假想日常情境"
+    },
+    {
+      "slide_id": "S03",
+      "role": "讲清包装层次与材质意图"
+    },
+    {
+      "slide_id": "S04",
+      "role": "串联识别、使用和分享触点"
+    },
+    {
+      "slide_id": "S05",
+      "role": "提出未执行的上市前体验检查问题"
+    }
+  ],
+  "source_map": [
+    {
+      "id": "EXAMPLE",
+      "truth_status": "illustrative",
+      "kind": "fictional_brand_proposal",
+      "locator": "本项目所有品牌、商品、使用情境与试验内容均为虚构的本地展示提案；不对应真实公司、茶品、产地、认证、功效、用户调研、销售或已执行计划。"
+    }
+  ]
+}

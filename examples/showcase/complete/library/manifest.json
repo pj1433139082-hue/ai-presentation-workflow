@@ -1,0 +1,21 @@
+{
+  "industry": "library",
+  "page_count": 4,
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "delivery_mode": "concept",
+  "user_visual_acceptance": "not-recorded",
+  "pptx": "not-requested",
+  "concept_hashes": {
+    "S01": "6e1f3bd87466ddb980553d23bee6588b82b4e5e9fecfc3881ac74d0835f44f1b",
+    "S02": "d5704b1579b78ff5ac41178708a095ffd9ec882ce5d36049c3ef0475e9ed6415",
+    "S03": "dc90d9ba8d60fdfd136e7ccd288cf9ff9573c41ce02e7e70229834eda022f5f9",
+    "S04": "107bd5d1e527f2daf993a0ca29e26ceae17619c1f6548fef4a61ef853a9ca32b"
+  },
+  "archive_sha256": "829e506906f440aa40918b4f1c5800d4f90d194175766135f89b6cad47315fa6",
+  "export_verified": true
+}

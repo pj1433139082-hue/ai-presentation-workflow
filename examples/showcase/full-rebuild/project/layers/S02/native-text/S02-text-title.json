@@ -1,0 +1,53 @@
+{
+  "id": "S02-text-title",
+  "role": "text",
+  "text": "把损失，接回流程。",
+  "bbox": [
+    449,
+    22,
+    820,
+    104
+  ],
+  "position": {
+    "x": 856,
+    "y": 112,
+    "anchor": "middle"
+  },
+  "font_family": "Noto Sans SC",
+  "font_weight": 900,
+  "font_size_px": 84,
+  "color": "#01234A",
+  "editable": true,
+  "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+  "z": 40,
+  "representation": "native",
+  "type": "text",
+  "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+  "semantic_role": "large Chinese title",
+  "file": "components/text-title.svg",
+  "text_width_px": 736,
+  "source_format": "editable SVG text node",
+  "sha256": "017daa7c3f491a5971cc95f8d4cb11189e8258d6b6e6ec56c8f168327ba99d6c",
+  "asset_frame_bbox": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "svg_viewbox": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "font_width_measurement": {
+    "font_file": "C:/Windows/Fonts/NotoSansSC-VF.ttf",
+    "natural_width_at_90px": 810,
+    "source_target_width_px": 736,
+    "svg_textLength_adjustment": 0.908642,
+    "method": "Pillow ImageFont.getlength"
+  },
+  "line_height": 1.22,
+  "path": "layers/S02/native-text/S02-text-title.json",
+  "text_align": "center"
+}

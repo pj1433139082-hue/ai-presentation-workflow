@@ -37,6 +37,11 @@
       "sha256": null,
       "alpha": null,
       "generation_attempts": 0,
+      "generation_history": [],
+      "extraction": {
+        "route": "reconstruct-single"
+      },
+      "isolation_review": null,
       "status": "planned",
       "review_evidence": []
     }

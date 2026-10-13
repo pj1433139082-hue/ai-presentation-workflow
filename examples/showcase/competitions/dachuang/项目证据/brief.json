@@ -1,0 +1,31 @@
+{
+  "project_id": "competition-dachuang-proposal",
+  "audience": "大学生创新训练项目立项答辩的评审和指导教师",
+  "goal": "以虚构校园雨水花园研究提案展示立项答辩的完整问题、目标、方法、资源、计划与成果风险故事。",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "concept-images",
+    "aspect_ratio": "16:9",
+    "scope": "local-showcase-only",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07"
+    ]
+  },
+  "source_map": [
+    {
+      "id": "EXAMPLE",
+      "kind": "locally-authored-fictional-showcase-content",
+      "locator": "本地自编立项提案、资源预算与12周计划，均是示例",
+      "path": "sources/source-notes.md",
+      "sha256": "db2f9772686eb13e35c88e565d8849f4d3b9bd392e66272d05a86b6bf01a9b43",
+      "truth_status": "illustrative"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "slide_id": "S04",
+  "artifact_kind": "generated-concept",
+  "actor": "agent",
+  "recorded_at_utc": "2026-10-13T00:42:47.8926735Z",
+  "generator": {
+    "tool": "built-in image_gen",
+    "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-063e648d-9d92-4c77-9200-443bf01345dc.png",
+    "mode": "generate",
+    "original_output_sha256": "01F0BBA56BEA95E51B08B3E710129BCB05FC15B665CF822BE39F0E75387477F9"
+  },
+  "prompt": {
+    "sha256": "26F02B15BC539BFC41B5B9B8459F5B25F7664BAC95610043C67675381718A4A2",
+    "path": "prompt.txt"
+  },
+  "input_snapshot": {
+    "inputs": {
+      "brief.json": "64b99eca979368c119f8f900a9cb4a0f345ef6865651a7bf096cdc9e1ba3251f",
+      "deck-spec.json": "6d6ea3fe6c71d8ac5adb3d264421dc9cd9adddd9ff36931576252524115f92d9",
+      "reference-study.json": "06ea7fa3cfc50b7adfd07f90750a190c6b61a8d04337fab4a2158ad9371d90cf",
+      "style-contract.json": "16927aeadcf293a3ef807847841c53749e4bbe736bfdfb99f61dae9a217eab30"
+    },
+    "path": "../../project/provenance/concept-input-hash-snapshot.json",
+    "sha256": "92E14EE6A86F335956F42319AE0DB0942F865A696260E0A19209A3BD078B085B"
+  },
+  "references": [
+    {
+      "id": "BRAND-S01",
+      "path": "../../project/concepts/S01.png",
+      "role": "style and internal project reference",
+      "sha256": "9FB9EE495BDE2456FE4B43C5CF9E4D5EFEC4912A351B6A964D9800059B12EF8C"
+    },
+    {
+      "id": "R362",
+      "path": "../../project/references/case362.jpg",
+      "role": "analyzed external visual reference",
+      "sha256": "98602C5EE9033E5D80C656ABC5409391B181F4D207F43E404D49A1057A2034CE"
+    }
+  ],
+  "output": {
+    "copies_are_byte_identical": true,
+    "width_px": 1672,
+    "copies": [
+      {
+        "sha256": "01F0BBA56BEA95E51B08B3E710129BCB05FC15B665CF822BE39F0E75387477F9",
+        "path": "concept.png"
+      },
+      {
+        "sha256": "01F0BBA56BEA95E51B08B3E710129BCB05FC15B665CF822BE39F0E75387477F9",
+        "path": "../../project/concepts/S04.png"
+      }
+    ],
+    "height_px": 941
+  },
+  "visual_acceptance": "not claimed; concept-only local showcase artifact"
+}

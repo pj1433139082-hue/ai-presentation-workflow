@@ -1,0 +1,29 @@
+{
+  "id": "dachuang",
+  "label": "大创立项答辩",
+  "page_count": 7,
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07"
+  ],
+  "delivery_mode": "concept",
+  "concept_hashes": {
+    "S01": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46",
+    "S02": "577cfaf8b66d5443ab4da776e7f7b1dd541998a03f4ab00556edc98ac006e489",
+    "S03": "6ee993d1f99ae525e203525d8cc0210b592813c90c96a778a2a4184f8cfafa5d",
+    "S04": "cef7552b9b9d3a5a388f65864996f1fdd710fc0ae7a069332abb0adbd795fb91",
+    "S05": "168ca5d61c8947e06d8a4f2ac660713755944c20c301bca46d5519746684857e",
+    "S06": "36984d7e2be9efc3d526e69ca8c790266fe6d3ae6b8d27fae37bc302a9802d12",
+    "S07": "2a142a55b887a6c5a0f0edf7bbf5a0bedcf33536dbfc39ae8703726deb42e275"
+  },
+  "review_sha256": "e99f4b84251cf4d988cd84b07b6a8babfef669f6e3a7a6f1c93ac8d9fcd5a9c6",
+  "archive_sha256": "060772b313ec3c9196c40124be84d90704358014dfbff1bd498128220b2e2b70",
+  "export_verified": true,
+  "user_visual_acceptance": "not-recorded",
+  "pptx": "not-requested"
+}

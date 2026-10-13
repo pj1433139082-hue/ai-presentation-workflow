@@ -1,0 +1,22 @@
+Use case: product-mockup
+Asset type: 16:9 landscape technology-product launch cover concept
+Input images: Image 1 is a style and composition reference only. Borrow the strong central product presence, carefully separated material layers, clean studio reflections, and restrained annotation hierarchy. Do not edit or reproduce the VR headset, Meta logo, original wording, branded components, or exact layout.
+Primary request: Create an original launch-cover visual for a fictional desktop collaboration and knowledge-retrieval terminal named 知栈. It should feel like a thoughtfully designed desk device, not a generic laptop or an existing commercial product.
+Scene/backdrop: A seamless saturated ultramarine studio with a single warm coral light plane and a faint desk-like horizon; keep the background graphic and uncluttered.
+Subject: A compact sculptural desktop terminal with a wide smoked-glass display on a low brushed-aluminum dock. The display suggests meeting notes becoming connected knowledge threads through a few luminous abstract lines and paper-like fragments; screen micro-content must be non-readable and contain no invented UI words. No headset, no people.
+Style/medium: Premium product-launch photography crossed with bold contemporary editorial poster design; tactile glass, satin metal, precise silhouette, strong art direction.
+Composition/framing: Wide 16:9. One hero product dominates the right half with an elegant three-quarter view and generous clear space on the left for typography. Use large Chinese title type, a compact descriptor, one sentence of promise, then three short feature phrases separated by small typographic marks. Avoid boxes and feature-card grids; make the type and object feel integrated in one confident campaign composition.
+Lighting/mood: Crisp edge light against deep blue, one warm coral reflection, polished but calm and intelligent.
+Color palette: Ultramarine, smoked graphite, brushed silver, restrained coral.
+Materials/textures: Optical glass, satin-finished aluminum, soft light falloff, subtle studio-floor reflection.
+Text (verbatim; render each line exactly once, with no added wording):
+“知栈”
+“桌面知识协作终端”
+“让每次讨论，都接得上下一步。”
+“会后脉络留存”
+“资料语义检索”
+“任务线索串联”
+“概念产品 · 示例”
+Typography: Clear, refined Chinese sans-serif with confident editorial scale and crisp strokes; keep all listed Chinese copy legible and correctly spelled.
+Constraints: This is a fictional concept product. Do not imply measured performance, real availability, customer adoption, or verified product specifications. Keep all visible copy exactly to the supplied lines. Preserve safe margins and a clear hierarchy.
+Avoid: Existing company/product logos, recognizable branded hardware, extra English text, gibberish labels, fake statistics, cards, clutter, watermark, or a second product.

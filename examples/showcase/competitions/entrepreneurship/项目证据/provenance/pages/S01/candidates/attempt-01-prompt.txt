@@ -1,0 +1,12 @@
+Create one complete, finished Chinese presentation concept slide as a single landscape 16:9 image. This is slide S01 of a six-page local concept showcase for a fictional campus reuse service called 拾集. It is an innovation-and-entrepreneurship pitch example, not a real venture or competition submission.
+
+Design direction: warm, bright, contemporary editorial storytelling for a campus service startup. Use a believable candid daylight campus scene: two students exchanging a clean, still-usable desk lamp and a small storage box in a leafy shared courtyard, with a softly sunlit campus walkway in the distance. Make the objects and gesture the visual hero. People should feel like ordinary students, not models; avoid identifiable real institutions, school signs, logos, uniforms, or claims of a real event. Combine documentary-like photographic realism with only a very light tactile paper edge or printed-paper texture. Sophisticated magazine typography, strong hierarchy, generous but purposeful whitespace, lively asymmetrical composition. Warm ivory, restrained terracotta and deep green. High craft, humane, optimistic, not corporate stock-template art. Do not use a grid of cards, no repeated panel layout, no fake interface, no badges or award marks.
+
+Render all Chinese text below exactly, clearly and naturally typeset. Keep these phrases legible, do not translate, paraphrase, repeat, or add any other readable text:
+主标题：让闲置物品，在校园里多走一程
+品牌：拾集
+副标题：校园旧物循环服务概念
+说明：让仍可使用的物品，在同学之间继续流转。
+页内标识：创新创业路演示例 · 虚构项目
+
+Use the title as the dominant editorial element, with the scene visually supporting it rather than competing. Keep text inside safe margins. This is a single 16:9 slide canvas, not a mockup, poster photographed on a wall, collage of different slides, or storyboard.

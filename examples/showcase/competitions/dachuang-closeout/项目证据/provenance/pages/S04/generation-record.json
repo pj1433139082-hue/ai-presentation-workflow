@@ -1,0 +1,154 @@
+{
+  "slide_id": "S04",
+  "status": "generated",
+  "generator": "Codex built-in image_gen",
+  "generated_at_utc": "2026-10-13 13:18:38 UTC",
+  "prompt_path": "provenance/pages/S04/prompt.txt",
+  "prompt_sha256": "b26517ce29ed1da0b4e0058d8981511ad614487c26fd42ee218dd2594264520e",
+  "input_snapshot_path": "provenance/pages/S04/input-snapshot.json",
+  "input_snapshot_sha256": "5a53db1933fa24a9bce1fe6f5941c95a63c843488557d128a19cfb800748e679",
+  "contract_input_sha256": {
+    "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+    "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "copy_map": [
+    {
+      "id": "title",
+      "role": "title",
+      "text": "交付物可追溯，贡献按角色说明",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "takeaway",
+      "role": "key-takeaway",
+      "text": "以空模板与概念封面展示成果结构。",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "deliverable1",
+      "role": "body",
+      "text": "观察记录｜空白记录模板",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "deliverable2",
+      "role": "body",
+      "text": "对照数据｜空白整理表",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "deliverable3",
+      "role": "body",
+      "text": "维护建议｜概念文本",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "deliverable4",
+      "role": "body",
+      "text": "研究报告｜概念封面与目录",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "roles_heading",
+      "role": "section-heading",
+      "text": "团队分工（角色示例）",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "roles",
+      "role": "body",
+      "text": "样地记录 · 装置搭建 · 数据整理 · 报告撰写",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "source",
+      "role": "source",
+      "text": "概念交付物示意 · 非真实报告或验收材料",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "page",
+      "role": "page-number",
+      "text": "04 / 06",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    }
+  ],
+  "copy_map_sha256": "5e19e157ee01e8f96d19692e1febffff742712bd8def8db395b5c916aa21c08b",
+  "selected_reference_images": [
+    {
+      "reference_id": "RPROPOSAL-S01",
+      "path": "references/proposal-S01-style-anchor.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "actual_passed_reference_images": [],
+  "actual_tool_call": {
+    "request_type": "new full-page concept image",
+    "prompt_sha256": "b26517ce29ed1da0b4e0058d8981511ad614487c26fd42ee218dd2594264520e",
+    "reference_images_passed": [],
+    "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-0b2462ab-aa59-4ca9-b876-e367a2e85ca2.png",
+    "tool_output_sha256": "2d625db4410627387909851e265c07bd3c19dd76c16fea7faf2a9336a01cdd6d",
+    "tool_output_hint": "Generated image saved by Codex built-in image_gen; original retained."
+  },
+  "output_path": "concepts/S04.png",
+  "output_sha256": "2d625db4410627387909851e265c07bd3c19dd76c16fea7faf2a9336a01cdd6d",
+  "design_copy_path": "design/S04/concept.png",
+  "design_copy_sha256": "2d625db4410627387909851e265c07bd3c19dd76c16fea7faf2a9336a01cdd6d",
+  "image_dimensions_px": {
+    "width": 1672,
+    "height": 941,
+    "aspect_ratio": "1672:941"
+  },
+  "history": [
+    {
+      "attempt": 1,
+      "status": "generated",
+      "prompt_sha256": "b26517ce29ed1da0b4e0058d8981511ad614487c26fd42ee218dd2594264520e",
+      "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-0b2462ab-aa59-4ca9-b876-e367a2e85ca2.png",
+      "tool_output_sha256": "2d625db4410627387909851e265c07bd3c19dd76c16fea7faf2a9336a01cdd6d",
+      "output_sha256": "2d625db4410627387909851e265c07bd3c19dd76c16fea7faf2a9336a01cdd6d",
+      "note": "Initial generation; tool output was copied without modification."
+    }
+  ],
+  "agent_inspection": {
+    "reviewed_page": "S04",
+    "finding": "All four requested document labels and the role contribution line are visible. The forms remain blank and illustrative; the footer disclaims real reports and acceptance materials. No names, seals, or official marks appear."
+  }
+}

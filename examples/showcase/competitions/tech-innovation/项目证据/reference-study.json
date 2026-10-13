@@ -1,0 +1,69 @@
+{
+  "status": "analyzed",
+  "selected_reference_ids": [
+    "R361",
+    "R475"
+  ],
+  "references": [
+    {
+      "id": "R361",
+      "status": "analyzed",
+      "image_path": "references/case361.jpg",
+      "sha256": "039834badf59050ce4ea43df3feabe3772c8dcf1b8bf84b9f37c04b390527f3a",
+      "source_locator": "https://x.com/Ankit_patel211/status/2048834306379075759",
+      "source_label": "@Ankit_patel211",
+      "case_title": "手机爆炸拆解图",
+      "catalog_record_url": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-361",
+      "catalog_cases_file_sha256": "2f75f94f5cbe65b19436793671b2cd5bb434c4cf2080a1aaf82653460b584ebe",
+      "original_prompt_path": "provenance/reference-prompts/case361-original-prompt.txt",
+      "original_prompt_sha256": "6a659fe827f9c4dee37d7158cb831911e0fdd84dac9a92ae3fc0fca5c0893cf7",
+      "observation": "已实际查看本地案例图与原始 prompt。R361 是深色背景的硬件爆炸拆解视觉，主体沿纵向展开，以金属材质、细引线和参数区构成产品技术图鉴。",
+      "usage_note": "仅作视觉结构参考；案例内容和图像不是本项目的事实来源。",
+      "transferable_rules": [
+        "用一个清晰的硬件主体建立视觉锚点。",
+        "以分离层次和少量精细标注解释结构。",
+        "深色基底与冷金属材质可形成发布级质感。"
+      ],
+      "project_translation": [
+        "S01借用单一主视觉与克制的工程引线，重画虚构桥巡节点。",
+        "S03/S04用不同剖面角度说明采样动作与构想结构。",
+        "全套采用横向版式、留白和有限标注，不复刻原图参数密度。"
+      ],
+      "do_not_copy": [
+        "不得复制手机、苹果标志、品牌文案或器件列表。",
+        "不得沿用原图的真实型号、规格、性能数字或底部密集参数栏。",
+        "不把原案例的手机部件当作桥迹装置结构。"
+      ]
+    },
+    {
+      "id": "R475",
+      "status": "analyzed",
+      "image_path": "references/case475.jpg",
+      "sha256": "61ffe2cbcc2bac37eeb2b73cf40b8a057148bdbc080ab16e2354043fac4ed653",
+      "source_locator": "https://x.com/iamaiistudio/status/2059305097897914664",
+      "source_label": "@iamaiistudio",
+      "case_title": "企鹅造型包装结构板",
+      "catalog_record_url": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-475",
+      "catalog_cases_file_sha256": "2f75f94f5cbe65b19436793671b2cd5bb434c4cf2080a1aaf82653460b584ebe",
+      "original_prompt_path": "provenance/reference-prompts/case475-original-prompt.txt",
+      "original_prompt_sha256": "a60a62c2c7ee4d8d4179666aba4fec45122f8befb4126cf284168066f1d8251a",
+      "observation": "已实际查看本地案例图与原始 prompt。R475 将产品 hero 与前/侧/顶视草图、框架剖面和局部细节并置，呈现工业设计工程说明板。",
+      "usage_note": "仅作视觉结构参考；案例内容和图像不是本项目的事实来源。",
+      "transferable_rules": [
+        "在主产品旁加入少量辅助视图，帮助理解几何关系。",
+        "用局部剖面和视角变化说明结构，不只依赖文字。",
+        "工程标注应服务当前页面问题，留出阅读呼吸。"
+      ],
+      "project_translation": [
+        "S02用桥面表面细节作为需求场景，不使用包装/卡通造型。",
+        "S05用标注试件的局部视图说明验证记录结构。",
+        "S06以边界和路线图收束，不使用原图的四角工程板。"
+      ],
+      "do_not_copy": [
+        "不得复制企鹅角色、包装外形、色卡和手绘尺寸。",
+        "不使用图中虚构的材料、毫米数值或品牌标题。",
+        "不把四角网格与大量小视图作为全套固定模板。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "industry": "tech",
+  "page_count": 5,
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05"
+  ],
+  "delivery_mode": "concept",
+  "user_visual_acceptance": "not-recorded",
+  "pptx": "not-requested",
+  "concept_hashes": {
+    "S01": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+    "S02": "0fe18ffde97b2c4c70969c3b5491047d1962987770c72f9a6b593a873e18e16d",
+    "S03": "9a659e0526503ca98f8ae49538c32c42b4f6f27a5e98d53a84477818c3d2d745",
+    "S04": "7d09e2968ee17bfcf711368436c2f45b0381569ef3b3abdfbb50847bca6ed078",
+    "S05": "a3ab99de48119d584da7c1cf5d8e1fdfe64671c20a674b5ea02b57921b3a9b4b"
+  },
+  "archive_sha256": "5c7534a72ce57d1c4214dbd51076adb4c31629da45ba9d4bad9e4a54650208e3",
+  "export_verified": true
+}

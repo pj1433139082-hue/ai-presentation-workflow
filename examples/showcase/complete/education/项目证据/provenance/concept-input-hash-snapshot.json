@@ -1,0 +1,14 @@
+{
+  "snapshot_type": "pre-concept-generation-inputs",
+  "created_at": "2026-10-13T00:28:06Z",
+  "project_id": "industry-education-v2",
+  "inputs": {
+    "brief.json": "bfbcb2ead73eddca359972fe6d620ba58dd3d0f022483e3b58f37ebb39a6fc21",
+    "deck-spec.json": "ab98a0e2e5249de05089ea74fca11275f1237635241618d84cf5da954996023a",
+    "reference-study.json": "73a60989d0ef1ab98a0aacc860edbe2bebbe967d8411e807c816c795c64ad470",
+    "style-contract.json": "bb811f7cc26896f5c61b7d5cb53843c7a857aa9c0cd0ed37428a2819873786d0"
+  },
+  "scope": "Four-slide concept story/copy, two analyzed references, and visual direction are frozen before new page generation. S01 is an existing imported concept; its historical prompt and prior generation record are retained separately.",
+  "authority": "agent-selected local showcase direction; not user visual acceptance or a formal gate",
+  "generation_log": "pending"
+}

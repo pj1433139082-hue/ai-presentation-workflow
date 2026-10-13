@@ -1,0 +1,329 @@
+{
+  "status": "complete",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "status": "generated",
+      "output_path": "concepts/S01.png",
+      "output_sha256": "6e1f3bd87466ddb980553d23bee6588b82b4e5e9fecfc3881ac74d0835f44f1b",
+      "input_sha256": {
+        "brief": "9c82d65f4156a37db44f86c771ad9dcd1b2217fcd0f3b26e0ed993b27f72e458",
+        "deck_spec": "ea4496ab3a49f7775d72021063608f9d28b7b9bb75d1922955c1e6ad225f7d88",
+        "reference_study": "2096fd84da1debc82497e2a0ea3004c406f83c952a47e99ec7c8e5d023709dc4",
+        "style_contract": "3c1cd8312323597c5f64f71a8eb347c9e1ac8a66d64d14d011ea33366508b1e7"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "第一次借阅，从这里开始",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "descriptor",
+          "role": "secondary",
+          "text": "社区图书馆借阅指南 · 流程示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "一张图看懂进入、选书、办理与归还。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "实际步骤与规则以所在图书馆为准",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R469",
+          "path": "references/case469.jpg",
+          "sha256": "0d63ea96b6f5be08ae0c9ff8040eeb90597d116bebf9958680b5171ed6c7b12d"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S01/generation-record.json",
+      "generation_record_sha256": "834fa5aa12a9d6d93d87501aae70d5c615019e119417d051bd8818e33ccc475b",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S02",
+      "status": "generated",
+      "output_path": "concepts/S02.png",
+      "output_sha256": "d5704b1579b78ff5ac41178708a095ffd9ec882ce5d36049c3ef0475e9ed6415",
+      "input_sha256": {
+        "brief": "9c82d65f4156a37db44f86c771ad9dcd1b2217fcd0f3b26e0ed993b27f72e458",
+        "deck_spec": "ea4496ab3a49f7775d72021063608f9d28b7b9bb75d1922955c1e6ad225f7d88",
+        "reference_study": "2096fd84da1debc82497e2a0ea3004c406f83c952a47e99ec7c8e5d023709dc4",
+        "style_contract": "3c1cd8312323597c5f64f71a8eb347c9e1ac8a66d64d14d011ea33366508b1e7"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "第一次来，也知道怎么借。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "办证 → 找书 → 借阅 → 归还",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "registration",
+          "role": "body",
+          "text": "服务台登记",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "browse",
+          "role": "body",
+          "text": "按分区索引",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "checkout",
+          "role": "body",
+          "text": "柜台或自助机",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "return",
+          "role": "body",
+          "text": "归还后确认记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "流程示例，实际规则以所在图书馆为准",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R469",
+          "path": "references/case469.jpg",
+          "sha256": "0d63ea96b6f5be08ae0c9ff8040eeb90597d116bebf9958680b5171ed6c7b12d"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S02/generation-record.json",
+      "generation_record_sha256": "5e11f40b43e0693a0616f8dd31a29e5acd0e5277a51cd14febff3afbfbcd8515",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S03",
+      "status": "generated",
+      "output_path": "concepts/S03.png",
+      "output_sha256": "dc90d9ba8d60fdfd136e7ccd288cf9ff9573c41ce02e7e70229834eda022f5f9",
+      "input_sha256": {
+        "brief": "9c82d65f4156a37db44f86c771ad9dcd1b2217fcd0f3b26e0ed993b27f72e458",
+        "deck_spec": "ea4496ab3a49f7775d72021063608f9d28b7b9bb75d1922955c1e6ad225f7d88",
+        "reference_study": "2096fd84da1debc82497e2a0ea3004c406f83c952a47e99ec7c8e5d023709dc4",
+        "style_contract": "3c1cd8312323597c5f64f71a8eb347c9e1ac8a66d64d14d011ea33366508b1e7"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "借阅与归还，记住这几步",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "先确认书目与账户，再按所在馆流程办理。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "before",
+          "role": "body",
+          "text": "借出前｜确认书名与可借状态",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "checkout",
+          "role": "body",
+          "text": "办理时｜按馆内指定方式完成借阅",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "after",
+          "role": "body",
+          "text": "归还后｜留意记录是否更新",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "help",
+          "role": "body",
+          "text": "遇到异常｜向服务人员询问",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "通用流程提示 · 具体规则以所在馆为准",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R469",
+          "path": "references/case469.jpg",
+          "sha256": "0d63ea96b6f5be08ae0c9ff8040eeb90597d116bebf9958680b5171ed6c7b12d"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S03/generation-record.json",
+      "generation_record_sha256": "3022060a9b406d289321d98f5b0afb0e5f84a00df2a5a70b1ad13577cd74b3fd",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S04",
+      "status": "generated",
+      "output_path": "concepts/S04.png",
+      "output_sha256": "107bd5d1e527f2daf993a0ca29e26ceae17619c1f6548fef4a61ef853a9ca32b",
+      "input_sha256": {
+        "brief": "9c82d65f4156a37db44f86c771ad9dcd1b2217fcd0f3b26e0ed993b27f72e458",
+        "deck_spec": "ea4496ab3a49f7775d72021063608f9d28b7b9bb75d1922955c1e6ad225f7d88",
+        "reference_study": "2096fd84da1debc82497e2a0ea3004c406f83c952a47e99ec7c8e5d023709dc4",
+        "style_contract": "3c1cd8312323597c5f64f71a8eb347c9e1ac8a66d64d14d011ea33366508b1e7"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "不确定时，先核对规则入口",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "以所在图书馆发布的信息或现场答复为准。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "official",
+          "role": "body",
+          "text": "优先查看所在图书馆的正式服务说明",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "check",
+          "role": "body",
+          "text": "核对办理、借期与续借等事项",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "ask",
+          "role": "body",
+          "text": "信息不清时，到服务台询问",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "boundary-note",
+          "role": "secondary",
+          "text": "本页未指定任何馆规、费用或期限",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "通用信息入口 · 非某馆官方通知",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-LIBRARY-GUIDE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R469",
+          "path": "references/case469.jpg",
+          "sha256": "0d63ea96b6f5be08ae0c9ff8040eeb90597d116bebf9958680b5171ed6c7b12d"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S04/generation-record.json",
+      "generation_record_sha256": "157dc291fadcd03ec8375424f9d593a1999a54e7b6bdcbb9ed4f7f6d8be683d8",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    }
+  ],
+  "binding_role": "current-complete-set-with-preserved-actual-generation-history",
+  "binding_created_at": "2026-10-13T09:12:58.808995+08:00",
+  "user_visual_acceptance": "not-recorded"
+}

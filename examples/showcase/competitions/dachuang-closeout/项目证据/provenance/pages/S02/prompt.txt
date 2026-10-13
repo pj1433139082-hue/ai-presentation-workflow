@@ -1,0 +1,19 @@
+Use case: editorial infographic
+Asset type: one complete full-page 16:9 Chinese slide concept for a university student innovation-training project closeout defense; local showcase concept only.
+Primary request: create a premium, polished, legible Chinese slide that fulfills this page role: 目标完成度，逐项落到材料链.
+Scene/backdrop: warm near-white background with generous clean whitespace.
+Style/medium: refined editorial information design; deep ink green typography, low-saturation leaf green and pale water blue; natural botanical materials with subtle dimensional light where appropriate. This is a fresh composition informed by a reviewed style description, not an edit or copy of any image.
+Composition/framing: landscape 16:9 full slide. Composition: a clean goal-to-material map with three large numbered horizontal lanes. Each lane connects one objective to its example completion line with a thin green route. Use a small botanical or document mark as a guide. Keep the three rows open and varied, not boxed cards. Emphasize goal-to-evidence correspondence; do not imply measured effects.
+Typography: typeset Chinese as crisp, correctly written text with clear hierarchy and comfortable reading size. Preserve every numeral, punctuation mark and phrase exactly. Do not add any visible text beyond the list below.
+Text (verbatim):
+• 目标完成度，逐项落到材料链
+• 三个立项目标都有对应的示例交付状态。
+• 目标一｜记录降雨后水位变化
+• 示例进度｜6 次记录：5 次完整、1 次缺失
+• 目标二｜比较两种基质入渗表现
+• 示例进度｜2 类基质 × 3 次重复，共 6 组台架试验
+• 目标三｜提出维护与优化建议
+• 示例进度｜维护建议稿与研究报告（概念交付）
+• 结题情境示例 · 非真实项目成果
+• 02 / 06
+Constraints: put the fictional/example status close to its claims; show all listed numbers exactly; produce a complete slide, not a mockup of a monitor or a collage. Keep the layout unique to this page role. No watermark, brand, real institution, real person, real photo evidence, certification, seal, patent, signature, invented data or pseudo-text. Do not alter the story or imply any real project work.

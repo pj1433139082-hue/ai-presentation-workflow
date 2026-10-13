@@ -1,0 +1,27 @@
+{
+  "id": "entrepreneurship",
+  "label": "创新创业路演",
+  "page_count": 6,
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "delivery_mode": "concept",
+  "concept_hashes": {
+    "S01": "1e0e00c7b41da6e72c72fba314cc4d952e46b3c1de56c990ffe4d0931ec349a5",
+    "S02": "0954a2e0c128c347fce534a62a705652f9b946667f9ea816a448ca532b1f84af",
+    "S03": "a00418f1c5ade78f41650313c2a95d7ceb73281de95bc6611d2264564d588352",
+    "S04": "2d8bbde87f4fee920ad82a7cd016cfc7592d6d71f8dc4a6b08500776b0628907",
+    "S05": "25ff7e18a199cf2324408668554fce6b5ec328bcdeb98279e4ebb595e2ccea74",
+    "S06": "10f35528ed8ccd1a7d2fd0fc398b8b2b6f1d7f9e4e533dbe748cafb95d216a08"
+  },
+  "review_sha256": "6d357831b7cb552786116fe82120a5240e70f3d98ed09dbff300f8e69368e336",
+  "archive_sha256": "fffe70cae41a185e0f2431e33d9c2fd66c032cd63267ec680fb5174aafe602e6",
+  "export_verified": true,
+  "user_visual_acceptance": "not-recorded",
+  "pptx": "not-requested"
+}

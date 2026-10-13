@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0",
+  "slide_id": "S03",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "items": [
+    {
+      "id": "S03-background",
+      "role": "background",
+      "file": "assets/background.png",
+      "bbox": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "z": 0,
+      "representation": "asset",
+      "alpha_bbox": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "raw_size": [
+        1672,
+        941
+      ],
+      "generation_record": "attempts/background-generation.json",
+      "independence": "one background plate"
+    },
+    {
+      "id": "S03-membrane",
+      "role": "illustration",
+      "file": "assets/membrane.png",
+      "bbox": [
+        1150,
+        484,
+        522,
+        277
+      ],
+      "z": 10,
+      "representation": "asset",
+      "alpha_bbox": [
+        152,
+        185,
+        1642,
+        828
+      ],
+      "raw_size": [
+        1672,
+        941
+      ],
+      "generation_record": "attempts/membrane-repair-generation.json",
+      "independence": "one membrane/water conceptual illustration; internal pixels are not vector-editable"
+    },
+    {
+      "id": "S03-title",
+      "role": "text",
+      "representation": "native",
+      "type": "text",
+      "text": "先看趋势，再讨论机理。",
+      "bbox": [
+        74,
+        31,
+        1060,
+        138
+      ],
+      "z": 30,
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 100,
+      "font_weight": 900,
+      "color": "#001e46",
+      "text_align": "left",
+      "line_height": 1.3,
+      "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+      "file": "components/title.json"
+    },
+    {
+      "id": "S03-chart-heading",
+      "role": "text",
+      "representation": "native",
+      "type": "text",
+      "text": "归一化通量（示例数据）",
+      "bbox": [
+        71,
+        183,
+        720,
+        81
+      ],
+      "z": 30,
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 52,
+      "font_weight": 700,
+      "color": "#001e46",
+      "text_align": "left",
+      "line_height": 1.3,
+      "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+      "file": "components/chart-heading.json"
+    },
+    {
+      "id": "S03-chart",
+      "role": "chart",
+      "file": "components/chart.svg",
+      "bbox": [
+        28,
+        254,
+        1070,
+        644
+      ],
+      "z": 15,
+      "representation": "native"
+    },
+    {
+      "id": "S03-divider",
+      "role": "decoration",
+      "file": "components/divider.svg",
+      "bbox": [
+        1133,
+        201,
+        2,
+        686
+      ],
+      "z": 20,
+      "representation": "native"
+    },
+    {
+      "id": "S03-bullet-1",
+      "role": "decoration",
+      "file": "components/bullet-1.svg",
+      "bbox": [
+        1167,
+        272,
+        16,
+        16
+      ],
+      "z": 20,
+      "representation": "native"
+    },
+    {
+      "id": "S03-bullet-2",
+      "role": "decoration",
+      "file": "components/bullet-2.svg",
+      "bbox": [
+        1167,
+        413,
+        16,
+        16
+      ],
+      "z": 20,
+      "representation": "native"
+    },
+    {
+      "id": "S03-single",
+      "role": "text",
+      "representation": "native",
+      "type": "text",
+      "text": "单次示例曲线，不能推断\n显著性。",
+      "bbox": [
+        1209,
+        253,
+        446,
+        108
+      ],
+      "z": 30,
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 37,
+      "font_weight": 600,
+      "color": "#001e46",
+      "text_align": "left",
+      "line_height": 1.46,
+      "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+      "file": "components/single.json"
+    },
+    {
+      "id": "S03-takeaway",
+      "role": "text",
+      "representation": "native",
+      "type": "text",
+      "text": "机理判断仍需重复与对照。",
+      "bbox": [
+        1209,
+        398,
+        452,
+        59
+      ],
+      "z": 30,
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 37,
+      "font_weight": 600,
+      "color": "#001e46",
+      "text_align": "left",
+      "line_height": 1.46,
+      "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+      "file": "components/takeaway.json"
+    },
+    {
+      "id": "S03-qualifier-frame",
+      "role": "decoration",
+      "file": "components/qualifier-frame.svg",
+      "bbox": [
+        1168,
+        787,
+        470,
+        88
+      ],
+      "z": 20,
+      "representation": "native"
+    },
+    {
+      "id": "S03-qualifier",
+      "role": "text",
+      "representation": "native",
+      "type": "text",
+      "text": "演示数据，非实验结果",
+      "bbox": [
+        1197,
+        803,
+        424,
+        62
+      ],
+      "z": 30,
+      "font_family": "Microsoft YaHei",
+      "font_size_px": 40,
+      "font_weight": 700,
+      "color": "#e22c11",
+      "text_align": "center",
+      "line_height": 1.3,
+      "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+      "file": "components/qualifier.json"
+    }
+  ],
+  "font_policy": "Editable copy approximated using installed Microsoft YaHei; no font binaries extracted or redistributed.",
+  "extra_dependencies": [
+    "components/chart-data.json"
+  ]
+}

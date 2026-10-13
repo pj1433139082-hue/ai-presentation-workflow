@@ -1,0 +1,154 @@
+{
+  "slide_id": "S05",
+  "status": "generated",
+  "generator": "Codex built-in image_gen",
+  "generated_at_utc": "2026-10-13 13:20:16 UTC",
+  "prompt_path": "provenance/pages/S05/prompt.txt",
+  "prompt_sha256": "a2adbb7cc1c047cc5d9cd417ef441282beaa16b4c6932001333f4df8fc5779dc",
+  "input_snapshot_path": "provenance/pages/S05/input-snapshot.json",
+  "input_snapshot_sha256": "df02866b71d4044fdc80f0498fa0abaa2143da2e24a74fbf302eb41c5ef392f5",
+  "contract_input_sha256": {
+    "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+    "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "copy_map": [
+    {
+      "id": "title",
+      "role": "title",
+      "text": "计划顺延两周，资源账目按模拟口径说明",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "takeaway",
+      "role": "key-takeaway",
+      "text": "原计划 12 周；结题情境设定为 14 周。",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "plan_time",
+      "role": "metric",
+      "text": "原计划｜12 周",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "actual_time",
+      "role": "metric",
+      "text": "示例实际｜14 周",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "reason",
+      "role": "body",
+      "text": "顺延原因｜完整降雨记录不足，分析与报告移至第 14 周",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "budget",
+      "role": "body",
+      "text": "原预算｜材料 1,200 · 工具 800 · 调研 500 · 合计 2,500 元",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "simulated",
+      "role": "body",
+      "text": "模拟使用｜材料 1,180 + 工具 760 + 调研 420 = 2,360 元",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "balance",
+      "role": "metric",
+      "text": "余额｜140 元",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "source",
+      "role": "source",
+      "text": "模拟资源明细 · 非真实票据",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "page",
+      "role": "page-number",
+      "text": "05 / 06",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    }
+  ],
+  "copy_map_sha256": "18aef95673276333675024e1b6b2d15091aa97e46433c44d5bcd3b893d174b7d",
+  "selected_reference_images": [
+    {
+      "reference_id": "RPROPOSAL-S01",
+      "path": "references/proposal-S01-style-anchor.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "actual_passed_reference_images": [],
+  "actual_tool_call": {
+    "request_type": "new full-page concept image",
+    "prompt_sha256": "a2adbb7cc1c047cc5d9cd417ef441282beaa16b4c6932001333f4df8fc5779dc",
+    "reference_images_passed": [],
+    "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-3a739c45-9a65-4ec2-93eb-ea46021cf54e.png",
+    "tool_output_sha256": "6657c5da75f1fbc29000f02862a8355598be8ec6f10db72c9d3ac09d4d30ae19",
+    "tool_output_hint": "Generated image saved by Codex built-in image_gen; original retained."
+  },
+  "output_path": "concepts/S05.png",
+  "output_sha256": "6657c5da75f1fbc29000f02862a8355598be8ec6f10db72c9d3ac09d4d30ae19",
+  "design_copy_path": "design/S05/concept.png",
+  "design_copy_sha256": "6657c5da75f1fbc29000f02862a8355598be8ec6f10db72c9d3ac09d4d30ae19",
+  "image_dimensions_px": {
+    "width": 1672,
+    "height": 941,
+    "aspect_ratio": "1672:941"
+  },
+  "history": [
+    {
+      "attempt": 1,
+      "status": "generated",
+      "prompt_sha256": "a2adbb7cc1c047cc5d9cd417ef441282beaa16b4c6932001333f4df8fc5779dc",
+      "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-3a739c45-9a65-4ec2-93eb-ea46021cf54e.png",
+      "tool_output_sha256": "6657c5da75f1fbc29000f02862a8355598be8ec6f10db72c9d3ac09d4d30ae19",
+      "output_sha256": "6657c5da75f1fbc29000f02862a8355598be8ec6f10db72c9d3ac09d4d30ae19",
+      "note": "Initial generation; tool output was copied without modification."
+    }
+  ],
+  "agent_inspection": {
+    "reviewed_page": "S05",
+    "finding": "The 12-week plan and 14-week example period are legible with a two-week extension. The reason is shown. Simulated amounts sum to 2360 and budget minus use equals 140; the page labels the resource detail as simulated and not a real receipt."
+  }
+}

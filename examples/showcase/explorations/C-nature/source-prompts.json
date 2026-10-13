@@ -1,0 +1,24 @@
+{
+  "selectedCases": [
+    {
+      "caseId": 479,
+      "title": "杂志纸艺拼贴重绘",
+      "sourceLabel": "@oggii_0",
+      "sourceUrl": "https://x.com/oggii_0/status/2060212097083146644",
+      "repository": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "localImage": "D:\\obsidian_work\\cangku\\paper_work\\.agents\\skills\\design-shared\\component-library\\sources\\awesome-gpt-image-2\\data\\images\\case479.jpg",
+      "localImageSha256": "2c2dfce4d68f752fbb3f2c370d8839af09ed5b8f4175c49041e25cb1cfe99fb4",
+      "originalPrompt": "Transform the uploaded image into a minimalist illustration in a magazine collage style, using paper cutouts. Retain the main subject, pose, and overall concept of the original image, but reimagine it as a warm, hand-edited collage. Style: Minimalist illustration in a magazine paper collage style, with flat, layered paper shapes, soft pastel paper textures, torn paper edges, paper shadow effects, neat black doodle accents, a handmade scrapbook atmosphere, modern Korean editorial design, a simple and cute composition, and large areas of clean white space. Character: Cute, simplified Korean characters with minimalist facial features, a small, relaxed smile, soft and rounded proportions, simple and casual clothing, and silhouettes constructed from layered paper cutouts. Composition: A 3:4 aspect ratio, with the main subject positioned slightly lower and off-center, leaving a large, open space on the opposite side for a breezy, minimalist composition that avoids clutter. Objects: Add only a few suitable collage elements: paper sticky notes, small hearts, plants, a cup of coffee, a window, tape fragments, and simple doodle icons. Typography: Add an elegant, handwritten English title that fits the scene's atmosphere. Use short phrases such as: [\"May you be like the morning sunshine, full of vitality and hope, embracing the beauty of each day.\",\"Take a small break,\" or \"Good day, good mood.\"] Atmosphere: Calm, comfortable, warm, sweet, and editorial style. Avoid: Photorealistic style, anime style, watercolor style, 3D clay style, overly detailed backgrounds, excessive collage elements, a luxury poster atmosphere, dark tones, harsh shadows, and sloppy text."
+    },
+    {
+      "caseId": 464,
+      "title": "高雄水彩拼贴旅行海报",
+      "sourceLabel": "@SimplyAnnisa",
+      "sourceUrl": "https://x.com/SimplyAnnisa/status/2058372965641662876",
+      "repository": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "localImage": "D:\\obsidian_work\\cangku\\paper_work\\.agents\\skills\\design-shared\\component-library\\sources\\awesome-gpt-image-2\\data\\images\\case464.jpg",
+      "localImageSha256": "757410dfe7288ce10ec13135e6c3990684d11ff3146144cdfea85364ab196e12",
+      "originalPrompt": "Watercolor and collage travel poster for Kaohsiung, Taiwan, vertical layout, soft pastel and warm golden hour color palette.\n\nScene: Waterfront promenade at sunset with a modern light rail tram on the right, a person walking a bicycle on the left, and people strolling along the path. In the background: Kaohsiung skyline with the 85 Sky Tower and other skyscrapers, a harbor with a ferry boat, port cranes, and the Pier-2 Art Center building with murals. Seagulls flying in the sky, trees lining the walkway, calm water reflecting the light.\n\nDesign elements:\n- Large text top left: 'KAO HSIUNG 2026', smaller text below 'Sea Breeze Slow Light Southern City'\n- Top right: Vertical Chinese characters, 'KAOHSIUNG TAIWAN' in small caps below\n- Bottom left: Coordinates '22.6273° N 120.3014° E', 'KAOHSIUNG TAIWAN', wave icon\n- Bottom center: Handwritten script 'Kaohsiung'\n- Bottom right: Vertical list 'Harbor Art Light Rail People Slow Life', vertical Chinese text\n- Overlay effects: Semi-transparent geometric shapes, watercolor splashes, and texture layers in teal and beige\n\nStyle: Modern travel poster meets watercolor painting, airy and atmospheric, blend of illustration and photo-collage, warm and tranquil mood, high detail."
+    }
+  ]
+}

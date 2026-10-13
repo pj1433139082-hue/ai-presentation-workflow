@@ -1,0 +1,18 @@
+Use case: editorial infographic
+Asset type: one complete full-page 16:9 Chinese slide concept for a university student innovation-training project closeout defense; local showcase concept only.
+Primary request: create a premium, polished, legible Chinese slide that fulfills this page role: 结论留有边界，后续先扩样再判断.
+Scene/backdrop: warm near-white background with generous clean whitespace.
+Style/medium: refined editorial information design; deep ink green typography, low-saturation leaf green and pale water blue; natural botanical materials with subtle dimensional light where appropriate. This is a fresh composition informed by a reviewed style description, not an edit or copy of any image.
+Composition/framing: landscape 16:9 full slide. Composition: a calm boundary-to-next-step route. On the left, use a small bounded rain-garden study vignette with concise scope and limitation text. Extend a fine green line toward a larger open landscape on the right, where the suggested next steps appear in sequence. The page should make uncertainty and limited scope clear, without warning-sign clutter, repeated cards, result plots or claims of proven benefit.
+Typography: typeset Chinese as crisp, correctly written text with clear hierarchy and comfortable reading size. Preserve every numeral, punctuation mark and phrase exactly. Do not add any visible text beyond the list below.
+Text (verbatim):
+• 结论留有边界，后续先扩样再判断
+• 本例仅提供研究线索，不能承诺普适效果。
+• 样本范围｜单一虚构样地；6 次记录（5 完整、1 缺失）
+• 对照范围｜2 类基质，各 3 次台架重复
+• 结论边界｜不足以支持普适性、实际改善或显著性判断
+• 后续建议｜扩展样地与降雨条件；统一观测条件
+• 重复对照，保留缺失与异常记录，再讨论维护价值
+• 结题情境示例 · 后续建议非已批准计划
+• 06 / 06
+Constraints: put the fictional/example status close to its claims; show all listed numbers exactly; produce a complete slide, not a mockup of a monitor or a collage. Keep the layout unique to this page role. No watermark, brand, real institution, real person, real photo evidence, certification, seal, patent, signature, invented data or pseudo-text. Do not alter the story or imply any real project work.

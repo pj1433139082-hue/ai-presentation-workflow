@@ -1,0 +1,35 @@
+{
+  "record_type": "actual-image-generation",
+  "slide_id": "S04",
+  "generation_tool": "Codex built-in image_gen",
+  "recorded_at": "2026-10-13T18:14:17+08:00",
+  "generation_time_note": "Exact tool-call timestamp was not exposed; original returned PNG path and bytes are preserved.",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "cc216f514a8d3117aff78248d33d4f4f616284d403e9efcf8c6762dd533e26e4",
+  "output_path": "concept.png",
+  "output_sha256": "ec75c0e4edab0002bfb0beca3113153ce952d97873775196a605fec2436a7631",
+  "original_tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-57f8-7b41-8255-833b48138fbc\\exec-c3f15601-b9ee-4cb7-b820-acb88e82fcd3.png",
+  "copy_method": "byte-for-byte file copy; no image editing",
+  "input_sha256": {
+    "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+    "deck_spec": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+    "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+    "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+  },
+  "input_snapshot_path": "provenance/concept-input-hash-snapshot.json",
+  "reference_images": [
+    {
+      "reference_id": "R361",
+      "path": "references/case361.jpg",
+      "sha256": "039834badf59050ce4ea43df3feabe3772c8dcf1b8bf84b9f37c04b390527f3a",
+      "source_locator": "https://x.com/Ankit_patel211/status/2048834306379075759"
+    }
+  ],
+  "tool_result_note": "Built-in image_gen returned this saved PNG; exact prompt and selected reference lineage are retained alongside the copied output.",
+  "visual_review": {
+    "reviewer_role": "producing agent",
+    "reviewed_at": "2026-10-13T18:14:17+08:00",
+    "result": "Viewed the original 1672x941 PNG. All six declared text blocks are present and readable. The oblique exploded view distinguishes this page from S03's longitudinal section and links the guide, light and index callouts to one fictional device. No measured specifications or unsupported novelty claim appear."
+  },
+  "provenance_limit": "This record binds the actual prompt, selected reference and copied file hash; it is not user visual acceptance, a human gate, or competition compliance approval."
+}

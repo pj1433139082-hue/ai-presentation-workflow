@@ -1,0 +1,11 @@
+Edit the supplied S05 concept image to remove one factual-risk issue while retaining its overall composition, palette, typography, fine etched scientific-journal style, all three candidate vignettes, and exact Chinese copy. In the lower-right vignette, remove the numbered pressure gauge and any numerical dial. Replace it with an abstract, unmarked measuring/control symbol: a simple empty circular pointer form or neutral device silhouette, with no numbers, letters, units, tick labels, scale, readout, or symbols that can be mistaken for data. Remove every other unintended numeric mark or text artifact from the image. Keep the central membrane motif intact and neutral. Keep the three candidate states equally unresolved; retain open dashed exploratory boundaries and visible question cues. Do not make any candidate look confirmed or more probable. Slightly reduce the title size if needed so it reads as an editorial heading rather than a large black block, while keeping it prominent and legible.
+
+The only text in the entire image must be exactly these strings, with accurate Chinese glyphs and punctuation:
+“机理解释仍待验证”
+“通量下降本身不能确定原因。”
+“表面沉积？待验证”
+“膜结构变化？待验证”
+“运行或测量因素？待验证”
+“演示示例 · 非实验结果”
+
+Preserve the warm ivory background #F6F2E9, deep ink #26231F, etched line #514A42, restrained muted ochre #A87548 and pale tint #E6D9CA. Keep it as a single 16:9 landscape slide concept, not a screen mockup. Do not add any other text, digits, labels, data, chart axes, legend, watermark, logo, UI, box cards, gradients, glossy 3D, or photorealistic lab equipment. The flattened image is a concept only, not an editable PowerPoint slide.

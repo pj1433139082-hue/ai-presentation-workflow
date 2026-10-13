@@ -1,0 +1,1313 @@
+[
+  {
+    "slide": 1,
+    "name": "TextBox 3",
+    "text": "健康信息素养   /   01",
+    "box_pt": [
+      60.48,
+      47.52,
+      367.2,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      48.24,
+      176.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 4",
+    "text": "认识健康信息",
+    "box_pt": [
+      60.48,
+      116.64,
+      417.6,
+      63.36
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      117.36,
+      200.0,
+      38.75
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 5",
+    "text": "先看证据，再问来源，\n也别忘了沟通",
+    "box_pt": [
+      60.48,
+      190.8,
+      399.6,
+      80.64
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      191.52,
+      257.5,
+      62.71
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 7",
+    "text": "练习判断信息，不追求一眼定真伪。",
+    "box_pt": [
+      61.92,
+      327.6,
+      403.2,
+      57.6
+    ],
+    "rendered_text_bounds_pt": [
+      63.0,
+      328.32,
+      325.88,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 10",
+    "text": "健康信息素养科普｜帮助理解与沟通，不提供诊断或治疗建议",
+    "box_pt": [
+      56.16,
+      504.0,
+      792.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      504.72,
+      436.75,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 11",
+    "text": "01",
+    "box_pt": [
+      871.2,
+      504.0,
+      34.56,
+      23.76
+    ],
+    "rendered_text_bounds_pt": [
+      885.91,
+      504.72,
+      23.5,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.65
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 1",
+    "text": "01 / FIRST LOOK",
+    "box_pt": [
+      56.16,
+      30.24,
+      417.6,
+      20.88
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      30.96,
+      137.06,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 2",
+    "text": "先把一条信息拆成四个问题",
+    "box_pt": [
+      56.16,
+      58.32,
+      849.6,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      59.04,
+      392.0,
+      38.75
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 3",
+    "text": "看到醒目的结论时，先慢下来检查它的来处。",
+    "box_pt": [
+      58.32,
+      110.16,
+      806.4,
+      32.4
+    ],
+    "rendered_text_bounds_pt": [
+      59.4,
+      110.88,
+      365.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 4",
+    "text": "先问",
+    "box_pt": [
+      63.36,
+      160.56,
+      162.0,
+      37.44
+    ],
+    "rendered_text_bounds_pt": [
+      64.44,
+      161.28,
+      50.5,
+      26.67
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 5",
+    "text": "四个\n小问题",
+    "box_pt": [
+      63.36,
+      207.36,
+      169.2,
+      118.8
+    ],
+    "rendered_text_bounds_pt": [
+      64.44,
+      208.08,
+      104.0,
+      80.22
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 7",
+    "text": "01",
+    "box_pt": [
+      269.28,
+      155.52,
+      44.64,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      270.36,
+      156.24,
+      24.5,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 8",
+    "text": "说的是什么？",
+    "box_pt": [
+      328.32,
+      151.92,
+      183.6,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      329.4,
+      152.64,
+      126.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 9",
+    "text": "把标题还原成可核对的具体主张。",
+    "box_pt": [
+      536.4,
+      152.64,
+      334.8,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      537.48,
+      153.36,
+      275.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 11",
+    "text": "02",
+    "box_pt": [
+      269.28,
+      227.52,
+      44.64,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      270.36,
+      228.24,
+      24.5,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 12",
+    "text": "谁在发布？",
+    "box_pt": [
+      328.32,
+      223.92,
+      183.6,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      329.4,
+      224.64,
+      106.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 13",
+    "text": "查运营、目的、审核与资助。",
+    "box_pt": [
+      536.4,
+      224.64,
+      334.8,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      537.48,
+      225.36,
+      239.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 15",
+    "text": "03",
+    "box_pt": [
+      269.28,
+      299.52,
+      44.64,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      270.36,
+      300.24,
+      24.5,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 16",
+    "text": "依据在哪里？",
+    "box_pt": [
+      328.32,
+      295.92,
+      183.6,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      329.4,
+      296.64,
+      126.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 17",
+    "text": "能否找到研究、原始资料或明确出处？",
+    "box_pt": [
+      536.4,
+      296.64,
+      334.8,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      537.48,
+      297.36,
+      311.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 19",
+    "text": "04",
+    "box_pt": [
+      269.28,
+      371.52,
+      44.64,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      270.36,
+      372.24,
+      24.5,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 20",
+    "text": "何时更新？",
+    "box_pt": [
+      328.32,
+      367.92,
+      183.6,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      329.4,
+      368.64,
+      106.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 21",
+    "text": "发布日期、更新时间与适用对象是什么？",
+    "box_pt": [
+      536.4,
+      368.64,
+      334.8,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      537.48,
+      369.36,
+      329.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 23",
+    "text": "参考：MedlinePlus（美国国家医学图书馆），Evaluating Health Information",
+    "box_pt": [
+      56.16,
+      504.0,
+      792.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      504.72,
+      568.03,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 24",
+    "text": "02",
+    "box_pt": [
+      871.2,
+      504.0,
+      34.56,
+      23.76
+    ],
+    "rendered_text_bounds_pt": [
+      885.91,
+      504.72,
+      23.5,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.65
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 1",
+    "text": "02 / EVIDENCE & LIMITS",
+    "box_pt": [
+      56.16,
+      30.24,
+      417.6,
+      20.88
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      30.96,
+      202.7,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 2",
+    "text": "证据能支持什么，也要看它的边界",
+    "box_pt": [
+      56.16,
+      58.32,
+      849.6,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      59.04,
+      488.0,
+      38.75
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 3",
+    "text": "一项结论是否适用，取决于材料、对象与具体情境。",
+    "box_pt": [
+      58.32,
+      110.16,
+      806.4,
+      32.4
+    ],
+    "rendered_text_bounds_pt": [
+      59.4,
+      110.88,
+      419.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 6",
+    "text": "结论\n边界",
+    "box_pt": [
+      415.44,
+      230.4,
+      113.76,
+      36.0
+    ],
+    "rendered_text_bounds_pt": [
+      450.32,
+      220.81,
+      50.5,
+      55.18
+    ],
+    "vertical_overflow_pt": 9.59,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 11",
+    "text": "研究怎么做？",
+    "box_pt": [
+      66.24,
+      162.0,
+      237.6,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      67.32,
+      162.72,
+      126.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 12",
+    "text": "方法与证据来源，\n是否说得清楚？",
+    "box_pt": [
+      67.68,
+      203.04,
+      230.4,
+      45.36
+    ],
+    "rendered_text_bounds_pt": [
+      68.76,
+      203.76,
+      149.38,
+      45.16
+    ],
+    "vertical_overflow_pt": 0.52,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 13",
+    "text": "参与者是谁？",
+    "box_pt": [
+      653.76,
+      156.96,
+      226.8,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      654.84,
+      157.68,
+      126.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 14",
+    "text": "对象与条件，\n和所讨论的问题吻合吗？",
+    "box_pt": [
+      653.76,
+      198.72,
+      216.0,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      654.84,
+      199.44,
+      203.38,
+      45.16
+    ],
+    "vertical_overflow_pt": 1.24,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 15",
+    "text": "有哪些局限？",
+    "box_pt": [
+      66.24,
+      335.52,
+      230.4,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      67.32,
+      336.24,
+      126.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 16",
+    "text": "单个结果不能自动\n代表所有情境。",
+    "box_pt": [
+      67.68,
+      376.56,
+      226.8,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      68.76,
+      377.28,
+      149.38,
+      45.16
+    ],
+    "vertical_overflow_pt": 1.24,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 17",
+    "text": "是否适合个人？",
+    "box_pt": [
+      653.76,
+      339.84,
+      230.4,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      654.84,
+      340.56,
+      146.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 18",
+    "text": "通用信息不等于\n个人建议。",
+    "box_pt": [
+      653.76,
+      380.88,
+      226.8,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      654.84,
+      381.6,
+      131.38,
+      45.16
+    ],
+    "vertical_overflow_pt": 1.24,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 19",
+    "text": "结论的适用范围，需要回到原资料确认。",
+    "box_pt": [
+      296.64,
+      406.8,
+      388.8,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      329.04,
+      407.52,
+      329.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 21",
+    "text": "参考：MedlinePlus，Evaluating Health Information；内容为信息素养概述",
+    "box_pt": [
+      56.16,
+      504.0,
+      792.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      504.72,
+      552.03,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 22",
+    "text": "03",
+    "box_pt": [
+      871.2,
+      504.0,
+      34.56,
+      23.76
+    ],
+    "rendered_text_bounds_pt": [
+      885.91,
+      504.72,
+      23.5,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.65
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 1",
+    "text": "03 / TRACE THE SOURCE",
+    "box_pt": [
+      56.16,
+      30.24,
+      417.6,
+      20.88
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      30.96,
+      202.05,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 2",
+    "text": "别只看转述：顺着引用找到原文",
+    "box_pt": [
+      56.16,
+      58.32,
+      849.6,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      59.04,
+      456.0,
+      38.75
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 3",
+    "text": "从一句结论往回走，核对是谁说的、依据是什么、何时更新。",
+    "box_pt": [
+      58.32,
+      110.16,
+      806.4,
+      32.4
+    ],
+    "rendered_text_bounds_pt": [
+      59.4,
+      110.88,
+      491.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 5",
+    "text": "你看到的",
+    "box_pt": [
+      80.64,
+      189.36,
+      140.4,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      81.72,
+      190.08,
+      77.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 6",
+    "text": "“研究证实，\n人人都应该……”",
+    "box_pt": [
+      79.2,
+      228.96,
+      145.44,
+      80.64
+    ],
+    "rendered_text_bounds_pt": [
+      80.28,
+      229.68,
+      137.5,
+      83.66
+    ],
+    "vertical_overflow_pt": 3.74,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 7",
+    "text": "标题 / 摘要 / 转述",
+    "box_pt": [
+      80.64,
+      331.2,
+      148.32,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      81.72,
+      331.92,
+      133.5,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 10",
+    "text": "作者",
+    "box_pt": [
+      286.56,
+      296.64,
+      66.24,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      301.68,
+      297.36,
+      41.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 12",
+    "text": "引用",
+    "box_pt": [
+      401.76,
+      296.64,
+      66.24,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      416.88,
+      297.36,
+      41.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 14",
+    "text": "日期",
+    "box_pt": [
+      516.96,
+      296.64,
+      66.24,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      532.08,
+      297.36,
+      41.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 16",
+    "text": "回到原始发布页",
+    "box_pt": [
+      656.64,
+      190.8,
+      180.0,
+      28.8
+    ],
+    "rendered_text_bounds_pt": [
+      657.72,
+      191.52,
+      146.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 17",
+    "text": "找依据\n看限制与更新时间",
+    "box_pt": [
+      723.6,
+      246.24,
+      158.4,
+      64.8
+    ],
+    "rendered_text_bounds_pt": [
+      724.68,
+      246.96,
+      149.38,
+      45.16
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 18",
+    "text": "如果找不到原文、作者或研究背景，先保留疑问，再继续核对。",
+    "box_pt": [
+      66.24,
+      404.64,
+      806.4,
+      40.32
+    ],
+    "rendered_text_bounds_pt": [
+      67.32,
+      405.36,
+      566.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 20",
+    "text": "参考：MedlinePlus（NLM），Evaluating Health Information",
+    "box_pt": [
+      56.16,
+      504.0,
+      792.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      504.72,
+      460.91,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 21",
+    "text": "04",
+    "box_pt": [
+      871.2,
+      504.0,
+      34.56,
+      23.76
+    ],
+    "rendered_text_bounds_pt": [
+      885.91,
+      504.72,
+      23.5,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.65
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 1",
+    "text": "04 / TALK IT THROUGH",
+    "box_pt": [
+      56.16,
+      30.24,
+      417.6,
+      20.88
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      30.96,
+      192.11,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 2",
+    "text": "把疑问带进一次好沟通",
+    "box_pt": [
+      56.16,
+      58.32,
+      849.6,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      59.04,
+      328.0,
+      38.75
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 3",
+    "text": "带着来源、原文和自己的问题，与合适的专业人员讨论。",
+    "box_pt": [
+      58.32,
+      110.16,
+      806.4,
+      32.4
+    ],
+    "rendered_text_bounds_pt": [
+      59.4,
+      110.88,
+      455.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 4",
+    "text": "可以这样开口",
+    "box_pt": [
+      64.8,
+      151.2,
+      403.2,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      65.88,
+      151.92,
+      113.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 6",
+    "text": "我看到……",
+    "box_pt": [
+      106.56,
+      188.64,
+      183.6,
+      30.96
+    ],
+    "rendered_text_bounds_pt": [
+      107.64,
+      189.36,
+      104.5,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 7",
+    "text": "把具体信息或出处带来",
+    "box_pt": [
+      288.0,
+      189.36,
+      270.0,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      289.08,
+      190.08,
+      185.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 10",
+    "text": "它依据什么？",
+    "box_pt": [
+      106.56,
+      248.4,
+      183.6,
+      30.96
+    ],
+    "rendered_text_bounds_pt": [
+      107.64,
+      249.12,
+      126.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 11",
+    "text": "一起确认原始材料",
+    "box_pt": [
+      288.0,
+      249.12,
+      270.0,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      289.08,
+      249.84,
+      149.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 14",
+    "text": "还有哪些未知？",
+    "box_pt": [
+      106.56,
+      308.16,
+      183.6,
+      30.96
+    ],
+    "rendered_text_bounds_pt": [
+      107.64,
+      308.88,
+      146.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 15",
+    "text": "说清楚自己仍不确定的地方",
+    "box_pt": [
+      288.0,
+      308.88,
+      270.0,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      289.08,
+      309.6,
+      221.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 18",
+    "text": "这和我有关吗？",
+    "box_pt": [
+      106.56,
+      367.92,
+      183.6,
+      30.96
+    ],
+    "rendered_text_bounds_pt": [
+      107.64,
+      368.64,
+      146.0,
+      24.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 19",
+    "text": "讨论是否适合个人情境",
+    "box_pt": [
+      288.0,
+      368.64,
+      270.0,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      289.08,
+      369.36,
+      185.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 22",
+    "text": "重要的个人健康决定，请结合具体情况向医疗专业人员咨询。",
+    "box_pt": [
+      68.4,
+      440.64,
+      813.6,
+      28.8
+    ],
+    "rendered_text_bounds_pt": [
+      69.48,
+      441.36,
+      491.38,
+      21.83
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 24",
+    "text": "科普用途｜不替代诊断、治疗或个体化医疗建议",
+    "box_pt": [
+      56.16,
+      504.0,
+      792.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      57.24,
+      504.72,
+      340.75,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 25",
+    "text": "05",
+    "box_pt": [
+      871.2,
+      504.0,
+      34.56,
+      23.76
+    ],
+    "rendered_text_bounds_pt": [
+      885.91,
+      504.72,
+      23.5,
+      19.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.65
+  }
+]

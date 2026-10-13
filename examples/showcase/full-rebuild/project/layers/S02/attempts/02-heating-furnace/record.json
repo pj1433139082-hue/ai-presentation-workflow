@@ -1,0 +1,49 @@
+{
+  "call_id": "S02-IMG-02-heating-furnace",
+  "attempt": 1,
+  "status": "rejected",
+  "method": "built-in image_gen reference-guided single-component generation",
+  "tool": "image_gen__imagegen",
+  "tool_output_hint": "Generated images are saved to C:\\Users\\14331\\.codex\\generated_images\\01a1360d-0a44-7dc3-b50e-b64c02e42916 as C:\\Users\\14331\\.codex\\generated_images\\01a1360d-0a44-7dc3-b50e-b64c02e42916\\exec-afc8dbeb-22f3-49cb-af3d-888ac4d7d2a3.png by default.",
+  "original_codex_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1360d-0a44-7dc3-b50e-b64c02e42916\\exec-afc8dbeb-22f3-49cb-af3d-888ac4d7d2a3.png",
+  "attempt_copy": "attempts/02-heating-furnace/output.png",
+  "component_candidate": "components/heating-furnace.png",
+  "prompt": "Use case: isolated industrial-equipment component reconstruction\nAsset type: one standalone reusable transparent PNG component for an editable industrial process diagram.\nInput images: Image 1 is the approved full-slide concept; use it for the target machine's placement, silhouette, view, palette and lighting. Image 2 is the earlier transparent group; use it only to clarify the target machine's construction. Image 2 is reference material, not deliverable artwork.\nPrimary request: Reconstruct exactly one independent heating furnace from the references.\nSubject: the leftmost furnace unit only: a wide brushed-stainless industrial combustion furnace with a glowing rectangular orange fire chamber, broad lower frame and feet, small side control cabinet, its own short attached metal pipes, and the tall cylindrical exhaust stack behind its left side with the yellow safety platform/railing and dark steel support frame. Preserve the machine-specific brackets, seams and supports that belong to this furnace.\nStyle/medium: polished realistic industrial concept illustration matching the reference's reflective silver steel, fine charcoal seams, restrained warm-gold highlights, crisp detailed rendering and slightly elevated frontal three-quarter view.\nComposition/framing: show the entire one-piece furnace assembly in its original upright orientation, centered and uncropped, with generous transparent padding. Keep natural proportions; do not widen, flatten or tilt it.\nLighting: crisp neutral overhead metal highlights and the reference's bright orange fire glow inside the chamber. No environment lighting beyond reflections attached to the metal.\nConstraints: outside the furnace assembly must be genuine transparent RGBA alpha, not white, gray, black or a checkerboard. Keep the furnace as one independently movable object. Attached local structural pipes and its own chimney stay with it; external shared process pipes do not.\nAvoid: the production line, exhaust tower as a separate neighboring unit, recovery vessel/pump, heat exchanger, any pipe bridging to another machine, all long orange/teal process routes and glow, arrowheads, labels, badges, all text, background, room, paper, grid, horizon, floor plane, cast shadow detached from the object, frame, border, watermark or cropped machinery.",
+  "input_references": [
+    {
+      "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\delivery-modes\\assets-three\\concepts\\S02.png",
+      "sha256": "337EF5EC2615899852F05287D64C3F9AD0F9E8BDF7A1C5993E1DCF2CDC1E5BE4",
+      "role": "approved full-slide layout/style and target machine reference"
+    },
+    {
+      "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\delivery-modes\\assets-three\\assets\\process-equipment.png",
+      "sha256": "059CECEB695CAF9F97D84D58D718006FD4EB606E445D8D0879801D2A8411AD2A",
+      "role": "previous grouped equipment construction reference"
+    }
+  ],
+  "image_metadata": {
+    "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\apw-full-rebuild-20261014\\shards\\S02\\components\\heating-furnace.png",
+    "mode": "RGBA",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha_bbox_gt0": [
+      0,
+      0,
+      1640,
+      913
+    ],
+    "alpha_bbox_gt8": [
+      139,
+      11,
+      1478,
+      910
+    ],
+    "transparent_pixels": 1572823,
+    "transparent_fraction": 0.999664,
+    "sha256": "13d8b8b83e286fe9cde84ae324c023d3ff1b488c669cc7f40981c7429c5628b2",
+    "bytes": 1409035
+  },
+  "review": "Rejected: alpha bounds and visual inspection show an overextended far-right pipe loop beyond the compact source furnace footprint."
+}

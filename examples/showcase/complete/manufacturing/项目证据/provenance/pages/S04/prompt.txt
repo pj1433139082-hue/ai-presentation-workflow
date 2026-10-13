@@ -1,0 +1,9 @@
+Use case: productivity-visual
+Asset type: one complete 16:9 Chinese concept slide for a local showcase presentation.
+Scene/backdrop: warm ivory drafting-paper field with understated technical linework; no real plant or project background.
+Subject: a proposed path from gathering site information to professional review. Show a clear progression and make the review step visible without implying any work has happened.
+Style/medium: refined editorial engineering explainer, fine dark-blue linework with restrained warm/cool accents, crisp high-contrast Chinese typography.
+Composition/framing: a spacious route or branching sequence with four distinct stages; let the flow shape the page rather than using a repeated card grid.
+Text (verbatim; render each line exactly once, with no other words): “按步骤验证可行性” “现场资料先行，方案须经专业复核。” “梳理可用热源和目标用热点” “核对供给与需求的时间关系” “初选换热路径并检查接口条件” “由专业团队复核安全与运维” “方法建议 · 尚未用于真实工厂”
+Constraints: these are proposed review steps only. Do not claim a site visit, engineering study, safety audit, or implementation has occurred.
+Avoid: invented project stages with dates, quantified engineering values, plant names, costs, savings, performance claims, safety certification, fake measurements, extra text, logos, or watermark.

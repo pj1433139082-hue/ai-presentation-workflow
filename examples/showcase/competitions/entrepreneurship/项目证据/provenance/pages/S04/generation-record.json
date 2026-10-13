@@ -1,0 +1,52 @@
+{
+  "slide_id": "S04",
+  "actor": "agent",
+  "tool": "built-in image_gen.imagegen",
+  "recorded_at_utc": "2026-10-13T10:25:53+00:00",
+  "record_time_note": "Recorded after tool completion; image_gen did not expose an exact call timestamp.",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "678fe932dab34b8a605d1fbaa4c98d2e2f89768386d314bf6ce384effe792eac",
+  "input_snapshot_path": "project/provenance/concept-input-hash-snapshot.json",
+  "input_sha256": {
+    "brief": "be753b05376e2eb6574204dd157646b68c056c433c1aa3e1dd3af76a9c143e84",
+    "deck_spec": "38bcded784aa6f7dc23b5c84b5af7e32696ea55200fc314ac98706aa55dbcd79",
+    "reference_study": "24835f60085580b88719aaa7bdf2db6e05254437a5009ca88983200cb5f556f8",
+    "style_contract": "360077d6253d9436a1d0db874dc75bbb7952cc5784e5fb6861a2c5286d56fa74"
+  },
+  "actual_tool_input_images": [
+    {
+      "role": "selected-local-design-reference",
+      "reference_id": "R297",
+      "path": "project/references/case297.jpg",
+      "sha256": "21c21e0c02822cfd499befd24bb303d15a06b807c58d1408162bc2959fd86ed3"
+    },
+    {
+      "role": "style-anchor-generated-from-frozen-S01",
+      "slide_id": "S01",
+      "path": "design/S01/concept.png",
+      "sha256": "1e0e00c7b41da6e72c72fba314cc4d952e46b3c1de56c990ffe4d0931ec349a5"
+    }
+  ],
+  "reference_ids_bound": [
+    "R297"
+  ],
+  "history_note": "R479 was analyzed as a project design reference but not supplied to this S04 call. S01 was supplied as a generated style anchor.",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-c8ca25a2-a1f8-40d3-b133-902e6d6d5a87.png",
+  "output_sha256": "2d8bbde87f4fee920ad82a7cd016cfc7592d6d71f8dc4a6b08500776b0628907",
+  "design_copy_path": "concept.png",
+  "project_concept_path": "project/concepts/S04.png",
+  "copied_sha256": {
+    "design": "2d8bbde87f4fee920ad82a7cd016cfc7592d6d71f8dc4a6b08500776b0628907",
+    "project": "2d8bbde87f4fee920ad82a7cd016cfc7592d6d71f8dc4a6b08500776b0628907"
+  },
+  "dimensions": {
+    "width": 1672,
+    "height": 941,
+    "format": "PNG"
+  },
+  "visual_check": {
+    "reviewed_at_original_resolution": true,
+    "observed": "Title, 4-week scope, three phases, observation measures, and not-implemented note are legible; the map is generic and has no identifiable school label.",
+    "user_visual_acceptance": "not-recorded"
+  }
+}

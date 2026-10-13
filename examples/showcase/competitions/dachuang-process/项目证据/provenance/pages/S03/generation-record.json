@@ -1,0 +1,59 @@
+{
+  "slide_id": "S03",
+  "record_type": "actual-new-generation",
+  "generation_tool": "Codex built-in image_gen.imagegen",
+  "recorded_at": "2026-10-13T21:19:32+08:00",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355b-ca74-7120-a55c-20db9a9946d1\\exec-d7762c84-8750-4e38-848a-15e26ca0da11.png",
+  "original_output_sha256": "c3fcf820caf56dbe5f57abaa9cc8d236ab37245f7e2ce39bdb8d5ba94225943a",
+  "output_path": "concept.png",
+  "output_sha256": "c3fcf820caf56dbe5f57abaa9cc8d236ab37245f7e2ce39bdb8d5ba94225943a",
+  "canonical_output_path": "concepts/S03.png",
+  "dimensions": {
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB"
+  },
+  "prompt": "Asset type: 完整中文演示页概念图（第3页，共6页），大创过程汇报中的阶段产物与对照装置说明。\nInput images: Image 1 是上一阶段雨序立项封面，Image 2 是 case339。只参考白底、自然材质与清晰编辑层级；不要复制任一参考图的构图。两图不是实物或研究证据。\nScene/backdrop: 横向16:9浅白页面，深墨绿文字、叶绿与雨水蓝，柔和自然光。精致的学术编辑图解，材质克制、结构清楚。\nSubject: 两组对照装置的生成式概念示意：相同形状的透明观察容器、相同植被、相同底部结构和相同间隔标线；只有中间基质用不同但中性的颗粒纹理表示。旁边有一张空白记录模板的局部示意。不得画成真实照片或具体品牌仪器。\nComposition/framing: 使用轴测/爆炸拆解结构：两组装置横向并列，四项保持一致的条件沿细注释线相互对应，中间基质差异单独用叶绿描边标出。样地与方案、记录模板作为外围的轻量文档线索，不放入卡片网格。画面以装置结构为中心，版式与上一页的进度双轨明显不同。\nText (verbatim, only these visible words): “三个阶段产物，支撑下一轮记录”；“方案、对照装置与记录模板已准备；比较项只在基质。”；“样地与方案｜已准备（示例）”；“两组装置｜容器、植被、底部结构与记录间隔一致”；“唯一比较项｜中间基质”；“记录模板｜已准备”；“阶段产物示例”。\nTypography: 中文准确清楚；标题和关键比较项突出，注释不要细小或拥挤。\nConstraints: 画面只是生成式装置示意，不是真实装置、实验照片、项目现场或测试结果；不能添加实际日期、读数、传感器、品牌或审批信息。不得暗示两种基质的优劣；不可新增物种、精确材料名称或其他未经情境提供的实验条件；仅出现指定文字。",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "093d8a4afdab4352784beb28035e2c521cb8ef4067d920f41e55d9c18118ceed",
+  "input_sha256": {
+    "brief.json": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+    "deck-spec.json": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+    "reference-study.json": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+    "style-contract.json": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+  },
+  "actual_tool_inputs": {
+    "referenced_image_paths": [
+      {
+        "reference_id": "R-PROPOSAL-S01",
+        "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\previous-proposal-S01.png",
+        "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+      },
+      {
+        "reference_id": "R339",
+        "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\case339.jpg",
+        "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+      }
+    ],
+    "transparent_background": false
+  },
+  "design_reviewed_references": [
+    {
+      "reference_id": "R-PROPOSAL-S01",
+      "project_path": "references/previous-proposal-S01.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "project_path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "visual_review": {
+    "actor": "Codex subagent",
+    "method": "view_image of copied original output",
+    "finding": "指定文案可读；两组装置在容器、植被、底部结构和记录间隔上清晰对应，中间基质是唯一高亮差异。记录模板为空白示意，图像没有实际数据或结果。",
+    "user_acceptance": "not-recorded"
+  },
+  "history_note": "The image tool received the exact prompt and image paths in actual_tool_inputs. Frozen APW JSON hashes bind this project version but do not claim the image tool read those JSON files. design_reviewed_references records studied lineage; actual tool inputs are listed separately."
+}

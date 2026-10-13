@@ -1,0 +1,23 @@
+{
+  "industry": "manufacturing",
+  "page_count": 5,
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05"
+  ],
+  "delivery_mode": "concept",
+  "user_visual_acceptance": "not-recorded",
+  "pptx": "not-requested",
+  "concept_hashes": {
+    "S01": "1c88e913c65f1fe6bacc8b4d395ee7bf7b2046aff44ad93b6b33589f6c51008b",
+    "S02": "0f14042fc832e93387434376d85e76bf480cc3f69ea515de841c29cd6d49a172",
+    "S03": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+    "S04": "2a1922b757a55957c6bde3de507f6595aafad560b14ee65281c3f89a2fb8d845",
+    "S05": "0af1cc2b7bb4a43d049c9d9b4efdcdf3e0597ec839cffd9dc3d30299c92b6c78"
+  },
+  "archive_sha256": "3a3ad991dfeb52e75850dde9f58bd363b279981ea8e218eaed22ef1c1226260d",
+  "export_verified": true
+}

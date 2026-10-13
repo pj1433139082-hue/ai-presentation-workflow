@@ -1,0 +1,27 @@
+{
+  "id": "S01-example",
+  "role": "text",
+  "text": "概念产品 · 示例",
+  "bbox": [
+    58,
+    869,
+    147,
+    17
+  ],
+  "z": 8,
+  "font_size": 17,
+  "letter_spacing_px": 0,
+  "color": "#516CAD",
+  "representation": "native",
+  "font_family": "Microsoft YaHei UI",
+  "font_size_unit": "px",
+  "font_weight": 400,
+  "alignment": "left",
+  "truth_status": "illustrative",
+  "semantic_role": "source",
+  "type": "text",
+  "font_size_px": 17,
+  "path": "layers/S01/native-text/S01-example.json",
+  "line_height": 1.1,
+  "text_align": "left"
+}

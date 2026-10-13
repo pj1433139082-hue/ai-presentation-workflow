@@ -1,0 +1,13 @@
+{
+  "snapshot_type": "pre-concept-generation-inputs",
+  "created_at": "2026-10-13T18:02:52.379477+08:00",
+  "inputs": {
+    "brief": "be753b05376e2eb6574204dd157646b68c056c433c1aa3e1dd3af76a9c143e84",
+    "deck_spec": "38bcded784aa6f7dc23b5c84b5af7e32696ea55200fc314ac98706aa55dbcd79",
+    "reference_study": "24835f60085580b88719aaa7bdf2db6e05254437a5009ca88983200cb5f556f8",
+    "style_contract": "360077d6253d9436a1d0db874dc75bbb7952cc5784e5fb6861a2c5286d56fa74"
+  },
+  "scope": "six-slide entrepreneurship concept set",
+  "authority": "agent-chosen local showcase direction; not user acceptance",
+  "immutable_after_first_generation": true
+}

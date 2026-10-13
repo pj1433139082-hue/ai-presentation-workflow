@@ -1,0 +1,1674 @@
+[
+  {
+    "slide": 1,
+    "name": "TextBox 2",
+    "text": "制造运营 / 季度复盘",
+    "box_pt": [
+      59.04,
+      43.92,
+      468.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      60.48,
+      45.36,
+      168.63,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 3",
+    "text": "把运营差距\n拆成可验证的动作",
+    "box_pt": [
+      59.04,
+      93.6,
+      446.4,
+      116.64
+    ],
+    "rendered_text_bounds_pt": [
+      60.48,
+      95.04,
+      315.38,
+      95.23
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 4",
+    "text": "示例工厂 A · Q3 示例周期\n数据、原因与动作均为虚构样例",
+    "box_pt": [
+      60.48,
+      234.0,
+      424.8,
+      63.36
+    ],
+    "rendered_text_bounds_pt": [
+      61.92,
+      235.44,
+      314.5,
+      55.13
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 6",
+    "text": "本地展示草稿 · 非真实财报",
+    "box_pt": [
+      75.6,
+      349.92,
+      306.0,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      77.04,
+      351.36,
+      222.0,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 7",
+    "text": "复盘顺序：核口径 → 看差距 → 验改善",
+    "box_pt": [
+      60.48,
+      411.84,
+      417.6,
+      43.2
+    ],
+    "rendered_text_bounds_pt": [
+      60.48,
+      411.84,
+      350.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 9",
+    "text": "01 / 05",
+    "box_pt": [
+      825.84,
+      504.0,
+      88.56,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      856.28,
+      505.44,
+      61.38,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.26
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 1",
+    "text": "01 · 经营概览 / 虚构示例数据",
+    "box_pt": [
+      44.64,
+      24.48,
+      633.6,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      25.92,
+      245.5,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 2",
+    "text": "五项指标先给出同一张“计划—实际”底表",
+    "box_pt": [
+      44.64,
+      56.16,
+      860.4,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      57.6,
+      620.13,
+      38.72
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 4",
+    "text": "示例数据 · 虚构",
+    "box_pt": [
+      764.64,
+      28.08,
+      146.88,
+      22.32
+    ],
+    "rendered_text_bounds_pt": [
+      774.77,
+      28.35,
+      132.0,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 5",
+    "text": "02 / 05",
+    "box_pt": [
+      825.84,
+      504.0,
+      88.56,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      856.28,
+      505.44,
+      61.38,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.26
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 7",
+    "text": "示意周期计划量 13,000 件｜实际量 12,400 件｜计划达成率 95.4%",
+    "box_pt": [
+      67.68,
+      137.52,
+      817.2,
+      22.32
+    ],
+    "rendered_text_bounds_pt": [
+      69.12,
+      138.96,
+      612.75,
+      24.2
+    ],
+    "vertical_overflow_pt": 3.32,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 10",
+    "text": "准时交付率",
+    "box_pt": [
+      66.96,
+      201.6,
+      237.6,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      68.4,
+      203.04,
+      95.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0.19,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 11",
+    "text": "94%",
+    "box_pt": [
+      66.96,
+      226.8,
+      237.6,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      68.4,
+      228.24,
+      66.38,
+      32.67
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 12",
+    "text": "计划 96%\n差距 −2 个百分点",
+    "box_pt": [
+      66.96,
+      264.24,
+      237.6,
+      46.08
+    ],
+    "rendered_text_bounds_pt": [
+      66.96,
+      264.24,
+      148.0,
+      45.12
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 15",
+    "text": "一次合格率",
+    "box_pt": [
+      360.72,
+      201.6,
+      237.6,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      362.16,
+      203.04,
+      95.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0.19,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 16",
+    "text": "96.8%",
+    "box_pt": [
+      360.72,
+      226.8,
+      237.6,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      362.16,
+      228.24,
+      90.75,
+      32.67
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 17",
+    "text": "计划 97.5%\n差距 −0.7 个百分点",
+    "box_pt": [
+      360.72,
+      264.24,
+      237.6,
+      46.08
+    ],
+    "rendered_text_bounds_pt": [
+      360.72,
+      264.24,
+      162.88,
+      45.12
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 20",
+    "text": "非计划停机率",
+    "box_pt": [
+      654.48,
+      201.6,
+      237.6,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      655.92,
+      203.04,
+      113.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0.19,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 21",
+    "text": "3.2%",
+    "box_pt": [
+      654.48,
+      226.8,
+      237.6,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      655.92,
+      228.24,
+      74.13,
+      32.67
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 22",
+    "text": "计划 2.5%\n差距 +0.7 个百分点",
+    "box_pt": [
+      654.48,
+      264.24,
+      237.6,
+      46.08
+    ],
+    "rendered_text_bounds_pt": [
+      654.48,
+      264.24,
+      162.88,
+      45.12
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 25",
+    "text": "单位能耗",
+    "box_pt": [
+      213.84,
+      334.08,
+      237.6,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      215.28,
+      335.52,
+      77.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0.19,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 26",
+    "text": "8.1 kWh/件",
+    "box_pt": [
+      213.84,
+      359.28,
+      237.6,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      215.28,
+      360.72,
+      159.25,
+      32.67
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 27",
+    "text": "计划 7.8\n+3.8%",
+    "box_pt": [
+      213.84,
+      396.72,
+      237.6,
+      46.08
+    ],
+    "rendered_text_bounds_pt": [
+      213.84,
+      396.72,
+      72.13,
+      45.12
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 30",
+    "text": "产量",
+    "box_pt": [
+      507.6,
+      334.08,
+      237.6,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      509.04,
+      335.52,
+      41.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0.19,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 31",
+    "text": "12,400 件",
+    "box_pt": [
+      507.6,
+      359.28,
+      237.6,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      509.04,
+      360.72,
+      133.88,
+      32.67
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 32",
+    "text": "计划 13,000\n−4.6%",
+    "box_pt": [
+      507.6,
+      396.72,
+      237.6,
+      46.08
+    ],
+    "rendered_text_bounds_pt": [
+      507.6,
+      396.72,
+      103.63,
+      45.12
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 33",
+    "text": "指标口径、分母与采集系统均为演示占位；先与真实台账对齐再复盘。",
+    "box_pt": [
+      56.16,
+      462.96,
+      835.2,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      57.6,
+      464.4,
+      626.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 34",
+    "text": "示例工厂 A｜虚构经营数据，不是真实经营记录或财务披露",
+    "box_pt": [
+      44.64,
+      504.0,
+      766.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      505.44,
+      420.75,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 1",
+    "text": "02 · 偏差拆解 / 虚构样例归因",
+    "box_pt": [
+      44.64,
+      24.48,
+      633.6,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      25.92,
+      245.5,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 2",
+    "text": "把“损失构成”标成待核查假设",
+    "box_pt": [
+      44.64,
+      56.16,
+      860.4,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      57.6,
+      457.5,
+      38.72
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 4",
+    "text": "示例数据 · 虚构",
+    "box_pt": [
+      764.64,
+      28.08,
+      146.88,
+      22.32
+    ],
+    "rendered_text_bounds_pt": [
+      774.77,
+      28.35,
+      132.0,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 5",
+    "text": "03 / 05",
+    "box_pt": [
+      825.84,
+      504.0,
+      88.56,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      856.28,
+      505.44,
+      61.38,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.26
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 7",
+    "text": "下图是虚构的排查优先级假设，不是经验证的根因或真实损失数据。",
+    "box_pt": [
+      67.68,
+      141.84,
+      813.6,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      69.12,
+      143.28,
+      606.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 2.6,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 8",
+    "text": "假设性损失占比（虚构）",
+    "box_pt": [
+      59.04,
+      195.84,
+      388.8,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      60.48,
+      197.28,
+      226.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0.44,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 9",
+    "text": "条长按 0–50% 统一比例；数字为虚构占比",
+    "box_pt": [
+      205.2,
+      425.52,
+      417.6,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      206.64,
+      426.96,
+      305.25,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 10",
+    "text": "换型等待",
+    "box_pt": [
+      60.48,
+      239.76,
+      133.2,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      61.92,
+      241.2,
+      86.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 1.16,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 13",
+    "text": "42%",
+    "box_pt": [
+      548.64,
+      238.32,
+      60.48,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      550.08,
+      239.76,
+      49.38,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 14",
+    "text": "设备故障",
+    "box_pt": [
+      60.48,
+      298.8,
+      133.2,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      61.92,
+      300.24,
+      86.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 1.16,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 17",
+    "text": "35%",
+    "box_pt": [
+      548.64,
+      297.36,
+      60.48,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      550.08,
+      298.8,
+      49.38,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 18",
+    "text": "物料供应",
+    "box_pt": [
+      60.48,
+      357.84,
+      133.2,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      61.92,
+      359.28,
+      86.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 1.16,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 21",
+    "text": "23%",
+    "box_pt": [
+      548.64,
+      356.4,
+      60.48,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      550.08,
+      357.84,
+      49.38,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 23",
+    "text": "先验证三件事",
+    "box_pt": [
+      649.44,
+      221.76,
+      230.4,
+      28.08
+    ],
+    "rendered_text_bounds_pt": [
+      650.88,
+      223.2,
+      138.5,
+      26.62
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 25",
+    "text": "01",
+    "box_pt": [
+      650.88,
+      270.0,
+      27.36,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      653.43,
+      272.79,
+      27.63,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 2.82
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 26",
+    "text": "统一停机与换型定义",
+    "box_pt": [
+      689.04,
+      269.28,
+      198.0,
+      37.44
+    ],
+    "rendered_text_bounds_pt": [
+      689.04,
+      269.28,
+      167.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 28",
+    "text": "02",
+    "box_pt": [
+      650.88,
+      316.8,
+      27.36,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      653.43,
+      319.59,
+      27.63,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 2.82
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 29",
+    "text": "核对时间戳与工单",
+    "box_pt": [
+      689.04,
+      316.08,
+      198.0,
+      37.44
+    ],
+    "rendered_text_bounds_pt": [
+      689.04,
+      316.08,
+      149.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 31",
+    "text": "03",
+    "box_pt": [
+      650.88,
+      363.6,
+      27.36,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      653.43,
+      366.39,
+      27.63,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 2.82
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 32",
+    "text": "核对排产、维修与缺料",
+    "box_pt": [
+      689.04,
+      362.88,
+      198.0,
+      37.44
+    ],
+    "rendered_text_bounds_pt": [
+      689.04,
+      362.88,
+      185.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 33",
+    "text": "若数据不能复现，撤销假设，不将占比写成结论。",
+    "box_pt": [
+      60.48,
+      446.4,
+      835.2,
+      28.08
+    ],
+    "rendered_text_bounds_pt": [
+      61.92,
+      447.84,
+      446.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 34",
+    "text": "示例工厂 A｜虚构经营数据，不是真实经营记录或财务披露",
+    "box_pt": [
+      44.64,
+      504.0,
+      766.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      505.44,
+      420.75,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 1",
+    "text": "03 · 行动设计 / 待决策草案",
+    "box_pt": [
+      44.64,
+      24.48,
+      633.6,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      25.92,
+      227.5,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 2",
+    "text": "按 30 / 60 / 90 天设验证门，不先许诺收益",
+    "box_pt": [
+      44.64,
+      56.16,
+      860.4,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      57.6,
+      631.25,
+      38.72
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 4",
+    "text": "示例数据 · 虚构",
+    "box_pt": [
+      764.64,
+      28.08,
+      146.88,
+      22.32
+    ],
+    "rendered_text_bounds_pt": [
+      774.77,
+      28.35,
+      132.0,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 5",
+    "text": "04 / 05",
+    "box_pt": [
+      825.84,
+      504.0,
+      88.56,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      856.28,
+      505.44,
+      61.38,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.26
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 6",
+    "text": "以下是可讨论的推进节奏；不是已批准计划、既定责任或效果承诺。",
+    "box_pt": [
+      51.84,
+      128.16,
+      709.2,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      53.28,
+      129.6,
+      605.88,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 10",
+    "text": "0–30 天",
+    "box_pt": [
+      66.96,
+      203.76,
+      231.84,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      68.4,
+      205.2,
+      79.88,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 11",
+    "text": "校准数据",
+    "box_pt": [
+      66.96,
+      240.48,
+      231.84,
+      31.68
+    ],
+    "rendered_text_bounds_pt": [
+      68.4,
+      241.92,
+      103.13,
+      29.04
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 12",
+    "text": "对齐停机、交付与能耗口径；抽样核对班次台账。",
+    "box_pt": [
+      66.96,
+      288.0,
+      233.28,
+      52.56
+    ],
+    "rendered_text_bounds_pt": [
+      68.4,
+      289.44,
+      216.0,
+      45.12
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 14",
+    "text": "通过门：口径可复算",
+    "box_pt": [
+      66.96,
+      369.36,
+      231.84,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      68.4,
+      370.8,
+      167.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 17",
+    "text": "31–60 天",
+    "box_pt": [
+      360.72,
+      203.76,
+      231.84,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      362.16,
+      205.2,
+      92.25,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 18",
+    "text": "小范围试点",
+    "box_pt": [
+      360.72,
+      240.48,
+      231.84,
+      31.68
+    ],
+    "rendered_text_bounds_pt": [
+      362.16,
+      241.92,
+      127.13,
+      29.04
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 19",
+    "text": "选一条线测试换型记录与点检闭环；保留对照周。",
+    "box_pt": [
+      360.72,
+      288.0,
+      233.28,
+      52.56
+    ],
+    "rendered_text_bounds_pt": [
+      362.16,
+      289.44,
+      216.0,
+      45.12
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 21",
+    "text": "通过门：数据可追溯",
+    "box_pt": [
+      360.72,
+      369.36,
+      231.84,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      362.16,
+      370.8,
+      167.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 24",
+    "text": "61–90 天",
+    "box_pt": [
+      654.48,
+      203.76,
+      231.84,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      655.92,
+      205.2,
+      92.25,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 25",
+    "text": "复核再决定",
+    "box_pt": [
+      654.48,
+      240.48,
+      231.84,
+      31.68
+    ],
+    "rendered_text_bounds_pt": [
+      655.92,
+      241.92,
+      127.13,
+      29.04
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 26",
+    "text": "比较试点前后波动；检查副作用和样本覆盖。",
+    "box_pt": [
+      654.48,
+      288.0,
+      233.28,
+      52.56
+    ],
+    "rendered_text_bounds_pt": [
+      655.92,
+      289.44,
+      216.0,
+      45.12
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 28",
+    "text": "通过门：复核后再扩围",
+    "box_pt": [
+      654.48,
+      369.36,
+      231.84,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      655.92,
+      370.8,
+      185.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 30",
+    "text": "管理约束：数据可追溯、结果可复核后，再讨论扩大范围。",
+    "box_pt": [
+      67.68,
+      439.92,
+      817.2,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      67.68,
+      439.92,
+      526.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 31",
+    "text": "示例工厂 A｜虚构经营数据，不是真实经营记录或财务披露",
+    "box_pt": [
+      44.64,
+      504.0,
+      766.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      505.44,
+      420.75,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 1",
+    "text": "04 · 复盘闭环 / 决策清单模板",
+    "box_pt": [
+      44.64,
+      24.48,
+      633.6,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      25.92,
+      245.5,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 2",
+    "text": "下次复盘先问：数据能否支持这项决定？",
+    "box_pt": [
+      44.64,
+      56.16,
+      860.4,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      57.6,
+      585.5,
+      38.72
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 4",
+    "text": "示例数据 · 虚构",
+    "box_pt": [
+      764.64,
+      28.08,
+      146.88,
+      22.32
+    ],
+    "rendered_text_bounds_pt": [
+      774.77,
+      28.35,
+      132.0,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 5",
+    "text": "05 / 05",
+    "box_pt": [
+      825.84,
+      504.0,
+      88.56,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      856.28,
+      505.44,
+      61.38,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.26
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 7",
+    "text": "建议会议带走三项证据",
+    "box_pt": [
+      72.0,
+      155.52,
+      446.4,
+      31.68
+    ],
+    "rendered_text_bounds_pt": [
+      73.44,
+      156.96,
+      247.13,
+      29.04
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 9",
+    "text": "A",
+    "box_pt": [
+      73.44,
+      213.84,
+      34.56,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      83.97,
+      220.23,
+      18.88,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 10",
+    "text": "指标口径表",
+    "box_pt": [
+      123.84,
+      212.4,
+      169.2,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      125.28,
+      213.84,
+      106.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 11",
+    "text": "目标、分母、时间窗、数据责任系统",
+    "box_pt": [
+      295.2,
+      212.4,
+      224.64,
+      46.8
+    ],
+    "rendered_text_bounds_pt": [
+      296.64,
+      213.84,
+      216.0,
+      45.12
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 14",
+    "text": "B",
+    "box_pt": [
+      73.44,
+      287.28,
+      34.56,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      84.6,
+      293.67,
+      17.62,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 15",
+    "text": "异常记录样本",
+    "box_pt": [
+      123.84,
+      285.84,
+      169.2,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      125.28,
+      287.28,
+      126.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 16",
+    "text": "工单 / 班次时间戳可追溯到原始记录",
+    "box_pt": [
+      295.2,
+      285.84,
+      224.64,
+      46.8
+    ],
+    "rendered_text_bounds_pt": [
+      296.64,
+      287.28,
+      216.5,
+      45.12
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 19",
+    "text": "C",
+    "box_pt": [
+      73.44,
+      360.72,
+      34.56,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      84.66,
+      367.11,
+      17.5,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 20",
+    "text": "试点复核页",
+    "box_pt": [
+      123.84,
+      359.28,
+      169.2,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      125.28,
+      360.72,
+      106.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 21",
+    "text": "比较条件、样本覆盖、质量与安全护栏",
+    "box_pt": [
+      295.2,
+      359.28,
+      224.64,
+      46.8
+    ],
+    "rendered_text_bounds_pt": [
+      296.64,
+      360.72,
+      216.0,
+      45.12
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 22",
+    "text": "讨论后决策",
+    "box_pt": [
+      597.6,
+      146.16,
+      280.8,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      599.04,
+      147.6,
+      116.5,
+      26.62
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 24",
+    "text": "选一个试点范围",
+    "box_pt": [
+      616.32,
+      214.56,
+      270.0,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      617.76,
+      216.0,
+      160.5,
+      26.62
+    ],
+    "vertical_overflow_pt": 2.86,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 26",
+    "text": "确认指标口径与责任人",
+    "box_pt": [
+      616.32,
+      316.8,
+      270.0,
+      37.44
+    ],
+    "rendered_text_bounds_pt": [
+      617.76,
+      318.24,
+      206.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 27",
+    "text": "未核验前：保持“待验证”",
+    "box_pt": [
+      599.04,
+      414.0,
+      302.4,
+      28.8
+    ],
+    "rendered_text_bounds_pt": [
+      600.48,
+      415.44,
+      246.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 28",
+    "text": "示例工厂 A｜虚构经营数据，不是真实经营记录或财务披露",
+    "box_pt": [
+      44.64,
+      504.0,
+      766.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      505.44,
+      420.75,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "project_id": "competition-tech-innovation-bridgeji",
+  "audience": "观看虚构科技发明作品概念答辩样例的评审与工程技术观众",
+  "goal": "以六页连续故事说明桥迹的假设需求、近距采样原理、原型组合构想、验证设计和适用边界。",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "concept-images",
+    "aspect_ratio": "16:9",
+    "scope": "local-showcase-only",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ]
+  },
+  "source_map": [
+    {
+      "id": "EXAMPLE-BRIDGE-INSPECTION",
+      "kind": "locally-authored-fictional-showcase-content",
+      "locator": "sources/source-notes.md：虚构桥梁裂缝巡检装置设定、示例文案与明确的事实边界；非真实实验或工程证据。",
+      "path": "sources/source-notes.md",
+      "sha256": "b22381685b854bf3d9db9afc267ff3dbc05a1173ed6f61fbf4d79db9fec93754",
+      "truth_status": "illustrative"
+    }
+  ]
+}

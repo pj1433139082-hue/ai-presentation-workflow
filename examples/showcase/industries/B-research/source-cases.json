@@ -1,0 +1,17 @@
+{
+  "id": 341,
+  "title": "AP Calculus 学习表信息图",
+  "image": "/images/case341.jpg",
+  "sourceLabel": "@hqmank",
+  "sourceUrl": "https://x.com/hqmank/status/2048587150544028084",
+  "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-341",
+  "category": "Charts & Infographics",
+  "styles": [
+    "UI",
+    "Infographic",
+    "Poster"
+  ],
+  "prompt": "Please create a mathematical visualization infographic about \"[math concept / topic].\" The goal is to help the viewer intuitively understand what it is, why it works, its geometric or structural intuition, and how it behaves in different contexts. The visual should feel like a high-quality math lecture handout combined with a hand-drawn educational poster. It should be elegant, clear, and information-rich, but not cluttered. Visual style: either portrait or landscape is fine. Use a clean, light paper-like background, with a deep blue title and black or dark gray lines for the main content. Add a small number of refined accent colors such as blue, teal, gold, and red. Incorporate rounded-corner cards, thin borders, numbered labels, hand-drawn arrows, zoom-in callout boxes, and a summary section. The overall design should be aesthetically pleasing, balanced, and academic, allowing the viewer to grasp the structure of the concept and why it works at a glance.",
+  "localImage": "references/case341.jpg",
+  "imageSha256": "a8e0c2d57a2c4cdd0dbbab23a7914016c219bd706ebdb430b837b506afba2c3d"
+}

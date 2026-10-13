@@ -1,0 +1,7 @@
+Use case: background-extraction
+Asset type: one independent transparent contact-shadow patch beneath a product illustration
+Input images: Image 1 is the original S01 concept and shows the exact device base footprint and contact shadow.
+Primary request: Isolate only the soft narrow grounding shadow where the bottom of the aluminum device dock meets the studio floor.
+Subject: A very subtle horizontal dark-blue/navy contact shadow matching the source's device base width, with soft feathered edges and a tiny restrained blue-to-coral reflected edge near the outer ends. Keep it low contrast and physically close to the product footprint.
+Composition/framing: Wide, very shallow shadow strip, centered with transparent padding. Do not crop the shadow.
+Constraints: Genuine transparent pixels outside the shadow. No floor surface, floor texture, horizon, broad colored light bloom, device or dock pixels, reflected device, text, line, arrow, props, border, frame, or watermark. This shadow will be placed separately behind the device and above a separate background plate.

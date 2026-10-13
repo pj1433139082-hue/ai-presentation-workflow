@@ -1,0 +1,535 @@
+{
+  "status": "complete",
+  "binding_role": "six actual per-page image_gen outputs bound to current APW concept inputs",
+  "recorded_at": "2026-10-13T18:23:58+08:00",
+  "pre_generation_snapshot": "provenance/concept-input-hash-snapshot.json",
+  "current_binding_snapshot": "provenance/concept-current-binding-hash-snapshot.json",
+  "input_revision": "provenance/concept-input-binding-revision-01.json",
+  "history_note": "Six independent built-in image_gen calls produced contentful 16:9 concepts. A required path-only deck binding was added after generation; original hashes and the exact metadata change are preserved. No user visual acceptance or human gate is claimed.",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "status": "generated",
+      "output_path": "concepts/S01.png",
+      "output_sha256": "436b4b5e9eda1aae89c3b5deefc792b3d4097ae45ab87c17bdd844af9cd314e2",
+      "input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "6dab13b9d1fc8c3ce3b5caec7035c2f857f040a5c31795977c08e614eb285ed7",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "generation_input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "科技创新作品答辩示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "桥迹：把疑点变成可复核的近距线索。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "descriptor",
+          "role": "secondary",
+          "text": "桥梁表面裂缝低功耗巡检节点 · 概念设计",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "虚构项目 · 非赛事官方材料",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-BRIDGE-INSPECTION",
+          "truth_status": "illustrative",
+          "path": "sources/source-notes.md",
+          "sha256": "b22381685b854bf3d9db9afc267ff3dbc05a1173ed6f61fbf4d79db9fec93754"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R361",
+          "path": "references/case361.jpg",
+          "sha256": "039834badf59050ce4ea43df3feabe3772c8dcf1b8bf84b9f37c04b390527f3a"
+        }
+      ],
+      "prompt_path": "provenance/pages/S01/prompt.txt",
+      "prompt_sha256": "4de52f40a7a3d6b271219d8a03b9af05e691ac79ea52967812f82c08e5aaa157",
+      "generation_record_path": "provenance/pages/S01/generation-record.json",
+      "generation_record_sha256": "66dd0797739f429e15826bde893e15ca90d6c4e9430a1a92e9111c70d923bb5e",
+      "history_note": "Generation record preserves the pre-generation four-input hashes. Current input_sha256 binds the APW-required output paths; see provenance/concept-input-binding-revision-01.json for the path-only change."
+    },
+    {
+      "slide_id": "S02",
+      "status": "generated",
+      "output_path": "concepts/S02.png",
+      "output_sha256": "bf43efeab767b95c033781ceeaa84ea6aafc4b0f63c5d192ed0a78128a438fe7",
+      "input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "6dab13b9d1fc8c3ce3b5caec7035c2f857f040a5c31795977c08e614eb285ed7",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "generation_input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "同一处疑点，怎样再看一次？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "巡检线索要能定位、成像、复核。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "scene",
+          "role": "body",
+          "text": "设定场景：细裂纹可能与表面纹理相混",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "alignment",
+          "role": "body",
+          "text": "换位后，复拍位置不易对齐",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "energy",
+          "role": "body",
+          "text": "持续采集与端侧能耗需要权衡",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "问题设定 · 非现场调研",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-BRIDGE-INSPECTION",
+          "truth_status": "illustrative",
+          "path": "sources/source-notes.md",
+          "sha256": "b22381685b854bf3d9db9afc267ff3dbc05a1173ed6f61fbf4d79db9fec93754"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R475",
+          "path": "references/case475.jpg",
+          "sha256": "61ffe2cbcc2bac37eeb2b73cf40b8a057148bdbc080ab16e2354043fac4ed653"
+        }
+      ],
+      "prompt_path": "provenance/pages/S02/prompt.txt",
+      "prompt_sha256": "1e87a82d7c513315a20578b2ba54557ddb07c47a8c75096f5c503958b4b538de",
+      "generation_record_path": "provenance/pages/S02/generation-record.json",
+      "generation_record_sha256": "978374ac130d3d0abd82b15ee5232b0465cefe3aa99416b2b13e22a335774c5e",
+      "history_note": "Generation record preserves the pre-generation four-input hashes. Current input_sha256 binds the APW-required output paths; see provenance/concept-input-binding-revision-01.json for the path-only change."
+    },
+    {
+      "slide_id": "S03",
+      "status": "generated",
+      "output_path": "concepts/S03.png",
+      "output_sha256": "31f0e6bfa10ec4d50573f94a8d0d115b8150add1c5f1eecb8d7b9bfafb3359a0",
+      "input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "6dab13b9d1fc8c3ce3b5caec7035c2f857f040a5c31795977c08e614eb285ed7",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "generation_input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把一次近距采样拆成三步",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "导向定位 → 斜光补亮 → 局部成像",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "index",
+          "role": "body",
+          "text": "疑点留档：图像附采样位置线索",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "原理示意 · 尚未验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-BRIDGE-INSPECTION",
+          "truth_status": "illustrative",
+          "path": "sources/source-notes.md",
+          "sha256": "b22381685b854bf3d9db9afc267ff3dbc05a1173ed6f61fbf4d79db9fec93754"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R361",
+          "path": "references/case361.jpg",
+          "sha256": "039834badf59050ce4ea43df3feabe3772c8dcf1b8bf84b9f37c04b390527f3a"
+        },
+        {
+          "reference_id": "R475",
+          "path": "references/case475.jpg",
+          "sha256": "61ffe2cbcc2bac37eeb2b73cf40b8a057148bdbc080ab16e2354043fac4ed653"
+        }
+      ],
+      "prompt_path": "provenance/pages/S03/prompt.txt",
+      "prompt_sha256": "d32ff5ae5dee102ecb3adcb1e75d3de0ef3993d90e3f6a03a8c8c83664f4b029",
+      "generation_record_path": "provenance/pages/S03/generation-record.json",
+      "generation_record_sha256": "3282622274635709e5ec98b50518a6dee37aa22a341af4cf12629af455b708f1",
+      "history_note": "Generation record preserves the pre-generation four-input hashes. Current input_sha256 binds the APW-required output paths; see provenance/concept-input-binding-revision-01.json for the path-only change."
+    },
+    {
+      "slide_id": "S04",
+      "status": "generated",
+      "output_path": "concepts/S04.png",
+      "output_sha256": "ec75c0e4edab0002bfb0beca3113153ce952d97873775196a605fec2436a7631",
+      "input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "6dab13b9d1fc8c3ce3b5caec7035c2f857f040a5c31795977c08e614eb285ed7",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "generation_input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "组合构想：定距、斜照、留线索",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "把三件事嵌入一次近距巡检动作。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "guide",
+          "role": "body",
+          "text": "导向件｜约束近距姿态",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "light",
+          "role": "body",
+          "text": "斜向光｜强调表面起伏",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "index",
+          "role": "body",
+          "text": "疑点索引｜留存复看位置",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "原型构想 · 原创性与效果尚待核验",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-BRIDGE-INSPECTION",
+          "truth_status": "illustrative",
+          "path": "sources/source-notes.md",
+          "sha256": "b22381685b854bf3d9db9afc267ff3dbc05a1173ed6f61fbf4d79db9fec93754"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R361",
+          "path": "references/case361.jpg",
+          "sha256": "039834badf59050ce4ea43df3feabe3772c8dcf1b8bf84b9f37c04b390527f3a"
+        }
+      ],
+      "prompt_path": "provenance/pages/S04/prompt.txt",
+      "prompt_sha256": "cc216f514a8d3117aff78248d33d4f4f616284d403e9efcf8c6762dd533e26e4",
+      "generation_record_path": "provenance/pages/S04/generation-record.json",
+      "generation_record_sha256": "3d896816b2e532b419bf04cdb1dfadf0a4e20b251760c2fab852809949dc329c",
+      "history_note": "Generation record preserves the pre-generation four-input hashes. Current input_sha256 binds the APW-required output paths; see provenance/concept-input-binding-revision-01.json for the path-only change."
+    },
+    {
+      "slide_id": "S05",
+      "status": "generated",
+      "output_path": "concepts/S05.png",
+      "output_sha256": "2332ea9f88d1f7021f129347f729785e5da27babb0c9078543406a38d8cc4f6e",
+      "input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "6dab13b9d1fc8c3ce3b5caec7035c2f857f040a5c31795977c08e614eb285ed7",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "generation_input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "验证先看漏标，也看干扰",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "计划：用已知标记试件，逐处对照人工标注。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "specimen",
+          "role": "body",
+          "text": "试件设定：标记线 3 · 划痕 2 · 污迹 1",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "result",
+          "role": "body",
+          "text": "虚构记录：候选 4 · 漏标 1 条线 · 干扰候选 2",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示数据 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-BRIDGE-INSPECTION",
+          "truth_status": "illustrative",
+          "path": "sources/source-notes.md",
+          "sha256": "b22381685b854bf3d9db9afc267ff3dbc05a1173ed6f61fbf4d79db9fec93754"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R475",
+          "path": "references/case475.jpg",
+          "sha256": "61ffe2cbcc2bac37eeb2b73cf40b8a057148bdbc080ab16e2354043fac4ed653"
+        }
+      ],
+      "prompt_path": "provenance/pages/S05/prompt.txt",
+      "prompt_sha256": "488563b1d3689236fb4fc3f77a5430e7658e15f92cf01ded60d3c533b068067f",
+      "generation_record_path": "provenance/pages/S05/generation-record.json",
+      "generation_record_sha256": "7bb766dfdfd5b46e8ccd87bafbbab5cb8b5228b45a663300fa856e9852f64644",
+      "history_note": "Generation record preserves the pre-generation four-input hashes. Current input_sha256 binds the APW-required output paths; see provenance/concept-input-binding-revision-01.json for the path-only change."
+    },
+    {
+      "slide_id": "S06",
+      "status": "generated",
+      "output_path": "concepts/S06.png",
+      "output_sha256": "24c0642ec16058ffc25ab9933b93794fc39d3ce895673523d0d8670e41c40977",
+      "input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "6dab13b9d1fc8c3ce3b5caec7035c2f857f040a5c31795977c08e614eb285ed7",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "generation_input_sha256": {
+        "brief": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+        "deck_spec": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+        "reference_study": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+        "style_contract": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "筛查只给线索，不替代工程判断",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "从标注试件走向受控现场验证，证据仍未形成。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "body",
+          "text": "边界｜只讨论可见表面，不推断内部缺陷",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "next-lab",
+          "role": "body",
+          "text": "下一步｜复测漏标、误报与能耗",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "next-field",
+          "role": "body",
+          "text": "再下一步｜在受控条件下开展现场试验",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "status",
+          "role": "source",
+          "text": "概念计划 · 尚未执行",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-BRIDGE-INSPECTION",
+          "truth_status": "illustrative",
+          "path": "sources/source-notes.md",
+          "sha256": "b22381685b854bf3d9db9afc267ff3dbc05a1173ed6f61fbf4d79db9fec93754"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R475",
+          "path": "references/case475.jpg",
+          "sha256": "61ffe2cbcc2bac37eeb2b73cf40b8a057148bdbc080ab16e2354043fac4ed653"
+        }
+      ],
+      "prompt_path": "provenance/pages/S06/prompt.txt",
+      "prompt_sha256": "a04978ee904dfb1b98aefb1f40ffcef564b9a306197d5997131e58436b6d3653",
+      "generation_record_path": "provenance/pages/S06/generation-record.json",
+      "generation_record_sha256": "c8f307b763d889113ce4557653abe2cedf0576b1e8fa3e6b6b4099c5fc2a02f7",
+      "history_note": "Generation record preserves the pre-generation four-input hashes. Current input_sha256 binds the APW-required output paths; see provenance/concept-input-binding-revision-01.json for the path-only change."
+    }
+  ]
+}

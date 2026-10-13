@@ -1,0 +1,1674 @@
+{
+  "file": "deck-草稿.pptx",
+  "sha256": "5f4d09bda2dcf8a834bd2ed38f778418d86ac0ac872c916604f417d694a3463a",
+  "bytes": 2203084,
+  "slide_count": 5,
+  "aspect_ratio": 1.777778,
+  "slides": [
+    {
+      "index": 1,
+      "objects": [
+        {
+          "name": "Rectangle 1",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            0.0,
+            0.0,
+            13.333,
+            7.5
+          ]
+        },
+        {
+          "name": "Rectangle 2",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            0.82,
+            0.78,
+            0.09,
+            0.4
+          ]
+        },
+        {
+          "name": "TextBox 3",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            1.06,
+            0.77,
+            4.3,
+            0.42
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "TextBox 4",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.88,
+            1.72,
+            5.6,
+            1.02
+          ],
+          "font_sizes_pt": [
+            46.0
+          ]
+        },
+        {
+          "name": "TextBox 5",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.92,
+            2.82,
+            5.55,
+            0.7
+          ],
+          "font_sizes_pt": [
+            32.0
+          ]
+        },
+        {
+          "name": "TextBox 6",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.94,
+            3.77,
+            5.15,
+            1.05
+          ],
+          "font_sizes_pt": [
+            22.0
+          ]
+        },
+        {
+          "name": "Connector 7",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            0.96,
+            5.27,
+            4.76,
+            0.0
+          ]
+        },
+        {
+          "name": "TextBox 8",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.96,
+            5.42,
+            5.3,
+            0.38
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "TextBox 9",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.96,
+            5.82,
+            5.3,
+            0.38
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Oval 10",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            7.18,
+            1.25,
+            4.82,
+            4.82
+          ]
+        },
+        {
+          "name": "Picture 11",
+          "type": "PICTURE (13)",
+          "bbox_inches": [
+            6.785,
+            1.76,
+            5.67,
+            3.78
+          ],
+          "image_size": [
+            1536,
+            1024
+          ],
+          "has_alpha": true,
+          "alpha_extrema": [
+            0,
+            254
+          ],
+          "transparent_pixels": 1018370
+        },
+        {
+          "name": "TextBox 12",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            8.16,
+            5.77,
+            3.35,
+            0.42
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Connector 13",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            0.78,
+            6.92,
+            11.67,
+            0.0
+          ]
+        },
+        {
+          "name": "TextBox 14",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            6.98,
+            10.88,
+            0.34
+          ],
+          "font_sizes_pt": [
+            16.0
+          ]
+        },
+        {
+          "name": "TextBox 15",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            11.9,
+            6.98,
+            0.74,
+            0.34
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        }
+      ],
+      "native_text": [
+        "消费品牌提案 · 示例",
+        "山间茶事",
+        "把山场装进一盒茶",
+        "从新品包装到日常触点，探索一种轻装、好分享的茶礼表达。",
+        "概念 SKU：雾岭春芽",
+        "提案示例 / 尚未上市",
+        "单幅茶枝与山雾插画组件",
+        "虚构品牌示例｜方案演示，不对应真实产品、销量或供应链",
+        "01"
+      ],
+      "notes_present": true
+    },
+    {
+      "index": 2,
+      "objects": [
+        {
+          "name": "Rectangle 1",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            0.0,
+            0.0,
+            13.333,
+            7.5
+          ]
+        },
+        {
+          "name": "TextBox 2",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            0.3,
+            5.5,
+            0.35
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "TextBox 3",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            0.69,
+            11.85,
+            0.72
+          ],
+          "font_sizes_pt": [
+            36.0
+          ]
+        },
+        {
+          "name": "Connector 4",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            1.28,
+            2.0,
+            0.0,
+            3.62
+          ]
+        },
+        {
+          "name": "Oval 5",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            0.88,
+            2.15,
+            0.82,
+            0.82
+          ]
+        },
+        {
+          "name": "TextBox 6",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.9,
+            2.15,
+            0.78,
+            0.82
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "TextBox 7",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            2.06,
+            2.05,
+            2.78,
+            0.94
+          ],
+          "font_sizes_pt": [
+            26.0
+          ]
+        },
+        {
+          "name": "Connector 8",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            4.8,
+            2.23,
+            0.0,
+            0.6
+          ]
+        },
+        {
+          "name": "TextBox 9",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            5.14,
+            2.13,
+            6.55,
+            0.78
+          ],
+          "font_sizes_pt": [
+            22.0
+          ]
+        },
+        {
+          "name": "Oval 10",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            0.88,
+            3.47,
+            0.82,
+            0.82
+          ]
+        },
+        {
+          "name": "TextBox 11",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.9,
+            3.47,
+            0.78,
+            0.82
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "TextBox 12",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            2.06,
+            3.37,
+            2.78,
+            0.94
+          ],
+          "font_sizes_pt": [
+            26.0
+          ]
+        },
+        {
+          "name": "Connector 13",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            4.8,
+            3.55,
+            0.0,
+            0.6
+          ]
+        },
+        {
+          "name": "TextBox 14",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            5.14,
+            3.45,
+            6.55,
+            0.78
+          ],
+          "font_sizes_pt": [
+            22.0
+          ]
+        },
+        {
+          "name": "Oval 15",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            0.88,
+            4.79,
+            0.82,
+            0.82
+          ]
+        },
+        {
+          "name": "TextBox 16",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.9,
+            4.79,
+            0.78,
+            0.82
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "TextBox 17",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            2.06,
+            4.69,
+            2.78,
+            0.94
+          ],
+          "font_sizes_pt": [
+            26.0
+          ]
+        },
+        {
+          "name": "Connector 18",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            4.8,
+            4.87,
+            0.0,
+            0.6
+          ]
+        },
+        {
+          "name": "TextBox 19",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            5.14,
+            4.77,
+            6.55,
+            0.78
+          ],
+          "font_sizes_pt": [
+            22.0
+          ]
+        },
+        {
+          "name": "Rectangle 20",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            0.88,
+            5.98,
+            11.58,
+            0.62
+          ]
+        },
+        {
+          "name": "TextBox 21",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            1.08,
+            6.06,
+            11.16,
+            0.45
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Connector 22",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            0.78,
+            6.92,
+            11.67,
+            0.0
+          ]
+        },
+        {
+          "name": "TextBox 23",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            6.98,
+            10.88,
+            0.34
+          ],
+          "font_sizes_pt": [
+            16.0
+          ]
+        },
+        {
+          "name": "TextBox 24",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            11.9,
+            6.98,
+            0.74,
+            0.34
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        }
+      ],
+      "native_text": [
+        "01 / 使用情境 · 设计假设",
+        "让一盒茶适配三种日常时刻",
+        "01",
+        "轻装出门",
+        "小份、好携带，让取用动作简单。",
+        "02",
+        "午后独处",
+        "冲泡信息直观，给阅读留出呼吸感。",
+        "03",
+        "顺手赠礼",
+        "开盒有记忆点，祝福卡与外盒一起设计。",
+        "这三种时刻是提案假设，需通过真实访谈与试用调整。",
+        "虚构品牌示例｜方案演示，不对应真实产品、销量或供应链",
+        "02"
+      ],
+      "notes_present": true
+    },
+    {
+      "index": 3,
+      "objects": [
+        {
+          "name": "Rectangle 1",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            0.0,
+            0.0,
+            13.333,
+            7.5
+          ]
+        },
+        {
+          "name": "TextBox 2",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            0.3,
+            5.5,
+            0.35
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "TextBox 3",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            0.69,
+            11.85,
+            0.72
+          ],
+          "font_sizes_pt": [
+            36.0
+          ]
+        },
+        {
+          "name": "TextBox 4",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.87,
+            1.4,
+            11.3,
+            0.45
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "Parallelogram 5",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            1.18,
+            2.45,
+            2.05,
+            0.42
+          ]
+        },
+        {
+          "name": "Rectangle 6",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            1.18,
+            2.83,
+            2.05,
+            2.55
+          ]
+        },
+        {
+          "name": "Rectangle 7",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            3.23,
+            2.91,
+            0.4,
+            2.47
+          ]
+        },
+        {
+          "name": "Rectangle 8",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            1.18,
+            3.4,
+            2.05,
+            0.52
+          ]
+        },
+        {
+          "name": "TextBox 9",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            1.25,
+            3.47,
+            1.92,
+            0.38
+          ],
+          "font_sizes_pt": [
+            22.0
+          ]
+        },
+        {
+          "name": "Connector 10",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            1.48,
+            4.25,
+            1.44,
+            0.0
+          ]
+        },
+        {
+          "name": "TextBox 11",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            1.32,
+            4.44,
+            1.76,
+            0.48
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Oval 12",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            5.23,
+            2.7,
+            2.04,
+            0.42
+          ]
+        },
+        {
+          "name": "Rectangle 13",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            5.23,
+            2.91,
+            2.04,
+            2.42
+          ]
+        },
+        {
+          "name": "Oval 14",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            5.23,
+            5.12,
+            2.04,
+            0.42
+          ]
+        },
+        {
+          "name": "Rectangle 15",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            5.42,
+            3.57,
+            1.66,
+            0.96
+          ]
+        },
+        {
+          "name": "TextBox 16",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            5.48,
+            3.68,
+            1.54,
+            0.36
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "TextBox 17",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            5.52,
+            4.05,
+            1.46,
+            0.3
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Trapezoid 18",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            9.35,
+            2.95,
+            2.12,
+            2.52
+          ]
+        },
+        {
+          "name": "Rectangle 19",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            9.5,
+            2.82,
+            1.82,
+            0.26
+          ]
+        },
+        {
+          "name": "Connector 20",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            9.64,
+            3.75,
+            1.51,
+            0.0
+          ]
+        },
+        {
+          "name": "TextBox 21",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            9.59,
+            4.0,
+            1.64,
+            0.46
+          ],
+          "font_sizes_pt": [
+            22.0
+          ]
+        },
+        {
+          "name": "TextBox 22",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.96,
+            5.73,
+            2.92,
+            0.42
+          ],
+          "font_sizes_pt": [
+            22.0
+          ]
+        },
+        {
+          "name": "TextBox 23",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            4.81,
+            5.73,
+            2.91,
+            0.42
+          ],
+          "font_sizes_pt": [
+            22.0
+          ]
+        },
+        {
+          "name": "TextBox 24",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            8.93,
+            5.73,
+            2.95,
+            0.42
+          ],
+          "font_sizes_pt": [
+            22.0
+          ]
+        },
+        {
+          "name": "TextBox 25",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.94,
+            6.2,
+            11.3,
+            0.42
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Connector 26",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            0.78,
+            6.92,
+            11.67,
+            0.0
+          ]
+        },
+        {
+          "name": "TextBox 27",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            6.98,
+            10.88,
+            0.34
+          ],
+          "font_sizes_pt": [
+            16.0
+          ]
+        },
+        {
+          "name": "TextBox 28",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            11.9,
+            6.98,
+            0.74,
+            0.34
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        }
+      ],
+      "native_text": [
+        "02 / 包装系统 · 结构概念",
+        "一盒茶，拆成三种拿取尺度",
+        "以“礼赠 / 自用 / 初尝”组织盒型角色，具体规格和材质待确认。",
+        "雾岭春芽",
+        "山形纹样位置",
+        "雾岭春芽",
+        "净含量待填",
+        "试饮装",
+        "礼赠套盒",
+        "日常小罐",
+        "初次试饮",
+        "盒型、标签文字与净含量为视觉占位；需由产品、合规和供应链共同确认。",
+        "虚构品牌示例｜方案演示，不对应真实产品、销量或供应链",
+        "03"
+      ],
+      "notes_present": true
+    },
+    {
+      "index": 4,
+      "objects": [
+        {
+          "name": "Rectangle 1",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            0.0,
+            0.0,
+            13.333,
+            7.5
+          ]
+        },
+        {
+          "name": "TextBox 2",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            0.3,
+            5.5,
+            0.35
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "TextBox 3",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            0.69,
+            11.85,
+            0.72
+          ],
+          "font_sizes_pt": [
+            36.0
+          ]
+        },
+        {
+          "name": "Rounded Rectangle 4",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            0.95,
+            1.78,
+            2.42,
+            3.86
+          ]
+        },
+        {
+          "name": "Rounded Rectangle 5",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            1.08,
+            1.98,
+            2.16,
+            3.46
+          ]
+        },
+        {
+          "name": "TextBox 6",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            1.26,
+            2.16,
+            1.8,
+            0.38
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "Rectangle 7",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            1.32,
+            2.68,
+            1.68,
+            0.76
+          ]
+        },
+        {
+          "name": "Connector 8",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            1.48,
+            2.88,
+            1.26,
+            0.32
+          ]
+        },
+        {
+          "name": "TextBox 9",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            1.27,
+            3.57,
+            1.8,
+            0.38
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Connector 10",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            1.38,
+            4.17,
+            1.52,
+            0.0
+          ]
+        },
+        {
+          "name": "Connector 11",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            1.38,
+            4.42,
+            1.38,
+            0.0
+          ]
+        },
+        {
+          "name": "TextBox 12",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            1.26,
+            4.81,
+            1.8,
+            0.38
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "TextBox 13",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            3.65,
+            3.16,
+            0.72,
+            0.7
+          ],
+          "font_sizes_pt": [
+            32.0
+          ]
+        },
+        {
+          "name": "Rectangle 14",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            4.73,
+            3.35,
+            3.0,
+            0.32
+          ]
+        },
+        {
+          "name": "Rectangle 15",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            4.97,
+            3.67,
+            0.2,
+            1.43
+          ]
+        },
+        {
+          "name": "Rectangle 16",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            7.27,
+            3.67,
+            0.2,
+            1.43
+          ]
+        },
+        {
+          "name": "Oval 17",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            5.5,
+            2.43,
+            0.76,
+            0.42
+          ]
+        },
+        {
+          "name": "Trapezoid 18",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            5.57,
+            2.67,
+            0.62,
+            0.58
+          ]
+        },
+        {
+          "name": "Oval 19",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            6.57,
+            2.55,
+            0.47,
+            0.18
+          ]
+        },
+        {
+          "name": "TextBox 20",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            4.84,
+            5.2,
+            2.84,
+            0.45
+          ],
+          "font_sizes_pt": [
+            22.0
+          ]
+        },
+        {
+          "name": "TextBox 21",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            4.46,
+            5.65,
+            3.6,
+            0.42
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "TextBox 22",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            8.11,
+            3.16,
+            0.72,
+            0.7
+          ],
+          "font_sizes_pt": [
+            32.0
+          ]
+        },
+        {
+          "name": "Parallelogram 23",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            9.35,
+            2.2,
+            2.5,
+            2.78
+          ]
+        },
+        {
+          "name": "Rectangle 24",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            9.62,
+            2.57,
+            1.96,
+            1.93
+          ]
+        },
+        {
+          "name": "TextBox 25",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            9.8,
+            2.82,
+            1.6,
+            0.36
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "TextBox 26",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            9.72,
+            3.2,
+            1.76,
+            0.38
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Connector 27",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            9.9,
+            3.92,
+            1.38,
+            0.0
+          ]
+        },
+        {
+          "name": "TextBox 28",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            9.7,
+            5.2,
+            1.86,
+            0.45
+          ],
+          "font_sizes_pt": [
+            22.0
+          ]
+        },
+        {
+          "name": "TextBox 29",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            9.02,
+            5.65,
+            3.2,
+            0.42
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "TextBox 30",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.96,
+            6.31,
+            11.25,
+            0.38
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Connector 31",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            0.78,
+            6.92,
+            11.67,
+            0.0
+          ]
+        },
+        {
+          "name": "TextBox 32",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            6.98,
+            10.88,
+            0.34
+          ],
+          "font_sizes_pt": [
+            16.0
+          ]
+        },
+        {
+          "name": "TextBox 33",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            11.9,
+            6.98,
+            0.74,
+            0.34
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        }
+      ],
+      "native_text": [
+        "03 / 品牌触点 · 路径示意",
+        "从第一眼，到试一口，再到带走",
+        "产品详情页",
+        "风味信息位置",
+        "页面版式示意",
+        "→",
+        "线下试饮点",
+        "冲泡与讲解，帮助理解风味",
+        "→",
+        "留一段",
+        "慢下来的时间",
+        "赠礼小卡",
+        "不含真实二维码与购买链接",
+        "产品页、试饮台与小卡都是概念版式，并非已上线的销售或预约入口。",
+        "虚构品牌示例｜方案演示，不对应真实产品、销量或供应链",
+        "04"
+      ],
+      "notes_present": true
+    },
+    {
+      "index": 5,
+      "objects": [
+        {
+          "name": "Rectangle 1",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            0.0,
+            0.0,
+            13.333,
+            7.5
+          ]
+        },
+        {
+          "name": "TextBox 2",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            0.3,
+            5.5,
+            0.35
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "TextBox 3",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            0.69,
+            11.85,
+            0.72
+          ],
+          "font_sizes_pt": [
+            36.0
+          ]
+        },
+        {
+          "name": "Connector 4",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            1.25,
+            2.42,
+            7.1,
+            0.0
+          ]
+        },
+        {
+          "name": "Oval 5",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            1.55,
+            1.96,
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "name": "TextBox 6",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            1.57,
+            2.01,
+            0.86,
+            0.78
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "TextBox 7",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            1.02,
+            3.04,
+            1.98,
+            0.55
+          ],
+          "font_sizes_pt": [
+            24.0
+          ]
+        },
+        {
+          "name": "TextBox 8",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.96,
+            3.72,
+            2.12,
+            1.04
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "Oval 9",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            4.23,
+            1.96,
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "name": "TextBox 10",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            4.25,
+            2.01,
+            0.86,
+            0.78
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "TextBox 11",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            3.7,
+            3.04,
+            1.98,
+            0.55
+          ],
+          "font_sizes_pt": [
+            24.0
+          ]
+        },
+        {
+          "name": "TextBox 12",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            3.64,
+            3.72,
+            2.12,
+            1.04
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "Oval 13",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            6.93,
+            1.96,
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "name": "TextBox 14",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            6.95,
+            2.01,
+            0.86,
+            0.78
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "TextBox 15",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            6.4,
+            3.04,
+            1.98,
+            0.55
+          ],
+          "font_sizes_pt": [
+            24.0
+          ]
+        },
+        {
+          "name": "TextBox 16",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            6.34,
+            3.72,
+            2.12,
+            1.04
+          ],
+          "font_sizes_pt": [
+            20.0
+          ]
+        },
+        {
+          "name": "TextBox 17",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.98,
+            5.3,
+            7.55,
+            0.72
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Rounded Rectangle 18",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            9.16,
+            1.67,
+            3.3,
+            4.78
+          ]
+        },
+        {
+          "name": "TextBox 19",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            9.48,
+            1.94,
+            2.68,
+            0.62
+          ],
+          "font_sizes_pt": [
+            23.0
+          ]
+        },
+        {
+          "name": "Oval 20",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            9.5,
+            2.99,
+            0.34,
+            0.34
+          ]
+        },
+        {
+          "name": "TextBox 21",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            9.96,
+            2.95,
+            2.15,
+            0.46
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Oval 22",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            9.5,
+            3.71,
+            0.34,
+            0.34
+          ]
+        },
+        {
+          "name": "TextBox 23",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            9.96,
+            3.67,
+            2.15,
+            0.46
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Oval 24",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            9.5,
+            4.43,
+            0.34,
+            0.34
+          ]
+        },
+        {
+          "name": "TextBox 25",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            9.96,
+            4.39,
+            2.15,
+            0.46
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Oval 26",
+          "type": "AUTO_SHAPE (1)",
+          "bbox_inches": [
+            9.5,
+            5.15,
+            0.34,
+            0.34
+          ]
+        },
+        {
+          "name": "TextBox 27",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            9.96,
+            5.11,
+            2.15,
+            0.46
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        },
+        {
+          "name": "Connector 28",
+          "type": "LINE (9)",
+          "bbox_inches": [
+            0.78,
+            6.92,
+            11.67,
+            0.0
+          ]
+        },
+        {
+          "name": "TextBox 29",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            0.82,
+            6.98,
+            10.88,
+            0.34
+          ],
+          "font_sizes_pt": [
+            16.0
+          ]
+        },
+        {
+          "name": "TextBox 30",
+          "type": "TEXT_BOX (17)",
+          "bbox_inches": [
+            11.9,
+            6.98,
+            0.74,
+            0.34
+          ],
+          "font_sizes_pt": [
+            18.0
+          ]
+        }
+      ],
+      "native_text": [
+        "04 / 推进建议 · 待真实委托方确认",
+        "先打样验证，再决定是否进入下一步",
+        "01",
+        "定信息",
+        "茶品事实与合规文案先确认",
+        "02",
+        "试结构",
+        "盒型、材料与印刷样需打样",
+        "03",
+        "看反馈",
+        "按渠道小范围观察后调整",
+        "执行周期、成本和渠道安排由实际供应商与委托方补齐。",
+        "打样前四项确认",
+        "茶品与风味事实",
+        "包装规格与材料",
+        "成本与供货周期",
+        "试用反馈方式",
+        "虚构品牌示例｜方案演示，不对应真实产品、销量或供应链",
+        "05"
+      ],
+      "notes_present": true
+    }
+  ],
+  "issues": [],
+  "renderer": "Microsoft PowerPoint COM / PNG 1920x1080",
+  "renders": [
+    {
+      "path": "slide-01.png",
+      "sha256": "e68617aa34e7e43e11b994c7724bacbdbc06125091cb49d2c128ca05c7d34442"
+    },
+    {
+      "path": "slide-02.png",
+      "sha256": "318965a4f68edee08b69dd4c6cc4ecc50b9ff828835d667c55cfea88d038c11a"
+    },
+    {
+      "path": "slide-03.png",
+      "sha256": "a7fc8ed4e6dfdfb8e0b41ed7fd5e6acfae8bd6acab0f603e7509c732e0a0c230"
+    },
+    {
+      "path": "slide-04.png",
+      "sha256": "97fdd6e0495c40880a84987c114a5347233b6302d0f06a52eb75a9370f9bdce1"
+    },
+    {
+      "path": "slide-05.png",
+      "sha256": "a2634203fd0d6ae3cf66f52205a478e359a771aa4ff21bf4d773e54a4ad95f26"
+    }
+  ],
+  "inspected_at": "2026-10-12T15:26:58.582667+08:00",
+  "original_reviewed_name": "deck.pptx",
+  "copied_at": "2026-10-12T20:11:36.025944+08:00"
+}

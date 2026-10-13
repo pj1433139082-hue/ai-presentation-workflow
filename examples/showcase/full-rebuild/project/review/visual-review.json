@@ -1,0 +1,55 @@
+{
+  "actor": "root agent",
+  "scope": "3 page blank-canvas asset coverage and current browser renders; actual transparent isolation light/dark; final PowerPoint render separately observed",
+  "pages": [
+    {
+      "slide_id": "S01",
+      "concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+      "render_sha256": "ca00de68c27954a8edd7e487c2a52b33721902947f5dcf4657f566974ae9723d",
+      "object_count": 9,
+      "semantic_review": "all named visual groups represented; each equipment/route/arrow/text independent; visual/art data boundaries checked",
+      "residual_review": "background, shadow/reflection, divider/bullet/frame/collar/support details checked",
+      "known_differences": [
+        "Reference-generated device screen details/metal wordmark differ; exact glyphs correct.",
+        "Browser native descriptor tracking spans about5px beyond measured ink bbox, stays inside slide; PowerPoint uses its actual font metrics."
+      ],
+      "outcome": "agent-reviewed",
+      "user_acceptance": "not-recorded"
+    },
+    {
+      "slide_id": "S02",
+      "concept_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+      "render_sha256": "fed0dd94ab40bd42b37ccc5fa10edad9bd08a8a2d8863d2cecae25d8478fd7ce",
+      "object_count": 45,
+      "semantic_review": "all named visual groups represented; each equipment/route/arrow/text independent; visual/art data boundaries checked",
+      "residual_review": "background, shadow/reflection, divider/bullet/frame/collar/support details checked",
+      "known_differences": [
+        "Native SVG tube elbows/highlights, collars/supports and regenerated equipment details approximate original material.",
+        "Same hot and return topology and 5 devices retained; mechanism illustration, not design parameters."
+      ],
+      "outcome": "agent-reviewed",
+      "user_acceptance": "not-recorded"
+    },
+    {
+      "slide_id": "S03",
+      "concept_sha256": "08157d04fa08c681ce8c6f7cf5151f4a2549e11786dd37969aa99f8da0163f90",
+      "render_sha256": "ba5d807ad6504eb8e85987eb344f0b906d99c0294d011baffa122d02e142c5a8",
+      "object_count": 12,
+      "semantic_review": "all named visual groups represented; each equipment/route/arrow/text independent; visual/art data boundaries checked",
+      "residual_review": "background, shadow/reflection, divider/bullet/frame/collar/support details checked",
+      "known_differences": [
+        "Generated membrane/water arrangement and system font differ from source; completealpha margins after localizededit.",
+        "SVG curve retains all4 original illustrative x/y pairs and qualifier; no experiment claim."
+      ],
+      "outcome": "agent-reviewed",
+      "user_acceptance": "not-recorded"
+    }
+  ],
+  "transparent_isolation_observed": [
+    "S01-wordmark",
+    "S01-device-terminal",
+    "S03-membrane"
+  ],
+  "machine_limits": "declared coverage does not discover pixels omitted from both scene and map, or judge aesthetics",
+  "no_pixel_identity_claim": true
+}

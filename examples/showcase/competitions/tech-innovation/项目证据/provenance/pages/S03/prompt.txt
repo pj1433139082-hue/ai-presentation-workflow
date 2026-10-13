@@ -1,0 +1,13 @@
+Create ONE widescreen 16:9 landscape concept slide for page 3 of the same fictional engineering proposal “桥迹”. Use both attached images only as design references: case 361 for refined dark hardware reveal and controlled exploded depth; case 475 for clear industrial-design views and section drawing. Do not copy their products, text, brands, dimensions, materials, color swatches, or page layouts.
+
+Render these exact Chinese lines, with no other words:
+title: “把一次近距采样拆成三步”
+large sequence: “导向定位 → 斜光补亮 → 局部成像”
+supporting line: “疑点留档：图像附采样位置线索”
+boundary label: “原理示意 · 尚未验证”
+
+Visualize one coherent side-section engineering illustration: a fictional compact inspection carriage moving just above an abstract concrete bridge surface. Make the cross-section easy to read: a simple guide roller sets a close stance; one small oblique amber light grazes a fine surface line; one lens captures only a small local patch. A faint position trace indicates where a flagged image belongs, without map coordinates. Use one continuous left-to-right action path with three restrained amber cues, not cards or three separate machines. Show a translucent cutaway casing only to clarify the concept, with no pseudo-circuit microtext and no precise numeric dimensions.
+
+Keep the main diagram prominent and precise, like an engineering plate in a premium hardware launch publication. Dark graphite/navy field, cool silver surfaces, concrete gray, restrained amber. Clear Chinese typesetting with a spacious header and readable footer. The crack is illustrative surface texture, not evidence or a scientific micrograph. The device is only a proposal, not a real tested prototype.
+
+Avoid added labels, numbers, formulas, battery-capacity claims, energy measurements, speed, accuracy, real bridge identifiers, brand marks, cards, dashboards, extra panels, pseudo-text, awards, school names, patents, or claims of validation.

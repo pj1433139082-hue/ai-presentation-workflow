@@ -1,0 +1,21 @@
+{
+  "id": "S03-single",
+  "role": "text",
+  "representation": "native",
+  "type": "text",
+  "text": "单次示例曲线，不能推断\n显著性。",
+  "bbox": [
+    1209,
+    253,
+    446,
+    108
+  ],
+  "z": 30,
+  "font_family": "Microsoft YaHei",
+  "font_size_px": 37,
+  "font_weight": 600,
+  "color": "#001e46",
+  "text_align": "left",
+  "line_height": 1.46,
+  "font_match_approx": "System font approximation; original raster typography is not a recoverable font file"
+}

@@ -1,0 +1,389 @@
+{
+  "status": "complete",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "status": "generated",
+      "output_path": "concepts/S01.png",
+      "output_sha256": "b2ae250c8df800f9898b48a01c45daea62f6dd9582e390a8cf4de8406e3d6a24",
+      "input_sha256": {
+        "brief": "bfbcb2ead73eddca359972fe6d620ba58dd3d0f022483e3b58f37ebb39a6fc21",
+        "deck_spec": "ab98a0e2e5249de05089ea74fca11275f1237635241618d84cf5da954996023a",
+        "reference_study": "73a60989d0ef1ab98a0aacc860edbe2bebbe967d8411e807c816c795c64ad470",
+        "style_contract": "bb811f7cc26896f5c61b7d5cb53843c7a857aa9c0cd0ed37428a2819873786d0"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "从看懂，到做出来",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "读图 → 拆解 → 实作",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "read",
+          "role": "body",
+          "text": "读图：找到信息层级",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "breakdown",
+          "role": "body",
+          "text": "拆解：理解视觉关系",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "practice",
+          "role": "body",
+          "text": "实作：完成一页作品",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "schedule",
+          "role": "caption",
+          "text": "课程安排示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "goal",
+          "role": "body",
+          "text": "课程目标：独立完成一页清晰的视觉表达。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R469",
+          "path": "references/case469.jpg",
+          "sha256": "0D63EA96B6F5BE08AE0C9FF8040EEB90597D116BEBF9958680B5171ED6C7B12D"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S01/generation-record.json",
+      "generation_record_sha256": "a86bfce4f513b7471e1822d593ed5cfc573d4705c966c41e4c534bfad671b489",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S02",
+      "status": "generated",
+      "output_path": "concepts/S02.png",
+      "output_sha256": "0dbb5d02786227259de7515ebc2b515496c2a2365f69c2357cbbed17bdb02008",
+      "input_sha256": {
+        "brief": "bfbcb2ead73eddca359972fe6d620ba58dd3d0f022483e3b58f37ebb39a6fc21",
+        "deck_spec": "ab98a0e2e5249de05089ea74fca11275f1237635241618d84cf5da954996023a",
+        "reference_study": "73a60989d0ef1ab98a0aacc860edbe2bebbe967d8411e807c816c795c64ad470",
+        "style_contract": "bb811f7cc26896f5c61b7d5cb53843c7a857aa9c0cd0ed37428a2819873786d0"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "先读一页，抓住信息层级",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "观察视线如何从主标题走向补充信息。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "sample",
+          "role": "caption",
+          "text": "练习对象：一张虚构活动海报",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "task-1",
+          "role": "body",
+          "text": "第一眼落在哪里？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "task-2",
+          "role": "body",
+          "text": "标题、主信息与补充信息如何区分？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "task-3",
+          "role": "body",
+          "text": "读完以后，下一步看哪里？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "读图练习示例 · 非真实课程记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R469",
+          "path": "references/case469.jpg",
+          "sha256": "0D63EA96B6F5BE08AE0C9FF8040EEB90597D116BEBF9958680B5171ED6C7B12D"
+        },
+        {
+          "reference_id": "EDUCATION-S01",
+          "path": "concepts/S01.png",
+          "sha256": "B2AE250C8DF800F9898B48A01C45DAEA62F6DD9582E390A8CF4DE8406E3D6A24"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S02/generation-record.json",
+      "generation_record_sha256": "6498d6d3e5109235a1896dfee252509cde5e92252622fd3722e2182902e9283d",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S03",
+      "status": "generated",
+      "output_path": "concepts/S03.png",
+      "output_sha256": "7e1bd11fb4153a7c6b50e399aae9a74d1c3033519f6ba1f44fb3ffcd5c016a0f",
+      "input_sha256": {
+        "brief": "bfbcb2ead73eddca359972fe6d620ba58dd3d0f022483e3b58f37ebb39a6fc21",
+        "deck_spec": "ab98a0e2e5249de05089ea74fca11275f1237635241618d84cf5da954996023a",
+        "reference_study": "73a60989d0ef1ab98a0aacc860edbe2bebbe967d8411e807c816c795c64ad470",
+        "style_contract": "bb811f7cc26896f5c61b7d5cb53843c7a857aa9c0cd0ed37428a2819873786d0"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把版面拆开，再动手重组",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "将观察转成可以尝试的设计动作。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "priority",
+          "role": "body",
+          "text": "定主次：先挑出一条主信息",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "relations",
+          "role": "body",
+          "text": "理关系：让相关内容彼此靠近",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rhythm",
+          "role": "body",
+          "text": "调节奏：用留白区分段落",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "practice",
+          "role": "body",
+          "text": "动手：完成一页自己的作品",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "练习示例 · 非真实学员作品",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R469",
+          "path": "references/case469.jpg",
+          "sha256": "0D63EA96B6F5BE08AE0C9FF8040EEB90597D116BEBF9958680B5171ED6C7B12D"
+        },
+        {
+          "reference_id": "EDUCATION-S01",
+          "path": "concepts/S01.png",
+          "sha256": "B2AE250C8DF800F9898B48A01C45DAEA62F6DD9582E390A8CF4DE8406E3D6A24"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S03/generation-record.json",
+      "generation_record_sha256": "dee57000536bc2c13401c33e38665d432afa206eb14d9f3ffea56066ac37836e",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S04",
+      "status": "generated",
+      "output_path": "concepts/S04.png",
+      "output_sha256": "7e29647b22ae69a40b049b2f16086e7f510f406863939a76f4a114c84bea9671",
+      "input_sha256": {
+        "brief": "bfbcb2ead73eddca359972fe6d620ba58dd3d0f022483e3b58f37ebb39a6fc21",
+        "deck_spec": "ab98a0e2e5249de05089ea74fca11275f1237635241618d84cf5da954996023a",
+        "reference_study": "73a60989d0ef1ab98a0aacc860edbe2bebbe967d8411e807c816c795c64ad470",
+        "style_contract": "bb811f7cc26896f5c61b7d5cb53843c7a857aa9c0cd0ed37428a2819873786d0"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "作品评阅，指向下一轮选择",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "先说明哪里有效，再指出下一步怎么试。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "criterion-1",
+          "role": "body",
+          "text": "信息层级：第一眼是否明确？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "criterion-2",
+          "role": "body",
+          "text": "视觉关系：相关内容是否连贯？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "criterion-3",
+          "role": "body",
+          "text": "阅读路径：下一步是否清楚？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "next-1",
+          "role": "body",
+          "text": "保留一处有效选择",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "next-2",
+          "role": "body",
+          "text": "下一轮只试一项调整",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "next-3",
+          "role": "body",
+          "text": "再看整体是否更顺",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "课程练习示例 · 非真实学习成果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R469",
+          "path": "references/case469.jpg",
+          "sha256": "0D63EA96B6F5BE08AE0C9FF8040EEB90597D116BEBF9958680B5171ED6C7B12D"
+        },
+        {
+          "reference_id": "EDUCATION-S01",
+          "path": "concepts/S01.png",
+          "sha256": "B2AE250C8DF800F9898B48A01C45DAEA62F6DD9582E390A8CF4DE8406E3D6A24"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S04/generation-record.json",
+      "generation_record_sha256": "7357886b9f22654704319e67947e33f63a96369709136e15d2758c49c98f74a1",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    }
+  ],
+  "binding_role": "current-complete-set-with-preserved-actual-generation-history",
+  "binding_created_at": "2026-10-13T09:34:44.043919+08:00",
+  "user_visual_acceptance": "not-recorded"
+}

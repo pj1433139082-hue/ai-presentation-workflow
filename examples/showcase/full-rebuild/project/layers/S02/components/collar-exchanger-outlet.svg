@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-label="collar exchanger outlet">
+  <title>collar exchanger outlet</title>
+  <defs><linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4e626b"/><stop offset=".22" stop-color="#f3f6f4"/><stop offset=".48" stop-color="#9daeb0"/><stop offset=".72" stop-color="#e7edeb"/><stop offset="1" stop-color="#53676e"/></linearGradient></defs>
+  <rect x="1451" y="571" width="18" height="46" rx="4" fill="url(#steel)" stroke="#354952" stroke-width="2"/><path d="M1456 574 V614 M1464 574 V614" stroke="#f6f6eb" stroke-width="1.5" opacity=".8"/><circle cx="1460" cy="578" r="2" fill="#263d46"/><circle cx="1460" cy="610" r="2" fill="#263d46"/>
+</svg>

@@ -1,7 +1,17 @@
 {
+  "version": null,
   "status": "pending",
   "subject_sha256": null,
   "checks_performed": [],
+  "deck_checks": {
+    "reference_transfer": false,
+    "composition_richness": false,
+    "readability_full_size": false,
+    "visual_coherence": false,
+    "truth_consistency": false
+  },
+  "deck_bindings": null,
+  "verified_renders": [],
   "evidence_files": [],
   "final_contact_sheet": null,
   "exception_register": null,

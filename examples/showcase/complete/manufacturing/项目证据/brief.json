@@ -1,0 +1,29 @@
+{
+  "project_id": "industry-manufacturing-v2",
+  "audience": "了解制造业余热回收概念的演示观众",
+  "goal": "通过一个明确标注的机制示例，说明余热来源、用热需求匹配、方案验证步骤与工程边界。",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "concept-images",
+    "aspect_ratio": "16:9",
+    "scope": "local-showcase-only",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05"
+    ]
+  },
+  "source_map": [
+    {
+      "id": "EXAMPLE-HEAT-REUSE-MECHANISM",
+      "kind": "locally-authored-fictional-mechanism-example",
+      "locator": "本地自编的余热回用一般机制与验证问题；不是工厂记录、工程设计、性能测量、收益或安全证据。",
+      "path": "sources/source-notes.md",
+      "sha256": "2a0b9d841feb267cf25b5bbd1f016e4036ae2ae0c6f74fac383028d86de9f918",
+      "truth_status": "illustrative"
+    }
+  ]
+}

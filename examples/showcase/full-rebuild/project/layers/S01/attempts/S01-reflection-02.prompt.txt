@@ -1,0 +1,7 @@
+Use case: background-extraction
+Asset type: one independent transparent soft-light overlay for a slide
+Input images: Image 1 is the original S01 concept and provides the exact floor-reflection colors and placement.
+Primary request: Rebuild only the diffuse blue and coral light blooms reflected directly beneath the device as a small transparent overlay.
+Subject: A shallow, horizontally stretched cluster of soft blue glow at left and pale coral-pink glow near the center and right, plus a very subtle narrow contact-shadow trace near the upper edge of the cluster. Match the restrained brightness of the source floor reflection.
+Composition/framing: Wide and low, like a soft elliptical light patch beneath the terminal. Keep it compact and localized to the device footprint, with feathered edges and generous transparent space around it.
+Constraints: Genuine transparency everywhere outside the light/shadow pixels. Show light blooms only; no floor plane, no floor texture, no horizon, no horizontal band or line, no mirrored device silhouette, no device pixels, no room, no background gradient, no text, no objects, no border, no watermark. This layer must overlay cleanly on a separately generated blue/coral studio floor.

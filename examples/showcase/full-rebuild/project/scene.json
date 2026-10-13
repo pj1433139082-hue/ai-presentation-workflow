@@ -1,0 +1,2344 @@
+{
+  "version": "apw-blank-canvas-scene-v1",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "slides": [
+    {
+      "slide_id": "S01",
+      "canvas": {
+        "width": 1672,
+        "height": 941
+      },
+      "items": [
+        {
+          "id": "S01-background",
+          "role": "background",
+          "bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "z": 0,
+          "representation": "asset",
+          "file": "assets/background.png",
+          "sha256": "7d0d38635b550a7707a99433b73fe3f161b945193d21bd598c3acaad57f0e4c6",
+          "asset_canvas_px": [
+            1672,
+            941
+          ],
+          "asset_alpha_bbox_xyxy": null,
+          "fit": "full-canvas",
+          "generation_record": "attempts/S01-bg-01.json",
+          "semantic_role": "background",
+          "path": "layers/S01/assets/background.png",
+          "raw_size": [
+            1672,
+            941
+          ],
+          "alpha_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "image_frame": [
+            0,
+            0,
+            1672,
+            941
+          ]
+        },
+        {
+          "id": "S01-floor-reflection",
+          "role": "decoration",
+          "bbox": [
+            727,
+            756,
+            864,
+            151
+          ],
+          "z": 1,
+          "representation": "asset",
+          "file": "assets/floor-reflection.png",
+          "sha256": "5f1db4147c6d3d20b6ad3ba3eb6381503e8d0c142e1f1f0415d4bf4a090e673a",
+          "asset_canvas_px": [
+            2203,
+            714
+          ],
+          "asset_alpha_bbox_xyxy": [
+            298,
+            366,
+            2010,
+            665
+          ],
+          "place_by_alpha_bbox": true,
+          "generation_record": "attempts/S01-reflection-02.json",
+          "semantic_role": "floor-reflection",
+          "path": "layers/S01/assets/floor-reflection.png",
+          "raw_size": [
+            2203,
+            714
+          ],
+          "alpha_bbox": [
+            300,
+            367,
+            2006,
+            665
+          ],
+          "image_frame": [
+            575.0656506447831,
+            570.172919109027,
+            1115.7045720984759,
+            361.60375146541617
+          ]
+        },
+        {
+          "id": "S01-contact-shadow",
+          "role": "decoration",
+          "bbox": [
+            727,
+            781,
+            864,
+            53
+          ],
+          "z": 2,
+          "representation": "asset",
+          "file": "assets/contact-shadow.png",
+          "sha256": "8233b6cdb7056235b565f34a9aa53253e11744375aca400126217de3ac01d27c",
+          "asset_canvas_px": [
+            2168,
+            725
+          ],
+          "asset_alpha_bbox_xyxy": [
+            254,
+            472,
+            1925,
+            575
+          ],
+          "place_by_alpha_bbox": true,
+          "generation_record": "attempts/S01-contact-shadow-01.json",
+          "semantic_role": "contact-shadow",
+          "path": "layers/S01/assets/contact-shadow.png",
+          "raw_size": [
+            2168,
+            725
+          ],
+          "alpha_bbox": [
+            262,
+            473,
+            1923,
+            573
+          ],
+          "image_frame": [
+            590.7158338350391,
+            535.451836243227,
+            1127.7254665863936,
+            377.12221553281154
+          ]
+        },
+        {
+          "id": "S01-device-terminal",
+          "role": "illustration",
+          "bbox": [
+            725,
+            128,
+            862,
+            688
+          ],
+          "z": 3,
+          "representation": "asset",
+          "file": "assets/device.png",
+          "sha256": "fb0ea48bbbc6fb539f645b6775db6fc18ad5f6ab69e70bead53ba9c7d35d954e",
+          "asset_canvas_px": [
+            1672,
+            940
+          ],
+          "asset_alpha_bbox_xyxy": [
+            324,
+            41,
+            1400,
+            901
+          ],
+          "place_by_alpha_bbox": true,
+          "indivisible_internal_content": [
+            "display",
+            "abstract document cards",
+            "blue/coral network paths",
+            "aluminum dock",
+            "right circular control"
+          ],
+          "generation_record": "attempts/S01-device-01.json",
+          "semantic_role": "hero-illustration",
+          "path": "layers/S01/assets/device.png",
+          "raw_size": [
+            1672,
+            940
+          ],
+          "alpha_bbox": [
+            324,
+            41,
+            1400,
+            901
+          ],
+          "image_frame": [
+            466.3999999999999,
+            95.19999999999999,
+            1337.6000000000001,
+            752.0
+          ]
+        },
+        {
+          "id": "S01-wordmark",
+          "role": "special-typography",
+          "text": "知栈",
+          "exact_text": "知栈",
+          "bbox": [
+            96,
+            227,
+            352,
+            166
+          ],
+          "z": 4,
+          "representation": "asset",
+          "file": "assets/wordmark.png",
+          "sha256": "8256cf8431d75f8e1b48d54d5de1ab848924d926e861fcdb9424ee12bd62001d",
+          "asset_canvas_px": [
+            1942,
+            809
+          ],
+          "asset_alpha_bbox_xyxy": [
+            278,
+            100,
+            1670,
+            745
+          ],
+          "place_by_alpha_bbox": true,
+          "not_a_font_file": true,
+          "review_status": "agent-selected candidate; parent visual check pending",
+          "generation_record": "attempts/S01-wordmark-02.json",
+          "semantic_role": "special-typography",
+          "path": "layers/S01/assets/wordmark.png",
+          "raw_size": [
+            1942,
+            809
+          ],
+          "alpha_bbox": [
+            279,
+            100,
+            1670,
+            745
+          ],
+          "image_frame": [
+            25.397555715312734,
+            203.0841121495327,
+            491.43350107836085,
+            204.72178289000718
+          ]
+        },
+        {
+          "id": "S01-descriptor",
+          "role": "text",
+          "text": "桌面知识协作终端",
+          "bbox": [
+            101,
+            422,
+            459,
+            49
+          ],
+          "z": 5,
+          "font_size": 54,
+          "letter_spacing_px": 4,
+          "color": "#E9ECF2",
+          "representation": "native",
+          "font_family": "Microsoft YaHei UI",
+          "font_size_unit": "px",
+          "font_weight": 400,
+          "alignment": "left",
+          "truth_status": "illustrative",
+          "semantic_role": "body",
+          "type": "text",
+          "font_size_px": 54,
+          "path": "layers/S01/native-text/S01-descriptor.json",
+          "line_height": 1.1,
+          "text_align": "left"
+        },
+        {
+          "id": "S01-takeaway",
+          "role": "text",
+          "text": "让每次讨论，都接得上下一步。",
+          "bbox": [
+            100,
+            516,
+            510,
+            35
+          ],
+          "z": 6,
+          "font_size": 36,
+          "letter_spacing_px": 0,
+          "color": "#C7DCF4",
+          "representation": "native",
+          "font_family": "Microsoft YaHei UI",
+          "font_size_unit": "px",
+          "font_weight": 400,
+          "alignment": "left",
+          "truth_status": "illustrative",
+          "semantic_role": "key-takeaway",
+          "type": "text",
+          "font_size_px": 36,
+          "path": "layers/S01/native-text/S01-takeaway.json",
+          "line_height": 1.1,
+          "text_align": "left"
+        },
+        {
+          "id": "S01-features",
+          "role": "text",
+          "text": "会后脉络留存 · 资料语义检索 · 任务线索串联",
+          "bbox": [
+            103,
+            615,
+            551,
+            21
+          ],
+          "z": 7,
+          "font_size": 25,
+          "letter_spacing_px": 1,
+          "color": "#DDE2ED",
+          "representation": "native",
+          "font_family": "Microsoft YaHei UI",
+          "font_size_unit": "px",
+          "font_weight": 400,
+          "alignment": "left",
+          "truth_status": "illustrative",
+          "semantic_role": "secondary",
+          "type": "text",
+          "font_size_px": 25,
+          "path": "layers/S01/native-text/S01-features.json",
+          "line_height": 1.1,
+          "text_align": "left"
+        },
+        {
+          "id": "S01-example",
+          "role": "text",
+          "text": "概念产品 · 示例",
+          "bbox": [
+            58,
+            869,
+            147,
+            17
+          ],
+          "z": 8,
+          "font_size": 17,
+          "letter_spacing_px": 0,
+          "color": "#516CAD",
+          "representation": "native",
+          "font_family": "Microsoft YaHei UI",
+          "font_size_unit": "px",
+          "font_weight": 400,
+          "alignment": "left",
+          "truth_status": "illustrative",
+          "semantic_role": "source",
+          "type": "text",
+          "font_size_px": 17,
+          "path": "layers/S01/native-text/S01-example.json",
+          "line_height": 1.1,
+          "text_align": "left"
+        }
+      ],
+      "original_inventory_path": "layers/S01/inventory.json"
+    },
+    {
+      "slide_id": "S02",
+      "canvas": {
+        "width": 1672,
+        "height": 941
+      },
+      "items": [
+        {
+          "id": "S02-background-paper",
+          "role": "background",
+          "bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "z": 0,
+          "representation": "asset",
+          "file": "components/background-plate.png",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "asset_px_size": [
+            1672,
+            941
+          ],
+          "alpha": "opaque RGB",
+          "source_method": "built-in image_gen edit; reconstructed from concept reference",
+          "provenance": "attempts/01-background-plate/record.json",
+          "sha256": "c630a304669e61e2e098ba429ab94a35f4588c75603bf08030ff15841f04c01b",
+          "semantic_role": "background plate with engineering-paper grid, edge schematics and tiled floor",
+          "path": "layers/S02/components/background-plate.png",
+          "raw_size": [
+            1672,
+            941
+          ],
+          "alpha_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "image_frame": [
+            0,
+            0,
+            1672,
+            941
+          ]
+        },
+        {
+          "id": "S02-flow-orange-heat-production",
+          "role": "connector",
+          "bbox": [
+            404,
+            324,
+            322,
+            116
+          ],
+          "z": 10,
+          "representation": "native",
+          "file": "components/flow-orange-heater-production.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "color": "#fd7b02",
+          "flow_from": "heating furnace",
+          "flow_to": "production machine",
+          "flow_semantics": "mechanism illustration; not engineering design parameters",
+          "semantic_role": "hot route from heating furnace to production machine with elbow at furnace outlet",
+          "sha256": "6ca2450d1cea7bd419144b3fabe7e95d32a2eb28a8316e47f8723a9e9d471a9b",
+          "pipe_style": "52px colored halo, 44px dark casing, 38px luminous orange/cyan gradient tube, upper white specular line; each straight, elbow, and vertical segment has a local cross-section gradient",
+          "path": "layers/S02/components/flow-orange-heater-production.svg"
+        },
+        {
+          "id": "S02-flow-orange-production-exhaust",
+          "role": "connector",
+          "bbox": [
+            1084,
+            314,
+            342,
+            126
+          ],
+          "z": 10,
+          "representation": "native",
+          "file": "components/flow-orange-production-exhaust.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "color": "#fd7b02",
+          "flow_from": "production machine",
+          "flow_to": "exhaust tower",
+          "flow_semantics": "mechanism illustration; not engineering design parameters",
+          "semantic_role": "hot route from production outlet upturned toward exhaust and joining the downflow",
+          "sha256": "a1e6f910d058f04360d9f5d830a358c2853f09da625725842dbf4676e6722fc4",
+          "pipe_style": "52px colored halo, 44px dark casing, 38px luminous orange/cyan gradient tube, upper white specular line; each straight, elbow, and vertical segment has a local cross-section gradient",
+          "path": "layers/S02/components/flow-orange-production-exhaust.svg"
+        },
+        {
+          "id": "S02-flow-orange-exhaust-exchanger",
+          "role": "connector",
+          "bbox": [
+            1374,
+            314,
+            52,
+            272
+          ],
+          "z": 10,
+          "representation": "native",
+          "file": "components/flow-orange-exhaust-exchanger.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "color": "#fd7b02",
+          "flow_from": "exhaust tower",
+          "flow_to": "heat exchanger",
+          "flow_semantics": "mechanism illustration; not engineering design parameters",
+          "semantic_role": "hot route down from the joined exhaust branch to the heat exchanger",
+          "sha256": "fea4d1f253e68415a5eae1039a48dbd571b3e2a6bf4528cd748740d318d3610c",
+          "pipe_style": "52px colored halo, 44px dark casing, 38px luminous orange/cyan gradient tube, upper white specular line; each straight, elbow, and vertical segment has a local cross-section gradient",
+          "path": "layers/S02/components/flow-orange-exhaust-exchanger.svg"
+        },
+        {
+          "id": "S02-flow-teal-return",
+          "role": "connector",
+          "bbox": [
+            270,
+            405,
+            1081,
+            313
+          ],
+          "z": 10,
+          "representation": "native",
+          "file": "components/flow-teal-return-loop.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "color": "#00a0a8",
+          "flow_from": "heat exchanger",
+          "flow_to": "recovery assembly and heating furnace",
+          "flow_semantics": "mechanism illustration; not engineering design parameters",
+          "semantic_role": "teal return loop from exchanger via recovery assembly toward furnace",
+          "sha256": "40ea97961f2cdd0657b5ffe6356e34a5df4178cb5d59be53a66facfd224232bb",
+          "pipe_style": "52px colored halo, 44px dark casing, 38px luminous orange/cyan gradient tube, upper white specular line; each straight, elbow, and vertical segment has a local cross-section gradient",
+          "path": "layers/S02/components/flow-teal-return-loop.svg"
+        },
+        {
+          "id": "S02-device-heating",
+          "role": "illustration",
+          "bbox": [
+            65.22,
+            183,
+            397.57,
+            328
+          ],
+          "z": 20,
+          "representation": "asset",
+          "file": "components/heating-furnace-v2.png",
+          "asset_frame_bbox": [
+            38.15,
+            176.39,
+            449.19,
+            346.89
+          ],
+          "asset_px_size": [
+            1427,
+            1102
+          ],
+          "asset_alpha_bbox_px_gt8": [
+            86,
+            21,
+            1263,
+            1042
+          ],
+          "source_target_box": [
+            58,
+            183,
+            412,
+            328
+          ],
+          "uniform_scale": 0.314779,
+          "sha256": "6142c9890b2d42970e7643eee4e524c2cc123d5134a007169cfb8392e2e887b8",
+          "source_method": "built-in image_gen reference-guided reconstruction; not source-pixel preservation",
+          "provenance": "attempts/03-heating-furnace-repair/record.json",
+          "truth_status": "illustrative",
+          "notes": "Silver combustion furnace, orange chamber, control cabinet, left chimney/platform/rails, compact local fittings.",
+          "semantic_role": "heating furnace assembly",
+          "path": "layers/S02/components/heating-furnace-v2.png",
+          "raw_size": [
+            1427,
+            1102
+          ],
+          "alpha_bbox": [
+            86,
+            21,
+            1349,
+            1063
+          ],
+          "image_frame": [
+            38.15,
+            176.39,
+            449.19,
+            346.89
+          ]
+        },
+        {
+          "id": "S02-device-production",
+          "role": "illustration",
+          "bbox": [
+            641,
+            311.63,
+            497,
+            197.73
+          ],
+          "z": 20,
+          "representation": "asset",
+          "file": "components/production-machine.png",
+          "asset_frame_bbox": [
+            578.65,
+            293.82,
+            608.04,
+            228.01
+          ],
+          "asset_px_size": [
+            2048,
+            768
+          ],
+          "asset_alpha_bbox_px_gt8": [
+            210,
+            60,
+            1674,
+            666
+          ],
+          "source_target_box": [
+            641,
+            301,
+            497,
+            219
+          ],
+          "uniform_scale": 0.296894,
+          "sha256": "db0e232daa48df8b7abc21154c22ac1656f8847c12b6933b834061e0b10ef2ab",
+          "source_method": "built-in image_gen reference-guided reconstruction; not source-pixel preservation",
+          "provenance": "attempts/04-production-machine/record.json",
+          "truth_status": "illustrative",
+          "notes": "Single enclosed silver production line with warm inspection windows and attached foreground roller conveyor.",
+          "semantic_role": "production machine and attached conveyor",
+          "path": "layers/S02/components/production-machine.png",
+          "raw_size": [
+            2048,
+            768
+          ],
+          "alpha_bbox": [
+            210,
+            60,
+            1884,
+            726
+          ],
+          "image_frame": [
+            578.65,
+            293.82,
+            608.04,
+            228.01
+          ]
+        },
+        {
+          "id": "S02-device-exhaust",
+          "role": "illustration",
+          "bbox": [
+            1367.55,
+            182,
+            182.91,
+            318
+          ],
+          "z": 20,
+          "representation": "asset",
+          "file": "components/exhaust-tower.png",
+          "asset_frame_bbox": [
+            1343.41,
+            169.6,
+            230.94,
+            346.42
+          ],
+          "asset_px_size": [
+            1024,
+            1536
+          ],
+          "asset_alpha_bbox_px_gt8": [
+            107,
+            55,
+            811,
+            1410
+          ],
+          "source_target_box": [
+            1326,
+            182,
+            266,
+            318
+          ],
+          "uniform_scale": 0.225532,
+          "sha256": "09a7ecb8a3a54cab972ef6b7e7ecc482f2c2693caa6dff1c2e2fb34df89ba8c6",
+          "source_method": "built-in image_gen reference-guided reconstruction; not source-pixel preservation",
+          "provenance": "attempts/05-exhaust-tower/record.json",
+          "truth_status": "illustrative",
+          "notes": "One cylindrical silver stack with short left flange, gold safety ring/platform and braced support.",
+          "semantic_role": "exhaust tower and stack assembly",
+          "path": "layers/S02/components/exhaust-tower.png",
+          "raw_size": [
+            1024,
+            1536
+          ],
+          "alpha_bbox": [
+            107,
+            55,
+            918,
+            1465
+          ],
+          "image_frame": [
+            1343.41,
+            169.6,
+            230.94,
+            346.42
+          ]
+        },
+        {
+          "id": "S02-device-recovery",
+          "role": "illustration",
+          "bbox": [
+            650,
+            540.57,
+            370,
+            218.86
+          ],
+          "z": 20,
+          "representation": "asset",
+          "file": "components/recovery-vessel-pump.png",
+          "asset_frame_bbox": [
+            596.04,
+            520.75,
+            459.75,
+            259.06
+          ],
+          "asset_px_size": [
+            1670,
+            941
+          ],
+          "asset_alpha_bbox_px_gt8": [
+            196,
+            72,
+            1344,
+            795
+          ],
+          "source_target_box": [
+            650,
+            540,
+            370,
+            220
+          ],
+          "uniform_scale": 0.275298,
+          "sha256": "97fb535164ad3536ae64826b81c3836982b8f65c8a92aec8ced0192f66462551",
+          "source_method": "built-in image_gen reference-guided reconstruction; not source-pixel preservation",
+          "provenance": "attempts/06-recovery-vessel-pump/record.json",
+          "truth_status": "illustrative",
+          "notes": "One joined vessel-left/pump-right skid with the short internal connecting pipe.",
+          "semantic_role": "heat-recovery vessel and pump assembly",
+          "path": "layers/S02/components/recovery-vessel-pump.png",
+          "raw_size": [
+            1670,
+            941
+          ],
+          "alpha_bbox": [
+            196,
+            72,
+            1540,
+            867
+          ],
+          "image_frame": [
+            596.04,
+            520.75,
+            459.75,
+            259.06
+          ]
+        },
+        {
+          "id": "S02-device-exchanger",
+          "role": "illustration",
+          "bbox": [
+            1195.41,
+            536,
+            407.18,
+            246
+          ],
+          "z": 20,
+          "representation": "asset",
+          "file": "components/heat-exchanger.png",
+          "asset_frame_bbox": [
+            1137.46,
+            514.27,
+            504.38,
+            284.03
+          ],
+          "asset_px_size": [
+            1671,
+            941
+          ],
+          "asset_alpha_bbox_px_gt8": [
+            192,
+            72,
+            1349,
+            815
+          ],
+          "source_target_box": [
+            1194,
+            536,
+            410,
+            246
+          ],
+          "uniform_scale": 0.30184,
+          "sha256": "ab4bbc68c71242cfa15dfd4d9636bebe80cbd7c36bbc53ec08042a72c7fefbfa",
+          "source_method": "built-in image_gen reference-guided reconstruction; not source-pixel preservation",
+          "provenance": "attempts/07-heat-exchanger/record.json",
+          "truth_status": "illustrative",
+          "notes": "One blue plate-and-frame exchanger with its own short silver U-loop pipe fittings.",
+          "semantic_role": "plate heat exchanger assembly",
+          "path": "layers/S02/components/heat-exchanger.png",
+          "raw_size": [
+            1671,
+            941
+          ],
+          "alpha_bbox": [
+            192,
+            72,
+            1541,
+            887
+          ],
+          "image_frame": [
+            1137.46,
+            514.27,
+            504.38,
+            284.03
+          ]
+        },
+        {
+          "id": "S02-flow-orange-exchanger-side",
+          "role": "connector",
+          "bbox": [
+            1404,
+            568,
+            188,
+            152
+          ],
+          "z": 22,
+          "representation": "native",
+          "file": "components/flow-orange-exchanger-side.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "color": "#fd7b02",
+          "flow_from": "exchanger fitting",
+          "flow_to": "visible orange outlet-side segment; direction not explicit",
+          "flow_semantics": "mechanism illustration; not engineering design parameters",
+          "semantic_role": "orange highlighted exchanger-side outlet pipe with return elbow",
+          "sha256": "ae2e65b391eef521fb6debf0830511abf98209060a8ec2594eacccc33a9c90c4",
+          "pipe_style": "52px colored halo, 44px dark casing, 38px luminous orange/cyan gradient tube, upper white specular line; each straight, elbow, and vertical segment has a local cross-section gradient",
+          "path": "layers/S02/components/flow-orange-exchanger-side.svg"
+        },
+        {
+          "id": "S02-arrow-hot-heat-production",
+          "role": "arrow",
+          "bbox": [
+            568,
+            399,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "file": "components/arrow-orange-heat-to-production.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "direction": "right",
+          "color": "#ffffff",
+          "accent": "#fd7b02",
+          "independently_movable": true,
+          "semantic_role": "solid white arrowhead from heating toward production",
+          "sha256": "0bf04d57f7503e9b46721ddf619b050548c62ddfb98906e2e51d7a4a26a2c424",
+          "fill": "#ffffff",
+          "shape": "solid white arrow polygon with colored edge halo; independently movable",
+          "path": "layers/S02/components/arrow-orange-heat-to-production.svg"
+        },
+        {
+          "id": "S02-arrow-hot-production-exhaust",
+          "role": "arrow",
+          "bbox": [
+            1235,
+            399,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "file": "components/arrow-orange-production-to-exhaust.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "direction": "right",
+          "color": "#ffffff",
+          "accent": "#fd7b02",
+          "independently_movable": true,
+          "semantic_role": "solid white arrowhead from production toward exhaust branch",
+          "sha256": "22c05259c2919a35d4e977e9a555917836c71afff8ff70b481f3f8cf256c477b",
+          "fill": "#ffffff",
+          "shape": "solid white arrow polygon with colored edge halo; independently movable",
+          "path": "layers/S02/components/arrow-orange-production-to-exhaust.svg"
+        },
+        {
+          "id": "S02-arrow-hot-exhaust-down",
+          "role": "arrow",
+          "bbox": [
+            1405,
+            503,
+            30,
+            45
+          ],
+          "z": 24,
+          "representation": "native",
+          "file": "components/arrow-orange-exhaust-down.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "direction": "down",
+          "color": "#ffffff",
+          "accent": "#fd7b02",
+          "independently_movable": true,
+          "semantic_role": "solid white downward arrowhead on exchanger feed",
+          "sha256": "fed330869bb537757cb0d313e89e1c9a268a24445019ee8d6890e849286752d6",
+          "fill": "#ffffff",
+          "shape": "solid white arrow polygon with colored edge halo; independently movable",
+          "path": "layers/S02/components/arrow-orange-exhaust-down.svg"
+        },
+        {
+          "id": "S02-arrow-hot-exchanger-out",
+          "role": "arrow",
+          "bbox": [
+            1485,
+            579,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "file": "components/arrow-orange-exchanger-outlet.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "direction": "right",
+          "color": "#ffffff",
+          "accent": "#fd7b02",
+          "independently_movable": true,
+          "semantic_role": "solid white arrowhead on exchanger outlet",
+          "sha256": "ecb72292ce4404c0a58689a23dc320817f6423b01a059a753d95c749623db819",
+          "fill": "#ffffff",
+          "shape": "solid white arrow polygon with colored edge halo; independently movable",
+          "path": "layers/S02/components/arrow-orange-exchanger-outlet.svg"
+        },
+        {
+          "id": "S02-arrow-return-left-1",
+          "role": "arrow",
+          "bbox": [
+            1219.5,
+            677,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "file": "components/arrow-teal-return-1.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "direction": "left",
+          "color": "#ffffff",
+          "accent": "#00a0a8",
+          "independently_movable": true,
+          "semantic_role": "solid white leftward arrowhead on teal return",
+          "sha256": "e9dd2beb529d8d4e26ee094c8cfc658ecc372c4a6ee12156eab113989d5612b0",
+          "fill": "#ffffff",
+          "shape": "solid white arrow polygon with colored edge halo; independently movable",
+          "path": "layers/S02/components/arrow-teal-return-1.svg"
+        },
+        {
+          "id": "S02-arrow-return-left-2",
+          "role": "arrow",
+          "bbox": [
+            1030.5,
+            677,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "file": "components/arrow-teal-return-2.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "direction": "left",
+          "color": "#ffffff",
+          "accent": "#00a0a8",
+          "independently_movable": true,
+          "semantic_role": "solid white leftward arrowhead on teal return",
+          "sha256": "18aca1594c4aef81144d8548411221ce75db97118aeb037923b7f8832342a0ca",
+          "fill": "#ffffff",
+          "shape": "solid white arrow polygon with colored edge halo; independently movable",
+          "path": "layers/S02/components/arrow-teal-return-2.svg"
+        },
+        {
+          "id": "S02-arrow-return-left-3",
+          "role": "arrow",
+          "bbox": [
+            525.5,
+            677,
+            45,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "file": "components/arrow-teal-return-3.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "direction": "left",
+          "color": "#ffffff",
+          "accent": "#00a0a8",
+          "independently_movable": true,
+          "semantic_role": "solid white leftward arrowhead on teal return",
+          "sha256": "dc55d81b247f466bc7838e159672616a6895a8af52e0dffc603e21254e5ee50a",
+          "fill": "#ffffff",
+          "shape": "solid white arrow polygon with colored edge halo; independently movable",
+          "path": "layers/S02/components/arrow-teal-return-3.svg"
+        },
+        {
+          "id": "S02-arrow-return-up-1",
+          "role": "arrow",
+          "bbox": [
+            281,
+            565,
+            30,
+            30
+          ],
+          "z": 24,
+          "representation": "native",
+          "file": "components/arrow-teal-up-1.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "direction": "up",
+          "color": "#ffffff",
+          "accent": "#00a0a8",
+          "independently_movable": true,
+          "semantic_role": "solid white upward arrowhead on furnace return riser",
+          "sha256": "ec1cb462619b51d9118b9263cba6dbbca0b55855b50a7d8951117a91ed77409e",
+          "fill": "#ffffff",
+          "shape": "solid white arrow polygon with colored edge halo; independently movable",
+          "path": "layers/S02/components/arrow-teal-up-1.svg"
+        },
+        {
+          "id": "S02-arrow-return-up-2",
+          "role": "arrow",
+          "bbox": [
+            258.5,
+            418.5,
+            75,
+            75
+          ],
+          "z": 24,
+          "representation": "native",
+          "file": "components/arrow-teal-up-2.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "direction": "up",
+          "color": "#ffffff",
+          "accent": "#00a0a8",
+          "independently_movable": true,
+          "semantic_role": "large solid white upward arrowhead entering the furnace",
+          "sha256": "3151cf0f5097499077a516652ffc4011c4ac35a6342b66f9f8c752d858217cc3",
+          "fill": "#ffffff",
+          "shape": "solid white arrow polygon with colored edge halo; independently movable",
+          "path": "layers/S02/components/arrow-teal-up-2.svg"
+        },
+        {
+          "id": "S02-badge-shell-heating",
+          "role": "decoration",
+          "bbox": [
+            254,
+            220,
+            205,
+            56
+          ],
+          "z": 30,
+          "representation": "native",
+          "file": "components/badge-shell-heating.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "fill_gradient": [
+            "#2b607b",
+            "#1c4764"
+          ],
+          "stroke": "#f5f3ed",
+          "corner_radius_px": 10,
+          "semantic_role": "heating badge shell",
+          "sha256": "5efc1399bfe085134459e915d35f00d92d509f8df90444b15c48f8b8aff99248",
+          "path": "layers/S02/components/badge-shell-heating.svg"
+        },
+        {
+          "id": "S02-badge-shell-production",
+          "role": "decoration",
+          "bbox": [
+            795,
+            220,
+            188,
+            56
+          ],
+          "z": 30,
+          "representation": "native",
+          "file": "components/badge-shell-production.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "fill_gradient": [
+            "#2b607b",
+            "#1c4764"
+          ],
+          "stroke": "#f5f3ed",
+          "corner_radius_px": 10,
+          "semantic_role": "production badge shell",
+          "sha256": "fa93f5213700f37c10115d413268d70f761cab5646e127613a4677cb556ca94e",
+          "path": "layers/S02/components/badge-shell-production.svg"
+        },
+        {
+          "id": "S02-badge-shell-exhaust",
+          "role": "decoration",
+          "bbox": [
+            1268,
+            220,
+            198,
+            56
+          ],
+          "z": 30,
+          "representation": "native",
+          "file": "components/badge-shell-exhaust.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "fill_gradient": [
+            "#bf6509",
+            "#984600"
+          ],
+          "stroke": "#f5f3ed",
+          "corner_radius_px": 10,
+          "semantic_role": "exhaust badge shell",
+          "sha256": "57881d49d38085e54f0f77eb210c48be8af31794a9be46a027fbcfb17dfcdc76",
+          "path": "layers/S02/components/badge-shell-exhaust.svg"
+        },
+        {
+          "id": "S02-badge-shell-reuse",
+          "role": "decoration",
+          "bbox": [
+            737,
+            770,
+            199,
+            56
+          ],
+          "z": 30,
+          "representation": "native",
+          "file": "components/badge-shell-reuse.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "fill_gradient": [
+            "#0a8583",
+            "#00616a"
+          ],
+          "stroke": "#f5f3ed",
+          "corner_radius_px": 10,
+          "semantic_role": "reuse badge shell",
+          "sha256": "be50e06b1d1c72ec462adc4fd50819ea750d556849c527ff47cc8786ef76c477",
+          "path": "layers/S02/components/badge-shell-reuse.svg"
+        },
+        {
+          "id": "S02-badge-shell-exchanger",
+          "role": "decoration",
+          "bbox": [
+            1270,
+            770,
+            196,
+            56
+          ],
+          "z": 30,
+          "representation": "native",
+          "file": "components/badge-shell-exchanger.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "fill_gradient": [
+            "#0a8583",
+            "#00616a"
+          ],
+          "stroke": "#f5f3ed",
+          "corner_radius_px": 10,
+          "semantic_role": "exchanger badge shell",
+          "sha256": "5bfeea7b44a4ca7f7941cc162625ce507837ff650531f14539d0cbc436b4f3bb",
+          "path": "layers/S02/components/badge-shell-exchanger.svg"
+        },
+        {
+          "id": "S02-text-badge-heating",
+          "role": "text",
+          "text": "加热",
+          "bbox": [
+            306,
+            224,
+            100,
+            42
+          ],
+          "position": {
+            "x": 356.5,
+            "y": 261,
+            "anchor": "middle"
+          },
+          "font_family": "Noto Sans SC",
+          "font_weight": 800,
+          "font_size_px": 38,
+          "letter_spacing_px": 6,
+          "color": "#FFFFFF",
+          "editable": true,
+          "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+          "z": 31,
+          "representation": "native",
+          "type": "text",
+          "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+          "semantic_role": "heating badge label",
+          "file": "components/text-badge-heating.svg",
+          "text_width_px": 100,
+          "source_format": "editable SVG text node",
+          "sha256": "049648ac02812041ed2aee8b6809eb1ef54934058231a76149bb3bf606d8f152",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "path": "layers/S02/native-text/S02-text-badge-heating.json",
+          "line_height": 1.1,
+          "text_align": "center"
+        },
+        {
+          "id": "S02-text-badge-production",
+          "role": "text",
+          "text": "生产",
+          "bbox": [
+            836,
+            224,
+            107,
+            42
+          ],
+          "position": {
+            "x": 889,
+            "y": 261,
+            "anchor": "middle"
+          },
+          "font_family": "Noto Sans SC",
+          "font_weight": 800,
+          "font_size_px": 38,
+          "letter_spacing_px": 6,
+          "color": "#FFFFFF",
+          "editable": true,
+          "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+          "z": 31,
+          "representation": "native",
+          "type": "text",
+          "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+          "semantic_role": "production badge label",
+          "file": "components/text-badge-production.svg",
+          "text_width_px": 107,
+          "source_format": "editable SVG text node",
+          "sha256": "fd52b9e22c5c0bed172347ef7e72f41f0bf541dcb508a6a2e786c2781f7c2efb",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "path": "layers/S02/native-text/S02-text-badge-production.json",
+          "line_height": 1.1,
+          "text_align": "center"
+        },
+        {
+          "id": "S02-text-badge-exhaust",
+          "role": "text",
+          "text": "排热",
+          "bbox": [
+            1307,
+            224,
+            121,
+            42
+          ],
+          "position": {
+            "x": 1367,
+            "y": 261,
+            "anchor": "middle"
+          },
+          "font_family": "Noto Sans SC",
+          "font_weight": 800,
+          "font_size_px": 38,
+          "letter_spacing_px": 6,
+          "color": "#FFFFFF",
+          "editable": true,
+          "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+          "z": 31,
+          "representation": "native",
+          "type": "text",
+          "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+          "semantic_role": "exhaust badge label",
+          "file": "components/text-badge-exhaust.svg",
+          "text_width_px": 121,
+          "source_format": "editable SVG text node",
+          "sha256": "ffa4108ba27eab2e93c5b17a98cb2efe4bdd86486d7c2fd26fdb403dfc30007d",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "path": "layers/S02/native-text/S02-text-badge-exhaust.json",
+          "line_height": 1.1,
+          "text_align": "center"
+        },
+        {
+          "id": "S02-text-badge-reuse",
+          "role": "text",
+          "text": "回用",
+          "bbox": [
+            787,
+            774,
+            99,
+            42
+          ],
+          "position": {
+            "x": 836.5,
+            "y": 811,
+            "anchor": "middle"
+          },
+          "font_family": "Noto Sans SC",
+          "font_weight": 800,
+          "font_size_px": 38,
+          "letter_spacing_px": 6,
+          "color": "#FFFFFF",
+          "editable": true,
+          "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+          "z": 31,
+          "representation": "native",
+          "type": "text",
+          "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+          "semantic_role": "reuse badge label",
+          "file": "components/text-badge-reuse.svg",
+          "text_width_px": 99,
+          "source_format": "editable SVG text node",
+          "sha256": "7e7ba9c087a79bd1ce31672c7a55b83cd879ee6d6b82a9d012aa7dbf03c83878",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "path": "layers/S02/native-text/S02-text-badge-reuse.json",
+          "line_height": 1.1,
+          "text_align": "center"
+        },
+        {
+          "id": "S02-text-badge-exchanger",
+          "role": "text",
+          "text": "换热",
+          "bbox": [
+            1309,
+            774,
+            119,
+            42
+          ],
+          "position": {
+            "x": 1368,
+            "y": 811,
+            "anchor": "middle"
+          },
+          "font_family": "Noto Sans SC",
+          "font_weight": 800,
+          "font_size_px": 38,
+          "letter_spacing_px": 6,
+          "color": "#FFFFFF",
+          "editable": true,
+          "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+          "z": 31,
+          "representation": "native",
+          "type": "text",
+          "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+          "semantic_role": "exchanger badge label",
+          "file": "components/text-badge-exchanger.svg",
+          "text_width_px": 119,
+          "source_format": "editable SVG text node",
+          "sha256": "edc25b07eba2fc842a41ebce19959744b14211ddfd56bdb5a07f139cb88b3b58",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "path": "layers/S02/native-text/S02-text-badge-exchanger.json",
+          "line_height": 1.1,
+          "text_align": "center"
+        },
+        {
+          "id": "S02-divider-title",
+          "role": "decoration",
+          "file": "components/divider-title.svg",
+          "bbox": [
+            808,
+            131.8,
+            73,
+            2.4
+          ],
+          "z": 35,
+          "color": "#1a3a55",
+          "representation": "native",
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "semantic_role": "short title/subtitle separator",
+          "sha256": "1f3b210195edf303d43d0aca837b7d0b5464960811b5461799664d9a6e9b2de1",
+          "path": "layers/S02/components/divider-title.svg"
+        },
+        {
+          "id": "S02-divider-footer-left",
+          "role": "decoration",
+          "file": "components/divider-footer-left.svg",
+          "bbox": [
+            500,
+            891.2,
+            83,
+            1.6
+          ],
+          "z": 35,
+          "color": "#405366",
+          "representation": "native",
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "semantic_role": "footer rule left",
+          "sha256": "e5216de7c24fda399ccf4c90fd16232f2811e0ce246009fb5474d2e8a7415bf6",
+          "path": "layers/S02/components/divider-footer-left.svg"
+        },
+        {
+          "id": "S02-divider-footer-right",
+          "role": "decoration",
+          "file": "components/divider-footer-right.svg",
+          "bbox": [
+            1090,
+            891.2,
+            83,
+            1.6
+          ],
+          "z": 35,
+          "color": "#405366",
+          "representation": "native",
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "semantic_role": "footer rule right",
+          "sha256": "5d413df042a8c529b2c1b31edff12704e4bc49fc1e931956fd19a87ba8dbb37b",
+          "path": "layers/S02/components/divider-footer-right.svg"
+        },
+        {
+          "id": "S02-text-title",
+          "role": "text",
+          "text": "把损失，接回流程。",
+          "bbox": [
+            449,
+            22,
+            820,
+            104
+          ],
+          "position": {
+            "x": 856,
+            "y": 112,
+            "anchor": "middle"
+          },
+          "font_family": "Noto Sans SC",
+          "font_weight": 900,
+          "font_size_px": 84,
+          "color": "#01234A",
+          "editable": true,
+          "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+          "z": 40,
+          "representation": "native",
+          "type": "text",
+          "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+          "semantic_role": "large Chinese title",
+          "file": "components/text-title.svg",
+          "text_width_px": 736,
+          "source_format": "editable SVG text node",
+          "sha256": "017daa7c3f491a5971cc95f8d4cb11189e8258d6b6e6ec56c8f168327ba99d6c",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "font_width_measurement": {
+            "font_file": "C:/Windows/Fonts/NotoSansSC-VF.ttf",
+            "natural_width_at_90px": 810,
+            "source_target_width_px": 736,
+            "svg_textLength_adjustment": 0.908642,
+            "method": "Pillow ImageFont.getlength"
+          },
+          "line_height": 1.22,
+          "path": "layers/S02/native-text/S02-text-title.json",
+          "text_align": "center"
+        },
+        {
+          "id": "S02-text-subtitle",
+          "role": "text",
+          "text": "先找到稳定热源，再匹配同时发生的用热需求。",
+          "bbox": [
+            440,
+            145,
+            800,
+            44
+          ],
+          "position": {
+            "x": 839,
+            "y": 181,
+            "anchor": "middle"
+          },
+          "font_family": "Noto Sans SC",
+          "font_weight": 500,
+          "font_size_px": 34,
+          "color": "#00152E",
+          "editable": true,
+          "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+          "z": 40,
+          "representation": "native",
+          "type": "text",
+          "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+          "semantic_role": "Chinese subtitle",
+          "file": "components/text-subtitle.svg",
+          "text_width_px": 784,
+          "source_format": "editable SVG text node",
+          "sha256": "9ef68b66f7ba99f491c02657ee687bf654efae1039471e6e06bb544929012bd2",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "path": "layers/S02/native-text/S02-text-subtitle.json",
+          "line_height": 1.1,
+          "text_align": "center"
+        },
+        {
+          "id": "S02-text-footer",
+          "role": "text",
+          "text": "流程为机制示意，不构成工程设计参数。",
+          "bbox": [
+            610,
+            880,
+            459,
+            24
+          ],
+          "position": {
+            "x": 839.5,
+            "y": 902,
+            "anchor": "middle"
+          },
+          "font_family": "Noto Sans SC",
+          "font_weight": 400,
+          "font_size_px": 23,
+          "color": "#13243A",
+          "editable": true,
+          "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+          "z": 40,
+          "representation": "native",
+          "type": "text",
+          "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+          "semantic_role": "Chinese engineering-parameter disclaimer",
+          "file": "components/text-footer.svg",
+          "text_width_px": 459,
+          "source_format": "editable SVG text node",
+          "sha256": "004c6229cbd410806b5d60e2efad47d2e0f15744aa6d223c2cbfcbeae4a600b4",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "path": "layers/S02/native-text/S02-text-footer.json",
+          "line_height": 1.1,
+          "text_align": "center"
+        },
+        {
+          "id": "S02-collar-teal-return-left",
+          "role": "decoration",
+          "semantic_role": "return line flange collar near furnace-side bend",
+          "bbox": [
+            388,
+            667,
+            22,
+            50
+          ],
+          "z": 22,
+          "representation": "native",
+          "file": "components/collar-teal-return-left.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "independently_movable": true,
+          "sha256": "2d248b7e0a632a102ebd0145ca18a81e40816bf957aa446ecbac1a7c97812dd9",
+          "path": "layers/S02/components/collar-teal-return-left.svg"
+        },
+        {
+          "id": "S02-collar-hot-production-inlet",
+          "role": "decoration",
+          "semantic_role": "hot line flange collar at production inlet",
+          "bbox": [
+            676,
+            389,
+            22,
+            50
+          ],
+          "z": 22,
+          "representation": "native",
+          "file": "components/collar-hot-production-inlet.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "independently_movable": true,
+          "sha256": "74b30711c4cee135a7e0b46733e1f0e6ed3ea745ff69a3b3ce16063536d1bd24",
+          "path": "layers/S02/components/collar-hot-production-inlet.svg"
+        },
+        {
+          "id": "S02-collar-hot-production-outlet",
+          "role": "decoration",
+          "semantic_role": "hot line flange collar at production outlet",
+          "bbox": [
+            1102,
+            389,
+            22,
+            50
+          ],
+          "z": 22,
+          "representation": "native",
+          "file": "components/collar-hot-production-outlet.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "independently_movable": true,
+          "sha256": "e8a066fda7143fb000052a36c7220b93e63604961f17165809c7240756a5cba5",
+          "path": "layers/S02/components/collar-hot-production-outlet.svg"
+        },
+        {
+          "id": "S02-collar-hot-downcomer",
+          "role": "decoration",
+          "semantic_role": "hot line flange collar above exchanger entry",
+          "bbox": [
+            1375,
+            549,
+            50,
+            22
+          ],
+          "z": 22,
+          "representation": "native",
+          "file": "components/collar-hot-downcomer.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "independently_movable": true,
+          "sha256": "6a90b6cf37a5de566001b97ef9598cd08b47afc81f1a72654fd84edfcf96ab29",
+          "path": "layers/S02/components/collar-hot-downcomer.svg"
+        },
+        {
+          "id": "S02-collar-exchanger-outlet",
+          "role": "decoration",
+          "semantic_role": "orange exchanger-side outlet flange collar",
+          "bbox": [
+            1449,
+            569,
+            22,
+            50
+          ],
+          "z": 22,
+          "representation": "native",
+          "file": "components/collar-exchanger-outlet.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "independently_movable": true,
+          "sha256": "0d94e4f3a663b29c30c448c411a83e0fc690e6a65b8ee181b0f9fb32afe6392a",
+          "path": "layers/S02/components/collar-exchanger-outlet.svg"
+        },
+        {
+          "id": "S02-support-ground-384",
+          "role": "decoration",
+          "semantic_role": "independent ground support stanchion under the teal return pipe",
+          "bbox": [
+            366,
+            702,
+            36,
+            56
+          ],
+          "z": 21,
+          "representation": "native",
+          "file": "components/support-ground-384.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "independently_movable": true,
+          "sha256": "f49eafe90df429adfc128e16e32ff32998e7c54e2e520848f42afcf9d29240cb",
+          "path": "layers/S02/components/support-ground-384.svg"
+        },
+        {
+          "id": "S02-support-ground-529",
+          "role": "decoration",
+          "semantic_role": "independent ground support stanchion under the teal return pipe",
+          "bbox": [
+            511,
+            702,
+            36,
+            56
+          ],
+          "z": 21,
+          "representation": "native",
+          "file": "components/support-ground-529.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "independently_movable": true,
+          "sha256": "83b2a504007b51681d65b60efa326c43fe53ea33d2f9c9ae4c6e33149326de65",
+          "path": "layers/S02/components/support-ground-529.svg"
+        },
+        {
+          "id": "S02-support-ground-653",
+          "role": "decoration",
+          "semantic_role": "independent ground support stanchion under the teal return pipe",
+          "bbox": [
+            635,
+            702,
+            36,
+            56
+          ],
+          "z": 21,
+          "representation": "native",
+          "file": "components/support-ground-653.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "independently_movable": true,
+          "sha256": "0e04bd94313caa0175de4dcd7670fefd1f86889548cd5928c28c26ed466006c6",
+          "path": "layers/S02/components/support-ground-653.svg"
+        },
+        {
+          "id": "S02-support-ground-1150",
+          "role": "decoration",
+          "semantic_role": "independent ground support stanchion under the teal return pipe",
+          "bbox": [
+            1132,
+            702,
+            36,
+            56
+          ],
+          "z": 21,
+          "representation": "native",
+          "file": "components/support-ground-1150.svg",
+          "asset_frame_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "svg_viewbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "independently_movable": true,
+          "sha256": "a67ef325e5d375d0ae5b9699c989efcba45ea1b05bcd9ff3e7be8e023e8e05f4",
+          "path": "layers/S02/components/support-ground-1150.svg"
+        }
+      ],
+      "original_inventory_path": "layers/S02/inventory.json"
+    },
+    {
+      "slide_id": "S03",
+      "canvas": {
+        "width": 1672,
+        "height": 941
+      },
+      "items": [
+        {
+          "id": "S03-background",
+          "role": "background",
+          "file": "assets/background.png",
+          "bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "z": 0,
+          "representation": "asset",
+          "alpha_bbox": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "raw_size": [
+            1672,
+            941
+          ],
+          "generation_record": "attempts/background-generation.json",
+          "independence": "one background plate",
+          "semantic_role": "background",
+          "path": "layers/S03/assets/background.png",
+          "image_frame": [
+            0,
+            0,
+            1672,
+            941
+          ]
+        },
+        {
+          "id": "S03-membrane",
+          "role": "illustration",
+          "file": "assets/membrane.png",
+          "bbox": [
+            1150,
+            484,
+            522,
+            277
+          ],
+          "z": 10,
+          "representation": "asset",
+          "alpha_bbox": [
+            171,
+            188,
+            1601,
+            808
+          ],
+          "raw_size": [
+            1671,
+            941
+          ],
+          "generation_record": "attempts/membrane-repair-generation.json",
+          "independence": "one membrane/water conceptual illustration; internal pixels are not vector-editable",
+          "semantic_role": "illustration",
+          "path": "layers/S03/assets/membrane.png",
+          "image_frame": [
+            1087.579020979021,
+            440.7125874125874,
+            609.9734265734265,
+            343.49790209790206
+          ]
+        },
+        {
+          "id": "S03-title",
+          "role": "text",
+          "representation": "native",
+          "type": "text",
+          "text": "先看趋势，再讨论机理。",
+          "bbox": [
+            74,
+            31,
+            1150,
+            139
+          ],
+          "z": 30,
+          "font_family": "Noto Sans SC",
+          "font_size_px": 94,
+          "font_weight": 900,
+          "color": "#001e46",
+          "text_align": "left",
+          "line_height": 1.3,
+          "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+          "file": "components/title.json",
+          "semantic_role": "text",
+          "path": "layers/S03/native-text/S03-title.json"
+        },
+        {
+          "id": "S03-chart-heading",
+          "role": "text",
+          "representation": "native",
+          "type": "text",
+          "text": "归一化通量（示例数据）",
+          "bbox": [
+            71,
+            183,
+            720,
+            81
+          ],
+          "z": 30,
+          "font_family": "Noto Sans SC",
+          "font_size_px": 52,
+          "font_weight": 700,
+          "color": "#001e46",
+          "text_align": "left",
+          "line_height": 1.3,
+          "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+          "file": "components/chart-heading.json",
+          "semantic_role": "text",
+          "path": "layers/S03/native-text/S03-chart-heading.json"
+        },
+        {
+          "id": "S03-chart",
+          "role": "chart",
+          "file": "components/chart.svg",
+          "bbox": [
+            28,
+            254,
+            1070,
+            644
+          ],
+          "z": 15,
+          "representation": "native",
+          "semantic_role": "chart",
+          "path": "layers/S03/components/chart.svg"
+        },
+        {
+          "id": "S03-divider",
+          "role": "decoration",
+          "file": "components/divider.svg",
+          "bbox": [
+            1133,
+            201,
+            2,
+            686
+          ],
+          "z": 20,
+          "representation": "native",
+          "semantic_role": "decoration",
+          "path": "layers/S03/components/divider.svg"
+        },
+        {
+          "id": "S03-bullet-1",
+          "role": "decoration",
+          "file": "components/bullet-1.svg",
+          "bbox": [
+            1167,
+            272,
+            16,
+            16
+          ],
+          "z": 20,
+          "representation": "native",
+          "semantic_role": "decoration",
+          "path": "layers/S03/components/bullet-1.svg"
+        },
+        {
+          "id": "S03-bullet-2",
+          "role": "decoration",
+          "file": "components/bullet-2.svg",
+          "bbox": [
+            1167,
+            413,
+            16,
+            16
+          ],
+          "z": 20,
+          "representation": "native",
+          "semantic_role": "decoration",
+          "path": "layers/S03/components/bullet-2.svg"
+        },
+        {
+          "id": "S03-single",
+          "role": "text",
+          "representation": "native",
+          "type": "text",
+          "text": "单次示例曲线，不能推断\n显著性。",
+          "bbox": [
+            1209,
+            253,
+            446,
+            108
+          ],
+          "z": 30,
+          "font_family": "Noto Sans SC",
+          "font_size_px": 37,
+          "font_weight": 500,
+          "color": "#001e46",
+          "text_align": "left",
+          "line_height": 1.46,
+          "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+          "file": "components/single.json",
+          "semantic_role": "text",
+          "path": "layers/S03/native-text/S03-single.json"
+        },
+        {
+          "id": "S03-takeaway",
+          "role": "text",
+          "representation": "native",
+          "type": "text",
+          "text": "机理判断仍需重复与对照。",
+          "bbox": [
+            1209,
+            398,
+            452,
+            59
+          ],
+          "z": 30,
+          "font_family": "Noto Sans SC",
+          "font_size_px": 37,
+          "font_weight": 500,
+          "color": "#001e46",
+          "text_align": "left",
+          "line_height": 1.46,
+          "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+          "file": "components/takeaway.json",
+          "semantic_role": "text",
+          "path": "layers/S03/native-text/S03-takeaway.json"
+        },
+        {
+          "id": "S03-qualifier-frame",
+          "role": "decoration",
+          "file": "components/qualifier-frame.svg",
+          "bbox": [
+            1168,
+            787,
+            470,
+            88
+          ],
+          "z": 20,
+          "representation": "native",
+          "semantic_role": "decoration",
+          "path": "layers/S03/components/qualifier-frame.svg"
+        },
+        {
+          "id": "S03-qualifier",
+          "role": "text",
+          "representation": "native",
+          "type": "text",
+          "text": "演示数据，非实验结果",
+          "bbox": [
+            1197,
+            803,
+            424,
+            62
+          ],
+          "z": 30,
+          "font_family": "Noto Sans SC",
+          "font_size_px": 40,
+          "font_weight": 700,
+          "color": "#e22c11",
+          "text_align": "center",
+          "line_height": 1.3,
+          "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+          "file": "components/qualifier.json",
+          "semantic_role": "text",
+          "path": "layers/S03/native-text/S03-qualifier.json"
+        }
+      ],
+      "original_inventory_path": "layers/S03/inventory.json"
+    }
+  ],
+  "font_policy": "ordinary editable system-font copy; source raster font unknown; short special typography is isolated PNG art, not font software"
+}

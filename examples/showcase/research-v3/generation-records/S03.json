@@ -1,0 +1,72 @@
+{
+  "schema": "apw-concept-generation-record/v1",
+  "slide_id": "S03",
+  "artifact_kind": "standalone-slide-concept",
+  "created_at_utc": "2026-10-12T17:33:42Z",
+  "tool": "Codex built-in image_gen",
+  "tool_call": "image_gen.imagegen",
+  "actor": "agent",
+  "source_output": {
+    "path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-62713539-1e39-4702-ab96-eeeaa04db358.png",
+    "sha256": "FF31EBC4CDD9BECB65E4F0E0C985ED9579D49D318C9F95AACE96B07210372307",
+    "format": "PNG",
+    "dimensions_px": [
+      1672,
+      941
+    ],
+    "color_mode": "RGB"
+  },
+  "copies": [
+    {
+      "path": "design/S03/concept.png",
+      "sha256": "FF31EBC4CDD9BECB65E4F0E0C985ED9579D49D318C9F95AACE96B07210372307"
+    },
+    {
+      "path": "project/concepts/S03.png",
+      "sha256": "FF31EBC4CDD9BECB65E4F0E0C985ED9579D49D318C9F95AACE96B07210372307"
+    }
+  ],
+  "prompt": {
+    "path": "design/S03/prompt.txt",
+    "sha256": "1C6593C4387603AF8605E88EC68AF0004359E0988E0221559AF823C528AF5C67"
+  },
+  "frozen_input_snapshot": {
+    "path": "project/provenance/concept-input-hash-snapshot.json",
+    "sha256": "65B96FA6B34336F3A9A1B6A2EEE87AD7EDC9094DA801CDFAA6D44FF9564F215A"
+  },
+  "frozen_inputs": {
+    "brief.json": "381AE4068A88C0F0636A68D0EB516B17EEC76C256A23B10C7B3F6C1538BF175B",
+    "deck-spec.json": "EF2E9EFE4D99CE728B6FEE94F7AD575C132777D70D6A4FE4667B7545A7024DE8",
+    "reference-study.json": "7BEAF82ABDD10DBCE006EDB1D61CAB4ED3783B209975FDF4E0D6E07B49CBA70C",
+    "style-contract.json": "D74D6C36362C0EAEEAAA5579182A93D1AE628F0C8D44EDC5EBC17513C3DA2BE4"
+  },
+  "style_reference": {
+    "slide_id": "S01",
+    "path": "design/S01/concept.png",
+    "sha256": "75CE88FD82D195E5DA0DDDC7500C75D748E49624BE309257A9CB140A7F248B88",
+    "direction_status": "agent-selected; reviewed by root for continuation"
+  },
+  "references": [
+    {
+      "id": "R175",
+      "path": "project/references/case175.jpg",
+      "sha256": "3614CA30899BD62956DE104B4E75ECA1A681582504E916544B5405ADAC6E5B46",
+      "use": "asymmetric editorial hierarchy and purposeful whitespace"
+    },
+    {
+      "id": "R341",
+      "path": "project/references/case341.jpg",
+      "sha256": "A8E0C2D57A2C4CDD0DBBAB23A7914016C219BD706EBDB430B837B506AFBA2C3D",
+      "use": "clear scientific relationships and precise linework"
+    }
+  ],
+  "review_state": {
+    "user_visual_acceptance": "not claimed",
+    "formal_gates": "not claimed",
+    "pending": "root visual review"
+  },
+  "limitations": [
+    "The concept is a flattened PNG; internal text and illustration elements are not individually editable.",
+    "No PPTX has been assembled for this slide."
+  ]
+}

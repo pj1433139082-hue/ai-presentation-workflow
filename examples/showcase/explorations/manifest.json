@@ -1,0 +1,118 @@
+{
+  "status": "concept-exploration",
+  "pptx_status": "not-built",
+  "user_style_feedback": "positive",
+  "user_pptx_feedback": "not-recorded",
+  "files": [
+    {
+      "path": "A-precision/generation-record.json",
+      "sha256": "4898af1d36aadc8afb50aca5cde1a6a635826a3b72386528a0dd6c9a5908f9cd",
+      "bytes": 1189
+    },
+    {
+      "path": "A-precision/imagegen-prompt.md",
+      "sha256": "c1d026c51bc49c5abf2ac13003a22640749a0eff7b2db4ae87ef191badb28b8c",
+      "bytes": 3253
+    },
+    {
+      "path": "A-precision/imagegen-returned-original.png",
+      "sha256": "a7cd34d4a15fff4af98cb68e50b2e926bbec1e15aedb7055d7a5cb56827dde18",
+      "bytes": 2573961
+    },
+    {
+      "path": "A-precision/provenance.json",
+      "sha256": "05bda929d0159c5f71cfb50a7a63ad63bf85f4eada1b5aad1d39e66d38e5f7a3",
+      "bytes": 11466
+    },
+    {
+      "path": "A-precision/README.md",
+      "sha256": "3b3a2047501b4cf14701d588491081022d334e40e8fa21b6c9e45a7b7580658e",
+      "bytes": 1034
+    },
+    {
+      "path": "A-precision/references/case355.jpg",
+      "sha256": "f9ac45416e60558523f45fb0d6fc39a73f8aabe656ae734b837d28a9ba4ccf35",
+      "bytes": 434462
+    },
+    {
+      "path": "A-precision/references/case367.jpg",
+      "sha256": "0d481899ba6e0dd23ec7c751efd462e1e9c1d1358603670f45864c693a6ecc8e",
+      "bytes": 334839
+    },
+    {
+      "path": "A-precision/references/case453-industrial-reference.jpg",
+      "sha256": "e0bfb87118cfb50004940dd5b84b242705b785650ad3568f182ebf5808574036",
+      "bytes": 254099
+    },
+    {
+      "path": "A-precision/selected-source-prompts.md",
+      "sha256": "ceea08a3aebf6cbaf5b83a616dd28b5921fb2768009ae4f4dd19fe171a830040",
+      "bytes": 6532
+    },
+    {
+      "path": "B-editorial/case-analysis.md",
+      "sha256": "ddfea59cc08759947c680c9aaad62a949d5f9888540ca97ced9608b82f867047",
+      "bytes": 1695
+    },
+    {
+      "path": "B-editorial/cover.png",
+      "sha256": "eb733fa172267f0921b25cf008513dc39b5f9236cb4e2d4c893f36640ad0f8de",
+      "bytes": 2585977
+    },
+    {
+      "path": "B-editorial/generation-record.md",
+      "sha256": "f716487affd6f42578ffdc7577e189cd66b3f259d657f901e8745c23a0e26779",
+      "bytes": 1468
+    },
+    {
+      "path": "B-editorial/prompt.md",
+      "sha256": "ce601501ce082f0dbc9922a085425597c8c7ce9757582e22f14b4ba77b825a11",
+      "bytes": 2872
+    },
+    {
+      "path": "B-editorial/references/case355.jpg",
+      "sha256": "f9ac45416e60558523f45fb0d6fc39a73f8aabe656ae734b837d28a9ba4ccf35",
+      "bytes": 434462
+    },
+    {
+      "path": "B-editorial/references/case511.jpg",
+      "sha256": "cfdecfee76d725ba586e9d02a35d38ef53ca45d6a6c0c4e6bc233062df83dc6a",
+      "bytes": 254206
+    },
+    {
+      "path": "B-editorial/source-cases.json",
+      "sha256": "e7b885cb36d97e9c9e6d2fd7ab0059122dee4921191107034f2425f23c42946b",
+      "bytes": 5703
+    },
+    {
+      "path": "C-nature/concept-slide.png",
+      "sha256": "a2d43ee314927b91e3dd3c11678c591210d0bfce567bdc8be5f9348a7435bd20",
+      "bytes": 3120256
+    },
+    {
+      "path": "C-nature/prompt.md",
+      "sha256": "e5dc4b098fbb513be79473ae5e2fe87d1cd3fab99c3f178ac9ce0e370da3348c",
+      "bytes": 2965
+    },
+    {
+      "path": "C-nature/provenance.md",
+      "sha256": "0f9469824ed442b55cc613a4aa3ebb0e9cec3db7c2a831b5ad1b0639d4ae4c7f",
+      "bytes": 3394
+    },
+    {
+      "path": "C-nature/source-prompts.json",
+      "sha256": "f33b8c7253371c7d10041f0cb3dca022d6ae2b572c5e8e97f86ac530767f0392",
+      "bytes": 4090
+    },
+    {
+      "path": "index.html",
+      "sha256": "f01785c0eaf88a082c20d4c682fdefd0b58098f5b7db18ba36cf5b6ffa183375",
+      "bytes": 4113
+    },
+    {
+      "path": "user-style-feedback.json",
+      "sha256": "52d3869128c12efb56196e8e4d619b0d83a27b2790aff5e8629919f06613e3e3",
+      "bytes": 777
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+Create one finished Chinese presentation concept slide, landscape 16:9, S04 of the same fictional campus reuse service pitch. Keep the warm, bright editorial language and palette from the supplied S01 style anchor, but use a substantially different layout from the prior process page.
+
+Visual concept: a beautiful illustrated-but-believable campus planning map on warm paper, viewed at a slight angle on a shared desk. One generic dorm building and a small handoff point anchor the map; a red-orange route loops through four weeks, with a few photographed or hand-rendered everyday objects and small moments of service setup. This is a planned pilot storyboard/map, not a real campus map or an actual field report. No school name, campus logo, official seals, fake survey results, check marks that imply completed work, or real institutional signage. Make it feel like a clear editorial plan page, not a fake app dashboard, not a grid of cards, and not a repeat of S03's four-step process.
+
+Render only this exact Chinese copy, with the numbers and punctuation preserved. Use a clear visual hierarchy and keep all words legible:
+主标题：先在一栋宿舍楼，试跑四周
+核心句：以小范围试点验证周转、等待时间和运营负担。
+范围假设：范围假设｜1栋楼 · 4周 · 最多40件
+第1周：第1周｜定规则，设登记点
+第2至3周：第2–3周｜登记、检查、匹配、交接
+第4周：第4周｜复盘流程与参与意愿
+观察指标：观察指标｜成功交接数 / 匹配时长 / 人工用时
+页脚说明：试点方案示例 · 尚未实施
+
+Show the four-week route as an uncompleted proposal with future-looking markers. Put the observation measures in a clean, legible editorial footer. Keep text inside safe margins. Single slide image only, no poster mockup, no multi-slide collage, no real results or invented campus identity.

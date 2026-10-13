@@ -1,0 +1,33 @@
+{
+  "slide_id": "S06",
+  "stage": "prepared-before-generation",
+  "contract_input_sha256": {
+    "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+    "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "prompt_path": "provenance/pages/S06/prompt.txt",
+  "prompt_sha256": "e4e9933b6a0822b41fd17079c2396e27b3482e0334a17fd7ecc5dd8451a1c305",
+  "copy_map_sha256": "2abb8c9943df2fa37efd3fb6b173a0d3119d7d52fde9b5c159f07e687fb4d9c3",
+  "source_ids": [
+    "EXAMPLE"
+  ],
+  "selected_design_references": [
+    {
+      "reference_id": "RPROPOSAL-S01",
+      "path": "references/proposal-S01-style-anchor.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "actual_image_tool_input": {
+    "request_type": "new full-page concept image",
+    "reference_images_passed": [],
+    "reason": "Built-in image_gen new-image route; reference observations are expressed in the prompt without attaching edit inputs."
+  }
+}

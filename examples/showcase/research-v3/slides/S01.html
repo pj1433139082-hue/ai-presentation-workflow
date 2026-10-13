@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S01｜从通量衰减到验证路径</title><style>
+:root{--paper:#f6f2e9;--ink:#26231f;--line:#514a42;--copper:#a87548;--wash:#e6d9ca}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 'Microsoft YaHei',system-ui,sans-serif}
+a{color:#704b31}a:hover{color:#3b281a}.shell{max-width:1180px;margin:auto;padding:28px 24px 64px}
+header{border-bottom:1px solid var(--line);padding:4px 0 22px;margin-bottom:24px}
+h1,h2,h3{line-height:1.2}h1{font-family:Georgia,'Noto Serif CJK SC',serif;font-size:clamp(32px,5vw,58px);font-weight:500;letter-spacing:-.025em;margin:.15em 0}
+h2{font-family:Georgia,'Noto Serif CJK SC',serif;font-size:clamp(25px,3vw,36px);font-weight:500}
+.eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#65594c}
+.accent{color:#704b31}.lead{max-width:760px;font-size:20px}
+.story{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:24px 0}
+.story span{border:1px solid #9a8e80;border-radius:999px;padding:5px 12px;font-size:14px;background:#faf8f3}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.card{border-top:2px solid var(--copper);padding:14px 0 22px}
+.card img{display:block;width:100%;height:auto;border:1px solid #cfc5b8;background:#fff}
+.card h2{font-size:25px;margin:12px 0 4px}.card p{margin:.3em 0}
+.btn{display:inline-block;border:1px solid var(--line);border-radius:2px;padding:7px 12px;text-decoration:none;margin:6px 8px 6px 0}
+.panel{border-left:3px solid var(--copper);padding:4px 18px;margin:22px 0;background:rgba(230,217,202,.24)}
+.copy-list{padding-left:22px}.copy-list li{margin:.25em 0}.evidence{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.ref{border:1px solid #bfb3a5;padding:12px}.ref img{display:block;width:100%;height:auto}
+.actual{max-width:none;width:auto;height:auto;display:block}.viewport{overflow:auto;border:1px solid #cfc5b8;background:#fff;padding:8px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#fffdf9;border:1px solid #ded5c9;padding:14px;font-size:13px}
+footer{border-top:1px solid #bfb3a5;margin-top:32px;padding-top:12px;font-size:14px;color:#5f584f}
+
+</style></head><body><div class="shell"><header><p class="eyebrow">01 / 06 · 研究问题</p><h1>从通量衰减到验证路径</h1><p class="lead">通量下降，发生了什么？</p><a class="btn" href="../index.html">返回六页图库</a> <a class="btn" href="../all.html">全部原尺寸浏览</a></header><p><a href="../assets/S01.png" target="_blank" rel="noopener">打开原始 PNG（浏览器原尺寸）</a> · 1672 × 941 px</p><div class="viewport"><img class="actual" src="../assets/S01.png" alt="从通量衰减到验证路径"></div><section><h2>页面文案</h2><ul class="copy-list"><li>从通量衰减到验证路径</li><li>膜处理研究汇报</li><li>通量下降，发生了什么？</li><li>演示示例 · 非实验结果</li></ul></section><section><h2>实际生成提示词</h2><p><a href="../prompts/S01.txt">下载 prompt.txt</a></p><pre>Use case: scientific-educational
+Asset type: one finished 16:9 landscape Chinese research-presentation cover concept; concept-only, not an editable slide.
+Input images: Image 1 (Case 175) is a reference for asymmetrical editorial hierarchy and whitespace only. Image 2 (Case 341) is a reference for precise scientific linework and clear geometric explanation only. Invent a new composition; do not copy either layout, text, or subject.
+Primary request: Create a high-end scientific-journal opening page for a membrane-treatment research meeting. A single, substantial two-dimensional editorial illustration of a membrane-like porous layer is the visual anchor: a close cutaway with fine ink contours, layered fibers, orderly pores, and restrained stippled texture. Keep it conceptually neutral; it should evoke a research question without illustrating or asserting any particular mechanism.
+Scene/backdrop: quiet ivory paper field (#F6F2E9), clean and warm but not aged or yellowed; subtle print texture only.
+Style/medium: refined contemporary science-magazine art direction, precise engraved linework and stipple, editorial typography, tactile printed surface; flat 2D illustration rather than a glossy render.
+Composition/framing: asymmetrical 16:9 landscape. Give the illustration strong visual mass across the right half, cropped with confidence at the right edge. Place the title and supporting copy in a calm left-side field with clear reading order and generous but purposeful whitespace. Let the linework and typography create the hierarchy; do not divide the page into cards or a rigid dashboard. Keep the main title prominent but moderate in scale, not an oversized black block. The page should feel composed and complete, not empty.
+Color palette: ink black (#26231F) for type and linework, ivory (#F6F2E9) for the field, and one restrained warm-ochre/copper accent (#A87548) used sparingly for a few structural marks. No additional accent colors.
+Text (verbatim; use only these four strings, once each, in clear Simplified Chinese):
+“从通量衰减到验证路径”
+“膜处理研究汇报”
+“通量下降，发生了什么？”
+“演示示例 · 非实验结果”
+Typography: an elegant Chinese Song/Ming-style display face for the title and research question, paired with clean readable Chinese sans-serif for the subtitle and footer. Preserve every character and punctuation exactly. Keep all four strings legible at presentation size; footer is small but readable.
+Constraints: no chart or data points on this cover; no claims, values, labels, annotations, units, scales, or text beyond the four strings above. The membrane image is a conceptual editorial illustration only, not a micrograph, real device, or evidence of an observed structure. Do not imply fouling, blockage, performance, or a proven causal mechanism. Keep the accent color limited to the warm ochre/copper specified above.
+Avoid: giant heavy headline, stock water photography, glossy 3D, fake waves or floating droplets, glow effects, laboratory scenes, pseudo-micrograph detail, causal arrows, warning boxes, rounded cards, repeated columns, UI elements, logos, watermarks, dense explanatory text, random symbols, duplicated text, or garbled Chinese.
+</pre></section><section><h2>生成记录</h2><p><a href="../generation-records/S01.json">打开 generation-record.json</a></p><pre>{
+  &quot;schema&quot;: &quot;apw-concept-generation-record/v1&quot;,
+  &quot;slide_id&quot;: &quot;S01&quot;,
+  &quot;artifact_kind&quot;: &quot;standalone-slide-concept&quot;,
+  &quot;created_at_utc&quot;: &quot;2026-10-12T17:27:42.0583706Z&quot;,
+  &quot;timestamp_basis&quot;: &quot;filesystem CreationTimeUtc of original imagegen output; recorded after generation&quot;,
+  &quot;tool&quot;: &quot;Codex built-in image_gen&quot;,
+  &quot;tool_call&quot;: &quot;image_gen.imagegen&quot;,
+  &quot;actor&quot;: &quot;agent&quot;,
+  &quot;source_output&quot;: {
+    &quot;path&quot;: &quot;C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-d219d313-c6d7-43ca-96e2-2a590ed3a967.png&quot;,
+    &quot;sha256&quot;: &quot;75CE88FD82D195E5DA0DDDC7500C75D748E49624BE309257A9CB140A7F248B88&quot;,
+    &quot;format&quot;: &quot;PNG&quot;,
+    &quot;dimensions_px&quot;: [
+      1672,
+      941
+    ],
+    &quot;color_mode&quot;: &quot;RGB&quot;
+  },
+  &quot;copies&quot;: [
+    {
+      &quot;path&quot;: &quot;design/S01/concept.png&quot;,
+      &quot;sha256&quot;: &quot;75CE88FD82D195E5DA0DDDC7500C75D748E49624BE309257A9CB140A7F248B88&quot;
+    },
+    {
+      &quot;path&quot;: &quot;project/concepts/S01.png&quot;,
+      &quot;sha256&quot;: &quot;75CE88FD82D195E5DA0DDDC7500C75D748E49624BE309257A9CB140A7F248B88&quot;
+    }
+  ],
+  &quot;prompt&quot;: {
+    &quot;path&quot;: &quot;design/S01/prompt.txt&quot;,
+    &quot;sha256&quot;: &quot;3759F32375755799E671E708FE9C094E5561C9A0765BD42259FC13189C3F031D&quot;,
+    &quot;note&quot;: &quot;Prompt file was saved before generation; hash was verified afterward.&quot;
+  },
+  &quot;frozen_input_snapshot&quot;: {
+    &quot;path&quot;: &quot;project/provenance/concept-input-hash-snapshot.json&quot;,
+    &quot;sha256&quot;: &quot;65B96FA6B34336F3A9A1B6A2EEE87AD7EDC9094DA801CDFAA6D44FF9564F215A&quot;
+  },
+  &quot;frozen_inputs&quot;: {
+    &quot;brief.json&quot;: &quot;381AE4068A88C0F0636A68D0EB516B17EEC76C256A23B10C7B3F6C1538BF175B&quot;,
+    &quot;deck-spec.json&quot;: &quot;EF2E9EFE4D99CE728B6FEE94F7AD575C132777D70D6A4FE4667B7545A7024DE8&quot;,
+    &quot;reference-study.json&quot;: &quot;7BEAF82ABDD10DBCE006EDB1D61CAB4ED3783B209975FDF4E0D6E07B49CBA70C&quot;,
+    &quot;style-contract.json&quot;: &quot;D74D6C36362C0EAEEAAA5579182A93D1AE628F0C8D44EDC5EBC17513C3DA2BE4&quot;
+  },
+  &quot;references&quot;: [
+    {
+      &quot;id&quot;: &quot;R175&quot;,
+      &quot;path&quot;: &quot;project/references/case175.jpg&quot;,
+      &quot;sha256&quot;: &quot;3614CA30899BD62956DE104B4E75ECA1A681582504E916544B5405ADAC6E5B46&quot;,
+      &quot;prompt_path&quot;: &quot;project/provenance/reference-prompts/case175-original-prompt.txt&quot;,
+      &quot;use&quot;: &quot;asymmetric editorial hierarchy and purposeful whitespace&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R341&quot;,
+      &quot;path&quot;: &quot;project/references/case341.jpg&quot;,
+      &quot;sha256&quot;: &quot;A8E0C2D57A2C4CDD0DBBAB23A7914016C219BD706EBDB430B837B506AFBA2C3D&quot;,
+      &quot;prompt_path&quot;: &quot;project/provenance/reference-prompts/case341-original-prompt.txt&quot;,
+      &quot;use&quot;: &quot;clear scientific relationships and precise linework&quot;
+    }
+  ],
+  &quot;review_state&quot;: {
+    &quot;direction_status&quot;: &quot;agent-selected; root reviewed and authorized continuation&quot;,
+    &quot;user_visual_acceptance&quot;: &quot;not claimed&quot;,
+    &quot;formal_gates&quot;: &quot;not claimed&quot;,
+    &quot;pending&quot;: &quot;part of full six-page concept set; not a complete deck on its own&quot;
+  },
+  &quot;limitations&quot;: [
+    &quot;The concept is a flattened PNG; internal text and illustration elements are not individually editable.&quot;,
+    &quot;No PPTX has been assembled for this slide.&quot;
+  ]
+}</pre><p>APW 逐页绑定：<a href="../project-evidence/项目证据/provenance/pages/S01/generation-record.json">项目证据中的原记录</a></p></section><section><h2>研究来源与参考</h2><p><a href="../project-evidence/项目证据/sources/source-notes.md">本地示例来源与内容备忘</a> · <a href="../project-evidence/项目证据/reference-study.json">逐条参考分析</a> · <a href="../project-evidence/项目证据/concept-generation-log.json">当前输入/输出哈希绑定</a></p><p>本页来源 ID：EXAMPLE-FLUX-DATA</p></section><footer>示例概念图，不是实验结果，不是可编辑 PPTX。用户视觉反馈未记录。</footer></div></body></html>

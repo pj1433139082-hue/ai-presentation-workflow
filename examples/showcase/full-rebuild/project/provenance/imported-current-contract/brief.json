@@ -1,0 +1,17 @@
+{
+  "project_id": "hybrid-industry-sampler",
+  "quality_profile": "draft",
+  "audience": "查看技能展示效果及编辑能力的用户",
+  "goal": "验证产品封面、机制流程和数据内容页能从真实概念装配为可编辑PPTX",
+  "language": "zh-CN",
+  "source_map": [
+    {
+      "id": "EXAMPLE",
+      "kind": "manual-example",
+      "locator": "本轮明确虚构的产品、机制和示例数据",
+      "path": "source.md",
+      "sha256": "39073fb5e51471b8408a5defa7a06d6aa4faab169e676b0437f179f1f12570ba",
+      "truth_status": "illustrative"
+    }
+  ]
+}

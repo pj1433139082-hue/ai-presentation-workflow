@@ -1,0 +1,25 @@
+{
+  "project_id": "hybrid-industry-sampler",
+  "quality_profile": "draft",
+  "audience": "查看技能展示效果及编辑能力的用户",
+  "goal": "概念图全页分解；从空白画布重建原构图，逐项检查可独立复用范围",
+  "language": "zh-CN",
+  "source_map": [
+    {
+      "id": "EXAMPLE",
+      "kind": "manual-example",
+      "locator": "本轮明确虚构的产品、机制和示例数据",
+      "path": "source.md",
+      "sha256": "39073fb5e51471b8408a5defa7a06d6aa4faab169e676b0437f179f1f12570ba",
+      "truth_status": "illustrative"
+    }
+  ],
+  "delivery": {
+    "asset_scope": "full-slide",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03"
+    ]
+  }
+}

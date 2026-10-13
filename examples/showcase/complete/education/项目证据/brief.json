@@ -1,0 +1,44 @@
+{
+  "project_id": "industry-education-v2",
+  "audience": "成人视觉表达练习者与课程设计者（示例受众）",
+  "goal": "以四页说明一门虚构工作坊如何从读图、拆解进入实作与作品评阅，不声称真实课程或教学成效。",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "concept-png-set",
+    "aspect_ratio": "16:9",
+    "scope": "authorized-local-showcase-concepts-only",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04"
+    ]
+  },
+  "narrative": [
+    {
+      "slide_id": "S01",
+      "role": "说明从读图到做出一页作品的课程路径"
+    },
+    {
+      "slide_id": "S02",
+      "role": "用一张虚构活动海报练习识别阅读层级"
+    },
+    {
+      "slide_id": "S03",
+      "role": "把信息层级和关系转成版面操作"
+    },
+    {
+      "slide_id": "S04",
+      "role": "用具体标准评阅并规划下一轮修改"
+    }
+  ],
+  "source_map": [
+    {
+      "id": "EXAMPLE",
+      "truth_status": "illustrative",
+      "kind": "fictional_education_workshop",
+      "locator": "本项目课程、练习对象、反馈和成果均为虚构教学示例；不对应真实学校、机构、教师资质、认证、学员记录或学习成效。"
+    }
+  ]
+}

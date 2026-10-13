@@ -1,0 +1,356 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "科技创新作品答辩示例",
+      "message": "桥迹：把疑点变成可复核的近距线索。",
+      "reference_ids": [
+        "R361"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "科技创新作品答辩示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "桥迹：把疑点变成可复核的近距线索。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "descriptor",
+          "role": "secondary",
+          "text": "桥梁表面裂缝低功耗巡检节点 · 概念设计",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "虚构项目 · 非赛事官方材料",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "speaker_notes": "作品入口。桥迹是虚构概念项目名，画面是方案意向，不存在可展示的真实设备、团队或实测结果。",
+      "concept_path": "concepts/S01.png"
+    },
+    {
+      "id": "S02",
+      "title": "同一处疑点，怎样再看一次？",
+      "message": "巡检线索要能定位、成像、复核。",
+      "reference_ids": [
+        "R475"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "同一处疑点，怎样再看一次？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "巡检线索要能定位、成像、复核。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "scene",
+          "role": "body",
+          "text": "设定场景：细裂纹可能与表面纹理相混",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "alignment",
+          "role": "body",
+          "text": "换位后，复拍位置不易对齐",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "energy",
+          "role": "body",
+          "text": "持续采集与端侧能耗需要权衡",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "问题设定 · 非现场调研",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "speaker_notes": "需求页表达假设场景中的复看问题。文字不是现场调研或普遍事实；这里只说明为何提出近距定位、采样和复核的设计问题。",
+      "concept_path": "concepts/S02.png"
+    },
+    {
+      "id": "S03",
+      "title": "把一次近距采样拆成三步",
+      "message": "导向定位 → 斜光补亮 → 局部成像",
+      "reference_ids": [
+        "R361",
+        "R475"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把一次近距采样拆成三步",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "导向定位 → 斜光补亮 → 局部成像",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "index",
+          "role": "body",
+          "text": "疑点留档：图像附采样位置线索",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "原理示意 · 尚未验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "speaker_notes": "技术原理示意，不代表实际硬件结构、照明效果、成像能力或功耗。采样位置线索是待实现的设计目标。",
+      "concept_path": "concepts/S03.png"
+    },
+    {
+      "id": "S04",
+      "title": "组合构想：定距、斜照、留线索",
+      "message": "把三件事嵌入一次近距巡检动作。",
+      "reference_ids": [
+        "R361"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "组合构想：定距、斜照、留线索",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "把三件事嵌入一次近距巡检动作。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "guide",
+          "role": "body",
+          "text": "导向件｜约束近距姿态",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "light",
+          "role": "body",
+          "text": "斜向光｜强调表面起伏",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "index",
+          "role": "body",
+          "text": "疑点索引｜留存复看位置",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "原型构想 · 原创性与效果尚待核验",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "speaker_notes": "展示 proposed prototype 的结构组合。此处的“组合构想”不是已证明的新颖性，也没有竞品、专利或效果比较作为依据。",
+      "concept_path": "concepts/S04.png"
+    },
+    {
+      "id": "S05",
+      "title": "验证先看漏标，也看干扰",
+      "message": "计划：用已知标记试件，逐处对照人工标注。",
+      "reference_ids": [
+        "R475"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "验证先看漏标，也看干扰",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "计划：用已知标记试件，逐处对照人工标注。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "specimen",
+          "role": "body",
+          "text": "试件设定：标记线 3 · 划痕 2 · 污迹 1",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "result",
+          "role": "body",
+          "text": "虚构记录：候选 4 · 漏标 1 条线 · 干扰候选 2",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示数据 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "speaker_notes": "先提出验证方案：用已知标记试件并逐处对照人工标注。结果行是自编示例记录，不是真实实验、算法输出、准确率、重复数、置信区间或统计结论。其内部映射为3条标记线中2条候选、1条漏标，2处划痕形成2处干扰候选，1处污迹没有被记为候选；因此候选合计4。",
+      "concept_path": "concepts/S05.png"
+    },
+    {
+      "id": "S06",
+      "title": "筛查只给线索，不替代工程判断",
+      "message": "从标注试件走向受控现场验证，证据仍未形成。",
+      "reference_ids": [
+        "R475"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "筛查只给线索，不替代工程判断",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "从标注试件走向受控现场验证，证据仍未形成。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "body",
+          "text": "边界｜只讨论可见表面，不推断内部缺陷",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "next-lab",
+          "role": "body",
+          "text": "下一步｜复测漏标、误报与能耗",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "next-field",
+          "role": "body",
+          "text": "再下一步｜在受控条件下开展现场试验",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        },
+        {
+          "id": "status",
+          "role": "source",
+          "text": "概念计划 · 尚未执行",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-BRIDGE-INSPECTION"
+          ]
+        }
+      ],
+      "speaker_notes": "应用边界页。系统设想只涉及可见表面疑点提示，不能判断结构安全或内部缺陷。下一步是建议，不是已安排或已执行的试验。",
+      "concept_path": "concepts/S06.png"
+    }
+  ]
+}

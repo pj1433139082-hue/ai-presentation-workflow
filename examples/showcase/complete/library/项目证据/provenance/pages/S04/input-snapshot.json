@@ -1,0 +1,18 @@
+{
+  "slide_id": "S04",
+  "actor": "agent",
+  "tool": "Codex built-in image_gen",
+  "generation_status": "not-started",
+  "prepared_at": "2026-10-13T08:37:38+08:00",
+  "input_sha256": {
+    "brief.json": "9c82d65f4156a37db44f86c771ad9dcd1b2217fcd0f3b26e0ed993b27f72e458",
+    "deck-spec.json": "ea4496ab3a49f7775d72021063608f9d28b7b9bb75d1922955c1e6ad225f7d88",
+    "reference-study.json": "2096fd84da1debc82497e2a0ea3004c406f83c952a47e99ec7c8e5d023709dc4",
+    "style-contract.json": "3c1cd8312323597c5f64f71a8eb347c9e1ac8a66d64d14d011ea33366508b1e7"
+  },
+  "prompt_sha256": "0c15b4a51ff5dd6c99d04457227de0db94093362c19252cfb514b7bc5e2d65b7",
+  "prompt_path": "prompt.txt",
+  "reference_policy": "Style direction is described in the prompt from the frozen project reference study; no image file is supplied as a direct image_gen input.",
+  "user_visual_acceptance": "not-claimed",
+  "note": "Prepared prompt only; no generation success claimed."
+}

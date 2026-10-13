@@ -1,0 +1,40 @@
+{
+  "scope": "Preserved actual S04 and S05 concept revision evidence before package export.",
+  "S04": {
+    "attempt_01": {
+      "image": "S04/attempt-01/concept.png",
+      "image_sha256": "a390efd1c716f0b6b618244bd1fd1317e58ec8e6736140ab2132949a2be2d076",
+      "prompt": "S04/attempt-01/prompt.txt",
+      "prompt_sha256": "1423957588a858675399c2074694ea58bae898dcc5c0eb7f1b8f968993846253",
+      "generation_record": "S04/attempt-01/generation-record.json",
+      "generation_record_sha256": "1b1e35c3a0b166e478ca9eaad33fdcc8bc65ac9d9028030eac7eb10aff00b2bf"
+    },
+    "revision_02": {
+      "image": "S04/revision-02-concept.png",
+      "image_sha256": "1bcd686f69194fccd88f56b33c4322695068f711829dc0ade98be78a03d07a92",
+      "prompt": "S04/revision-02-prompt.txt",
+      "prompt_sha256": "1ffb60f97cf9cbc444e2458e80e13b5c87e449969b7b49a3ce483c5df2709fc2",
+      "generation_record": "S04/revision-02-generation-record.json",
+      "generation_record_sha256": "30bfbe1d2f1e2f26fbfd869f71c6f97c27ebf59d698bcb196e5d02a50c28c4f5"
+    },
+    "chain": "The revision-02 tool record explicitly points to attempt-01/generation-record.json and references the attempt image hash."
+  },
+  "S05": {
+    "attempt_01": {
+      "image": "S05/attempt-01/concept.png",
+      "image_sha256": "eec2ccc35960b9b4e4e0c1f671a303634691bf90475912d9f05f079aabfce9f8",
+      "prompt": "S05/attempt-01/initial-prompt.txt",
+      "prompt_sha256": "fc450b1dc34011439a353413faf77e36d25609aad8bb426c52b7da826e607aeb",
+      "tool_record": "not-present-in-workspace; first-image provenance is carried by revision-02-generation-record.json.revision_of"
+    },
+    "revision_02": {
+      "image": "S05/revision-02-concept.png",
+      "image_sha256": "b746711ff09146a7bda74eef5d087856d1d87719a9e856902f012beb469e4dda",
+      "prompt": "S05/revision-02-prompt.txt",
+      "prompt_sha256": "52f757600a68f22e0a702d074445e4a3ba1fffaec62a00743eb11b0cbe39080d",
+      "generation_record": "S05/revision-02-generation-record.json",
+      "generation_record_sha256": "3208d246efb44625cb212b1eb06d00af31c1c3292c07763ae89f74728c140f02"
+    },
+    "chain": "The first image path/hash and reason are preserved in the actual revision-02 tool record; the first image and initial prompt are archived byte-for-byte. No separate first-attempt tool record is invented."
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "status": "complete",
+  "binding_role": "post-generation-current-input-binding",
+  "binding_created_at": "2026-10-13T08:32:09+08:00",
+  "history_note": "每页的生成提示词与工具记录另存于 provenance/pages。input_sha256 绑定当前冻结输入，不单独证明生成工具历史上读取了这些 JSON。",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "status": "generated",
+      "output_path": "concepts/S01.png",
+      "output_sha256": "75ce88fd82d195e5da0dddc7500c75d748e49624be309257a9cb140a7f248b88",
+      "input_sha256": {
+        "brief": "381ae4068a88c0f0636a68d0eb516b17eec76c256a23b10c7b3f6c1538bf175b",
+        "deck_spec": "ef2e9efe4d99ce728b6fee94f7ad575c132777d70d6a4fe4667b7545a7024de8",
+        "reference_study": "7beaf82abdd10dbce006edb1d61cab4ed3783b209975fdf4e0d6e07b49cba70c",
+        "style_contract": "d74d6c36362c0eaeeaaa5579182a93d1ae628f0c8d44edc5ebc17513c3da2be4"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "从通量衰减到验证路径",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "subtitle",
+          "role": "secondary",
+          "text": "膜处理研究汇报",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "通量下降，发生了什么？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-FLUX-DATA",
+          "truth_status": "illustrative",
+          "locator": "本地自编示例数据与内容备忘；不是论文、真实实验记录或结论。",
+          "path": "sources/source-notes.md",
+          "sha256": "242b6d177ab7e5b42dddfdc9201713bb28b7a35d6fa0ad67caad81958d3b1954"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R175",
+          "path": "references/case175.jpg",
+          "sha256": "3614ca30899bd62956de104b4e75eca1a681582504e916544b5405adac6e5b46"
+        },
+        {
+          "reference_id": "R341",
+          "path": "references/case341.jpg",
+          "sha256": "a8e0c2d57a2c4cdd0dbbab23a7914016c219bd706ebdb430b837b506afba2c3d"
+        }
+      ],
+      "prompt_path": "provenance/pages/S01/prompt.txt",
+      "prompt_sha256": "3759f32375755799e671e708fe9c094e5561c9a0765bd42259fc13189c3f031d",
+      "generation_record_path": "provenance/pages/S01/generation-record.json",
+      "generation_record_sha256": "9be618d77c0cab1da33e36684c7538030f083f9c2f8da986f8c48c6c29d98c33"
+    },
+    {
+      "slide_id": "S02",
+      "status": "generated",
+      "output_path": "concepts/S02.png",
+      "output_sha256": "80e0b89a2ed6f1fd4f87a02cdabe5d22e2df91149ec80f0b4e1433ee5ae2859a",
+      "input_sha256": {
+        "brief": "381ae4068a88c0f0636a68d0eb516b17eec76c256a23b10c7b3f6c1538bf175b",
+        "deck_spec": "ef2e9efe4d99ce728b6fee94f7ad575c132777d70d6a4fe4667b7545a7024de8",
+        "reference_study": "7beaf82abdd10dbce006edb1d61cab4ed3783b209975fdf4e0d6e07b49cba70c",
+        "style_contract": "d74d6c36362c0eaeeaaa5579182a93d1ae628f0c8d44edc5ebc17513c3da2be4"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把观察、解释与验证分开",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "一条曲线，回答不了所有问题。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "observation",
+          "role": "body",
+          "text": "观察：示例通量随时间下降",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "explanation",
+          "role": "body",
+          "text": "解释：原因仍是候选假说",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "validation",
+          "role": "body",
+          "text": "验证：需要针对性的证据",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-FLUX-DATA",
+          "truth_status": "illustrative",
+          "locator": "本地自编示例数据与内容备忘；不是论文、真实实验记录或结论。",
+          "path": "sources/source-notes.md",
+          "sha256": "242b6d177ab7e5b42dddfdc9201713bb28b7a35d6fa0ad67caad81958d3b1954"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R175",
+          "path": "references/case175.jpg",
+          "sha256": "3614ca30899bd62956de104b4e75eca1a681582504e916544b5405adac6e5b46"
+        },
+        {
+          "reference_id": "R341",
+          "path": "references/case341.jpg",
+          "sha256": "a8e0c2d57a2c4cdd0dbbab23a7914016c219bd706ebdb430b837b506afba2c3d"
+        }
+      ],
+      "prompt_path": "provenance/pages/S02/prompt.txt",
+      "prompt_sha256": "74deff8400a3fd2783b624821ca7b4567ac9bb25aeb23f1e4267240e6543c542",
+      "generation_record_path": "provenance/pages/S02/generation-record.json",
+      "generation_record_sha256": "27363b0b485cee1541c2dfeb459ebf4261eaecd4803d28607669df6ee045f349"
+    },
+    {
+      "slide_id": "S03",
+      "status": "generated",
+      "output_path": "concepts/S03.png",
+      "output_sha256": "ff31ebc4cdd9becb65e4f0e0c985ed9579d49d318c9f95aace96b07210372307",
+      "input_sha256": {
+        "brief": "381ae4068a88c0f0636a68d0eb516b17eec76c256a23b10c7b3f6c1538bf175b",
+        "deck_spec": "ef2e9efe4d99ce728b6fee94f7ad575c132777d70d6a4fe4667b7545a7024de8",
+        "reference_study": "7beaf82abdd10dbce006edb1d61cab4ed3783b209975fdf4e0d6e07b49cba70c",
+        "style_contract": "d74d6c36362c0eaeeaaa5579182a93d1ae628f0c8d44edc5ebc17513c3da2be4"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "方法与观测：先定义，再记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "计划示意，尚未执行。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "baseline",
+          "role": "body",
+          "text": "定义初始基线 J₀",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "conditions",
+          "role": "body",
+          "text": "固定待研究的运行条件",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "measure",
+          "role": "body",
+          "text": "按时间记录归一化通量 J/J₀",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "controls",
+          "role": "body",
+          "text": "预先安排重复与对照",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-FLUX-DATA",
+          "truth_status": "illustrative",
+          "locator": "本地自编示例数据与内容备忘；不是论文、真实实验记录或结论。",
+          "path": "sources/source-notes.md",
+          "sha256": "242b6d177ab7e5b42dddfdc9201713bb28b7a35d6fa0ad67caad81958d3b1954"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R175",
+          "path": "references/case175.jpg",
+          "sha256": "3614ca30899bd62956de104b4e75eca1a681582504e916544b5405adac6e5b46"
+        },
+        {
+          "reference_id": "R341",
+          "path": "references/case341.jpg",
+          "sha256": "a8e0c2d57a2c4cdd0dbbab23a7914016c219bd706ebdb430b837b506afba2c3d"
+        }
+      ],
+      "prompt_path": "provenance/pages/S03/prompt.txt",
+      "prompt_sha256": "1c6593c4387603af8605e88ec68af0004359e0988e0221559af823c528af5c67",
+      "generation_record_path": "provenance/pages/S03/generation-record.json",
+      "generation_record_sha256": "4e182a0e4f4e0419a978e67b208e412cfacec9c6cb6f251946724a17b6da1dbb"
+    },
+    {
+      "slide_id": "S04",
+      "status": "generated",
+      "output_path": "concepts/S04.png",
+      "output_sha256": "1bcd686f69194fccd88f56b33c4322695068f711829dc0ade98be78a03d07a92",
+      "input_sha256": {
+        "brief": "381ae4068a88c0f0636a68d0eb516b17eec76c256a23b10c7b3f6c1538bf175b",
+        "deck_spec": "ef2e9efe4d99ce728b6fee94f7ad575c132777d70d6a4fe4667b7545a7024de8",
+        "reference_study": "7beaf82abdd10dbce006edb1d61cab4ed3783b209975fdf4e0d6e07b49cba70c",
+        "style_contract": "d74d6c36362c0eaeeaaa5579182a93d1ae628f0c8d44edc5ebc17513c3da2be4"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "先看通量变化，再决定验证什么",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "示例曲线不能推断显著性。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "chart-title",
+          "role": "secondary",
+          "text": "归一化通量（示例数据）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "x-axis",
+          "role": "caption",
+          "text": "时间（min）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "x-values",
+          "role": "body",
+          "text": "0 / 20 / 40 / 60",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "y-axis",
+          "role": "caption",
+          "text": "J/J₀",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "y-values",
+          "role": "body",
+          "text": "1 / 0.93 / 0.85 / 0.78",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-FLUX-DATA",
+          "truth_status": "illustrative",
+          "locator": "本地自编示例数据与内容备忘；不是论文、真实实验记录或结论。",
+          "path": "sources/source-notes.md",
+          "sha256": "242b6d177ab7e5b42dddfdc9201713bb28b7a35d6fa0ad67caad81958d3b1954"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R175",
+          "path": "references/case175.jpg",
+          "sha256": "3614ca30899bd62956de104b4e75eca1a681582504e916544b5405adac6e5b46"
+        },
+        {
+          "reference_id": "R341",
+          "path": "references/case341.jpg",
+          "sha256": "a8e0c2d57a2c4cdd0dbbab23a7914016c219bd706ebdb430b837b506afba2c3d"
+        }
+      ],
+      "prompt_path": "provenance/pages/S04/prompt.txt",
+      "prompt_sha256": "1ffb60f97cf9cbc444e2458e80e13b5c87e449969b7b49a3ce483c5df2709fc2",
+      "generation_record_path": "provenance/pages/S04/generation-record.json",
+      "generation_record_sha256": "30bfbe1d2f1e2f26fbfd869f71c6f97c27ebf59d698bcb196e5d02a50c28c4f5"
+    },
+    {
+      "slide_id": "S05",
+      "status": "generated",
+      "output_path": "concepts/S05.png",
+      "output_sha256": "b746711ff09146a7bda74eef5d087856d1d87719a9e856902f012beb469e4dda",
+      "input_sha256": {
+        "brief": "381ae4068a88c0f0636a68d0eb516b17eec76c256a23b10c7b3f6c1538bf175b",
+        "deck_spec": "ef2e9efe4d99ce728b6fee94f7ad575c132777d70d6a4fe4667b7545a7024de8",
+        "reference_study": "7beaf82abdd10dbce006edb1d61cab4ed3783b209975fdf4e0d6e07b49cba70c",
+        "style_contract": "d74d6c36362c0eaeeaaa5579182a93d1ae628f0c8d44edc5ebc17513c3da2be4"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "机理解释仍待验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "通量下降本身不能确定原因。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "deposit",
+          "role": "body",
+          "text": "表面沉积？待验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "structure",
+          "role": "body",
+          "text": "膜结构变化？待验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "operation",
+          "role": "body",
+          "text": "运行或测量因素？待验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-FLUX-DATA",
+          "truth_status": "illustrative",
+          "locator": "本地自编示例数据与内容备忘；不是论文、真实实验记录或结论。",
+          "path": "sources/source-notes.md",
+          "sha256": "242b6d177ab7e5b42dddfdc9201713bb28b7a35d6fa0ad67caad81958d3b1954"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R175",
+          "path": "references/case175.jpg",
+          "sha256": "3614ca30899bd62956de104b4e75eca1a681582504e916544b5405adac6e5b46"
+        },
+        {
+          "reference_id": "R341",
+          "path": "references/case341.jpg",
+          "sha256": "a8e0c2d57a2c4cdd0dbbab23a7914016c219bd706ebdb430b837b506afba2c3d"
+        }
+      ],
+      "prompt_path": "provenance/pages/S05/prompt.txt",
+      "prompt_sha256": "52f757600a68f22e0a702d074445e4a3ba1fffaec62a00743eb11b0cbe39080d",
+      "generation_record_path": "provenance/pages/S05/generation-record.json",
+      "generation_record_sha256": "3208d246efb44625cb212b1eb06d00af31c1c3292c07763ae89f74728c140f02"
+    },
+    {
+      "slide_id": "S06",
+      "status": "generated",
+      "output_path": "concepts/S06.png",
+      "output_sha256": "5eb66f3ef9bc2b767987c94ff8c7802ade5d0f485d49da98b5337b262d9126c8",
+      "input_sha256": {
+        "brief": "381ae4068a88c0f0636a68d0eb516b17eec76c256a23b10c7b3f6c1538bf175b",
+        "deck_spec": "ef2e9efe4d99ce728b6fee94f7ad575c132777d70d6a4fe4667b7545a7024de8",
+        "reference_study": "7beaf82abdd10dbce006edb1d61cab4ed3783b209975fdf4e0d6e07b49cba70c",
+        "style_contract": "d74d6c36362c0eaeeaaa5579182a93d1ae628f0c8d44edc5ebc17513c3da2be4"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "下一步：把问题变成可检验计划",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "先设计对照与重复，再收集证据。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "conditions",
+          "role": "body",
+          "text": "明确运行条件和记录项",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "control",
+          "role": "body",
+          "text": "设置针对性的对照",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "replicates",
+          "role": "body",
+          "text": "安排重复观测（数量待方案确定）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "criteria",
+          "role": "body",
+          "text": "预先定义比较与判断方法",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示示例 · 非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-FLUX-DATA"
+          ]
+        }
+      ],
+      "source_lineage": [
+        {
+          "source_id": "EXAMPLE-FLUX-DATA",
+          "truth_status": "illustrative",
+          "locator": "本地自编示例数据与内容备忘；不是论文、真实实验记录或结论。",
+          "path": "sources/source-notes.md",
+          "sha256": "242b6d177ab7e5b42dddfdc9201713bb28b7a35d6fa0ad67caad81958d3b1954"
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R175",
+          "path": "references/case175.jpg",
+          "sha256": "3614ca30899bd62956de104b4e75eca1a681582504e916544b5405adac6e5b46"
+        },
+        {
+          "reference_id": "R341",
+          "path": "references/case341.jpg",
+          "sha256": "a8e0c2d57a2c4cdd0dbbab23a7914016c219bd706ebdb430b837b506afba2c3d"
+        }
+      ],
+      "prompt_path": "provenance/pages/S06/prompt.txt",
+      "prompt_sha256": "fa08891b7afa20370fabd143e45cd4a4399ea097d9374d4a07e21ab56b28fbb0",
+      "generation_record_path": "provenance/pages/S06/generation-record.json",
+      "generation_record_sha256": "40bd4c35b7deab37fd1260d39d2a50a839daa9cf1fa8ecacf7adf3763fc89037"
+    }
+  ]
+}

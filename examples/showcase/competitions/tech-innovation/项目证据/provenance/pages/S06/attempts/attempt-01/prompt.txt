@@ -1,0 +1,15 @@
+Create ONE widescreen 16:9 landscape final concept slide for a fictional Chinese engineering proposal called “桥迹”. Use the attached reference image only for clear technical section logic and restrained engineering editorial style; do not copy its optical bench, labels, equipment, text, or layout. This is a boundary-and-next-steps page, not a result page.
+
+Render exactly the following Simplified Chinese copy, no other words:
+large title: “筛查只给线索，不替代工程判断”
+large takeaway: “从标注试件走向受控现场验证，证据仍未形成。”
+boundary statement: “边界｜只讨论可见表面，不推断内部缺陷”
+next step: “下一步｜复测漏标、误报与能耗”
+later step: “再下一步｜在受控条件下开展现场试验”
+small but clearly readable footer: “概念计划 · 尚未执行”
+
+Composition: a quiet, confident engineering editorial finale. On the left, a restrained cutaway of a bridge-surface layer with a visible surface mark and a clearly opaque, unexamined inner section; the concept device merely points at the visible surface. Make the visual distinction “surface cue versus unknown interior” clear without adding labels. Across the right/lower area, draw one elegant open route line from a marked specimen toward a future controlled field trial, with both future steps visibly unfinished and no checkmarks. Do not show an achieved field deployment or a structural-safety verdict.
+
+Visual language: return to the graphite/navy background for a bookend with the cover, cool white typography, muted concrete gray and a small amber path. Use spacious large Chinese text, subtle metallic drafting lines and calm negative space. No repeated cards, no chart or quantitative results.
+
+Avoid additional text, measurement values, accuracy claims, energy savings, structural safety claims, hidden-defect conclusions, real bridge evidence, brand marks, awards, school names, patents, timelines/dates, completed-status checkmarks, official contest logos, or any implication of actual execution or competition compliance.

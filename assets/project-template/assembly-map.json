@@ -1,7 +1,11 @@
 {
   "backend": null,
+  "status": null,
   "output": null,
   "sha256": null,
+  "input_sha256": null,
+  "render_backend": null,
+  "renders": [],
   "slides": [
     {
       "slide_id": "S01",
@@ -9,7 +13,9 @@
       "fill_slot_ids": ["F01"],
       "flattened_concept_used": false,
       "output_index": 1,
-      "pptx_part": null
+      "pptx_part": null,
+      "objects": [],
+      "slots": []
     }
   ]
 }

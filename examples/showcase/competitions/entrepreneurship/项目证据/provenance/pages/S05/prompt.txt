@@ -1,0 +1,14 @@
+Create one complete landscape 16:9 Chinese concept slide, S05 of the same fictional campus reuse-service pitch. Keep the warm bright editorial identity from S01, but let this page feel like a considered financial note spread, not the cover, route map, process, or a dashboard.
+
+Visual approach: a sunlit shared worktable with one used desk lamp, a pencil, and a large unbranded handmade paper ledger sheet. Use a strong asymmetrical composition: the paper ledger itself anchors the page, with a very clear typographic equation and just enough photographic texture around it. A few terracotta and deep-green marks may guide the eye. This is a hypothetical example calculation, not a real account, receipt, investor document, or measured business record. No logo, official stamp, customer quote, cash photo, growth graph, market-size chart, or invented financial metric. Do not use a grid of cards. Keep the arithmetic visually unmistakable and legible.
+
+Render only these exact Chinese phrases and amounts, with all signs, units, and arithmetic preserved. Do not add any other readable text:
+主标题：先把小账摊开，再判断模式能否跑通
+核心句：示例测算：单月收入假设 ¥150，成本估算 ¥450。
+收入假设：收入假设｜30次 × ¥5/次 = ¥150
+成本假设：成本假设｜耗材 ¥90 + 运送 ¥120 + 运营工时折算 ¥240 = ¥450
+示例差额：示例差额｜¥150 − ¥450 = −¥300
+优先验证：优先验证｜愿付金额 · 单件运营耗时 · 周转率
+页脚说明：示例测算 · 非真实经营数据
+
+Make ¥150 income, ¥450 cost, and −¥300 difference clearly distinct but connected by the arithmetic. Keep every label comfortably legible and inside safe margins. One complete presentation slide image only, no mockup, no multiple-page collage, no promise of profitability.

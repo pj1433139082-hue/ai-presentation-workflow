@@ -1,0 +1,154 @@
+{
+  "slide_id": "S02",
+  "status": "generated",
+  "generator": "Codex built-in image_gen",
+  "generated_at_utc": "2026-10-13 13:15:35 UTC",
+  "prompt_path": "provenance/pages/S02/prompt.txt",
+  "prompt_sha256": "e1aa11bfe28ddd0c6e6b413d0b50b56217948a2e928593a371696af7b6d471bb",
+  "input_snapshot_path": "provenance/pages/S02/input-snapshot.json",
+  "input_snapshot_sha256": "22cd8a19ffded824cf4e402cb38dc0b4126027a4a9bc250090834a86c9c65804",
+  "contract_input_sha256": {
+    "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+    "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "copy_map": [
+    {
+      "id": "title",
+      "role": "title",
+      "text": "目标完成度，逐项落到材料链",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "takeaway",
+      "role": "key-takeaway",
+      "text": "三个立项目标都有对应的示例交付状态。",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "goal1",
+      "role": "body",
+      "text": "目标一｜记录降雨后水位变化",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "status1",
+      "role": "body",
+      "text": "示例进度｜6 次记录：5 次完整、1 次缺失",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "goal2",
+      "role": "body",
+      "text": "目标二｜比较两种基质入渗表现",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "status2",
+      "role": "body",
+      "text": "示例进度｜2 类基质 × 3 次重复，共 6 组台架试验",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "goal3",
+      "role": "body",
+      "text": "目标三｜提出维护与优化建议",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "status3",
+      "role": "body",
+      "text": "示例进度｜维护建议稿与研究报告（概念交付）",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "source",
+      "role": "source",
+      "text": "结题情境示例 · 非真实项目成果",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "page",
+      "role": "page-number",
+      "text": "02 / 06",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    }
+  ],
+  "copy_map_sha256": "a84c1bb87d64fd75874116cba66df7c88ae514897f01a566a30d83ccd2b79c44",
+  "selected_reference_images": [
+    {
+      "reference_id": "RPROPOSAL-S01",
+      "path": "references/proposal-S01-style-anchor.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "actual_passed_reference_images": [],
+  "actual_tool_call": {
+    "request_type": "new full-page concept image",
+    "prompt_sha256": "e1aa11bfe28ddd0c6e6b413d0b50b56217948a2e928593a371696af7b6d471bb",
+    "reference_images_passed": [],
+    "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-fbf67685-cb1d-48e1-bc7d-140dcc2104e4.png",
+    "tool_output_sha256": "1acd5b4da7a42728b7284bdc6227de975ad293325f9b95a81f1b96750bb1cc89",
+    "tool_output_hint": "Generated image saved by Codex built-in image_gen; original retained."
+  },
+  "output_path": "concepts/S02.png",
+  "output_sha256": "1acd5b4da7a42728b7284bdc6227de975ad293325f9b95a81f1b96750bb1cc89",
+  "design_copy_path": "design/S02/concept.png",
+  "design_copy_sha256": "1acd5b4da7a42728b7284bdc6227de975ad293325f9b95a81f1b96750bb1cc89",
+  "image_dimensions_px": {
+    "width": 1672,
+    "height": 941,
+    "aspect_ratio": "1672:941"
+  },
+  "history": [
+    {
+      "attempt": 1,
+      "status": "generated",
+      "prompt_sha256": "e1aa11bfe28ddd0c6e6b413d0b50b56217948a2e928593a371696af7b6d471bb",
+      "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-fbf67685-cb1d-48e1-bc7d-140dcc2104e4.png",
+      "tool_output_sha256": "1acd5b4da7a42728b7284bdc6227de975ad293325f9b95a81f1b96750bb1cc89",
+      "output_sha256": "1acd5b4da7a42728b7284bdc6227de975ad293325f9b95a81f1b96750bb1cc89",
+      "note": "Initial generation; tool output was copied without modification."
+    }
+  ],
+  "agent_inspection": {
+    "reviewed_page": "S02",
+    "finding": "All listed copy, objective labels, exact record/trial counts, fictional-status label, and page number are legible in the generated image. No measured effect or unsupported real-project claim is shown."
+  }
+}

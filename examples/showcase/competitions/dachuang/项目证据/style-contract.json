@@ -1,0 +1,40 @@
+{
+  "version": "competition-dachuang-v1",
+  "selected_reference_ids": [
+    "R339"
+  ],
+  "direction_actor": "agent",
+  "direction_reason": "授权展示库扩展；代理按自然主体参考选定的视觉方向，尚非用户接受。",
+  "canvas": {
+    "aspect_ratio": "16:9"
+  },
+  "palette": {
+    "background": "#FAFCF9",
+    "primary_text": "#183D2E",
+    "accent": "#789A57",
+    "water": "#8DC9D9"
+  },
+  "typography": {
+    "direction": "中文编辑式大字，正文层次清晰，按内容决定字号"
+  },
+  "graphic_language": [
+    "摄影质感的自然与装置概念",
+    "剖面、记录、时间路径服从问题和方法",
+    "轻盈留白与绿色生态气质"
+  ],
+  "layout_policy": "每页按叙事选择结构，不规定固定网格或卡片，不受未来组装对象限制。",
+  "slide_roles": {
+    "S01": "雨序",
+    "S02": "雨落之后，水去了哪里？",
+    "S03": "把问题写成可检验的目标",
+    "S04": "一场降雨，一份可追溯记录",
+    "S05": "先把条件准备好",
+    "S06": "十二周，把观察变成报告",
+    "S07": "以可核查的成果收尾"
+  },
+  "avoid": [
+    "伪造实验数据",
+    "虚构真实机构与获奖",
+    "每页同一种卡片网格"
+  ]
+}

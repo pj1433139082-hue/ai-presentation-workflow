@@ -1,0 +1,416 @@
+{
+  "status": "complete",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "status": "generated",
+      "output_path": "concepts/S01.png",
+      "output_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+      "input_sha256": {
+        "brief": "7b009b1dafc976b1f71aace05613f4d5aab55254f634e57a4858d3af466db046",
+        "deck_spec": "297700de30467546431014256c5f378ec6bf228c94e4eb4047172114124658d2",
+        "reference_study": "9962ab5b65f307f55f8fed2af43dd812ea9e5a703b47fe25930b14af4a661acf",
+        "style_contract": "e09f06ff66335a425c17fa6b18805757d9a95dc20f434c3369c2a486eca3d6a9"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "知栈",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "descriptor",
+          "role": "secondary",
+          "text": "桌面知识协作终端",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "让每次讨论，都接得上下一步。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "features",
+          "role": "body",
+          "text": "会后脉络留存 · 资料语义检索 · 任务线索串联",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "example",
+          "role": "source",
+          "text": "概念产品 · 示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R17",
+          "path": "references/case17.jpg",
+          "sha256": "97e848f6ad45cdd5b2c9f62c43725953afdcd52f3f2c261ec5869de92a730e85"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S01/generation-record.json",
+      "generation_record_sha256": "4dd7a580cd666e211e2619d2134a454108b639e2bacc56b57c65a83b654b22bc",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S02",
+      "status": "generated",
+      "output_path": "concepts/S02.png",
+      "output_sha256": "0fe18ffde97b2c4c70969c3b5491047d1962987770c72f9a6b593a873e18e16d",
+      "input_sha256": {
+        "brief": "7b009b1dafc976b1f71aace05613f4d5aab55254f634e57a4858d3af466db046",
+        "deck_spec": "297700de30467546431014256c5f378ec6bf228c94e4eb4047172114124658d2",
+        "reference_study": "9962ab5b65f307f55f8fed2af43dd812ea9e5a703b47fe25930b14af4a661acf",
+        "style_contract": "e09f06ff66335a425c17fa6b18805757d9a95dc20f434c3369c2a486eca3d6a9"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "一次讨论之后，线索落在哪里？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "示例场景：问题、资料与行动分散在不同记录里。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "question",
+          "role": "body",
+          "text": "讨论留下问题",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "context",
+          "role": "body",
+          "text": "资料提供背景",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "next",
+          "role": "body",
+          "text": "行动需要有人接续",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "scenario",
+          "role": "source",
+          "text": "场景示意 · 非用户研究",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R17",
+          "path": "references/case17.jpg",
+          "sha256": "97e848f6ad45cdd5b2c9f62c43725953afdcd52f3f2c261ec5869de92a730e85"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S02/generation-record.json",
+      "generation_record_sha256": "ab4e731ba6f98602ae5c879770712582e11a10ffd307085836838b3ef6e08f50",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S03",
+      "status": "generated",
+      "output_path": "concepts/S03.png",
+      "output_sha256": "9a659e0526503ca98f8ae49538c32c42b4f6f27a5e98d53a84477818c3d2d745",
+      "input_sha256": {
+        "brief": "7b009b1dafc976b1f71aace05613f4d5aab55254f634e57a4858d3af466db046",
+        "deck_spec": "297700de30467546431014256c5f378ec6bf228c94e4eb4047172114124658d2",
+        "reference_study": "9962ab5b65f307f55f8fed2af43dd812ea9e5a703b47fe25930b14af4a661acf",
+        "style_contract": "e09f06ff66335a425c17fa6b18805757d9a95dc20f434c3369c2a486eca3d6a9"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "从讨论、资料到行动",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "概念机制：每一步都保留来路与下一步。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "question",
+          "role": "body",
+          "text": "提出问题",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "body",
+          "text": "关联背景资料",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "lineage",
+          "role": "body",
+          "text": "标记资料来源",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "action",
+          "role": "body",
+          "text": "整理下一步行动",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "概念流程 · 非实际功能验证",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R17",
+          "path": "references/case17.jpg",
+          "sha256": "97e848f6ad45cdd5b2c9f62c43725953afdcd52f3f2c261ec5869de92a730e85"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S03/generation-record.json",
+      "generation_record_sha256": "09470d0b35e2367c6eed202551c588e8b755f329c578650a2f22255f6e6ff709",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S04",
+      "status": "generated",
+      "output_path": "concepts/S04.png",
+      "output_sha256": "7d09e2968ee17bfcf711368436c2f45b0381569ef3b3abdfbb50847bca6ed078",
+      "input_sha256": {
+        "brief": "7b009b1dafc976b1f71aace05613f4d5aab55254f634e57a4858d3af466db046",
+        "deck_spec": "297700de30467546431014256c5f378ec6bf228c94e4eb4047172114124658d2",
+        "reference_study": "9962ab5b65f307f55f8fed2af43dd812ea9e5a703b47fe25930b14af4a661acf",
+        "style_contract": "e09f06ff66335a425c17fa6b18805757d9a95dc20f434c3369c2a486eca3d6a9"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把概念放进一次团队例会",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "会前准备，会中记录，会后接续。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "before",
+          "role": "body",
+          "text": "会前｜整理议题与背景材料",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "during",
+          "role": "body",
+          "text": "会中｜标注问题与出处",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "after",
+          "role": "body",
+          "text": "会后｜汇总可执行的下一步",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "scenario",
+          "role": "secondary",
+          "text": "小团队会议 · 虚构情境",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示场景 · 非真实用户案例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R17",
+          "path": "references/case17.jpg",
+          "sha256": "97e848f6ad45cdd5b2c9f62c43725953afdcd52f3f2c261ec5869de92a730e85"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S04/generation-record.json",
+      "generation_record_sha256": "24a337b564e41a39306df3d5b67830d5fc8a51f0033d2d1e1a18554d25db59d3",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    },
+    {
+      "slide_id": "S05",
+      "status": "generated",
+      "output_path": "concepts/S05.png",
+      "output_sha256": "a3ab99de48119d584da7c1cf5d8e1fdfe64671c20a674b5ea02b57921b3a9b4b",
+      "input_sha256": {
+        "brief": "7b009b1dafc976b1f71aace05613f4d5aab55254f634e57a4858d3af466db046",
+        "deck_spec": "297700de30467546431014256c5f378ec6bf228c94e4eb4047172114124658d2",
+        "reference_study": "9962ab5b65f307f55f8fed2af43dd812ea9e5a703b47fe25930b14af4a661acf",
+        "style_contract": "e09f06ff66335a425c17fa6b18805757d9a95dc20f434c3369c2a486eca3d6a9"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "从一个小范围试用开始",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "先选一种重复讨论，再观察线索能否接得上。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "scope",
+          "role": "body",
+          "text": "选定一个常见议题类型",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "record",
+          "role": "body",
+          "text": "记录问题、资料来源与行动项",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "feedback",
+          "role": "body",
+          "text": "请参与者反馈哪里仍有断点",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "principle",
+          "role": "secondary",
+          "text": "先观察流程，不预设成效",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "试用方案示意 · 尚未执行",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R17",
+          "path": "references/case17.jpg",
+          "sha256": "97e848f6ad45cdd5b2c9f62c43725953afdcd52f3f2c261ec5869de92a730e85"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S05/generation-record.json",
+      "generation_record_sha256": "cf428de64b9108935e4ae8b4128b3146c4497919c53060ccb1685fa4caacc6e9",
+      "history_note": "Actual generation and revision lineage is in the record. Imported earlier images are current-contract bindings, not claims of historical JSON consumption."
+    }
+  ],
+  "binding_role": "current-complete-set-with-preserved-actual-generation-history",
+  "binding_created_at": "2026-10-13T08:40:15.994186+08:00",
+  "user_visual_acceptance": "not-recorded"
+}

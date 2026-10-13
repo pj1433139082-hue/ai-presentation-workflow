@@ -1,0 +1,63 @@
+{
+  "selected_reference_ids": [
+    "R17",
+    "R70",
+    "R341"
+  ],
+  "references": [
+    {
+      "id": "R17",
+      "status": "analyzed",
+      "image_path": "references/case17.jpg",
+      "sha256": "97e848f6ad45cdd5b2c9f62c43725953afdcd52f3f2c261ec5869de92a730e85",
+      "source_locator": "https://x.com/wory37303852",
+      "usage_note": "仅作视觉参考；不作为产品、工程或科研事实证据。",
+      "transferable_rules": [
+        "按任务选择图像、文字与关系的主次；完整原提示词见逐页provenance"
+      ],
+      "project_translation": [
+        "对应S01实际概念，逐页源案例/生成提示词/转译记录保留在provenance目录"
+      ],
+      "do_not_copy": [
+        "源品牌、源产品与事实主张",
+        "原案例的完整版式与具体图像"
+      ]
+    },
+    {
+      "id": "R70",
+      "status": "analyzed",
+      "image_path": "references/case70.jpg",
+      "sha256": "d0e47196f79af0cab2d9c96c9495b87788d39285582a383ac7a9861c7c053d37",
+      "source_locator": "https://x.com/hx831126",
+      "usage_note": "仅作视觉参考；不作为产品、工程或科研事实证据。",
+      "transferable_rules": [
+        "按任务选择图像、文字与关系的主次；完整原提示词见逐页provenance"
+      ],
+      "project_translation": [
+        "对应S02实际概念，逐页源案例/生成提示词/转译记录保留在provenance目录"
+      ],
+      "do_not_copy": [
+        "源品牌、源产品与事实主张",
+        "原案例的完整版式与具体图像"
+      ]
+    },
+    {
+      "id": "R341",
+      "status": "analyzed",
+      "image_path": "references/case341.jpg",
+      "sha256": "a8e0c2d57a2c4cdd0dbbab23a7914016c219bd706ebdb430b837b506afba2c3d",
+      "source_locator": "https://x.com/hqmank/status/2048587150544028084",
+      "usage_note": "仅作视觉参考；不作为产品、工程或科研事实证据。",
+      "transferable_rules": [
+        "按任务选择图像、文字与关系的主次；完整原提示词见逐页provenance"
+      ],
+      "project_translation": [
+        "对应S03实际概念，逐页源案例/生成提示词/转译记录保留在provenance目录"
+      ],
+      "do_not_copy": [
+        "源品牌、源产品与事实主张",
+        "原案例的完整版式与具体图像"
+      ]
+    }
+  ]
+}

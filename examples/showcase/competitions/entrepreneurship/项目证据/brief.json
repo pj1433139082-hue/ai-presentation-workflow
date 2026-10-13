@@ -1,0 +1,30 @@
+{
+  "project_id": "competition-entrepreneurship-reuse-service",
+  "audience": "浏览本地概念展示库、了解校园循环服务路演叙事的观众",
+  "goal": "用六页完整概念讲清虚构校园旧物循环服务“拾集”的需求情境、服务机制、差异化假设、试点计划、收支样例、团队任务与发展顺序。",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "concept-images",
+    "aspect_ratio": "16:9",
+    "scope": "local-showcase-only",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ]
+  },
+  "source_map": [
+    {
+      "id": "EXAMPLE-FICTIONAL-CAMPUS-REUSE-SERVICE",
+      "kind": "locally-authored-fictional-showcase-content",
+      "locator": "本地自编虚构服务方案、需求情境、试点范围、团队职责与收支算例；没有真实调研、客户、服务、试点或经营记录。",
+      "path": "sources/source-notes.md",
+      "sha256": "a0eb55d6dfb1ccef11bf492c467ee3e2246cf510435d09544d7811039f6c4348",
+      "truth_status": "illustrative"
+    }
+  ]
+}

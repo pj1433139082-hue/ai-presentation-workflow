@@ -1,0 +1,21 @@
+{
+  "industry": "education",
+  "page_count": 4,
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "delivery_mode": "concept",
+  "user_visual_acceptance": "not-recorded",
+  "pptx": "not-requested",
+  "concept_hashes": {
+    "S01": "b2ae250c8df800f9898b48a01c45daea62f6dd9582e390a8cf4de8406e3d6a24",
+    "S02": "0dbb5d02786227259de7515ebc2b515496c2a2365f69c2357cbbed17bdb02008",
+    "S03": "7e1bd11fb4153a7c6b50e399aae9a74d1c3033519f6ba1f44fb3ffcd5c016a0f",
+    "S04": "7e29647b22ae69a40b049b2f16086e7f510f406863939a76f4a114c84bea9671"
+  },
+  "archive_sha256": "3192805379dcc5e7522655c5a870347aee4ffffd9b1f8543eb368fb7c8370403",
+  "export_verified": true
+}

@@ -1,6 +1,7 @@
 import importlib.util
 import io
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -9,6 +10,8 @@ import zipfile
 from contextlib import contextmanager, redirect_stderr
 from pathlib import Path
 from unittest.mock import patch
+
+from PIL import Image, ImageDraw
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "visual_adapters.py"
@@ -91,6 +94,8 @@ def approved_project(request):
         style_payload = {
             "version": approved_style["version"],
             "direction": "approved test style",
+            "primary_visual_family": request.get("provider_id", "guizang-material-illustration"),
+            "secondary_provider_roles": {}, "explicit_visual_opt_ins": [],
         }
         style_path = root / "style-contract.json"
         style_path.write_text(json.dumps(style_payload), encoding="utf-8")
@@ -105,10 +110,89 @@ def approved_project(request):
             reference_sha = hashlib.sha256(path.read_bytes()).hexdigest()
             record["sha256"] = reference_sha
             concept_artifacts[record["path"]] = reference_sha
+        slide_id = request.get("slide_id", "S01")
+        items = [
+            {
+                "id": f"D{index:02d}", "kind": "visual", "component_id": element["id"],
+                "role": element["role"], "bbox": element["reference_bbox"],
+                "source_class": element.get("source_class", "design-object"),
+                "treatment": element.get("treatment", "reconstruct-single"),
+                "contains_ordinary_text_or_data": element.get("contains_ordinary_text_or_data", False),
+            }
+            for index, element in enumerate(request.get("elements", []), 1)
+            if isinstance(element, dict) and isinstance(element.get("id"), str)
+            and isinstance(element.get("role"), str)
+            and isinstance(element.get("reference_bbox"), list)
+        ]
+        coverage = {
+            "reviewer": "test-human", "semantic_passed": True,
+            "residual_passed": True, "independence_passed": True, "missing_items": [],
+        }
+        review_evidence = {}
+        artifacts = {}
+        concept_relative = request["approved_references"][0]["path"]
+        master_relative = f"components/masters/{slide_id}-v1.png"
+        master = root / master_relative
+        master.parent.mkdir(parents=True, exist_ok=True)
+        master.write_bytes(b"approved-textless-master")
+        master_sha = hashlib.sha256(master.read_bytes()).hexdigest()
+        artifacts[concept_relative] = concept_artifacts[concept_relative]
+        artifacts[master_relative] = master_sha
+        for field, suffix in (("review_image", "png"), ("review_packet", "md")):
+            relative = f"reviews/{slide_id}-decomposition.{suffix}"
+            path = root / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(f"approved-{field}".encode())
+            sha = hashlib.sha256(path.read_bytes()).hexdigest()
+            review_evidence[field] = {"path": relative, "sha256": sha}
+            artifacts[relative] = sha
+        decomposition = {
+            "version": "v1", "slides": [{
+                "slide_id": slide_id, "items": items,
+                "concept_path": concept_relative, "concept_sha256": concept_artifacts[concept_relative],
+                "master_path": master_relative, "master_sha256": master_sha,
+                "coverage_review": coverage, **review_evidence,
+            }],
+        }
+        map_path = root / "decomposition-map.json"
+        map_path.write_text(json.dumps(decomposition), encoding="utf-8")
+        artifacts["decomposition-map.json"] = hashlib.sha256(map_path.read_bytes()).hexdigest()
+        decisions = {
+            "object_inventory": {slide_id: items},
+            "coverage_review": {slide_id: coverage},
+            "review_evidence": {slide_id: review_evidence},
+        }
+        extra_gates = {}
+        extra_versions = {}
+        if request.get("provider_id") == "photo-postprocess-coach":
+            source = root / "sources" / "photo.png"
+            source.parent.mkdir(parents=True, exist_ok=True)
+            Image.new("RGB", (10, 10), (23, 73, 113)).save(source)
+            source_sha = hashlib.sha256(source.read_bytes()).hexdigest()
+            rights = root / "rights" / "photo-rights.json"
+            rights.parent.mkdir(parents=True, exist_ok=True)
+            rights.write_text(json.dumps({
+                "status": "confirmed", "approval_phrase": "确认素材使用权",
+                "confirmed_by": "test-human", "source_path": "sources/photo.png",
+                "source_sha256": source_sha, "media_class": "ordinary-photo",
+                "truth_sensitive": False, "classification_phrase": "确认普通照片",
+                "classified_by": "test-human",
+                "excluded_types": {"product_screenshot": True, "data_figure": True, "report": True},
+            }), encoding="utf-8")
+            rights_sha = hashlib.sha256(rights.read_bytes()).hexdigest()
+            request["source_rights_confirmation"] = {"path": "rights/photo-rights.json", "sha256": rights_sha}
+            request["source_photo"] = {"path": "sources/photo.png", "sha256": source_sha}
+            extra_versions["brief_authority"] = "v1"
+            extra_gates["brief_authority"] = {
+                "status": "approved", "artifact_version": "v1",
+                "approved_artifacts": {"rights/photo-rights.json": rights_sha},
+            }
         (root / "run-state.json").write_text(
             json.dumps(
                 {
+                    "artifact_versions": {"decomposition": "v1", **extra_versions},
                     "gates": {
+                        **extra_gates,
                         "style_anchors": {
                             "status": "approved",
                             "artifact_version": approved_style["version"],
@@ -120,6 +204,20 @@ def approved_project(request):
                             "status": "approved",
                             "artifact_version": "v3",
                             "approved_artifacts": concept_artifacts,
+                        },
+                        "decomposition": {
+                            "status": "approved", "artifact_version": "v1",
+                            "approval_mode": "explicit", "approver": "test-human",
+                            "approved_at": "2026-09-26T10:00:00+08:00",
+                            "approval_phrase": "批准拆件清单",
+                            "approved_artifacts": artifacts,
+                            "approval_packet": {
+                                "gate": "decomposition", "version": "v1",
+                                "decisions": {
+                                    key: {"status": "approved", "value": value, "value_sha256": value_sha256(value)}
+                                    for key, value in decisions.items()
+                                },
+                            },
                         },
                     }
                 }
@@ -135,7 +233,7 @@ def photo_rights_project():
         root = Path(tmp)
         source = root / "sources" / "photo.png"
         source.parent.mkdir(parents=True, exist_ok=True)
-        source.write_bytes(b"ordinary-photo")
+        Image.new("RGB", (10, 10), (23, 73, 113)).save(source)
         source_sha = hashlib.sha256(source.read_bytes()).hexdigest()
         rights = root / "rights" / "photo-rights.json"
         rights.parent.mkdir(parents=True, exist_ok=True)
@@ -147,6 +245,13 @@ def photo_rights_project():
                     "confirmed_by": "test-user",
                     "source_path": "sources/photo.png",
                     "source_sha256": source_sha,
+                    "media_class": "ordinary-photo",
+                    "truth_sensitive": False,
+                    "classification_phrase": "确认普通照片",
+                    "classified_by": "test-user",
+                    "excluded_types": {
+                        "product_screenshot": True, "data_figure": True, "report": True,
+                    },
                 }
             ),
             encoding="utf-8",
@@ -172,7 +277,7 @@ def photo_rights_project():
         yield root, {
             "path": "rights/photo-rights.json",
             "sha256": rights_sha,
-        }
+        }, {"path": "sources/photo.png", "sha256": source_sha}
 
 
 @contextmanager
@@ -432,7 +537,7 @@ class VisualAdapterTests(unittest.TestCase):
             },
             style,
         )
-        with photo_rights_project() as (root, rights):
+        with photo_rights_project() as (root, rights, source_photo):
             photo = ADAPTERS.route_provider(
                 registry,
                 {
@@ -441,6 +546,7 @@ class VisualAdapterTests(unittest.TestCase):
                     "truth_sensitive": False,
                     "deliverable_role": "slide-asset",
                     "source_rights_confirmation": rights,
+                    "source_photo": source_photo,
                 },
                 style,
                 project_root=root,
@@ -459,6 +565,55 @@ class VisualAdapterTests(unittest.TestCase):
         self.assertEqual(material["id"], "guizang-material-illustration")
         self.assertEqual(photo["id"], "photo-postprocess-coach")
         self.assertEqual(scene["id"], "scene-distillation-zine-v1-3")
+
+    def test_photo_plan_separates_rectangle_and_cutout_and_requires_source_classification(self):
+        registry = ADAPTERS.load_registry(REGISTRY)
+        base = {
+            "provider_id": "photo-postprocess-coach", "slide_id": "S03", "id": "P01",
+            "page_role": "ordinary-photo", "source_kind": "ordinary-photo",
+            "truth_sensitive": False, "deliverable_role": "slide-asset",
+            "style_contract_version": "v3", "reference_bbox": [0.1, 0.2, 0.5, 0.5],
+            **approved_context("concepts/S03-approved.png"),
+            "photo_output_mode": "rectangle", "treatment": "preserve-source",
+            "elements": [{
+                "id": "P01", "role": "ordinary-photo", "reference_bbox": [0.1, 0.2, 0.5, 0.5],
+                "source_class": "ordinary-photo", "treatment": "preserve-source",
+            }],
+        }
+        with approved_project(base) as root:
+            rectangle = ADAPTERS.adapt_photo_plan(registry, base, root)
+            self.assertEqual(rectangle["output_class"], "opaque-photo-rectangle")
+            self.assertEqual(rectangle["output"], base["source_photo"]["path"])
+            self.assertEqual(rectangle["background_requirement"], "opaque-rectangle")
+            bad = dict(base, truth_sensitive=True)
+            with self.assertRaisesRegex(ADAPTERS.AdapterError, "truth-sensitive"):
+                ADAPTERS.adapt_photo_plan(registry, bad, root)
+            bad = dict(base, source_photo={"path": "sources/screenshot.png", "sha256": "a" * 64})
+            with self.assertRaisesRegex(ADAPTERS.AdapterError, "classified, rights-confirmed"):
+                ADAPTERS.adapt_photo_plan(registry, bad, root)
+
+        cutout = json.loads(json.dumps(base))
+        cutout["photo_output_mode"] = "cutout"
+        cutout["treatment"] = "photo-adjust"
+        cutout["elements"][0]["role"] = "photo-cutout"
+        cutout["elements"][0]["treatment"] = "photo-adjust"
+        with approved_project(cutout) as root:
+            plan = ADAPTERS.adapt_photo_plan(registry, cutout, root)
+            self.assertEqual(plan["output_class"], "transparent-photo-cutout")
+            self.assertIsNone(plan["sha256"])
+            self.assertEqual(plan["next_action"], "diagnose-photo-then-confirm-generation")
+            rights_path = root / cutout["source_rights_confirmation"]["path"]
+            rights = json.loads(rights_path.read_text(encoding="utf-8"))
+            rights["media_class"] = "product-screenshot"
+            rights_path.write_text(json.dumps(rights), encoding="utf-8")
+            new_sha = hashlib.sha256(rights_path.read_bytes()).hexdigest()
+            cutout["source_rights_confirmation"]["sha256"] = new_sha
+            state_path = root / "run-state.json"
+            state = json.loads(state_path.read_text(encoding="utf-8"))
+            state["gates"]["brief_authority"]["approved_artifacts"]["rights/photo-rights.json"] = new_sha
+            state_path.write_text(json.dumps(state), encoding="utf-8")
+            with self.assertRaisesRegex(ADAPTERS.AdapterError, "ordinary-photo classification"):
+                ADAPTERS.adapt_photo_plan(registry, cutout, root)
 
     def test_photo_route_rejects_product_screenshots_data_evidence_and_reports(self):
         registry = ADAPTERS.load_registry(REGISTRY)
@@ -480,6 +635,48 @@ class VisualAdapterTests(unittest.TestCase):
                     ADAPTERS.route_provider(
                         registry, dict(base, source_kind=source_kind), style
                     )
+
+    def test_photo_route_rejects_obvious_screenshot_even_when_rights_metadata_mislabels_it(self):
+        registry = ADAPTERS.load_registry(REGISTRY)
+        style = {
+            "primary_visual_family": "photo-postprocess-coach",
+            "secondary_provider_roles": {}, "explicit_visual_opt_ins": [],
+        }
+        with photo_rights_project() as (root, rights_record, source_record):
+            source = root / source_record["path"]
+            screenshot = Image.new("RGB", (320, 180), "white")
+            draw = ImageDraw.Draw(screenshot)
+            draw.rectangle((0, 0, 319, 26), fill=(45, 80, 120))
+            draw.text((8, 7), "App Settings", fill="white")
+            draw.rectangle((16, 50, 180, 88), fill=(225, 235, 245), outline=(80, 100, 120))
+            draw.text((24, 62), "Account", fill=(20, 30, 45))
+            draw.rectangle((16, 105, 130, 145), fill=(50, 110, 190))
+            draw.text((45, 118), "Save", fill="white")
+            screenshot.save(source)
+            new_source_sha = hashlib.sha256(source.read_bytes()).hexdigest()
+            source_record["sha256"] = new_source_sha
+            rights_path = root / rights_record["path"]
+            rights = json.loads(rights_path.read_text(encoding="utf-8"))
+            rights["source_sha256"] = new_source_sha
+            rights_path.write_text(json.dumps(rights), encoding="utf-8")
+            new_rights_sha = hashlib.sha256(rights_path.read_bytes()).hexdigest()
+            rights_record["sha256"] = new_rights_sha
+            state_path = root / "run-state.json"
+            state = json.loads(state_path.read_text(encoding="utf-8"))
+            state["gates"]["brief_authority"]["approved_artifacts"][rights_record["path"]] = new_rights_sha
+            state_path.write_text(json.dumps(state), encoding="utf-8")
+            with self.assertRaisesRegex(ADAPTERS.AdapterError, "resembles a flat graphic"):
+                ADAPTERS.route_provider(registry, {
+                    "provider_id": "photo-postprocess-coach", "page_role": "ordinary-photo",
+                    "source_kind": "ordinary-photo", "truth_sensitive": False,
+                    "deliverable_role": "slide-asset", "source_rights_confirmation": rights_record,
+                    "source_photo": source_record,
+                }, style, project_root=root)
+
+        textured = Image.new("RGB", (320, 180))
+        textured.putdata([((x * 37 + y * 11) % 256, (x * 17 + y * 29) % 256, (x * 7 + y * 43) % 256)
+                          for y in range(180) for x in range(320)])
+        self.assertFalse(ADAPTERS.looks_like_flat_graphic(textured))
 
     def test_reinterpretive_provider_rejects_truth_sensitive_visuals(self):
         registry = ADAPTERS.load_registry(REGISTRY)
@@ -890,6 +1087,142 @@ class VisualAdapterTests(unittest.TestCase):
         table = result["assets"][1]
         self.assertEqual(table["content_policy"], "blank-fill-slots")
         self.assertFalse(table["contains_data_encoding_marks"])
+
+    def test_material_profile_versions_survive_public_cli_planning(self):
+        request = {
+            "provider_id": "guizang-material-illustration",
+            "slide_id": "S03", "page_role": "structural-diagram",
+            "truth_sensitive": False, "source_kind": "approved-concept-render",
+            "deliverable_role": "slide-asset",
+            **approved_context("concepts/S03-approved.png"),
+            "elements": [
+                {
+                    "id": f"C{index:02d}", "role": role,
+                    "reference_bbox": [0.1, 0.2, 0.2, 0.2],
+                    "references": ["concepts/S03-approved.png"],
+                    "fill_slot_ids": [f"F{index:02d}"] if role.endswith("-shell") else [],
+                }
+                for index, role in enumerate(sorted(ADAPTERS.MATERIAL_COMPONENT_ROLES), 1)
+            ],
+        }
+        with approved_project(request) as root:
+            request_path = root / "request.json"
+
+            def run_request():
+                request_path.write_text(json.dumps(request), encoding="utf-8")
+                return subprocess.run(
+                    [sys.executable, str(SCRIPT), "--registry", str(REGISTRY),
+                     "--project-root", str(root), "--request", str(request_path)],
+                    capture_output=True, text=True, encoding="utf-8", timeout=30,
+                )
+
+            default_result = run_request()
+            self.assertEqual(default_result.returncode, 0, default_result.stderr)
+            default_assets = json.loads(default_result.stdout)["assets"]
+            self.assertEqual(len(default_assets), len(request["elements"]))
+            self.assertTrue(all(asset["prompt_profile"] == "v6" for asset in default_assets))
+            self.assertEqual(
+                [asset["reference_bbox"] for asset in default_assets],
+                [element["reference_bbox"] for element in request["elements"]],
+            )
+            self.assertTrue(all(asset["status"] == "planned" for asset in default_assets))
+            self.assertTrue(all(asset["sha256"] is None for asset in default_assets))
+
+            request["prompt_profile"] = "v1"
+            legacy_result = run_request()
+            self.assertEqual(legacy_result.returncode, 0, legacy_result.stderr)
+            legacy_assets = json.loads(legacy_result.stdout)["assets"]
+            self.assertTrue(all(asset["prompt_profile"] == "v1" for asset in legacy_assets))
+            self.assertEqual(
+                [asset["references"] for asset in default_assets],
+                [asset["references"] for asset in legacy_assets],
+            )
+            self.assertEqual(
+                [asset["output"] for asset in default_assets],
+                [asset["output"] for asset in legacy_assets],
+            )
+
+            for invalid in ("v999", [], None):
+                with self.subTest(prompt_profile=invalid):
+                    request["prompt_profile"] = invalid
+                    rejected = run_request()
+                    self.assertEqual(rejected.returncode, 1)
+                    self.assertEqual(rejected.stdout, "")
+                    self.assertIn("FAIL:", rejected.stderr)
+                    self.assertNotIn("Traceback", rejected.stderr)
+
+    def test_legacy_material_prompt_bytes_remain_compatible(self):
+        # Existing manifests bind these canonical strings, so a version upgrade
+        # must not silently rewrite historical prompts or invalidate their assets.
+        snapshots = {
+            ("arrow", "v1"): "45028bdfa168127b91dc4a7828729810c26cd509569bf52d9820e2e47f1b1085",
+            ("panel", "v2"): "af686c6c8e4a1a672b6fee35336970db33965c3db7b3f7e10de68242d31f6ce4",
+            ("panel", "v3"): "52a5b7625c4cb20b1c01a0afc03456ccc9c37a57fc42e2e5ff5a1e3a411fec5c",
+            ("illustration", "v4"): "cc4c548bf1e5e1f9650f6dd1a82dfe6adf8c13c42f3d7fae89fc94d6a08ae40c",
+            ("diagram-node", "v5"): "1e17747a31b6b2b36ac46bcb14e6e5a7e009eb6a3f9a7dbdc10463ca56bf43e8",
+        }
+        for (role, profile), expected_sha in snapshots.items():
+            with self.subTest(role=role, profile=profile):
+                prompt = ADAPTERS.build_material_prompt(role, [0.1, 0.2, 0.2, 0.2], profile)
+                self.assertEqual(hashlib.sha256(prompt.encode("utf-8")).hexdigest(), expected_sha)
+
+    def test_material_adapter_requires_current_approved_decomposition_item(self):
+        registry = ADAPTERS.load_registry(REGISTRY)
+        request = {
+            "provider_id": "guizang-material-illustration", "slide_id": "S03",
+            "page_role": "structural-diagram", "truth_sensitive": False,
+            "source_kind": "approved-concept-render", "deliverable_role": "slide-asset",
+            **approved_context("concepts/S03-approved.png"),
+            "elements": [{
+                "id": "C01", "role": "arrow", "reference_bbox": [0.1, 0.2, 0.2, 0.2],
+                "references": ["concepts/S03-approved.png"],
+            }],
+        }
+        with approved_project(request) as root:
+            state_path = root / "run-state.json"
+            state = json.loads(state_path.read_text(encoding="utf-8"))
+            state["gates"]["decomposition"]["status"] = "pending"
+            state_path.write_text(json.dumps(state), encoding="utf-8")
+            with self.assertRaisesRegex(ADAPTERS.AdapterError, "explicit human approval"):
+                ADAPTERS.adapt_plan(registry, request, root)
+
+        for invalid_field, invalid_value in (("approved_at", None), ("approval_phrase", "按推荐")):
+            with self.subTest(invalid_field=invalid_field), approved_project(request) as root:
+                state_path = root / "run-state.json"
+                state = json.loads(state_path.read_text(encoding="utf-8"))
+                state["gates"]["decomposition"][invalid_field] = invalid_value
+                state_path.write_text(json.dumps(state), encoding="utf-8")
+                with self.assertRaisesRegex(ADAPTERS.AdapterError, "explicit human approval"):
+                    ADAPTERS.adapt_plan(registry, request, root)
+
+        with approved_project(request) as root:
+            state_path = root / "run-state.json"
+            state = json.loads(state_path.read_text(encoding="utf-8"))
+            map_path = root / "decomposition-map.json"
+            decomposition = json.loads(map_path.read_text(encoding="utf-8"))
+            decomposition["slides"][0]["coverage_review"]["missing_items"] = ["D99"]
+            map_path.write_text(json.dumps(decomposition), encoding="utf-8")
+            state["gates"]["decomposition"]["approved_artifacts"]["decomposition-map.json"] = hashlib.sha256(map_path.read_bytes()).hexdigest()
+            decision = state["gates"]["decomposition"]["approval_packet"]["decisions"]["coverage_review"]
+            decision["value"] = {"S03": decomposition["slides"][0]["coverage_review"]}
+            decision["value_sha256"] = value_sha256(decision["value"])
+            state_path.write_text(json.dumps(state), encoding="utf-8")
+            with self.assertRaisesRegex(ADAPTERS.AdapterError, "coverage review"):
+                ADAPTERS.adapt_plan(registry, request, root)
+
+        with approved_project(request) as root:
+            request["elements"][0]["reference_bbox"] = [0.3, 0.2, 0.2, 0.2]
+            with self.assertRaisesRegex(ADAPTERS.AdapterError, "approved reconstruct-single decomposition object"):
+                ADAPTERS.adapt_plan(registry, request, root)
+            request["elements"][0]["reference_bbox"] = [0.1, 0.2, 0.2, 0.2]
+
+        with approved_project(request) as root:
+            map_path = root / "decomposition-map.json"
+            decomposition = json.loads(map_path.read_text(encoding="utf-8"))
+            decomposition["slides"][0]["items"][0]["treatment"] = "preserve-pixels"
+            map_path.write_text(json.dumps(decomposition), encoding="utf-8")
+            with self.assertRaisesRegex(ADAPTERS.AdapterError, "approved current artifact"):
+                ADAPTERS.adapt_plan(registry, request, root)
 
     def test_material_adapter_rejects_requested_embedded_text_or_data_marks(self):
         registry = ADAPTERS.load_registry(REGISTRY)

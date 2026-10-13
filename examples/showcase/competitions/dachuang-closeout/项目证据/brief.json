@@ -1,0 +1,30 @@
+{
+  "project_id": "dachuang-closeout-example",
+  "audience": "高校大学生创新训练项目结题答辩评审与指导教师（虚构展示情境）",
+  "goal": "示范如何对照立项目标，呈现记录数量、概念交付物、时间与模拟资源，并说明结论边界和后续建议。",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "concept-images",
+    "aspect_ratio": "16:9",
+    "scope": "local-showcase-only",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ]
+  },
+  "source_map": [
+    {
+      "id": "EXAMPLE",
+      "kind": "locally-authored-fictional-showcase-content",
+      "locator": "共享虚构情境 dachuang-all-stages/scenario.md 的第14周结题设定；所有进展、计数、交付物和资源使用均为示例。",
+      "path": "sources/source-notes.md",
+      "sha256": "f05dccaaac903a6d95d68e790b16d578399e4b818e584e3a37604b43b6b8b53a",
+      "truth_status": "illustrative"
+    }
+  ]
+}

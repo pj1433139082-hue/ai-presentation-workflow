@@ -1,0 +1,132 @@
+{
+  "reviewer": "/root/showcase_acceptance_plan",
+  "reviewer_role": "agent/reviewer",
+  "reviewed_at": "2026-10-13T18:59:49+08:00",
+  "full": true,
+  "page_count": 6,
+  "concept_sha256": {
+    "S01": "1e0e00c7b41da6e72c72fba314cc4d952e46b3c1de56c990ffe4d0931ec349a5",
+    "S02": "0954a2e0c128c347fce534a62a705652f9b946667f9ea816a448ca532b1f84af",
+    "S03": "a00418f1c5ade78f41650313c2a95d7ceb73281de95bc6611d2264564d588352",
+    "S04": "2d8bbde87f4fee920ad82a7cd016cfc7592d6d71f8dc4a6b08500776b0628907",
+    "S05": "25ff7e18a199cf2324408668554fce6b5ec328bcdeb98279e4ebb595e2ccea74",
+    "S06": "10f35528ed8ccd1a7d2fd0fc398b8b2b6f1d7f9e4e533dbe748cafb95d216a08"
+  },
+  "input_sha256": {
+    "brief.json": "be753b05376e2eb6574204dd157646b68c056c433c1aa3e1dd3af76a9c143e84",
+    "deck-spec.json": "38bcded784aa6f7dc23b5c84b5af7e32696ea55200fc314ac98706aa55dbcd79",
+    "reference-study.json": "24835f60085580b88719aaa7bdf2db6e05254437a5009ca88983200cb5f556f8",
+    "style-contract.json": "360077d6253d9436a1d0db874dc75bbb7952cc5784e5fb6861a2c5286d56fa74"
+  },
+  "source_sha256": {
+    "sources/source-notes.md": "a0eb55d6dfb1ccef11bf492c467ee3e2246cf510435d09544d7811039f6c4348"
+  },
+  "pages": [
+    {
+      "slide_id": "S01",
+      "concept_path": "design/S01/concept.png",
+      "concept_sha256": "1e0e00c7b41da6e72c72fba314cc4d952e46b3c1de56c990ffe4d0931ec349a5",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "1e99228b7a4eb27c5fbeb68578a9482548d24f2caadad2b1a1482baa56b3cffc",
+      "generation_record_output_sha256": "1e0e00c7b41da6e72c72fba314cc4d952e46b3c1de56c990ffe4d0931ec349a5",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S01.png",
+      "project_copy_sha256": "1e0e00c7b41da6e72c72fba314cc4d952e46b3c1de56c990ffe4d0931ec349a5",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S02",
+      "concept_path": "design/S02/concept.png",
+      "concept_sha256": "0954a2e0c128c347fce534a62a705652f9b946667f9ea816a448ca532b1f84af",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "51bc09f4e7720b3979be40859c7f8101a2f6a7d7c230bfb3c0fa59f563ef51bf",
+      "generation_record_output_sha256": "0954a2e0c128c347fce534a62a705652f9b946667f9ea816a448ca532b1f84af",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S02.png",
+      "project_copy_sha256": "0954a2e0c128c347fce534a62a705652f9b946667f9ea816a448ca532b1f84af",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S03",
+      "concept_path": "design/S03/concept.png",
+      "concept_sha256": "a00418f1c5ade78f41650313c2a95d7ceb73281de95bc6611d2264564d588352",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "57bd7ec75f007b1e1c86173326bd982909534f34df98dcba2c730d446736982f",
+      "generation_record_output_sha256": "a00418f1c5ade78f41650313c2a95d7ceb73281de95bc6611d2264564d588352",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S03.png",
+      "project_copy_sha256": "a00418f1c5ade78f41650313c2a95d7ceb73281de95bc6611d2264564d588352",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S04",
+      "concept_path": "design/S04/concept.png",
+      "concept_sha256": "2d8bbde87f4fee920ad82a7cd016cfc7592d6d71f8dc4a6b08500776b0628907",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "b1490dbbec77edbb81599999314e952035fb1dfc42940e42018967400d3c5760",
+      "generation_record_output_sha256": "2d8bbde87f4fee920ad82a7cd016cfc7592d6d71f8dc4a6b08500776b0628907",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S04.png",
+      "project_copy_sha256": "2d8bbde87f4fee920ad82a7cd016cfc7592d6d71f8dc4a6b08500776b0628907",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S05",
+      "concept_path": "design/S05/concept.png",
+      "concept_sha256": "25ff7e18a199cf2324408668554fce6b5ec328bcdeb98279e4ebb595e2ccea74",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "bfd4d25935fb5d8861fea854d32508cb93ecce8249b85ff9a2a53ccbb0fb8640",
+      "generation_record_output_sha256": "25ff7e18a199cf2324408668554fce6b5ec328bcdeb98279e4ebb595e2ccea74",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S05.png",
+      "project_copy_sha256": "25ff7e18a199cf2324408668554fce6b5ec328bcdeb98279e4ebb595e2ccea74",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S06",
+      "concept_path": "design/S06/concept.png",
+      "concept_sha256": "10f35528ed8ccd1a7d2fd0fc398b8b2b6f1d7f9e4e533dbe748cafb95d216a08",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "92181c166146093caecabb392b7e0ccc2219b2f6525369c7bb09e96a3cc8f7e0",
+      "generation_record_output_sha256": "10f35528ed8ccd1a7d2fd0fc398b8b2b6f1d7f9e4e533dbe748cafb95d216a08",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S06.png",
+      "project_copy_sha256": "10f35528ed8ccd1a7d2fd0fc398b8b2b6f1d7f9e4e533dbe748cafb95d216a08",
+      "project_copy_matches_current": true
+    }
+  ],
+  "open_findings": [],
+  "resolved_findings": [],
+  "user_acceptance": "not-recorded",
+  "human_gates": {
+    "G1": "not-claimed",
+    "G2": "not-claimed",
+    "G3": "not-claimed",
+    "G4": "not-claimed",
+    "G5": "not-claimed"
+  },
+  "provenance_checks": {
+    "all_current_images_match_generation_records": true,
+    "all_current_images_match_project_concept_copies": true,
+    "scope_is_full_expected_page_set": true
+  },
+  "limitations": "独立概念图视觉审阅，不是PowerPoint组装/实渲验收、正式赛事规则核验、人类审批或用户接受。"
+}

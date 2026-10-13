@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-label="S02-arrow-return-up-1">
+  <title>S02-arrow-return-up-1</title>
+  <defs><filter id="arrowHalo" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3.5" result="b"/><feFlood flood-color="#00a0a8" flood-opacity=".9"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <polygon points="296,565 311,587 289,587 289,595 303,595 303,587 281,587" fill="#ffffff" filter="url(#arrowHalo)"/>
+</svg>

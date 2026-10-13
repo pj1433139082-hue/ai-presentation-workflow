@@ -1,0 +1,49 @@
+{
+  "schema": "apw-concept-generation-record/v1",
+  "slide_id": "S01",
+  "artifact_kind": "imported-existing-concept",
+  "current_project_binding": {
+    "recorded_at_utc": "2026-10-13T00:28:06Z",
+    "note": "This APW project binding was created after the historical concept image; it does not claim that the current brief/deck/reference/style JSON preceded or caused the original image generation.",
+    "input_snapshot_path": "project/provenance/concept-input-hash-snapshot.json",
+    "input_snapshot_sha256": "34321A4F3B1F49BA424305856B8B39A731183FF22EE883E6483CE732E1DED8A7"
+  },
+  "original_generation": {
+    "tool": "Codex built-in image_gen",
+    "actor": "historical agent; not separately identified in retained provenance",
+    "created_at_utc": "2026-10-12T15:11:08Z",
+    "source_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-57f8-7b41-8255-833b48138fbc\\exec-c1ad5628-ceb9-430d-aef7-d5e0d961dbfc.png",
+    "source_output_sha256": "B2AE250C8DF800F9898B48A01C45DAEA62F6DD9582E390A8CF4DE8406E3D6A24",
+    "historical_saved_artifact_path": "pilots/industry-explorations/B-education/slide.png",
+    "historical_saved_artifact_sha256": "B2AE250C8DF800F9898B48A01C45DAEA62F6DD9582E390A8CF4DE8406E3D6A24",
+    "historical_record_path": "provenance/imports/prior-generation-record.md"
+  },
+  "current_artifact": {
+    "path": "concepts/S01.png",
+    "sha256": "B2AE250C8DF800F9898B48A01C45DAEA62F6DD9582E390A8CF4DE8406E3D6A24",
+    "format": "PNG",
+    "dimensions_px": [
+      1672,
+      941
+    ],
+    "color_mode": "RGB",
+    "byte_copy_verified": true
+  },
+  "historical_prompt": {
+    "path": "design/S01/prompt.txt",
+    "copied_from": "pilots/industry-explorations/B-education/prompt.md",
+    "sha256": "DA86D7E9EDEC04A140F08A8611E698B47E0863C62BA0C38BF420297CD4A9ADE5"
+  },
+  "historical_reference": {
+    "id": "R469",
+    "path": "references/case469.jpg",
+    "sha256": "0D63EA96B6F5BE08AE0C9FF8040EEB90597D116BEBF9958680B5171ED6C7B12D",
+    "source_case_metadata": "provenance/imports/case469-source.json"
+  },
+  "current_review_state": {
+    "origin": "imported",
+    "user_visual_acceptance": "not claimed",
+    "formal_gates": "not claimed",
+    "source_copy_hash_matches_original": true
+  }
+}

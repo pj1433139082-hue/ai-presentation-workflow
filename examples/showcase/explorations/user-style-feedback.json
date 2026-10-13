@@ -1,0 +1,21 @@
+{
+  "actor": "user",
+  "scope": "visual-style-preference-on-three-concepts-only",
+  "question_item_id": "call_c151871537124f21b843c4930ee15c72:0",
+  "response": "这些风格都不错 可以的 继续看看不同场景不同行业的 继续出一些",
+  "pptx_acceptance": "not-requested-not-recorded",
+  "concepts": [
+    {
+      "path": "A-precision\\imagegen-returned-original.png",
+      "sha256": "a7cd34d4a15fff4af98cb68e50b2e926bbec1e15aedb7055d7a5cb56827dde18"
+    },
+    {
+      "path": "B-editorial\\cover.png",
+      "sha256": "eb733fa172267f0921b25cf008513dc39b5f9236cb4e2d4c893f36640ad0f8de"
+    },
+    {
+      "path": "C-nature\\concept-slide.png",
+      "sha256": "a2d43ee314927b91e3dd3c11678c591210d0bfce567bdc8be5f9348a7435bd20"
+    }
+  ]
+}

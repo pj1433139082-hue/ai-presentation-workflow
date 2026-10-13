@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-label="support ground 384">
+  <title>support ground 384</title>
+  <defs></defs>
+  <defs><linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#52636a"/><stop offset=".25" stop-color="#f3f4ee"/><stop offset=".52" stop-color="#87989d"/><stop offset=".78" stop-color="#e9eeeb"/><stop offset="1" stop-color="#53646a"/></linearGradient></defs>
+<path d="M373 704 V719 H395 V704" fill="none" stroke="#33454b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M384 718 V750" stroke="#475c63" stroke-width="11"/><path d="M382 719 V750" stroke="#eff2ee" stroke-width="2.5"/>
+<rect x="368" y="748" width="32" height="8" rx="2" fill="url(#steel)" stroke="#34484e" stroke-width="1.5"/>
+<circle cx="373" cy="752" r="1.6" fill="#263941"/><circle cx="395" cy="752" r="1.6" fill="#263941"/>
+</svg>

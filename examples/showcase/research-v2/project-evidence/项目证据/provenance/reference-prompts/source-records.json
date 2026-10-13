@@ -1,0 +1,31 @@
+{
+  "source_dataset_sha256": "2f75f94f5cbe65b19436793671b2cd5bb434c4cf2080a1aaf82653460b584ebe",
+  "references": [
+    {
+      "case_id": 175,
+      "title": "封面排版设计图",
+      "source_url": "https://x.com/cellier_/status/2046615173411262959",
+      "source_dataset": "D:\\obsidian_work\\cangku\\paper_work\\.agents\\skills\\design-shared\\component-library\\sources\\awesome-gpt-image-2\\data\\cases.json",
+      "source_dataset_sha256": "2f75f94f5cbe65b19436793671b2cd5bb434c4cf2080a1aaf82653460b584ebe",
+      "source_image_in_dataset": "/images/case175.jpg",
+      "project_image_path": "references/case175.jpg",
+      "project_image_sha256": "3614ca30899bd62956de104b4e75eca1a681582504e916544b5405adac6e5b46",
+      "original_prompt_path": "provenance/reference-prompts/case175-original-prompt.txt",
+      "original_prompt_sha256": "4b75b109ec785f5648372c73018d077db2cf1507700bd45c26825880ce033a0e",
+      "note": "Original reference prompt preserved verbatim; it was not used as the generation prompt for this project."
+    },
+    {
+      "case_id": 341,
+      "title": "AP Calculus 学习表信息图",
+      "source_url": "https://x.com/hqmank/status/2048587150544028084",
+      "source_dataset": "D:\\obsidian_work\\cangku\\paper_work\\.agents\\skills\\design-shared\\component-library\\sources\\awesome-gpt-image-2\\data\\cases.json",
+      "source_dataset_sha256": "2f75f94f5cbe65b19436793671b2cd5bb434c4cf2080a1aaf82653460b584ebe",
+      "source_image_in_dataset": "/images/case341.jpg",
+      "project_image_path": "references/case341.jpg",
+      "project_image_sha256": "a8e0c2d57a2c4cdd0dbbab23a7914016c219bd706ebdb430b837b506afba2c3d",
+      "original_prompt_path": "provenance/reference-prompts/case341-original-prompt.txt",
+      "original_prompt_sha256": "3064955a684bc9e11c9cd70313dbae96f87916cf0b98d8d7085a914da65ecf07",
+      "note": "Original reference prompt preserved verbatim; it was not used as the generation prompt for this project."
+    }
+  ]
+}

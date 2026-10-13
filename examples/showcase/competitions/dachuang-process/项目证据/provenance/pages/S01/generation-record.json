@@ -1,0 +1,71 @@
+{
+  "slide_id": "S01",
+  "record_type": "actual-image-edit",
+  "generation_tool": "Codex built-in image_gen.imagegen",
+  "recorded_at": "2026-10-13T22:23:48.3539750+08:00",
+  "version": "v2",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1358e-1e87-7093-ad01-730050e566bf\\exec-27beb006-1bab-475e-b860-9ac9c77993b4.png",
+  "original_output_sha256": "e7f40a317bf38f884f57f2eb135cbfda13c65ef92431a93c8cb9ec3e80b966b0",
+  "output_path": "concept.png",
+  "output_sha256": "e7f40a317bf38f884f57f2eb135cbfda13c65ef92431a93c8cb9ec3e80b966b0",
+  "canonical_output_path": "concepts/S01.png",
+  "dimensions": {
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB"
+  },
+  "prompt": "Task: Make a minimal edit to Image 1, the existing S01 full-page concept. Add one missing key-takeaway line while preserving the existing concept.\n\nKeep Image 1 as the base. Preserve its 16:9 canvas, overall composition, rain-garden cutaway, plants, water, soil, natural light, color palette, title, and every existing line of Chinese text exactly as it is. Do not redesign or replace the illustration.\n\nAdd exactly this additional line, verbatim: “第6周阶段检查｜目标在前，记录如实”\n\nPlace it centered in the open white area immediately above the existing pale-green “第6周｜阶段检查” label. Render it in the same refined Chinese editorial style, dark ink green, clearly legible and smaller than the project title. Keep the existing title “雨序”, subtitle “校园雨水花园观察与优化”, project line “大创 · 创新训练项目过程汇报”, checkpoint label “第6周｜阶段检查”, and truth label “过程情境示例” unchanged and readable. If needed, move only the checkpoint label slightly lower to create breathing room; do not move or rewrite any other copy.\n\nDo not add any other text, marks, icons, data, or objects.",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "452841a7cd63b186fd4ed1f28662dabb3628ddb5c1f4529d34f03df455f51989",
+  "input_sha256": {
+    "brief.json": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+    "deck-spec.json": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+    "reference-study.json": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+    "style-contract.json": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+  },
+  "actual_tool_inputs": {
+    "referenced_image_paths": [
+      "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/design/S01/concept.png"
+    ],
+    "referenced_image_bindings": [
+      {
+        "role": "edit-target",
+        "path": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/design/S01/concept.png",
+        "sha256": "0ef681d2924025c79df2badb9fe26f590829e05793a46678360da0a60107c3ad",
+        "portable_project_path": "provenance/pages/S01/revisions/v1/concept.png"
+      }
+    ],
+    "transparent_background": false
+  },
+  "design_reviewed_references": [
+    {
+      "reference_id": "R-PROPOSAL-S01",
+      "project_path": "references/previous-proposal-S01.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "project_path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "v1",
+      "image_path": "revisions/v1/concept.png",
+      "image_sha256": "0ef681d2924025c79df2badb9fe26f590829e05793a46678360da0a60107c3ad",
+      "prompt_path": "revisions/v1/prompt.txt",
+      "prompt_sha256": "1e2d02f140ad9e97bfc880d6b5df1f74c88c21e2986edfeaae9f8cf3ed38c4d7",
+      "generation_record_path": "revisions/v1/generation-record.json",
+      "generation_record_sha256": "28591df7b92fe1af7a63cc5c5c4eb633d11076d114b7348fa0f34935c3d6e9ab",
+      "revision_reason": "The first image omitted the deck-declared key-takeaway line."
+    }
+  ],
+  "visual_review": {
+    "actor": "Codex subagent",
+    "method": "view_image of copied current output",
+    "finding": "The exact key-takeaway is legible above the checkpoint label. The existing title, subtitle, project line, checkpoint label, truth label, rain-garden cutaway, and natural palette remain intact; no extra copy is visible.",
+    "user_acceptance": "not-recorded"
+  },
+  "history_note": "The actual tool input was the preserved v1 S01 image at the recorded path and hash. The listed design references were reviewed during the project, but were not passed to this edit call. Frozen APW input hashes bind this project version; they do not claim the image tool read those JSON files."
+}

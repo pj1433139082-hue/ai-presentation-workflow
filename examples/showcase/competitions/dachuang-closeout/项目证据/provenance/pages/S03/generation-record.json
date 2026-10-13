@@ -1,0 +1,163 @@
+{
+  "slide_id": "S03",
+  "status": "generated",
+  "generator": "Codex built-in image_gen",
+  "generated_at_utc": "2026-10-13 13:16:48 UTC",
+  "prompt_path": "provenance/pages/S03/prompt.txt",
+  "prompt_sha256": "8152cacd183a1b28f2503daed134e67fa608951c3a43381b8619f47b453a3c4f",
+  "input_snapshot_path": "provenance/pages/S03/input-snapshot.json",
+  "input_snapshot_sha256": "187cd805e00a2ad61abf8b8589995e599fded41dc045a8018f6bc43febe82622",
+  "contract_input_sha256": {
+    "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+    "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "copy_map": [
+    {
+      "id": "title",
+      "role": "title",
+      "text": "记录数量可核对，效果结论留白",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "takeaway",
+      "role": "key-takeaway",
+      "text": "只展示示例记录数，不推导实测效果。",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "rain_label",
+      "role": "section-heading",
+      "text": "降雨记录（示例）",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "rain_total",
+      "role": "metric",
+      "text": "6 次合计",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "rain_complete",
+      "role": "body",
+      "text": "5 次完整",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "rain_missing",
+      "role": "body",
+      "text": "1 次缺失，保留标记",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "trial_label",
+      "role": "section-heading",
+      "text": "基质台架对照（示例）",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "trial_count",
+      "role": "body",
+      "text": "2 类基质 × 3 次重复 = 6 组台架试验",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "boundary",
+      "role": "body",
+      "text": "未给出读数，不判断基质优劣、改善幅度或统计显著性",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "source",
+      "role": "source",
+      "text": "示例计数 · 非实测",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "page",
+      "role": "page-number",
+      "text": "03 / 06",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    }
+  ],
+  "copy_map_sha256": "0446e0c8827429d56dccce7dede5da9e3b3ca71b2cdc1d9d478dfeaf9924a8c1",
+  "selected_reference_images": [
+    {
+      "reference_id": "RPROPOSAL-S01",
+      "path": "references/proposal-S01-style-anchor.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "actual_passed_reference_images": [],
+  "actual_tool_call": {
+    "request_type": "new full-page concept image",
+    "prompt_sha256": "8152cacd183a1b28f2503daed134e67fa608951c3a43381b8619f47b453a3c4f",
+    "reference_images_passed": [],
+    "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-37894ad1-8c6a-4fda-8ce0-aaeb74f4e1ca.png",
+    "tool_output_sha256": "f59d6fb2e31f18426b34e8c9d230ec68480b5e553e27c102b885bc6940076ce9",
+    "tool_output_hint": "Generated image saved by Codex built-in image_gen; original retained."
+  },
+  "output_path": "concepts/S03.png",
+  "output_sha256": "f59d6fb2e31f18426b34e8c9d230ec68480b5e553e27c102b885bc6940076ce9",
+  "design_copy_path": "design/S03/concept.png",
+  "design_copy_sha256": "f59d6fb2e31f18426b34e8c9d230ec68480b5e553e27c102b885bc6940076ce9",
+  "image_dimensions_px": {
+    "width": 1672,
+    "height": 941,
+    "aspect_ratio": "1672:941"
+  },
+  "history": [
+    {
+      "attempt": 1,
+      "status": "generated",
+      "prompt_sha256": "8152cacd183a1b28f2503daed134e67fa608951c3a43381b8619f47b453a3c4f",
+      "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-37894ad1-8c6a-4fda-8ce0-aaeb74f4e1ca.png",
+      "tool_output_sha256": "f59d6fb2e31f18426b34e8c9d230ec68480b5e553e27c102b885bc6940076ce9",
+      "output_sha256": "f59d6fb2e31f18426b34e8c9d230ec68480b5e553e27c102b885bc6940076ce9",
+      "note": "Initial generation; tool output was copied without modification."
+    }
+  ],
+  "agent_inspection": {
+    "reviewed_page": "S03",
+    "finding": "All specified count labels are legible. The visual shows five complete and one missing rain-record units, six total, plus two groups of three substrate repeats. The footer states the counts are illustrative and non-measured; no effect data is plotted."
+  }
+}

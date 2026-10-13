@@ -1,0 +1,9 @@
+Make a minimal text-only edit to Image 1, the existing S06 full-page concept. Add the one missing truth label and preserve all existing content.
+
+Keep Image 1 as the base. Preserve the 16:9 canvas, research-workbench composition, rain marks, balanced substrate columns, blank archive binder, folded request note, lighting, colors, and every existing line of Chinese copy exactly as it is. Do not redesign, replace, or rearrange the page.
+
+Add exactly this additional line, verbatim: “计划行动示例”
+
+Place it in the clear lower-right page margin beneath the existing pending support text, as a small but clearly legible dark-green label on a restrained pale-leaf brushstroke or pill consistent with the existing visual style. Keep it separated from the support-request copy. Leave the title, takeaway, four action labels, and the existing “拟请求支持｜复核比较条件与记录规则（待沟通）” wording unchanged and readable.
+
+Do not add any other words, numbers, marks, icons, or objects.

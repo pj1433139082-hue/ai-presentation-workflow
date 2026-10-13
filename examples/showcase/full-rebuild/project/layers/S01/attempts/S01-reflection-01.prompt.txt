@@ -1,0 +1,8 @@
+Use case: background-extraction
+Asset type: one transparent floor-light and contact-shadow patch for independent slide layering
+Input images: Image 1 is the original S01 concept and the edit target.
+Primary request: Isolate only the soft, low horizontal blue/coral reflection and narrow grounding shadow visible on the floor directly beneath the desktop terminal.
+Scene/backdrop: The source floor has cool blue light at left and a warm pale coral reflection toward the middle and right. Rebuild only this local reflected-light patch; the surrounding floor must be transparent.
+Subject: A diffuse, low horizontal pool of reflected blue and coral light with the soft dark contact shadow directly beneath the device base. Preserve its modest brightness and natural falloff from the original concept.
+Composition/framing: Keep the patch wide and shallow, aligned to the original device footprint. Center it with generous transparent padding. Do not crop the glow or shadow.
+Constraints: Genuine transparent alpha outside the localized light/shadow patch. Exclude the device, any inverted device image, all floor texture, horizon, room/background, text, lines, arrows, props, frames, and watermarks. No hard rectangular edge. This patch will be placed separately behind the device over the blue/coral background plate.

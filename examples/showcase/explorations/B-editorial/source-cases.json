@@ -1,0 +1,36 @@
+[
+  {
+    "id": 355,
+    "title": "概念字体海报 Prompt",
+    "image": "/images/case355.jpg",
+    "sourceLabel": "@dotey",
+    "sourceUrl": "https://x.com/dotey/status/2048793351290327381",
+    "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-355",
+    "category": "Posters & Typography",
+    "styles": [
+      "Poster",
+      "Realistic",
+      "Brand"
+    ],
+    "prompt": "Create ONE finished premium conceptual typography poster for the exact title:\n\n“[INPUT_TEXT]”\n\nSingle poster only. No moodboard, grid, presentation board, mockup, captions, prompt text, process sheet, or sample labels.\n\nThe title “[INPUT_TEXT]” must be the dominant visual structure of the poster: huge, readable, powerful, and spelled exactly. Do not translate, shorten, replace, or misspell it. Do not add other large readable text. Optional micro catalog text is allowed only if it stays subtle and secondary.\n\nSilently interpret the title’s meaning, mood, cultural aura, symbolic associations, psychological tension, and visual rhythm. Turn that interpretation into one strong visual metaphor.\n\nTypography is the hero. Design custom-looking letterforms whose weight, width, contrast, spacing, rhythm, distortion, negative space, edge quality, and ink texture express the temperament of the title. The type should feel intentionally designed, not like a default font.\n\nIf “[INPUT_TEXT]” refers to a widely known person, make a large editorial portrait or full / half-body figure a major visual presence, occupying roughly 40–70% of the composition. The figure should feel recognizable through aura, posture, styling, era, expression, lighting, and symbolic atmosphere, but should not copy a specific existing photograph, official poster, campaign image, logo, slogan, or copyrighted composition. The portrait must interact with the typography: overlapping the letters, emerging from them, being framed by them, casting shadows on them, breaking through them, or being partially hidden behind them.\n\nFor all other titles, use a human figure, landscape, object, or atmospheric setting only when it strengthens the meaning. It must interact with the typography and deepen the concept, not decorate it.\n\nUse a rich but restrained 4–6 color system matched to the theme: dominant background color, primary typography color, figure / landscape tone, emotional accent color, muted support color, and subtle paper / ink texture tone. Avoid flat black-white-red defaults unless conceptually necessary.\n\nComposition style: high-end editorial poster, museum-quality graphic design, dramatic scale, strong hierarchy, few elements, intelligent whitespace, bold flat color areas, sharp cropping, silkscreen / lithograph / risograph grain, paper fibers, subtle ink imperfections, refined visual tension.\n\nThe final image should feel like a complete visual sentence: the title, the figure or setting, the color, and the typography explain each other.\n\nAvoid generic word art, glossy 3D lettering, random icons, stock-photo realism, cluttered collage, excessive grunge, tourist clichés, official logos, copied slogans, copied campaign aesthetics, unrelated text, and misspelled typography.\n\n-----\n\nINPUT_TEXT：Phoenix Rebirth",
+    "localImage": "references/case355.jpg",
+    "imageSha256": "f9ac45416e60558523f45fb0d6fc39a73f8aabe656ae734b837d28a9ba4ccf35"
+  },
+  {
+    "id": 511,
+    "title": "城市名地标排版旅行海报",
+    "image": "/images/case511.jpg",
+    "sourceLabel": "@Goodmanprotocol",
+    "sourceUrl": "https://x.com/Goodmanprotocol/status/2071819124708438092",
+    "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-511",
+    "category": "Posters & Typography",
+    "styles": [
+      "UI",
+      "Poster",
+      "Illustration"
+    ],
+    "prompt": "Create a clean, modern typographic travel poster where the city name itself becomes the composition. Render the city name in large, bold, uppercase sans-serif letters spanning the width of the artwork. Seamlessly integrate the city's most iconic landmarks, architecture, monuments, streets, transportation, cultural symbols, cafés, bridges, parks, skylines, sculptures, waterfronts, historic buildings, and local details into, around, and inside the letters. Let landmarks naturally interact with the typography while preserving legibility.\nUse an elegant flat vector illustration style with crisp geometric shapes, minimal detail, clean outlines, subtle shadows, and a premium editorial aesthetic. Maintain a limited color palette of deep navy, warm cream, muted red, and soft gray-blue for a timeless travel-poster look.\nAdd small decorative elements such as street lamps, trees, clouds, birds, benches, bicycles, fountains, trams, ferries, or other city-specific objects where appropriate. Keep generous negative space with a clean background and perfectly balanced composition.\nEnsure every landmark, architectural style, vehicle, sign, and cultural element is accurate to the chosen city—avoid generic or incorrect landmarks. If desired, include a small elegant tagline beneath the city name (such as a famous nickname or slogan) in minimal typography.\nStyle: premium flat vector, minimalist travel poster, geometric illustration, editorial design, tourism branding, clean typography, high contrast, ultra-sharp lines, museum-quality print, modern graphic design, centered composition, scalable SVG aesthetic, 8K resolution.",
+    "localImage": "references/case511.jpg",
+    "imageSha256": "cfdecfee76d725ba586e9d02a35d38ef53ca45d6a6c0c4e6bc233062df83dc6a"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "attempt": 1,
+  "selected": false,
+  "reason": "The exact prompt was first tested with R479 only; this is retained as a candidate. The final S01 was regenerated against both frozen references to bind the full slide reference set truthfully.",
+  "tool": "built-in image_gen.imagegen",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-f35ced6e-9b56-4823-b6f9-38442c1ee31f.png",
+  "output_sha256": "0d73fb6238992c0f40d6f12fa5553114d6d48ba2c7479bc91614a4303d9d3c2d",
+  "prompt_path": "attempt-01-prompt.txt",
+  "prompt_sha256": "127bf0d933164fc2d12d42fcce49d761103dce56fd56252d1d4d3a6cd4505071",
+  "actual_reference_images": [
+    {
+      "reference_id": "R479",
+      "path": "project/references/case479.jpg",
+      "sha256": "2c2dfce4d68f752fbb3f2c370d8839af09ed5b8f4175c49041e25cb1cfe99fb4"
+    }
+  ]
+}

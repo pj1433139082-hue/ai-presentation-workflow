@@ -1,0 +1,1 @@
+S05 attempt-01 is preserved unchanged. Source image SHA-256: 7ceaa112daec1a4ab2fb015619525f28ca8512124accc545b904639c8fe062d3. Its visible checklist/shield marks and magnifier trace could imply completed validation or measured evidence, so revision-02 edits those visual cues only. This archive is provenance, not approval.

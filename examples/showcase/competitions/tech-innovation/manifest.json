@@ -1,0 +1,27 @@
+{
+  "id": "tech-innovation",
+  "label": "科技创新作品答辩",
+  "page_count": 6,
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "delivery_mode": "concept",
+  "concept_hashes": {
+    "S01": "436b4b5e9eda1aae89c3b5deefc792b3d4097ae45ab87c17bdd844af9cd314e2",
+    "S02": "bf43efeab767b95c033781ceeaa84ea6aafc4b0f63c5d192ed0a78128a438fe7",
+    "S03": "31f0e6bfa10ec4d50573f94a8d0d115b8150add1c5f1eecb8d7b9bfafb3359a0",
+    "S04": "ec75c0e4edab0002bfb0beca3113153ce952d97873775196a605fec2436a7631",
+    "S05": "2332ea9f88d1f7021f129347f729785e5da27babb0c9078543406a38d8cc4f6e",
+    "S06": "24c0642ec16058ffc25ab9933b93794fc39d3ce895673523d0d8670e41c40977"
+  },
+  "review_sha256": "d45d25c60122cdc13a2c8cbe39cab8dc9ec3eb1294b359a57a86df84d9f5e985",
+  "archive_sha256": "461f5db17a12b383697284bec4dd3b1a6b0da1da7c46b69be57e9921474fbe81",
+  "export_verified": true,
+  "user_visual_acceptance": "not-recorded",
+  "pptx": "not-requested"
+}

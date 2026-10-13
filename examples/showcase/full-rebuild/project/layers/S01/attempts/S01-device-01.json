@@ -1,0 +1,61 @@
+{
+  "call_id": "S01-device-01",
+  "item_id": "device",
+  "tool": "Codex built-in image_gen",
+  "operation": "edit / isolated device reconstruction",
+  "prompt_path": "attempts/S01-device-01.prompt.txt",
+  "prompt_sha256": "76927dceedbbcd76bd67c0209ab4aafba6eb706fa58bd3a808cd96c935c3d475",
+  "references": [
+    {
+      "sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+      "role": "edit target and full-slide appearance",
+      "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\delivery-modes\\assets-three\\concepts\\S01.png",
+      "index": 1
+    },
+    {
+      "sha256": "6cc07de77b72b10b59b55481deb64e9b1cb83643c3cb7553abdd738df3a9c72b",
+      "role": "legacy device identity reference",
+      "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\delivery-modes\\assets-three\\assets\\tech-device.png",
+      "index": 2
+    }
+  ],
+  "num_last_images_to_include": 2,
+  "transparent_background_requested": true,
+  "imagegen_original_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1360c-0feb-76f1-bf15-2ea32830cb09\\exec-ab44d795-b44a-462f-8982-db1f39ee3777.png",
+  "imagegen_original_sha256": "fb0ea48bbbc6fb539f645b6775db6fc18ad5f6ab69e70bead53ba9c7d35d954e",
+  "attempt_path": "attempts/S01-device-01.png",
+  "attempt_sha256": "fb0ea48bbbc6fb539f645b6775db6fc18ad5f6ab69e70bead53ba9c7d35d954e",
+  "accepted_asset_path": "assets/device.png",
+  "accepted_asset_sha256": "fb0ea48bbbc6fb539f645b6775db6fc18ad5f6ab69e70bead53ba9c7d35d954e",
+  "source_concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+  "dimensions_px": [
+    1672,
+    940
+  ],
+  "pixel_format": "Format32bppArgb",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_pixel_counts": {
+    "fully_transparent": 826657,
+    "low_alpha_1_to_7": 8996,
+    "partial_alpha_8_to_254": 735122,
+    "opaque": 905,
+    "visible_alpha_ge_8": 736027
+  },
+  "visible_alpha_ge_8_bbox_xyxy": [
+    324,
+    41,
+    1400,
+    901
+  ],
+  "visible_alpha_ge_8_padding_px": {
+    "left": 324,
+    "top": 41,
+    "right": 272,
+    "bottom": 39
+  },
+  "alpha_ge_8_touching_canvas_edge": 0,
+  "inspection": "Generated result displayed by image_gen and inspected with view_image. Transparent alpha is present; no alpha>=8 pixels touch the canvas edge. Blue and coral rim reflections remain on the device; no external scene, copy, floor, or shadow is included."
+}

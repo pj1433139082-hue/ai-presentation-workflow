@@ -1,0 +1,29 @@
+{
+  "project_id": "industry-tech-v2",
+  "audience": "了解团队知识协作产品概念的演示观众",
+  "goal": "展示虚构产品知栈从会后线索问题、概念协作机制、团队场景到小范围试用建议的完整故事。",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "concept-images",
+    "aspect_ratio": "16:9",
+    "scope": "local-showcase-only",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05"
+    ]
+  },
+  "source_map": [
+    {
+      "id": "EXAMPLE-TEAM-KNOWLEDGE-SCENARIO",
+      "kind": "locally-authored-fictional-showcase-content",
+      "locator": "本项目本地自编的知栈虚构产品、使用场景和试用建议；不是已实现功能、真实用户研究、性能数据或收益证据。",
+      "path": "sources/source-notes.md",
+      "sha256": "bbd9b60b8bbf3f019d79d49cb472b51fc56b8a4fa76b0e83d30cb5808087ad04",
+      "truth_status": "illustrative"
+    }
+  ]
+}

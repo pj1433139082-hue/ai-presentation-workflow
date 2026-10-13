@@ -1,0 +1,21 @@
+{
+  "slide_id": "S01",
+  "record_type": "imported-existing-concept",
+  "generation_tool": "built-in Codex image_gen (per preserved original provenance.json)",
+  "prompt": "Use case: product-mockup\nAsset type: 16:9 landscape technology-product launch cover concept\nInput images: Image 1 is a style and composition reference only. Borrow the strong central product presence, carefully separated material layers, clean studio reflections, and restrained annotation hierarchy. Do not edit or reproduce the VR headset, Meta logo, original wording, branded components, or exact layout.\nPrimary request: Create an original launch-cover visual for a fictional desktop collaboration and knowledge-retrieval terminal named 知栈. It should feel like a thoughtfully designed desk device, not a generic laptop or an existing commercial product.\nScene/backdrop: A seamless saturated ultramarine studio with a single warm coral light plane and a faint desk-like horizon; keep the background graphic and uncluttered.\nSubject: A compact sculptural desktop terminal with a wide smoked-glass display on a low brushed-aluminum dock. The display suggests meeting notes becoming connected knowledge threads through a few luminous abstract lines and paper-like fragments; screen micro-content must be non-readable and contain no invented UI words. No headset, no people.\nStyle/medium: Premium product-launch photography crossed with bold contemporary editorial poster design; tactile glass, satin metal, precise silhouette, strong art direction.\nComposition/framing: Wide 16:9. One hero product dominates the right half with an elegant three-quarter view and generous clear space on the left for typography. Use large Chinese title type, a compact descriptor, one sentence of promise, then three short feature phrases separated by small typographic marks. Avoid boxes and feature-card grids; make the type and object feel integrated in one confident campaign composition.\nLighting/mood: Crisp edge light against deep blue, one warm coral reflection, polished but calm and intelligent.\nColor palette: Ultramarine, smoked graphite, brushed silver, restrained coral.\nMaterials/textures: Optical glass, satin-finished aluminum, soft light falloff, subtle studio-floor reflection.\nText (verbatim; render each line exactly once, with no added wording):\n“知栈”\n“桌面知识协作终端”\n“让每次讨论，都接得上下一步。”\n“会后脉络留存”\n“资料语义检索”\n“任务线索串联”\n“概念产品 · 示例”\nTypography: Clear, refined Chinese sans-serif with confident editorial scale and crisp strokes; keep all listed Chinese copy legible and correctly spelled.\nConstraints: This is a fictional concept product. Do not imply measured performance, real availability, customer adoption, or verified product specifications. Keep all visible copy exactly to the supplied lines. Preserve safe margins and a clear hierarchy.\nAvoid: Existing company/product logos, recognizable branded hardware, extra English text, gibberish labels, fake statistics, cards, clutter, watermark, or a second product.\n",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "39acf69c59de9da0a3b58f7f7a5616404dca3b169ba06665ad0d6f42678b5d12",
+  "output_path": "concept.png",
+  "output_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+  "original_generation_record_path": "original-generation-record.json",
+  "original_generation_record_sha256": "4d64d640499c18461f4d5e673ce452930cb39eb4ae853a84569461510440f1e1",
+  "case_prompt_path": "../../project/provenance/reference-prompts/case17-original-prompt.txt",
+  "case_prompt_sha256": "44b543953f22d8613eb4e1051d6bdc71c194d1760d55182a742ffaf61d2f2fca",
+  "current_input_sha256": {
+    "brief.json": "7b009b1dafc976b1f71aace05613f4d5aab55254f634e57a4858d3af466db046",
+    "deck-spec.json": "297700de30467546431014256c5f378ec6bf228c94e4eb4047172114124658d2",
+    "reference-study.json": "9962ab5b65f307f55f8fed2af43dd812ea9e5a703b47fe25930b14af4a661acf",
+    "style-contract.json": "e09f06ff66335a425c17fa6b18805757d9a95dc20f434c3369c2a486eca3d6a9"
+  },
+  "history_note": "图像先于当前 industry-tech-v2 JSON 输入生成；以上当前输入哈希只用于本轮导入绑定，不声称生成工具历史上读取过这些 JSON。原生成 prompt、工具记录与输出字节已单独保留。"
+}

@@ -1,0 +1,52 @@
+{
+  "slide_id": "S06",
+  "actor": "agent",
+  "tool": "built-in image_gen.imagegen",
+  "recorded_at_utc": "2026-10-13T10:42:12+00:00",
+  "record_time_note": "Recorded after tool completion; image_gen did not expose an exact call timestamp.",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "8207e670bb18431585652f1f7a1dab866b24695b12eaa813cb66b45970dc224d",
+  "input_snapshot_path": "project/provenance/concept-input-hash-snapshot.json",
+  "input_sha256": {
+    "brief": "be753b05376e2eb6574204dd157646b68c056c433c1aa3e1dd3af76a9c143e84",
+    "deck_spec": "38bcded784aa6f7dc23b5c84b5af7e32696ea55200fc314ac98706aa55dbcd79",
+    "reference_study": "24835f60085580b88719aaa7bdf2db6e05254437a5009ca88983200cb5f556f8",
+    "style_contract": "360077d6253d9436a1d0db874dc75bbb7952cc5784e5fb6861a2c5286d56fa74"
+  },
+  "actual_tool_input_images": [
+    {
+      "role": "selected-local-design-reference",
+      "reference_id": "R479",
+      "path": "project/references/case479.jpg",
+      "sha256": "2c2dfce4d68f752fbb3f2c370d8839af09ed5b8f4175c49041e25cb1cfe99fb4"
+    },
+    {
+      "role": "style-anchor-generated-from-frozen-S01",
+      "slide_id": "S01",
+      "path": "design/S01/concept.png",
+      "sha256": "1e0e00c7b41da6e72c72fba314cc4d952e46b3c1de56c990ffe4d0931ec349a5"
+    }
+  ],
+  "reference_ids_bound": [
+    "R479"
+  ],
+  "history_note": "R297 was analyzed as a project design reference but not supplied to this S06 call. S01 was supplied as a generated style anchor.",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-d8f822f5-0e1f-48f0-95b2-bb740a27c058.png",
+  "output_sha256": "10f35528ed8ccd1a7d2fd0fc398b8b2b6f1d7f9e4e533dbe748cafb95d216a08",
+  "design_copy_path": "concept.png",
+  "project_concept_path": "project/concepts/S06.png",
+  "copied_sha256": {
+    "design": "10f35528ed8ccd1a7d2fd0fc398b8b2b6f1d7f9e4e533dbe748cafb95d216a08",
+    "project": "10f35528ed8ccd1a7d2fd0fc398b8b2b6f1d7f9e4e533dbe748cafb95d216a08"
+  },
+  "dimensions": {
+    "width": 1672,
+    "height": 941,
+    "format": "PNG"
+  },
+  "visual_check": {
+    "reviewed_at_original_resolution": true,
+    "observed": "All four illustrative task roles, conditional three-month roadmap, concluding title, and fictional-plan qualifier are legible; no names or real institution marks are present.",
+    "user_visual_acceptance": "not-recorded"
+  }
+}

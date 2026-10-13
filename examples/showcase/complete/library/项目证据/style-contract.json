@@ -1,0 +1,43 @@
+{
+  "version": "industry-library-v2",
+  "selected_reference_ids": [
+    "R469"
+  ],
+  "direction_actor": "agent",
+  "direction_reason": "根据已查看的原有借阅路线页和case469路线型科普参考延展；这是代理提出的本地示例方向，不代表真实机构采纳或用户视觉接受。",
+  "canvas": {
+    "aspect_ratio": "16:9"
+  },
+  "palette": {
+    "background": "#FBFAF4",
+    "primary_text": "#15335D",
+    "secondary_text": "#53647A",
+    "route_cobalt": "#168BC0",
+    "route_teal": "#18A6B0",
+    "accent_marigold": "#E7A53B",
+    "accent_coral": "#E58A70",
+    "paper_warm": "#EEE7D8"
+  },
+  "typography": {
+    "direction": "友好、清楚的公共服务信息排版；中文标题醒目，说明简练并保持易读。",
+    "text_color_rule": "深蓝承载主要文字，蓝绿强调路线，暖黄/珊瑚色少量点亮场景细节。"
+  },
+  "graphic_language": [
+    "明亮的社区阅读空间、纸张与书架质感，画面温和开放而不幼稚。",
+    "用一条清晰的方向线或空间动线串联重点，不用复杂密集的信息图。",
+    "场景中的服务柜台与设备保持泛化，不出现真实馆名、徽标或可读屏幕内容。"
+  ],
+  "slide_roles": {
+    "S01": "通用借阅指南封面",
+    "S02": "四步路线总览与旧页复用",
+    "S03": "借出、归还和遇到问题时的动作细解",
+    "S04": "正式规则入口与现场求助"
+  },
+  "layout_policy": "按照总览、动作细解和求助入口改变页面结构；不重复四站总览的整幅路线构图。",
+  "avoid": [
+    "真实图书馆名称/标识/政策伪装",
+    "虚构收费、期限、开放时间、证件规则或服务渠道",
+    "原参考中的儿童IP、发射场、火箭或密集四栏卡片",
+    "将通用提示误写成某馆官方通知"
+  ]
+}

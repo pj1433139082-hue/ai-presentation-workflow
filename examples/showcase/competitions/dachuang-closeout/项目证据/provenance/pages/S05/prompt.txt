@@ -1,0 +1,19 @@
+Use case: editorial infographic
+Asset type: one complete full-page 16:9 Chinese slide concept for a university student innovation-training project closeout defense; local showcase concept only.
+Primary request: create a premium, polished, legible Chinese slide that fulfills this page role: 计划顺延两周，资源账目按模拟口径说明.
+Scene/backdrop: warm near-white background with generous clean whitespace.
+Style/medium: refined editorial information design; deep ink green typography, low-saturation leaf green and pale water blue; natural botanical materials with subtle dimensional light where appropriate. This is a fresh composition informed by a reviewed style description, not an edit or copy of any image.
+Composition/framing: landscape 16:9 full slide. Composition: a clear two-part editorial page. Across the upper portion, a fine route shows original 12-week plan ending before the example 14-week closeout, with the two-week extension and reason. In the lower portion, use a clean simulated accounting ledger with three cost lines and one total equation; make the arithmetic visually exact: 1180 + 760 + 420 = 2360, and 2500 - 2360 = 140. No receipts, invoices, currency icons that imply payment proof, or extra values.
+Typography: typeset Chinese as crisp, correctly written text with clear hierarchy and comfortable reading size. Preserve every numeral, punctuation mark and phrase exactly. Do not add any visible text beyond the list below.
+Text (verbatim):
+• 计划顺延两周，资源账目按模拟口径说明
+• 原计划 12 周；结题情境设定为 14 周。
+• 原计划｜12 周
+• 示例实际｜14 周
+• 顺延原因｜完整降雨记录不足，分析与报告移至第 14 周
+• 原预算｜材料 1,200 · 工具 800 · 调研 500 · 合计 2,500 元
+• 模拟使用｜材料 1,180 + 工具 760 + 调研 420 = 2,360 元
+• 余额｜140 元
+• 模拟资源明细 · 非真实票据
+• 05 / 06
+Constraints: put the fictional/example status close to its claims; show all listed numbers exactly; produce a complete slide, not a mockup of a monitor or a collage. Keep the layout unique to this page role. No watermark, brand, real institution, real person, real photo evidence, certification, seal, patent, signature, invented data or pseudo-text. Do not alter the story or imply any real project work.

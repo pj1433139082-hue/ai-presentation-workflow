@@ -1,0 +1,75 @@
+{
+  "status": "selected",
+  "selected_reference_ids": [
+    "R-PROPOSAL-S01",
+    "R339"
+  ],
+  "references": [
+    {
+      "id": "R-PROPOSAL-S01",
+      "status": "analyzed",
+      "image_path": "references/previous-proposal-S01.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46",
+      "source_locator": "prior local project: dachuang/project/concepts/S01.png",
+      "usage_note": "上一阶段立项封面，实际查看原图；仅作同项目视觉连续性参考，不是过程数据或现场照片。",
+      "composition_and_reading_order": "横向封面，大字标题与雨水花园剖面形成左右张力；自然主体进入视线，边缘留白承载文字。",
+      "hierarchy_and_focal_point": "深绿标题优先，雨水花园微缩剖面为主体。",
+      "density_and_whitespace": "短文案、低密度、较大留白。",
+      "image_and_material_treatment": "白底、植物/水体的细节材质、柔和自然光。",
+      "transferable_rules": [
+        "保持白底、深墨绿和浅蓝水的色彩连续性",
+        "自然主体可以建立视觉入口",
+        "正文清楚、留白服务阅读"
+      ],
+      "project_translation": [
+        "封面可延续微缩雨水花园材质，但过程页改用时间轨迹、装置拆解和记录注释",
+        "不复制封面左右分栏，每页随过程任务选择不同结构"
+      ],
+      "do_not_copy": [
+        "不复制原封面的左右分栏构图或同一微缩剖面",
+        "不把生成场景当作实地照片或证据"
+      ],
+      "target_slide_roles": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ]
+    },
+    {
+      "id": "R339",
+      "status": "analyzed",
+      "image_path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642",
+      "source_locator": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-339; original prompt preserved in provenance/reference-prompts/",
+      "usage_note": "实际查看 case339 原图并保留原始提示词；仅借鉴白底自然主体的材质质感与清晰编辑留白，不作为事实来源。",
+      "composition_and_reading_order": "海报放大主体引导视线，标题、说明和信息区分层；原图为纵向多主题拼版。",
+      "hierarchy_and_focal_point": "主体最大，标题与少量说明优先。",
+      "density_and_whitespace": "白底留白充足，信息区块克制。",
+      "image_and_material_treatment": "自然主体高细节、真实质感与柔光。",
+      "transferable_rules": [
+        "自然主体有清晰焦点",
+        "白底、材质细节与柔和光影",
+        "准确短文案和明确层级"
+      ],
+      "project_translation": [
+        "把动物主体换成示意的雨水花园、装置与记录场景",
+        "各页按进度、记录、异常、调整或行动来选择结构"
+      ],
+      "do_not_copy": [
+        "不使用任何动物或科普事实",
+        "不复制纵向拼版、底部四栏、品牌标识或独特画面构图"
+      ],
+      "target_slide_roles": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ]
+    }
+  ]
+}

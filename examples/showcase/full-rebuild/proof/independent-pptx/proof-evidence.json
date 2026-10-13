@@ -1,0 +1,2822 @@
+{
+  "status": "built-3-page-independent-proof",
+  "proof_scope": "independent PPTX reconstruction proof outside APW assets-mode endpoint",
+  "formal_assembly_acceptance": "not-claimed",
+  "visual_faithfulness_assessment": "not-determined-by-file-binding-or-object-counts",
+  "concept_slide_raster_used_as_source": false,
+  "complete": true,
+  "scene": {
+    "path": "project/scene.json",
+    "sha256": "64782c0d289772caeae10c6b193d7ae44aedd3e2e3530436622299deb72bfe68"
+  },
+  "source_contract": {
+    "status": "bound",
+    "dependency_files": [
+      {
+        "path": "project/scene.json",
+        "sha256": "64782c0d289772caeae10c6b193d7ae44aedd3e2e3530436622299deb72bfe68"
+      },
+      {
+        "path": "project/layers/S01/inventory.json",
+        "sha256": "8e0da9db98cecf2c8c1a9ed7ad7fd61b0ac00887f4a8d87d7837a699d06c82ad"
+      },
+      {
+        "path": "project/layers/S01/scene.json",
+        "sha256": "362a489de0b15ba339521059c0aba67d5139dcf9229e4e2a58ec9fb38acfbee5"
+      },
+      {
+        "path": "project/layers/S02/finalize_metadata.py",
+        "sha256": "09660d89db842d372bb523a4b9de5aebc76ef7c15b1e2fb5b4b7b506a75cd525"
+      },
+      {
+        "path": "project/layers/S02/fix_pipe_gradients.py",
+        "sha256": "e191a45b09546eb48a5b611563ed34f0133f0da69d7b64ada7b6a8ef94fe44b6"
+      },
+      {
+        "path": "project/layers/S02/inventory.json",
+        "sha256": "12ed3a4c2ae6649d0ea4fb88b8562936e5b2d8d8bda1c31adc1847d491658322"
+      },
+      {
+        "path": "project/layers/S02/qa_report.json",
+        "sha256": "7bf55d62c32678817690b3e2a166f4be0400a530baaa5aacae3c1236f72af750"
+      },
+      {
+        "path": "project/layers/S02/scene.json",
+        "sha256": "9b262907d25bb237c1b77bb5e1cc8d5492b472b42ec04aa5af6dedbd2803152a"
+      },
+      {
+        "path": "project/layers/S02/stage_manifest.py",
+        "sha256": "95a45e5a2e948e67d27b3c27ef50ccc31576337fde4387fc9daa30c5a5e659dd"
+      },
+      {
+        "path": "project/layers/S02/update_flows.py",
+        "sha256": "5360c1645d0d7ca2bc6729ef3d48c68aed26a5bb7de700d402a55e422bc2e015"
+      },
+      {
+        "path": "project/layers/S02/verify_shard.py",
+        "sha256": "e660dc0e1811dde8a81636c75d76b6d294bd6f56959611c70beaadbf2f9f77c1"
+      },
+      {
+        "path": "project/layers/S03/inventory.json",
+        "sha256": "6be594c915e81fe6d3ae8fd9c88d75adde947ba2eb9595f2b87f7076070d2094"
+      },
+      {
+        "path": "project/layers/S03/scene.json",
+        "sha256": "6854fdf098b1c09f7ce113d0a29abd5e7488a5fa3c1f8826d93d3c4f2875d1e0"
+      },
+      {
+        "path": "project/layers/S03/attempts/background-generation.json",
+        "sha256": "4cb124909d0bdbe739776bc877c7fe6a8b68e30c184def7f267b62eabc32b4c0"
+      },
+      {
+        "path": "project/layers/S03/attempts/membrane-generation.json",
+        "sha256": "330dada5f16dda096171c6e881664f3638567358d0346f7a36c161f04c577d57"
+      },
+      {
+        "path": "project/layers/S03/attempts/membrane-repair-generation.json",
+        "sha256": "17833ba6953e4efd5f5b9a5df533ba8ca9d754c273ff65d57f06b37d3715798b"
+      },
+      {
+        "path": "project/layers/S03/attempts/membrane-v1.png",
+        "sha256": "6faf2d0006ef13caa3c4af6f9cddb1e399999cecd30d29a123e96e9297abae83"
+      },
+      {
+        "path": "project/layers/S03/components/chart-data.json",
+        "sha256": "e1739136eddccbe620a4b446c96ac3020c89e3599938898c694cd25cd8156563"
+      },
+      {
+        "path": "project/layers/S03/components/chart-heading.json",
+        "sha256": "59e77e147ddce9ba75c1b6322fa9775a0a09db37c8872540cd8e56264c3fdb2d"
+      },
+      {
+        "path": "project/layers/S03/components/qualifier.json",
+        "sha256": "f878b6faa078818172e1a7b0a3440eef6c78efdb9867eed7c0bf9ac382343b24"
+      },
+      {
+        "path": "project/layers/S03/components/single.json",
+        "sha256": "955d2afa0325e0afda91c9820e5cb5aa687c24532c119eca079e890195294a7c"
+      },
+      {
+        "path": "project/layers/S03/components/takeaway.json",
+        "sha256": "312d6e3f13248da10841f4c8b9b75d407e33d68a4ac02558ff752177e20f03be"
+      },
+      {
+        "path": "project/layers/S03/components/title.json",
+        "sha256": "ff229f50d9e62dbca574fa4c052aefefa0157b583178cc668448618851d73bc0"
+      },
+      {
+        "path": "project/layers/S02/components/heating-furnace.png",
+        "sha256": "13d8b8b83e286fe9cde84ae324c023d3ff1b488c669cc7f40981c7429c5628b2"
+      },
+      {
+        "path": "project/layers/S02/components/text-badge-exchanger.svg",
+        "sha256": "edc25b07eba2fc842a41ebce19959744b14211ddfd56bdb5a07f139cb88b3b58"
+      },
+      {
+        "path": "project/layers/S02/components/text-badge-exhaust.svg",
+        "sha256": "ffa4108ba27eab2e93c5b17a98cb2efe4bdd86486d7c2fd26fdb403dfc30007d"
+      },
+      {
+        "path": "project/layers/S02/components/text-badge-heating.svg",
+        "sha256": "049648ac02812041ed2aee8b6809eb1ef54934058231a76149bb3bf606d8f152"
+      },
+      {
+        "path": "project/layers/S02/components/text-badge-production.svg",
+        "sha256": "fd52b9e22c5c0bed172347ef7e72f41f0bf541dcb508a6a2e786c2781f7c2efb"
+      },
+      {
+        "path": "project/layers/S02/components/text-badge-reuse.svg",
+        "sha256": "7e7ba9c087a79bd1ce31672c7a55b83cd879ee6d6b82a9d012aa7dbf03c83878"
+      },
+      {
+        "path": "project/layers/S02/components/text-footer.svg",
+        "sha256": "004c6229cbd410806b5d60e2efad47d2e0f15744aa6d223c2cbfcbeae4a600b4"
+      },
+      {
+        "path": "project/layers/S02/components/text-subtitle.svg",
+        "sha256": "9ef68b66f7ba99f491c02657ee687bf654efae1039471e6e06bb544929012bd2"
+      },
+      {
+        "path": "project/layers/S02/components/text-title.svg",
+        "sha256": "017daa7c3f491a5971cc95f8d4cb11189e8258d6b6e6ec56c8f168327ba99d6c"
+      },
+      {
+        "path": "project/layers/S02/attempts/01-background-plate/output.png",
+        "sha256": "c630a304669e61e2e098ba429ab94a35f4588c75603bf08030ff15841f04c01b"
+      },
+      {
+        "path": "project/layers/S02/attempts/01-background-plate/record.json",
+        "sha256": "2e418a9b1cc6926b5b7ac7bad8e9b3f0130aeb4ae2e8986304d43410fd85569e"
+      },
+      {
+        "path": "project/layers/S02/attempts/02-heating-furnace/component-candidate.png",
+        "sha256": "13d8b8b83e286fe9cde84ae324c023d3ff1b488c669cc7f40981c7429c5628b2"
+      },
+      {
+        "path": "project/layers/S02/attempts/02-heating-furnace/output.png",
+        "sha256": "13d8b8b83e286fe9cde84ae324c023d3ff1b488c669cc7f40981c7429c5628b2"
+      },
+      {
+        "path": "project/layers/S02/attempts/02-heating-furnace/record.json",
+        "sha256": "44e6e988a691bc6531b09ab990e949364047b436dfd95221d40fdd2f947eedbb"
+      },
+      {
+        "path": "project/layers/S02/attempts/03-heating-furnace-repair/output.png",
+        "sha256": "6142c9890b2d42970e7643eee4e524c2cc123d5134a007169cfb8392e2e887b8"
+      },
+      {
+        "path": "project/layers/S02/attempts/03-heating-furnace-repair/record.json",
+        "sha256": "8880df7eb6b896be1ede424c4fd286cfd2ce953d2515b1061b2d84c72922a957"
+      },
+      {
+        "path": "project/layers/S02/attempts/04-production-machine/output.png",
+        "sha256": "db0e232daa48df8b7abc21154c22ac1656f8847c12b6933b834061e0b10ef2ab"
+      },
+      {
+        "path": "project/layers/S02/attempts/04-production-machine/record.json",
+        "sha256": "d055223db87139b74bce1ac5179b9a45186adc7e41a041c8c4c787ea9f95c1c7"
+      },
+      {
+        "path": "project/layers/S02/attempts/05-exhaust-tower/output.png",
+        "sha256": "09a7ecb8a3a54cab972ef6b7e7ecc482f2c2693caa6dff1c2e2fb34df89ba8c6"
+      },
+      {
+        "path": "project/layers/S02/attempts/05-exhaust-tower/record.json",
+        "sha256": "df3bde9bf0e6313af728f5e36cf21232e6d4e1b0cd21a698d011baceb2f6f497"
+      },
+      {
+        "path": "project/layers/S02/attempts/06-recovery-vessel-pump/output.png",
+        "sha256": "97fb535164ad3536ae64826b81c3836982b8f65c8a92aec8ced0192f66462551"
+      },
+      {
+        "path": "project/layers/S02/attempts/06-recovery-vessel-pump/record.json",
+        "sha256": "50b85224ab189999d8ab72a5accc3367d1f7dfef662cf84c1caee5854269c635"
+      },
+      {
+        "path": "project/layers/S02/attempts/07-heat-exchanger/output.png",
+        "sha256": "ab4bbc68c71242cfa15dfd4d9636bebe80cbd7c36bbc53ec08042a72c7fefbfa"
+      },
+      {
+        "path": "project/layers/S02/attempts/07-heat-exchanger/record.json",
+        "sha256": "9572e692f3de42cd0327f644176e5fa912453075c82f43b04571a04b70185e4f"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-bg-01.json",
+        "sha256": "d2bbc0f0d8ba9ca508b88abfb34a1ce820d587ab280e0b65f093d74302eee50c"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-bg-01.png",
+        "sha256": "7d0d38635b550a7707a99433b73fe3f161b945193d21bd598c3acaad57f0e4c6"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-bg-01.prompt.txt",
+        "sha256": "95e3038c290fae48ab7fc34abbffb139ef2d3064723b45dc741ed9e629ba2734"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-contact-shadow-01.json",
+        "sha256": "38c8cf6071b9860493c34afb3d13aad87ff912208a77e8680a61f91587e8e6ed"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-contact-shadow-01.png",
+        "sha256": "8233b6cdb7056235b565f34a9aa53253e11744375aca400126217de3ac01d27c"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-contact-shadow-01.prompt.txt",
+        "sha256": "942561b4123ce7505b36368979769699452c2dcbbd0c5f639e1668723b615394"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-device-01.json",
+        "sha256": "808657afb78fb32229d27116dd9775e8db232d922a0ceea1702c06f660926918"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-device-01.png",
+        "sha256": "fb0ea48bbbc6fb539f645b6775db6fc18ad5f6ab69e70bead53ba9c7d35d954e"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-device-01.prompt.txt",
+        "sha256": "76927dceedbbcd76bd67c0209ab4aafba6eb706fa58bd3a808cd96c935c3d475"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-reflection-01.json",
+        "sha256": "fe408ead6308144355caa2dd77b780ddafdf48cf5c8ecd4184a72d6048fa7584"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-reflection-01.png",
+        "sha256": "4d65af38cf59ceb9062f8a182aa4f61fe418bd6595289834d00a97fcf7ad5c37"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-reflection-01.prompt.txt",
+        "sha256": "c608bdd9427020ab9ca17a2d6dee77622c813c6f5c8edbadd8dd114e5b98cbe5"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-reflection-02.json",
+        "sha256": "c67e617f424a8c46de312e9f5dc63f59cf52589e66ce54fdfe8cd947b358333b"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-reflection-02.png",
+        "sha256": "5f1db4147c6d3d20b6ad3ba3eb6381503e8d0c142e1f1f0415d4bf4a090e673a"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-reflection-02.prompt.txt",
+        "sha256": "db960d431999b2fe5618211f3b29ba114ef4f694c7b11061537166ae06096654"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-wordmark-01.json",
+        "sha256": "6fdb7cb17adbbbfff9e4f03807bf94ea722aa1861bb3845f3a2f6a9c5d59fa5d"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-wordmark-01.png",
+        "sha256": "bb77440ee9b7d89aa62666c9cea8fd17ade08d1570b7f162dfc48b0f8fe78743"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-wordmark-01.prompt.txt",
+        "sha256": "0dc3da0df0e0557f4e91eb67ffb58211dcf35383cf411e0bfe20765a58eae41f"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-wordmark-02.json",
+        "sha256": "6c559657b6ba3f1a7e2d00a3f79faca872ecbe2e0f0fd3ceb7ec397313a97233"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-wordmark-02.png",
+        "sha256": "8256cf8431d75f8e1b48d54d5de1ab848924d926e861fcdb9424ee12bd62001d"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-wordmark-02.prompt.txt",
+        "sha256": "6725abf7ddce9bce0c8c5781756f81864c1e09a133d11486394822d768b9989f"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-wordmark-03.json",
+        "sha256": "3484573bd8148c98cb5007daced00a4eed6a3e6fbb011604a769ac7639c610e4"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-wordmark-03.png",
+        "sha256": "8ace4a5ae48155437dfc4c824f6e960135527e893f4c51edf29cfd9495181c55"
+      },
+      {
+        "path": "project/layers/S01/attempts/S01-wordmark-03.prompt.txt",
+        "sha256": "edd1e620be72ed0b2b170d1b5dd7450bdc869b74db4a6cf5170722cf8c2a7c38"
+      },
+      {
+        "path": "project/index.html",
+        "sha256": "874c1b82ddf4503eb2965c7629c15ecdc69fd68c9d336eae897411b8ee4d155c"
+      },
+      {
+        "path": "project/isolations.html",
+        "sha256": "c1e1e66b089b5bfc2cc4c4eeb5f1b9fd4ce18d12e1fb13e6aacda426bd5c4cb9"
+      },
+      {
+        "path": "project/rebuild-S01.html",
+        "sha256": "3a5bbe548edfc68ac41ef169e9f59ca0f5c39403dcbdecec0c05b5b232499fb0"
+      },
+      {
+        "path": "project/rebuild-S02.html",
+        "sha256": "3b74ac3c9a9afcbc90ec6bbe7deb71679f4a8c620a56012da015bbdb09caf3e4"
+      },
+      {
+        "path": "project/rebuild-S03.html",
+        "sha256": "fd0bf50f35c36ead528b053b584b1106c909a067f0d1eddd9d231a0d0dbd5f7d"
+      }
+    ],
+    "reconstruction_map": {
+      "path": "proof/independent-pptx/input-contract/reconstruction-map.json",
+      "sha256": "165458c353f451630166164e35c2b1770a90d6f0a5bd4e87b57b971ea4aad8d9",
+      "historical_working_path": "project/reconstruction-map.json"
+    },
+    "asset_manifest": {
+      "path": "proof/independent-pptx/input-contract/asset-manifest.json",
+      "sha256": "a4a5d62bc85e9de04ddf5828d3c68b073576585212acd562b7e349f11717379d",
+      "historical_working_path": "project/asset-manifest.json"
+    },
+    "concept_generation_log": {
+      "path": "project/concept-generation-log.json",
+      "sha256": "3cc4256ba54710448e3cfe16988a0f3af9fbcd8f76937baf78658b326ed5b4a8"
+    },
+    "dependency_file_count": 76,
+    "generation_inputs_bound": true
+  },
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03"
+  ],
+  "present_slide_ids": [
+    "S01",
+    "S02",
+    "S03"
+  ],
+  "missing_slide_ids": [],
+  "builder": {
+    "path": "tools/build_reconstruction_pptx.py",
+    "sha256": "56d787171aeca7c6486291fadf46686153eda7276ee7ad79906c2135f7c58307"
+  },
+  "backend": {
+    "pptxgenjs_version": "4.0.1",
+    "pptxgenjs_module": "C:\\Users\\14331\\AppData\\Roaming\\npm\\node_modules\\pptxgenjs",
+    "pptxgenjs_package_json_sha256": "a4fc694898ef6f7da4c5840b799b593a0a74e9e05b7490b2ac5ee144762db477",
+    "pptxgenjs_entry_path": "dist/pptxgen.cjs.js",
+    "pptxgenjs_entry_sha256": "873d182a8e2e1c0b5e522ef146117936b96b9b2024667bd4c1de59e2b031d27a",
+    "node_output": ""
+  },
+  "pptx": {
+    "path": "proof/independent-pptx/independent-reconstruction-proof-3pages.pptx",
+    "pptx_sha256": "6dd4bf2c740e7960aedff3a3c14d6ddb2390a393f307bbb711ad2f6427fc586e",
+    "pptx_size_bytes": 17306244,
+    "slide_xml_count": 3,
+    "embedded_media_count": 86,
+    "source_media_hashes_found": 48,
+    "source_media": [
+      {
+        "path": "project/layers/S01/assets/background.png",
+        "sha256": "7d0d38635b550a7707a99433b73fe3f161b945193d21bd598c3acaad57f0e4c6",
+        "embedded_member": "ppt/media/image-1-1.png"
+      },
+      {
+        "path": "project/layers/S01/assets/floor-reflection.png",
+        "sha256": "5f1db4147c6d3d20b6ad3ba3eb6381503e8d0c142e1f1f0415d4bf4a090e673a",
+        "embedded_member": "ppt/media/image-1-2.png"
+      },
+      {
+        "path": "project/layers/S01/assets/contact-shadow.png",
+        "sha256": "8233b6cdb7056235b565f34a9aa53253e11744375aca400126217de3ac01d27c",
+        "embedded_member": "ppt/media/image-1-3.png"
+      },
+      {
+        "path": "project/layers/S01/assets/device.png",
+        "sha256": "fb0ea48bbbc6fb539f645b6775db6fc18ad5f6ab69e70bead53ba9c7d35d954e",
+        "embedded_member": "ppt/media/image-1-4.png"
+      },
+      {
+        "path": "project/layers/S01/assets/wordmark.png",
+        "sha256": "8256cf8431d75f8e1b48d54d5de1ab848924d926e861fcdb9424ee12bd62001d",
+        "embedded_member": "ppt/media/image-1-5.png"
+      },
+      {
+        "path": "project/layers/S02/components/background-plate.png",
+        "sha256": "c630a304669e61e2e098ba429ab94a35f4588c75603bf08030ff15841f04c01b",
+        "embedded_member": "ppt/media/image-2-1.png"
+      },
+      {
+        "path": "project/layers/S02/components/flow-orange-heater-production.svg",
+        "sha256": "6ca2450d1cea7bd419144b3fabe7e95d32a2eb28a8316e47f8723a9e9d471a9b",
+        "embedded_member": "ppt/media/image-2-3.svg"
+      },
+      {
+        "path": "project/layers/S02/components/flow-orange-production-exhaust.svg",
+        "sha256": "a1e6f910d058f04360d9f5d830a358c2853f09da625725842dbf4676e6722fc4",
+        "embedded_member": "ppt/media/image-2-5.svg"
+      },
+      {
+        "path": "project/layers/S02/components/flow-orange-exhaust-exchanger.svg",
+        "sha256": "fea4d1f253e68415a5eae1039a48dbd571b3e2a6bf4528cd748740d318d3610c",
+        "embedded_member": "ppt/media/image-2-7.svg"
+      },
+      {
+        "path": "project/layers/S02/components/flow-teal-return-loop.svg",
+        "sha256": "40ea97961f2cdd0657b5ffe6356e34a5df4178cb5d59be53a66facfd224232bb",
+        "embedded_member": "ppt/media/image-2-9.svg"
+      },
+      {
+        "path": "project/layers/S02/components/heating-furnace-v2.png",
+        "sha256": "6142c9890b2d42970e7643eee4e524c2cc123d5134a007169cfb8392e2e887b8",
+        "embedded_member": "ppt/media/image-2-10.png"
+      },
+      {
+        "path": "project/layers/S02/components/production-machine.png",
+        "sha256": "db0e232daa48df8b7abc21154c22ac1656f8847c12b6933b834061e0b10ef2ab",
+        "embedded_member": "ppt/media/image-2-11.png"
+      },
+      {
+        "path": "project/layers/S02/components/exhaust-tower.png",
+        "sha256": "09a7ecb8a3a54cab972ef6b7e7ecc482f2c2693caa6dff1c2e2fb34df89ba8c6",
+        "embedded_member": "ppt/media/image-2-12.png"
+      },
+      {
+        "path": "project/layers/S02/components/recovery-vessel-pump.png",
+        "sha256": "97fb535164ad3536ae64826b81c3836982b8f65c8a92aec8ced0192f66462551",
+        "embedded_member": "ppt/media/image-2-13.png"
+      },
+      {
+        "path": "project/layers/S02/components/heat-exchanger.png",
+        "sha256": "ab4bbc68c71242cfa15dfd4d9636bebe80cbd7c36bbc53ec08042a72c7fefbfa",
+        "embedded_member": "ppt/media/image-2-14.png"
+      },
+      {
+        "path": "project/layers/S02/components/support-ground-384.svg",
+        "sha256": "f49eafe90df429adfc128e16e32ff32998e7c54e2e520848f42afcf9d29240cb",
+        "embedded_member": "ppt/media/image-2-16.svg"
+      },
+      {
+        "path": "project/layers/S02/components/support-ground-529.svg",
+        "sha256": "83b2a504007b51681d65b60efa326c43fe53ea33d2f9c9ae4c6e33149326de65",
+        "embedded_member": "ppt/media/image-2-18.svg"
+      },
+      {
+        "path": "project/layers/S02/components/support-ground-653.svg",
+        "sha256": "0e04bd94313caa0175de4dcd7670fefd1f86889548cd5928c28c26ed466006c6",
+        "embedded_member": "ppt/media/image-2-20.svg"
+      },
+      {
+        "path": "project/layers/S02/components/support-ground-1150.svg",
+        "sha256": "a67ef325e5d375d0ae5b9699c989efcba45ea1b05bcd9ff3e7be8e023e8e05f4",
+        "embedded_member": "ppt/media/image-2-22.svg"
+      },
+      {
+        "path": "project/layers/S02/components/flow-orange-exchanger-side.svg",
+        "sha256": "ae2e65b391eef521fb6debf0830511abf98209060a8ec2594eacccc33a9c90c4",
+        "embedded_member": "ppt/media/image-2-24.svg"
+      },
+      {
+        "path": "project/layers/S02/components/collar-teal-return-left.svg",
+        "sha256": "2d248b7e0a632a102ebd0145ca18a81e40816bf957aa446ecbac1a7c97812dd9",
+        "embedded_member": "ppt/media/image-2-26.svg"
+      },
+      {
+        "path": "project/layers/S02/components/collar-hot-production-inlet.svg",
+        "sha256": "74b30711c4cee135a7e0b46733e1f0e6ed3ea745ff69a3b3ce16063536d1bd24",
+        "embedded_member": "ppt/media/image-2-28.svg"
+      },
+      {
+        "path": "project/layers/S02/components/collar-hot-production-outlet.svg",
+        "sha256": "e8a066fda7143fb000052a36c7220b93e63604961f17165809c7240756a5cba5",
+        "embedded_member": "ppt/media/image-2-30.svg"
+      },
+      {
+        "path": "project/layers/S02/components/collar-hot-downcomer.svg",
+        "sha256": "6a90b6cf37a5de566001b97ef9598cd08b47afc81f1a72654fd84edfcf96ab29",
+        "embedded_member": "ppt/media/image-2-32.svg"
+      },
+      {
+        "path": "project/layers/S02/components/collar-exchanger-outlet.svg",
+        "sha256": "0d94e4f3a663b29c30c448c411a83e0fc690e6a65b8ee181b0f9fb32afe6392a",
+        "embedded_member": "ppt/media/image-2-34.svg"
+      },
+      {
+        "path": "project/layers/S02/components/arrow-orange-heat-to-production.svg",
+        "sha256": "0bf04d57f7503e9b46721ddf619b050548c62ddfb98906e2e51d7a4a26a2c424",
+        "embedded_member": "ppt/media/image-2-36.svg"
+      },
+      {
+        "path": "project/layers/S02/components/arrow-orange-production-to-exhaust.svg",
+        "sha256": "22c05259c2919a35d4e977e9a555917836c71afff8ff70b481f3f8cf256c477b",
+        "embedded_member": "ppt/media/image-2-38.svg"
+      },
+      {
+        "path": "project/layers/S02/components/arrow-orange-exhaust-down.svg",
+        "sha256": "fed330869bb537757cb0d313e89e1c9a268a24445019ee8d6890e849286752d6",
+        "embedded_member": "ppt/media/image-2-40.svg"
+      },
+      {
+        "path": "project/layers/S02/components/arrow-orange-exchanger-outlet.svg",
+        "sha256": "ecb72292ce4404c0a58689a23dc320817f6423b01a059a753d95c749623db819",
+        "embedded_member": "ppt/media/image-2-42.svg"
+      },
+      {
+        "path": "project/layers/S02/components/arrow-teal-return-1.svg",
+        "sha256": "e9dd2beb529d8d4e26ee094c8cfc658ecc372c4a6ee12156eab113989d5612b0",
+        "embedded_member": "ppt/media/image-2-44.svg"
+      },
+      {
+        "path": "project/layers/S02/components/arrow-teal-return-2.svg",
+        "sha256": "18aca1594c4aef81144d8548411221ce75db97118aeb037923b7f8832342a0ca",
+        "embedded_member": "ppt/media/image-2-46.svg"
+      },
+      {
+        "path": "project/layers/S02/components/arrow-teal-return-3.svg",
+        "sha256": "dc55d81b247f466bc7838e159672616a6895a8af52e0dffc603e21254e5ee50a",
+        "embedded_member": "ppt/media/image-2-48.svg"
+      },
+      {
+        "path": "project/layers/S02/components/arrow-teal-up-1.svg",
+        "sha256": "ec1cb462619b51d9118b9263cba6dbbca0b55855b50a7d8951117a91ed77409e",
+        "embedded_member": "ppt/media/image-2-50.svg"
+      },
+      {
+        "path": "project/layers/S02/components/arrow-teal-up-2.svg",
+        "sha256": "3151cf0f5097499077a516652ffc4011c4ac35a6342b66f9f8c752d858217cc3",
+        "embedded_member": "ppt/media/image-2-52.svg"
+      },
+      {
+        "path": "project/layers/S02/components/badge-shell-heating.svg",
+        "sha256": "5efc1399bfe085134459e915d35f00d92d509f8df90444b15c48f8b8aff99248",
+        "embedded_member": "ppt/media/image-2-54.svg"
+      },
+      {
+        "path": "project/layers/S02/components/badge-shell-production.svg",
+        "sha256": "fa93f5213700f37c10115d413268d70f761cab5646e127613a4677cb556ca94e",
+        "embedded_member": "ppt/media/image-2-56.svg"
+      },
+      {
+        "path": "project/layers/S02/components/badge-shell-exhaust.svg",
+        "sha256": "57881d49d38085e54f0f77eb210c48be8af31794a9be46a027fbcfb17dfcdc76",
+        "embedded_member": "ppt/media/image-2-58.svg"
+      },
+      {
+        "path": "project/layers/S02/components/badge-shell-reuse.svg",
+        "sha256": "be50e06b1d1c72ec462adc4fd50819ea750d556849c527ff47cc8786ef76c477",
+        "embedded_member": "ppt/media/image-2-60.svg"
+      },
+      {
+        "path": "project/layers/S02/components/badge-shell-exchanger.svg",
+        "sha256": "5bfeea7b44a4ca7f7941cc162625ce507837ff650531f14539d0cbc436b4f3bb",
+        "embedded_member": "ppt/media/image-2-62.svg"
+      },
+      {
+        "path": "project/layers/S02/components/divider-title.svg",
+        "sha256": "1f3b210195edf303d43d0aca837b7d0b5464960811b5461799664d9a6e9b2de1",
+        "embedded_member": "ppt/media/image-2-64.svg"
+      },
+      {
+        "path": "project/layers/S02/components/divider-footer-left.svg",
+        "sha256": "e5216de7c24fda399ccf4c90fd16232f2811e0ce246009fb5474d2e8a7415bf6",
+        "embedded_member": "ppt/media/image-2-66.svg"
+      },
+      {
+        "path": "project/layers/S02/components/divider-footer-right.svg",
+        "sha256": "5d413df042a8c529b2c1b31edff12704e4bc49fc1e931956fd19a87ba8dbb37b",
+        "embedded_member": "ppt/media/image-2-68.svg"
+      },
+      {
+        "path": "project/layers/S03/assets/background.png",
+        "sha256": "718cbf55c11f65e0cb42578efb9b1fc0e8574b1a9e6d9831f7fbc9d494bb2e54",
+        "embedded_member": "ppt/media/image-3-1.png"
+      },
+      {
+        "path": "project/layers/S03/assets/membrane.png",
+        "sha256": "c8bfecda6c837c193ae3110cdce9487b501a95c88c6ceb07421f72587556b84c",
+        "embedded_member": "ppt/media/image-3-2.png"
+      },
+      {
+        "path": "project/layers/S03/components/chart.svg",
+        "sha256": "79aca53b6648000d3a20352bec30c11b18095726c5494c876428b91559d3be54",
+        "embedded_member": "ppt/media/image-3-4.svg"
+      },
+      {
+        "path": "project/layers/S03/components/divider.svg",
+        "sha256": "cb520ec482d9f078c8454637616d4431e5b8663822f4cff1a867fc435e49aaed",
+        "embedded_member": "ppt/media/image-3-6.svg"
+      },
+      {
+        "path": "project/layers/S03/components/bullet-2.svg",
+        "sha256": "7a4ff34c9232be6a353694ea7cf081f331a3a780f6e741a6a4eeb953bc9fe05e",
+        "embedded_member": "ppt/media/image-3-9.png"
+      },
+      {
+        "path": "project/layers/S03/components/qualifier-frame.svg",
+        "sha256": "fb6bdf51a415247dbc6a9b4e4838a8f4e18e17ad00ff078641e163ce12589e19",
+        "embedded_member": "ppt/media/image-3-12.svg"
+      }
+    ],
+    "embedded_font_parts": [],
+    "external_relationships": [],
+    "concept_rasters_embedded": []
+  },
+  "source_files": [
+    {
+      "path": "project/layers/S01/assets/background.png",
+      "sha256": "7d0d38635b550a7707a99433b73fe3f161b945193d21bd598c3acaad57f0e4c6"
+    },
+    {
+      "path": "project/layers/S01/assets/contact-shadow.png",
+      "sha256": "8233b6cdb7056235b565f34a9aa53253e11744375aca400126217de3ac01d27c"
+    },
+    {
+      "path": "project/layers/S01/assets/device.png",
+      "sha256": "fb0ea48bbbc6fb539f645b6775db6fc18ad5f6ab69e70bead53ba9c7d35d954e"
+    },
+    {
+      "path": "project/layers/S01/assets/floor-reflection.png",
+      "sha256": "5f1db4147c6d3d20b6ad3ba3eb6381503e8d0c142e1f1f0415d4bf4a090e673a"
+    },
+    {
+      "path": "project/layers/S01/assets/wordmark.png",
+      "sha256": "8256cf8431d75f8e1b48d54d5de1ab848924d926e861fcdb9424ee12bd62001d"
+    },
+    {
+      "path": "project/layers/S01/native-text/S01-descriptor.json",
+      "sha256": "5559d843571cac52426ea16269b02503bd1ac61c36ada6ff1f473a3a336a34ca"
+    },
+    {
+      "path": "project/layers/S01/native-text/S01-example.json",
+      "sha256": "7f9e20fbf3a881fc8727f88941d50934d7fcd56789ef3f8a3b7f584e05d176af"
+    },
+    {
+      "path": "project/layers/S01/native-text/S01-features.json",
+      "sha256": "bb2c397f2b99746af90c8cced75e468fd31279e9df5f09313d14844ba1f7bfe8"
+    },
+    {
+      "path": "project/layers/S01/native-text/S01-takeaway.json",
+      "sha256": "22e8f1bb36e55692ac878a44b9f3fd61373b781227993b0a23e6cdacfcd73bc9"
+    },
+    {
+      "path": "project/layers/S02/components/arrow-orange-exchanger-outlet.svg",
+      "sha256": "ecb72292ce4404c0a58689a23dc320817f6423b01a059a753d95c749623db819"
+    },
+    {
+      "path": "project/layers/S02/components/arrow-orange-exhaust-down.svg",
+      "sha256": "fed330869bb537757cb0d313e89e1c9a268a24445019ee8d6890e849286752d6"
+    },
+    {
+      "path": "project/layers/S02/components/arrow-orange-heat-to-production.svg",
+      "sha256": "0bf04d57f7503e9b46721ddf619b050548c62ddfb98906e2e51d7a4a26a2c424"
+    },
+    {
+      "path": "project/layers/S02/components/arrow-orange-production-to-exhaust.svg",
+      "sha256": "22c05259c2919a35d4e977e9a555917836c71afff8ff70b481f3f8cf256c477b"
+    },
+    {
+      "path": "project/layers/S02/components/arrow-teal-return-1.svg",
+      "sha256": "e9dd2beb529d8d4e26ee094c8cfc658ecc372c4a6ee12156eab113989d5612b0"
+    },
+    {
+      "path": "project/layers/S02/components/arrow-teal-return-2.svg",
+      "sha256": "18aca1594c4aef81144d8548411221ce75db97118aeb037923b7f8832342a0ca"
+    },
+    {
+      "path": "project/layers/S02/components/arrow-teal-return-3.svg",
+      "sha256": "dc55d81b247f466bc7838e159672616a6895a8af52e0dffc603e21254e5ee50a"
+    },
+    {
+      "path": "project/layers/S02/components/arrow-teal-up-1.svg",
+      "sha256": "ec1cb462619b51d9118b9263cba6dbbca0b55855b50a7d8951117a91ed77409e"
+    },
+    {
+      "path": "project/layers/S02/components/arrow-teal-up-2.svg",
+      "sha256": "3151cf0f5097499077a516652ffc4011c4ac35a6342b66f9f8c752d858217cc3"
+    },
+    {
+      "path": "project/layers/S02/components/background-plate.png",
+      "sha256": "c630a304669e61e2e098ba429ab94a35f4588c75603bf08030ff15841f04c01b"
+    },
+    {
+      "path": "project/layers/S02/components/badge-shell-exchanger.svg",
+      "sha256": "5bfeea7b44a4ca7f7941cc162625ce507837ff650531f14539d0cbc436b4f3bb"
+    },
+    {
+      "path": "project/layers/S02/components/badge-shell-exhaust.svg",
+      "sha256": "57881d49d38085e54f0f77eb210c48be8af31794a9be46a027fbcfb17dfcdc76"
+    },
+    {
+      "path": "project/layers/S02/components/badge-shell-heating.svg",
+      "sha256": "5efc1399bfe085134459e915d35f00d92d509f8df90444b15c48f8b8aff99248"
+    },
+    {
+      "path": "project/layers/S02/components/badge-shell-production.svg",
+      "sha256": "fa93f5213700f37c10115d413268d70f761cab5646e127613a4677cb556ca94e"
+    },
+    {
+      "path": "project/layers/S02/components/badge-shell-reuse.svg",
+      "sha256": "be50e06b1d1c72ec462adc4fd50819ea750d556849c527ff47cc8786ef76c477"
+    },
+    {
+      "path": "project/layers/S02/components/collar-exchanger-outlet.svg",
+      "sha256": "0d94e4f3a663b29c30c448c411a83e0fc690e6a65b8ee181b0f9fb32afe6392a"
+    },
+    {
+      "path": "project/layers/S02/components/collar-hot-downcomer.svg",
+      "sha256": "6a90b6cf37a5de566001b97ef9598cd08b47afc81f1a72654fd84edfcf96ab29"
+    },
+    {
+      "path": "project/layers/S02/components/collar-hot-production-inlet.svg",
+      "sha256": "74b30711c4cee135a7e0b46733e1f0e6ed3ea745ff69a3b3ce16063536d1bd24"
+    },
+    {
+      "path": "project/layers/S02/components/collar-hot-production-outlet.svg",
+      "sha256": "e8a066fda7143fb000052a36c7220b93e63604961f17165809c7240756a5cba5"
+    },
+    {
+      "path": "project/layers/S02/components/collar-teal-return-left.svg",
+      "sha256": "2d248b7e0a632a102ebd0145ca18a81e40816bf957aa446ecbac1a7c97812dd9"
+    },
+    {
+      "path": "project/layers/S02/components/divider-footer-left.svg",
+      "sha256": "e5216de7c24fda399ccf4c90fd16232f2811e0ce246009fb5474d2e8a7415bf6"
+    },
+    {
+      "path": "project/layers/S02/components/divider-footer-right.svg",
+      "sha256": "5d413df042a8c529b2c1b31edff12704e4bc49fc1e931956fd19a87ba8dbb37b"
+    },
+    {
+      "path": "project/layers/S02/components/divider-title.svg",
+      "sha256": "1f3b210195edf303d43d0aca837b7d0b5464960811b5461799664d9a6e9b2de1"
+    },
+    {
+      "path": "project/layers/S02/components/exhaust-tower.png",
+      "sha256": "09a7ecb8a3a54cab972ef6b7e7ecc482f2c2693caa6dff1c2e2fb34df89ba8c6"
+    },
+    {
+      "path": "project/layers/S02/components/flow-orange-exchanger-side.svg",
+      "sha256": "ae2e65b391eef521fb6debf0830511abf98209060a8ec2594eacccc33a9c90c4"
+    },
+    {
+      "path": "project/layers/S02/components/flow-orange-exhaust-exchanger.svg",
+      "sha256": "fea4d1f253e68415a5eae1039a48dbd571b3e2a6bf4528cd748740d318d3610c"
+    },
+    {
+      "path": "project/layers/S02/components/flow-orange-heater-production.svg",
+      "sha256": "6ca2450d1cea7bd419144b3fabe7e95d32a2eb28a8316e47f8723a9e9d471a9b"
+    },
+    {
+      "path": "project/layers/S02/components/flow-orange-production-exhaust.svg",
+      "sha256": "a1e6f910d058f04360d9f5d830a358c2853f09da625725842dbf4676e6722fc4"
+    },
+    {
+      "path": "project/layers/S02/components/flow-teal-return-loop.svg",
+      "sha256": "40ea97961f2cdd0657b5ffe6356e34a5df4178cb5d59be53a66facfd224232bb"
+    },
+    {
+      "path": "project/layers/S02/components/heat-exchanger.png",
+      "sha256": "ab4bbc68c71242cfa15dfd4d9636bebe80cbd7c36bbc53ec08042a72c7fefbfa"
+    },
+    {
+      "path": "project/layers/S02/components/heating-furnace-v2.png",
+      "sha256": "6142c9890b2d42970e7643eee4e524c2cc123d5134a007169cfb8392e2e887b8"
+    },
+    {
+      "path": "project/layers/S02/components/production-machine.png",
+      "sha256": "db0e232daa48df8b7abc21154c22ac1656f8847c12b6933b834061e0b10ef2ab"
+    },
+    {
+      "path": "project/layers/S02/components/recovery-vessel-pump.png",
+      "sha256": "97fb535164ad3536ae64826b81c3836982b8f65c8a92aec8ced0192f66462551"
+    },
+    {
+      "path": "project/layers/S02/components/support-ground-1150.svg",
+      "sha256": "a67ef325e5d375d0ae5b9699c989efcba45ea1b05bcd9ff3e7be8e023e8e05f4"
+    },
+    {
+      "path": "project/layers/S02/components/support-ground-384.svg",
+      "sha256": "f49eafe90df429adfc128e16e32ff32998e7c54e2e520848f42afcf9d29240cb"
+    },
+    {
+      "path": "project/layers/S02/components/support-ground-529.svg",
+      "sha256": "83b2a504007b51681d65b60efa326c43fe53ea33d2f9c9ae4c6e33149326de65"
+    },
+    {
+      "path": "project/layers/S02/components/support-ground-653.svg",
+      "sha256": "0e04bd94313caa0175de4dcd7670fefd1f86889548cd5928c28c26ed466006c6"
+    },
+    {
+      "path": "project/layers/S02/native-text/S02-text-badge-exchanger.json",
+      "sha256": "eedbfa16499c340b34d48517ac4ea792fd4c1ee4d6a1cfcd83a04a3d7c29817b"
+    },
+    {
+      "path": "project/layers/S02/native-text/S02-text-badge-exhaust.json",
+      "sha256": "4617134c4450f97c9cb6f41f83471305e1965cf8245e2f30a930cc4cd800a8a8"
+    },
+    {
+      "path": "project/layers/S02/native-text/S02-text-badge-heating.json",
+      "sha256": "7eba93f40794a5770f3241d4b5d37362864ff472b64fcbb0a43790d3a3f00441"
+    },
+    {
+      "path": "project/layers/S02/native-text/S02-text-badge-production.json",
+      "sha256": "c7e8a63566dbcc8663b93ffe98f43d3cef68401258a2c2ebf47cefdf37bd70e8"
+    },
+    {
+      "path": "project/layers/S02/native-text/S02-text-badge-reuse.json",
+      "sha256": "9e203222529bbccb6d2f94ed71d0d97ef43756a717f351eb24493b567d6983b7"
+    },
+    {
+      "path": "project/layers/S02/native-text/S02-text-footer.json",
+      "sha256": "9396c655eb1ed7cb400e233af511a3616e70afdfae07884c7a4555b7ec4a0f57"
+    },
+    {
+      "path": "project/layers/S02/native-text/S02-text-subtitle.json",
+      "sha256": "a375ff915859578e8d04cfd97ae9afebfcffa8b99d39174ad46634074329f578"
+    },
+    {
+      "path": "project/layers/S02/native-text/S02-text-title.json",
+      "sha256": "6c6ae0226eef506637c624c969fc94e6a7bf6c3202110f0a851912cc549530f6"
+    },
+    {
+      "path": "project/layers/S03/assets/background.png",
+      "sha256": "718cbf55c11f65e0cb42578efb9b1fc0e8574b1a9e6d9831f7fbc9d494bb2e54"
+    },
+    {
+      "path": "project/layers/S03/assets/membrane.png",
+      "sha256": "c8bfecda6c837c193ae3110cdce9487b501a95c88c6ceb07421f72587556b84c"
+    },
+    {
+      "path": "project/layers/S03/components/bullet-1.svg",
+      "sha256": "7a4ff34c9232be6a353694ea7cf081f331a3a780f6e741a6a4eeb953bc9fe05e"
+    },
+    {
+      "path": "project/layers/S03/components/bullet-2.svg",
+      "sha256": "7a4ff34c9232be6a353694ea7cf081f331a3a780f6e741a6a4eeb953bc9fe05e"
+    },
+    {
+      "path": "project/layers/S03/components/chart.svg",
+      "sha256": "79aca53b6648000d3a20352bec30c11b18095726c5494c876428b91559d3be54"
+    },
+    {
+      "path": "project/layers/S03/components/divider.svg",
+      "sha256": "cb520ec482d9f078c8454637616d4431e5b8663822f4cff1a867fc435e49aaed"
+    },
+    {
+      "path": "project/layers/S03/components/qualifier-frame.svg",
+      "sha256": "fb6bdf51a415247dbc6a9b4e4838a8f4e18e17ad00ff078641e163ce12589e19"
+    },
+    {
+      "path": "project/layers/S03/native-text/S03-chart-heading.json",
+      "sha256": "2b042885fc401bbc5c1dfefd1e971336b8f99d919eeb530689027c7f50a6003c"
+    },
+    {
+      "path": "project/layers/S03/native-text/S03-qualifier.json",
+      "sha256": "d789fafa540451b863dd74265b025bf3e84b501d81d082e3ba39b3a01d4b90e7"
+    },
+    {
+      "path": "project/layers/S03/native-text/S03-single.json",
+      "sha256": "9486a6115ab6c0e4816b40ea521af07ce1dae6f18b64cbe1469871c0dd1933ad"
+    },
+    {
+      "path": "project/layers/S03/native-text/S03-takeaway.json",
+      "sha256": "dfdc6747598528d69f58c597ddc6ce0e4b384160b2431f325803bac024639a34"
+    },
+    {
+      "path": "project/layers/S03/native-text/S03-title.json",
+      "sha256": "b0902a64086a10fce8afecb0f845554e9f31be6fe46fe380bab386ff2fd65555"
+    }
+  ],
+  "source_bytes_unchanged": true,
+  "powerpoint": {
+    "renderer": "Microsoft PowerPoint COM",
+    "renderer_version": "16.0",
+    "slide_count": 3,
+    "slides": [
+      {
+        "slide_id": "S01",
+        "render_path": "proof/independent-pptx/powerpoint-renders/S01.png",
+        "render_sha256": "9acf698f54bbb7bd362e67f3a9f0c9b15d8c70ea03bc6d7b63d705e67a03dfd4",
+        "render_size_px": [
+          1672,
+          941
+        ],
+        "shape_count": 9,
+        "picture_count": 5,
+        "svg_graphic_picture_count": 0,
+        "editable_text_shape_count": 4,
+        "role_counts": {
+          "background": 1,
+          "decoration": 2,
+          "illustration": 1,
+          "special-typography": 1,
+          "text": 4
+        },
+        "shapes": [
+          {
+            "name": "S01-background",
+            "type": 13,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S01-floor-reflection",
+            "type": 13,
+            "left_pt": 330.1812744140625,
+            "top_pt": 327.3720397949219,
+            "width_pt": 640.5958862304688,
+            "height_pt": 207.61936950683594,
+            "has_text": false
+          },
+          {
+            "name": "S01-contact-shadow",
+            "type": 13,
+            "left_pt": 339.1670227050781,
+            "top_pt": 307.43646240234375,
+            "width_pt": 647.4978637695312,
+            "height_pt": 216.52952575683594,
+            "has_text": false
+          },
+          {
+            "name": "S01-device-terminal",
+            "type": 13,
+            "left_pt": 267.7894592285156,
+            "top_pt": 54.660316467285156,
+            "width_pt": 768.0,
+            "height_pt": 431.77032470703125,
+            "has_text": false
+          },
+          {
+            "name": "S01-wordmark",
+            "type": 13,
+            "left_pt": 14.582362174987793,
+            "top_pt": 116.60330963134766,
+            "width_pt": 282.1627502441406,
+            "height_pt": 117.54362487792969,
+            "has_text": false
+          },
+          {
+            "name": "S01-descriptor",
+            "type": 1,
+            "left_pt": 57.990394592285156,
+            "top_pt": 242.29661560058594,
+            "width_pt": 263.54071044921875,
+            "height_pt": 28.13393783569336,
+            "has_text": true
+          },
+          {
+            "name": "S01-takeaway",
+            "type": 1,
+            "left_pt": 57.416297912597656,
+            "top_pt": 296.2679443359375,
+            "width_pt": 292.822998046875,
+            "height_pt": 20.09566879272461,
+            "has_text": true
+          },
+          {
+            "name": "S01-features",
+            "type": 1,
+            "left_pt": 59.13874053955078,
+            "top_pt": 353.1100769042969,
+            "width_pt": 316.3636169433594,
+            "height_pt": 12.057401657104492,
+            "has_text": true
+          },
+          {
+            "name": "S01-example",
+            "type": 1,
+            "left_pt": 33.30141830444336,
+            "top_pt": 498.9473876953125,
+            "width_pt": 84.40188598632812,
+            "height_pt": 9.760787010192871,
+            "has_text": true
+          }
+        ],
+        "text_shapes": [
+          {
+            "name": "S01-descriptor",
+            "type": 1,
+            "left_pt": 57.990394592285156,
+            "top_pt": 242.29661560058594,
+            "width_pt": 263.54071044921875,
+            "height_pt": 28.13393783569336,
+            "has_text": true,
+            "text": "桌面知识协作终端",
+            "font_name": "Microsoft YaHei UI"
+          },
+          {
+            "name": "S01-takeaway",
+            "type": 1,
+            "left_pt": 57.416297912597656,
+            "top_pt": 296.2679443359375,
+            "width_pt": 292.822998046875,
+            "height_pt": 20.09566879272461,
+            "has_text": true,
+            "text": "让每次讨论，都接得上下一步。",
+            "font_name": "Microsoft YaHei UI"
+          },
+          {
+            "name": "S01-features",
+            "type": 1,
+            "left_pt": 59.13874053955078,
+            "top_pt": 353.1100769042969,
+            "width_pt": 316.3636169433594,
+            "height_pt": 12.057401657104492,
+            "has_text": true,
+            "text": "会后脉络留存 · 资料语义检索 · 任务线索串联",
+            "font_name": "Microsoft YaHei UI"
+          },
+          {
+            "name": "S01-example",
+            "type": 1,
+            "left_pt": 33.30141830444336,
+            "top_pt": 498.9473876953125,
+            "width_pt": 84.40188598632812,
+            "height_pt": 9.760787010192871,
+            "has_text": true,
+            "text": "概念产品 · 示例",
+            "font_name": "Microsoft YaHei UI"
+          }
+        ],
+        "unexpected_shapes": []
+      },
+      {
+        "slide_id": "S02",
+        "render_path": "proof/independent-pptx/powerpoint-renders/S02.png",
+        "render_sha256": "039c78cbf873f6aadcfe6247fff853ccef65eec24ba5b19af1da9328ed0d4b11",
+        "render_size_px": [
+          1672,
+          941
+        ],
+        "shape_count": 45,
+        "picture_count": 37,
+        "svg_graphic_picture_count": 31,
+        "editable_text_shape_count": 8,
+        "role_counts": {
+          "background": 1,
+          "connector": 5,
+          "illustration": 5,
+          "decoration": 17,
+          "arrow": 9,
+          "text": 8
+        },
+        "shapes": [
+          {
+            "name": "S02-background-paper",
+            "type": 13,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-flow-orange-heat-production",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-flow-orange-production-exhaust",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-flow-orange-exhaust-exchanger",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-flow-teal-return",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-device-heating",
+            "type": 13,
+            "left_pt": 21.90433120727539,
+            "top_pt": 101.27653503417969,
+            "width_pt": 257.9081115722656,
+            "height_pt": 199.1712646484375,
+            "has_text": false
+          },
+          {
+            "name": "S02-device-production",
+            "type": 13,
+            "left_pt": 332.2392272949219,
+            "top_pt": 168.70046997070312,
+            "width_pt": 349.1138610839844,
+            "height_pt": 130.91481018066406,
+            "has_text": false
+          },
+          {
+            "name": "S02-device-exhaust",
+            "type": 13,
+            "left_pt": 771.3358764648438,
+            "top_pt": 97.3779525756836,
+            "width_pt": 132.59716796875,
+            "height_pt": 198.9014129638672,
+            "has_text": false
+          },
+          {
+            "name": "S02-device-recovery",
+            "type": 13,
+            "left_pt": 342.22393798828125,
+            "top_pt": 298.9952087402344,
+            "width_pt": 263.97125244140625,
+            "height_pt": 148.7425994873047,
+            "has_text": false
+          },
+          {
+            "name": "S02-device-exchanger",
+            "type": 13,
+            "left_pt": 653.0870971679688,
+            "top_pt": 295.274658203125,
+            "width_pt": 289.59613037109375,
+            "height_pt": 163.07945251464844,
+            "has_text": false
+          },
+          {
+            "name": "S02-support-ground-384",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-support-ground-529",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-support-ground-653",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-support-ground-1150",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-flow-orange-exchanger-side",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-collar-teal-return-left",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-collar-hot-production-inlet",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-collar-hot-production-outlet",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-collar-hot-downcomer",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-collar-exchanger-outlet",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-arrow-hot-heat-production",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-arrow-hot-production-exhaust",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-arrow-hot-exhaust-down",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-arrow-hot-exchanger-out",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-arrow-return-left-1",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-arrow-return-left-2",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-arrow-return-left-3",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-arrow-return-up-1",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-arrow-return-up-2",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-badge-shell-heating",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-badge-shell-production",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-badge-shell-exhaust",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-badge-shell-reuse",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-badge-shell-exchanger",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-text-badge-heating",
+            "type": 1,
+            "left_pt": 175.69378662109375,
+            "top_pt": 128.61244201660156,
+            "width_pt": 57.416297912597656,
+            "height_pt": 24.114803314208984,
+            "has_text": true
+          },
+          {
+            "name": "S02-text-badge-production",
+            "type": 1,
+            "left_pt": 480.0,
+            "top_pt": 128.61244201660156,
+            "width_pt": 61.43543243408203,
+            "height_pt": 24.114803314208984,
+            "has_text": true
+          },
+          {
+            "name": "S02-text-badge-exhaust",
+            "type": 1,
+            "left_pt": 750.4306030273438,
+            "top_pt": 128.61244201660156,
+            "width_pt": 69.47370147705078,
+            "height_pt": 24.114803314208984,
+            "has_text": true
+          },
+          {
+            "name": "S02-text-badge-reuse",
+            "type": 1,
+            "left_pt": 451.8660583496094,
+            "top_pt": 444.4018859863281,
+            "width_pt": 56.842124938964844,
+            "height_pt": 24.114803314208984,
+            "has_text": true
+          },
+          {
+            "name": "S02-text-badge-exchanger",
+            "type": 1,
+            "left_pt": 751.5789794921875,
+            "top_pt": 444.4018859863281,
+            "width_pt": 68.32535552978516,
+            "height_pt": 24.114803314208984,
+            "has_text": true
+          },
+          {
+            "name": "S02-divider-title",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-divider-footer-left",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-divider-footer-right",
+            "type": 28,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S02-text-title",
+            "type": 1,
+            "left_pt": 257.7990417480469,
+            "top_pt": 12.631574630737305,
+            "width_pt": 470.8133850097656,
+            "height_pt": 59.712913513183594,
+            "has_text": true
+          },
+          {
+            "name": "S02-text-subtitle",
+            "type": 1,
+            "left_pt": 252.63157653808594,
+            "top_pt": 83.25362396240234,
+            "width_pt": 459.3301696777344,
+            "height_pt": 25.26314926147461,
+            "has_text": true
+          },
+          {
+            "name": "S02-text-footer",
+            "type": 1,
+            "left_pt": 350.2392272949219,
+            "top_pt": 505.2631530761719,
+            "width_pt": 263.54071044921875,
+            "height_pt": 13.779921531677246,
+            "has_text": true
+          }
+        ],
+        "text_shapes": [
+          {
+            "name": "S02-text-badge-heating",
+            "type": 1,
+            "left_pt": 175.69378662109375,
+            "top_pt": 128.61244201660156,
+            "width_pt": 57.416297912597656,
+            "height_pt": 24.114803314208984,
+            "has_text": true,
+            "text": "加热",
+            "font_name": "Noto Sans SC"
+          },
+          {
+            "name": "S02-text-badge-production",
+            "type": 1,
+            "left_pt": 480.0,
+            "top_pt": 128.61244201660156,
+            "width_pt": 61.43543243408203,
+            "height_pt": 24.114803314208984,
+            "has_text": true,
+            "text": "生产",
+            "font_name": "Noto Sans SC"
+          },
+          {
+            "name": "S02-text-badge-exhaust",
+            "type": 1,
+            "left_pt": 750.4306030273438,
+            "top_pt": 128.61244201660156,
+            "width_pt": 69.47370147705078,
+            "height_pt": 24.114803314208984,
+            "has_text": true,
+            "text": "排热",
+            "font_name": "Noto Sans SC"
+          },
+          {
+            "name": "S02-text-badge-reuse",
+            "type": 1,
+            "left_pt": 451.8660583496094,
+            "top_pt": 444.4018859863281,
+            "width_pt": 56.842124938964844,
+            "height_pt": 24.114803314208984,
+            "has_text": true,
+            "text": "回用",
+            "font_name": "Noto Sans SC"
+          },
+          {
+            "name": "S02-text-badge-exchanger",
+            "type": 1,
+            "left_pt": 751.5789794921875,
+            "top_pt": 444.4018859863281,
+            "width_pt": 68.32535552978516,
+            "height_pt": 24.114803314208984,
+            "has_text": true,
+            "text": "换热",
+            "font_name": "Noto Sans SC"
+          },
+          {
+            "name": "S02-text-title",
+            "type": 1,
+            "left_pt": 257.7990417480469,
+            "top_pt": 12.631574630737305,
+            "width_pt": 470.8133850097656,
+            "height_pt": 59.712913513183594,
+            "has_text": true,
+            "text": "把损失，接回流程。",
+            "font_name": "Noto Sans SC"
+          },
+          {
+            "name": "S02-text-subtitle",
+            "type": 1,
+            "left_pt": 252.63157653808594,
+            "top_pt": 83.25362396240234,
+            "width_pt": 459.3301696777344,
+            "height_pt": 25.26314926147461,
+            "has_text": true,
+            "text": "先找到稳定热源，再匹配同时发生的用热需求。",
+            "font_name": "Noto Sans SC"
+          },
+          {
+            "name": "S02-text-footer",
+            "type": 1,
+            "left_pt": 350.2392272949219,
+            "top_pt": 505.2631530761719,
+            "width_pt": 263.54071044921875,
+            "height_pt": 13.779921531677246,
+            "has_text": true,
+            "text": "流程为机制示意，不构成工程设计参数。",
+            "font_name": "Noto Sans SC"
+          }
+        ],
+        "unexpected_shapes": []
+      },
+      {
+        "slide_id": "S03",
+        "render_path": "proof/independent-pptx/powerpoint-renders/S03.png",
+        "render_sha256": "243b17c12c729c7d9382d7e29327072c6e78c0616fea77fd86b38a24d92c6fbe",
+        "render_size_px": [
+          1672,
+          941
+        ],
+        "shape_count": 12,
+        "picture_count": 7,
+        "svg_graphic_picture_count": 5,
+        "editable_text_shape_count": 5,
+        "role_counts": {
+          "background": 1,
+          "illustration": 1,
+          "chart": 1,
+          "decoration": 4,
+          "text": 5
+        },
+        "shapes": [
+          {
+            "name": "S03-background",
+            "type": 13,
+            "left_pt": 0.0,
+            "top_pt": 0.0,
+            "width_pt": 960.0,
+            "height_pt": 540.287109375,
+            "has_text": false
+          },
+          {
+            "name": "S03-membrane",
+            "type": 13,
+            "left_pt": 624.4473266601562,
+            "top_pt": 253.04071044921875,
+            "width_pt": 350.2240295410156,
+            "height_pt": 197.22369384765625,
+            "has_text": false
+          },
+          {
+            "name": "S03-chart",
+            "type": 28,
+            "left_pt": 16.076536178588867,
+            "top_pt": 145.8373260498047,
+            "width_pt": 614.3540649414062,
+            "height_pt": 369.7607727050781,
+            "has_text": false
+          },
+          {
+            "name": "S03-divider",
+            "type": 28,
+            "left_pt": 650.5263061523438,
+            "top_pt": 115.40669250488281,
+            "width_pt": 1.1483464241027832,
+            "height_pt": 393.8755798339844,
+            "has_text": false
+          },
+          {
+            "name": "S03-bullet-1",
+            "type": 28,
+            "left_pt": 670.0478515625,
+            "top_pt": 156.1722869873047,
+            "width_pt": 9.186614036560059,
+            "height_pt": 9.186614036560059,
+            "has_text": false
+          },
+          {
+            "name": "S03-bullet-2",
+            "type": 28,
+            "left_pt": 670.0478515625,
+            "top_pt": 237.12921142578125,
+            "width_pt": 9.186614036560059,
+            "height_pt": 9.186614036560059,
+            "has_text": false
+          },
+          {
+            "name": "S03-qualifier-frame",
+            "type": 28,
+            "left_pt": 670.6220703125,
+            "top_pt": 451.8660583496094,
+            "width_pt": 269.8564453125,
+            "height_pt": 50.52629852294922,
+            "has_text": false
+          },
+          {
+            "name": "S03-title",
+            "type": 1,
+            "left_pt": 42.488033294677734,
+            "top_pt": 17.799055099487305,
+            "width_pt": 660.287109375,
+            "height_pt": 79.80858612060547,
+            "has_text": true
+          },
+          {
+            "name": "S03-chart-heading",
+            "type": 1,
+            "left_pt": 40.76551055908203,
+            "top_pt": 105.07173156738281,
+            "width_pt": 413.39715576171875,
+            "height_pt": 46.507164001464844,
+            "has_text": true
+          },
+          {
+            "name": "S03-single",
+            "type": 1,
+            "left_pt": 694.1626586914062,
+            "top_pt": 145.26315307617188,
+            "width_pt": 256.0765380859375,
+            "height_pt": 62.009605407714844,
+            "has_text": true
+          },
+          {
+            "name": "S03-takeaway",
+            "type": 1,
+            "left_pt": 694.1626586914062,
+            "top_pt": 228.5167694091797,
+            "width_pt": 259.521484375,
+            "height_pt": 33.87559127807617,
+            "has_text": true
+          },
+          {
+            "name": "S03-qualifier",
+            "type": 1,
+            "left_pt": 687.2727661132812,
+            "top_pt": 461.0526123046875,
+            "width_pt": 243.44496154785156,
+            "height_pt": 35.59811019897461,
+            "has_text": true
+          }
+        ],
+        "text_shapes": [
+          {
+            "name": "S03-title",
+            "type": 1,
+            "left_pt": 42.488033294677734,
+            "top_pt": 17.799055099487305,
+            "width_pt": 660.287109375,
+            "height_pt": 79.80858612060547,
+            "has_text": true,
+            "text": "先看趋势，再讨论机理。",
+            "font_name": "Noto Sans SC"
+          },
+          {
+            "name": "S03-chart-heading",
+            "type": 1,
+            "left_pt": 40.76551055908203,
+            "top_pt": 105.07173156738281,
+            "width_pt": 413.39715576171875,
+            "height_pt": 46.507164001464844,
+            "has_text": true,
+            "text": "归一化通量（示例数据）",
+            "font_name": "Noto Sans SC"
+          },
+          {
+            "name": "S03-single",
+            "type": 1,
+            "left_pt": 694.1626586914062,
+            "top_pt": 145.26315307617188,
+            "width_pt": 256.0765380859375,
+            "height_pt": 62.009605407714844,
+            "has_text": true,
+            "text": "单次示例曲线，不能推断\n显著性。",
+            "font_name": ""
+          },
+          {
+            "name": "S03-takeaway",
+            "type": 1,
+            "left_pt": 694.1626586914062,
+            "top_pt": 228.5167694091797,
+            "width_pt": 259.521484375,
+            "height_pt": 33.87559127807617,
+            "has_text": true,
+            "text": "机理判断仍需重复与对照。",
+            "font_name": "Noto Sans SC"
+          },
+          {
+            "name": "S03-qualifier",
+            "type": 1,
+            "left_pt": 687.2727661132812,
+            "top_pt": 461.0526123046875,
+            "width_pt": 243.44496154785156,
+            "height_pt": 35.59811019897461,
+            "has_text": true,
+            "text": "演示数据，非实验结果",
+            "font_name": "Noto Sans SC"
+          }
+        ],
+        "unexpected_shapes": []
+      }
+    ]
+  },
+  "font_binding": {
+    "declared_in_scene": [
+      "Microsoft YaHei UI",
+      "Noto Sans SC"
+    ],
+    "observed_by_powerpoint": [
+      "Microsoft YaHei UI",
+      "Noto Sans SC"
+    ],
+    "fonts_embedded": false,
+    "embedded_font_parts": []
+  },
+  "pages": [
+    {
+      "slide_id": "S01",
+      "item_count": 9,
+      "editable_text_item_count": 4,
+      "picture_item_count": 5,
+      "role_counts": {
+        "background": 1,
+        "decoration": 2,
+        "illustration": 1,
+        "special-typography": 1,
+        "text": 4
+      },
+      "concept_path": "project/concepts/S01.png",
+      "concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+      "items": [
+        {
+          "id": "S01-background",
+          "role": "background",
+          "type": "image",
+          "z": 0.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S01/assets/background.png",
+          "source_sha256": "7d0d38635b550a7707a99433b73fe3f161b945193d21bd598c3acaad57f0e4c6",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S01-floor-reflection",
+          "role": "decoration",
+          "type": "image",
+          "z": 1.0,
+          "frame_px": [
+            575.0656506447831,
+            570.172919109027,
+            1115.7045720984759,
+            361.60375146541617
+          ],
+          "source_path": "project/layers/S01/assets/floor-reflection.png",
+          "source_sha256": "5f1db4147c6d3d20b6ad3ba3eb6381503e8d0c142e1f1f0415d4bf4a090e673a",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S01-contact-shadow",
+          "role": "decoration",
+          "type": "image",
+          "z": 2.0,
+          "frame_px": [
+            590.7158338350391,
+            535.451836243227,
+            1127.7254665863936,
+            377.12221553281154
+          ],
+          "source_path": "project/layers/S01/assets/contact-shadow.png",
+          "source_sha256": "8233b6cdb7056235b565f34a9aa53253e11744375aca400126217de3ac01d27c",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S01-device-terminal",
+          "role": "illustration",
+          "type": "image",
+          "z": 3.0,
+          "frame_px": [
+            466.3999999999999,
+            95.19999999999999,
+            1337.6000000000001,
+            752.0
+          ],
+          "source_path": "project/layers/S01/assets/device.png",
+          "source_sha256": "fb0ea48bbbc6fb539f645b6775db6fc18ad5f6ab69e70bead53ba9c7d35d954e",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S01-wordmark",
+          "role": "special-typography",
+          "type": "image",
+          "z": 4.0,
+          "frame_px": [
+            25.397555715312734,
+            203.0841121495327,
+            491.43350107836085,
+            204.72178289000718
+          ],
+          "source_path": "project/layers/S01/assets/wordmark.png",
+          "source_sha256": "8256cf8431d75f8e1b48d54d5de1ab848924d926e861fcdb9424ee12bd62001d",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S01-descriptor",
+          "role": "text",
+          "type": "text",
+          "z": 5.0,
+          "frame_px": [
+            101.0,
+            422.0,
+            459.0,
+            49.0
+          ],
+          "source_path": "project/layers/S01/native-text/S01-descriptor.json",
+          "source_sha256": "5559d843571cac52426ea16269b02503bd1ac61c36ada6ff1f473a3a336a34ca",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S01-takeaway",
+          "role": "text",
+          "type": "text",
+          "z": 6.0,
+          "frame_px": [
+            100.0,
+            516.0,
+            510.0,
+            35.0
+          ],
+          "source_path": "project/layers/S01/native-text/S01-takeaway.json",
+          "source_sha256": "22e8f1bb36e55692ac878a44b9f3fd61373b781227993b0a23e6cdacfcd73bc9",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S01-features",
+          "role": "text",
+          "type": "text",
+          "z": 7.0,
+          "frame_px": [
+            103.0,
+            615.0,
+            551.0,
+            21.0
+          ],
+          "source_path": "project/layers/S01/native-text/S01-features.json",
+          "source_sha256": "bb2c397f2b99746af90c8cced75e468fd31279e9df5f09313d14844ba1f7bfe8",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S01-example",
+          "role": "text",
+          "type": "text",
+          "z": 8.0,
+          "frame_px": [
+            58.0,
+            869.0,
+            147.0,
+            17.0
+          ],
+          "source_path": "project/layers/S01/native-text/S01-example.json",
+          "source_sha256": "7f9e20fbf3a881fc8727f88941d50934d7fcd56789ef3f8a3b7f584e05d176af",
+          "frame_kind": "bbox"
+        }
+      ]
+    },
+    {
+      "slide_id": "S02",
+      "item_count": 45,
+      "editable_text_item_count": 8,
+      "picture_item_count": 37,
+      "role_counts": {
+        "background": 1,
+        "connector": 5,
+        "illustration": 5,
+        "decoration": 17,
+        "arrow": 9,
+        "text": 8
+      },
+      "concept_path": "project/concepts/S02.png",
+      "concept_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+      "items": [
+        {
+          "id": "S02-background-paper",
+          "role": "background",
+          "type": "image",
+          "z": 0.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/background-plate.png",
+          "source_sha256": "c630a304669e61e2e098ba429ab94a35f4588c75603bf08030ff15841f04c01b",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S02-flow-orange-heat-production",
+          "role": "connector",
+          "type": "image",
+          "z": 10.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/flow-orange-heater-production.svg",
+          "source_sha256": "6ca2450d1cea7bd419144b3fabe7e95d32a2eb28a8316e47f8723a9e9d471a9b",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-flow-orange-production-exhaust",
+          "role": "connector",
+          "type": "image",
+          "z": 10.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/flow-orange-production-exhaust.svg",
+          "source_sha256": "a1e6f910d058f04360d9f5d830a358c2853f09da625725842dbf4676e6722fc4",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-flow-orange-exhaust-exchanger",
+          "role": "connector",
+          "type": "image",
+          "z": 10.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/flow-orange-exhaust-exchanger.svg",
+          "source_sha256": "fea4d1f253e68415a5eae1039a48dbd571b3e2a6bf4528cd748740d318d3610c",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-flow-teal-return",
+          "role": "connector",
+          "type": "image",
+          "z": 10.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/flow-teal-return-loop.svg",
+          "source_sha256": "40ea97961f2cdd0657b5ffe6356e34a5df4178cb5d59be53a66facfd224232bb",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-device-heating",
+          "role": "illustration",
+          "type": "image",
+          "z": 20.0,
+          "frame_px": [
+            38.15,
+            176.39,
+            449.19,
+            346.89
+          ],
+          "source_path": "project/layers/S02/components/heating-furnace-v2.png",
+          "source_sha256": "6142c9890b2d42970e7643eee4e524c2cc123d5134a007169cfb8392e2e887b8",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S02-device-production",
+          "role": "illustration",
+          "type": "image",
+          "z": 20.0,
+          "frame_px": [
+            578.65,
+            293.82,
+            608.04,
+            228.01
+          ],
+          "source_path": "project/layers/S02/components/production-machine.png",
+          "source_sha256": "db0e232daa48df8b7abc21154c22ac1656f8847c12b6933b834061e0b10ef2ab",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S02-device-exhaust",
+          "role": "illustration",
+          "type": "image",
+          "z": 20.0,
+          "frame_px": [
+            1343.41,
+            169.6,
+            230.94,
+            346.42
+          ],
+          "source_path": "project/layers/S02/components/exhaust-tower.png",
+          "source_sha256": "09a7ecb8a3a54cab972ef6b7e7ecc482f2c2693caa6dff1c2e2fb34df89ba8c6",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S02-device-recovery",
+          "role": "illustration",
+          "type": "image",
+          "z": 20.0,
+          "frame_px": [
+            596.04,
+            520.75,
+            459.75,
+            259.06
+          ],
+          "source_path": "project/layers/S02/components/recovery-vessel-pump.png",
+          "source_sha256": "97fb535164ad3536ae64826b81c3836982b8f65c8a92aec8ced0192f66462551",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S02-device-exchanger",
+          "role": "illustration",
+          "type": "image",
+          "z": 20.0,
+          "frame_px": [
+            1137.46,
+            514.27,
+            504.38,
+            284.03
+          ],
+          "source_path": "project/layers/S02/components/heat-exchanger.png",
+          "source_sha256": "ab4bbc68c71242cfa15dfd4d9636bebe80cbd7c36bbc53ec08042a72c7fefbfa",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S02-support-ground-384",
+          "role": "decoration",
+          "type": "image",
+          "z": 21.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/support-ground-384.svg",
+          "source_sha256": "f49eafe90df429adfc128e16e32ff32998e7c54e2e520848f42afcf9d29240cb",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-support-ground-529",
+          "role": "decoration",
+          "type": "image",
+          "z": 21.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/support-ground-529.svg",
+          "source_sha256": "83b2a504007b51681d65b60efa326c43fe53ea33d2f9c9ae4c6e33149326de65",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-support-ground-653",
+          "role": "decoration",
+          "type": "image",
+          "z": 21.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/support-ground-653.svg",
+          "source_sha256": "0e04bd94313caa0175de4dcd7670fefd1f86889548cd5928c28c26ed466006c6",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-support-ground-1150",
+          "role": "decoration",
+          "type": "image",
+          "z": 21.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/support-ground-1150.svg",
+          "source_sha256": "a67ef325e5d375d0ae5b9699c989efcba45ea1b05bcd9ff3e7be8e023e8e05f4",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-flow-orange-exchanger-side",
+          "role": "connector",
+          "type": "image",
+          "z": 22.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/flow-orange-exchanger-side.svg",
+          "source_sha256": "ae2e65b391eef521fb6debf0830511abf98209060a8ec2594eacccc33a9c90c4",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-collar-teal-return-left",
+          "role": "decoration",
+          "type": "image",
+          "z": 22.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/collar-teal-return-left.svg",
+          "source_sha256": "2d248b7e0a632a102ebd0145ca18a81e40816bf957aa446ecbac1a7c97812dd9",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-collar-hot-production-inlet",
+          "role": "decoration",
+          "type": "image",
+          "z": 22.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/collar-hot-production-inlet.svg",
+          "source_sha256": "74b30711c4cee135a7e0b46733e1f0e6ed3ea745ff69a3b3ce16063536d1bd24",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-collar-hot-production-outlet",
+          "role": "decoration",
+          "type": "image",
+          "z": 22.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/collar-hot-production-outlet.svg",
+          "source_sha256": "e8a066fda7143fb000052a36c7220b93e63604961f17165809c7240756a5cba5",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-collar-hot-downcomer",
+          "role": "decoration",
+          "type": "image",
+          "z": 22.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/collar-hot-downcomer.svg",
+          "source_sha256": "6a90b6cf37a5de566001b97ef9598cd08b47afc81f1a72654fd84edfcf96ab29",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-collar-exchanger-outlet",
+          "role": "decoration",
+          "type": "image",
+          "z": 22.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/collar-exchanger-outlet.svg",
+          "source_sha256": "0d94e4f3a663b29c30c448c411a83e0fc690e6a65b8ee181b0f9fb32afe6392a",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-arrow-hot-heat-production",
+          "role": "arrow",
+          "type": "image",
+          "z": 24.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/arrow-orange-heat-to-production.svg",
+          "source_sha256": "0bf04d57f7503e9b46721ddf619b050548c62ddfb98906e2e51d7a4a26a2c424",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-arrow-hot-production-exhaust",
+          "role": "arrow",
+          "type": "image",
+          "z": 24.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/arrow-orange-production-to-exhaust.svg",
+          "source_sha256": "22c05259c2919a35d4e977e9a555917836c71afff8ff70b481f3f8cf256c477b",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-arrow-hot-exhaust-down",
+          "role": "arrow",
+          "type": "image",
+          "z": 24.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/arrow-orange-exhaust-down.svg",
+          "source_sha256": "fed330869bb537757cb0d313e89e1c9a268a24445019ee8d6890e849286752d6",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-arrow-hot-exchanger-out",
+          "role": "arrow",
+          "type": "image",
+          "z": 24.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/arrow-orange-exchanger-outlet.svg",
+          "source_sha256": "ecb72292ce4404c0a58689a23dc320817f6423b01a059a753d95c749623db819",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-arrow-return-left-1",
+          "role": "arrow",
+          "type": "image",
+          "z": 24.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/arrow-teal-return-1.svg",
+          "source_sha256": "e9dd2beb529d8d4e26ee094c8cfc658ecc372c4a6ee12156eab113989d5612b0",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-arrow-return-left-2",
+          "role": "arrow",
+          "type": "image",
+          "z": 24.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/arrow-teal-return-2.svg",
+          "source_sha256": "18aca1594c4aef81144d8548411221ce75db97118aeb037923b7f8832342a0ca",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-arrow-return-left-3",
+          "role": "arrow",
+          "type": "image",
+          "z": 24.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/arrow-teal-return-3.svg",
+          "source_sha256": "dc55d81b247f466bc7838e159672616a6895a8af52e0dffc603e21254e5ee50a",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-arrow-return-up-1",
+          "role": "arrow",
+          "type": "image",
+          "z": 24.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/arrow-teal-up-1.svg",
+          "source_sha256": "ec1cb462619b51d9118b9263cba6dbbca0b55855b50a7d8951117a91ed77409e",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-arrow-return-up-2",
+          "role": "arrow",
+          "type": "image",
+          "z": 24.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/arrow-teal-up-2.svg",
+          "source_sha256": "3151cf0f5097499077a516652ffc4011c4ac35a6342b66f9f8c752d858217cc3",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-badge-shell-heating",
+          "role": "decoration",
+          "type": "image",
+          "z": 30.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/badge-shell-heating.svg",
+          "source_sha256": "5efc1399bfe085134459e915d35f00d92d509f8df90444b15c48f8b8aff99248",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-badge-shell-production",
+          "role": "decoration",
+          "type": "image",
+          "z": 30.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/badge-shell-production.svg",
+          "source_sha256": "fa93f5213700f37c10115d413268d70f761cab5646e127613a4677cb556ca94e",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-badge-shell-exhaust",
+          "role": "decoration",
+          "type": "image",
+          "z": 30.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/badge-shell-exhaust.svg",
+          "source_sha256": "57881d49d38085e54f0f77eb210c48be8af31794a9be46a027fbcfb17dfcdc76",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-badge-shell-reuse",
+          "role": "decoration",
+          "type": "image",
+          "z": 30.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/badge-shell-reuse.svg",
+          "source_sha256": "be50e06b1d1c72ec462adc4fd50819ea750d556849c527ff47cc8786ef76c477",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-badge-shell-exchanger",
+          "role": "decoration",
+          "type": "image",
+          "z": 30.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/badge-shell-exchanger.svg",
+          "source_sha256": "5bfeea7b44a4ca7f7941cc162625ce507837ff650531f14539d0cbc436b4f3bb",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-text-badge-heating",
+          "role": "text",
+          "type": "text",
+          "z": 31.0,
+          "frame_px": [
+            306.0,
+            224.0,
+            100.0,
+            42.0
+          ],
+          "source_path": "project/layers/S02/native-text/S02-text-badge-heating.json",
+          "source_sha256": "7eba93f40794a5770f3241d4b5d37362864ff472b64fcbb0a43790d3a3f00441",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S02-text-badge-production",
+          "role": "text",
+          "type": "text",
+          "z": 31.0,
+          "frame_px": [
+            836.0,
+            224.0,
+            107.0,
+            42.0
+          ],
+          "source_path": "project/layers/S02/native-text/S02-text-badge-production.json",
+          "source_sha256": "c7e8a63566dbcc8663b93ffe98f43d3cef68401258a2c2ebf47cefdf37bd70e8",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S02-text-badge-exhaust",
+          "role": "text",
+          "type": "text",
+          "z": 31.0,
+          "frame_px": [
+            1307.0,
+            224.0,
+            121.0,
+            42.0
+          ],
+          "source_path": "project/layers/S02/native-text/S02-text-badge-exhaust.json",
+          "source_sha256": "4617134c4450f97c9cb6f41f83471305e1965cf8245e2f30a930cc4cd800a8a8",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S02-text-badge-reuse",
+          "role": "text",
+          "type": "text",
+          "z": 31.0,
+          "frame_px": [
+            787.0,
+            774.0,
+            99.0,
+            42.0
+          ],
+          "source_path": "project/layers/S02/native-text/S02-text-badge-reuse.json",
+          "source_sha256": "9e203222529bbccb6d2f94ed71d0d97ef43756a717f351eb24493b567d6983b7",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S02-text-badge-exchanger",
+          "role": "text",
+          "type": "text",
+          "z": 31.0,
+          "frame_px": [
+            1309.0,
+            774.0,
+            119.0,
+            42.0
+          ],
+          "source_path": "project/layers/S02/native-text/S02-text-badge-exchanger.json",
+          "source_sha256": "eedbfa16499c340b34d48517ac4ea792fd4c1ee4d6a1cfcd83a04a3d7c29817b",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S02-divider-title",
+          "role": "decoration",
+          "type": "image",
+          "z": 35.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/divider-title.svg",
+          "source_sha256": "1f3b210195edf303d43d0aca837b7d0b5464960811b5461799664d9a6e9b2de1",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-divider-footer-left",
+          "role": "decoration",
+          "type": "image",
+          "z": 35.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/divider-footer-left.svg",
+          "source_sha256": "e5216de7c24fda399ccf4c90fd16232f2811e0ce246009fb5474d2e8a7415bf6",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-divider-footer-right",
+          "role": "decoration",
+          "type": "image",
+          "z": 35.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S02/components/divider-footer-right.svg",
+          "source_sha256": "5d413df042a8c529b2c1b31edff12704e4bc49fc1e931956fd19a87ba8dbb37b",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S02-text-title",
+          "role": "text",
+          "type": "text",
+          "z": 40.0,
+          "frame_px": [
+            449.0,
+            22.0,
+            820.0,
+            104.0
+          ],
+          "source_path": "project/layers/S02/native-text/S02-text-title.json",
+          "source_sha256": "6c6ae0226eef506637c624c969fc94e6a7bf6c3202110f0a851912cc549530f6",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S02-text-subtitle",
+          "role": "text",
+          "type": "text",
+          "z": 40.0,
+          "frame_px": [
+            440.0,
+            145.0,
+            800.0,
+            44.0
+          ],
+          "source_path": "project/layers/S02/native-text/S02-text-subtitle.json",
+          "source_sha256": "a375ff915859578e8d04cfd97ae9afebfcffa8b99d39174ad46634074329f578",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S02-text-footer",
+          "role": "text",
+          "type": "text",
+          "z": 40.0,
+          "frame_px": [
+            610.0,
+            880.0,
+            459.0,
+            24.0
+          ],
+          "source_path": "project/layers/S02/native-text/S02-text-footer.json",
+          "source_sha256": "9396c655eb1ed7cb400e233af511a3616e70afdfae07884c7a4555b7ec4a0f57",
+          "frame_kind": "bbox"
+        }
+      ]
+    },
+    {
+      "slide_id": "S03",
+      "item_count": 12,
+      "editable_text_item_count": 5,
+      "picture_item_count": 7,
+      "role_counts": {
+        "background": 1,
+        "illustration": 1,
+        "chart": 1,
+        "decoration": 4,
+        "text": 5
+      },
+      "concept_path": "project/concepts/S03.png",
+      "concept_sha256": "08157d04fa08c681ce8c6f7cf5151f4a2549e11786dd37969aa99f8da0163f90",
+      "items": [
+        {
+          "id": "S03-background",
+          "role": "background",
+          "type": "image",
+          "z": 0.0,
+          "frame_px": [
+            0.0,
+            0.0,
+            1672.0,
+            941.0
+          ],
+          "source_path": "project/layers/S03/assets/background.png",
+          "source_sha256": "718cbf55c11f65e0cb42578efb9b1fc0e8574b1a9e6d9831f7fbc9d494bb2e54",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S03-membrane",
+          "role": "illustration",
+          "type": "image",
+          "z": 10.0,
+          "frame_px": [
+            1087.579020979021,
+            440.7125874125874,
+            609.9734265734265,
+            343.49790209790206
+          ],
+          "source_path": "project/layers/S03/assets/membrane.png",
+          "source_sha256": "c8bfecda6c837c193ae3110cdce9487b501a95c88c6ceb07421f72587556b84c",
+          "frame_kind": "image_frame"
+        },
+        {
+          "id": "S03-chart",
+          "role": "chart",
+          "type": "image",
+          "z": 15.0,
+          "frame_px": [
+            28.0,
+            254.0,
+            1070.0,
+            644.0
+          ],
+          "source_path": "project/layers/S03/components/chart.svg",
+          "source_sha256": "79aca53b6648000d3a20352bec30c11b18095726c5494c876428b91559d3be54",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S03-divider",
+          "role": "decoration",
+          "type": "image",
+          "z": 20.0,
+          "frame_px": [
+            1133.0,
+            201.0,
+            2.0,
+            686.0
+          ],
+          "source_path": "project/layers/S03/components/divider.svg",
+          "source_sha256": "cb520ec482d9f078c8454637616d4431e5b8663822f4cff1a867fc435e49aaed",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S03-bullet-1",
+          "role": "decoration",
+          "type": "image",
+          "z": 20.0,
+          "frame_px": [
+            1167.0,
+            272.0,
+            16.0,
+            16.0
+          ],
+          "source_path": "project/layers/S03/components/bullet-1.svg",
+          "source_sha256": "7a4ff34c9232be6a353694ea7cf081f331a3a780f6e741a6a4eeb953bc9fe05e",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S03-bullet-2",
+          "role": "decoration",
+          "type": "image",
+          "z": 20.0,
+          "frame_px": [
+            1167.0,
+            413.0,
+            16.0,
+            16.0
+          ],
+          "source_path": "project/layers/S03/components/bullet-2.svg",
+          "source_sha256": "7a4ff34c9232be6a353694ea7cf081f331a3a780f6e741a6a4eeb953bc9fe05e",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S03-qualifier-frame",
+          "role": "decoration",
+          "type": "image",
+          "z": 20.0,
+          "frame_px": [
+            1168.0,
+            787.0,
+            470.0,
+            88.0
+          ],
+          "source_path": "project/layers/S03/components/qualifier-frame.svg",
+          "source_sha256": "fb6bdf51a415247dbc6a9b4e4838a8f4e18e17ad00ff078641e163ce12589e19",
+          "frame_kind": "asset_frame_bbox"
+        },
+        {
+          "id": "S03-title",
+          "role": "text",
+          "type": "text",
+          "z": 30.0,
+          "frame_px": [
+            74.0,
+            31.0,
+            1150.0,
+            139.0
+          ],
+          "source_path": "project/layers/S03/native-text/S03-title.json",
+          "source_sha256": "b0902a64086a10fce8afecb0f845554e9f31be6fe46fe380bab386ff2fd65555",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S03-chart-heading",
+          "role": "text",
+          "type": "text",
+          "z": 30.0,
+          "frame_px": [
+            71.0,
+            183.0,
+            720.0,
+            81.0
+          ],
+          "source_path": "project/layers/S03/native-text/S03-chart-heading.json",
+          "source_sha256": "2b042885fc401bbc5c1dfefd1e971336b8f99d919eeb530689027c7f50a6003c",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S03-single",
+          "role": "text",
+          "type": "text",
+          "z": 30.0,
+          "frame_px": [
+            1209.0,
+            253.0,
+            446.0,
+            108.0
+          ],
+          "source_path": "project/layers/S03/native-text/S03-single.json",
+          "source_sha256": "9486a6115ab6c0e4816b40ea521af07ce1dae6f18b64cbe1469871c0dd1933ad",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S03-takeaway",
+          "role": "text",
+          "type": "text",
+          "z": 30.0,
+          "frame_px": [
+            1209.0,
+            398.0,
+            452.0,
+            59.0
+          ],
+          "source_path": "project/layers/S03/native-text/S03-takeaway.json",
+          "source_sha256": "dfdc6747598528d69f58c597ddc6ce0e4b384160b2431f325803bac024639a34",
+          "frame_kind": "bbox"
+        },
+        {
+          "id": "S03-qualifier",
+          "role": "text",
+          "type": "text",
+          "z": 30.0,
+          "frame_px": [
+            1197.0,
+            803.0,
+            424.0,
+            62.0
+          ],
+          "source_path": "project/layers/S03/native-text/S03-qualifier.json",
+          "source_sha256": "d789fafa540451b863dd74265b025bf3e84b501d81d082e3ba39b3a01d4b90e7",
+          "frame_kind": "bbox"
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-10-14T01:16:38+08:00",
+  "editability_experiment": {
+    "status": "passed",
+    "powerpoint_version": "16.0",
+    "edited_text_persisted_after_save_reopen": true,
+    "undo_restored_position": true,
+    "evidence_path": "proof/independent-pptx/editability-test.json",
+    "evidence_sha256": "d24b6ced23722c83412b13444f0723ebd9f5aecc9429bc86defd7314d48ec22b",
+    "source_pptx_sha256": "6dd4bf2c740e7960aedff3a3c14d6ddb2390a393f307bbb711ad2f6427fc586e"
+  },
+  "post_build_asset_review": {
+    "note": "Only QA metadata/map dependencies changed after construction; scene/media bytes unchanged; preserved exact construction contract snapshot.",
+    "scene_sha256": "64782c0d289772caeae10c6b193d7ae44aedd3e2e3530436622299deb72bfe68",
+    "current_reconstruction_map_sha256": "9ebb9df8d21e68c73b741848e1a0d6d41dbcab0034e63d4454736ab69a8a563f",
+    "current_asset_manifest_sha256": "b05deeaa23d5eb1e3cc0299563d030ce4faca4f8e7aa583ff296e6139be1f1d9",
+    "review_path": "project/review/visual-review.json",
+    "review_sha256": "81c6fad2271a7926de1280269f487494ec16bf532bce550ea5cd541fd18ce094"
+  }
+}

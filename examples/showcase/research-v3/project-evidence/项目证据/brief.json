@@ -1,0 +1,23 @@
+{
+  "project_id": "research-concepts-v2",
+  "audience": "膜处理科研组会",
+  "goal": "用一组明确标注的教学示例讲清通量变化、实验边界与后续验证路径",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "concept-images",
+    "aspect_ratio": "16:9",
+    "scope": "local-showcase-only",
+    "expected_slide_ids": ["S01", "S02", "S03", "S04", "S05", "S06"]
+  },
+  "source_map": [
+    {
+      "id": "EXAMPLE-FLUX-DATA",
+      "kind": "explicit-local-teaching-example-and-content-note",
+      "locator": "本地自编示例数据与内容备忘；不是论文、真实实验记录或结论。",
+      "path": "sources/source-notes.md",
+      "sha256": "242b6d177ab7e5b42dddfdc9201713bb28b7a35d6fa0ad67caad81958d3b1954",
+      "truth_status": "illustrative"
+    }
+  ]
+}

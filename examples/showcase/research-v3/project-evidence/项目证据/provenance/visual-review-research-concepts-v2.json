@@ -1,0 +1,187 @@
+{
+  "schema": "apw-agent-concept-review/v1",
+  "project": {
+    "id": "research-concepts-v2",
+    "root": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/pilots/research-concepts-v2",
+    "kind": "concept-only six-slide research presentation",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ]
+  },
+  "reviewer": {
+    "actor": "agent",
+    "reviewer_id": "/root/showcase_acceptance_plan",
+    "timezone": "Asia/Shanghai",
+    "reviewed_at": "2026-10-13T08:37:19+08:00",
+    "method": "Opened each final design PNG individually at original resolution with view_image; read deck-spec, source notes, style contract, frozen input snapshot and generation records."
+  },
+  "outcome": {
+    "status": "agent-reviewed-draft",
+    "user_visual_acceptance": "not-recorded",
+    "human_G1_G5": "not-claimed",
+    "pptx_assembled": false,
+    "powerpoint_rendered": false,
+    "apw_project_concept_check": "not-run; no workflow status asserted",
+    "open_P0": 0,
+    "open_P1": 0,
+    "closed_P1": 1,
+    "P2_context_findings": 3
+  },
+  "frozen_inputs": {
+    "snapshot_path": "project/provenance/concept-input-hash-snapshot.json",
+    "snapshot_sha256": "65B96FA6B34336F3A9A1B6A2EEE87AD7EDC9094DA801CDFAA6D44FF9564F215A",
+    "current_hashes_match_snapshot": true,
+    "files": {
+      "project/brief.json": "381AE4068A88C0F0636A68D0EB516B17EEC76C256A23B10C7B3F6C1538BF175B",
+      "project/deck-spec.json": "EF2E9EFE4D99CE728B6FEE94F7AD575C132777D70D6A4FE4667B7545A7024DE8",
+      "project/reference-study.json": "7BEAF82ABDD10DBCE006EDB1D61CAB4ED3783B209975FDF4E0D6E07B49CBA70C",
+      "project/style-contract.json": "D74D6C36362C0EAEEAAA5579182A93D1AE628F0C8D44EDC5EBC17513C3DA2BE4"
+    }
+  },
+  "package_binding_at_review": {
+    "checked_at": "2026-10-13T08:37:19+08:00",
+    "concept_paths_present_and_hash_bound": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06"
+    ],
+    "concept_paths_missing": [],
+    "concept_generation_log_status": "complete",
+    "concept_generation_log_slides_count": 6,
+    "all_design_generation_record_hashes_match_current_pngs": true,
+    "note": "All six project concept copies match the reviewed design PNGs and the generation log records six slides; no APW project-level check was run by this visual review.",
+    "all_project_concept_copy_hashes_match": true
+  },
+  "slides": [
+    {
+      "slide_id": "S01",
+      "image_path": "design/S01/concept.png",
+      "sha256": "75CE88FD82D195E5DA0DDDC7500C75D748E49624BE309257A9CB140A7F248B88",
+      "generation_record_hash_matches": true,
+      "finding_ids": [
+        "CTX-ILLUSTRATION"
+      ],
+      "review": "Cover title, subtitle, research question and illustrative-example footer are clear; strong editorial hierarchy and whitespace. Membrane cutaway is concept art and must not be presented as a micrograph or verified morphology."
+    },
+    {
+      "slide_id": "S02",
+      "image_path": "design/S02/concept.png",
+      "sha256": "80E0B89A2ED6F1FD4F87A02CDABE5D22E2DF91149EC80F0B4E1433EE5AE2859A",
+      "generation_record_hash_matches": true,
+      "finding_ids": [
+        "CTX-ILLUSTRATION",
+        "CTX-SCHEMATIC-CHART"
+      ],
+      "review": "Observation/explanation/verification sequence is legible and copy matches the frozen deck. The mini declining curves have no axes or values and are illustrative symbols, not the four-point source dataset or measured observations."
+    },
+    {
+      "slide_id": "S03",
+      "image_path": "design/S03/concept.png",
+      "sha256": "FF31EBC4CDD9BECB65E4F0E0C985ED9579D49D318C9F95AACE96B07210372307",
+      "generation_record_hash_matches": true,
+      "finding_ids": [
+        "S03-DEVICE-DISPOSITION"
+      ],
+      "review": "Four-stage planned method is legible, chart axes are empty and the page says the plan has not been executed. Initial independent concern was P1 because an illustrated piped filtration apparatus exceeded the prompt's generic-object instruction; root disposition is P2 because it has no model, parameters, build claim or outcome. Keep the disagreement visible and add contextual disclosure."
+    },
+    {
+      "slide_id": "S04",
+      "image_path": "design/S04/concept.png",
+      "sha256": "1BCD686F69194FCCD88F56B33C4322695068F711829DC0ADE98BE78A03D07A92",
+      "generation_record_hash_matches": true,
+      "superseded_attempt": {
+        "image_path": "design/S04/attempt-01/concept.png",
+        "sha256": "A390EFD1C716F0B6B618244BD1FD1317E58EC8E6736140AB2132949A2BE2D076"
+      },
+      "finding_ids": [
+        "S04-P1-CLOSED"
+      ],
+      "review": "Revision 2 removes unbound prose and uses an honest 0.00–1.00 y-axis. The four x/y coordinates and labels are correct; there is one series, no error bars and no significance claim."
+    },
+    {
+      "slide_id": "S05",
+      "image_path": "design/S05/concept.png",
+      "sha256": "B746711FF09146A7BDA74EEF5D087856D1D87719A9E856902F012BEB469E4DDA",
+      "generation_record_hash_matches": true,
+      "superseded_attempt": {
+        "sha256": "EEC2CCC35960B9B4E4E0C1F671A303634691BF90475912D9F05F079AABFCE9F8",
+        "reason": "Initial instrument dial had numeric marks that could be mistaken for data; final edit removed numeric marks."
+      },
+      "finding_ids": [
+        "CTX-ILLUSTRATION"
+      ],
+      "review": "All three explanations remain visibly marked as hypotheses to validate. Current dial has non-numeric ticks only; diagrams remain conceptual rather than evidence for mechanisms."
+    },
+    {
+      "slide_id": "S06",
+      "image_path": "design/S06/concept.png",
+      "sha256": "5EB66F3EF9BC2B767987C94FF8C7802ADE5D0F485D49DA98B5337B262D9126C8",
+      "generation_record_hash_matches": true,
+      "finding_ids": [],
+      "review": "Four future planning actions and the pending replicate-count boundary are clear; route metaphor closes the story without claiming completed or successful experiments."
+    }
+  ],
+  "findings": [
+    {
+      "id": "CTX-ILLUSTRATION",
+      "severity": "P2",
+      "status": "contextualization-required",
+      "applies_to": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "finding": "Porous membrane line art, generic apparatus, microscope and hypothesis vignettes could be misread outside this concept-only context as micrographs, selected/assembled equipment, observed mechanisms or experimental evidence.",
+      "disposition": "Root plans gallery-level labeling that these are conceptual illustrations; report does not claim that gallery annotation is already present in the project."
+    },
+    {
+      "id": "CTX-SCHEMATIC-CHART",
+      "severity": "P2",
+      "status": "contextualization-required",
+      "applies_to": [
+        "S02"
+      ],
+      "finding": "The unlabelled declining mini-curve is a visual metaphor and not a data plot. Its marker count does not represent the four source values.",
+      "disposition": "Keep S04 as the only numerical data visualization and do not cite S02 imagery as source data."
+    },
+    {
+      "id": "S03-DEVICE-DISPOSITION",
+      "severity": "P2",
+      "status": "root-reviewed-contextualization-required",
+      "applies_to": [
+        "S03"
+      ],
+      "initial_independent_severity": "P1",
+      "root_disposition": "P2",
+      "finding": "S03 depicts a specific-looking piped filtration unit although the prompt requested neutral generic objects. Root's review found no model, parameter, actual build or outcome claim and retained the planned/unexecuted disclaimer; the original review concern remains visible as a severity disagreement.",
+      "disposition": "Add gallery note: generic conceptual apparatus illustration, not selected or assembled equipment; repeated icons do not mean actual replicates."
+    },
+    {
+      "id": "S04-P1-CLOSED",
+      "severity": "P1",
+      "status": "closed-by-revision-2",
+      "applies_to": [
+        "S04"
+      ],
+      "finding": "Attempt 1 included unbound explanatory prose suggesting more efficient study design and used a truncated 0.70–1.00 y-axis that visually amplified the change.",
+      "disposition": "Revision 2 removed that prose, changed the y-axis to 0–1, retained the exact four data points and used a single line. Current image and record hashes match."
+    }
+  ],
+  "limitations": [
+    "This is a flattened concept-image review, not a PPTX or PowerPoint render review.",
+    "Native editability, actual pt sizes, text geometry after assembly and presentation-environment legibility were not tested.",
+    "No user acceptance or human gate is represented.",
+    "The APW public project concept check was not run; this review does not claim that it passed."
+  ]
+}

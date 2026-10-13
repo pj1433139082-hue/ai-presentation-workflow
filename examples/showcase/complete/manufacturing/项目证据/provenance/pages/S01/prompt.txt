@@ -1,0 +1,9 @@
+Use case: productivity-visual
+Asset type: one complete 16:9 Chinese concept slide for a local showcase presentation.
+Scene/backdrop: warm ivory technical-paper atmosphere with a quiet, abstract manufacturing context; no identifiable factory or real site.
+Subject: a clear concept of waste heat finding a possible next use, expressed as a visual relationship rather than engineering drawing.
+Style/medium: polished editorial engineering explainer, fine technical linework, dimensional accents used sparingly, warm and cool route colors from the frozen style contract.
+Composition/framing: a confident opening page with strong Chinese headline hierarchy and a single open process motif; do not copy the reused S03 pipe-loop composition.
+Text (verbatim; render each line exactly once, with no other words): “余热回用，从匹配开始” “制造业余热回收 · 概念示意” “先看热源与用热是否同时、适配。” “虚构方案 · 非现场工程设计”
+Constraints: all text is a fictional, non-quantified proposal. Keep every line legible and correctly spelled. Do not suggest a specific plant, equipment design, implementation, measured benefit, or engineering feasibility.
+Avoid: temperatures, pressure, flow values, dimensions, efficiency, savings, cost, timelines, plant names, logos, fake technical labels, extra text, dashboard cards, or watermark.

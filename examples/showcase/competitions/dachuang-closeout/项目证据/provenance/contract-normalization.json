@@ -1,0 +1,24 @@
+{
+  "recorded_at_utc": "2026-10-13 13:23:34 UTC",
+  "trigger": "APW check --stage concept reported that brief.json.quality_profile must be literal draft.",
+  "change": {
+    "path": "brief.json",
+    "field": "quality_profile",
+    "before": "完整中文16:9逐页概念；信息层级清楚，计数与模拟资源可读，示例身份靠近主张标注，按叙事变化构图。",
+    "after": "draft"
+  },
+  "pre_generation_frozen_contract_sha256": {
+    "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+    "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "current_contract_sha256": {
+    "brief": "83af123419ce4c75374b8e1b8774d279a5e222cdb14b3808d5882cd22fb04051",
+    "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "scope": "Only the APW-required quality_profile enum changed. The deck copy, source notes, reference study, style contract, selected references and six exact prompts remain byte-identical.",
+  "generation_history": "Images were generated after the original freeze. Their per-page input snapshots preserve the original frozen hashes. The current APW binding uses the normalized brief hash; the difference is recorded here and in each log row."
+}

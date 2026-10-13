@@ -1,4 +1,5 @@
 {
+  "contract_schema_version": 2,
   "version": "replace-with-approved-version",
   "direction": "replace with selected direction",
   "selected_direction_id": "replace with approved reference direction ID",
@@ -50,6 +51,26 @@
     "fine_ui_preferred_height": 0.46,
     "illustration_min_width": 0.30,
     "illustration_min_height": 0.25
+  },
+  "semantic_system": {
+    "version": "replace-with-approved-semantic-version",
+    "text_roles": {
+      "action-title": {"meaning": "the single approved claim of this page", "readability_role": "action-title", "font_family": "Microsoft YaHei", "font_size_pt": 36, "bold": true, "color": "#F8FAFC"},
+      "key-takeaway": {"meaning": "the page's one-line audience takeaway", "readability_role": "key-caption", "font_family": "Microsoft YaHei", "font_size_pt": 22, "bold": true, "color": "#F8FAFC"},
+      "status-qualifier": {"meaning": "evidence, status, or illustrative boundary for the takeaway", "readability_role": "source-qualifier", "font_family": "Microsoft YaHei", "font_size_pt": 16, "bold": false, "color": "#CBD5E1"},
+      "body": {"meaning": "ordinary explanatory copy", "readability_role": "body", "font_family": "Microsoft YaHei", "font_size_pt": 20, "bold": false, "color": "#F8FAFC"}
+    },
+    "frame_roles": {
+      "verified": {"meaning": "source-backed, verified local capability only", "line_style": "solid", "color": "#38BDF8", "visible_label_required": true},
+      "pending": {"meaning": "unverified or planned capability", "line_style": "dashed", "color": "#94A3B8", "visible_label_required": true},
+      "evidence-placeholder": {"meaning": "blank pane awaiting authentic source evidence", "line_style": "none", "color": null, "visible_label_required": true},
+      "editable-data": {"meaning": "blank native text/data slot for later user input, not a truth-status frame", "line_style": "solid", "color": "#94A3B8", "visible_label_required": false}
+    },
+    "repeated_regions": {
+      "page-title": {"text_role": "action-title", "required": true, "anchor": [0.05, 0.05], "tolerance": 0.03},
+      "key-statement": {"text_role": "key-takeaway", "required": true, "anchor": [0.05, 0.88], "tolerance": 0.03},
+      "status-qualifier": {"text_role": "status-qualifier", "required": true, "anchor": [0.74, 0.88], "tolerance": 0.03}
+    }
   },
   "rules": [
     "structure before decoration",

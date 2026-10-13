@@ -1,0 +1,9 @@
+Task: Make a minimal edit to Image 1, the existing S01 full-page concept. Add one missing key-takeaway line while preserving the existing concept.
+
+Keep Image 1 as the base. Preserve its 16:9 canvas, overall composition, rain-garden cutaway, plants, water, soil, natural light, color palette, title, and every existing line of Chinese text exactly as it is. Do not redesign or replace the illustration.
+
+Add exactly this additional line, verbatim: “第6周阶段检查｜目标在前，记录如实”
+
+Place it centered in the open white area immediately above the existing pale-green “第6周｜阶段检查” label. Render it in the same refined Chinese editorial style, dark ink green, clearly legible and smaller than the project title. Keep the existing title “雨序”, subtitle “校园雨水花园观察与优化”, project line “大创 · 创新训练项目过程汇报”, checkpoint label “第6周｜阶段检查”, and truth label “过程情境示例” unchanged and readable. If needed, move only the checkpoint label slightly lower to create breathing room; do not move or rewrite any other copy.
+
+Do not add any other text, marks, icons, data, or objects.

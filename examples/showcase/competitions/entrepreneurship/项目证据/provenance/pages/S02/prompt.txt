@@ -1,0 +1,13 @@
+Create one complete, finished Chinese presentation concept slide as a single landscape 16:9 image. This is slide S02 in the same fictional six-page campus reuse-service pitch concept as the provided S01 style reference. Keep a coherent warm editorial art direction, but make this page's composition distinct from the cover.
+
+Narrative: show two believable everyday situations connected by one still-usable desk lamp or storage box: a student preparing to leave a dorm and wanting an easy way to pass useful items on; another student arriving and wanting affordable essentials whose condition is clear. Use a continuous, natural campus setting with candid documentary-like photographic warmth, not a fake real-campus report. Avoid identifiable school architecture, institution logos, uniforms, or made-up survey charts. Use elegant magazine typography with a clear reading path. A paper-note texture may be used sparingly, but do not place the content into a repeated grid of cards.
+
+Render each Chinese phrase below exactly and clearly. No translation, paraphrase, extra readable labels, fake app interface, statistics, testimonial, or additional text:
+主标题：搬出宿舍的省事需求，遇上新生的基础需求
+核心句：用一次可信、就近的交接，把两端接起来。
+需求情境一：离校：台灯、收纳箱还能用，却难处理
+需求情境二：入住：想找状态清楚、价格合适的日用品
+用户任务：快速发布｜看清状况｜校内交接
+页脚说明：需求情境推演 · 非用户调研
+
+Make the two user situations immediately understandable and visually connected, with the reusable object acting as a hinge. Keep all Chinese type inside safe margins and readable at presentation size. One complete slide image only; no multi-slide collage, no poster mockup, and no title cut off.

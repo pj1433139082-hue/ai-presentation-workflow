@@ -1,0 +1,118 @@
+{
+  "slide_id": "S01",
+  "status": "generated",
+  "generator": "Codex built-in image_gen",
+  "generated_at_utc": "2026-10-13 13:13:19 UTC",
+  "prompt_path": "provenance/pages/S01/prompt.txt",
+  "prompt_sha256": "0d855b1a3560e4bcc92aca45c7b94415114f1e08e153c3a4c82b18ea837b2985",
+  "input_snapshot_path": "provenance/pages/S01/input-snapshot.json",
+  "input_snapshot_sha256": "f4e0eb031874e1d9817d7b512004546db912be10dd87b108bed6473b3a85c7bb",
+  "contract_input_sha256": {
+    "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+    "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "copy_map": [
+    {
+      "id": "title",
+      "role": "title",
+      "text": "雨序",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "takeaway",
+      "role": "key-takeaway",
+      "text": "校园雨水花园观察与优化",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "line1",
+      "role": "body",
+      "text": "大创 · 创新训练项目结题答辩",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "line2",
+      "role": "body",
+      "text": "目标、记录与边界，一次讲清",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "source",
+      "role": "source",
+      "text": "结题情境示例 · 非真实项目成果",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    },
+    {
+      "id": "page",
+      "role": "page-number",
+      "text": "01 / 06",
+      "truth_status": "illustrative",
+      "source_ids": [
+        "EXAMPLE"
+      ]
+    }
+  ],
+  "copy_map_sha256": "4c0a34165753239e5b0f4e0255fbd57ed31f471ec6ea1483bce0e9ca5933e843",
+  "selected_reference_images": [
+    {
+      "reference_id": "RPROPOSAL-S01",
+      "path": "references/proposal-S01-style-anchor.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "actual_passed_reference_images": [],
+  "actual_tool_call": {
+    "request_type": "new full-page concept image",
+    "prompt_sha256": "0d855b1a3560e4bcc92aca45c7b94415114f1e08e153c3a4c82b18ea837b2985",
+    "reference_images_passed": [],
+    "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-37a0564c-349d-4ad7-b864-e9031c9dbeb8.png",
+    "tool_output_sha256": "fb759ca0d909c309e739eab49ae536a890f2b6c1c7ed4a5807a7e6da7ae51ab4",
+    "tool_output_hint": "Generated images are saved to C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e as exec-37a0564c-349d-4ad7-b864-e9031c9dbeb8.png by default."
+  },
+  "output_path": "concepts/S01.png",
+  "output_sha256": "fb759ca0d909c309e739eab49ae536a890f2b6c1c7ed4a5807a7e6da7ae51ab4",
+  "design_copy_path": "design/S01/concept.png",
+  "design_copy_sha256": "fb759ca0d909c309e739eab49ae536a890f2b6c1c7ed4a5807a7e6da7ae51ab4",
+  "image_dimensions_px": {
+    "width": 1672,
+    "height": 941,
+    "aspect_ratio": "1672:941"
+  },
+  "history": [
+    {
+      "attempt": 1,
+      "status": "generated",
+      "prompt_sha256": "0d855b1a3560e4bcc92aca45c7b94415114f1e08e153c3a4c82b18ea837b2985",
+      "tool_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355c-9674-7772-ac0a-f7dcc77f3a6e\\exec-37a0564c-349d-4ad7-b864-e9031c9dbeb8.png",
+      "tool_output_sha256": "fb759ca0d909c309e739eab49ae536a890f2b6c1c7ed4a5807a7e6da7ae51ab4",
+      "output_sha256": "fb759ca0d909c309e739eab49ae536a890f2b6c1c7ed4a5807a7e6da7ae51ab4",
+      "note": "Initial generation; tool output was copied without modification."
+    }
+  ],
+  "agent_inspection": {
+    "reviewed_page": "S01",
+    "finding": "All listed Chinese lines and the 01 / 06 page marker are visible; the cover uses a fresh garden cutaway composition and keeps the fictional status near the lower edge. No real evidence or unsupported research result is shown."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "generated; text visually checked",
+  "case_id": 17,
+  "case_title": "界面交互设计图",
+  "case_category": "Products & E-commerce",
+  "case_styles": [
+    "UI",
+    "Infographic",
+    "Poster"
+  ],
+  "case_scenes": [
+    "Tech",
+    "Commerce"
+  ],
+  "source_repository": "freestylefly/awesome-gpt-image-2 local case index",
+  "source_url": "https://x.com/wory37303852",
+  "source_label": "@wory37303852",
+  "case_index_image_path": "D:\\obsidian_work\\cangku\\paper_work\\.agents\\skills\\design-shared\\component-library\\sources\\awesome-gpt-image-2\\data\\images\\case17.jpg",
+  "reference_copy": "reference-case17.jpg",
+  "reference_role": "visual prompt/style reference only; not factual evidence",
+  "reference_image_sha256": "97e848f6ad45cdd5b2c9f62c43725953afdcd52f3f2c261ec5869de92a730e85",
+  "translation": "借鉴中心单品的拆解式体积感、柔和棚拍反射和精简标注层级；改为横向发布封面里的原创桌面知识终端，不复刻 VR 头显、Meta 标识、原文案或其产品结构。",
+  "generation_tool": "built-in Codex image_gen",
+  "generation_prompt_file": "generation-prompt.txt",
+  "generated_original_file": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-b7ab-7ad1-8e6a-e05dcb9c2b88\\exec-b76739a6-38c6-4dd9-9448-1c4e89bf21ee.png",
+  "generated_original_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+  "workspace_copy_file": "cover-知栈-概念.png",
+  "workspace_copy_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+  "image_dimensions_px": [
+    1672,
+    940
+  ]
+}

@@ -1,0 +1,12 @@
+Create ONE complete 16:9 landscape research-presentation slide concept (not a photo of a screen, no frame, no mockup), in Chinese. Match the visual language of the supplied S01 concept: restrained high-end scientific journal design, warm ivory paper #F6F2E9, deep ink #26231F, fine dark etched linework #514A42, sparing muted ochre #A87548 and pale ochre #E6D9CA. Rich, precise 2D copperplate/woodcut-like scientific engraving with delicate stipple and strong visual substance; flat print, crisp edges, natural paper field. Keep typography and palette consistent with S01, but compose this page differently: make a spacious left-to-right method pathway across the page, with a detailed engraved central measuring/recording scene and four connected stages integrated into one visual route. Avoid a repeated card grid. The diagram is an unexecuted plan only: use neutral generic objects, no brand, no lab-specific equipment, no numerical values or concrete operating conditions, no chart trend, no invented data. Show visual cues for establishing a reference baseline, fixing conditions without specifying them, recording normalized flux over time with unlabeled ticks only, then planning repeats and a control. Fine dashed/open planning connectors are appropriate. Do not imply any experiment has happened.
+
+Render only these exact Chinese text strings, with accurate legible Chinese glyphs and punctuation; do not add any other words or characters:
+Title: “方法与观测：先定义，再记录”
+Prominent caveat: “计划示意，尚未执行。”
+Stage 1: “定义初始基线 J₀”
+Stage 2: “固定待研究的运行条件”
+Stage 3: “按时间记录归一化通量 J/J₀”
+Stage 4: “预先安排重复与对照”
+Footer, small but clearly readable: “演示示例 · 非实验结果”
+
+Use clear type hierarchy and ample but purposeful negative space. The title should not become a huge black block. Do not make any text less than comfortably readable at presentation size. Keep all text inside margins. Preserve exact wording and correct subscript zero in J₀. No extra labels, numbers, axis values, explanatory copy, watermark, logo, UI, cards, red warning boxes, gradients, glossy 3D, photorealistic water or fake experimental results. This is a standalone concept image only; the image is not an editable PowerPoint slide.

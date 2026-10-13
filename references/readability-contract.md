@@ -1,5 +1,7 @@
 # Readability and display regions
 
+> Scope: Numeric floors and evidence-region dimensions below are legacy production guidance/contracts, not universal `showcase-v1` design targets. A showcase records any project-specific readability parameters and judges legibility from the actual full-size render.
+
 Use this contract while planning a production/draft slide, while reviewing its **contentful** concept at G4, and again after PPTX assembly. A thumbnail contact sheet tests deck rhythm; it does not prove projected readability. Review every slide at native/full-slide size with the actual approved copy and representative image or truth-sensitive placeholder visible.
 
 ## Default 16:9 planning profile
@@ -25,6 +27,8 @@ In `deck-spec.json.slides[*].readability`, declare:
 - `full_size_review`: a separate per-slide evidence path/hash or the native-size contentful image path/hash, `status: passed`, `display_scale_percent: 100`, reviewer, and the exact `reviewed_concept_sha256`. The path/hash is added only after the image exists; a stale image requires fresh review. The G4 packet presents these images at 100% scale, not only in a contact sheet.
 
 The public validator checks the declared minimum font sizes, region geometry, exception completeness, and links to the current concept/G4 approval. It does **not** claim to infer visual legibility solely from metadata. G4 must show the full-size render and resolve cropping, crowding, or contrast defects by actual inspection. G5 checks the assembled render and actual native text/image placement again. The textless component master must preserve the approved text and visual fill-slot bboxes; otherwise the readable concept did not survive decomposition.
+
+Readability floors are not a substitute for a cross-slide semantic system. When `semantic_system` is active, each text region also names an approved `font_role`; its planned size must equal that role's fixed token, not merely exceed the floor. A long title may wrap without changing the title token. Repeated title and key-message bands may not consume the usable screenshot/evidence pane below its floor; see `references/semantic-visual-grammar.md`.
 
 ## Repair order
 

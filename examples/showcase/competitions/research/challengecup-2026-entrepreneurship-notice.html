@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>  第十五届“挑战杯”中国大学生创业计划竞赛</title>
+    <link rel="stylesheet" type="text/css" href="/all_static/2026guosai/css/reset.css?v=25.05.01" media="all" />
+    <link rel="stylesheet" type="text/css" href="/all_static/common/css/common.css?v=25.05.01" media="all" />
+    <link rel="stylesheet" type="text/css" href="/all_static/2026guosai/css/default.css?v=25.05.01" media="all" />
+    <link rel="stylesheet" type="text/css" href="/all_static/2026guosai/css/index.css?v=25.05.01" >
+    <link rel="stylesheet" type="text/css" href="/all_static/2026guosai/css/2021style.css?v=25.05.01"/>
+    <link rel="stylesheet" type="text/css" href="/all_static/2026guosai/css/iconfont.css" /> 
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/all_static/2026guosai/tzb2026/css/tzb2026-public.css?v=2026.06.20b" />
+    <link rel="stylesheet" type="text/css" href="/all_static/2026guosai/tzb2026/css/tzb2026-list.css?v=2026.08.24a" />
+
+    <script type="text/javascript" src="/all_static/common/js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="/all_static/2026guosai/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="/all_static/common/js/jquery.formcheck.js?v=24.11.26"></script>
+    <script type="text/javascript" src="/all_static/common/js/jquery.tools.overlay.min.js"></script>
+    <script type="text/javascript" src="/all_static/2026guosai/js/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="/all_static/2026guosai/js/unsilder.js?v=0.1"></script>
+    
+    <style type="text/css">
+    @media screen and (max-device-width: 768px) {
+        html,
+        body {
+          width: 1280px;
+          height: 150vh;
+        }
+    }
+    </style>
+
+    
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZFQ511WJT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('set', {'cookie_flags': 'Secure'});
+      gtag('config', 'G-FZFQ511WJT');
+    </script>
+
+
+    <script type="text/javascript">
+$(function (){
+    // user_login_form user_password_input
+    // Chrome
+    $('.user_login_form input.user_password_input').on('input', function(){
+        var value = $(this).val();
+        if (typeof value == 'string') {
+            if (value.indexOf(" ") >= 0){
+                value = value.replace(/\s/g, "");$(this).val(value);
+            }
+        }
+    });
+    // IE
+    $('.user_login_form input.user_password_input').on('propertychange', function(){
+        var value = $(this).val();
+        if (typeof value == 'string') {
+            if (value.indexOf(" ") >= 0){
+                value = value.replace(/\s/g, "");$(this).val(value);
+            }
+        }
+    })
+})
+</script>
+</head>
+
+
+<body>
+    
+
+    <!-- tzb2026-overall begin -->
+    <div class="tzb2026-overall ">
+        <!-- block 1 tzb2026-pageTop begin -->
+        <div class="tzb2026-pageTop">
+          <div class="tzb2026-ptCon">
+            <div class="tzb2026-ptcCon">
+              <div class="user_login_form">
+                <!-- top status/login bar -->
+                
+                <button onclick="location.href='/d51/accounts/login/'">登录</button>
+                <div class="tzb2026-ptcCon-separator"></div>
+                <button class="outline" onclick="location.href='/d51/accounts/register/'">注册</button>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- block 1 tzb2026-pageTop end -->
+
+        <!-- block 2 tzb2026-header begin -->
+        <div class="tzb2026-header">
+          <div class="tzb2026-header-main">
+            <div class="tzb2026-logo">
+              <a href="javascript:;">
+                <img src="/all_static/2026guosai/tzb2026/images/icons/tzb2026-js-logo.svg" alt='第十五届"挑战杯"建设银行中国大学生创业计划竞赛' title='第十五届"挑战杯"建设银行中国大学生创业计划竞赛' width="100" height="100">
+              </a>
+            </div>
+            <div class="tzb2026-nav-divider"></div>
+            <!-- nav -->
+            <ul class="tzb2026-nav">
+              
+              <li class="tzb2026-nav-item ">
+                <a href="/d51/" class="tzb2026-nav-btn">首页</a>
+              </li>
+              
+              
+              <li class="tzb2026-nav-item tzb2026-nav-item-active">
+                <a class="tzb2026-nav-btn" href="/d51/competion_notice">通知公告</a>
+              </li>
+              
+              <li class="tzb2026-nav-item ">
+                <a class="tzb2026-nav-btn" href="/d51/matches/">比赛入口</a>
+              </li>
+              
+              <li class="tzb2026-nav-item ">
+                <a class="tzb2026-nav-btn" href="/d51/tzb_inno_main">主体赛</a>
+              </li>
+              
+              <li class="tzb2026-nav-item ">
+                <a class="tzb2026-nav-btn" href="/d51/dbzx">东北振兴产业升级专项赛</a>
+              </li>
+              
+              <li class="tzb2026-nav-item ">
+                <a class="tzb2026-nav-btn" href="/d51/jbgs">“揭榜挂帅”擂台赛</a>
+              </li>
+              
+              <li class="tzb2026-nav-item ">
+                <a class="tzb2026-nav-btn" href="http://www.tiaozhanbei.net/">回到官网</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <!-- block 2 tzb2026-header end -->
+
+        <!-- block 3 tzb2026-list-banner begin -->
+        <div class="tzb2026-list-banner">
+          <div class="tzb2026-list-banner-img">
+            <img src="/all_static/2026guosai/tzb2026/images/banner/base-banner.webp" alt="第十五届“挑战杯”中国大学生创业计划竞赛">
+          </div>
+        </div>
+        <!-- block 3 tzb2026-list-banner end -->
+
+        
+        <!-- block 4 tzb2026-main begin -->
+        <div class="tzb2026-main">
+          <div class="tzb2026-mCrumbs">
+            
+              
+<ul class="message">
+    
+</ul>
+
+<style>
+.msg-popup-mask{position:fixed; left:0; top:0; right:0; bottom:0; background:rgba(0,0,0,0.45); z-index:9999; display:none;}
+.msg-popup-box{position:absolute; left:50%; top:50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); width:540px; max-width:94%; background:#fff; border-radius:2px; box-shadow:0 12px 40px rgba(0,0,0,0.18); padding:24px 28px 20px; box-sizing:border-box;}
+.msg-popup-close{position:absolute; top:18px; right:20px; width:24px; height:24px; line-height:22px; text-align:center; font-size:22px; color:#8c8c8c; background:none; border:none; padding:0; cursor:pointer;}
+.msg-popup-close:hover{color:#333;}
+.msg-popup-head{display:flex; align-items:center; padding-right:28px;}
+.msg-popup-icon{flex:0 0 auto; width:26px; height:26px; margin-right:10px; line-height:0;}
+.msg-popup-title{font-size:19px; font-weight:600; color:#1f1f1f;}
+.msg-popup-body{font-size:14px; line-height:1.75; color:#444; text-align:left; margin-top:16px; max-height:260px; overflow-y:auto; padding-right:4px;}
+/* white-space:pre-line = W5-2：让消息串里的 \n 真的换成一行。
+   打分页报错的明细是「填写有误，请检查。详情：\n<一条一行>」（judgement/mark_form_utils.py）。
+   ★ 刻意用 CSS 而不是 |linebreaksbr：渲染面仍是  原样输出，
+     autoescape 一个字没动 ⇒ 零注入面。pre-line 只保留换行、不保留多余空格缩进。 */
+.msg-popup-msg{margin:0 0 8px; white-space:pre-line;}
+.msg-popup-msg:last-child{margin-bottom:0;}
+.msg-popup-foot{text-align:right; margin-top:28px;}
+.msg-popup-ok{display:inline-block; background:#fff; color:#333; border:1px solid #d9d9d9; border-radius:2px; height:36px; line-height:34px; padding:0 22px; font-size:14px; cursor:pointer; transition:all .2s ease;}
+.msg-popup-ok:hover{color:#1170f8; border-color:#1170f8;}
+</style>
+<div class="msg-popup-mask" id="msgPopup" style="display:none;" role="alertdialog" aria-modal="true" aria-labelledby="msgPopupTitle" aria-describedby="msgPopupBody">
+    <div class="msg-popup-box">
+        <button type="button" class="msg-popup-close" aria-label="关闭">&times;</button>
+        <div class="msg-popup-head">
+            <span class="msg-popup-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#e60012"></circle><rect x="11" y="6" width="2" height="8" rx="1" fill="#fff"></rect><circle cx="12" cy="17" r="1.35" fill="#fff"></circle></svg>
+            </span>
+            <span class="msg-popup-title" id="msgPopupTitle">提示</span>
+        </div>
+        <div class="msg-popup-body" id="msgPopupBody">
+            
+        </div>
+        <div class="msg-popup-foot">
+            <button type="button" class="msg-popup-ok">返回</button>
+        </div>
+    </div>
+</div>
+
+<div class="msg-popup-mask" id="msgPopupNotice" style="display:none;" role="alertdialog" aria-modal="true" aria-labelledby="msgPopupNoticeTitle" aria-describedby="msgPopupNoticeBody">
+    <div class="msg-popup-box">
+        <button type="button" class="msg-popup-close" aria-label="关闭">&times;</button>
+        <div class="msg-popup-head">
+            <span class="msg-popup-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#16a34a"></circle><path d="M7 12.4l3.2 3.2L17 8.8" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </span>
+            <span class="msg-popup-title" id="msgPopupNoticeTitle">提示</span>
+        </div>
+        <div class="msg-popup-body" id="msgPopupNoticeBody">
+            
+        </div>
+        <div class="msg-popup-foot">
+            <button type="button" class="msg-popup-ok">我知道了</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+(function($){
+    if(!$){ return; }
+    // 两个弹窗共用同一套开关逻辑：body 里没有 .msg-popup-msg 的那个直接摘掉，
+    // 免得空壳留在 DOM 里挡住页面（遮罩是 position:fixed 全屏的）。
+    $.each(['#msgPopup', '#msgPopupNotice'], function(_, sel){
+        var $pop = $(sel);
+        if(!$pop.length){ return; }
+        if($pop.find('.msg-popup-msg').length === 0){ $pop.remove(); return; }
+        var ns = 'keydown.msgPopup' + sel.replace('#', '');
+        function closePop(){ $pop.css('display', 'none'); $(document).off(ns); }
+        $pop.css('display', 'block');
+        $pop.find('.msg-popup-ok, .msg-popup-close').on('click', closePop);
+        $pop.on('click', function(e){ if(e.target === this){ closePop(); } });
+        $(document).on(ns, function(e){ if(e.which === 27){ closePop(); } });
+    });
+})(window.jQuery);
+</script>
+
+            
+          </div>
+          <!-- block 4-A postion -->
+          
+<div class="tzb2026-mCrumbs">
+    您现在的位置：<a href="/d51/" title="首页">首页</a> > 
+    <a href="/d51/competion_notice1">通知公告</a> > 
+    <b>通知公告</b>
+</div>
+
+          <!-- block 4-B main-content -->
+          <div class="tzb2026-main-content tzb2026-list-main">
+            
+				<div class="tzb2026-mList">
+					<div class="tzb2026-mlTitle">
+						
+                        
+						<p class="tzb2026-mltItem tzb2026-mltActive">
+                            <a href="/d51/competion_notice">通知公告</a>
+                        </p>
+                        
+						<p class="tzb2026-mltItem ">
+                            <a href="/d51/media_report">媒体聚焦</a>
+                        </p>
+                        
+						<p class="tzb2026-mltItem ">
+                            <a href="/d51/training">培训交流</a>
+                        </p>
+                        
+					</div>
+                    
+					<div class="tzb2026-mlCon">
+                        
+						<div class="tzb2026-mlcItem">
+							<p class="tzb2026-mlciImg">
+								<img src="/media/photologue/commonimage/2026/5/23/14/38/cache/71e5d95c-986b-42af-b330-d73dab9841bb-2026-5-23-14-38-0-1233_240_160_2x.jpg" >
+							</p>
+							<p class="tzb2026-mlciTitle">
+								<a href="/d51/article/727/"  title="挑战杯丨关于举办第十五届“挑战杯”建设银行中国大学生创业计划竞赛的通知">
+									挑战杯丨关于举办第十五届“挑战杯”建设银行中国大学生创业计划竞赛的通知
+								</a>
+							</p>
+							<p class="tzb2026-mlciTxt">
+	为深入学习贯彻习近平新时代中国特色社会主义思想，深入贯彻党的二十大和二十届历次全会精神，认真落实四中全会部署，聚焦青年创新创业能力培育，服务科技创新和产业创新深度融合，促进青年高质量充分就业，助力一体推进教育科技人才发展，决定举办第十五届挑战杯建设银行中国大学生创业计划竞赛。现就有关事宜通知如下。
+
+	
+		
+
+
+	
+
+	
+		
+			
+				
+					
+						
+							
+								
+									一、组织机构
+							
+						
+					
+				
+				
+					
+			
+		
+	
+
+
+	主办单位：共青团中央、教育部、人力资源社会保障部、中国科协、中国科学院、中国社会科学院、中国工程院、全国学联、辽宁省人民政府
+
+	
+
+	承办单位：大连理工大学、共青团辽宁省委
+
+	
+...</p>
+							<p class="tzb2026-mlciBot">
+								<span>2026.05.23</span>
+								<b>浏览量：37923</b>
+							</p>
+						</div>
+                        
+						<div class="tzb2026-mlcItem">
+							<p class="tzb2026-mlciImg">
+								<img src="/media/photologue/commonimage/2026/5/28/12/42/cache/95964b42-5834-4624-9384-eac3be210e5b-2026-5-28-12-42-12-7621_240_160_2x.jpg" >
+							</p>
+							<p class="tzb2026-mlciTitle">
+								<a href="/d51/article/716/"  title="2026年度中国青年科技创新“揭榜挂帅”擂台赛第二批榜题等你来战！">
+									2026年度中国青年科技创新“揭榜挂帅”擂台赛第二批榜题等你来战！
+								</a>
+							</p>
+							<p class="tzb2026-mlciTxt">
+	关注揭榜挂帅擂台赛的青年朋友们，好消息来啦！第一批榜题推出后，受到全国广大学子与青年科技人才的高度关注和积极响应。为进一步拓宽青年科创平台、激发创新创造活力，组委会广泛征求各主擂台城市意见，组织专家严格评审论证，2026年度中国青年科技创新揭榜挂帅擂台赛第二批榜题正式发布！
+
+	
+
+	话不多说，下面揭晓榜题信息！
+
+	
+		
+
+
+	
+		
+			
+				
+					新一代信息技术
+			
+		
+	
+
+
+	
+
+	
+		
+
+
+	
+		
+
+
+	
+
+	
+		
+			
+				
+					人工智能
+			
+		
+	
+
+
+	
+
+	
+		
+
+
+	
+
+	
+		
+			
+				
+					新能源
+			
+		
+	
+
+
+	
+
+	
+		
+
+
+	
+
+	
+		
+			...</p>
+							<p class="tzb2026-mlciBot">
+								<span>2026.05.21</span>
+								<b>浏览量：18634</b>
+							</p>
+						</div>
+                        
+						<div class="tzb2026-mlcItem">
+							<p class="tzb2026-mlciImg">
+								<img src="/media/photologue/commonimage/2026/5/28/12/42/cache/ea7408db-e652-40ac-acbc-031e74cac443-2026-5-28-12-42-27-3716_240_160_2x.jpg" >
+							</p>
+							<p class="tzb2026-mlciTitle">
+								<a href="/d51/article/715/"  title="谁有本事，谁就揭榜！2026年度中国青年科技创新“揭榜挂帅”擂台赛重磅启幕！">
+									谁有本事，谁就揭榜！2026年度中国青年科技创新“揭榜挂帅”擂台赛重磅启幕！
+								</a>
+							</p>
+							<p class="tzb2026-mlciTxt">
+	
+		揭榜挂帅，青春挺膺
+
+
+	英雄不论出处
+
+	
+		能者上、智者胜
+
+
+	攻坚卡脖子，勇当开拓者
+
+	
+
+	
+		为深入学习贯彻习近平新时代中国特色社会主义思想，深入贯彻党的二十大和二十届历次全会精神，紧扣十五五规划战略部署，加快高水平科技自立自强、引领发展新质生产力，动员广大青年扎根科研攻关一线，助力科技创新和产业创新融合，在中国式现代化新征程中挺膺担当，2026年度中国青年科技创新揭榜挂帅擂台赛正式启幕。
+
+
+	
+
+	八大前沿领域
+
+	百项科技榜题
+
+	丰厚奖励支持
+
+	
+
+	本届赛事聚焦新一代信息技术、人工智能、新能源、新材料、高端装备、机器人、生物医药、种业科技（海洋科技）8大前沿领域，严选103个榜题，并在相关领域产业链较为完整、产业发展较为集聚的8个城市（区）分领域设立主擂台，集中打擂、交流展示、择优孵化！
+...</p>
+							<p class="tzb2026-mlciBot">
+								<span>2026.05.21</span>
+								<b>浏览量：17413</b>
+							</p>
+						</div>
+                        
+                        
+					</div>
+                    
+
+
+
+
+				</div>
+				<div class="tzb2026-mNews">
+                    <!--
+					<div class="tzb2026-mnImg">
+						<a href="javascript:;">
+							<img src="/all_static/common/images/news_image_not_found5_480_320.png" >
+						</a>
+					</div>
+                    -->
+					
+
+					<div class="tzb2026-mnCon">
+						<div class="tzb2026-mncTitle">
+							<h3>热点新闻</h3>
+							<a href="javascript:;"></a>
+						</div>
+						<div class="tzb2026-mncCon">
+                            
+							<div class="tzb2026-mnccItem">
+								<a href="/d51/article/727/"  >
+									<p class="tzb2026-img"><img src="/media/photologue/commonimage/2026/5/23/14/38/cache/71e5d95c-986b-42af-b330-d73dab9841bb-2026-5-23-14-38-0-1233_260_155_2x.jpg" ></p>
+									<p class="tzb2026-txt">挑战杯丨关于举办第十五届“挑战杯”建设银行中国大学生创业计划竞赛的通知</p>
+								</a>
+							</div>
+                            
+							<div class="tzb2026-mnccItem">
+								<a href="/d51/article/716/"  >
+									<p class="tzb2026-img"><img src="/media/photologue/commonimage/2026/5/28/12/42/cache/95964b42-5834-4624-9384-eac3be210e5b-2026-5-28-12-42-12-7621_260_155_2x.jpg" ></p>
+									<p class="tzb2026-txt">2026年度中国青年科技创新“揭榜挂帅”擂台赛第二批榜题等你来战！</p>
+								</a>
+							</div>
+                            
+
+                            
+							<div class="tzb2026-mnccList">
+								<p class="tzb2026-mncclItem">
+									<a href="/d51/article/715/"  >谁有本事，谁就揭榜！2026年度中国青年科技创新“揭榜挂帅”擂台赛重磅启幕！</a>
+								</p>
+							</div>
+                            
+						</div>
+					</div>
+
+					<div class="tzb2026-mnCon">
+						<div class="tzb2026-mncTitle">
+							<h3>最新消息</h3>
+							<a href="javascript:;"></a>
+						</div>
+						<div class="tzb2026-mncCon">
+                            
+							<div class="tzb2026-mnccItem">
+								<a href="/d51/article/788/"  >
+									<p class="tzb2026-img"><img src="/media/photologue/commonimage/2026/7/8/15/10/cache/66e4c816-0775-480b-bf03-22c0b9fe2a5b-2026-7-8-15-10-14-2681_260_155_2x.jpg" ></p>
+									<p class="tzb2026-txt">挑战杯丨第十五届“挑战杯”中国大学生创业计划竞赛重庆市选拔赛决赛成功举办</p>
+								</a>
+							</div>
+                            
+							<div class="tzb2026-mnccItem">
+								<a href="http://www.hhhtgqt.org.cn/mtjj/7229.html"  target='_blank' >
+									<p class="tzb2026-img"><img src="/media/photologue/commonimage/2026/7/6/17/18/cache/0c757e84-6498-4e09-b217-0005424e164b-2026-7-6-17-18-22-8161_260_155_2x.jpg" ></p>
+									<p class="tzb2026-txt">揭榜攻坚正当时！“揭榜挂帅”生物医药领域主擂台赛榜题解读上线</p>
+								</a>
+							</div>
+                            
+
+                            
+							<div class="tzb2026-mnccList">
+								<p class="tzb2026-mncclItem">
+									<a href="/d51/article/785/"  >阿里云—AI大模型算力及实验资源</a>
+								</p>
+							</div>
+                            
+							<div class="tzb2026-mnccList">
+								<p class="tzb2026-mncclItem">
+									<a href="/d51/article/784/"  >挑战杯丨第十五届“挑战杯”新疆维吾尔自治区大学生创业计划竞赛圆满落幕</a>
+								</p>
+							</div>
+                            
+							<div class="tzb2026-mnccList">
+								<p class="tzb2026-mncclItem">
+									<a href="/d51/article/783/"  >挑战杯丨第十二届“挑战杯”云南省大学生创业计划竞赛圆满落幕</a>
+								</p>
+							</div>
+                            
+							<div class="tzb2026-mnccList">
+								<p class="tzb2026-mncclItem">
+									<a href="/d51/article/782/"  >挑战杯丨第十五届“挑战杯”山西省大学生创业计划竞赛成功举办</a>
+								</p>
+							</div>
+                            
+							<div class="tzb2026-mnccList">
+								<p class="tzb2026-mncclItem">
+									<a href="/d51/article/781/"  >挑战杯丨第十五届“挑战杯”甘肃省大学生创业计划竞赛青创报国汇报会暨颁奖典礼成功举办</a>
+								</p>
+							</div>
+                            
+							<div class="tzb2026-mnccList">
+								<p class="tzb2026-mncclItem">
+									<a href="/d51/article/780/"  >挑战杯丨科创耀三秦，挑战正当时——第十三届“挑战杯”陕汽集团陕西省大学生创业计划竞赛成功举办</a>
+								</p>
+							</div>
+                            
+						</div>
+					</div>
+					
+				</div>
+
+          </div>
+        </div>
+        <!-- block 4 tzb2026-main end -->
+        
+
+        
+
+        <!-- block 5 footer begin -->
+        <div class="tzb2026-footer">
+          <div class="tzb2026-footer-wrapper">
+            <div class="tzb2026-footer-links">
+              <a href="https://www.tiaozhanbei.net/about-us/" target="_blank">联系我们</a>
+              <span class="tzb2026-separator">|</span>
+              <a href="javascript:;">友情链接</a>
+            </div>
+            <div class="tzb2026-footer-copyright">
+              <p>Copyright © 2026 All Rights Reserved. 挑战杯中国大学生创业计划竞赛 竞赛组委会 版权所有</p>
+            </div>
+            <div class="tzb2026-footer-icp">
+              <span class="tzb2026-icp-text"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">京ICP备11009678号-2</a></span>
+              <span class="tzb2026-police-badge">
+                <img src="/all_static/2026guosai/tzb2026/images/icons/police-badge.png" alt="公安备案" width="16" height="16">
+              </span>
+              <span class="tzb2026-police-text">京公网安备 11010802020134号</span>
+            </div>
+          </div>
+        </div>
+        <!-- block 5 footer end -->
+    </div>
+    <!-- tzb2026-overall end -->
+
+
+
+<!--
+<link rel="stylesheet" type="text/css" href="/all_static/2026guosai/sc2021/css/sc2021_public.css" />
+<link rel="stylesheet" type="text/css" href="/all_static/2026guosai/sc2021/css/sc2021_list.css" />
+-->
+
+
+
+</body>
+</html>

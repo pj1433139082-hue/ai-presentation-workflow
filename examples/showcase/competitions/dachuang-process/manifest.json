@@ -1,0 +1,27 @@
+{
+  "id": "dachuang-process",
+  "label": "大创过程汇报",
+  "page_count": 6,
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "delivery_mode": "concept",
+  "concept_hashes": {
+    "S01": "e7f40a317bf38f884f57f2eb135cbfda13c65ef92431a93c8cb9ec3e80b966b0",
+    "S02": "46391f0a2a0e045c4c011c5c7e8da83a861d00d5c52a74f7a9e8a28253fdab4b",
+    "S03": "c3fcf820caf56dbe5f57abaa9cc8d236ab37245f7e2ce39bdb8d5ba94225943a",
+    "S04": "b2ca5b453ad93026598591d6b7660f883c58d973084c2fc9b7bc08287b19db15",
+    "S05": "0110b3ad5b1a8fcb5d8961977859b0ec5c4d2311763f928f8f35f050f53f81f0",
+    "S06": "ab3a8a9694d0333ebc3dbcb1aa391cc85b50383171b0570548a9218042a2787a"
+  },
+  "review_sha256": "c0d2e19c84578f6dc118854b0353a5c4abbf26079f69e37d875fb145af069999",
+  "archive_sha256": "d91ec042ec39bd818c1a7cc7e33c789949c7490ff388ea8da02e792086b889df",
+  "export_verified": true,
+  "user_visual_acceptance": "not-recorded",
+  "pptx": "not-requested"
+}

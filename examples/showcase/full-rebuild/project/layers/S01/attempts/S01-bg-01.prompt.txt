@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset type: full-canvas background plate for an editable slide reconstruction
+Input images: Image 1 is the original 1672×941 S01 slide and is the edit target.
+Primary request: Rebuild only the original blue-and-coral studio background as a clean, full-canvas plate.
+Scene/backdrop: Continue the rich cobalt-blue seamless studio backdrop into a satin floor across the original horizontal horizon near y=705. Preserve the source's deep blue upper field, gentle bright blue center glow, warm coral illumination entering from the upper-right, blue-to-coral floor gradient, and smooth reflective floor texture.
+Edit instructions: Remove the large Chinese wordmark, all other slide copy and footer, the complete desktop terminal, and the terminal's localized contact shadow and reflected image. Fill those regions with a coherent continuation of the surrounding studio gradient and floor. Keep only the environment plate; do not preserve or invent any text, product, icon, line, arrow, prop, or decorative object.
+Composition/framing: Retain the full 16:9 canvas and the source's horizon and light-field placement. This is an opaque full-canvas environment plate, not a finished slide.
+Materials/textures: Smooth blue studio gradient above; subtle satin floor below; clean soft transitions, with no visible seams or repeated patches.
+Constraints: Keep the original cool-blue and warm-coral lighting balance and overall tonal distribution. Remove the device-specific floor reflection and shadow so they can be placed as a separate transparent layer. No text, no device, no reflection silhouette, no object-shaped shadow, no logo, no watermark, no frame, no border, no extra scene elements.

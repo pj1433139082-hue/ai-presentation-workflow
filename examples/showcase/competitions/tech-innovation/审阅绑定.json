@@ -1,0 +1,200 @@
+{
+  "reviewer": "/root/showcase_acceptance_plan",
+  "reviewed_at": "2026-10-13T18:42:44+08:00",
+  "scope": "独立视觉、文本和事实边界审阅；逐张查看六页 concept PNG；不代表赛事合规、PPTX实渲、人类审批或用户接受。",
+  "page_count": 6,
+  "pages": [
+    {
+      "slide_id": "S01",
+      "concept_path": "design/S01/concept.png",
+      "concept_sha256": "436b4b5e9eda1aae89c3b5deefc792b3d4097ae45ab87c17bdd844af9cd314e2",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "66dd0797739f429e15826bde893e15ca90d6c4e9430a1a92e9111c70d923bb5e",
+      "generation_record_output_sha256": "436b4b5e9eda1aae89c3b5deefc792b3d4097ae45ab87c17bdd844af9cd314e2",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S01.png",
+      "project_copy_sha256": "436b4b5e9eda1aae89c3b5deefc792b3d4097ae45ab87c17bdd844af9cd314e2",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S02",
+      "concept_path": "design/S02/concept.png",
+      "concept_sha256": "bf43efeab767b95c033781ceeaa84ea6aafc4b0f63c5d192ed0a78128a438fe7",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "978374ac130d3d0abd82b15ee5232b0465cefe3aa99416b2b13e22a335774c5e",
+      "generation_record_output_sha256": "bf43efeab767b95c033781ceeaa84ea6aafc4b0f63c5d192ed0a78128a438fe7",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S02.png",
+      "project_copy_sha256": "bf43efeab767b95c033781ceeaa84ea6aafc4b0f63c5d192ed0a78128a438fe7",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S03",
+      "concept_path": "design/S03/concept.png",
+      "concept_sha256": "31f0e6bfa10ec4d50573f94a8d0d115b8150add1c5f1eecb8d7b9bfafb3359a0",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "3282622274635709e5ec98b50518a6dee37aa22a341af4cf12629af455b708f1",
+      "generation_record_output_sha256": "31f0e6bfa10ec4d50573f94a8d0d115b8150add1c5f1eecb8d7b9bfafb3359a0",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S03.png",
+      "project_copy_sha256": "31f0e6bfa10ec4d50573f94a8d0d115b8150add1c5f1eecb8d7b9bfafb3359a0",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S04",
+      "concept_path": "design/S04/concept.png",
+      "concept_sha256": "ec75c0e4edab0002bfb0beca3113153ce952d97873775196a605fec2436a7631",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "3d896816b2e532b419bf04cdb1dfadf0a4e20b251760c2fab852809949dc329c",
+      "generation_record_output_sha256": "ec75c0e4edab0002bfb0beca3113153ce952d97873775196a605fec2436a7631",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S04.png",
+      "project_copy_sha256": "ec75c0e4edab0002bfb0beca3113153ce952d97873775196a605fec2436a7631",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S05",
+      "concept_path": "design/S05/concept.png",
+      "concept_sha256": "2332ea9f88d1f7021f129347f729785e5da27babb0c9078543406a38d8cc4f6e",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "7bb766dfdfd5b46e8ccd87bafbbab5cb8b5228b45a663300fa856e9852f64644",
+      "generation_record_output_sha256": "2332ea9f88d1f7021f129347f729785e5da27babb0c9078543406a38d8cc4f6e",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S05.png",
+      "project_copy_sha256": "2332ea9f88d1f7021f129347f729785e5da27babb0c9078543406a38d8cc4f6e",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S06",
+      "concept_path": "design/S06/concept.png",
+      "concept_sha256": "24c0642ec16058ffc25ab9933b93794fc39d3ce895673523d0d8670e41c40977",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "c8f307b763d889113ce4557653abe2cedf0576b1e8fa3e6b6b4099c5fc2a02f7",
+      "generation_record_output_sha256": "24c0642ec16058ffc25ab9933b93794fc39d3ce895673523d0d8670e41c40977",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S06.png",
+      "project_copy_sha256": "24c0642ec16058ffc25ab9933b93794fc39d3ce895673523d0d8670e41c40977",
+      "project_copy_matches_current": true
+    }
+  ],
+  "source_sha256": {
+    "sources/source-notes.md": "b22381685b854bf3d9db9afc267ff3dbc05a1173ed6f61fbf4d79db9fec93754"
+  },
+  "open_findings": [
+    {
+      "id": "S01-low-power-wording",
+      "detail": "封面把“低功耗”直接放在巡检节点类别前；source 明确没有能耗测量，后续验证也仍待进行。全套的“概念设计/虚构项目”标签缓和了事实误读，但若作为实际参赛材料，建议改成“面向低功耗的……概念”或“低功耗目标”，清楚标作设计目标。没有真实功耗数值或已验证能力。",
+      "priority": "P2"
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "S06-rejected-reference-character",
+      "status": "resolved-by-selected-revision",
+      "rejected_attempt_sha256": "932eac0a49f5c607bf459f609237fcc9aecc7d888a44ccb0187482978abb0ee4",
+      "rejected_attempt_record": "tech-innovation/design/S06/attempts/attempt-01/generation-record.json",
+      "rejection": "Rejected: the generated image copied a penguin character from the reference despite the negative instruction. It does not satisfy the no-copy reference boundary or the engineering-page brief and is not the S06 deliverable.",
+      "selected_sha256": "24c0642ec16058ffc25ab9933b93794fc39d3ce895673523d0d8670e41c40977",
+      "selected_attempt": "selected-revision-02",
+      "disposition": "当前机械巡检节点无企鹅或其他角色；被拒版本仍以 rejected-generation-attempt 明确保留，未冒充选中成品。"
+    }
+  ],
+  "user_acceptance": "not-recorded",
+  "human_gates": {
+    "G1": "not-claimed",
+    "G2": "not-claimed",
+    "G3": "not-claimed",
+    "G4": "not-claimed",
+    "G5": "not-claimed"
+  },
+  "provenance_checks": {
+    "all_current_images_match_generation_records": true,
+    "all_current_images_match_project_concept_copies": true,
+    "pre_generation_input_sha256": {
+      "brief.json": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+      "deck-spec.json": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+      "reference-study.json": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+      "style-contract.json": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+    },
+    "current_binding_snapshot_sha256": {
+      "brief.json": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+      "deck-spec.json": "6dab13b9d1fc8c3ce3b5caec7035c2f857f040a5c31795977c08e614eb285ed7",
+      "reference-study.json": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+      "style-contract.json": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+    },
+    "post_generation_path_binding_revision": {
+      "recorded_at": "2026-10-13T18:23:58+08:00",
+      "before_deck_spec_sha256": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+      "after_deck_spec_sha256": "6dab13b9d1fc8c3ce3b5caec7035c2f857f040a5c31795977c08e614eb285ed7",
+      "changed_fields": [
+        {
+          "slide_id": "S01",
+          "field": "concept_path",
+          "value": "concepts/S01.png"
+        },
+        {
+          "slide_id": "S02",
+          "field": "concept_path",
+          "value": "concepts/S02.png"
+        },
+        {
+          "slide_id": "S03",
+          "field": "concept_path",
+          "value": "concepts/S03.png"
+        },
+        {
+          "slide_id": "S04",
+          "field": "concept_path",
+          "value": "concepts/S04.png"
+        },
+        {
+          "slide_id": "S05",
+          "field": "concept_path",
+          "value": "concepts/S05.png"
+        },
+        {
+          "slide_id": "S06",
+          "field": "concept_path",
+          "value": "concepts/S06.png"
+        }
+      ],
+      "history_note": "All six images were generated from the frozen page copy and visual direction. This required binding change only names each already-generated PNG path; it does not change visible copy, story, references or style. Per-page generation records retain the original pre-generation hashes. The current APW concept log binds the present canonical document hashes without claiming that the generator consumed this later path-only edit."
+    },
+    "s06_rejected_attempt_preserved": true
+  },
+  "limitations": "仅概念图审阅；未检查可编辑PPTX、PowerPoint 实际渲染或具体赛事的正式申报规则。",
+  "reviewer_role": "agent/reviewer",
+  "full": true,
+  "concept_sha256": {
+    "S01": "436b4b5e9eda1aae89c3b5deefc792b3d4097ae45ab87c17bdd844af9cd314e2",
+    "S02": "bf43efeab767b95c033781ceeaa84ea6aafc4b0f63c5d192ed0a78128a438fe7",
+    "S03": "31f0e6bfa10ec4d50573f94a8d0d115b8150add1c5f1eecb8d7b9bfafb3359a0",
+    "S04": "ec75c0e4edab0002bfb0beca3113153ce952d97873775196a605fec2436a7631",
+    "S05": "2332ea9f88d1f7021f129347f729785e5da27babb0c9078543406a38d8cc4f6e",
+    "S06": "24c0642ec16058ffc25ab9933b93794fc39d3ce895673523d0d8670e41c40977"
+  },
+  "input_sha256": {
+    "brief.json": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+    "deck-spec.json": "6dab13b9d1fc8c3ce3b5caec7035c2f857f040a5c31795977c08e614eb285ed7",
+    "reference-study.json": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+    "style-contract.json": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-10-12",
+  "tool": "Codex built-in image_gen",
+  "operation": "edit existing slide to isolate one decorative illustration",
+  "transparent_background_requested": true,
+  "source": {
+    "path": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/pilots/industry-explorations/B-research/slide.png",
+    "sha256": "08157d04fa08c681ce8c6f7cf5151f4a2549e11786dd37969aa99f8da0163f90",
+    "selected_region": "lower-right membrane slab with crossing water streams and droplets",
+    "status": "fictional decorative concept; not experimental evidence"
+  },
+  "prompt": "Use case: background-extraction\nAsset type: one independent transparent PNG decorative illustration cutout\nInput image: Image 1 is the original B-research slide; treat it only as the edit source.\nPrimary request: Isolate the existing membrane-filter panel together with its crossing water streams and droplets from the lower-right illustration area. Preserve the same material appearance, cool blue translucent water, slight refraction, scale, and viewing angle from the source.\nEdit instructions: Remove the entire slide and everything unrelated to the illustration: all headline and other text, chart, data labels, axes, grid, bullets, rules, callout badge, and the white page background. Keep only the single membrane slab and the water-flow/droplet cluster that already appears with it. Place this existing illustration group centered on a genuinely transparent background, with clean natural edges and no rectangular white/gray backdrop.\nConstraints: Preserve the source illustration's general geometry and perspective; do not add components, pipes, instruments, arrows, labels, particles, or any new visual mechanism. Do not add quantitative information or imply an experimentally verified process. This is a decorative conceptual illustration only. No text, no watermark.",
+  "original_generated_file": "C:/Users/14331/.codex/generated_images/01a12ec3-57f8-7b41-8255-833b48138fbc/exec-56a4e570-526e-44b8-9c7f-07fb76ef0bd2.png",
+  "output": {
+    "path": "assets/research-membrane.png",
+    "sha256": "56d58f871e735ed1e1e5d10dabee132e40a8e3e3f4ce8868dbcfef3ac09af250",
+    "width": 1774,
+    "height": 887,
+    "format": "PNG",
+    "color_mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "corner_alpha": 0,
+    "verified_copy_matches_generated_file": true
+  },
+  "review": "Text, chart, axes, labels, callouts, and white page are absent. Only the membrane/water illustration remains. Internal membrane detail is decorative and not represented as editable or verified."
+}

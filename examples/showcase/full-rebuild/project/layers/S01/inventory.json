@@ -1,0 +1,287 @@
+{
+  "schema_version": "apw-component-inventory-v1",
+  "slide_id": "S01",
+  "source": {
+    "concept_path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\delivery-modes\\assets-three\\concepts\\S01.png",
+    "concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+    "deck_spec_path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\delivery-modes\\assets-three\\deck-spec.json",
+    "deck_spec_sha256": "31c8df29203c74c68db12945cb81bbf29607e37b887e4622b0f4989750f3cc3f",
+    "canvas_px": [
+      1672,
+      941
+    ]
+  },
+  "coordinate_system": "Original S01 pixels, top-left origin; bbox=[x,y,width,height].",
+  "method": "Semantic and residual inspection against the full source concept. Components were rebuilt with Codex built-in image_gen and separately recorded; outputs are generative reconstructions, not original-pixel extraction.",
+  "semantic_pass": [
+    {
+      "id": "background",
+      "role": "full-canvas blue/coral studio background and floor",
+      "representation": "asset",
+      "bbox": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "z": 0,
+      "file": "assets/background.png",
+      "sha256": "7d0d38635b550a7707a99433b73fe3f161b945193d21bd598c3acaad57f0e4c6",
+      "independent": true,
+      "generation_record": "attempts/S01-bg-01.json"
+    },
+    {
+      "id": "wordmark",
+      "role": "special title art",
+      "representation": "asset",
+      "bbox": [
+        96,
+        227,
+        352,
+        166
+      ],
+      "z": 4,
+      "file": "assets/wordmark.png",
+      "sha256": "8256cf8431d75f8e1b48d54d5de1ab848924d926e861fcdb9424ee12bd62001d",
+      "exact_text": "知栈",
+      "independent": true,
+      "status": "agent-selected candidate; parent visual verification pending",
+      "generation_record": "attempts/S01-wordmark-02.json"
+    },
+    {
+      "id": "device-terminal",
+      "role": "hero device illustration",
+      "representation": "asset",
+      "bbox": [
+        725,
+        128,
+        862,
+        688
+      ],
+      "z": 3,
+      "file": "assets/device.png",
+      "sha256": "fb0ea48bbbc6fb539f645b6775db6fc18ad5f6ab69e70bead53ba9c7d35d954e",
+      "independent": true,
+      "indivisible_internal_content": [
+        "display",
+        "abstract document cards",
+        "blue/coral network paths",
+        "aluminum dock",
+        "right circular control"
+      ],
+      "generation_record": "attempts/S01-device-01.json"
+    },
+    {
+      "id": "descriptor",
+      "role": "body",
+      "representation": "native",
+      "bbox": [
+        101,
+        422,
+        459,
+        49
+      ],
+      "z": 5,
+      "text": "桌面知识协作终端",
+      "font_family": "Microsoft YaHei UI",
+      "font_size_px": 54,
+      "font_weight": 400,
+      "color": "#E9ECF2",
+      "independent": true
+    },
+    {
+      "id": "takeaway",
+      "role": "key-takeaway",
+      "representation": "native",
+      "bbox": [
+        100,
+        516,
+        510,
+        35
+      ],
+      "z": 6,
+      "text": "让每次讨论，都接得上下一步。",
+      "font_family": "Microsoft YaHei UI",
+      "font_size_px": 36,
+      "font_weight": 400,
+      "color": "#C7DCF4",
+      "independent": true
+    },
+    {
+      "id": "features",
+      "role": "secondary",
+      "representation": "native",
+      "bbox": [
+        103,
+        615,
+        551,
+        21
+      ],
+      "z": 7,
+      "text": "会后脉络留存 · 资料语义检索 · 任务线索串联",
+      "font_family": "Microsoft YaHei UI",
+      "font_size_px": 25,
+      "font_weight": 400,
+      "color": "#DDE2ED",
+      "independent": true
+    },
+    {
+      "id": "example",
+      "role": "source",
+      "representation": "native",
+      "bbox": [
+        58,
+        869,
+        147,
+        17
+      ],
+      "z": 8,
+      "text": "概念产品 · 示例",
+      "font_family": "Microsoft YaHei UI",
+      "font_size_px": 17,
+      "font_weight": 400,
+      "color": "#516CAD",
+      "independent": true
+    },
+    {
+      "id": "floor-reflection",
+      "role": "localized floor reflection/glow",
+      "representation": "asset",
+      "bbox": [
+        727,
+        756,
+        864,
+        151
+      ],
+      "z": 1,
+      "file": "assets/floor-reflection.png",
+      "sha256": "5f1db4147c6d3d20b6ad3ba3eb6381503e8d0c142e1f1f0415d4bf4a090e673a",
+      "independent": true,
+      "generation_record": "attempts/S01-reflection-02.json"
+    },
+    {
+      "id": "contact-shadow",
+      "role": "device grounding shadow",
+      "representation": "asset",
+      "bbox": [
+        727,
+        781,
+        864,
+        53
+      ],
+      "z": 2,
+      "file": "assets/contact-shadow.png",
+      "sha256": "8233b6cdb7056235b565f34a9aa53253e11744375aca400126217de3ac01d27c",
+      "independent": true,
+      "generation_record": "attempts/S01-contact-shadow-01.json"
+    }
+  ],
+  "residual_pass": [
+    {
+      "id": "blue-coral-backdrop",
+      "accounted_by": "background",
+      "detail": "Blue upper studio field, upper-right coral field, horizon and satin floor texture are on the background plate; no copy or device is embedded."
+    },
+    {
+      "id": "floor-reflection",
+      "accounted_by": "floor-reflection",
+      "detail": "Localized blue/coral light below the base is a separate transparent overlay."
+    },
+    {
+      "id": "contact-shadow",
+      "accounted_by": "contact-shadow",
+      "detail": "Narrow device grounding shade is a separate transparent overlay behind the device."
+    },
+    {
+      "id": "standalone-arrows",
+      "count": 0,
+      "status": "none visible outside device",
+      "detail": "No free-standing arrows or connector arrows are visible. Glowing network paths and nodes inside the screen remain part of the single device illustration."
+    },
+    {
+      "id": "standalone-lines-icons-badges",
+      "count": 0,
+      "status": "none visible outside device",
+      "detail": "No separate divider, badge, icon, or decorative line was found."
+    },
+    {
+      "id": "footer-copy",
+      "accounted_by": "example",
+      "detail": "Small lower-left source/status label is native editable text."
+    }
+  ],
+  "copy_inventory": [
+    {
+      "id": "title",
+      "role": "special typography",
+      "text": "知栈",
+      "representation": "asset",
+      "file": "assets/wordmark.png",
+      "bbox": [
+        96,
+        227,
+        352,
+        166
+      ]
+    },
+    {
+      "id": "descriptor",
+      "role": "body",
+      "text": "桌面知识协作终端",
+      "representation": "native",
+      "bbox": [
+        101,
+        422,
+        459,
+        49
+      ]
+    },
+    {
+      "id": "takeaway",
+      "role": "key-takeaway",
+      "text": "让每次讨论，都接得上下一步。",
+      "representation": "native",
+      "bbox": [
+        100,
+        516,
+        510,
+        35
+      ]
+    },
+    {
+      "id": "features",
+      "role": "secondary",
+      "text": "会后脉络留存 · 资料语义检索 · 任务线索串联",
+      "representation": "native",
+      "bbox": [
+        103,
+        615,
+        551,
+        21
+      ]
+    },
+    {
+      "id": "example",
+      "role": "source",
+      "text": "概念产品 · 示例",
+      "representation": "native",
+      "bbox": [
+        58,
+        869,
+        147,
+        17
+      ]
+    }
+  ],
+  "verification_notes": [
+    "Source text bounds were measured from original concept pixels; copy matches deck-spec.json S01.",
+    "Microsoft YaHei UI and Microsoft YaHei UI Light are installed on this host; scene uses Microsoft YaHei UI. Original concept font is unknown.",
+    "Terminal screen contents form one indivisible illustration; no external arrows are present.",
+    "Background plate is opaque and spans the full source canvas. Other visual assets have real alpha with extrema [0,255] and no alpha>=8 pixels touching canvas edges.",
+    "Each imagegen prompt, actual source reference(s), original generated path/hash, immutable attempt copy/hash, and alpha metadata is recorded under attempts/."
+  ],
+  "open_review": [
+    "Verify selected wordmark asset in parent renderer; saved PNG view_image rendering conflicts with read-only pixel sampling, and image_gen preview showed faint off-glyph specks.",
+    "Review reconstructed reflection and contact shadow together at source placement; both are generative approximations."
+  ]
+}

@@ -1,0 +1,1370 @@
+[
+  {
+    "slide": 1,
+    "name": "TextBox 3",
+    "text": "消费品牌提案 · 示例",
+    "box_pt": [
+      76.32,
+      55.44,
+      309.6,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      77.4,
+      59.76,
+      168.0,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 4",
+    "text": "山间茶事",
+    "box_pt": [
+      63.36,
+      123.84,
+      403.2,
+      73.44
+    ],
+    "rendered_text_bounds_pt": [
+      64.44,
+      132.96,
+      197.75,
+      55.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 5",
+    "text": "把山场装进一盒茶",
+    "box_pt": [
+      66.24,
+      203.04,
+      399.6,
+      50.4
+    ],
+    "rendered_text_bounds_pt": [
+      67.32,
+      209.04,
+      265.5,
+      38.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 6",
+    "text": "从新品包装到日常触点，探索一种轻装、好分享的茶礼表达。",
+    "box_pt": [
+      67.68,
+      271.44,
+      370.8,
+      75.6
+    ],
+    "rendered_text_bounds_pt": [
+      68.76,
+      282.84,
+      352.0,
+      52.8
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 8",
+    "text": "概念 SKU：雾岭春芽",
+    "box_pt": [
+      69.12,
+      390.24,
+      381.6,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      70.2,
+      393.12,
+      172.0,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 9",
+    "text": "提案示例 / 尚未上市",
+    "box_pt": [
+      69.12,
+      419.04,
+      381.6,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      70.2,
+      421.92,
+      167.88,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 12",
+    "text": "单幅茶枝与山雾插画组件",
+    "box_pt": [
+      587.52,
+      415.44,
+      241.2,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      609.12,
+      419.76,
+      203.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 14",
+    "text": "虚构品牌示例｜方案演示，不对应真实产品、销量或供应链",
+    "box_pt": [
+      59.04,
+      502.56,
+      783.36,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      505.2,
+      420.75,
+      19.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 15",
+    "text": "01",
+    "box_pt": [
+      856.8,
+      502.56,
+      53.28,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      887.8,
+      504.0,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.35
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 2",
+    "text": "01 / 使用情境 · 设计假设",
+    "box_pt": [
+      59.04,
+      21.6,
+      396.0,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      23.4,
+      209.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 3",
+    "text": "让一盒茶适配三种日常时刻",
+    "box_pt": [
+      59.04,
+      49.68,
+      853.2,
+      51.84
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      54.0,
+      442.75,
+      43.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 6",
+    "text": "01",
+    "box_pt": [
+      64.8,
+      154.8,
+      56.16,
+      59.04
+    ],
+    "rendered_text_bounds_pt": [
+      80.5,
+      172.32,
+      30.75,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 7",
+    "text": "轻装出门",
+    "box_pt": [
+      148.32,
+      147.6,
+      200.16,
+      67.68
+    ],
+    "rendered_text_bounds_pt": [
+      149.4,
+      165.84,
+      111.75,
+      31.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 9",
+    "text": "小份、好携带，让取用动作简单。",
+    "box_pt": [
+      370.08,
+      153.36,
+      471.6,
+      56.16
+    ],
+    "rendered_text_bounds_pt": [
+      371.16,
+      168.24,
+      336.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 11",
+    "text": "02",
+    "box_pt": [
+      64.8,
+      249.84,
+      56.16,
+      59.04
+    ],
+    "rendered_text_bounds_pt": [
+      80.5,
+      267.36,
+      30.75,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 12",
+    "text": "午后独处",
+    "box_pt": [
+      148.32,
+      242.64,
+      200.16,
+      67.68
+    ],
+    "rendered_text_bounds_pt": [
+      149.4,
+      260.88,
+      111.75,
+      31.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 14",
+    "text": "冲泡信息直观，给阅读留出呼吸感。",
+    "box_pt": [
+      370.08,
+      248.4,
+      471.6,
+      56.16
+    ],
+    "rendered_text_bounds_pt": [
+      371.16,
+      263.28,
+      358.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 16",
+    "text": "03",
+    "box_pt": [
+      64.8,
+      344.88,
+      56.16,
+      59.04
+    ],
+    "rendered_text_bounds_pt": [
+      80.5,
+      362.4,
+      30.75,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 17",
+    "text": "顺手赠礼",
+    "box_pt": [
+      148.32,
+      337.68,
+      200.16,
+      67.68
+    ],
+    "rendered_text_bounds_pt": [
+      149.4,
+      355.92,
+      111.75,
+      31.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 19",
+    "text": "开盒有记忆点，祝福卡与外盒一起设计。",
+    "box_pt": [
+      370.08,
+      343.44,
+      471.6,
+      56.16
+    ],
+    "rendered_text_bounds_pt": [
+      371.16,
+      358.32,
+      402.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 21",
+    "text": "这三种时刻是提案假设，需通过真实访谈与试用调整。",
+    "box_pt": [
+      77.76,
+      436.32,
+      803.52,
+      32.4
+    ],
+    "rendered_text_bounds_pt": [
+      78.84,
+      441.72,
+      437.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 23",
+    "text": "虚构品牌示例｜方案演示，不对应真实产品、销量或供应链",
+    "box_pt": [
+      59.04,
+      502.56,
+      783.36,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      505.2,
+      420.75,
+      19.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 24",
+    "text": "02",
+    "box_pt": [
+      856.8,
+      502.56,
+      53.28,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      887.8,
+      504.0,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.35
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 2",
+    "text": "02 / 包装系统 · 结构概念",
+    "box_pt": [
+      59.04,
+      21.6,
+      396.0,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      23.4,
+      209.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 3",
+    "text": "一盒茶，拆成三种拿取尺度",
+    "box_pt": [
+      59.04,
+      49.68,
+      853.2,
+      51.84
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      54.0,
+      442.75,
+      43.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 4",
+    "text": "以“礼赠 / 自用 / 初尝”组织盒型角色，具体规格和材质待确认。",
+    "box_pt": [
+      62.64,
+      100.8,
+      813.6,
+      32.4
+    ],
+    "rendered_text_bounds_pt": [
+      63.72,
+      105.0,
+      586.38,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 9",
+    "text": "雾岭春芽",
+    "box_pt": [
+      90.0,
+      249.84,
+      138.24,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      115.12,
+      250.32,
+      94.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 11",
+    "text": "山形纹样位置",
+    "box_pt": [
+      95.04,
+      319.68,
+      126.72,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      104.4,
+      326.16,
+      113.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 16",
+    "text": "雾岭春芽",
+    "box_pt": [
+      394.56,
+      264.96,
+      110.88,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      410.0,
+      265.92,
+      86.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 17",
+    "text": "净含量待填",
+    "box_pt": [
+      397.44,
+      291.6,
+      105.12,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      405.0,
+      291.6,
+      95.37,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 21",
+    "text": "试饮装",
+    "box_pt": [
+      690.48,
+      288.0,
+      118.08,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      716.52,
+      291.36,
+      72.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 22",
+    "text": "礼赠套盒",
+    "box_pt": [
+      69.12,
+      412.56,
+      210.24,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      130.24,
+      414.48,
+      94.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 23",
+    "text": "日常小罐",
+    "box_pt": [
+      346.32,
+      412.56,
+      209.52,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      407.08,
+      414.48,
+      94.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 24",
+    "text": "初次试饮",
+    "box_pt": [
+      642.96,
+      412.56,
+      212.4,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      705.16,
+      414.48,
+      94.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 25",
+    "text": "盒型、标签文字与净含量为视觉占位；需由产品、合规和供应链共同确认。",
+    "box_pt": [
+      67.68,
+      446.4,
+      813.6,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      68.76,
+      450.72,
+      599.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 27",
+    "text": "虚构品牌示例｜方案演示，不对应真实产品、销量或供应链",
+    "box_pt": [
+      59.04,
+      502.56,
+      783.36,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      505.2,
+      420.75,
+      19.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 28",
+    "text": "03",
+    "box_pt": [
+      856.8,
+      502.56,
+      53.28,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      887.8,
+      504.0,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.35
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 2",
+    "text": "03 / 品牌触点 · 路径示意",
+    "box_pt": [
+      59.04,
+      21.6,
+      396.0,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      23.4,
+      209.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 3",
+    "text": "从第一眼，到试一口，再到带走",
+    "box_pt": [
+      59.04,
+      49.68,
+      853.2,
+      51.84
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      54.0,
+      514.75,
+      43.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 6",
+    "text": "产品详情页",
+    "box_pt": [
+      90.72,
+      155.52,
+      129.6,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      105.52,
+      157.2,
+      106.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 9",
+    "text": "风味信息位置",
+    "box_pt": [
+      91.44,
+      257.04,
+      129.6,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      102.24,
+      259.92,
+      113.37,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 12",
+    "text": "页面版式示意",
+    "box_pt": [
+      90.72,
+      346.32,
+      129.6,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      101.52,
+      349.2,
+      113.37,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 13",
+    "text": "→",
+    "box_pt": [
+      262.8,
+      227.52,
+      51.84,
+      50.4
+    ],
+    "rendered_text_bounds_pt": [
+      272.72,
+      233.52,
+      41.5,
+      38.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 20",
+    "text": "线下试饮点",
+    "box_pt": [
+      348.48,
+      374.4,
+      204.48,
+      32.4
+    ],
+    "rendered_text_bounds_pt": [
+      395.72,
+      377.4,
+      116.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 21",
+    "text": "冲泡与讲解，帮助理解风味",
+    "box_pt": [
+      321.12,
+      406.8,
+      259.2,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      342.72,
+      411.12,
+      221.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 22",
+    "text": "→",
+    "box_pt": [
+      583.92,
+      227.52,
+      51.84,
+      50.4
+    ],
+    "rendered_text_bounds_pt": [
+      593.84,
+      233.52,
+      41.5,
+      38.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 25",
+    "text": "留一段",
+    "box_pt": [
+      705.6,
+      203.04,
+      115.2,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      733.2,
+      204.0,
+      66.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 26",
+    "text": "慢下来的时间",
+    "box_pt": [
+      699.84,
+      230.4,
+      126.72,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      709.2,
+      233.28,
+      113.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 28",
+    "text": "赠礼小卡",
+    "box_pt": [
+      698.4,
+      374.4,
+      133.92,
+      32.4
+    ],
+    "rendered_text_bounds_pt": [
+      721.36,
+      377.4,
+      94.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 29",
+    "text": "不含真实二维码与购买链接",
+    "box_pt": [
+      649.44,
+      406.8,
+      230.4,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      656.64,
+      411.12,
+      221.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 30",
+    "text": "产品页、试饮台与小卡都是概念版式，并非已上线的销售或预约入口。",
+    "box_pt": [
+      69.12,
+      454.32,
+      810.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      70.2,
+      457.2,
+      563.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 32",
+    "text": "虚构品牌示例｜方案演示，不对应真实产品、销量或供应链",
+    "box_pt": [
+      59.04,
+      502.56,
+      783.36,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      505.2,
+      420.75,
+      19.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 33",
+    "text": "04",
+    "box_pt": [
+      856.8,
+      502.56,
+      53.28,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      887.8,
+      504.0,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.35
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 2",
+    "text": "04 / 推进建议 · 待真实委托方确认",
+    "box_pt": [
+      59.04,
+      21.6,
+      396.0,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      23.4,
+      281.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 3",
+    "text": "先打样验证，再决定是否进入下一步",
+    "box_pt": [
+      59.04,
+      49.68,
+      853.2,
+      51.84
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      54.0,
+      586.75,
+      43.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 6",
+    "text": "01",
+    "box_pt": [
+      113.04,
+      144.72,
+      61.92,
+      56.16
+    ],
+    "rendered_text_bounds_pt": [
+      131.62,
+      160.8,
+      30.75,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 7",
+    "text": "定信息",
+    "box_pt": [
+      73.44,
+      218.88,
+      142.56,
+      39.6
+    ],
+    "rendered_text_bounds_pt": [
+      108.72,
+      224.28,
+      79.12,
+      28.8
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 8",
+    "text": "茶品事实与合规文案先确认",
+    "box_pt": [
+      69.12,
+      267.84,
+      152.64,
+      74.88
+    ],
+    "rendered_text_bounds_pt": [
+      75.44,
+      281.28,
+      140.0,
+      48.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 10",
+    "text": "02",
+    "box_pt": [
+      306.0,
+      144.72,
+      61.92,
+      56.16
+    ],
+    "rendered_text_bounds_pt": [
+      324.58,
+      160.8,
+      30.75,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 11",
+    "text": "试结构",
+    "box_pt": [
+      266.4,
+      218.88,
+      142.56,
+      39.6
+    ],
+    "rendered_text_bounds_pt": [
+      301.68,
+      224.28,
+      79.12,
+      28.8
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 12",
+    "text": "盒型、材料与印刷样需打样",
+    "box_pt": [
+      262.08,
+      267.84,
+      152.64,
+      74.88
+    ],
+    "rendered_text_bounds_pt": [
+      268.4,
+      281.28,
+      140.0,
+      48.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 14",
+    "text": "03",
+    "box_pt": [
+      500.4,
+      144.72,
+      61.92,
+      56.16
+    ],
+    "rendered_text_bounds_pt": [
+      518.98,
+      160.8,
+      30.75,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 15",
+    "text": "看反馈",
+    "box_pt": [
+      460.8,
+      218.88,
+      142.56,
+      39.6
+    ],
+    "rendered_text_bounds_pt": [
+      496.08,
+      224.28,
+      79.12,
+      28.8
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 16",
+    "text": "按渠道小范围观察后调整",
+    "box_pt": [
+      456.48,
+      267.84,
+      152.64,
+      74.88
+    ],
+    "rendered_text_bounds_pt": [
+      462.8,
+      281.28,
+      140.0,
+      48.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 17",
+    "text": "执行周期、成本和渠道安排由实际供应商与委托方补齐。",
+    "box_pt": [
+      70.56,
+      381.6,
+      543.6,
+      51.84
+    ],
+    "rendered_text_bounds_pt": [
+      71.64,
+      396.72,
+      455.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 19",
+    "text": "打样前四项确认",
+    "box_pt": [
+      682.56,
+      139.68,
+      192.96,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      683.64,
+      148.2,
+      167.88,
+      27.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 21",
+    "text": "茶品与风味事实",
+    "box_pt": [
+      717.12,
+      212.4,
+      154.8,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      718.2,
+      218.16,
+      131.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 23",
+    "text": "包装规格与材料",
+    "box_pt": [
+      717.12,
+      264.24,
+      154.8,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      718.2,
+      270.0,
+      131.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 25",
+    "text": "成本与供货周期",
+    "box_pt": [
+      717.12,
+      316.08,
+      154.8,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      718.2,
+      321.84,
+      131.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 27",
+    "text": "试用反馈方式",
+    "box_pt": [
+      717.12,
+      367.92,
+      154.8,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      718.2,
+      373.68,
+      113.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 29",
+    "text": "虚构品牌示例｜方案演示，不对应真实产品、销量或供应链",
+    "box_pt": [
+      59.04,
+      502.56,
+      783.36,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      60.12,
+      505.2,
+      420.75,
+      19.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 30",
+    "text": "05",
+    "box_pt": [
+      856.8,
+      502.56,
+      53.28,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      887.8,
+      504.0,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.35
+  }
+]

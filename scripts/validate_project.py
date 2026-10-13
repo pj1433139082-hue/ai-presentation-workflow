@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import importlib.util
+import io
 import json
 import posixpath
 import re
@@ -27,6 +28,29 @@ if VISUAL_ADAPTER_SPEC is None or VISUAL_ADAPTER_SPEC.loader is None:
 VISUAL_ADAPTERS = importlib.util.module_from_spec(VISUAL_ADAPTER_SPEC)
 VISUAL_ADAPTER_SPEC.loader.exec_module(VISUAL_ADAPTERS)
 
+DECK_QA_PATH = Path(__file__).resolve().with_name("deck_qa_evidence.py")
+DECK_QA_SPEC = importlib.util.spec_from_file_location("ai_presentation_deck_qa", DECK_QA_PATH)
+if DECK_QA_SPEC is None or DECK_QA_SPEC.loader is None:
+    raise RuntimeError("cannot load full-deck QA evidence contract")
+DECK_QA = importlib.util.module_from_spec(DECK_QA_SPEC)
+DECK_QA_SPEC.loader.exec_module(DECK_QA)
+
+PIXELS_SPEC = importlib.util.spec_from_file_location(
+    "ai_presentation_image_pixels", Path(__file__).resolve().with_name("image_pixels.py")
+)
+if PIXELS_SPEC is None or PIXELS_SPEC.loader is None:
+    raise RuntimeError("cannot load decoded pixel cache")
+PIXELS = importlib.util.module_from_spec(PIXELS_SPEC)
+PIXELS_SPEC.loader.exec_module(PIXELS)
+
+POLICY_SPEC = importlib.util.spec_from_file_location(
+    "ai_presentation_review_policy", Path(__file__).resolve().with_name("review_policy.py")
+)
+if POLICY_SPEC is None or POLICY_SPEC.loader is None:
+    raise RuntimeError("cannot load review policy")
+REVIEW_POLICY = importlib.util.module_from_spec(POLICY_SPEC)
+POLICY_SPEC.loader.exec_module(REVIEW_POLICY)
+
 
 STAGES = [
     "intake",
@@ -36,6 +60,7 @@ STAGES = [
     "spec",
     "concept",
     "inventory",
+    "pilot",
     "assets",
     "assembly",
     "qa",
@@ -59,7 +84,9 @@ REQUIRED_BY_STAGE = {
         "scene-graph.json",
         "asset-manifest.json",
         "component-master-manifest.json",
+        "decomposition-map.json",
     ],
+    "pilot": ["pilot-plan.json"],
     "assets": [],
     "assembly": ["assembly-map.json"],
     "qa": ["qa-report.json"],
@@ -68,6 +95,7 @@ REQUIRED_BY_STAGE = {
 
 VISUAL_ROLES = {
     "illustration",
+    "ordinary-photo",
     "photo-cutout",
     "icon",
     "arrow",
@@ -79,6 +107,8 @@ VISUAL_ROLES = {
     "diagram-node",
     "special-typography",
 }
+
+PHOTO_ROLES = {"ordinary-photo", "photo-cutout"}
 
 TRUTH_SENSITIVE_ROLES = {
     "source-screenshot",
@@ -92,6 +122,7 @@ GATES = [
     "story",
     "style_anchors",
     "concept_contact_sheet",
+    "decomposition",
     "release",
 ]
 
@@ -133,8 +164,14 @@ GATE_REQUIRED_DECISIONS = {
         "special_typography_exceptions",
         "slide_specific_deviations",
     },
+    "decomposition": {
+        "object_inventory",
+        "coverage_review",
+        "review_evidence",
+    },
     "release": {
         "final_render",
+        "qa_summary",
         "concept_differences",
         "qa_exceptions",
         "component_usability",
@@ -158,10 +195,9 @@ GATE_ROLLBACK_OWNERS = {
     "story": "story",
     "style_anchors": "style",
     "concept_contact_sheet": "concept",
+    "decomposition": "inventory",
     "release": "qa",
 }
-
-VAGUE_APPROVAL_PHRASES = {"按推荐", "全部按推荐", "推荐", "同意", "可以", "好的", "ok"}
 
 QUALITY_PROFILES = {"production", "draft", "validation-fixture"}
 READABILITY_FONT_FLOORS = {
@@ -213,6 +249,15 @@ def value_sha256(value: Any) -> str:
     return hashlib.sha256(canonical).hexdigest()
 
 
+def png_dimensions(path: Path) -> tuple[int, int] | None:
+    data = path.read_bytes()
+    if len(data) < 24 or not data.startswith(b"\x89PNG\r\n\x1a\n") or data[12:16] != b"IHDR":
+        return None
+    width = int.from_bytes(data[16:20], "big")
+    height = int.from_bytes(data[20:24], "big")
+    return (width, height) if width > 0 and height > 0 else None
+
+
 def has_meaningful_value(value: Any) -> bool:
     if value is None:
         return False
@@ -227,14 +272,40 @@ def positive_int_or(value: Any, fallback: int) -> int:
     return value if type(value) is int and value > 0 else fallback
 
 
+def speaker_notes_text(slide: dict[str, Any]) -> str:
+    """Return canonical native-note text without accepting XML-invalid content."""
+    value = slide.get("speaker_notes", "")
+    if not isinstance(value, str):
+        raise ValueError("speaker_notes must be plain text")
+    text = value.replace("\r\n", "\n").replace("\r", "\n")
+    if any(
+        (ord(character) < 32 and character not in "\n\t")
+        or 0xD800 <= ord(character) <= 0xDFFF
+        or ord(character) in {0xFFFE, 0xFFFF}
+        for character in text
+    ):
+        raise ValueError("speaker_notes contains XML-invalid control characters")
+    return text
+
+
 class ProjectValidator:
-    def __init__(self, root: Path, stage: str) -> None:
+    def __init__(self, root: Path, stage: str, *, require_pilot_review: bool = True) -> None:
         self.root = root
         self.stage = stage
         self.stage_index = STAGES.index(stage)
         self.errors: list[str] = []
         self.docs: dict[str, Any] = {}
         self.visual_registry: dict[str, dict[str, Any]] = {}
+        self.require_pilot_review = require_pilot_review
+        self.pixel_cache = PIXELS.ImagePixels()
+
+    def pilot_asset_ids(self) -> set[str]:
+        plan = self.docs.get("pilot-plan.json", {})
+        ids = plan.get("component_ids") if isinstance(plan, dict) else None
+        return set(ids) if isinstance(ids, list) and all(isinstance(item, str) for item in ids) else set()
+
+    def asset_ready(self, asset: dict[str, Any]) -> bool:
+        return self.reaches("assets") or self.stage == "pilot" and asset.get("id") in self.pilot_asset_ids()
 
     def reaches(self, stage: str) -> bool:
         return self.stage_index >= STAGES.index(stage)
@@ -247,18 +318,46 @@ class ProjectValidator:
                 return value
         return None
 
+    def semantic_system_active(self) -> bool:
+        style = self.docs.get("style-contract.json")
+        return isinstance(style, dict) and (
+            style.get("contract_schema_version") == 2 or "semantic_system" in style
+        )
+
+    def required_gate_decisions(self, gate: str) -> set[str]:
+        required = set(GATE_REQUIRED_DECISIONS[gate])
+        if self.semantic_system_active():
+            if gate == "style_anchors":
+                required.add("semantic_system")
+            elif gate == "concept_contact_sheet":
+                required.add("cross_slide_semantics_review")
+        return required
+
     def is_fixture_profile(self) -> bool:
         return self.quality_profile() == "validation-fixture"
+
+    def pilot_required(self) -> bool:
+        brief = self.docs.get("brief.json", {})
+        formats = brief.get("delivery", {}).get("formats", []) if isinstance(brief, dict) else []
+        return self.quality_profile() == "production" and "pptx" in formats
 
     def error(self, location: str, message: str) -> None:
         self.errors.append(f"{location}: {message}")
 
-    def load_required_documents(self) -> None:
+    def load_required_documents(self, overrides: dict | None = None) -> None:
+        if (self.root / ".inventory-merge").exists():
+            self.error("project", "inventory merge is in progress or interrupted; recover it before validation")
+            return
         names: list[str] = []
         for stage in STAGES[: self.stage_index + 1]:
             names.extend(REQUIRED_BY_STAGE[stage])
         for name in dict.fromkeys(names):
+            if overrides is not None and name in overrides:
+                self.docs[name] = overrides[name]
+                continue
             if name == "component-master-manifest.json" and self.is_fixture_profile():
+                continue
+            if name == "pilot-plan.json" and self.stage != "pilot" and not self.pilot_required():
                 continue
             path = self.root / name
             if not path.is_file():
@@ -320,6 +419,9 @@ class ProjectValidator:
                 "fixture_only=true requires quality_profile='validation-fixture'",
             )
         editability = doc.get("editability")
+        delivery = doc.get("delivery", {})
+        if isinstance(delivery, dict) and delivery.get("speaker_notes", "not-requested") not in ("not-requested", "required"):
+            self.error("brief.json", "delivery.speaker_notes must be not-requested or required")
         if isinstance(editability, dict):
             expected = {
                 "ordinary_text": "native-editable",
@@ -542,7 +644,7 @@ class ProjectValidator:
             image_generation = doc.get("image_generation", {})
             if not isinstance(image_generation, dict) or image_generation.get("status") != "verified":
                 self.error(name, "image_generation.status must be 'verified' before concept generation")
-        if self.reaches("assets"):
+        if self.reaches("pilot"):
             transparent_output = doc.get("transparent_output", {})
             if not isinstance(transparent_output, dict) or transparent_output.get("status") != "verified":
                 self.error(name, "transparent_output.status must be 'verified' before asset generation")
@@ -775,6 +877,7 @@ class ProjectValidator:
         sources: dict[str, dict[str, Any]],
         story_slide: Any,
         location: str,
+        message_mapping: Any = None,
     ) -> set[str]:
         if not isinstance(copy_map, list) or not copy_map:
             self.error(location, "copy_map must contain every visible text item")
@@ -815,10 +918,10 @@ class ProjectValidator:
                     self.error(item_location, "storyboard_field must be title or message")
                 elif isinstance(story_slide, dict):
                     copy_by_story_field[story_field].append(item)
-                    if text_value != story_slide.get(story_field):
+                    if story_field == "title" and text_value != story_slide.get("title"):
                         self.error(
                             item_location,
-                            f"storyboard {story_field} must match the approved storyboard exactly",
+                            "storyboard title must match the approved storyboard exactly",
                         )
             evidence = item.get("sources")
             if not isinstance(evidence, list) or not evidence:
@@ -868,10 +971,37 @@ class ProjectValidator:
                         if source_text is not None and quote not in source_text:
                             self.error(ref_location, "quoted source text is not present at the recorded source path")
         if isinstance(story_slide, dict):
-            for field in ("title", "message"):
-                matching = copy_by_story_field[field]
-                if len(matching) != 1:
-                    self.error(location, f"copy_map must contain exactly one approved storyboard {field}")
+            titles = copy_by_story_field["title"]
+            messages = copy_by_story_field["message"]
+            if len(titles) != 1:
+                self.error(location, "copy_map must contain exactly one approved storyboard title")
+            if not messages:
+                self.error(location, "copy_map must map the approved storyboard message to visible copy")
+            elif len(messages) == 1 and messages[0].get("text") == story_slide.get("message"):
+                if message_mapping is not None:
+                    self.error(location, "message_mapping is unnecessary when the exact storyboard message is visible")
+            else:
+                mapping_location = f"{location}.message_mapping"
+                approved_message = story_slide.get("message")
+                if not isinstance(message_mapping, dict):
+                    self.error(mapping_location, "non-verbatim message copy needs an explicit mapping for human review")
+                else:
+                    if message_mapping.get("storyboard_message") != approved_message:
+                        self.error(mapping_location, "storyboard_message must match the approved narrative claim exactly")
+                    mapped_ids = message_mapping.get("copy_ids")
+                    expected_ids = {item.get("id") for item in messages}
+                    if (
+                        not isinstance(mapped_ids, list)
+                        or not mapped_ids
+                        or not all(isinstance(value, str) and value for value in mapped_ids)
+                        or len(mapped_ids) != len(set(mapped_ids))
+                        or set(mapped_ids) != expected_ids
+                    ):
+                        self.error(mapping_location, "copy_ids must identify every visible message realization exactly once")
+                    if not isinstance(message_mapping.get("review_note"), str) or not message_mapping["review_note"].strip():
+                        self.error(mapping_location, "review_note must explain the semantic coverage and truth boundary")
+                    if message_mapping.get("human_gate") != "G3/G4-required":
+                        self.error(mapping_location, "non-verbatim message realization requires G3/G4 human review")
         return used_sources
 
     def validate_concept_image_inventory(
@@ -1078,7 +1208,7 @@ class ProjectValidator:
                 doc.get("source_lineage"), f"{name}.source_lineage"
             )
             self.validate_content_copy_map(
-                copy_map, source_records, slide, f"{name}.copy_map"
+                copy_map, source_records, slide, f"{name}.copy_map", doc.get("message_mapping")
             )
             for source in source_records.values():
                 if isinstance(source.get("path"), str):
@@ -1160,6 +1290,9 @@ class ProjectValidator:
         if not isinstance(approval, dict) or approval.get("status") != "approved":
             self.error(location, "human calibration selection must be approved before anchors")
             return
+        actor_error = REVIEW_POLICY.review_actor_error(self.docs.get("run-state.json"), approval, human_only=True)
+        if actor_error:
+            self.error(location, actor_error)
         if approval.get("selected_variant_id") not in ids:
             self.error(location, "selected_variant_id must identify a generated variant")
         style = self.docs.get("style-contract.json", {})
@@ -1179,14 +1312,16 @@ class ProjectValidator:
             self.error(location, "artifact_version differs from concept-calibration")
         mode = approval.get("approval_mode")
         phrase = approval.get("approval_phrase", "")
-        if mode == "explicit":
-            if phrase.strip().lower() in VAGUE_APPROVAL_PHRASES:
-                self.error(location, "explicit approval cannot use a recommendation shortcut")
+        if mode in {"explicit", "local-affirmative"}:
+            check_reply = REVIEW_POLICY.local_reply_error if mode == "local-affirmative" else REVIEW_POLICY.explicit_reply_error
+            reply_error = check_reply(phrase, self.docs.get("run-state.json"))
+            if reply_error:
+                self.error(location, reply_error)
         elif mode == "batch-recommendations":
             if (phrase != "全部按推荐" or approval.get("selected_variant_id") != doc.get("recommended_variant_id") or approval.get("recommendations_visible") is not True):
                 self.error(location, "batch approval must select the visible recommended variant")
         else:
-            self.error(location, "approval_mode must be explicit or batch-recommendations")
+            self.error(location, "approval_mode must be explicit, local-affirmative, or batch-recommendations")
         hashes = approval.get("approved_artifacts")
         if not isinstance(hashes, dict) or set(tracked_paths) - set(hashes):
             self.error(location, "approved_artifacts must include calibration, board, and every variant")
@@ -1209,6 +1344,206 @@ class ProjectValidator:
             value = profile.get(field)
             if isinstance(value, bool) or not isinstance(value, (int, float)) or not floor <= value < 1:
                 self.error(location, f"{field} must be at least {floor} and less than 1")
+
+    def validate_semantic_system(self, system: Any) -> None:
+        location = "style-contract.json.semantic_system"
+        if not isinstance(system, dict):
+            self.error(location, "semantic_system is required for contract_schema_version 2")
+            return
+        if not isinstance(system.get("version"), str) or not system["version"].strip():
+            self.error(location, "version must be a non-empty string")
+        text_roles = system.get("text_roles")
+        if not isinstance(text_roles, dict) or not text_roles:
+            self.error(location, "text_roles must be a non-empty role map")
+            text_roles = {}
+        for role_id, token in text_roles.items():
+            role_location = f"{location}.text_roles[{role_id}]"
+            if not isinstance(role_id, str) or not role_id or not isinstance(token, dict):
+                self.error(role_location, "role ID and token must be valid")
+                continue
+            if not isinstance(token.get("meaning"), str) or not token["meaning"].strip():
+                self.error(role_location, "meaning is required")
+            readability_role = token.get("readability_role")
+            if not isinstance(readability_role, str) or readability_role not in READABILITY_FONT_FLOORS:
+                self.error(role_location, "readability_role is invalid")
+            if not isinstance(token.get("font_family"), str) or not token["font_family"].strip():
+                self.error(role_location, "font_family is required")
+            font_size = token.get("font_size_pt")
+            if isinstance(font_size, bool) or not isinstance(font_size, (int, float)) or font_size <= 0:
+                self.error(role_location, "font_size_pt must be positive")
+            elif readability_role in READABILITY_FONT_FLOORS:
+                floor_key, baseline = READABILITY_FONT_FLOORS[readability_role]
+                profile = self.docs.get("style-contract.json", {}).get("readability_profile", {})
+                floor = profile.get(floor_key, baseline) if isinstance(profile, dict) else baseline
+                if isinstance(floor, (int, float)) and font_size < floor:
+                    self.error(role_location, "font_size_pt is below the approved readability floor")
+            if type(token.get("bold")) is not bool:
+                self.error(role_location, "bold must be boolean")
+            if not isinstance(token.get("color"), str) or not re.fullmatch(r"#[0-9A-Fa-f]{6}", token["color"]):
+                self.error(role_location, "color must be #RRGGBB")
+        frame_roles = system.get("frame_roles")
+        if not isinstance(frame_roles, dict) or not frame_roles:
+            self.error(location, "frame_roles must be a non-empty role map")
+            frame_roles = {}
+        for role_id, token in frame_roles.items():
+            role_location = f"{location}.frame_roles[{role_id}]"
+            if not isinstance(role_id, str) or not role_id or not isinstance(token, dict):
+                self.error(role_location, "role ID and token must be valid")
+                continue
+            if not isinstance(token.get("meaning"), str) or not token["meaning"].strip():
+                self.error(role_location, "meaning is required")
+            line_style = token.get("line_style")
+            if not isinstance(line_style, str) or line_style not in {"solid", "dashed", "none"}:
+                self.error(role_location, "line_style must be solid, dashed, or none")
+            color = token.get("color")
+            if line_style == "none" and color is not None:
+                self.error(role_location, "a no-line frame must not declare a line color")
+            elif line_style in {"solid", "dashed"} and (
+                not isinstance(color, str) or not re.fullmatch(r"#[0-9A-Fa-f]{6}", color)
+            ):
+                self.error(role_location, "visible frame color must be #RRGGBB")
+            if type(token.get("visible_label_required")) is not bool:
+                self.error(role_location, "visible_label_required must be boolean")
+        verified, pending = frame_roles.get("verified"), frame_roles.get("pending")
+        if isinstance(verified, dict) and isinstance(pending, dict) and (
+            verified.get("line_style"), verified.get("color")
+        ) == (pending.get("line_style"), pending.get("color")):
+            self.error(location, "verified and pending frame treatments must be distinguishable")
+        repeated = system.get("repeated_regions")
+        if not isinstance(repeated, dict) or not repeated:
+            self.error(location, "repeated_regions must be a non-empty region map")
+            repeated = {}
+        for region_id, region in repeated.items():
+            region_location = f"{location}.repeated_regions[{region_id}]"
+            if not isinstance(region_id, str) or not region_id or not isinstance(region, dict):
+                self.error(region_location, "region ID and definition must be valid")
+                continue
+            text_role = region.get("text_role")
+            if not isinstance(text_role, str) or text_role not in text_roles:
+                self.error(region_location, "text_role must name an approved text role")
+            if type(region.get("required")) is not bool:
+                self.error(region_location, "required must be boolean")
+            anchor = region.get("anchor")
+            if not isinstance(anchor, list) or len(anchor) != 2 or any(
+                isinstance(value, bool) or not isinstance(value, (int, float)) or not 0 <= value <= 1
+                for value in anchor
+            ):
+                self.error(region_location, "anchor must be normalized [x,y]")
+            tolerance = region.get("tolerance")
+            if isinstance(tolerance, bool) or not isinstance(tolerance, (int, float)) or not 0 <= tolerance <= 0.1:
+                self.error(region_location, "tolerance must be between 0 and 0.1")
+
+    def validate_slide_semantics(self, slide: dict[str, Any], fill_slots: list[Any], location: str) -> None:
+        style = self.docs.get("style-contract.json", {})
+        system = style.get("semantic_system") if isinstance(style, dict) else None
+        if not isinstance(system, dict):
+            return
+        text_roles = system.get("text_roles", {})
+        frame_roles = system.get("frame_roles", {})
+        repeated = system.get("repeated_regions", {})
+        if not all(isinstance(value, dict) for value in (text_roles, frame_roles, repeated)):
+            return
+        semantic = slide.get("semantic_design")
+        semantic_location = f"{location}.semantic_design"
+        if not isinstance(semantic, dict):
+            self.error(semantic_location, "semantic_design is required")
+            return
+        slots = {slot.get("id"): slot for slot in fill_slots if isinstance(slot, dict) and isinstance(slot.get("id"), str)}
+        for slot_id, slot in slots.items():
+            if slot.get("kind") == "ordinary-data":
+                frame_token = frame_roles.get(slot.get("frame_role")) if isinstance(slot.get("frame_role"), str) else None
+                if not isinstance(frame_token, dict) or frame_token.get("line_style") == "none" or frame_token.get("visible_label_required") is True:
+                    self.error(f"{semantic_location}.data[{slot_id}]", "blank data slot needs a declared non-status visible frame_role")
+        plan = slide.get("readability", {})
+        regions = plan.get("text_regions", []) if isinstance(plan, dict) else []
+        text_regions = {region.get("fill_slot_id"): region for region in regions if isinstance(region, dict)} if isinstance(regions, list) else {}
+        for slot_id, region in text_regions.items():
+            region_location = f"{semantic_location}.text[{slot_id}]"
+            token_id = region.get("font_role")
+            token = text_roles.get(token_id) if isinstance(token_id, str) else None
+            if not isinstance(token, dict):
+                self.error(region_location, "font_role must name an approved text role")
+                continue
+            if region.get("role") != token.get("readability_role"):
+                self.error(region_location, "readability role differs from semantic text role")
+            if region.get("planned_font_pt") != token.get("font_size_pt"):
+                self.error(region_location, "planned_font_pt differs from fixed semantic text role")
+            if region.get("role") == "action-title":
+                content = slots.get(slot_id, {}).get("content")
+                if isinstance(content, str) and content.strip() and content != slide.get("title"):
+                    self.error(region_location, "action-title copy must match the approved slide title")
+        raw_bindings = semantic.get("region_slots")
+        if not isinstance(raw_bindings, dict):
+            self.error(semantic_location, "region_slots must be an object")
+            raw_bindings = {}
+        exceptions = semantic.get("exceptions")
+        if not isinstance(exceptions, list):
+            self.error(semantic_location, "exceptions must be a list")
+            exceptions = []
+        exception_ids: set[str] = set()
+        for index, exception in enumerate(exceptions):
+            exception_location = f"{semantic_location}.exceptions[{index}]"
+            region_id = exception.get("region_id") if isinstance(exception, dict) else None
+            if not isinstance(region_id, str) or region_id not in repeated:
+                self.error(exception_location, "region_id must name a repeated region")
+                continue
+            if not isinstance(exception.get("reason"), str) or not exception["reason"].strip():
+                self.error(exception_location, "a concrete anchor-exception reason is required")
+            if exception["region_id"] in exception_ids:
+                self.error(exception_location, "duplicate region exception")
+            exception_ids.add(exception["region_id"])
+        for region_id, definition in repeated.items():
+            if not isinstance(definition, dict):
+                continue
+            slot_id = raw_bindings.get(region_id)
+            region_location = f"{semantic_location}.region_slots[{region_id}]"
+            if slot_id is None:
+                if definition.get("required") is True:
+                    self.error(region_location, "required repeated region needs a fill slot")
+                continue
+            slot = slots.get(slot_id)
+            if not isinstance(slot, dict) or slot.get("kind") != "ordinary-text":
+                self.error(region_location, "repeated region must bind an ordinary-text fill slot")
+                continue
+            region = text_regions.get(slot_id)
+            if not isinstance(region, dict) or region.get("font_role") != definition.get("text_role"):
+                self.error(region_location, "repeated region uses the wrong semantic text role")
+            if region_id != "page-title" and definition.get("required") is True and not str(slot.get("content", "")).strip():
+                self.error(region_location, "required repeated region needs visible copy")
+            anchor = definition.get("anchor")
+            tolerance = definition.get("tolerance")
+            bbox = slot.get("bbox")
+            if (
+                region_id not in exception_ids and isinstance(anchor, list) and len(anchor) == 2
+                and isinstance(tolerance, (int, float)) and not isinstance(tolerance, bool)
+                and isinstance(bbox, list) and len(bbox) == 4
+                and all(isinstance(value, (int, float)) and not isinstance(value, bool) for value in bbox[:2])
+                and any(abs(bbox[index] - anchor[index]) > tolerance for index in (0, 1))
+            ):
+                self.error(region_location, "repeated region anchor differs from approved semantic system")
+        for region_id in raw_bindings:
+            if region_id not in repeated:
+                self.error(semantic_location, f"unknown repeated region '{region_id}'")
+        frames = semantic.get("frame_instances")
+        if not isinstance(frames, list):
+            self.error(semantic_location, "frame_instances must be a list")
+            return
+        self.check_unique(frames, "id", f"{semantic_location}.frame_instances")
+        for index, frame in enumerate(frames):
+            frame_location = f"{semantic_location}.frame_instances[{index}]"
+            if not isinstance(frame, dict):
+                self.error(frame_location, "must be an object")
+                continue
+            frame_role = frame.get("role")
+            token = frame_roles.get(frame_role) if isinstance(frame_role, str) else None
+            if not isinstance(token, dict):
+                self.error(frame_location, "role must name an approved frame role")
+                continue
+            self.validate_bbox(frame.get("bbox"), f"{frame_location}.bbox")
+            if token.get("visible_label_required") is True:
+                label = slots.get(frame.get("label_slot_id"))
+                if not isinstance(label, dict) or label.get("kind") != "ordinary-text" or not str(label.get("content", "")).strip():
+                    self.error(frame_location, "status/evidence frame needs a visible ordinary-text label slot")
 
     def validate_slide_readability(
         self, slide: dict[str, Any], fill_slots: list[Any], profile: Any, location: str
@@ -1373,6 +1708,11 @@ class ProjectValidator:
                         self.error("style-contract.json", f"{style_field} must match selected calibration variant")
         profile = self.quality_profile()
         self.validate_readability_profile(doc.get("readability_profile"))
+        schema_version = doc.get("contract_schema_version", 1)
+        if type(schema_version) is not int or schema_version not in {1, 2}:
+            self.error("style-contract.json", "contract_schema_version must be 1 or 2")
+        if self.semantic_system_active():
+            self.validate_semantic_system(doc.get("semantic_system"))
         composition = doc.get("composition_profile")
         if not isinstance(composition, dict):
             self.error("style-contract.json", "composition_profile is required")
@@ -1536,6 +1876,11 @@ class ProjectValidator:
         } if isinstance(selected_reference_values, list) else set()
         storyboard = self.docs.get("storyboard.json", {})
         storyboard_slides = storyboard.get("slides", []) if isinstance(storyboard, dict) else []
+        if isinstance(storyboard_slides, list) and storyboard_slides:
+            story_order = [item.get("id") for item in storyboard_slides if isinstance(item, dict)]
+            deck_order = [item.get("id") for item in slides if isinstance(item, dict)]
+            if deck_order != story_order:
+                self.error(name, "slide IDs and order must match storyboard.json")
         narrative_roles = {
             slide.get("id"): slide.get("narrative_role")
             for slide in storyboard_slides
@@ -1553,6 +1898,15 @@ class ProjectValidator:
                 self.error(location, "must be an object")
                 continue
             components = slide.get("components", [])
+            try:
+                notes = speaker_notes_text(slide)
+            except ValueError as exc:
+                self.error(location, str(exc))
+            else:
+                brief_doc = self.docs.get("brief.json", {})
+                brief_delivery = brief_doc.get("delivery", {}) if isinstance(brief_doc, dict) else {}
+                if isinstance(brief_delivery, dict) and brief_delivery.get("speaker_notes") == "required" and not notes.strip():
+                    self.error(location, "speaker_notes is required for every slide")
             if not isinstance(components, list):
                 self.error(location, "components must be a list")
             elif any(not isinstance(component, str) or not component for component in components):
@@ -1650,6 +2004,8 @@ class ProjectValidator:
                     continue
                 self.validate_bbox(slot.get("bbox"), f"{location}.fill_slots[{slot_index}].bbox")
             self.validate_slide_readability(slide, fill_slots, readability_profile, location)
+            if self.semantic_system_active():
+                self.validate_slide_semantics(slide, fill_slots, location)
             if self.reaches("concept"):
                 concept_path = slide.get("concept_path")
                 if not concept_path:
@@ -1810,6 +2166,7 @@ class ProjectValidator:
                     source_records,
                     storyboard_slides.get(slide_id),
                     f"{location}.copy_map",
+                    record.get("message_mapping"),
                 )
                 self.validate_concept_image_inventory(
                     record.get("image_inventory"),
@@ -1969,6 +2326,9 @@ class ProjectValidator:
                 self.error(review_location, "geometry_review must pass at 100% display scale")
             if not isinstance(geometry_review.get("reviewer"), str) or not geometry_review["reviewer"].strip():
                 self.error(review_location, "geometry_review reviewer is required")
+            actor_error = REVIEW_POLICY.review_actor_error(self.docs.get("run-state.json"), geometry_review)
+            if actor_error:
+                self.error(review_location, actor_error)
             comparison_value = geometry_review.get("comparison_path")
             if comparison_value in (concept_path, master_path_value):
                 self.error(review_location, "geometry_review comparison_path must be a separate comparison image")
@@ -1986,6 +2346,285 @@ class ProjectValidator:
                 for field in ("composition_preserved", "fill_slots_preserved", "ordinary_text_removed")
             ):
                 self.error(review_location, "geometry_review checks must confirm composition, fill slots and text removal")
+
+    def validate_decomposition_map(self, *, require_review: bool = True) -> None:
+        name = "decomposition-map.json"
+        doc = self.docs.get(name)
+        if not isinstance(doc, dict):
+            return
+        if not isinstance(doc.get("version"), str) or not doc["version"].strip():
+            self.error(name, "version is required")
+        slides = doc.get("slides")
+        if not isinstance(slides, list) or not slides:
+            self.error(name, "slides must contain every deck slide")
+            return
+        self.check_unique(slides, "slide_id", f"{name}.slides")
+        deck = self.docs.get("deck-spec.json", {})
+        scene = self.docs.get("scene-graph.json", {})
+        manifest = self.docs.get("asset-manifest.json", {})
+        masters = self.docs.get("component-master-manifest.json", {})
+        state = self.docs.get("run-state.json", {})
+        deck_slides = {
+            slide.get("id"): slide for slide in deck.get("slides", [])
+            if isinstance(slide, dict) and isinstance(slide.get("id"), str)
+        } if isinstance(deck, dict) and isinstance(deck.get("slides"), list) else {}
+        scene_slides = {
+            slide.get("slide_id"): slide for slide in scene.get("slides", [])
+            if isinstance(slide, dict) and isinstance(slide.get("slide_id"), str)
+        } if isinstance(scene, dict) and isinstance(scene.get("slides"), list) else {}
+        master_slides = {
+            slide.get("slide_id"): slide for slide in masters.get("slides", [])
+            if isinstance(slide, dict) and isinstance(slide.get("slide_id"), str)
+        } if isinstance(masters, dict) and isinstance(masters.get("slides"), list) else {}
+        assets = {
+            asset.get("id"): asset for asset in manifest.get("assets", [])
+            if isinstance(asset, dict) and isinstance(asset.get("id"), str)
+        } if isinstance(manifest, dict) and isinstance(manifest.get("assets"), list) else {}
+        g4 = state.get("gates", {}).get("concept_contact_sheet", {}) if isinstance(state, dict) and isinstance(state.get("gates"), dict) else {}
+        approved = g4.get("approved_artifacts", {}) if isinstance(g4, dict) else {}
+        mapped_ids = {
+            slide.get("slide_id") for slide in slides
+            if isinstance(slide, dict) and isinstance(slide.get("slide_id"), str)
+        }
+        if mapped_ids != set(deck_slides):
+            self.error(name, "slide coverage must match deck-spec.json exactly")
+
+        for slide_index, record in enumerate(slides):
+            location = f"{name}.slides[{slide_index}]"
+            if not isinstance(record, dict):
+                self.error(location, "must be an object")
+                continue
+            slide_id = record.get("slide_id")
+            if not isinstance(slide_id, str):
+                self.error(location, "slide_id must be a string")
+                continue
+            deck_slide = deck_slides.get(slide_id)
+            scene_slide = scene_slides.get(slide_id)
+            if not isinstance(deck_slide, dict) or not isinstance(scene_slide, dict):
+                self.error(location, "must link current deck and scene slide")
+                continue
+            concept_path = deck_slide.get("concept_path")
+            concept_sha = record.get("concept_sha256")
+            if record.get("concept_path") != concept_path:
+                self.error(location, "concept_path must match current deck-spec")
+            concept_file = self.validate_relative_file(concept_path, f"{location}.concept_path")
+            if concept_file and concept_sha != hashlib.sha256(concept_file.read_bytes()).hexdigest():
+                self.error(location, "concept_sha256 is stale")
+            if not isinstance(approved, dict) or approved.get(concept_path) != concept_sha:
+                self.error(location, "concept is not current G4-approved content")
+            if not self.is_fixture_profile():
+                master = master_slides.get(slide_id)
+                if not isinstance(master, dict):
+                    self.error(location, "textless master is required")
+                else:
+                    if record.get("master_path") != master.get("component_master_path") or record.get("master_sha256") != master.get("component_master_sha256"):
+                        self.error(location, "master binding must match current textless master")
+                    master_file = self.validate_relative_file(record.get("master_path"), f"{location}.master_path")
+                    if master_file and record.get("master_sha256") != hashlib.sha256(master_file.read_bytes()).hexdigest():
+                        self.error(location, "master_sha256 is stale")
+
+            items = record.get("items")
+            if not isinstance(items, list) or not items:
+                self.error(location, "items must be a non-empty numbered inventory")
+                continue
+            items_sha256 = value_sha256(items)
+            self.check_unique(items, "id", f"{location}.items")
+            scene_instances = {
+                element.get("instance_id"): element for element in scene_slide.get("elements", [])
+                if isinstance(element, dict) and isinstance(element.get("instance_id"), str)
+            } if isinstance(scene_slide.get("elements"), list) else {}
+            fill_slots = {
+                slot.get("id"): slot for slot in deck_slide.get("fill_slots", [])
+                if isinstance(slot, dict) and isinstance(slot.get("id"), str)
+            } if isinstance(deck_slide.get("fill_slots"), list) else {}
+            mapped_instances: set[str] = set()
+            mapped_slots: set[str] = set()
+            for item_index, item in enumerate(items):
+                item_location = f"{location}.items[{item_index}]"
+                if not isinstance(item, dict):
+                    self.error(item_location, "must be an object")
+                    continue
+                if not isinstance(item.get("id"), str) or not item["id"].strip():
+                    self.error(item_location, "stable item id is required")
+                if not isinstance(item.get("label"), str) or not item["label"].strip():
+                    self.error(item_location, "human-readable label is required")
+                if item.get("inventory_pass") not in {"semantic", "residual"}:
+                    self.error(item_location, "inventory_pass must be semantic or residual")
+                self.validate_bbox(item.get("bbox"), f"{item_location}.bbox")
+                kind = item.get("kind")
+                if kind == "visual":
+                    instance_id = item.get("instance_id")
+                    if not isinstance(instance_id, str) or not instance_id:
+                        self.error(item_location, "instance_id must be a non-empty string")
+                        element = None
+                    else:
+                        if instance_id in mapped_instances:
+                            self.error(item_location, "two independent objects cannot share one scene instance")
+                        mapped_instances.add(instance_id)
+                        element = scene_instances.get(instance_id)
+                    if not isinstance(element, dict):
+                        self.error(item_location, "visual item must link a scene instance")
+                    elif any(item.get(field) != element.get(field) for field in ("component_id", "bbox", "z")):
+                        self.error(item_location, "visual item must match scene component, bbox and z")
+                    component_id = item.get("component_id")
+                    asset = assets.get(component_id) if isinstance(component_id, str) else None
+                    if not isinstance(asset, dict):
+                        self.error(item_location, "component_id must link an asset")
+                    elif item.get("role") != asset.get("role"):
+                        self.error(item_location, "role must match asset manifest")
+                    source_class = item.get("source_class")
+                    if (item.get("role") in PHOTO_ROLES and source_class != "ordinary-photo") or (source_class == "ordinary-photo" and item.get("role") not in PHOTO_ROLES):
+                        self.error(item_location, "ordinary photo source class must use a photo component role")
+                    if (item.get("role") in TRUTH_SENSITIVE_ROLES and source_class != "truth-sensitive") or (source_class == "truth-sensitive" and item.get("role") not in TRUTH_SENSITIVE_ROLES):
+                        self.error(item_location, "truth-sensitive source class must use a preserved evidence role")
+                    allowed_treatments = {
+                        "design-object": {"preserve-pixels", "reconstruct-single"},
+                        "ordinary-photo": {"preserve-source", "photo-adjust", "reconstruct-single"},
+                        "truth-sensitive": {"preserve-source", "blank-content"},
+                    }
+                    treatment = item.get("treatment")
+                    if not isinstance(source_class, str) or not isinstance(treatment, str) or treatment not in allowed_treatments.get(source_class, set()):
+                        self.error(item_location, "source_class and treatment require a valid single-object handling decision")
+                    occlusion = item.get("occlusion")
+                    if not isinstance(occlusion, str) or occlusion not in {"none", "partially-occluded", "fused"}:
+                        self.error(item_location, "occlusion decision is required")
+                    if occlusion in {"partially-occluded", "fused"} and treatment == "preserve-pixels":
+                        self.error(item_location, "occluded or fused object cannot claim complete original-pixel extraction")
+                    if not isinstance(item.get("overlaps"), list):
+                        self.error(item_location, "overlaps must list related scene instances, or be empty")
+                    elif any(
+                        not isinstance(related, str) or related not in scene_instances or related == instance_id
+                        for related in item["overlaps"]
+                    ):
+                        self.error(item_location, "overlaps must reference other current scene instances")
+                    padding = item.get("crop_padding")
+                    if (
+                        not isinstance(padding, list) or len(padding) != 4
+                        or any(type(value) not in {int, float} or value < 0 or value > 0.2 for value in padding)
+                    ):
+                        self.error(item_location, "crop_padding must be four normalized non-negative margins at most 0.2")
+                    contains_text_data = item.get("contains_ordinary_text_or_data")
+                    decision = item.get("text_data_decision")
+                    if type(contains_text_data) is not bool:
+                        self.error(item_location, "contains_ordinary_text_or_data must be explicit true or false")
+                    if not isinstance(decision, str) or decision not in {"none", "blank-for-fill-slots", "preserve-factual-source"}:
+                        self.error(item_location, "text_data_decision must specify removal or factual preservation")
+                    elif contains_text_data is False and decision != "none":
+                        self.error(item_location, "text_data_decision must be none when no text or data is present")
+                    elif contains_text_data is True:
+                        if source_class != "truth-sensitive" and decision != "blank-for-fill-slots":
+                            self.error(item_location, "ordinary text/data outside factual evidence must be blanked")
+                        if source_class == "design-object" and (decision != "blank-for-fill-slots" or treatment != "reconstruct-single"):
+                            self.error(item_location, "design object with ordinary text/data must be rebuilt as a blank single object")
+                        if source_class == "ordinary-photo" and treatment != "reconstruct-single":
+                            self.error(item_location, "photo with removable text/data must use a blank single-object route")
+                        if source_class == "truth-sensitive" and not (
+                            (decision == "preserve-factual-source" and treatment == "preserve-source")
+                            or (decision == "blank-for-fill-slots" and treatment == "blank-content")
+                        ):
+                            self.error(item_location, "truth-sensitive text/data decision must match preservation or blanking treatment")
+                elif kind == "fill-slot":
+                    slot_id = item.get("fill_slot_id")
+                    if not isinstance(slot_id, str) or not slot_id:
+                        self.error(item_location, "fill_slot_id must be a non-empty string")
+                        slot = None
+                    else:
+                        if slot_id in mapped_slots:
+                            self.error(item_location, "fill slot is mapped more than once")
+                        mapped_slots.add(slot_id)
+                        slot = fill_slots.get(slot_id)
+                    if not isinstance(slot, dict):
+                        self.error(item_location, "fill_slot_id must link a deck fill slot")
+                    elif item.get("bbox") != slot.get("bbox") or item.get("role") != slot.get("kind"):
+                        self.error(item_location, "fill slot role and bbox must match deck-spec")
+                    if item.get("treatment") != "editable":
+                        self.error(item_location, "fill slot treatment must be editable")
+                elif kind == "omitted":
+                    if not isinstance(item.get("reason"), str) or not item["reason"].strip():
+                        self.error(item_location, "omitted visible item requires a human-reviewable reason")
+                else:
+                    self.error(item_location, "kind must be visual, fill-slot, or omitted")
+            for instance_id in set(scene_instances) - mapped_instances:
+                self.error(location, f"unmapped scene instance '{instance_id}'")
+            for slot_id in set(fill_slots) - mapped_slots:
+                self.error(location, f"unmapped fill slot '{slot_id}'")
+            if not require_review:
+                continue
+            for field in ("review_image", "review_packet"):
+                evidence = record.get(field)
+                evidence_location = f"{location}.{field}"
+                if not isinstance(evidence, dict):
+                    self.error(evidence_location, "review evidence is required")
+                    continue
+                evidence_file = self.validate_relative_file(evidence.get("path"), f"{evidence_location}.path")
+                if evidence_file and evidence.get("sha256") != hashlib.sha256(evidence_file.read_bytes()).hexdigest():
+                    self.error(evidence_location, "review evidence hash is stale")
+                if evidence.get("reviewed_items_sha256") != items_sha256:
+                    self.error(evidence_location, "review evidence must bind current item inventory")
+                if field == "review_image" and (evidence.get("reviewed_concept_sha256") != concept_sha or evidence.get("display_scale_percent") != 100):
+                    self.error(evidence_location, "numbered image must review the current concept at 100% scale")
+                if evidence_file and field == "review_image":
+                    if evidence_file in {concept_file, self.root / str(record.get("master_path"))}:
+                        self.error(evidence_location, "numbered image must be separate from concept and master")
+                    review_dimensions = png_dimensions(evidence_file)
+                    if evidence_file.suffix.lower() != ".png" or review_dimensions is None:
+                        self.error(evidence_location, "numbered review must be a PNG")
+                    concept_dimensions = png_dimensions(concept_file) if concept_file else None
+                    if concept_dimensions is None:
+                        self.error(evidence_location, "current concept must be a readable PNG")
+                    elif review_dimensions != concept_dimensions:
+                        self.error(evidence_location, "review image dimensions must match current concept")
+                    elif concept_file and isinstance(items, list):
+                        try:
+                            review_script = Path(__file__).resolve().with_name("render_decomposition_review.py")
+                            review_spec = importlib.util.spec_from_file_location("ai_presentation_decomposition_review", review_script)
+                            if review_spec is None or review_spec.loader is None:
+                                raise RuntimeError("cannot load numbered review renderer")
+                            review_module = importlib.util.module_from_spec(review_spec)
+                            review_spec.loader.exec_module(review_module)
+                            expected = review_module.build_review_image(concept_file, items)
+                            with review_module.Image.open(evidence_file) as actual:
+                                actual_rgba = actual.convert("RGBA")
+                            if expected.size != actual_rgba.size or expected.tobytes() != actual_rgba.tobytes():
+                                self.error(evidence_location, "numbered review pixels do not match declared item overlay")
+                        except (ImportError, OSError, ValueError, RuntimeError) as exc:
+                            self.error(evidence_location, f"cannot verify numbered review overlay: {exc}")
+                if evidence_file and field == "review_packet":
+                    try:
+                        readable = evidence_file.read_text(encoding="utf-8").strip()
+                    except UnicodeError:
+                        readable = ""
+                    if evidence_file.suffix.lower() != ".md" or not readable:
+                        self.error(evidence_location, "readable review list must be non-empty Markdown")
+                    else:
+                        if items_sha256 not in readable:
+                            self.error(evidence_location, "readable review list must include the current item hash and numbered rows")
+                        else:
+                            try:
+                                review_script = Path(__file__).resolve().with_name("render_decomposition_review.py")
+                                review_spec = importlib.util.spec_from_file_location("ai_presentation_decomposition_review", review_script)
+                                if review_spec is None or review_spec.loader is None:
+                                    raise RuntimeError("cannot load numbered review renderer")
+                                review_module = importlib.util.module_from_spec(review_spec)
+                                review_spec.loader.exec_module(review_module)
+                                actual_rows = set(readable.splitlines())
+                                expected_rows = {
+                                    review_module.review_row(item) for item in items
+                                    if isinstance(item, dict) and isinstance(item.get("id"), str)
+                                }
+                                if not expected_rows or not expected_rows.issubset(actual_rows):
+                                    self.error(evidence_location, "readable review list must include full current item rows")
+                            except (ImportError, OSError, ValueError, RuntimeError) as exc:
+                                self.error(evidence_location, f"cannot verify readable review rows: {exc}")
+            review = record.get("coverage_review")
+            if not isinstance(review, dict) or not isinstance(review.get("reviewer"), str) or not review["reviewer"].strip():
+                self.error(location, "human coverage reviewer is required")
+            elif any(review.get(field) is not True for field in ("semantic_passed", "residual_passed", "independence_passed")) or review.get("missing_items") != []:
+                self.error(location, "human coverage and independence review must pass with no missing items")
+            if isinstance(review, dict):
+                actor_error = REVIEW_POLICY.review_actor_error(self.docs.get("run-state.json"), review, human_only=True)
+                if actor_error:
+                    self.error(location, actor_error)
 
     def validate_scene_graph(self) -> None:
         name = "scene-graph.json"
@@ -2018,6 +2657,15 @@ class ProjectValidator:
                 else:
                     seen_instances.add(instance_id)
                 self.validate_bbox(element.get("bbox"), f"{location}.bbox")
+                z = element.get("z")
+                if type(z) is not int or z < 0:
+                    self.error(location, "z must be a non-negative integer")
+                rotation = element.get("rotation", 0)
+                if type(rotation) not in {int, float} or not 0 <= rotation < 360:
+                    self.error(location, "rotation must be a number from 0 to below 360")
+                opacity = element.get("opacity", 1)
+                if type(opacity) not in {int, float} or not 0 <= opacity <= 1:
+                    self.error(location, "opacity must be a number from 0 to 1")
 
     def validate_visual_provider_provenance(
         self,
@@ -2043,7 +2691,16 @@ class ProjectValidator:
                     location,
                     f"provider '{provider_id}' does not support component role '{role}'",
                 )
-            if asset.get("output_class") != provider.get("output_class"):
+            if provider_id == "photo-postprocess-coach":
+                photo_classes = {
+                    "rectangle": "opaque-photo-rectangle",
+                    "cutout": "transparent-photo-cutout",
+                }
+                if asset.get("photo_output_mode") not in photo_classes or asset.get("output_class") != photo_classes.get(asset.get("photo_output_mode")):
+                    self.error(location, "photo output class must distinguish opaque rectangle from transparent cutout")
+                if (asset.get("photo_output_mode") == "rectangle" and role != "ordinary-photo") or (asset.get("photo_output_mode") == "cutout" and role != "photo-cutout"):
+                    self.error(location, "photo role must match its rectangle or cutout output mode")
+            elif asset.get("output_class") != provider.get("output_class"):
                 self.error(location, "output_class does not match registered provider")
             if asset.get("provider_transparency_behavior") != provider.get(
                 "transparency_behavior"
@@ -2075,6 +2732,7 @@ class ProjectValidator:
                         "source_rights_confirmation": asset.get(
                             "source_rights_confirmation"
                         ),
+                        "source_photo": asset.get("source_photo"),
                         "special_page_approval": asset.get(
                             "special_page_approval"
                         ),
@@ -2090,7 +2748,7 @@ class ProjectValidator:
                         asset.get("reference_bbox"), f"{location}.reference_bbox"
                     )
                     expected_prompt = VISUAL_ADAPTERS.build_material_prompt(
-                        str(role), reference_bbox
+                        str(role), reference_bbox, asset.get("prompt_profile", "v1")
                     )
                     if asset.get("prompt") != expected_prompt:
                         self.error(
@@ -2163,6 +2821,309 @@ class ProjectValidator:
                         "reference is not approved by concept_contact_sheet",
                     )
 
+    def validate_asset_isolation(self, asset: dict[str, Any], location: str, output_path: Path | None) -> None:
+        if not self.asset_ready(asset):
+            return
+        module_path = Path(__file__).resolve().with_name("render_asset_isolation_review.py")
+        spec = importlib.util.spec_from_file_location("ai_presentation_isolation_contract", module_path)
+        if spec is None or spec.loader is None:
+            self.error(location, "cannot load isolation review contract")
+            return
+        try:
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+            decomposition = self.docs.get("decomposition-map.json", {})
+            source_items = module.source_items_for_asset(decomposition, asset.get("id"))
+        except (ImportError, OSError, ValueError, TypeError, KeyError) as exc:
+            self.error(location, f"cannot resolve current decomposition items: {exc}")
+            return
+        if not source_items:
+            self.error(location, "asset must map to at least one current independent decomposition item")
+            return
+        routes = {str(item.get("treatment")) for item in source_items}
+        extraction = asset.get("extraction")
+        if not isinstance(extraction, dict) or not isinstance(extraction.get("route"), str) or extraction.get("route") not in routes or len(routes) != 1:
+            self.error(location, "asset extraction route must match every mapped decomposition item")
+        elif extraction["route"] == "preserve-pixels" and output_path:
+            if extraction.get("output_path") != asset.get("output") or extraction.get("output_sha256") != asset.get("sha256"):
+                self.error(location, "pixel-preserved extraction must bind the current output path and hash")
+            source_item = extraction.get("source_item")
+            match = next(
+                (item for item in source_items if source_item == {"slide_id": item["slide_id"], "item_id": item["item_id"]}),
+                None,
+            )
+            if match is None or asset.get("strategy") != "preserved-transparent-png":
+                self.error(location, "pixel-preserved asset must identify one approved source item and preservation strategy")
+            else:
+                slide_records = decomposition.get("slides", []) if isinstance(decomposition, dict) else []
+                slide = next(
+                    (record for record in slide_records if isinstance(record, dict) and record.get("slide_id") == match["slide_id"]),
+                    None,
+                )
+                source_relative = slide.get("master_path") if isinstance(slide, dict) else None
+                source = self.validate_relative_file(extraction.get("source_path"), f"{location}.extraction.source_path")
+                mask = self.validate_relative_file(extraction.get("mask_path"), f"{location}.extraction.mask_path")
+                if extraction.get("source_path") != source_relative:
+                    self.error(location, "pixel-preserved source must be the current textless master")
+                if source and extraction.get("source_sha256") != hashlib.sha256(source.read_bytes()).hexdigest():
+                    self.error(location, "pixel-preserved source hash is stale")
+                if mask and extraction.get("mask_sha256") != hashlib.sha256(mask.read_bytes()).hexdigest():
+                    self.error(location, "pixel-preserved mask hash is stale")
+                if source and mask:
+                    try:
+                        extractor_path = Path(__file__).resolve().with_name("extract_preserved_component.py")
+                        extractor_spec = importlib.util.spec_from_file_location("ai_presentation_pixel_extractor", extractor_path)
+                        if extractor_spec is None or extractor_spec.loader is None:
+                            raise RuntimeError("cannot load pixel extractor")
+                        extractor = importlib.util.module_from_spec(extractor_spec)
+                        extractor_spec.loader.exec_module(extractor)
+                        expected, box = extractor.extract_pixels(source, mask, match["bbox"], match["crop_padding"])
+                        with extractor.Image.open(output_path) as actual:
+                            actual_rgba = actual.convert("RGBA")
+                        if extraction.get("source_crop_px") != list(box) or expected.size != actual_rgba.size or expected.tobytes() != actual_rgba.tobytes():
+                            self.error(location, "pixel-preserved output differs from current source pixels and mask")
+                    except (ImportError, OSError, ValueError, TypeError, RuntimeError) as exc:
+                        self.error(location, f"cannot verify pixel preservation: {exc}")
+        elif isinstance(extraction, dict) and extraction.get("route") == "reconstruct-single":
+            if asset.get("strategy") != "generated-transparent-png":
+                self.error(location, "reconstructed single object must use generated-transparent-png strategy")
+
+        history = asset.get("extraction_history", [])
+        if not isinstance(history, list):
+            self.error(location, "extraction_history must be a list")
+        else:
+            for index, prior in enumerate(history):
+                if not isinstance(prior, dict):
+                    self.error(f"{location}.extraction_history[{index}]", "historical extraction must be an object")
+                    continue
+                if prior.get("route") != "preserve-pixels":
+                    continue
+                prior_location = f"{location}.extraction_history[{index}]"
+                prior_output = self.validate_relative_file(prior.get("output_path"), f"{prior_location}.output_path")
+                if prior_output:
+                    if not prior_output.is_relative_to((self.root / "assets").resolve()) or prior_output.suffix.lower() != ".png":
+                        self.error(prior_location, "historical output must be a PNG under assets/")
+                    if prior.get("output_path") == asset.get("output") or prior.get("output_sha256") != hashlib.sha256(prior_output.read_bytes()).hexdigest():
+                        self.error(prior_location, "historical output is reused or its hash is stale")
+                for field in ("source", "mask"):
+                    prior_file = self.validate_relative_file(prior.get(f"{field}_path"), f"{prior_location}.{field}_path")
+                    if prior_file and prior.get(f"{field}_sha256") != hashlib.sha256(prior_file.read_bytes()).hexdigest():
+                        self.error(prior_location, f"historical {field} hash is stale")
+
+        review = asset.get("isolation_review")
+        if not isinstance(review, dict) or review.get("status") != "passed" or not isinstance(review.get("reviewer"), str) or not review["reviewer"].strip():
+            self.error(location, "passed human isolation review is required")
+            return
+        actor_error = REVIEW_POLICY.review_actor_error(self.docs.get("run-state.json"), review)
+        if actor_error:
+            self.error(location, actor_error)
+        checks = review.get("checks")
+        required_isolation_checks = ["single_object", "no_neighbor_residue", "edge_clean", "concept_match"]
+        if asset.get("role") not in PHOTO_ROLES:
+            required_isolation_checks.append("no_ordinary_text_or_data")
+        for check in required_isolation_checks:
+            if not isinstance(checks, dict) or checks.get(check) is not True:
+                self.error(location, f"isolation review check must pass: {check}")
+        asset_sha = hashlib.sha256(output_path.read_bytes()).hexdigest() if output_path else None
+        if review.get("asset_sha256") != asset_sha or review.get("reviewed_items_sha256") != module.value_sha256(source_items):
+            self.error(location, "isolation review must bind the current asset and decomposition items")
+        image_path = self.validate_relative_file(review.get("image_path"), f"{location}.isolation_review.image_path")
+        packet_path = self.validate_relative_file(review.get("packet_path"), f"{location}.isolation_review.packet_path")
+        review_dir = (self.root / "reviews" / "assets").resolve()
+        if image_path:
+            if not image_path.is_relative_to(review_dir) or image_path.suffix.lower() != ".png" or review.get("image_sha256") != hashlib.sha256(image_path.read_bytes()).hexdigest():
+                self.error(location, "isolation image hash or format is invalid")
+            elif output_path:
+                try:
+                    expected = module.build_isolation_image(self.root, output_path, source_items, pixels=self.pixel_cache)
+                    try:
+                        actual_bytes = image_path.read_bytes()
+                        if hashlib.sha256(actual_bytes).hexdigest() != review.get("image_sha256"):
+                            raise ValueError("isolation image changed during validation")
+                        with module.Image.open(io.BytesIO(actual_bytes)) as actual:
+                            actual_rgb = actual.convert("RGB")
+                        try:
+                            if expected.size != actual_rgb.size or expected.tobytes() != actual_rgb.tobytes():
+                                self.error(location, "isolation image pixels do not match current component and concept crops")
+                        finally:
+                            actual_rgb.close()
+                    finally:
+                        expected.close()
+                except (OSError, ValueError, TypeError, KeyError, module.Image.DecompressionBombError, module.Image.DecompressionBombWarning) as exc:
+                    self.error(location, f"cannot verify isolation image: {exc}")
+        if packet_path:
+            if not packet_path.is_relative_to(review_dir) or packet_path.suffix.lower() != ".md" or review.get("packet_sha256") != hashlib.sha256(packet_path.read_bytes()).hexdigest():
+                self.error(location, "isolation review list hash or format is invalid")
+            else:
+                try:
+                    readable = packet_path.read_text(encoding="utf-8")
+                except UnicodeError:
+                    readable = ""
+                if module.value_sha256(source_items) not in readable or any(
+                    module.review_row(item) not in readable.splitlines() for item in source_items
+                ):
+                    self.error(location, "isolation review list must include all current item rows and hash")
+
+    def validate_photo_asset(self, asset: dict[str, Any], location: str, output_path: Path | None) -> None:
+        if not self.asset_ready(asset) or asset.get("role") not in PHOTO_ROLES:
+            return
+        source_record = asset.get("source_photo")
+        if not isinstance(source_record, dict):
+            self.error(location, "photo asset requires a classified source_photo record")
+            return
+        source_path = self.validate_relative_file(source_record.get("path"), f"{location}.source_photo.path")
+        source_sha = source_record.get("sha256")
+        if source_path and source_sha != hashlib.sha256(source_path.read_bytes()).hexdigest():
+            self.error(location, "photo source hash is stale")
+        mode = asset.get("photo_output_mode")
+        strategy = asset.get("strategy")
+        if asset.get("content_policy") != "preserve-source-photo":
+            self.error(location, "ordinary photo must preserve source content, including incidental scene text")
+        if mode == "rectangle":
+            if asset.get("role") != "ordinary-photo" or asset.get("background_requirement") != "opaque-rectangle" or strategy not in {"preserved-photo-rectangle", "postprocessed-photo-rectangle"}:
+                self.error(location, "ordinary photo must be an opaque, independent rectangle")
+        elif mode == "cutout":
+            if asset.get("role") != "photo-cutout" or asset.get("background_requirement") != "transparent" or strategy not in {"preserved-transparent-png", "postprocessed-transparent-png"}:
+                self.error(location, "photo cutout must be an independently transparent PNG")
+        else:
+            self.error(location, "photo_output_mode must be rectangle or cutout")
+        if output_path:
+            try:
+                from PIL import Image
+                with Image.open(output_path) as image:
+                    image.verify()
+                with Image.open(output_path) as image:
+                    if image.format not in {"PNG", "JPEG"} or image.width < 3 or image.height < 3:
+                        self.error(location, "photo output must be a readable PNG or JPEG")
+                    elif mode == "rectangle" and image.convert("RGBA").getchannel("A").getextrema() != (255, 255):
+                        self.error(location, "opaque photo rectangle contains transparent pixels")
+                    elif mode == "cutout" and image.format != "PNG":
+                        self.error(location, "transparent photo cutout must be PNG")
+            except (ImportError, OSError, ValueError) as exc:
+                self.error(location, f"cannot inspect photo output: {exc}")
+        if isinstance(strategy, str) and strategy.startswith("preserved-"):
+            if source_path and output_path and source_path.read_bytes() != output_path.read_bytes():
+                self.error(location, "preserved photo output must match the approved source byte-for-byte")
+            return
+        if not isinstance(strategy, str) or not strategy.startswith("postprocessed-"):
+            return
+        if source_path and output_path and source_path == output_path:
+            self.error(location, "postprocessed photo must use a new output path")
+        processing = asset.get("photo_processing")
+        if not isinstance(processing, dict):
+            self.error(location, "postprocessed photo requires photo_processing provenance")
+            return
+        confirmation = processing.get("confirmation")
+        diagnosis = processing.get("diagnosis")
+        recipe = processing.get("preservation_prompt")
+        recipe_sha = hashlib.sha256(recipe.encode("utf-8")).hexdigest() if isinstance(recipe, str) and recipe.strip() else None
+        approval_time = None
+        if isinstance(confirmation, dict) and isinstance(confirmation.get("approved_at"), str):
+            try:
+                approval_time = datetime.fromisoformat(confirmation["approved_at"])
+            except ValueError:
+                pass
+        if (
+            not isinstance(confirmation, dict)
+            or confirmation.get("approval_phrase") != "确认照片后期方案"
+            or not isinstance(confirmation.get("approved_by"), str)
+            or not confirmation["approved_by"].strip()
+            or confirmation.get("source_sha256") != source_sha
+            or confirmation.get("direction") != processing.get("direction")
+            or not isinstance(diagnosis, dict)
+            or confirmation.get("diagnosis_sha256") != diagnosis.get("sha256")
+            or recipe_sha is None
+            or confirmation.get("preservation_prompt_sha256") != recipe_sha
+            or approval_time is None
+            or approval_time.utcoffset() is None
+        ):
+            self.error(location, "photo-processing diagnosis, direction, and recipe lack explicit source-bound human confirmation")
+        if not isinstance(diagnosis, dict):
+            self.error(location, "photo-processing diagnosis evidence is missing")
+        else:
+            diagnosis_path = self.validate_relative_file(diagnosis.get("path"), f"{location}.photo_processing.diagnosis.path")
+            if diagnosis_path and diagnosis.get("sha256") != hashlib.sha256(diagnosis_path.read_bytes()).hexdigest():
+                self.error(location, "photo-processing diagnosis hash is stale")
+            elif diagnosis_path:
+                try:
+                    diagnosis_doc = json.loads(diagnosis_path.read_text(encoding="utf-8"))
+                except (OSError, UnicodeError, json.JSONDecodeError):
+                    diagnosis_doc = None
+                measurements = diagnosis_doc.get("measurements") if isinstance(diagnosis_doc, dict) else None
+                if not isinstance(diagnosis_doc, dict) or diagnosis_doc.get("source_sha256") != source_sha or not isinstance(measurements, dict) or not {"luminance", "clipping", "noise", "sharpness", "photo_type"}.issubset(measurements):
+                    self.error(location, "photo diagnosis must measure and bind the current source")
+        if not isinstance(processing.get("direction"), str) or not processing["direction"].strip() or not isinstance(processing.get("preservation_prompt"), str) or not processing["preservation_prompt"].strip():
+            self.error(location, "photo-processing direction and preservation prompt are required")
+        attempts = processing.get("attempts")
+        if not isinstance(attempts, list) or not attempts:
+            self.error(location, "photo-processing attempts must retain each result")
+        else:
+            brief = self.docs.get("brief.json", {})
+            budget = brief.get("capacity_budget", {}) if isinstance(brief, dict) else {}
+            retry_limit = budget.get("retry_limit_per_asset") if isinstance(budget, dict) else None
+            if isinstance(retry_limit, int) and len(attempts) - 1 > retry_limit:
+                self.error(location, "photo-processing attempts exceed retry_limit_per_asset")
+            accepted = []
+            seen_ids: set[str] = set()
+            seen_paths: set[str] = set()
+            for index, attempt in enumerate(attempts):
+                attempt_location = f"{location}.photo_processing.attempts[{index}]"
+                if not isinstance(attempt, dict):
+                    self.error(attempt_location, "photo-processing attempt must be an object")
+                    continue
+                call_id = attempt.get("call_id")
+                if not isinstance(call_id, str) or not call_id or call_id in seen_ids:
+                    self.error(attempt_location, "photo-processing call_id must be unique")
+                else:
+                    seen_ids.add(call_id)
+                if attempt.get("source_sha256") != source_sha or attempt.get("component_id") != asset.get("id"):
+                    self.error(attempt_location, "photo-processing attempt must bind this source and component")
+                if not isinstance(attempt.get("tool"), str) or not attempt["tool"].strip() or attempt.get("prompt_or_recipe") != processing.get("preservation_prompt"):
+                    self.error(attempt_location, "photo-processing attempt must retain its tool and approved preservation recipe")
+                relative = attempt.get("output_path")
+                if not isinstance(relative, str) or relative in seen_paths:
+                    self.error(attempt_location, "photo-processing output path must be unique")
+                else:
+                    seen_paths.add(relative)
+                    attempt_path = self.validate_relative_file(relative, f"{attempt_location}.output_path")
+                    if attempt_path and attempt.get("sha256") != hashlib.sha256(attempt_path.read_bytes()).hexdigest():
+                        self.error(attempt_location, "photo-processing attempt output hash is stale")
+                if attempt.get("status") == "accepted":
+                    accepted.append(attempt)
+                elif attempt.get("status") != "rejected":
+                    self.error(attempt_location, "photo-processing attempt status must be accepted or rejected")
+            if len(accepted) != 1 or accepted[0].get("output_path") != asset.get("output") or accepted[0].get("sha256") != asset.get("sha256"):
+                self.error(location, "one accepted photo-processing result must match the current output")
+        review = asset.get("photo_review")
+        if not isinstance(review, dict) or review.get("status") != "passed" or not isinstance(review.get("reviewer"), str) or not review["reviewer"].strip():
+            self.error(location, "postprocessed photo requires passed human source-vs-output review")
+            return
+        checks = review.get("checks")
+        for check in ("subject_identity", "architecture", "perspective", "key_scene_content", "no_factual_additions", "source_text_preserved"):
+            if not isinstance(checks, dict) or checks.get(check) is not True:
+                self.error(location, f"photo preservation check must pass: {check}")
+        if review.get("source_sha256") != source_sha or review.get("output_sha256") != asset.get("sha256"):
+            self.error(location, "photo review must bind the current source and output")
+        image_path = self.validate_relative_file(review.get("image_path"), f"{location}.photo_review.image_path")
+        if image_path and source_path and output_path:
+            if not image_path.is_relative_to((self.root / "reviews" / "photos").resolve()) or review.get("image_sha256") != hashlib.sha256(image_path.read_bytes()).hexdigest():
+                self.error(location, "photo comparison evidence path or hash is invalid")
+            else:
+                try:
+                    review_script = Path(__file__).resolve().with_name("render_photo_review.py")
+                    spec = importlib.util.spec_from_file_location("ai_presentation_photo_review", review_script)
+                    if spec is None or spec.loader is None:
+                        raise RuntimeError("cannot load photo comparison renderer")
+                    module = importlib.util.module_from_spec(spec)
+                    spec.loader.exec_module(module)
+                    expected = module.comparison_image(source_path, output_path)
+                    with module.Image.open(image_path) as actual:
+                        actual_rgb = actual.convert("RGB")
+                    if expected.size != actual_rgb.size or expected.tobytes() != actual_rgb.tobytes():
+                        self.error(location, "photo comparison image does not match current source and output")
+                except (ImportError, OSError, ValueError, RuntimeError) as exc:
+                    self.error(location, f"cannot verify photo comparison: {exc}")
+
     def validate_manifest(self) -> None:
         name = "asset-manifest.json"
         doc = self.docs.get(name)
@@ -2187,9 +3148,17 @@ class ProjectValidator:
             for asset in assets
             if isinstance(asset, dict) and str(asset.get("strategy", "")).startswith("generated-")
         ]
-        if isinstance(estimate, dict) and estimate.get("planned_generation_calls", 0) < len(generated_assets):
-            self.error(name, "planned_generation_calls is lower than generated asset count")
+        processed_photo_assets = [
+            asset for asset in assets
+            if isinstance(asset, dict) and asset.get("role") in PHOTO_ROLES
+            and str(asset.get("strategy", "")).startswith("postprocessed-")
+        ]
+        if isinstance(estimate, dict) and estimate.get("planned_generation_calls", 0) < len(generated_assets) + len(processed_photo_assets):
+            self.error(name, "planned_generation_calls is lower than generated and postprocessed asset count")
         actual_calls = 0
+        seen_generation_call_ids: set[str] = set()
+        seen_generation_output_paths: set[str] = set()
+        seen_asset_outputs: set[str] = set()
         style = self.docs.get("style-contract.json", {})
         run_state = self.docs.get("run-state.json", {})
         gates = run_state.get("gates", {}) if isinstance(run_state, dict) else {}
@@ -2209,7 +3178,7 @@ class ProjectValidator:
                 self.error(location, "must be an object")
                 continue
             role = asset.get("role")
-            if role in VISUAL_ROLES:
+            if role in PHOTO_ROLES or (role in VISUAL_ROLES and str(asset.get("strategy", "")).startswith("generated-")):
                 self.validate_visual_provider_provenance(
                     asset,
                     location,
@@ -2218,6 +3187,11 @@ class ProjectValidator:
                     concept_gate,
                     style_sha256,
                 )
+            if role in PHOTO_ROLES and str(asset.get("strategy", "")).startswith("postprocessed-"):
+                processing = asset.get("photo_processing")
+                attempts = processing.get("attempts") if isinstance(processing, dict) else None
+                if isinstance(attempts, list):
+                    actual_calls += len(attempts)
             slide_ids = asset.get("slide_ids")
             if slide_ids is None:
                 slide_ids = [asset.get("slide_id")] if asset.get("slide_id") else []
@@ -2231,8 +3205,10 @@ class ProjectValidator:
                 self.error(location, f"unknown or missing visual role '{role}'")
             if role in VISUAL_ROLES:
                 if role != "special-typography":
-                    if asset.get("contains_text") is not False:
+                    if role not in PHOTO_ROLES and asset.get("contains_text") is not False:
                         self.error(location, "visual asset requires explicit contains_text=false")
+                    if role in PHOTO_ROLES and type(asset.get("contains_text")) is not bool:
+                        self.error(location, "photo contains_text must explicitly describe incidental source text")
                     if asset.get("contains_data") is not False:
                         self.error(location, "visual asset requires explicit contains_data=false")
                     if asset.get("contains_data_encoding_marks") is not False:
@@ -2242,12 +3218,13 @@ class ProjectValidator:
                         )
                 if asset.get("editability") != "component-editable":
                     self.error(location, f"{role} requires editability 'component-editable'")
-                if asset.get("background_requirement") != "transparent":
-                    self.error(location, f"{role} must use a transparent background")
                 strategy = asset.get("strategy", "")
-                if not isinstance(strategy, str) or not strategy.endswith("transparent-png"):
-                    self.error(location, f"{role} strategy must end with 'transparent-png'")
-                if strategy.startswith("generated-") and self.reaches("assets"):
+                if role not in PHOTO_ROLES:
+                    if asset.get("background_requirement") != "transparent":
+                        self.error(location, f"{role} must use a transparent background")
+                    if not isinstance(strategy, str) or not strategy.endswith("transparent-png"):
+                        self.error(location, f"{role} strategy must end with 'transparent-png'")
+                if isinstance(strategy, str) and strategy.startswith("generated-") and self.asset_ready(asset):
                     attempts = asset.get("generation_attempts")
                     if not isinstance(attempts, int) or attempts < 1:
                         self.error(location, "generated asset requires positive generation_attempts")
@@ -2256,6 +3233,38 @@ class ProjectValidator:
                         retry_limit = budget.get("retry_limit_per_asset") if isinstance(budget, dict) else None
                         if isinstance(retry_limit, int) and attempts - 1 > retry_limit:
                             self.error(location, "generation_attempts exceeds retry_limit_per_asset")
+                    history = asset.get("generation_history")
+                    if not isinstance(history, list) or not history or len(history) != attempts:
+                        self.error(location, "generation_history must record every one-component call")
+                    else:
+                        accepted = []
+                        for call_index, call in enumerate(history):
+                            call_location = f"{location}.generation_history[{call_index}]"
+                            if not isinstance(call, dict):
+                                self.error(call_location, "generation call must be an object")
+                                continue
+                            call_id = call.get("call_id")
+                            if not isinstance(call_id, str) or not call_id or call_id in seen_generation_call_ids:
+                                self.error(call_location, "generation call_id must be unique and non-empty")
+                            else:
+                                seen_generation_call_ids.add(call_id)
+                            if call.get("component_id") != asset.get("id"):
+                                self.error(call_location, "generation call must request exactly this one component")
+                            if call.get("status") == "accepted":
+                                accepted.append(call)
+                            elif call.get("status") != "rejected":
+                                self.error(call_location, "generation call status must be accepted or rejected")
+                            if not isinstance(call.get("output_path"), str) or not isinstance(call.get("sha256"), str):
+                                self.error(call_location, "generation call must retain its output path and hash")
+                            else:
+                                if call["output_path"] in seen_generation_output_paths:
+                                    self.error(call_location, "generation attempt output path must be immutable and unique")
+                                seen_generation_output_paths.add(call["output_path"])
+                                call_output = self.validate_relative_file(call["output_path"], f"{call_location}.output_path")
+                                if call_output and hashlib.sha256(call_output.read_bytes()).hexdigest() != call["sha256"]:
+                                    self.error(call_location, "generation call output hash is stale")
+                        if len(accepted) != 1 or accepted[0].get("output_path") != asset.get("output") or accepted[0].get("sha256") != asset.get("sha256"):
+                            self.error(location, "one accepted generation call must match the current asset output")
             if role in {"table-shell", "chart-shell"}:
                 if asset.get("content_policy") != "blank-fill-slots":
                     self.error(location, f"{role} requires content_policy 'blank-fill-slots'")
@@ -2279,7 +3288,7 @@ class ProjectValidator:
                     self.error(location, f"{role} fill_slot_ids must be safe string ids")
                 elif len(set(fill_slot_ids)) != len(fill_slot_ids):
                     self.error(location, f"{role} fill_slot_ids must be unique")
-            elif role != "special-typography" and asset.get("contains_text"):
+            elif role not in PHOTO_ROLES | {"special-typography"} and asset.get("contains_text"):
                 self.error(location, "ordinary text must remain a fill slot")
             if role == "special-typography":
                 if not asset.get("exact_text"):
@@ -2312,14 +3321,21 @@ class ProjectValidator:
                         self.error(location, "declared source_sha256 does not match source file")
             else:
                 source_path = None
-            if self.reaches("assets"):
+            if self.asset_ready(asset):
                 required_fields = ["output", "sha256", "status"]
                 if role in VISUAL_ROLES:
-                    required_fields.extend(["prompt", "alpha"])
+                    if role != "ordinary-photo":
+                        required_fields.append("alpha")
+                    if str(asset.get("strategy", "")).startswith("generated-"):
+                        required_fields.append("prompt")
                 for field in required_fields:
                     if not asset.get(field):
                         self.error(location, f"missing '{field}' from assets stage")
                 output = asset.get("output")
+                if isinstance(output, str):
+                    if output in seen_asset_outputs:
+                        self.error(location, "asset output path must be unique; reuse one component ID instead")
+                    seen_asset_outputs.add(output)
                 if output:
                     output_path = self.validate_relative_file(output, f"{location}.output")
                 else:
@@ -2332,20 +3348,25 @@ class ProjectValidator:
                     if actual_sha.lower() != str(sha256).lower():
                         self.error(location, "declared SHA-256 does not match the output file")
                 if role in VISUAL_ROLES:
-                    alpha = asset.get("alpha")
-                    if not isinstance(alpha, dict) or alpha.get("has_alpha") is not True:
-                        self.error(location, "alpha.has_alpha must be true")
-                    if output_path and output_path.is_file():
-                        png_ok, ratio, clear_border, visible = self.inspect_png(output_path)
-                        if not png_ok:
-                            self.error(location, "output must be a valid PNG file")
-                        elif ratio < 0.05 or not clear_border or not visible:
-                            self.error(location, "PNG must have meaningful transparent padding and visible content")
-                        declared_ratio = alpha.get("transparent_pixel_ratio") if isinstance(alpha, dict) else None
-                        if not isinstance(declared_ratio, (int, float)):
-                            self.error(location, "alpha.transparent_pixel_ratio must be numeric")
-                        elif abs(float(declared_ratio) - ratio) > 0.02:
-                            self.error(location, "declared transparent_pixel_ratio differs from decoded pixels")
+                    if role != "ordinary-photo":
+                        alpha = asset.get("alpha")
+                        if not isinstance(alpha, dict) or alpha.get("has_alpha") is not True:
+                            self.error(location, "alpha.has_alpha must be true")
+                        if output_path and output_path.is_file():
+                            png_ok, ratio, clear_border, visible = self.inspect_png(output_path)
+                            if not png_ok:
+                                self.error(location, "output must be a valid PNG file")
+                            elif ratio < 0.05 or not clear_border or not visible:
+                                self.error(location, "PNG must have meaningful transparent padding and visible content")
+                            declared_ratio = alpha.get("transparent_pixel_ratio") if isinstance(alpha, dict) else None
+                            if not isinstance(declared_ratio, (int, float)):
+                                self.error(location, "alpha.transparent_pixel_ratio must be numeric")
+                            elif abs(float(declared_ratio) - ratio) > 0.02:
+                                self.error(location, "declared transparent_pixel_ratio differs from decoded pixels")
+                    self.validate_photo_asset(asset, location, output_path)
+                    self.validate_asset_isolation(asset, location, output_path)
+                    if asset.get("status") != "approved":
+                        self.error(location, "visual asset status must be approved after isolation review")
                 if self.reaches("release") and asset.get("status") != "approved":
                     self.error(location, "asset status must be 'approved' before release")
                 if role in TRUTH_SENSITIVE_ROLES and output_path and source_path:
@@ -2357,12 +3378,12 @@ class ProjectValidator:
                         source_path.read_bytes()
                     ).digest():
                         self.error(location, "preserved output must match its approved source exactly")
-        if self.reaches("assets"):
+        if self.reaches("pilot"):
             call_limit = budget.get("generation_call_limit") if isinstance(budget, dict) else None
             if isinstance(call_limit, int) and actual_calls > call_limit:
                 self.error(name, "actual generation calls exceed generation_call_limit")
             reserved_retries = estimate.get("reserved_retries", 0) if isinstance(estimate, dict) else 0
-            actual_retries = actual_calls - len(generated_assets)
+            actual_retries = actual_calls - len(generated_assets) - len(processed_photo_assets)
             if self.reaches("release") and actual_retries > reserved_retries:
                 self.error(name, "actual retries exceed the approved reserved_retries")
 
@@ -2408,6 +3429,23 @@ class ProjectValidator:
         if "pptx" in delivery.get("formats", []) and not doc.get("backend"):
             self.error(name, "backend is required when PPTX delivery is requested")
         if "pptx" in delivery.get("formats", []):
+            if doc.get("status") not in {"structure-assembled-visual-review-pending", "visual-review-passed"}:
+                self.error(name, "assembly status must declare pending or passed visual review")
+            elif self.reaches("qa") and doc.get("status") != "visual-review-passed":
+                self.error(name, "assembly visual review must pass before QA")
+            if self.quality_profile() == "production" and doc.get("render_backend") != "powerpoint":
+                self.error(name, "production assembly requires actual PowerPoint render evidence")
+            input_hashes = doc.get("input_sha256")
+            for source_name in ("deck-spec.json", "scene-graph.json", "asset-manifest.json", "style-contract.json"):
+                source_path = self.root / source_name
+                if not source_path.is_file() or not isinstance(input_hashes, dict) or input_hashes.get(source_name) != hashlib.sha256(source_path.read_bytes()).hexdigest():
+                    self.error(name, f"assembly source is stale: {source_name}")
+            batch_override_path = self.root / "assembly-style-overrides-batch.json"
+            if batch_override_path.is_file() and (
+                not isinstance(input_hashes, dict)
+                or input_hashes.get(batch_override_path.name) != hashlib.sha256(batch_override_path.read_bytes()).hexdigest()
+            ):
+                self.error(name, "assembly source is stale: assembly-style-overrides-batch.json")
             pptx_parts = [slide.get("pptx_part") for slide in slides if isinstance(slide, dict)]
             if any(not value for value in pptx_parts) or len(pptx_parts) != len(set(pptx_parts)):
                 self.error(name, "each PPTX slide requires a unique pptx_part")
@@ -2425,7 +3463,479 @@ class ProjectValidator:
             actual_sha = hashlib.sha256(output_path.read_bytes()).hexdigest()
             if declared_sha != actual_sha:
                 self.error(name, "PPTX SHA-256 does not match the output file")
+            renders = doc.get("renders")
+            if not isinstance(renders, list) or len(renders) != len(slides):
+                self.error(name, "every assembled slide needs a full-size rendered image")
+            else:
+                for index, record in enumerate(renders):
+                    render_location = f"{name}.renders[{index}]"
+                    if not isinstance(record, dict) or record.get("pptx_sha256") != actual_sha:
+                        self.error(render_location, "render must bind the current PPTX hash")
+                        continue
+                    render_path = self.validate_relative_file(record.get("path"), f"{render_location}.path")
+                    if render_path:
+                        if not render_path.is_relative_to((self.root / "reviews" / "assembly").resolve()) or record.get("sha256") != hashlib.sha256(render_path.read_bytes()).hexdigest():
+                            self.error(render_location, "render path or hash is invalid")
+                        else:
+                            try:
+                                from PIL import Image
+                                with Image.open(render_path) as image:
+                                    if image.format != "PNG" or image.size != (1920, 1080):
+                                        self.error(render_location, "render must be a full-size 1920x1080 PNG")
+                                    image.verify()
+                            except (ImportError, OSError, ValueError) as exc:
+                                self.error(render_location, f"render cannot be decoded: {exc}")
             self.validate_pptx_content(output_path)
+            self.validate_object_level_assembly(output_path)
+
+    def validate_object_level_assembly(self, path: Path) -> None:
+        """Check that the PPTX itself still contains every independently editable instance."""
+        location = "assembly-map.json.output"
+        try:
+            from pptx import Presentation
+            from pptx.dml.color import RGBColor
+            from pptx.enum.shapes import MSO_SHAPE_TYPE
+            from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
+            presentation = Presentation(path)
+        except (ImportError, OSError, ValueError, KeyError, zipfile.BadZipFile) as exc:
+            self.error(location, f"cannot inspect editable PPTX objects: {exc}")
+            return
+        deck = self.docs.get("deck-spec.json", {})
+        scene = self.docs.get("scene-graph.json", {})
+        manifest = self.docs.get("asset-manifest.json", {})
+        assembly = self.docs.get("assembly-map.json", {})
+        style = self.docs.get("style-contract.json", {})
+        override_path = self.root / "assembly-style-overrides.json"
+        try:
+            style_overrides = json.loads(override_path.read_text(encoding="utf-8")) if override_path.is_file() else {}
+            batch_override_path = self.root / "assembly-style-overrides-batch.json"
+            if batch_override_path.is_file():
+                batch_overrides = json.loads(batch_override_path.read_text(encoding="utf-8"))
+                style_overrides.setdefault("slides", {}).update(batch_overrides.get("slides", {}))
+        except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+            self.error(location, f"cannot read assembly text-format overrides: {exc}")
+            style_overrides = {}
+        if not all(isinstance(doc, dict) for doc in (deck, scene, manifest, assembly)):
+            return
+        semantic_system = style.get("semantic_system", {}) if isinstance(style, dict) else {}
+        text_roles = semantic_system.get("text_roles", {}) if isinstance(semantic_system, dict) else {}
+        frame_roles = semantic_system.get("frame_roles", {}) if isinstance(semantic_system, dict) else {}
+        deck_slides = [slide for slide in deck.get("slides", []) if isinstance(slide, dict)]
+        scene_slides = {slide.get("slide_id"): slide for slide in scene.get("slides", []) if isinstance(slide, dict)}
+        assembly_slides = {slide.get("slide_id"): slide for slide in assembly.get("slides", []) if isinstance(slide, dict)}
+        assets = {asset.get("id"): asset for asset in manifest.get("assets", []) if isinstance(asset, dict)}
+        if len(presentation.slides) != len(deck_slides):
+            self.error(location, "editable PPTX slide count differs from deck-spec")
+            return
+        for slide_index, (slide, deck_slide) in enumerate(zip(presentation.slides, deck_slides), start=1):
+            slide_id = deck_slide.get("id")
+            slide_location = f"{location}.slide[{slide_index}]"
+            scene_slide = scene_slides.get(slide_id, {})
+            assembled = assembly_slides.get(slide_id, {})
+            try:
+                expected_notes = speaker_notes_text(deck_slide)
+            except ValueError as exc:
+                self.error(slide_location, str(exc))
+            else:
+                notes_frame = slide.notes_slide.notes_text_frame if slide.has_notes_slide else None
+                actual_notes = notes_frame.text if notes_frame is not None else ""
+                if actual_notes != expected_notes:
+                    self.error(slide_location, "PPTX speaker notes differ from the current deck spec")
+                expected_notes_sha = hashlib.sha256(expected_notes.encode("utf-8")).hexdigest() if expected_notes else None
+                if expected_notes or "speaker_notes_sha256" in assembled:
+                    if assembled.get("speaker_notes_sha256") != expected_notes_sha:
+                        self.error(slide_location, "assembly speaker notes hash differs from the current deck spec")
+            slide_overrides = style_overrides.get("slides", {}).get(slide_id, {}) if isinstance(style_overrides, dict) else {}
+            if slide_overrides and slide_overrides.get("concept_sha256") != hashlib.sha256((self.root / deck_slide.get("concept_path", "")).read_bytes()).hexdigest():
+                self.error(slide_location, "text-format overrides are stale against the approved concept")
+            if not isinstance(scene_slide, dict) or not isinstance(assembled, dict):
+                self.error(slide_location, "missing current scene or assembly slide")
+                continue
+            elements = scene_slide.get("elements", [])
+            if not isinstance(elements, list):
+                self.error(slide_location, "scene elements must be a list")
+                continue
+            if any(type(item.get("z")) is not int for item in elements if isinstance(item, dict)):
+                self.error(slide_location, "scene z-order is invalid")
+                continue
+            ordered = sorted((item for item in elements if isinstance(item, dict)), key=lambda item: (item["z"], str(item.get("instance_id", ""))))
+            slots = [item for item in deck_slide.get("fill_slots", []) if isinstance(item, dict)]
+            expected_names = [f"APW:visual:{item.get('instance_id')}:{item.get('component_id')}" for item in ordered]
+            expected_names.extend(f"APW:slot:{slot.get('id')}" for slot in slots)
+            actual_names = [shape.name for shape in slide.shapes]
+            if actual_names != expected_names:
+                self.error(slide_location, "PPTX object count, identity, or z-order differs from scene graph and fill slots")
+                continue
+            object_rows = assembled.get("objects")
+            slot_rows = assembled.get("slots")
+            if not isinstance(object_rows, list) or len(object_rows) != len(ordered) or not isinstance(slot_rows, list) or len(slot_rows) != len(slots):
+                self.error(slide_location, "assembly object and slot records are incomplete")
+                continue
+            for index, element in enumerate(ordered):
+                shape = slide.shapes[index]
+                asset = assets.get(element.get("component_id"))
+                row = object_rows[index]
+                item_location = f"{slide_location}.object[{index}]"
+                if shape.shape_type != MSO_SHAPE_TYPE.PICTURE or not isinstance(asset, dict) or not isinstance(row, dict):
+                    self.error(item_location, "visual instance must be a separate PPTX picture object")
+                    continue
+                expected_row = {
+                    "instance_id": element.get("instance_id"), "component_id": element.get("component_id"),
+                    "name": shape.name, "bbox": element.get("bbox"), "z": element.get("z"),
+                    "rotation": element.get("rotation", 0), "asset_sha256": asset.get("sha256"),
+                }
+                placement_crop = asset.get("placement_crop")
+                if isinstance(placement_crop, dict):
+                    expected_row["placement_crop"] = placement_crop
+                    if any(
+                        type(placement_crop.get(side)) not in {int, float}
+                        or not 0 <= placement_crop[side] < 0.45
+                        or abs(getattr(shape, f"crop_{side}") - placement_crop[side]) > 0.0001
+                        for side in ("left", "top", "right", "bottom")
+                    ) or placement_crop["left"] + placement_crop["right"] >= 0.95 or placement_crop["top"] + placement_crop["bottom"] >= 0.95:
+                        self.error(item_location, "PPTX image crop differs from the approved asset placement")
+                if row != expected_row:
+                    self.error(item_location, "assembly object record is stale against scene graph or asset")
+                if hashlib.sha256(shape.image.blob).hexdigest() != asset.get("sha256"):
+                    self.error(item_location, "PPTX picture bytes do not match its approved component")
+                self.validate_pptx_shape_geometry(shape, element.get("bbox"), presentation, item_location)
+                if abs(float(shape.rotation) - float(element.get("rotation", 0))) > 0.01:
+                    self.error(item_location, "PPTX object rotation differs from scene graph")
+            regions = {
+                region.get("fill_slot_id"): region for region in deck_slide.get("readability", {}).get("text_regions", [])
+                if isinstance(region, dict)
+            }
+            for index, slot in enumerate(slots):
+                shape = slide.shapes[len(ordered) + index]
+                row = slot_rows[index]
+                slot_location = f"{slide_location}.slot[{index}]"
+                if shape.shape_type == MSO_SHAPE_TYPE.PICTURE or not shape.has_text_frame or not isinstance(row, dict):
+                    self.error(slot_location, "fill slot must be a native editable text box")
+                    continue
+                content = slot.get("content", "")
+                if not content and regions.get(slot.get("id"), {}).get("role") == "action-title":
+                    content = deck_slide.get("title", "")
+                if slot.get("kind") == "ordinary-data" and content:
+                    self.error(slot_location, "data fill slot must stay blank")
+                slot_format = slide_overrides.get("slots", {}).get(slot.get("id"), slot.get("format"))
+                display_content = slot_format.get("display_prefix", "") + content if isinstance(slot_format, dict) else content
+                expected_row = {
+                    "id": slot.get("id"), "kind": slot.get("kind"), "name": shape.name,
+                    "bbox": slot.get("bbox"), "content": display_content,
+                    "font_pt": regions.get(slot.get("id"), {}).get("planned_font_pt", 20),
+                }
+                font_role = regions.get(slot.get("id"), {}).get("font_role")
+                font_token = text_roles.get(font_role) if isinstance(text_roles, dict) and isinstance(font_role, str) else None
+                if isinstance(font_token, dict):
+                    expected_row["font_role"] = font_role
+                if isinstance(slot_format, dict):
+                    expected_row["format"] = slot_format
+                    expected_row["font_pt"] = slot_format.get("font_pt", expected_row["font_pt"])
+                if row != expected_row or shape.text != display_content:
+                    self.error(slot_location, "PPTX editable text differs from approved fill-slot content")
+                self.validate_pptx_shape_geometry(shape, slot.get("bbox"), presentation, slot_location)
+                paragraph = shape.text_frame.paragraphs[0]
+                expected_font = expected_row["font_pt"]
+                if paragraph.font.size is None or abs(paragraph.font.size.pt - expected_font) > 0.1:
+                    self.error(slot_location, "PPTX text size differs from the readability plan")
+                if isinstance(font_token, dict):
+                    if paragraph.font.name != font_token.get("font_family"):
+                        self.error(slot_location, "PPTX font family differs from semantic text role")
+                    expected_bold = slot_format.get("bold", font_token.get("bold")) if isinstance(slot_format, dict) else font_token.get("bold")
+                    if paragraph.font.bold is not expected_bold:
+                        self.error(slot_location, "PPTX font weight differs from semantic text role")
+                    expected_color = slot_format.get("color", font_token.get("color")) if isinstance(slot_format, dict) else font_token.get("color")
+                    try:
+                        actual_color = paragraph.font.color.rgb
+                    except (AttributeError, TypeError, ValueError):
+                        actual_color = None
+                    if not isinstance(expected_color, str) or actual_color != RGBColor.from_string(expected_color[1:]):
+                        self.error(slot_location, "PPTX font color differs from semantic text role")
+                if isinstance(slot_format, dict) and "align" in slot_format:
+                    alignment = {"left": PP_ALIGN.LEFT, "center": PP_ALIGN.CENTER, "right": PP_ALIGN.RIGHT}.get(slot_format["align"])
+                    if alignment is None or paragraph.alignment != alignment:
+                        self.error(slot_location, "PPTX text alignment differs from the slot format")
+                if isinstance(slot_format, dict) and "vertical_align" in slot_format:
+                    vertical = {"top": MSO_ANCHOR.TOP, "middle": MSO_ANCHOR.MIDDLE,
+                                "bottom": MSO_ANCHOR.BOTTOM}.get(slot_format["vertical_align"])
+                    if vertical is None or shape.text_frame.vertical_anchor != vertical:
+                        self.error(slot_location, "PPTX text vertical alignment differs from the slot format")
+                rich_runs = slot_format.get("runs") if isinstance(slot_format, dict) else None
+                if rich_runs is not None:
+                    if not isinstance(rich_runs, list) or len(paragraph.runs) != len(rich_runs) or any(
+                        not isinstance(part, dict) or run.text != part.get("text")
+                        for run, part in zip(paragraph.runs, rich_runs)
+                    ):
+                        self.error(slot_location, "PPTX rich text runs differ from the approved text")
+                    else:
+                        for run, part in zip(paragraph.runs, rich_runs):
+                            expected_run_color = part.get("color", slot_format.get("color", font_token.get("color") if isinstance(font_token, dict) else "#F8FAFC"))
+                            if (run.font.size is None or abs(run.font.size.pt - part.get("font_pt", expected_font)) > 0.1
+                                or run.font.bold is not part.get("bold", expected_bold if isinstance(font_token, dict) else None)
+                                or run.font.color.rgb != RGBColor.from_string(expected_run_color[1:])):
+                                self.error(slot_location, "PPTX rich text styling differs from approved assembly formatting")
+                if slot.get("kind") == "ordinary-data" and isinstance(frame_roles, dict):
+                    frame_role = slot.get("frame_role")
+                    frame_token = frame_roles.get(frame_role) if isinstance(frame_role, str) else None
+                    if isinstance(frame_token, dict) and isinstance(frame_token.get("color"), str):
+                        try:
+                            actual_frame_color = shape.line.color.rgb
+                        except (AttributeError, TypeError, ValueError):
+                            actual_frame_color = None
+                        if actual_frame_color != RGBColor.from_string(frame_token["color"][1:]):
+                            self.error(slot_location, "PPTX data frame color differs from semantic frame role")
+
+    def validate_pptx_shape_geometry(self, shape: Any, bbox: Any, presentation: Any, location: str) -> None:
+        if not isinstance(bbox, list) or len(bbox) != 4 or any(type(value) not in {float, int} for value in bbox):
+            self.error(location, "approved bbox is invalid")
+            return
+        expected = [round(bbox[0] * presentation.slide_width), round(bbox[1] * presentation.slide_height),
+                    round(bbox[2] * presentation.slide_width), round(bbox[3] * presentation.slide_height)]
+        actual = [shape.left, shape.top, shape.width, shape.height]
+        if any(abs(current - target) > 2 for current, target in zip(actual, expected)):
+            self.error(location, "PPTX object geometry differs from current scene or fill-slot bbox")
+
+    def pilot_bindings(self) -> dict[str, Any] | None:
+        """Bind only the trial slide, so later work on other slides does not stale approval."""
+        plan = self.docs.get("pilot-plan.json", {})
+        deck = self.docs.get("deck-spec.json", {})
+        scene = self.docs.get("scene-graph.json", {})
+        decomposition = self.docs.get("decomposition-map.json", {})
+        manifest = self.docs.get("asset-manifest.json", {})
+        if not all(isinstance(doc, dict) for doc in (plan, deck, scene, decomposition, manifest)):
+            return None
+        slide_id = plan.get("slide_id")
+        deck_slide = next((slide for slide in deck.get("slides", []) if isinstance(slide, dict) and slide.get("id") == slide_id), None)
+        scene_slide = next((slide for slide in scene.get("slides", []) if isinstance(slide, dict) and slide.get("slide_id") == slide_id), None)
+        map_slide = next((slide for slide in decomposition.get("slides", []) if isinstance(slide, dict) and slide.get("slide_id") == slide_id), None)
+        if not all(isinstance(item, dict) for item in (deck_slide, scene_slide, map_slide)):
+            return None
+        raw_ids = [item.get("component_id") for item in scene_slide.get("elements", []) if isinstance(item, dict)]
+        if any(not isinstance(item, str) for item in raw_ids):
+            return None
+        component_ids = sorted(set(raw_ids))
+        if plan.get("component_ids") != component_ids:
+            return None
+        assets = {asset.get("id"): asset for asset in manifest.get("assets", []) if isinstance(asset, dict)}
+        if any(component_id not in assets for component_id in component_ids):
+            return None
+        concept_path = self.validate_relative_file(deck_slide.get("concept_path"), "pilot-plan.json.concept_path")
+        if concept_path is None:
+            return None
+        plan_path = self.root / "pilot-plan.json"
+        style_path = self.root / "style-contract.json"
+        override_path = self.root / "assembly-style-overrides.json"
+        return {
+            "pilot_plan_sha256": hashlib.sha256(plan_path.read_bytes()).hexdigest(),
+            "slide_id": slide_id,
+            "concept_sha256": hashlib.sha256(concept_path.read_bytes()).hexdigest(),
+            "deck_slide_sha256": value_sha256(deck_slide),
+            "scene_slide_sha256": value_sha256(scene_slide),
+            "decomposition_slide_sha256": value_sha256(map_slide),
+            "style_sha256": hashlib.sha256(style_path.read_bytes()).hexdigest() if style_path.is_file() else None,
+            "assembly_style_overrides_sha256": hashlib.sha256(override_path.read_bytes()).hexdigest() if override_path.is_file() else None,
+            "assets": {component_id: value_sha256(assets[component_id]) for component_id in component_ids},
+        }
+
+    def validate_pilot(self) -> None:
+        plan = self.docs.get("pilot-plan.json", {})
+        location = "pilot-plan.json"
+        if not isinstance(plan, dict):
+            return
+        if not isinstance(plan.get("selection_rationale"), str) or not plan["selection_rationale"].strip():
+            self.error(location, "selection_rationale must explain why this is the representative busy slide")
+        bindings = self.pilot_bindings()
+        if bindings is None:
+            self.error(location, "slide, component IDs, or current concept are inconsistent")
+            return
+        slide_id = bindings["slide_id"]
+        scene = self.docs.get("scene-graph.json", {})
+        scene_slide = next((item for item in scene.get("slides", []) if isinstance(item, dict) and item.get("slide_id") == slide_id), {})
+        deck = self.docs.get("deck-spec.json", {})
+        deck_slide = next((item for item in deck.get("slides", []) if isinstance(item, dict) and item.get("id") == slide_id), {})
+        if len(scene_slide.get("elements", [])) < 2 or not deck_slide.get("fill_slots"):
+            self.error(location, "pilot needs multiple visual instances and actual editable text/data space")
+        boxes = [item.get("bbox") for item in scene_slide.get("elements", []) if isinstance(item, dict)]
+        has_overlap = any(
+            isinstance(first, list) and isinstance(second, list) and len(first) == len(second) == 4
+            and all(type(value) in {int, float} for value in first + second)
+            and first[0] < second[0] + second[2] and second[0] < first[0] + first[2]
+            and first[1] < second[1] + second[3] and second[1] < first[1] + first[3]
+            for index, first in enumerate(boxes) for second in boxes[index + 1:]
+        )
+        if not has_overlap:
+            self.error(location, "representative pilot must exercise visual overlap/occlusion")
+        if not self.require_pilot_review:
+            return
+        review_path = self.root / "pilot-review.json"
+        if not review_path.is_file():
+            self.error("pilot-review.json", "current human trial-assembly approval is missing")
+            return
+        try:
+            review = json.loads(review_path.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+            self.error("pilot-review.json", f"cannot read valid UTF-8 JSON ({exc})")
+            return
+        if not isinstance(review, dict):
+            self.error("pilot-review.json", "must be an object")
+            return
+        if review.get("bindings") != bindings:
+            self.error("pilot-review.json", "trial approval is stale against the current concept, plan, decomposition, scene, style, or selected assets")
+        if review.get("slide_id") != slide_id:
+            self.error("pilot-review.json", "slide_id differs from the pilot plan")
+        run_state = self.docs.get("run-state.json", {})
+        local_qa = REVIEW_POLICY.local_agent_review(run_state, review, status="agent-verified-local")
+        human_approval = review.get("status") == "approved" and review.get("approval_phrase") == "确认单页试拼"
+        actor_error = REVIEW_POLICY.review_actor_error(run_state, review)
+        if actor_error:
+            self.error("pilot-review.json", actor_error)
+        if not (local_qa or human_approval):
+            self.error("pilot-review.json", "trial needs current human approval or user-authorized local agent QA")
+        if review.get("status") == "rejected":
+            defects = review.get("defects")
+            if not isinstance(defects, list) or not defects:
+                self.error("pilot-review.json", "rejection needs object/page, evidence, owner stage, and local repair entry")
+            else:
+                for index, defect in enumerate(defects):
+                    if not isinstance(defect, dict) or not (defect.get("component_id") or defect.get("slide_id")) or not defect.get("evidence") or defect.get("severity") not in {"blocker", "major", "minor"} or defect.get("owner_stage") not in {"concept", "inventory", "assets", "assembly"} or not defect.get("repair_entry"):
+                        self.error(f"pilot-review.json.defects[{index}]", "rejection defect needs object/page, evidence, owner stage, and local repair entry")
+                    elif self.validate_relative_file(defect["evidence"], f"pilot-review.json.defects[{index}].evidence") is None:
+                        self.error(f"pilot-review.json.defects[{index}]", "rejection evidence must be a current project file")
+        if not isinstance(review.get("reviewer"), str) or not review["reviewer"].strip():
+            self.error("pilot-review.json", "reviewer is required")
+        try:
+            reviewed_at = datetime.fromisoformat(review.get("reviewed_at", ""))
+            if reviewed_at.utcoffset() is None:
+                raise ValueError("timezone missing")
+        except (TypeError, ValueError):
+            self.error("pilot-review.json", "reviewed_at must be timezone-aware ISO-8601")
+        required_checks = {"single_object", "no_missing_objects", "placement", "seams", "color_and_z", "text_and_image_space", "truth_labels"}
+        checks = review.get("checks")
+        if not isinstance(checks, dict) or any(checks.get(key) is not True for key in required_checks):
+            self.error("pilot-review.json", f"all trial checks must pass: {sorted(required_checks)}")
+        if review.get("defects") != []:
+            self.error("pilot-review.json", "unresolved defects block batch production")
+        assembly_path = self.validate_relative_file(review.get("assembly_map_path"), "pilot-review.json.assembly_map_path")
+        if assembly_path is None:
+            return
+        try:
+            pilot_assembly = json.loads(assembly_path.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+            self.error("pilot-review.json", f"pilot assembly map is invalid ({exc})")
+            return
+        if not isinstance(pilot_assembly, dict) or pilot_assembly.get("pilot_bindings") != bindings:
+            self.error("pilot-review.json", "pilot PPTX source bindings are stale")
+            return
+        if self.quality_profile() == "production" and pilot_assembly.get("render_backend") != "powerpoint":
+            self.error("pilot-review.json", "production trial needs a render from the verified PowerPoint backend")
+        output_path = self.validate_relative_file(pilot_assembly.get("output"), "pilot-review.json.pptx")
+        if output_path is None:
+            return
+        output_sha = hashlib.sha256(output_path.read_bytes()).hexdigest()
+        if output_sha != pilot_assembly.get("sha256") or output_sha != review.get("pptx_sha256"):
+            self.error("pilot-review.json", "trial PPTX hash is stale")
+        render_rows = pilot_assembly.get("renders")
+        if not isinstance(render_rows, list) or len(render_rows) != 1:
+            self.error("pilot-review.json", "actual PPTX must have one full-size rendered trial slide")
+            return
+        render_row = render_rows[0]
+        if not isinstance(render_row, dict):
+            self.error("pilot-review.json", "trial render record must be an object")
+            return
+        render_path = self.validate_relative_file(render_row.get("path"), "pilot-review.json.render")
+        if render_path is None:
+            return
+        if not render_path.is_relative_to((self.root / "reviews" / "pilot").resolve()):
+            self.error("pilot-review.json", "trial render must be under reviews/pilot")
+        try:
+            from PIL import Image
+            with Image.open(render_path) as image:
+                if image.format != "PNG" or image.size != (1920, 1080):
+                    self.error("pilot-review.json", "actual PPTX render must be 1920x1080 PNG")
+        except (ImportError, OSError) as exc:
+            self.error("pilot-review.json", f"actual PPTX render cannot be decoded ({exc})")
+        if render_row.get("pptx_sha256") != output_sha or render_row.get("sha256") != hashlib.sha256(render_path.read_bytes()).hexdigest():
+            self.error("pilot-review.json", "render is stale against the trial PPTX")
+        evidence = review.get("evidence")
+        if not isinstance(evidence, dict):
+            self.error("pilot-review.json", "full-size review evidence is missing")
+        else:
+            for key in ("concept", "render", "packet"):
+                record = evidence.get(key)
+                path = self.validate_relative_file(record.get("path") if isinstance(record, dict) else None, f"pilot-review.json.evidence.{key}")
+                if path and record.get("sha256") != hashlib.sha256(path.read_bytes()).hexdigest():
+                    self.error("pilot-review.json", f"{key} evidence hash is stale")
+            concept_evidence = evidence.get("concept") if isinstance(evidence.get("concept"), dict) else {}
+            render_evidence = evidence.get("render") if isinstance(evidence.get("render"), dict) else {}
+            if concept_evidence.get("sha256") != bindings["concept_sha256"] or render_evidence.get("sha256") != review.get("render_sha256"):
+                self.error("pilot-review.json", "concept or render evidence is not the reviewed subject")
+            isolation = evidence.get("isolation")
+            manifest = self.docs.get("asset-manifest.json", {})
+            assets = {item.get("id"): item for item in manifest.get("assets", []) if isinstance(item, dict)}
+            if not isinstance(isolation, list) or any(not isinstance(item, dict) for item in isolation) or {item.get("component_id") for item in isolation if isinstance(item, dict)} != set(bindings["assets"]):
+                self.error("pilot-review.json", "one isolation sheet is required for every pilot asset")
+            else:
+                for item in isolation:
+                    component_id = item.get("component_id")
+                    current = assets[component_id].get("isolation_review", {})
+                    for field in ("image", "packet"):
+                        path_key, sha_key = f"{field}_path", f"{field}_sha256"
+                        if item.get(path_key) != current.get(path_key) or item.get(sha_key) != current.get(sha_key):
+                            self.error("pilot-review.json", f"{component_id} isolation evidence is stale")
+                        path = self.validate_relative_file(item.get(path_key), f"pilot-review.json.isolation.{component_id}.{field}")
+                        if path and item.get(sha_key) != hashlib.sha256(path.read_bytes()).hexdigest():
+                            self.error("pilot-review.json", f"{component_id} isolation evidence hash is stale")
+            for key, size in (("side_by_side", (3840, 1080)), ("overlay", (1920, 1080))):
+                record = evidence.get(key)
+                path = self.validate_relative_file(record.get("path") if isinstance(record, dict) else None, f"pilot-review.json.evidence.{key}")
+                if path is None:
+                    continue
+                if record.get("sha256") != hashlib.sha256(path.read_bytes()).hexdigest():
+                    self.error("pilot-review.json", f"{key} evidence hash is stale")
+                try:
+                    from PIL import Image
+                    with Image.open(path) as image:
+                        if image.format != "PNG" or image.size != size:
+                            self.error("pilot-review.json", f"{key} must be a 100%-scale PNG")
+                except (ImportError, OSError) as exc:
+                    self.error("pilot-review.json", f"{key} cannot be decoded ({exc})")
+        if review.get("render_sha256") != hashlib.sha256(render_path.read_bytes()).hexdigest():
+            self.error("pilot-review.json", "reviewed render hash is stale")
+        if isinstance(evidence, dict):
+            side_record = evidence.get("side_by_side")
+            overlay_record = evidence.get("overlay")
+            side_path = self.root / side_record["path"] if isinstance(side_record, dict) and isinstance(side_record.get("path"), str) else None
+            overlay_path = self.root / overlay_record["path"] if isinstance(overlay_record, dict) and isinstance(overlay_record.get("path"), str) else None
+            concept_record = evidence.get("concept")
+            concept_path = self.root / concept_record["path"] if isinstance(concept_record, dict) and isinstance(concept_record.get("path"), str) else None
+            if all(path is not None and path.is_file() and path.resolve().is_relative_to(self.root.resolve()) for path in (side_path, overlay_path, concept_path)):
+                try:
+                    from PIL import Image
+                    with Image.open(concept_path) as original, Image.open(render_path) as rendered_original, Image.open(side_path) as side_original, Image.open(overlay_path) as overlay_original:
+                        concept = original.convert("RGB").resize((1920, 1080), Image.Resampling.LANCZOS)
+                        rendered = rendered_original.convert("RGB")
+                        side = side_original.convert("RGB")
+                        overlay = overlay_original.convert("RGB")
+                        if side.size != (3840, 1080) or side.crop((0, 0, 1920, 1080)).tobytes() != concept.tobytes() or side.crop((1920, 0, 3840, 1080)).tobytes() != rendered.tobytes():
+                            self.error("pilot-review.json", "side-by-side pixels do not show the bound concept and actual render")
+                        if overlay.size != (1920, 1080) or overlay.tobytes() != Image.blend(concept, rendered, 0.5).tobytes():
+                            self.error("pilot-review.json", "overlay pixels do not match the bound concept and actual render")
+                except (ImportError, OSError, ValueError) as exc:
+                    self.error("pilot-review.json", f"cannot verify visual comparison pixels ({exc})")
+        # Reuse the full-deck PPTX checks against a one-slide projection.
+        original = {name: self.docs.get(name) for name in ("deck-spec.json", "scene-graph.json", "assembly-map.json")}
+        try:
+            self.docs["deck-spec.json"] = {**deck, "slides": [deck_slide]}
+            self.docs["scene-graph.json"] = {**scene, "slides": [scene_slide]}
+            self.docs["assembly-map.json"] = pilot_assembly
+            self.validate_pptx_content(output_path)
+            self.validate_object_level_assembly(output_path)
+        finally:
+            for name, value in original.items():
+                if value is None:
+                    self.docs.pop(name, None)
+                else:
+                    self.docs[name] = value
 
     def validate_qa(self) -> None:
         name = "qa-report.json"
@@ -2461,7 +3971,11 @@ class ProjectValidator:
             for field in ("differences", "exceptions"):
                 if not isinstance(doc.get(field), list):
                     self.error(name, f"{field} must be a list")
-        for index, slide in enumerate(doc.get("slides", [])):
+        qa_slides = doc.get("slides")
+        if not isinstance(qa_slides, list):
+            self.error(name, "slides must be a list")
+            qa_slides = []
+        for index, slide in enumerate(qa_slides):
             if isinstance(slide, dict) and slide.get("status") != "passed":
                 self.error(f"{name}.slides[{index}]", "slide QA has not passed")
             if isinstance(slide, dict) and not slide.get("evidence_files"):
@@ -2472,6 +3986,252 @@ class ProjectValidator:
             assembly = self.docs.get("assembly-map.json", {})
             if doc.get("subject_sha256") != assembly.get("sha256"):
                 self.error(name, "subject_sha256 must match the assembled PPTX SHA-256")
+            self.validate_pptx_qa(doc)
+
+    def qa_slide_bindings(self, deck_slide: dict, assembled: dict, render: dict) -> dict:
+        scene = next((row for row in self.docs["scene-graph.json"]["slides"] if row.get("slide_id") == deck_slide["id"]), None)
+        assets = {row["id"]: row for row in self.docs["asset-manifest.json"]["assets"]}
+        return {
+            "concept_sha256": hashlib.sha256((self.root / deck_slide["concept_path"]).read_bytes()).hexdigest(),
+            "render_sha256": hashlib.sha256((self.root / render["path"]).read_bytes()).hexdigest(),
+            "deck_slide_sha256": value_sha256(deck_slide), "scene_slide_sha256": value_sha256(scene),
+            "assembly_slide_sha256": value_sha256(assembled),
+            "style_sha256": hashlib.sha256((self.root / "style-contract.json").read_bytes()).hexdigest(),
+            "assets": {component_id: value_sha256(assets.get(component_id)) for component_id in assembled["component_ids"]},
+            "pptx_sha256": self.docs["assembly-map.json"]["sha256"],
+        }
+
+    def qa_deck_bindings(self, contact_sha256: str) -> dict:
+        return {
+            "reference_study_sha256": hashlib.sha256((self.root / "reference-study.json").read_bytes()).hexdigest(),
+            "style_sha256": hashlib.sha256((self.root / "style-contract.json").read_bytes()).hexdigest(),
+            "deck_sha256": hashlib.sha256((self.root / "deck-spec.json").read_bytes()).hexdigest(),
+            "storyboard_sha256": hashlib.sha256((self.root / "storyboard.json").read_bytes()).hexdigest(),
+            "pptx_sha256": self.docs["assembly-map.json"].get("sha256"),
+            "contact_sheet_sha256": contact_sha256,
+        }
+
+    def validate_pptx_qa(self, report: dict[str, Any]) -> None:
+        """Bind every human slide decision to current objects and verifiable pixels."""
+        from PIL import Image, ImageChops
+
+        name = "qa-report.json"
+        deck = self.docs.get("deck-spec.json", {})
+        scene = self.docs.get("scene-graph.json", {})
+        assembly = self.docs.get("assembly-map.json", {})
+        manifest = self.docs.get("asset-manifest.json", {})
+        if not all(isinstance(doc, dict) for doc in (deck, scene, assembly, manifest)):
+            return
+        deck_slides = deck.get("slides", [])
+        assembly_slides = assembly.get("slides", [])
+        renders = assembly.get("renders", [])
+        rows = report.get("slides")
+        if not all(isinstance(items, list) for items in (deck_slides, assembly_slides, renders, rows)) or len(rows) != len(deck_slides) or len(renders) != len(deck_slides):
+            self.error(name, "full-deck QA requires one current review and render per slide")
+            return
+        scenes = {row.get("slide_id"): row for row in scene.get("slides", []) if isinstance(row, dict)}
+        assets = {row.get("id"): row for row in manifest.get("assets", []) if isinstance(row, dict)}
+        version = report.get("version")
+        if not isinstance(version, str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,63}", version):
+            self.error(name, "QA evidence version is required")
+            return
+        required_checks = {
+            "independent_objects", "geometry", "hierarchy", "color_and_z", "content_truth",
+            "visual_relationships", "readability_full_size", "main_image_space", "editability",
+        }
+        contact_inputs = []
+        expected_evidence: set[str] = set()
+        accepted_minor_issues = []
+        if not isinstance(report.get("final_reviewer"), str) or not report["final_reviewer"].strip():
+            self.error(name, "final_reviewer must identify the human whole-deck reviewer")
+        actor_error = REVIEW_POLICY.review_actor_error(self.docs.get("run-state.json"), report, human_only=True)
+        if actor_error:
+            self.error(name, actor_error)
+        deck_checks = report.get("deck_checks")
+        if not isinstance(deck_checks, dict) or any(deck_checks.get(key) is not True for key in
+                                                    ("reference_transfer", "composition_richness", "readability_full_size", "visual_coherence", "truth_consistency")):
+            self.error(name, "all five human whole-deck checks must pass")
+        for index, (deck_slide, assembled, render, row) in enumerate(zip(deck_slides, assembly_slides, renders, rows)):
+            location = f"{name}.slides[{index}]"
+            if not all(isinstance(item, dict) for item in (deck_slide, assembled, render, row)):
+                self.error(location, "current slide evidence must be objects")
+                continue
+            slide_id = deck_slide.get("id")
+            if row.get("slide_id") != slide_id or assembled.get("slide_id") != slide_id or assembled.get("output_index") != index + 1:
+                self.error(location, "QA slide order differs from the assembled deck")
+                continue
+            concept_path = self.validate_relative_file(deck_slide.get("concept_path"), f"{location}.concept")
+            render_path = self.validate_relative_file(render.get("path"), f"{location}.render")
+            if not concept_path or not render_path:
+                continue
+            component_ids = assembled.get("component_ids", [])
+            if not isinstance(component_ids, list) or any(not isinstance(value, str) for value in component_ids):
+                self.error(location, "component_ids must be a list of IDs")
+                continue
+            expected_bindings = self.qa_slide_bindings(deck_slide, assembled, render)
+            if row.get("bindings") != expected_bindings:
+                self.error(location, "human slide approval is stale against current concept, render, style, scene, slide, asset, or PPTX")
+            if row.get("status") != "passed" or not isinstance(row.get("checks"), dict) or any(row["checks"].get(key) is not True for key in required_checks):
+                self.error(location, "all nine human visual checks must pass")
+            if not isinstance(row.get("reviewer"), str) or not row["reviewer"].strip():
+                self.error(location, "human reviewer is required")
+            actor_error = REVIEW_POLICY.review_actor_error(self.docs.get("run-state.json"), row, human_only=True)
+            if actor_error:
+                self.error(location, actor_error)
+            try:
+                reviewed_at = datetime.fromisoformat(row.get("reviewed_at", ""))
+                if reviewed_at.utcoffset() is None:
+                    raise ValueError("timezone missing")
+            except (TypeError, ValueError):
+                self.error(location, "reviewed_at must be timezone-aware ISO-8601")
+            issues = row.get("issues")
+            if not isinstance(issues, list):
+                self.error(location, "issues must be a list")
+            else:
+                for issue_index, issue in enumerate(issues):
+                    issue_location = f"{location}.issues[{issue_index}]"
+                    if not isinstance(issue, dict) or issue.get("severity") not in {"blocker", "major", "minor"} or issue.get("slide_id") != slide_id or not issue.get("evidence") or issue.get("owner_stage") not in {"concept", "inventory", "assets", "assembly", "qa"} or not issue.get("repair_entry"):
+                        self.error(issue_location, "issue needs slide, severity, evidence, owner stage, and local repair entry")
+                        continue
+                    attempts = issue.get("repair_attempts")
+                    if type(attempts) is not int or not 0 <= attempts <= 3:
+                        self.error(issue_location, "repair_attempts must be 0..3; never flatten after the cap")
+                    if issue.get("disposition") != "resolved" and (issue.get("severity") != "minor" or issue.get("disposition") != "accepted-at-G5"):
+                        self.error(issue_location, "unresolved blocker or major issue prevents QA/release")
+                    if issue.get("severity") == "minor" and issue.get("disposition") == "accepted-at-G5":
+                        accepted_minor_issues.append(issue)
+                    self.validate_relative_file(issue["evidence"], f"{issue_location}.evidence")
+            base = f"reviews/qa/{version}/{slide_id}"
+            expected_paths = {
+                "side_by_side": f"{base}-side-by-side.png",
+                "overlay": f"{base}-overlay.png",
+                "packet": f"{base}-review.md",
+            }
+            evidence = row.get("evidence")
+            if not isinstance(evidence, dict):
+                self.error(location, "side-by-side, overlay, and review packet are required")
+                continue
+            paths: dict[str, Path] = {}
+            for key, relative in expected_paths.items():
+                record = evidence.get(key)
+                if not isinstance(record, dict) or record.get("path") != relative:
+                    self.error(location, f"{key} evidence path is missing or from another version")
+                    continue
+                path = self.validate_relative_file(relative, f"{location}.evidence.{key}")
+                if path:
+                    paths[key] = path
+                    if record.get("sha256") != hashlib.sha256(path.read_bytes()).hexdigest():
+                        self.error(location, f"{key} evidence hash is stale")
+            expected_files = {deck_slide["concept_path"], render["path"], *expected_paths.values()}
+            row_files = row.get("evidence_files")
+            if not isinstance(row_files, list) or any(not isinstance(item, str) for item in row_files) or set(row_files) != expected_files:
+                self.error(location, "slide evidence_files must contain exactly current concept, render, side-by-side, overlay, and packet")
+            expected_evidence.update(expected_files)
+            if "side_by_side" in paths and "overlay" in paths:
+                try:
+                    with Image.open(concept_path) as concept, Image.open(render_path) as actual, Image.open(paths["side_by_side"]) as side, Image.open(paths["overlay"]) as blend:
+                        expected_side = DECK_QA.side_by_side(concept, actual)
+                        expected_blend = DECK_QA.overlay(concept, actual)
+                        if side.size != expected_side.size or ImageChops.difference(side.convert("RGB"), expected_side).getbbox():
+                            self.error(location, "side-by-side pixels do not compare the current concept and render")
+                        if blend.size != expected_blend.size or ImageChops.difference(blend.convert("RGB"), expected_blend).getbbox():
+                            self.error(location, "overlay pixels do not compare the current concept and render")
+                        contact_inputs.append((slide_id, actual.copy()))
+                except (OSError, ValueError) as exc:
+                    self.error(location, f"visual evidence cannot be decoded: {exc}")
+        contact_relative = f"reviews/qa/{version}/final-contact-sheet.png"
+        if report.get("final_contact_sheet") != contact_relative:
+            self.error(name, "final contact sheet path must belong to the current QA version")
+        contact_path = self.validate_relative_file(contact_relative, f"{name}.final_contact_sheet")
+        if contact_path:
+            expected_evidence.add(contact_relative)
+            if report.get("contact_sheet_sha256") != hashlib.sha256(contact_path.read_bytes()).hexdigest():
+                self.error(name, "contact sheet hash is stale")
+            if len(contact_inputs) == len(deck_slides):
+                try:
+                    with Image.open(contact_path) as actual_contact:
+                        expected_contact = DECK_QA.contact_sheet(contact_inputs)
+                        if actual_contact.size != expected_contact.size or ImageChops.difference(actual_contact.convert("RGB"), expected_contact).getbbox():
+                            self.error(name, "contact sheet pixels do not match all current PPTX renders in deck order")
+                except (OSError, ValueError) as exc:
+                    self.error(name, f"contact sheet cannot be decoded: {exc}")
+        expected_deck_bindings = self.qa_deck_bindings(report.get("contact_sheet_sha256"))
+        if report.get("deck_bindings") != expected_deck_bindings:
+            self.error(name, "whole-deck human approval is stale against references, story, style, deck, PPTX, or contact sheet")
+        exception_relative = f"reviews/qa/{version}/exception-register.json"
+        index_relative = f"reviews/qa/{version}/deliverable-index.json"
+        for field, relative in (("exception_register", exception_relative), ("deliverable_index", index_relative)):
+            if report.get(field) != relative:
+                self.error(name, f"{field} must belong to the current QA version")
+            expected_evidence.add(relative)
+        verified_renders = report.get("verified_renders")
+        if self.quality_profile() == "production":
+            if not isinstance(verified_renders, list) or len(verified_renders) != len(deck_slides):
+                self.error(name, "production QA needs a fresh PowerPoint re-render of every current slide")
+            else:
+                for index, record in enumerate(verified_renders, start=1):
+                    relative = f"reviews/qa/{version}/verified-renders/slide-{index:02d}.png"
+                    if not isinstance(record, dict) or record.get("path") != relative or record.get("pptx_sha256") != assembly.get("sha256"):
+                        self.error(name, f"verified render {index} must bind the current PPTX and QA version")
+                        continue
+                    if not isinstance(renders[index - 1], dict):
+                        self.error(name, f"declared render {index} must be an object")
+                        continue
+                    verified_path = self.validate_relative_file(relative, f"{name}.verified_renders[{index - 1}]")
+                    current_path = self.validate_relative_file(renders[index - 1].get("path"), f"{name}.renders[{index - 1}]")
+                    if not verified_path or not current_path:
+                        continue
+                    expected_evidence.add(relative)
+                    if record.get("sha256") != hashlib.sha256(verified_path.read_bytes()).hexdigest():
+                        self.error(name, f"verified render {index} hash is stale")
+                    try:
+                        with Image.open(verified_path) as verified, Image.open(current_path) as current:
+                            if verified.size != current.size or ImageChops.difference(verified.convert("RGB"), current.convert("RGB")).getbbox():
+                                self.error(name, f"verified render {index} pixels differ from the declared PowerPoint render")
+                    except OSError as exc:
+                        self.error(name, f"verified render {index} cannot be decoded: {exc}")
+        elif verified_renders not in (None, []):
+            self.error(name, "fixture QA must not claim production PowerPoint re-render evidence")
+        report_files = report.get("evidence_files")
+        if not isinstance(report_files, list) or any(not isinstance(item, str) for item in report_files) or set(report_files) != expected_evidence:
+            self.error(name, "evidence_files must cover every current full-size page comparison and whole-deck record")
+        if report.get("exceptions") != accepted_minor_issues:
+            self.error(name, "QA exceptions must exactly list minor issues awaiting G5 acceptance")
+        repairs = report.get("repairs")
+        if not isinstance(repairs, list):
+            self.error(name, "repairs must be a list")
+        else:
+            attempts_by_defect: dict[tuple[str, str], set[int]] = {}
+            for index, repair in enumerate(repairs):
+                location = f"{name}.repairs[{index}]"
+                if not isinstance(repair, dict) or not isinstance(repair.get("slide_id"), str) or not isinstance(repair.get("defect_class"), str) or repair.get("owner_stage") not in {"concept", "inventory", "assets", "assembly", "qa"}:
+                    self.error(location, "repair needs slide_id, defect_class, and owner_stage")
+                    continue
+                attempt = repair.get("attempt")
+                if type(attempt) is not int or not 1 <= attempt <= 3:
+                    self.error(location, "repair attempt must be 1..3; no flattened fallback after the cap")
+                    continue
+                key = (repair["slide_id"], repair["defect_class"])
+                seen = attempts_by_defect.setdefault(key, set())
+                if attempt in seen:
+                    self.error(location, "repair attempt number is duplicated for one defect class")
+                seen.add(attempt)
+                if len(seen) > 3:
+                    self.error(location, "one defect class exceeds three focused repairs")
+                self.validate_relative_file(repair.get("artifact_path"), f"{location}.artifact_path")
+        try:
+            exception_doc = json.loads((self.root / exception_relative).read_text(encoding="utf-8"))
+            index_doc = json.loads((self.root / index_relative).read_text(encoding="utf-8"))
+            if exception_doc != {"status": "reviewed", "issues": report.get("exceptions", [])}:
+                self.error(name, "exception register differs from reviewed QA exceptions")
+            if index_doc != {
+                "status": "ready", "pptx": {"path": assembly.get("output"), "sha256": assembly.get("sha256")},
+                "contact_sheet": {"path": contact_relative, "sha256": report.get("contact_sheet_sha256")},
+                "slides": [{"slide_id": row.get("slide_id"), "status": row.get("status")} for row in rows if isinstance(row, dict)],
+            }:
+                self.error(name, "deliverable index does not bind the current PPTX, contact sheet, and page statuses")
+        except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+            self.error(name, f"full-deck QA indexes cannot be read: {exc}")
 
     def expected_gate_decisions(self, gate: str) -> dict[str, Any]:
         storyboard = self.docs.get("storyboard.json", {})
@@ -2507,7 +4267,7 @@ class ProjectValidator:
                 for anchor in style.get("anchor_concepts", [])
                 if isinstance(anchor, dict)
             }
-            return {
+            decisions = {
                 "reference_selection": {
                     "selected_reference_ids": reference_study.get(
                         "selected_reference_ids", []
@@ -2538,6 +4298,9 @@ class ProjectValidator:
                 "anchor_typical": anchors.get("typical"),
                 "anchor_highest_risk": anchors.get("highest-risk"),
             }
+            if self.semantic_system_active():
+                decisions["semantic_system"] = style.get("semantic_system")
+            return decisions
         if gate == "concept_contact_sheet" and all(
             isinstance(doc, dict) for doc in (deck, manifest, concept_log)
         ):
@@ -2573,12 +4336,6 @@ class ProjectValidator:
                     }
                 }
                 contact_sheet_record = concept_log.get("review_contact_sheet")
-                contact_path = (
-                    self.root / contact_sheet_record["path"]
-                    if isinstance(contact_sheet_record, dict)
-                    and isinstance(contact_sheet_record.get("path"), str)
-                    else None
-                )
                 full_deck_review = {
                     "concept_paths": [slide.get("concept_path") for slide in slides],
                     "contentful_image_sha256": {
@@ -2648,9 +4405,44 @@ class ProjectValidator:
                     ],
                     "policy": "explicit-only",
                 },
-                "slide_specific_deviations": {"items": [], "policy": "declared"},
+                "slide_specific_deviations": {
+                    "items": [
+                        {"slide_id": slide.get("id"), **exception}
+                        for slide in slides
+                        if isinstance(slide.get("semantic_design"), dict)
+                        if isinstance(slide["semantic_design"].get("exceptions"), list)
+                        for exception in slide["semantic_design"]["exceptions"]
+                        if isinstance(exception, dict)
+                    ] if self.semantic_system_active() else [],
+                    "policy": "declared",
+                },
             }
+            if self.semantic_system_active():
+                expected_decisions["cross_slide_semantics_review"] = {
+                    "policy": "contact-sheet-and-full-size-human-review",
+                    "semantic_system": style.get("semantic_system") if isinstance(style, dict) else None,
+                    "slides": {slide.get("id"): slide.get("semantic_design") for slide in slides},
+                }
             return expected_decisions
+        if gate == "decomposition":
+            decomposition = self.docs.get("decomposition-map.json", {})
+            slides = decomposition.get("slides", []) if isinstance(decomposition, dict) else []
+            slides = [slide for slide in slides if isinstance(slide, dict)]
+            return {
+                "object_inventory": {
+                    slide.get("slide_id"): slide.get("items") for slide in slides
+                },
+                "coverage_review": {
+                    slide.get("slide_id"): slide.get("coverage_review") for slide in slides
+                },
+                "review_evidence": {
+                    slide.get("slide_id"): {
+                        "review_image": slide.get("review_image"),
+                        "review_packet": slide.get("review_packet"),
+                    }
+                    for slide in slides
+                },
+            }
         if gate == "release" and all(
             isinstance(doc, dict) for doc in (manifest, assembly, qa)
         ):
@@ -2662,6 +4454,15 @@ class ProjectValidator:
                 "final_render": {
                     "contact_sheet": qa.get("final_contact_sheet"),
                     "evidence_files": qa.get("evidence_files", []),
+                },
+                "qa_summary": {
+                    "status": qa.get("status"),
+                    "final_reviewer": qa.get("final_reviewer"),
+                    "deck_checks": qa.get("deck_checks"),
+                    "slides": {
+                        slide.get("slide_id"): {"status": slide.get("status"), "checks": slide.get("checks")}
+                        for slide in qa.get("slides", []) if isinstance(slide, dict)
+                    } if isinstance(qa.get("slides"), list) else {},
                 },
                 "concept_differences": {"items": qa.get("differences", [])},
                 "qa_exceptions": {
@@ -2694,6 +4495,13 @@ class ProjectValidator:
         if not isinstance(gates, dict):
             self.error(name, "gates must be an object")
             return
+        if declared_stage == "released":
+            release_gate = gates.get("release")
+            if not isinstance(release_gate, dict) or release_gate.get("status") != "approved":
+                self.error(
+                    f"{name}.stage",
+                    "stage 'released' requires an approved G5 release gate",
+                )
         route = doc.get("production_route")
         if not isinstance(route, dict):
             self.error(name, "production_route must be an object")
@@ -2737,21 +4545,22 @@ class ProjectValidator:
             "story": "style",
             "style_anchors": "concept",
             "concept_contact_sheet": "inventory",
+            "decomposition": "pilot" if self.pilot_required() else "assets",
             "release": "release",
         }
         deck = self.docs.get("deck-spec.json", {})
         concept_paths = {
             slide.get("concept_path")
             for slide in deck.get("slides", [])
-            if isinstance(slide, dict) and slide.get("concept_path")
+            if isinstance(slide, dict) and isinstance(slide.get("concept_path"), str) and slide.get("concept_path")
         } if isinstance(deck, dict) else set()
         style = self.docs.get("style-contract.json", {})
         anchor_paths = {
             anchor.get("path")
             for anchor in style.get("anchor_concepts", [])
-            if isinstance(anchor, dict) and anchor.get("path")
+            if isinstance(anchor, dict) and isinstance(anchor.get("path"), str) and anchor.get("path")
         } if isinstance(style, dict) else set()
-        required_gate_artifacts = {
+        required_gate_artifacts: dict[str, set[str]] = {
             "brief_authority": {"brief.json", "alignment.json", "research-bundle.json"},
             "story": {"storyboard.json"},
             "style_anchors": {
@@ -2761,8 +4570,22 @@ class ProjectValidator:
             }
             | anchor_paths,
             "concept_contact_sheet": concept_paths | {"concept-generation-log.json", "deck-spec.json"},
+            "decomposition": {"decomposition-map.json"},
             "release": {"asset-manifest.json", "assembly-map.json", "qa-report.json"},
         }
+        decomposition_map = self.docs.get("decomposition-map.json", {})
+        if isinstance(decomposition_map, dict) and isinstance(decomposition_map.get("slides"), list):
+            for slide in decomposition_map["slides"]:
+                if not isinstance(slide, dict):
+                    continue
+                for key in ("concept_path", "master_path"):
+                    path_value = slide.get(key)
+                    if isinstance(path_value, str) and path_value:
+                        required_gate_artifacts["decomposition"].add(path_value)
+                for key in ("review_image", "review_packet"):
+                    evidence = slide.get(key)
+                    if isinstance(evidence, dict) and isinstance(evidence.get("path"), str):
+                        required_gate_artifacts["decomposition"].add(evidence["path"])
         concept_log = self.docs.get("concept-generation-log.json", {})
         if isinstance(deck, dict):
             for slide in deck.get("slides", []):
@@ -2840,7 +4663,7 @@ class ProjectValidator:
                 release_paths.update(
                     path for path in evidence_files if isinstance(path, str) and path
                 )
-            for slide in qa.get("slides", []):
+            for slide in (qa.get("slides") if isinstance(qa.get("slides"), list) else []):
                 if not isinstance(slide, dict):
                     continue
                 slide_evidence = slide.get("evidence_files", [])
@@ -2885,10 +4708,15 @@ class ProjectValidator:
                 self.error(location, "approved_artifacts must be an object")
             if gate_record.get("artifact_version") != artifact_versions.get(gate):
                 self.error(location, "artifact_version does not match run-state artifact_versions")
+            if gate == "decomposition":
+                current_map = self.docs.get("decomposition-map.json", {})
+                map_version = current_map.get("version") if isinstance(current_map, dict) else None
+                if artifact_version != map_version:
+                    self.error(location, "decomposition approval version must match map version")
             if gate == "brief_authority":
                 approval_mode = gate_record.get("approval_mode")
-                if approval_mode not in {"explicit", "batch-recommendations"}:
-                    self.error(location, "approval_mode must be 'explicit' or 'batch-recommendations'")
+                if approval_mode not in {"explicit", "local-affirmative", "batch-recommendations"}:
+                    self.error(location, "approval_mode must be 'explicit', 'local-affirmative', or 'batch-recommendations'")
                 approval_phrase = gate_record.get("approval_phrase")
                 if not isinstance(approval_phrase, str) or not approval_phrase.strip():
                     self.error(location, "approval_phrase must be a non-empty string")
@@ -2905,10 +4733,16 @@ class ProjectValidator:
                     if isinstance(decision, dict)
                     and isinstance(decision.get("id"), str)
                 }
-                if approval_mode == "explicit" and isinstance(approval_phrase, str):
-                    normalized_phrase = approval_phrase.strip().lower()
-                    if normalized_phrase in VAGUE_APPROVAL_PHRASES:
-                        self.error(location, "explicit approval cannot use a recommendation shortcut")
+                if approval_mode in {"explicit", "local-affirmative"} and isinstance(approval_phrase, str):
+                    check_reply = REVIEW_POLICY.local_reply_error if approval_mode == "local-affirmative" else REVIEW_POLICY.explicit_reply_error
+                    reply_error = check_reply(approval_phrase, self.docs.get("run-state.json"))
+                    if reply_error:
+                        self.error(location, reply_error)
+                    if approval_mode == "local-affirmative":
+                        current_packet = alignment.get("approval_packet", {}) if isinstance(alignment, dict) else {}
+                        scoped_ids = current_packet.get("decision_ids") if isinstance(current_packet, dict) else None
+                        if not isinstance(current_packet, dict) or current_packet.get("gate") != "brief_authority" or current_packet.get("version") != artifact_version or not isinstance(scoped_ids, list) or any(not isinstance(key, str) for key in scoped_ids) or len(scoped_ids) != len(CRITICAL_G1_DECISIONS) or set(scoped_ids) != CRITICAL_G1_DECISIONS:
+                            self.error(location, "local G1 reply must cover the full current brief_authority packet")
                     decision_approvals = gate_record.get("decision_approvals")
                     if not isinstance(decision_approvals, dict):
                         self.error(location, "explicit approval requires per-decision approval evidence")
@@ -2979,7 +4813,7 @@ class ProjectValidator:
                         self.error(location, "approval_packet.decisions must be an object")
                     else:
                         packet_decisions = raw_packet_decisions
-                        required_decisions = GATE_REQUIRED_DECISIONS[gate]
+                        required_decisions = self.required_gate_decisions(gate)
                         if set(packet_decisions) != required_decisions:
                             self.error(
                                 location,
@@ -3024,18 +4858,19 @@ class ProjectValidator:
                     if approval_phrase != "确认发布":
                         self.error(location, "release requires the exact phrase '确认发布'")
                 else:
-                    if approval_mode not in {"explicit", "batch-recommendations"}:
+                    if approval_mode not in {"explicit", "local-affirmative", "batch-recommendations"}:
                         self.error(
                             location,
-                            "approval_mode must be 'explicit' or 'batch-recommendations'",
+                            "approval_mode must be 'explicit', 'local-affirmative', or 'batch-recommendations'",
                         )
-                    if approval_mode == "explicit" and isinstance(approval_phrase, str):
-                        if approval_phrase.strip().lower() in VAGUE_APPROVAL_PHRASES:
-                            self.error(
-                                location,
-                                "explicit approval cannot use a recommendation shortcut",
-                            )
-                        for decision_id in sorted(GATE_REQUIRED_DECISIONS[gate]):
+                    if gate == "decomposition" and approval_mode not in {"explicit", "local-affirmative"}:
+                        self.error(location, "decomposition requires explicit human approval of the numbered review")
+                    if approval_mode in {"explicit", "local-affirmative"} and isinstance(approval_phrase, str):
+                        check_reply = REVIEW_POLICY.local_reply_error if approval_mode == "local-affirmative" else REVIEW_POLICY.explicit_reply_error
+                        reply_error = check_reply(approval_phrase, self.docs.get("run-state.json"))
+                        if reply_error:
+                            self.error(location, reply_error)
+                        for decision_id in sorted(self.required_gate_decisions(gate)):
                             decision = packet_decisions.get(decision_id, {})
                             if isinstance(decision, dict) and decision.get(
                                 "value_sha256"
@@ -3057,7 +4892,7 @@ class ProjectValidator:
                                 location,
                                 "batch approval requires all recommendations to be visible",
                             )
-                        for decision_id in sorted(GATE_REQUIRED_DECISIONS[gate]):
+                        for decision_id in sorted(self.required_gate_decisions(gate)):
                             decision = packet_decisions.get(decision_id, {})
                             recommendation = (
                                 decision.get("recommendation", {})
@@ -3077,6 +4912,9 @@ class ProjectValidator:
             approved_artifacts = gate_record.get("approved_artifacts")
             if not isinstance(approved_artifacts, dict):
                 continue
+            actor_error = REVIEW_POLICY.review_actor_error(doc, gate_record, human_only=True)
+            if actor_error:
+                self.error(location, actor_error)
             missing = required_gate_artifacts[gate] - set(approved_artifacts)
             if missing:
                 self.error(location, f"approved_artifacts missing: {sorted(missing)}")
@@ -3109,7 +4947,7 @@ class ProjectValidator:
             qa_state.get("status") == "failed"
             or any(
                 isinstance(slide, dict) and slide.get("status") == "failed"
-                for slide in qa_state.get("slides", [])
+                for slide in (qa_state.get("slides") if isinstance(qa_state.get("slides"), list) else [])
             )
         )
         rollback = doc.get("rollback")
@@ -3312,8 +5150,9 @@ class ProjectValidator:
         if self.reaches("qa"):
             qa = self.docs.get("qa-report.json", {})
             if isinstance(qa, dict):
+                slide_rows = qa.get("slides") if isinstance(qa.get("slides"), list) else []
                 qa_slides = {
-                    slide.get("slide_id") for slide in qa.get("slides", []) if isinstance(slide, dict)
+                    slide.get("slide_id") for slide in slide_rows if isinstance(slide, dict)
                 }
                 if qa_slides != deck_slides:
                     self.error("cross-reference", "qa-report slide coverage differs from deck-spec")
@@ -3398,43 +5237,29 @@ class ProjectValidator:
         expected_length = int(height) * (stride + 1)
         if len(raw) != expected_length:
             return False, 0.0, False, False
-        previous = bytearray(stride)
-        transparent_pixels = 0
-        has_visible_pixel = False
-        clear_border = True
-        for row_index in range(int(height)):
-            start = row_index * (stride + 1)
-            filter_type = raw[start]
-            source = raw[start + 1 : start + 1 + stride]
-            recon = bytearray(stride)
-            for index, value in enumerate(source):
-                left = recon[index - channels] if index >= channels else 0
-                up = previous[index]
-                upper_left = previous[index - channels] if index >= channels else 0
-                if filter_type == 0:
-                    predictor = 0
-                elif filter_type == 1:
-                    predictor = left
-                elif filter_type == 2:
-                    predictor = up
-                elif filter_type == 3:
-                    predictor = (left + up) // 2
-                elif filter_type == 4:
-                    predictor = self.paeth(left, up, upper_left)
-                else:
+        if any(raw[row * (stride + 1)] > 4 for row in range(int(height))):
+            return False, 0.0, False, False
+        try:
+            from PIL import Image
+        except ImportError:
+            return False, 0.0, False, False
+        try:
+            with self.pixel_cache.decode(data) as image:
+                if image.mode not in {"LA", "RGBA"} or image.size != (width, height):
                     return False, 0.0, False, False
-                recon[index] = (value + predictor) & 0xFF
-            alpha_offset = 1 if color_type == 4 else 3
-            alphas = [recon[index] for index in range(alpha_offset, stride, channels)]
-            transparent_pixels += sum(alpha == 0 for alpha in alphas)
-            has_visible_pixel = has_visible_pixel or any(alpha > 0 for alpha in alphas)
-            if row_index in {0, int(height) - 1}:
-                clear_border = clear_border and all(alpha == 0 for alpha in alphas)
-            else:
-                clear_border = clear_border and alphas[0] == 0 and alphas[-1] == 0
-            previous = recon
-        ratio = transparent_pixels / (int(width) * int(height))
-        return True, ratio, clear_border, has_visible_pixel
+                alpha = image.getchannel("A")
+                transparent_pixels = alpha.histogram()[0]
+                # An alpha value of 1 is visually transparent edge noise.
+                clear_border = (
+                    alpha.crop((0, 0, width, 1)).getextrema()[1] <= 1
+                    and alpha.crop((0, height - 1, width, height)).getextrema()[1] <= 1
+                    and alpha.crop((0, 0, 1, height)).getextrema()[1] <= 1
+                    and alpha.crop((width - 1, 0, width, height)).getextrema()[1] <= 1
+                )
+        except (OSError, ValueError, Image.DecompressionBombError, Image.DecompressionBombWarning):
+            return False, 0.0, False, False
+        pixel_count = int(width) * int(height)
+        return True, transparent_pixels / pixel_count, clear_border, transparent_pixels < pixel_count
 
     def validate_pptx_content(self, path: Path) -> None:
         location = "assembly-map.json.output"
@@ -3656,16 +5481,6 @@ class ProjectValidator:
             if not rel_id or rel_id not in targets or targets[rel_id] not in names:
                 self.error(location, f"PPTX media relationship is unresolved in {part_name}")
 
-    @staticmethod
-    def paeth(left: int, up: int, upper_left: int) -> int:
-        estimate = left + up - upper_left
-        distances = (abs(estimate - left), abs(estimate - up), abs(estimate - upper_left))
-        if distances[0] <= distances[1] and distances[0] <= distances[2]:
-            return left
-        if distances[1] <= distances[2]:
-            return up
-        return upper_left
-
     def check_unique(self, records: list[Any], field: str, location: str) -> None:
         seen: set[Any] = set()
         for index, record in enumerate(records):
@@ -3680,9 +5495,25 @@ class ProjectValidator:
                 seen.add(value)
 
     def run(self) -> list[str]:
+        try:
+            return self._run()
+        finally:
+            self.pixel_cache.clear()
+
+    def validate_inventory_candidate(self, documents: dict) -> list[str]:
+        if self.stage != "inventory" or set(documents) != {"component-master-manifest.json", "scene-graph.json", "decomposition-map.json"}:
+            raise ValueError("inventory candidate must provide exactly the three inventory documents")
+        try:
+            return self._run(inventory_candidate=documents)
+        finally:
+            self.pixel_cache.clear()
+
+    def _run(self, *, inventory_candidate: dict | None = None) -> list[str]:
         if not self.root.is_dir():
             return [f"project: directory does not exist: {self.root}"]
-        self.load_required_documents()
+        self.load_required_documents(inventory_candidate)
+        if (self.root / ".inventory-merge").exists():
+            return self.errors
         if self.reaches("intake"):
             self.validate_brief()
             self.validate_state()
@@ -3705,6 +5536,15 @@ class ProjectValidator:
             self.validate_manifest()
             self.validate_cross_references()
             self.validate_component_master_manifest()
+            self.validate_decomposition_map(require_review=inventory_candidate is None)
+        if self.reaches("pilot"):
+            state = self.docs.get("run-state.json", {})
+            gates = state.get("gates", {}) if isinstance(state, dict) else {}
+            decomposition = gates.get("decomposition", {}) if isinstance(gates, dict) else {}
+            if not isinstance(decomposition, dict) or decomposition.get("status") != "approved":
+                self.error("run-state.json.gates.decomposition", "approved decomposition is required before assets")
+            if self.stage == "pilot" or self.pilot_required():
+                self.validate_pilot()
         if self.reaches("assembly"):
             self.validate_assembly()
         if self.reaches("qa"):
@@ -3715,12 +5555,25 @@ class ProjectValidator:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("project_dir", type=Path)
-    parser.add_argument("--stage", choices=STAGES, default="release")
+    parser.add_argument("--stage", choices=STAGES + ["export"], default="release")
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
+    kind_path = args.project_dir / "project-kind.json"
+    if kind_path.exists() or kind_path.is_symlink():
+        if args.stage not in {"concept", "assets", "assembly", "qa", "export"}:
+            print("FAIL: local showcase checks stop at the selected delivery mode; formal production release is a separate route")
+            return 1
+        from apw import check_project
+
+        report = check_project(args.project_dir.resolve(), args.stage)
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0 if report["ok"] else 1
+    if args.stage == "export":
+        print("FAIL: strict production export uses export_final_package.py with the current production contract")
+        return 1
     validator = ProjectValidator(args.project_dir.resolve(), args.stage)
     errors = validator.run()
     if errors:

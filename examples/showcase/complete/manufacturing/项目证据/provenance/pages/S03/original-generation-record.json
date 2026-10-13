@@ -1,0 +1,34 @@
+{
+  "status": "generated; mechanism and text visually checked",
+  "case_id": 70,
+  "case_title": "信息图可视化设计",
+  "case_category": "Charts & Infographics",
+  "case_styles": [
+    "UI",
+    "Infographic",
+    "Poster"
+  ],
+  "case_scenes": [
+    "Tech",
+    "Commerce",
+    "Social"
+  ],
+  "source_repository": "freestylefly/awesome-gpt-image-2 local case index",
+  "source_url": "https://x.com/hx831126",
+  "source_label": "@hx831126",
+  "case_index_image_path": "D:\\obsidian_work\\cangku\\paper_work\\.agents\\skills\\design-shared\\component-library\\sources\\awesome-gpt-image-2\\data\\images\\case70.jpg",
+  "reference_copy": "reference-case70.jpg",
+  "reference_role": "visual prompt/style reference only; not factual evidence",
+  "reference_image_sha256": "d0e47196f79af0cab2d9c96c9495b87788d39285582a383ac7a9861c7c053d37",
+  "translation": "借鉴原案例把因果过程做成清晰视觉主轴、以细线技术图解辅助理解的方式；删去其相机爆炸图、高密度规格和长列表，改画可读的余热回用闭环，不把源图当工程事实。",
+  "generation_tool": "built-in Codex image_gen",
+  "generation_prompt_file": "generation-prompt.txt",
+  "generated_original_file": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-b7ab-7ad1-8e6a-e05dcb9c2b88\\exec-87317a5c-a702-487a-90e6-0c32321612e9.png",
+  "generated_original_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+  "workspace_copy_file": "mechanism-余热回用-概念.png",
+  "workspace_copy_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+  "image_dimensions_px": [
+    1672,
+    941
+  ]
+}

@@ -58,6 +58,10 @@ class CompareInstallationTests(unittest.TestCase):
             cache = installed / "scripts" / "__pycache__"
             cache.mkdir(parents=True)
             (cache / "validator.pyc").write_bytes(b"generated")
+            for name in (".mypy_cache", ".ruff_cache"):
+                generated = source / name
+                generated.mkdir()
+                (generated / "CACHEDIR.TAG").write_text("generated", encoding="utf-8")
 
             report = COMPARE_MODULE.compare_trees(source, installed)
 

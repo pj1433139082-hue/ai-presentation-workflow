@@ -1,0 +1,59 @@
+{
+  "slide_id": "S02",
+  "record_type": "actual-new-generation",
+  "generation_tool": "Codex built-in image_gen.imagegen",
+  "recorded_at": "2026-10-13T21:17:29+08:00",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1355b-ca74-7120-a55c-20db9a9946d1\\exec-feb227cd-fd0d-4bdb-ba91-edfcdd011bbf.png",
+  "original_output_sha256": "46391f0a2a0e045c4c011c5c7e8da83a861d00d5c52a74f7a9e8a28253fdab4b",
+  "output_path": "concept.png",
+  "output_sha256": "46391f0a2a0e045c4c011c5c7e8da83a861d00d5c52a74f7a9e8a28253fdab4b",
+  "canonical_output_path": "concepts/S02.png",
+  "dimensions": {
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB"
+  },
+  "prompt": "Asset type: 完整中文演示页概念图（第2页，共6页），大创过程汇报中的计划/实际进度对照。\nInput images: Image 1 是上一阶段雨序立项封面，Image 2 是 case339。只参考白底、墨绿、自然材质与编辑留白；不要沿用封面构图或动物海报结构。两图不是过程证据。\nScene/backdrop: 16:9横向浅白页面，深墨绿文字、叶绿计划标记、浅水蓝记录路径，局部用克制的赭红提示缺口；清晰专业、中文可读。\nSubject: 这是进度追踪与目标差距页，不是景观主视觉页。\nComposition/framing: 使用开放式双轨进度图：一条“阶段目标”线连出3个完整记录节点；另一条“当前记录”线只呈现2个完整节点和1个空缺/未完成节点，缺失节点用细赭色批注指出。把“第6周”作为中央时间标记，右侧留一块窄注释区列出准备完成的阶段产物。节点沿轨迹排布，不放进卡片；不要图表坐标、伪数据、漂亮但无意义的百分比或仪表盘。\nText (verbatim, only these visible words): “第6周：两份完整记录，仍有一处缺口”；“计划目标与当前记录并列，缺口清楚呈现。”；“阶段目标｜3次完整降雨记录”；“当前｜2次完整记录”；“另有｜1条缺失读数记录（不计入完整样本）”；“样地/方案、两组装置、记录模板｜准备完成（示例）”；“示例计数 · 非实测”。\nTypography: 标题清楚，目标与当前数字3、2、1层级鲜明，但数字旁紧邻对应标签；不要缩小正文或把示例标注藏到角落。\nConstraints: 所有计数仅是虚构示例，醒目标明“示例计数 · 非实测”；3次目标、2次完整和1条缺失记录均来自虚构情境。不得显示具体读数、降雨日期、百分比、效果结论、审批、真实机构、真实照片或额外文字；不要把缺失项画成完整节点，不要复制参考图的布局。",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "3a9e31102df3e1ccf78dc9995b69ad3471ce09a0e2b75161a4dcecd38f691bd1",
+  "input_sha256": {
+    "brief.json": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+    "deck-spec.json": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+    "reference-study.json": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+    "style-contract.json": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+  },
+  "actual_tool_inputs": {
+    "referenced_image_paths": [
+      {
+        "reference_id": "R-PROPOSAL-S01",
+        "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\previous-proposal-S01.png",
+        "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+      },
+      {
+        "reference_id": "R339",
+        "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\case339.jpg",
+        "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+      }
+    ],
+    "transparent_background": false
+  },
+  "design_reviewed_references": [
+    {
+      "reference_id": "R-PROPOSAL-S01",
+      "project_path": "references/previous-proposal-S01.png",
+      "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+    },
+    {
+      "reference_id": "R339",
+      "project_path": "references/case339.jpg",
+      "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+    }
+  ],
+  "visual_review": {
+    "actor": "Codex subagent",
+    "method": "view_image of copied original output",
+    "finding": "All requested Chinese labels are legible; the target track shows three nodes, while the current track distinguishes two complete records and one missing record. The right vignette is generated illustrative imagery, not equipment or photo evidence.",
+    "user_acceptance": "not-recorded"
+  },
+  "history_note": "The image tool received the exact prompt and image paths in actual_tool_inputs. Frozen APW JSON hashes bind this project version but do not claim the image tool read those JSON files. design_reviewed_references records studied lineage; actual tool inputs are listed separately."
+}

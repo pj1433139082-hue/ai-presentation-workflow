@@ -1,0 +1,1997 @@
+[
+  {
+    "slide": 1,
+    "name": "TextBox 2",
+    "text": "研究设计 / 方法方案",
+    "box_pt": [
+      59.04,
+      45.36,
+      417.6,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      60.48,
+      46.8,
+      168.63,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 3",
+    "text": "烧杯试验\n设计草案",
+    "box_pt": [
+      59.04,
+      95.76,
+      460.8,
+      116.64
+    ],
+    "rendered_text_bounds_pt": [
+      60.48,
+      97.2,
+      180.5,
+      105.25
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 4",
+    "text": "把剂量与 pH 拆成可比较的条件，\n让每一步都能复核。",
+    "box_pt": [
+      60.48,
+      234.0,
+      460.8,
+      75.6
+    ],
+    "rendered_text_bounds_pt": [
+      61.92,
+      235.44,
+      367.38,
+      60.15
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 6",
+    "text": "方案演示 · 不代表已开展实验",
+    "box_pt": [
+      75.6,
+      358.56,
+      320.4,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      77.04,
+      360.0,
+      240.0,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 7",
+    "text": "水处理实验设计｜本地展示样稿",
+    "box_pt": [
+      60.48,
+      487.44,
+      482.4,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      61.92,
+      488.88,
+      257.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 9",
+    "text": "01 / 05",
+    "box_pt": [
+      825.84,
+      504.0,
+      88.56,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      856.28,
+      505.44,
+      61.38,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.26
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 1",
+    "text": "01 · 研究问题与观测定义",
+    "box_pt": [
+      44.64,
+      25.92,
+      820.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      27.36,
+      208.25,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 2",
+    "text": "先把问题变成可比较的变量",
+    "box_pt": [
+      44.64,
+      56.16,
+      867.6,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      57.6,
+      393.5,
+      38.72
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 3",
+    "text": "02 / 05",
+    "box_pt": [
+      825.84,
+      504.0,
+      88.56,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      856.28,
+      505.44,
+      61.38,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.26
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 5",
+    "text": "问题",
+    "box_pt": [
+      68.4,
+      145.44,
+      61.2,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      69.84,
+      146.88,
+      41.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 6",
+    "text": "在同一批原水条件下，混凝剂剂量（及预设 pH）如何改变沉后水浊度？",
+    "box_pt": [
+      133.92,
+      143.28,
+      745.2,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      135.36,
+      144.72,
+      738.0,
+      27.84
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 9",
+    "text": "操纵因素",
+    "box_pt": [
+      84.96,
+      236.16,
+      208.8,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      86.4,
+      237.6,
+      77.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 10",
+    "text": "剂量 D1–D5\n可选 pH P1–P3",
+    "box_pt": [
+      66.24,
+      275.04,
+      240.48,
+      57.6
+    ],
+    "rendered_text_bounds_pt": [
+      67.68,
+      276.48,
+      164.38,
+      55.13
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 12",
+    "text": "先锁定水平，\n再随机安排条件",
+    "box_pt": [
+      66.24,
+      352.8,
+      240.48,
+      46.08
+    ],
+    "rendered_text_bounds_pt": [
+      67.68,
+      354.24,
+      131.38,
+      45.12
+    ],
+    "vertical_overflow_pt": 0.48,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 15",
+    "text": "主要响应",
+    "box_pt": [
+      378.72,
+      236.16,
+      208.8,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      380.16,
+      237.6,
+      77.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 16",
+    "text": "上清浊度为主指标\n记录沉前浊度与 pH",
+    "box_pt": [
+      360.0,
+      275.04,
+      240.48,
+      57.6
+    ],
+    "rendered_text_bounds_pt": [
+      361.44,
+      276.48,
+      199.75,
+      55.13
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 18",
+    "text": "固定仪器、位置与时点，\n各组按同一规程操作",
+    "box_pt": [
+      360.0,
+      352.8,
+      240.48,
+      46.08
+    ],
+    "rendered_text_bounds_pt": [
+      361.44,
+      354.24,
+      203.38,
+      45.12
+    ],
+    "vertical_overflow_pt": 0.48,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 21",
+    "text": "控制条件",
+    "box_pt": [
+      672.48,
+      236.16,
+      208.8,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      673.92,
+      237.6,
+      77.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 22",
+    "text": "统一原水与容器\n固定混合/静置/取样",
+    "box_pt": [
+      653.76,
+      275.04,
+      240.48,
+      57.6
+    ],
+    "rendered_text_bounds_pt": [
+      655.2,
+      276.48,
+      203.25,
+      55.13
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 24",
+    "text": "重复数预先确定，\n原始记录同步留存",
+    "box_pt": [
+      653.76,
+      352.8,
+      240.48,
+      46.08
+    ],
+    "rendered_text_bounds_pt": [
+      655.2,
+      354.24,
+      149.38,
+      45.12
+    ],
+    "vertical_overflow_pt": 0.48,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 26",
+    "text": "实验参数须按原水特征、药剂与设备条件确定；本页不提供通用剂量或通用操作时间。",
+    "box_pt": [
+      67.68,
+      437.76,
+      817.2,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      69.12,
+      439.2,
+      689.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 27",
+    "text": "方法背景：EPA Ireland（2002）；California SWRCB（2020）｜具体程序须本地化",
+    "box_pt": [
+      44.64,
+      504.0,
+      766.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      505.44,
+      604.05,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 1",
+    "text": "02 · 因素组合与记录结构",
+    "box_pt": [
+      44.64,
+      25.92,
+      820.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      27.36,
+      208.25,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 2",
+    "text": "把条件表先画出来，再决定随机顺序",
+    "box_pt": [
+      44.64,
+      56.16,
+      867.6,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      57.6,
+      521.5,
+      38.72
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 3",
+    "text": "03 / 05",
+    "box_pt": [
+      825.84,
+      504.0,
+      88.56,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      856.28,
+      505.44,
+      61.38,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.26
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 4",
+    "text": "每格代表一个待执行条件；格内 D / P 编码仅用于说明结构。",
+    "box_pt": [
+      51.84,
+      128.16,
+      684.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      53.28,
+      129.6,
+      491.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 5",
+    "text": "pH ↓  /  剂量 →",
+    "box_pt": [
+      51.84,
+      151.2,
+      208.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      53.28,
+      152.64,
+      135.88,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 7",
+    "text": "D1",
+    "box_pt": [
+      106.56,
+      153.36,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      146.79,
+      154.8,
+      30.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 9",
+    "text": "D2",
+    "box_pt": [
+      218.16,
+      153.36,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      258.39,
+      154.8,
+      30.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 11",
+    "text": "D3",
+    "box_pt": [
+      329.76,
+      153.36,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      369.99,
+      154.8,
+      30.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 13",
+    "text": "D4",
+    "box_pt": [
+      441.36,
+      153.36,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      481.59,
+      154.8,
+      30.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 15",
+    "text": "D5",
+    "box_pt": [
+      552.96,
+      153.36,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      593.19,
+      154.8,
+      30.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 17",
+    "text": "P1",
+    "box_pt": [
+      54.72,
+      193.68,
+      38.16,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      62.3,
+      195.12,
+      28.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 1.63,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 19",
+    "text": "P1 · D1",
+    "box_pt": [
+      106.56,
+      197.28,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      125.98,
+      198.72,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 21",
+    "text": "P1 · D2",
+    "box_pt": [
+      218.16,
+      197.28,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      237.58,
+      198.72,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 23",
+    "text": "P1 · D3",
+    "box_pt": [
+      329.76,
+      197.28,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      349.18,
+      198.72,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 25",
+    "text": "P1 · D4",
+    "box_pt": [
+      441.36,
+      197.28,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      460.78,
+      198.72,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 27",
+    "text": "P1 · D5",
+    "box_pt": [
+      552.96,
+      197.28,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      572.38,
+      198.72,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 29",
+    "text": "P2",
+    "box_pt": [
+      54.72,
+      246.96,
+      38.16,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      62.3,
+      248.4,
+      28.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 1.63,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 31",
+    "text": "P2 · D1",
+    "box_pt": [
+      106.56,
+      250.56,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      125.98,
+      252.0,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 33",
+    "text": "P2 · D2",
+    "box_pt": [
+      218.16,
+      250.56,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      237.58,
+      252.0,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 35",
+    "text": "P2 · D3",
+    "box_pt": [
+      329.76,
+      250.56,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      349.18,
+      252.0,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 37",
+    "text": "P2 · D4",
+    "box_pt": [
+      441.36,
+      250.56,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      460.78,
+      252.0,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 39",
+    "text": "P2 · D5",
+    "box_pt": [
+      552.96,
+      250.56,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      572.38,
+      252.0,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 41",
+    "text": "P3",
+    "box_pt": [
+      54.72,
+      300.24,
+      38.16,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      62.3,
+      301.68,
+      28.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 1.63,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 43",
+    "text": "P3 · D1",
+    "box_pt": [
+      106.56,
+      303.84,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      125.98,
+      305.28,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 45",
+    "text": "P3 · D2",
+    "box_pt": [
+      218.16,
+      303.84,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      237.58,
+      305.28,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 47",
+    "text": "P3 · D3",
+    "box_pt": [
+      329.76,
+      303.84,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      349.18,
+      305.28,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 49",
+    "text": "P3 · D4",
+    "box_pt": [
+      441.36,
+      303.84,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      460.78,
+      305.28,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 51",
+    "text": "P3 · D5",
+    "box_pt": [
+      552.96,
+      303.84,
+      105.84,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      572.38,
+      305.28,
+      72.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 53",
+    "text": "空白/零剂量对照：按项目定义并纳入同一记录表",
+    "box_pt": [
+      67.68,
+      366.48,
+      572.4,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      69.12,
+      367.92,
+      391.88,
+      21.79
+    ],
+    "vertical_overflow_pt": 1.63,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 55",
+    "text": "实施前锁定",
+    "box_pt": [
+      711.36,
+      169.2,
+      180.0,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      712.8,
+      170.64,
+      106.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 57",
+    "text": "A",
+    "box_pt": [
+      712.8,
+      211.68,
+      24.48,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      718.29,
+      213.03,
+      18.88,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 58",
+    "text": "因素水平",
+    "box_pt": [
+      747.36,
+      211.32,
+      144.0,
+      23.76
+    ],
+    "rendered_text_bounds_pt": [
+      748.8,
+      212.76,
+      77.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 60",
+    "text": "B",
+    "box_pt": [
+      712.8,
+      253.44,
+      24.48,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      718.91,
+      254.79,
+      17.62,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 61",
+    "text": "重复数",
+    "box_pt": [
+      747.36,
+      253.08,
+      144.0,
+      23.76
+    ],
+    "rendered_text_bounds_pt": [
+      748.8,
+      254.52,
+      59.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 63",
+    "text": "C",
+    "box_pt": [
+      712.8,
+      295.2,
+      24.48,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      718.98,
+      296.55,
+      17.5,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 64",
+    "text": "随机顺序",
+    "box_pt": [
+      747.36,
+      294.84,
+      144.0,
+      23.76
+    ],
+    "rendered_text_bounds_pt": [
+      748.8,
+      296.28,
+      77.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 66",
+    "text": "D",
+    "box_pt": [
+      712.8,
+      336.96,
+      24.48,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      717.91,
+      338.31,
+      19.62,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0.26
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 67",
+    "text": "排除规则",
+    "box_pt": [
+      747.36,
+      336.6,
+      144.0,
+      23.76
+    ],
+    "rendered_text_bounds_pt": [
+      748.8,
+      338.04,
+      77.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 68",
+    "text": "本矩阵是版式示意；条件数与重复数须由真实方案确定。",
+    "box_pt": [
+      56.16,
+      427.68,
+      849.6,
+      31.68
+    ],
+    "rendered_text_bounds_pt": [
+      57.6,
+      429.12,
+      506.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 69",
+    "text": "结构参考 jar-test 条件比较方法；不含真实剂量或已验证参数",
+    "box_pt": [
+      44.64,
+      504.0,
+      766.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      505.44,
+      435.66,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 1",
+    "text": "03 · 执行流程与质控留痕",
+    "box_pt": [
+      44.64,
+      25.92,
+      820.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      27.36,
+      208.25,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 2",
+    "text": "用同一套记录链，把差异留给实验因素",
+    "box_pt": [
+      44.64,
+      56.16,
+      867.6,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      57.6,
+      553.5,
+      38.72
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 3",
+    "text": "04 / 05",
+    "box_pt": [
+      825.84,
+      504.0,
+      88.56,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      856.28,
+      505.44,
+      61.38,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.26
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 5",
+    "text": "01",
+    "box_pt": [
+      56.16,
+      136.8,
+      39.6,
+      39.6
+    ],
+    "rendered_text_bounds_pt": [
+      64.83,
+      145.71,
+      27.62,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 6",
+    "text": "取样与编码",
+    "box_pt": [
+      109.44,
+      136.08,
+      216.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      110.88,
+      137.52,
+      116.5,
+      26.62
+    ],
+    "vertical_overflow_pt": 0.7,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 7",
+    "text": "记录原水批次、时间、初始浊度与 pH。",
+    "box_pt": [
+      109.44,
+      167.76,
+      378.0,
+      36.0
+    ],
+    "rendered_text_bounds_pt": [
+      110.88,
+      169.2,
+      324.13,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 10",
+    "text": "02",
+    "box_pt": [
+      56.16,
+      217.44,
+      39.6,
+      39.6
+    ],
+    "rendered_text_bounds_pt": [
+      64.83,
+      226.35,
+      27.62,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 11",
+    "text": "配液与加药",
+    "box_pt": [
+      109.44,
+      216.72,
+      216.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      110.88,
+      218.16,
+      116.5,
+      26.62
+    ],
+    "vertical_overflow_pt": 0.7,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 12",
+    "text": "核对药剂批号、浓度、剂量；逐杯记录。",
+    "box_pt": [
+      109.44,
+      248.4,
+      378.0,
+      36.0
+    ],
+    "rendered_text_bounds_pt": [
+      110.88,
+      249.84,
+      329.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 15",
+    "text": "03",
+    "box_pt": [
+      56.16,
+      298.08,
+      39.6,
+      39.6
+    ],
+    "rendered_text_bounds_pt": [
+      64.83,
+      306.99,
+      27.62,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 16",
+    "text": "混合与沉降",
+    "box_pt": [
+      109.44,
+      297.36,
+      216.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      110.88,
+      298.8,
+      116.5,
+      26.62
+    ],
+    "vertical_overflow_pt": 0.7,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 17",
+    "text": "按本地程序执行，保持组间条件一致。",
+    "box_pt": [
+      109.44,
+      329.04,
+      378.0,
+      36.0
+    ],
+    "rendered_text_bounds_pt": [
+      110.88,
+      330.48,
+      311.38,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 20",
+    "text": "04",
+    "box_pt": [
+      56.16,
+      378.72,
+      39.6,
+      39.6
+    ],
+    "rendered_text_bounds_pt": [
+      64.83,
+      387.63,
+      27.62,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 21",
+    "text": "取样与读数",
+    "box_pt": [
+      109.44,
+      378.0,
+      216.0,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      110.88,
+      379.44,
+      116.5,
+      26.62
+    ],
+    "vertical_overflow_pt": 0.7,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 22",
+    "text": "固定取样位置与时点，记录浊度、pH及异常。",
+    "box_pt": [
+      109.44,
+      409.68,
+      378.0,
+      36.0
+    ],
+    "rendered_text_bounds_pt": [
+      110.88,
+      411.12,
+      372.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 25",
+    "text": "记录异常，而不是事后删点",
+    "box_pt": [
+      550.08,
+      354.24,
+      326.88,
+      25.92
+    ],
+    "rendered_text_bounds_pt": [
+      551.52,
+      355.68,
+      246.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 26",
+    "text": "记录絮体、加药与读数异常。\n保留原始记录，按预设规则\n处理偏差。",
+    "box_pt": [
+      550.08,
+      390.24,
+      316.8,
+      68.4
+    ],
+    "rendered_text_bounds_pt": [
+      551.52,
+      391.68,
+      239.38,
+      68.45
+    ],
+    "vertical_overflow_pt": 1.49,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 27",
+    "text": "示意流程；混合强度、持续时间、沉降时间等按本地方法确认",
+    "box_pt": [
+      44.64,
+      504.0,
+      766.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      505.44,
+      436.75,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 1",
+    "text": "04 · 虚构数据呈现样例",
+    "box_pt": [
+      44.64,
+      25.92,
+      820.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      27.36,
+      190.25,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 2",
+    "text": "用示意图说明读数与局限",
+    "box_pt": [
+      44.64,
+      56.16,
+      867.6,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      57.6,
+      361.5,
+      38.72
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 3",
+    "text": "05 / 05",
+    "box_pt": [
+      825.84,
+      504.0,
+      88.56,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      856.28,
+      505.44,
+      61.38,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 3.26
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 5",
+    "text": "示意数据（虚构）｜仅用于版式演示",
+    "box_pt": [
+      67.68,
+      138.96,
+      820.8,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      69.12,
+      140.4,
+      326.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 2.6,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 6",
+    "text": "沉后浊度（NTU）",
+    "box_pt": [
+      59.04,
+      187.2,
+      302.4,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      60.48,
+      188.64,
+      171.0,
+      24.2
+    ],
+    "vertical_overflow_pt": 0.44,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 8",
+    "text": "20",
+    "box_pt": [
+      28.8,
+      205.2,
+      37.44,
+      28.8
+    ],
+    "rendered_text_bounds_pt": [
+      45.18,
+      208.71,
+      26.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.31
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 10",
+    "text": "15",
+    "box_pt": [
+      28.8,
+      257.4,
+      37.44,
+      28.8
+    ],
+    "rendered_text_bounds_pt": [
+      45.18,
+      260.91,
+      26.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.31
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 12",
+    "text": "10",
+    "box_pt": [
+      28.8,
+      309.6,
+      37.44,
+      28.8
+    ],
+    "rendered_text_bounds_pt": [
+      45.18,
+      313.11,
+      26.37,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.31
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 14",
+    "text": "5",
+    "box_pt": [
+      28.8,
+      361.8,
+      37.44,
+      28.8
+    ],
+    "rendered_text_bounds_pt": [
+      55.68,
+      365.31,
+      15.87,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.31
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 16",
+    "text": "0",
+    "box_pt": [
+      28.8,
+      414.0,
+      37.44,
+      28.8
+    ],
+    "rendered_text_bounds_pt": [
+      55.68,
+      417.51,
+      15.87,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.31
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 19",
+    "text": "16",
+    "box_pt": [
+      104.4,
+      235.44,
+      63.36,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      124.96,
+      236.88,
+      27.63,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 20",
+    "text": "D1",
+    "box_pt": [
+      104.4,
+      437.04,
+      63.36,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      123.39,
+      438.48,
+      30.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 1.63,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 22",
+    "text": "11",
+    "box_pt": [
+      198.0,
+      287.64,
+      63.36,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      218.55,
+      289.08,
+      27.63,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 23",
+    "text": "D2",
+    "box_pt": [
+      198.0,
+      437.04,
+      63.36,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      216.99,
+      438.48,
+      30.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 1.63,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 25",
+    "text": "8",
+    "box_pt": [
+      291.6,
+      318.96,
+      63.36,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      317.72,
+      320.4,
+      16.5,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 26",
+    "text": "D3",
+    "box_pt": [
+      291.6,
+      437.04,
+      63.36,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      310.59,
+      438.48,
+      30.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 1.63,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 28",
+    "text": "9",
+    "box_pt": [
+      385.2,
+      308.52,
+      63.36,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      411.32,
+      309.96,
+      16.5,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 29",
+    "text": "D4",
+    "box_pt": [
+      385.2,
+      437.04,
+      63.36,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      404.19,
+      438.48,
+      30.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 1.63,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 31",
+    "text": "12",
+    "box_pt": [
+      478.8,
+      277.2,
+      63.36,
+      19.44
+    ],
+    "rendered_text_bounds_pt": [
+      499.35,
+      278.64,
+      27.63,
+      21.79
+    ],
+    "vertical_overflow_pt": 3.79,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 32",
+    "text": "D5",
+    "box_pt": [
+      478.8,
+      437.04,
+      63.36,
+      21.6
+    ],
+    "rendered_text_bounds_pt": [
+      497.79,
+      438.48,
+      30.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 1.63,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 34",
+    "text": "读图提醒",
+    "box_pt": [
+      642.96,
+      210.24,
+      237.6,
+      28.8
+    ],
+    "rendered_text_bounds_pt": [
+      644.4,
+      211.68,
+      94.5,
+      26.62
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 35",
+    "text": "无重复与误差范围，\n也没有原水背景。",
+    "box_pt": [
+      642.96,
+      255.6,
+      241.2,
+      50.4
+    ],
+    "rendered_text_bounds_pt": [
+      644.4,
+      257.04,
+      186.0,
+      50.12
+    ],
+    "vertical_overflow_pt": 1.16,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 37",
+    "text": "真实汇报需补齐：\n方法、重复数与离散度；\n原始记录及偏差说明。",
+    "box_pt": [
+      642.96,
+      338.4,
+      237.6,
+      75.6
+    ],
+    "rendered_text_bounds_pt": [
+      644.4,
+      339.84,
+      203.38,
+      68.45
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 38",
+    "text": "数据文件：data-demo.csv（仅供版式演示）",
+    "box_pt": [
+      59.04,
+      465.12,
+      633.6,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      60.48,
+      466.56,
+      366.75,
+      21.79
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 39",
+    "text": "数值由样稿作者编造，仅验证图表布局；无实验采集或外部数据库来源",
+    "box_pt": [
+      44.64,
+      504.0,
+      766.8,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      46.08,
+      505.44,
+      500.75,
+      19.37
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "review_mode": "agent-QA-user-authorized-continuous-local",
+  "review_state": "pending",
+  "outcome": null,
+  "qa_version": null,
+  "pptx_sha256": null,
+  "contact_sheet": {"path": null, "sha256": null},
+  "slides": [],
+  "whole_deck_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "checks_performed": [],
+    "contact_sheet_sha256": null,
+    "bindings": {},
+    "findings": []
+  }
+}

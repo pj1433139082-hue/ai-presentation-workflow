@@ -1,0 +1,1712 @@
+[
+  {
+    "slide": 1,
+    "name": "TextBox 3",
+    "text": "公共服务说明 · 示例",
+    "box_pt": [
+      79.2,
+      59.04,
+      352.8,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      80.28,
+      63.36,
+      168.0,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 4",
+    "text": "社区图书馆\n服务升级",
+    "box_pt": [
+      64.8,
+      123.84,
+      428.4,
+      89.28
+    ],
+    "rendered_text_bounds_pt": [
+      65.88,
+      118.08,
+      222.5,
+      100.8
+    ],
+    "vertical_overflow_pt": 5.76,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 5",
+    "text": "让附近的人更容易借阅",
+    "box_pt": [
+      67.68,
+      236.16,
+      403.2,
+      51.84
+    ],
+    "rendered_text_bounds_pt": [
+      68.76,
+      245.28,
+      288.38,
+      33.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 6",
+    "text": "从借阅流程、空间导向到活动通知，\n把服务信息说清楚、放在看得到的地方。",
+    "box_pt": [
+      69.12,
+      305.28,
+      400.32,
+      67.68
+    ],
+    "rendered_text_bounds_pt": [
+      70.2,
+      315.12,
+      365.88,
+      48.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 8",
+    "text": "虚构城市 · 方案概念，不代表真实馆舍",
+    "box_pt": [
+      80.64,
+      402.48,
+      313.2,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      81.72,
+      406.8,
+      312.0,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 11",
+    "text": "馆舍插画为独立整体对象",
+    "box_pt": [
+      583.92,
+      444.96,
+      246.24,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      608.04,
+      447.84,
+      203.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 13",
+    "text": "虚构城市 · 服务方案示例｜非真实上线信息",
+    "box_pt": [
+      60.48,
+      502.56,
+      781.2,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      505.2,
+      306.13,
+      19.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 1,
+    "name": "TextBox 14",
+    "text": "01",
+    "box_pt": [
+      856.8,
+      502.56,
+      53.28,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      887.8,
+      504.0,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.35
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 2",
+    "text": "01 / 到馆前后 · 流程提案",
+    "box_pt": [
+      60.48,
+      21.6,
+      439.2,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      23.4,
+      209.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 3",
+    "text": "借阅流程拆成三步",
+    "box_pt": [
+      60.48,
+      49.68,
+      849.6,
+      51.84
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      54.0,
+      298.75,
+      43.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 4",
+    "text": "每一步都把办理条件放在旁边，减少来回查找。",
+    "box_pt": [
+      63.36,
+      96.48,
+      806.4,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      64.44,
+      101.76,
+      425.88,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 7",
+    "text": "01",
+    "box_pt": [
+      124.56,
+      153.36,
+      89.28,
+      86.4
+    ],
+    "rendered_text_bounds_pt": [
+      155.57,
+      183.36,
+      33.75,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 8",
+    "text": "查书",
+    "box_pt": [
+      72.0,
+      263.52,
+      194.4,
+      40.32
+    ],
+    "rendered_text_bounds_pt": [
+      141.2,
+      266.88,
+      64.38,
+      33.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 9",
+    "text": "查看馆藏状态；\n检索入口待属地确认。",
+    "box_pt": [
+      61.2,
+      311.04,
+      216.0,
+      64.8
+    ],
+    "rendered_text_bounds_pt": [
+      69.2,
+      319.44,
+      205.87,
+      48.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 11",
+    "text": "02",
+    "box_pt": [
+      434.16,
+      153.36,
+      89.28,
+      86.4
+    ],
+    "rendered_text_bounds_pt": [
+      465.17,
+      183.36,
+      33.75,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 12",
+    "text": "预约",
+    "box_pt": [
+      381.6,
+      263.52,
+      194.4,
+      40.32
+    ],
+    "rendered_text_bounds_pt": [
+      450.8,
+      266.88,
+      64.38,
+      33.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 13",
+    "text": "选择可预约资源；\n范围与规则待确认。",
+    "box_pt": [
+      370.8,
+      311.04,
+      216.0,
+      64.8
+    ],
+    "rendered_text_bounds_pt": [
+      388.8,
+      319.44,
+      185.87,
+      48.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 15",
+    "text": "03",
+    "box_pt": [
+      743.76,
+      153.36,
+      89.28,
+      86.4
+    ],
+    "rendered_text_bounds_pt": [
+      774.78,
+      183.36,
+      33.75,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 16",
+    "text": "取书",
+    "box_pt": [
+      691.2,
+      263.52,
+      194.4,
+      40.32
+    ],
+    "rendered_text_bounds_pt": [
+      760.4,
+      266.88,
+      64.38,
+      33.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 17",
+    "text": "按通知到指定地点；\n凭证与保留期待确认。",
+    "box_pt": [
+      680.4,
+      311.04,
+      216.0,
+      64.8
+    ],
+    "rendered_text_bounds_pt": [
+      688.4,
+      319.44,
+      205.87,
+      48.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 19",
+    "text": "待属地确认：检索入口 · 预约范围 · 保留期限 · 取书凭证",
+    "box_pt": [
+      77.76,
+      414.0,
+      799.2,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      78.84,
+      424.08,
+      457.25,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 21",
+    "text": "虚构城市 · 服务方案示例｜非真实上线信息｜流程为拟议示意",
+    "box_pt": [
+      60.48,
+      502.56,
+      781.2,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      505.2,
+      434.13,
+      19.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 2,
+    "name": "TextBox 22",
+    "text": "02",
+    "box_pt": [
+      856.8,
+      502.56,
+      53.28,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      887.8,
+      504.0,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.35
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 2",
+    "text": "02 / 空间导向 · 概念平面",
+    "box_pt": [
+      60.48,
+      21.6,
+      439.2,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      23.4,
+      209.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 3",
+    "text": "让入口、服务台和安静区一眼可辨",
+    "box_pt": [
+      60.48,
+      49.68,
+      849.6,
+      51.84
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      54.0,
+      550.75,
+      43.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 4",
+    "text": "动线分区示意 · 非真实馆舍平面",
+    "box_pt": [
+      63.36,
+      100.8,
+      518.4,
+      28.8
+    ],
+    "rendered_text_bounds_pt": [
+      64.44,
+      104.4,
+      258.0,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 7",
+    "text": "儿童共读区",
+    "box_pt": [
+      93.6,
+      176.4,
+      174.24,
+      46.08
+    ],
+    "rendered_text_bounds_pt": [
+      125.72,
+      186.24,
+      116.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 9",
+    "text": "安静阅览区",
+    "box_pt": [
+      308.16,
+      176.4,
+      249.12,
+      46.08
+    ],
+    "rendered_text_bounds_pt": [
+      377.72,
+      186.24,
+      116.5,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 11",
+    "text": "借还与\n咨询台",
+    "box_pt": [
+      93.6,
+      339.84,
+      174.24,
+      57.6
+    ],
+    "rendered_text_bounds_pt": [
+      147.72,
+      342.24,
+      72.5,
+      52.8
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 13",
+    "text": "活动 / 共用空间",
+    "box_pt": [
+      308.16,
+      339.84,
+      249.12,
+      57.6
+    ],
+    "rendered_text_bounds_pt": [
+      355.03,
+      355.44,
+      161.88,
+      26.4
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 15",
+    "text": "入口 → 服务台 → 阅览区域：连续通行路线（提案）",
+    "box_pt": [
+      96.48,
+      259.2,
+      457.92,
+      31.68
+    ],
+    "rendered_text_bounds_pt": [
+      116.69,
+      264.24,
+      422.87,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 17",
+    "text": "分区名称、通道和面积均为示意",
+    "box_pt": [
+      66.96,
+      466.56,
+      518.4,
+      23.04
+    ],
+    "rendered_text_bounds_pt": [
+      68.04,
+      468.48,
+      228.75,
+      19.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 18",
+    "text": "导向原则",
+    "box_pt": [
+      623.52,
+      144.0,
+      260.64,
+      40.32
+    ],
+    "rendered_text_bounds_pt": [
+      624.6,
+      149.76,
+      103.13,
+      28.8
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 20",
+    "text": "先看见服务台",
+    "box_pt": [
+      662.4,
+      200.16,
+      219.6,
+      31.68
+    ],
+    "rendered_text_bounds_pt": [
+      663.48,
+      204.0,
+      126.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 21",
+    "text": "入口先指向服务台",
+    "box_pt": [
+      662.4,
+      233.28,
+      219.6,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      663.48,
+      244.8,
+      149.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 23",
+    "text": "区分动静空间",
+    "box_pt": [
+      662.4,
+      288.0,
+      219.6,
+      31.68
+    ],
+    "rendered_text_bounds_pt": [
+      663.48,
+      291.84,
+      126.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 24",
+    "text": "儿童区与安静区分开",
+    "box_pt": [
+      662.4,
+      321.12,
+      219.6,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      663.48,
+      332.64,
+      167.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 26",
+    "text": "保持路径连续",
+    "box_pt": [
+      662.4,
+      375.84,
+      219.6,
+      31.68
+    ],
+    "rendered_text_bounds_pt": [
+      663.48,
+      379.68,
+      126.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 27",
+    "text": "转角和高差处补上指引",
+    "box_pt": [
+      662.4,
+      408.96,
+      219.6,
+      44.64
+    ],
+    "rendered_text_bounds_pt": [
+      663.48,
+      420.48,
+      185.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 29",
+    "text": "虚构城市 · 服务方案示例｜非真实上线信息｜空间信息待属地核实",
+    "box_pt": [
+      60.48,
+      502.56,
+      781.2,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      505.2,
+      466.13,
+      19.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 3,
+    "name": "TextBox 30",
+    "text": "03",
+    "box_pt": [
+      856.8,
+      502.56,
+      53.28,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      887.8,
+      504.0,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.35
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 2",
+    "text": "03 / 活动信息 · 空白模板",
+    "box_pt": [
+      60.48,
+      21.6,
+      439.2,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      23.4,
+      209.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 3",
+    "text": "活动通知回答三件事：何时、何地、如何参加",
+    "box_pt": [
+      60.48,
+      49.68,
+      849.6,
+      51.84
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      54.0,
+      730.75,
+      43.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 6",
+    "text": "活动公告模板",
+    "box_pt": [
+      87.84,
+      146.16,
+      266.4,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      88.92,
+      150.48,
+      113.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 7",
+    "text": "活动名称待填",
+    "box_pt": [
+      84.96,
+      182.88,
+      270.72,
+      56.16
+    ],
+    "rendered_text_bounds_pt": [
+      86.04,
+      195.36,
+      163.75,
+      31.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 9",
+    "text": "时间",
+    "box_pt": [
+      90.72,
+      252.0,
+      99.36,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      91.8,
+      254.88,
+      41.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 10",
+    "text": "待属地确认",
+    "box_pt": [
+      192.96,
+      252.0,
+      152.64,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      194.04,
+      253.68,
+      105.88,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 12",
+    "text": "地点",
+    "box_pt": [
+      90.72,
+      302.4,
+      99.36,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      91.8,
+      305.28,
+      41.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 13",
+    "text": "待属地确认",
+    "box_pt": [
+      192.96,
+      302.4,
+      152.64,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      194.04,
+      304.08,
+      105.88,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 15",
+    "text": "参与方式",
+    "box_pt": [
+      90.72,
+      352.8,
+      99.36,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      91.8,
+      355.68,
+      77.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 16",
+    "text": "待属地确认",
+    "box_pt": [
+      192.96,
+      352.8,
+      152.64,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      194.04,
+      354.48,
+      105.88,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 18",
+    "text": "对象 / 名额",
+    "box_pt": [
+      90.72,
+      403.2,
+      99.36,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      91.8,
+      406.08,
+      96.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 19",
+    "text": "待属地确认",
+    "box_pt": [
+      192.96,
+      403.2,
+      152.64,
+      27.36
+    ],
+    "rendered_text_bounds_pt": [
+      194.04,
+      404.88,
+      105.88,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 20",
+    "text": "读者从看到信息到参加活动",
+    "box_pt": [
+      424.8,
+      141.12,
+      410.4,
+      34.56
+    ],
+    "rendered_text_bounds_pt": [
+      425.88,
+      144.6,
+      282.88,
+      27.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 23",
+    "text": "1",
+    "box_pt": [
+      429.12,
+      196.56,
+      30.24,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      438.68,
+      202.32,
+      16.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 24",
+    "text": "看活动内容",
+    "box_pt": [
+      479.52,
+      191.52,
+      200.16,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      480.6,
+      194.64,
+      106.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 25",
+    "text": "对象、主题与时长",
+    "box_pt": [
+      680.4,
+      191.52,
+      204.48,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      681.48,
+      197.28,
+      149.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 27",
+    "text": "2",
+    "box_pt": [
+      429.12,
+      264.96,
+      30.24,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      438.68,
+      270.72,
+      16.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 28",
+    "text": "查时间地点",
+    "box_pt": [
+      479.52,
+      259.92,
+      200.16,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      480.6,
+      263.04,
+      106.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 29",
+    "text": "地址与到场提示",
+    "box_pt": [
+      680.4,
+      259.92,
+      204.48,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      681.48,
+      265.68,
+      131.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 31",
+    "text": "3",
+    "box_pt": [
+      429.12,
+      333.36,
+      30.24,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      438.68,
+      339.12,
+      16.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 32",
+    "text": "确认报名方式",
+    "box_pt": [
+      479.52,
+      328.32,
+      200.16,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      480.6,
+      331.44,
+      126.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 33",
+    "text": "线上 / 线下路径待确认",
+    "box_pt": [
+      680.4,
+      328.32,
+      204.48,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      681.48,
+      334.08,
+      185.88,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 35",
+    "text": "4",
+    "box_pt": [
+      429.12,
+      401.76,
+      30.24,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      438.68,
+      407.52,
+      16.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 36",
+    "text": "查看提醒规则",
+    "box_pt": [
+      479.52,
+      396.72,
+      200.16,
+      30.24
+    ],
+    "rendered_text_bounds_pt": [
+      480.6,
+      399.84,
+      126.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 37",
+    "text": "变更与取消方式待确认",
+    "box_pt": [
+      680.4,
+      396.72,
+      204.48,
+      33.12
+    ],
+    "rendered_text_bounds_pt": [
+      681.48,
+      402.48,
+      185.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 39",
+    "text": "虚构城市 · 服务方案示例｜非真实上线信息｜活动名称、时段、地点和规则均待确认",
+    "box_pt": [
+      60.48,
+      502.56,
+      781.2,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      505.2,
+      594.13,
+      19.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 4,
+    "name": "TextBox 40",
+    "text": "04",
+    "box_pt": [
+      856.8,
+      502.56,
+      53.28,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      887.8,
+      504.0,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.35
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 2",
+    "text": "04 / 发布前核对 · 待属地确认",
+    "box_pt": [
+      60.48,
+      21.6,
+      439.2,
+      25.2
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      23.4,
+      245.5,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 3",
+    "text": "上线前先把四项本地信息核实清楚",
+    "box_pt": [
+      60.48,
+      49.68,
+      849.6,
+      51.84
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      54.0,
+      550.75,
+      43.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 6",
+    "text": "场馆地址与服务入口",
+    "box_pt": [
+      110.88,
+      145.44,
+      256.32,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      111.96,
+      154.32,
+      186.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 7",
+    "text": "待属地确认",
+    "box_pt": [
+      367.2,
+      145.44,
+      112.32,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      388.41,
+      155.52,
+      95.37,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 4.26
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 9",
+    "text": "开放时段与节假日安排",
+    "box_pt": [
+      110.88,
+      211.68,
+      256.32,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      111.96,
+      220.56,
+      206.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 10",
+    "text": "待属地确认",
+    "box_pt": [
+      367.2,
+      211.68,
+      112.32,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      388.41,
+      221.76,
+      95.37,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 4.26
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 12",
+    "text": "联系电话与反馈渠道",
+    "box_pt": [
+      110.88,
+      277.92,
+      256.32,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      111.96,
+      286.8,
+      186.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 13",
+    "text": "待属地确认",
+    "box_pt": [
+      367.2,
+      277.92,
+      112.32,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      388.41,
+      288.0,
+      95.37,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 4.26
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 15",
+    "text": "借阅、预约与续借规则",
+    "box_pt": [
+      110.88,
+      344.16,
+      256.32,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      111.96,
+      353.04,
+      206.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 16",
+    "text": "待属地确认",
+    "box_pt": [
+      367.2,
+      344.16,
+      112.32,
+      41.76
+    ],
+    "rendered_text_bounds_pt": [
+      388.41,
+      354.24,
+      95.37,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 4.26
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 18",
+    "text": "建议采用小步试行",
+    "box_pt": [
+      548.64,
+      142.56,
+      316.8,
+      40.32
+    ],
+    "rendered_text_bounds_pt": [
+      549.72,
+      148.32,
+      199.13,
+      28.8
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 20",
+    "text": "01",
+    "box_pt": [
+      553.68,
+      205.2,
+      33.12,
+      36.0
+    ],
+    "rendered_text_bounds_pt": [
+      559.11,
+      212.4,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 21",
+    "text": "核规则文本",
+    "box_pt": [
+      606.24,
+      205.2,
+      273.6,
+      37.44
+    ],
+    "rendered_text_bounds_pt": [
+      607.32,
+      211.92,
+      106.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 23",
+    "text": "02",
+    "box_pt": [
+      553.68,
+      265.68,
+      33.12,
+      36.0
+    ],
+    "rendered_text_bounds_pt": [
+      559.11,
+      272.88,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 24",
+    "text": "现场走读",
+    "box_pt": [
+      606.24,
+      265.68,
+      273.6,
+      37.44
+    ],
+    "rendered_text_bounds_pt": [
+      607.32,
+      272.4,
+      86.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 26",
+    "text": "03",
+    "box_pt": [
+      553.68,
+      326.16,
+      33.12,
+      36.0
+    ],
+    "rendered_text_bounds_pt": [
+      559.11,
+      333.36,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 27",
+    "text": "小范围试行",
+    "box_pt": [
+      606.24,
+      326.16,
+      273.6,
+      37.44
+    ],
+    "rendered_text_bounds_pt": [
+      607.32,
+      332.88,
+      106.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 29",
+    "text": "04",
+    "box_pt": [
+      553.68,
+      386.64,
+      33.12,
+      36.0
+    ],
+    "rendered_text_bounds_pt": [
+      559.11,
+      393.84,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 30",
+    "text": "收集问题并复盘",
+    "box_pt": [
+      606.24,
+      386.64,
+      273.6,
+      37.44
+    ],
+    "rendered_text_bounds_pt": [
+      607.32,
+      393.36,
+      146.0,
+      24.0
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 31",
+    "text": "运营安排由属地馆方或主管部门确认",
+    "box_pt": [
+      549.36,
+      437.76,
+      338.4,
+      36.0
+    ],
+    "rendered_text_bounds_pt": [
+      550.44,
+      444.96,
+      293.38,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 33",
+    "text": "虚构城市 · 服务方案示例｜非真实上线信息",
+    "box_pt": [
+      60.48,
+      502.56,
+      781.2,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      61.56,
+      505.2,
+      306.13,
+      19.2
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 0
+  },
+  {
+    "slide": 5,
+    "name": "TextBox 34",
+    "text": "05",
+    "box_pt": [
+      856.8,
+      502.56,
+      53.28,
+      24.48
+    ],
+    "rendered_text_bounds_pt": [
+      887.8,
+      504.0,
+      27.63,
+      21.6
+    ],
+    "vertical_overflow_pt": 0,
+    "horizontal_overflow_pt": 5.35
+  }
+]

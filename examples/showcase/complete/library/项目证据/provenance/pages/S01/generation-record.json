@@ -1,0 +1,39 @@
+{
+  "schema": "apw-concept-generation-record/v1",
+  "slide_id": "S01",
+  "artifact_kind": "standalone-slide-concept",
+  "actor": "agent",
+  "tool": "Codex built-in image_gen",
+  "tool_call": "image_gen.imagegen",
+  "operation": "generate",
+  "generated_at": "2026-10-13T08:51:42+08:00",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-57f8-7b41-8255-833b48138fbc\\exec-ac179ff8-4513-4fa9-9b3a-a2828794c6e1.png",
+  "original_output_sha256": "6e1f3bd87466ddb980553d23bee6588b82b4e5e9fecfc3881ac74d0835f44f1b",
+  "output_path": "concepts/S01.png",
+  "output_sha256": "6e1f3bd87466ddb980553d23bee6588b82b4e5e9fecfc3881ac74d0835f44f1b",
+  "dimensions_px": [
+    1672,
+    941
+  ],
+  "format": "PNG",
+  "design_concept_path": "concept.png",
+  "design_concept_sha256": "6e1f3bd87466ddb980553d23bee6588b82b4e5e9fecfc3881ac74d0835f44f1b",
+  "prompt_path": "provenance/pages/S01/prompt.txt",
+  "prompt_sha256": "fd6e38dddabe73a0d0de88ec93f7f3754eda08e56c33fa4681713b17ab3f0f09",
+  "prompt": "Use case: productivity-visual\nAsset type: one complete 16:9 Chinese concept cover for a fictional neighborhood community library guide.\nScene/backdrop: bright, welcoming reading space with warm paper, bookshelves, soft daylight and human-scale wayfinding; no real city or named institution.\nSubject: an approachable first-visit guide to borrowing a book, clearly marked as a general example.\nStyle/medium: calm civic-culture editorial illustration, crisp friendly linework with subtle paper texture, deep ink-blue type, cobalt and teal route accents, small marigold/coral touches. Friendly and dignified, not childish or official-government styling.\nComposition/framing: a strong readable title with a light visual route that invites a reader into the guide; make this a cover, distinct from the reused four-stop route page.\nText (verbatim; render each line exactly once, with no other words): “第一次借阅，从这里开始” “社区图书馆借阅指南 · 流程示例” “一张图看懂进入、选书、办理与归还。” “实际步骤与规则以所在图书馆为准”\nConstraints: no actual library name, logo, city, fee, opening hours, membership rule, due date, or claim about a specific service. Keep all copy legible and exact.\nAvoid: official seals, real service policies, fake web interface, invented dates, signage microtext, fees, extra words, or watermark.",
+  "input_snapshot_path": "provenance/concept-input-hash-snapshot.json",
+  "input_sha256": {
+    "brief.json": "9c82d65f4156a37db44f86c771ad9dcd1b2217fcd0f3b26e0ed993b27f72e458",
+    "deck-spec.json": "ea4496ab3a49f7775d72021063608f9d28b7b9bb75d1922955c1e6ad225f7d88",
+    "reference-study.json": "2096fd84da1debc82497e2a0ea3004c406f83c952a47e99ec7c8e5d023709dc4",
+    "style-contract.json": "3c1cd8312323597c5f64f71a8eb347c9e1ac8a66d64d14d011ea33366508b1e7"
+  },
+  "input_snapshot_for_this_slide_sha256": "d7347ec414b1375f6312178bbb95883c3ed4aeea935a07d727480ff910866ccc",
+  "reference_ids_in_project_contract": [
+    "R469"
+  ],
+  "direct_image_inputs_sent_to_tool": [],
+  "history_note": "This image was generated after the four project inputs were frozen. The prompt uses the analyzed reference direction in words; no reference image file was passed as a direct image_gen input.",
+  "user_visual_acceptance": "not-claimed",
+  "formal_gates": "not-claimed"
+}

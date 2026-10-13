@@ -1,0 +1,58 @@
+{
+  "selected_reference_ids": [
+    "R479",
+    "R297"
+  ],
+  "references": [
+    {
+      "id": "R479",
+      "status": "analyzed",
+      "image_path": "references/case479.jpg",
+      "sha256": "2c2dfce4d68f752fbb3f2c370d8839af09ed5b8f4175c49041e25cb1cfe99fb4",
+      "source_locator": "https://x.com/oggii_0/status/2060212097083146644",
+      "usage_note": "已实际查看本地原图和完整原prompt。图中以暖白留白、撕纸层次、日常人物与轻量手写标记形成温暖编辑氛围；仅为视觉参考。",
+      "transferable_rules": [
+        "用生活化主体承载情绪，再为标题留空间。",
+        "纸张撕边、胶带、轻线条仅作少量层次，不代替信息组织。",
+        "让暖色场景与简洁文字形成编辑节奏。"
+      ],
+      "project_translation": [
+        "将人物故事转为校园同学与旧物交接的AI概念场景；不是实地照片。",
+        "借鉴温暖、手作、编辑留白，同时以现代可读中文呈现服务信息。",
+        "封面、需求、团队页按叙事自由改变构图，不复刻竖版人物海报。"
+      ],
+      "do_not_copy": [
+        "不复制原案例人物、咖啡馆、角色周边或手写英文。",
+        "不照搬竖版3:4构图、人物偏右安排或纸片位置。",
+        "不把案例氛围当作用户研究、校园事实或服务验证。"
+      ],
+      "catalog_case_id": 479,
+      "original_prompt_path": "provenance/reference-prompts/case479-original-prompt.txt"
+    },
+    {
+      "id": "R297",
+      "status": "analyzed",
+      "image_path": "references/case297.jpg",
+      "sha256": "21c21e0c02822cfd499befd24bb303d15a06b807c58d1408162bc2959fd86ed3",
+      "source_locator": "https://x.com/maxescu/status/2045203839910056014",
+      "usage_note": "已实际查看本地原图和完整中英双语prompt。案例将手写食谱组织成杂志式说明跨页；参考信息排序与步骤层次，不迁移其营养数值、配方或多栏布局。",
+      "transferable_rules": [
+        "先建立主结论，再用过程细节和量化信息支撑阅读。",
+        "让连续步骤与总览形成清晰顺序，层级服务于理解。",
+        "密集页可像出版物编排，不必均分成等尺寸卡片。"
+      ],
+      "project_translation": [
+        "将食谱步骤转译为校园旧物流转、试点和收支说明。",
+        "收支页逐项展示假设和算式，数字就近标注为示例测算。",
+        "页面构图随叙事变化，不复制书本跨页、四栏或菜品照片。"
+      ],
+      "do_not_copy": [
+        "不复制食物、食谱、营养成分、引用语或数量。",
+        "不照搬双页书本样机、步骤照片拼板或四栏网格。",
+        "不把金额或流程图表示为真实经营、试点或绩效。"
+      ],
+      "catalog_case_id": 297,
+      "original_prompt_path": "provenance/reference-prompts/case297-original-prompt.txt"
+    }
+  ]
+}

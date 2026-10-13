@@ -1,0 +1,47 @@
+{
+  "id": "S02-text-badge-exhaust",
+  "role": "text",
+  "text": "排热",
+  "bbox": [
+    1307,
+    224,
+    121,
+    42
+  ],
+  "position": {
+    "x": 1367,
+    "y": 261,
+    "anchor": "middle"
+  },
+  "font_family": "Noto Sans SC",
+  "font_weight": 800,
+  "font_size_px": 38,
+  "letter_spacing_px": 6,
+  "color": "#FFFFFF",
+  "editable": true,
+  "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+  "z": 31,
+  "representation": "native",
+  "type": "text",
+  "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+  "semantic_role": "exhaust badge label",
+  "file": "components/text-badge-exhaust.svg",
+  "text_width_px": 121,
+  "source_format": "editable SVG text node",
+  "sha256": "ffa4108ba27eab2e93c5b17a98cb2efe4bdd86486d7c2fd26fdb403dfc30007d",
+  "asset_frame_bbox": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "svg_viewbox": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "path": "layers/S02/native-text/S02-text-badge-exhaust.json",
+  "line_height": 1.1,
+  "text_align": "center"
+}

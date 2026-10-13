@@ -1,87 +1,82 @@
 ---
 name: ai-presentation-workflow
-description: Use when creating or redesigning a PPT/PPTX from a brief or reference, when full-slide images must become reusable transparent components, when table/chart text and data must stay editable, or when presentation stages repeatedly stall because inputs, outputs, approvals, research evidence, or QA are unclear.
+description: Create, redesign, or resume presentation concepts, requested visual assets, or an automatically assembled editable PPTX, with a reviewable path from sources and concepts to the selected deliverable. Routes local showcases separately from strict production and component-first projects.
 ---
 
 # AI Presentation Workflow
 
-Build a deck as a resumable production system. The canonical deliverable is a transparent component library plus placement metadata; PPTX assembly is optional. A full-slide concept is a visual contract, never a final flattened background.
+Use this skill when the task is to plan, create, redesign, or resume a presentation. The AI Presentation Workflow (APW) keeps content truth, design evidence, requested editability, and review authority connected to the selected deliverable; PPTX assembly is included only when the project selects that mode. A technically valid deck is not automatically visually accepted.
 
-The first complete full-slide deliverable after the approved story and style calibration is a contentful review concept: it shows the approved title, concise on-slide copy, truth/status labels, and representative imagery. G4 approves these versioned review images and their copy/source record. Only after that approval may the workflow derive a textless component master, then inventory and split its visuals into transparent components.
+## Select the route
 
-## Start
+First inspect the brief and supplied material. Establish the audience, intended use, factual sources, delivery form, editability needs, and whether the user authorized a local draft, a formal production deliverable, or a component library.
 
-1. Announce this skill and the current stage. Resume from `run-state.json`; never overwrite approved work.
-2. Copy `assets/project-template/` for a new run. Probe research, image, assembly, rendering, and validation capabilities at runtime.
-3. Before asking the user anything, inspect every supplied file and record its hash plus extracted facts in `alignment.json`. Never ask for a fact that is already available in the material.
-4. Build the current question frontier from unresolved consequential decisions. Ask 3–5 independent questions per round when that many are available; give a recommended answer and impact for every question. Hold dependent questions for the next round.
-5. Load only the active-stage reference:
-   - contracts/state: `references/stage-contracts.md`
-   - human decisions: `references/human-gates.md`
-   - research: `references/research-routing.md`
-   - reference study and production richness: `references/reference-first-design.md`
-   - readable text and image display regions: `references/readability-contract.md`
-   - decomposition: `references/component-pipeline.md`
-   - prompts: `references/prompt-patterns.md`
-   - visual provider routing/adapters: `references/visual-providers.md`
-   - assembly: `references/assembly-routing.md`
-   - QA/repair: `references/qa-rubric.md`
+- **Local design showcase:** Use `project-kind.json` with `contract_version: showcase-v1` and `purpose: showcase` only for an explicitly scoped, reversible local showcase. This declares the project route; it does not itself grant permission, represent user acceptance, or authorize publication. Read [references/showcase-workflow.md](references/showcase-workflow.md).
+- **Ordinary deck or existing APW project:** Keep its current production contract and approved style decisions. Do not silently convert it into a showcase to avoid applicable checks. Use only the existing local-draft options when their explicit authorization and contract conditions are met.
+- **Hybrid editable deck:** When a slide mixes editable copy/data with visual assets, read [references/hybrid-object-design.md](references/hybrid-object-design.md). This object strategy can be used within a showcase or a separately authorized production contract.
+- **Component-first project:** Keep the existing route when the user wants each visual element delivered as independently movable/recombinable transparent components. Read [references/component-pipeline.md](references/component-pipeline.md) and its linked contracts.
+- **Formal or high-stakes production:** Keep the existing strict G1–G5, decomposition, QA, and release contracts. Route to [references/stage-contracts.md](references/stage-contracts.md), [references/human-gates.md](references/human-gates.md), [references/assembly-routing.md](references/assembly-routing.md), and [references/qa-rubric.md](references/qa-rubric.md) as needed. Do not silently reclassify an existing project as `showcase-v1`.
 
-**REQUIRED SUB-SKILL:** Use `imagegen` for image work and Codex built-in `image_gen`; do not silently substitute another service.
+If the requested route or required editability is unclear and materially changes the output, ask only for that missing decision. Do not ask users to approve individual objects or repair steps unless the project contract or a consequential decision requires it.
 
-## Production route
+## Select the local showcase delivery mode
 
-Default to `full-tracked`. For high-stakes, multi-session, research-heavy, or still-ambiguous work, use `grill-with-docs → to-spec → to-tickets → implement` when those skills are installed, then execute the stage machine below.
+For a new local showcase, use the least extensive deliverable that satisfies the request. The default is **concept only**. Moving to asset production or automatic assembly requires the user to request that deliverable; concept exploration itself must not be constrained by the future PPTX object model, transparent cutouts, exact component boundaries, or assembly layout.
 
-Use `fast` only after G1 proves that every consequential decision is already approved, the work is not high-stakes, and it will not require multi-session coordination. Record the exact separate confirmation `确认快速路线` in `run-state.json`. Fast may skip the external Spec and Tickets planning artifacts and proceed to implementation, but it never skips source inspection, project stage artifacts, validation, or G1–G5. If eligibility changes, switch to `full-tracked`.
+1. **`concept` — complete concepts only (default):** study the brief and references, then deliver contentful page concepts with source/reference lineage. This mode is complete at the concept handoff. Do not force cutout generation, object maps, PPTX assembly, or assembly review.
+2. **`assets` — concepts plus requested independent assets:** deliver the concepts and the separately movable visual assets requested for reuse. If the user asks to reconstruct the whole page from blank, select `brief.delivery.asset_scope: full-slide` and read [full-slide-reconstruction.md](references/full-slide-reconstruction.md): inventory background, connectors, arrowheads, ordinary copy, special glyph art and residual details, then render from independent sources to check coverage. Background plates may be opaque; only promised cutouts require alpha. This mode ends at the asset handoff; it does not imply completed PPTX assembly or require the legacy component-first approval sequence unless that project separately selected that route.
+3. **`assembly` — concepts, transparent assets, and automatic assembly:** create the requested assets, map meaningful content to tested native PPTX objects or picture objects, and assemble the deck. Review the current saved and reopened PPTX, actual renders, edit operations, and visual quality. This mode is opt-in; technical and agent checks never substitute for user visual acceptance.
 
-## Invariants
+In `assembly`, use the selected concept as the visual baseline. Preserve its composition, proportions, hierarchy, typography, and material choices where possible; do not impose a uniform card template or force a rearrangement to make native objects easier to assemble. Compare each current PPTX render side by side with its concept. Record visible regression as a visual miss; technical success does not count as visual success. The concept and requested assets remain valid handoffs at their own mode boundaries. This comparison does not add a human approval gate to other modes.
 
-- Ordinary titles, body copy, labels, numbers, and user data are final-slide `fill_slots`, never baked into generated component art; the contentful review image is a temporary visual exception, not an editable deliverable.
-- Every visual item is its own transparent PNG, including arrows, basic shapes, panels, table/chart shells, and approved special typography.
-- Table/chart shells contain no text or data. Remove data-encoding marks as well as values and labels.
-- Special typography is opt-in: lock `exact_text`, verify it, and require human approval.
-- Preserve truth-sensitive screenshots, figures, equations, and plots unchanged or blank their variable content; never redraw facts generatively without approval.
-- Generate one distinct asset per call. Reuse approved repeated assets.
-- Never place the concept render behind editable text and call the result editable.
-- Full-slide review concepts may show ordinary copy for human review; final textless masters and generated components may not contain it. Treat the contentful image as review-only.
-- Give every contentful revision a new versioned path and keep prior images as history. G4 approval binds the exact image, copy/source log, and review contact sheet.
-- Do not generate a textless master or start inventory before current G4 approval. Record each master against the approved contentful hash and preserve every fill-slot coordinate. Before inventory, save a 100%-scale side-by-side human geometry review of the contentful image and textless master, bound to both image hashes.
-- Manifest every prompt, reference, output, hash, alpha check, status, and approval.
-- Component extraction prompts are adapter-derived from approved references, crops, and roles; never append caller-written free-form prompt text.
-- Route visual skills only through `visual-provider-registry.json` and a compatible PPT adapter. Provider-native full-page output never bypasses the component, truth, text, or approval contracts.
-- Keep exactly one `primary_visual_family`. Secondary providers require declared page roles. Photo routes require a hash-verified human source-rights record; strong-style providers require explicit opt-in plus a hash-locked G4 special-page approval. Social Card requires a G5-approved deck hash and a separately human-approved derivative brief; it is a derivative, never a slide renderer.
-- Default real work to `quality_profile: production`. `validation-fixture` is only for contract/tool tests, requires `fixture_only: true`, and is never evidence of production visual quality.
-- Before the first production concept, curate and analyze a 3–6 image reference board. Pass selected project-local reference images plus their transferable rules and do-not-copy boundaries to `image_gen`; a gallery ID or style adjective alone is insufficient.
-- Before the three anchors, generate 2–3 actual same-content calibration concepts, varying visible direction, visual strength, or layout density. Show them to the user and record a hash-bound selection; do not infer a preference from a reference board or expand the deck while calibration is pending.
-- Production richness comes from information structure, visual layers, and layout variation. Ordinary content slides must meet the approved `composition_profile`; do not repeatedly emit title + short copy + one decorative object, and do not inflate counts with decorative noise.
-- Plan legible text and usable main-image regions before concept generation. At G4, show the full-deck contact sheet **and every contentful slide at full size**; underfloor font or evidence-frame dimensions require a specific, approved exception. Do not solve crowding by silently shrinking copy or screenshots.
+The local showcase CLI implements these modes. `python scripts/apw.py init ROOT` defaults to `concept`; `--mode assets` and `--mode assembly` explicitly select the other endpoints. The selection is stored in `delivery-mode.json`. `status` reports the selected completion point; `check ROOT --stage concept|assets` validates those stages; `build` is assembly-only; and `export` packages or verifies the selected endpoint. Concept/assets builds stop at the mode boundary. Existing showcase projects without `delivery-mode.json` keep legacy assembly behavior and are not silently migrated. See the [three-mode examples](examples/showcase/modes/index.html) and [apw.py entry point](scripts/apw.py); inspect its `--help` output for the current command syntax.
 
-## State machine
+## Preserve the evidence chain
 
-| Stage | Output | Gate |
-|---|---|---|
-| Intake + research | `brief.json`, `alignment.json`, `run-state.json`, `research-bundle.json` | G1 authority/boundary |
-| Story | `storyboard.json` | G2 narrative/titles |
-| Style + spec | `reference-study.json`, `concept-calibration.json`, `style-contract.json`, `capability-report.json`, `deck-spec.json` | G3 reference board → same-content concept calibration and user selection → three anchors |
-| Concepts | versioned contentful `concepts/<slide-id>/<version>.png`, `concept-generation-log.json` | G4 content and contact-sheet approval |
-| Inventory + assets | `component-master-manifest.json`, `scene-graph.json`, `asset-manifest.json`, transparent PNGs | G4 must be current before master creation |
-| Assembly + QA | `assembly-map.json`, optional PPTX, `qa-report.json` | G5 release |
+For every route, keep the applicable relationships inspectable. All modes preserve the brief, factual sources, reference observations, and concept lineage. Continue along the branch selected by the requested deliverable:
 
-Read `references/stage-contracts.md` for the full S0–S10 contract. A rejection returns only to the stage that owns the defect.
-
-## Human boundary
-
-Humans decide meaning, authority, brand, truth exceptions, and release: G1 brief/evidence authority; G2 story; G3 reference selection, contentful calibration, visual-strength/density calibration, richness and readability profiles, direction, and anchors; G4 the exact full-deck copy, imagery, layout, and full-size readability; G5 final package. The agent resolves searchable facts, tool syntax, retries, coordinates, and file operations. Use `references/human-gates.md` for approval packets.
-
-G1 is a hard boundary for audience, decision goal, source authority, truth boundaries, research permission, delivery form, and editability promises. Do not enter Story while any of these decisions is missing, ambiguous, or covered only by a stale approval. G2–G4 use the same versioned approval rule for story, visual anchors, and the full concept sheet. `全部按推荐` is valid only when the complete current recommendation packet is visible and the approval is bound to the current artifact version and SHA-256 hashes. Do not treat `按推荐`, silence, or an earlier conversation as approval. G5 never inherits a prior batch approval; release requires the exact separate confirmation `确认发布`.
-
-## Validate and recover
-
-```bash
-python scripts/validate_project.py <project-dir> --stage <stage>
+```text
+concept:  brief and sources → reference study → complete contentful concepts → concept handoff
+assets:   brief and sources → reference study → complete contentful concepts → requested transparent assets → asset handoff
+assembly: brief and sources → reference study → complete contentful concepts → requested assets/object map → current PPTX → actual renders → technical and visual review
 ```
 
-Advance only on exit `0`. Structural validation does not replace visual QA or G5. Repair the smallest owning artifact, keep approved versions, and limit one defect class to three focused image repairs before recording a blocker.
+A contentful concept uses the slide's current copy, source-backed values or visible example labels, and real visual structure. A full-page concept image is valid as a design artifact; it is not a promise that its pixels are editable or that it can be mechanically reproduced by PPTX assembly. A final PPTX screenshot cannot be relabeled as a prior concept. In every mode, distinguish a single-page style exploration from a complete presentation. For a complete set, first establish the story and planned pages, then create and review a concept for every planned page. Declare their ordered IDs in `brief.delivery.expected_slide_ids`; the showcase check compares that optional declaration with the deck. This verifies declared coverage, not narrative quality or user acceptance. In `assembly` mode, each assembled slide needs its own prior concept; a representative pilot does not stand in for the other pages. Choose page count and representative roles from the brief, not a global five-page or three-page template.
 
-Release only when all gates are approved, the release validator passes, every concept element maps to a component or fill slot, no ordinary text/data is baked into art, no concept is flattened into the final deck, and the assets, maps, prompts, evidence, and QA package are complete.
+Record enough version and hash links to identify which references and concepts produced each page, which objects were assembled, and which PPTX/render was reviewed. A changed artifact invalidates only the checks and feedback bound to that artifact or dependent scope.
+
+Before a portable handoff, place the actual per-page prompts and generation records inside the project evidence tree and bind their local paths and hashes. Work-directory links such as `../design/` do not travel with a project-only export. Inspect the exported package and reader links as well as the source project; verify that every promised page, prompt, and record is present in the actual download.
+
+Keep scientific, medical, and other truth-sensitive content source-grounded. Clearly distinguish source data, calculations, hypotheses, and fictional examples. Do not use generated art to alter, recreate as evidence, or supply missing factual content for a source figure, equation, result, or chart.
+
+## Keep route-specific authority honest
+
+For an explicitly authorized local showcase, the main agent may choose a design direction when that choice is within the recorded task scope. Record the actual actor as `agent chosen` with the selected reference/concept lineage; do not convert it into a human approval. This permission belongs to that task and must not be assumed for future projects. Formal brand, factual, regulated, or external-release decisions stay with the authorized human decision-maker.
+
+In `assembly` mode, inspect the actual assembled PPTX render. Record machine-verifiable technical results, agent visual inspection, and user feedback separately. An agent may report `agent-reviewed draft`; record user visual acceptance only when the user actually saw and explicitly accepted that exact version and scope. No machine check, multiple-agent agreement, project kind, export, or silence supplies that decision.
+
+Use the current `scripts/apw.py --help` and subcommand help when command versions may differ. Treat native-object support the same way: verify each promised operation against the current backend and saved PPTX. Do not claim a command, object type, render, export, or validation passed until it runs against current files. This workflow does not prevent agents from generating files outside APW, and it does not certify those files as APW-complete.
+
+## Use the image-generation route
+
+When image generation or editing is needed, use the `imagegen` skill and Codex built-in `image_gen`. In `concept` mode, a full-slide generated image may be the concept deliverable. In `assets` or `assembly` mode, generate requested transparent visual assets as separate components where useful. Never use a full-slide concept image as the flattened final PPTX when the user expects editable content. Keep the prompt, source references, generated output, and revision lineage with the project.
+
+Use reference-guided local prompt edits for targeted concept repairs, clean background plates, isolated objects and occlusion repairs. Inspect the actual edit target first; state the target change and surrounding preservation requirements, retain every attempt, then compare both edited and untouched areas. This is generative reconstruction, not guaranteed pixel-preserving extraction. Short special typography can be isolated glyph art; a raster concept does not yield a recoverable font file. See [full-slide-reconstruction.md](references/full-slide-reconstruction.md).
+
+For style exploration, start with the content and intended viewing format. Give parallel designers freedom over composition, typography, palette, materials, and visual metaphor. Read the selected examples' original prompts and view their images; record how their principles transfer. Do not impose final assembly constraints on exploratory concepts. Review the resulting alternatives before defining the selected project's readability and editability parameters.
+
+## Load only the active references
+
+- Competition, innovation-project defense, or student entrepreneurship pitch: read [references/competition-presentations.md](references/competition-presentations.md). Select the story from the project stage, work category, and applicable event brief; keep the requested delivery mode and full-page concept coverage.
+- Showcase lifecycle and review semantics: [references/showcase-workflow.md](references/showcase-workflow.md).
+- Native text/shape/table/chart and image-object choices: [references/hybrid-object-design.md](references/hybrid-object-design.md).
+- Story and speaker notes: [references/narrative-and-speaker-notes.md](references/narrative-and-speaker-notes.md); source finding and truth-sensitive research: [references/research-routing.md](references/research-routing.md).
+- Existing reference-board and richness process: [references/reference-first-design.md](references/reference-first-design.md); personal style reuse: [references/reusable-style-library.md](references/reusable-style-library.md). These are not mandatory reference counts for `showcase-v1`.
+- Project readability parameters and cross-slide meaning: [references/readability-contract.md](references/readability-contract.md) and [references/semantic-visual-grammar.md](references/semantic-visual-grammar.md), when relevant to the selected profile or brand system.
+- Strict/component-first projects: load the active-stage [references/stage-contracts.md](references/stage-contracts.md) plus relevant [references/human-gates.md](references/human-gates.md), [references/component-pipeline.md](references/component-pipeline.md), [references/page-parallel-production.md](references/page-parallel-production.md), [references/prompt-patterns.md](references/prompt-patterns.md), [references/visual-providers.md](references/visual-providers.md), [references/assembly-routing.md](references/assembly-routing.md), [references/local-agent-qa.md](references/local-agent-qa.md), [references/qa-rubric.md](references/qa-rubric.md), and [references/visual-qa-tolerance.md](references/visual-qa-tolerance.md). Load only what the active stage needs.
+
+Do not load the complete legacy production packet for a `showcase-v1` task unless a specific risk or user requirement makes that contract relevant. Conversely, a local draft preference does not weaken a formal production contract or authorize G5 release.
+
+## Preserve the legacy PPTX handoff
+
+When the selected deliverable is an assembled PPTX, retain its verified three-folder handoff: `确定概念图/`, `组件/`, and `PPT成稿/`. The showcase exporter uses the same folder names but records native objects in `PPT成稿/项目证据/`; they are not PNG components. Use `apw.py export` and its `--verify` for the selected route only after verifying current support; the existing `export_final_package.py` also dispatches explicit showcase projects. Report technical checks, agent review, user feedback, and formal G5 separately. Concept-only and asset-only requests are complete at their selected handoff and must not be described as completed PPTX projects.

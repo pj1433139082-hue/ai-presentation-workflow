@@ -1,0 +1,63 @@
+{
+  "status": "agent-reviewed-draft",
+  "full": true,
+  "page_count": 6,
+  "reviewed_at_utc": "2026-10-13 14:08:19 UTC",
+  "updated_at_utc": "2026-10-13 14:14:00 UTC",
+  "reviewer": "Codex independent reviewer",
+  "user_acceptance": "not-recorded",
+  "review_method": "All six current design/S01-S06/concept.png files were opened and inspected individually at original resolution. Frozen brief, deck, source, reference study, style contract, prompts, per-page generation records, and contract normalization record were reviewed.",
+  "concept_sha256": {
+    "S01": "fb759ca0d909c309e739eab49ae536a890f2b6c1c7ed4a5807a7e6da7ae51ab4",
+    "S02": "1acd5b4da7a42728b7284bdc6227de975ad293325f9b95a81f1b96750bb1cc89",
+    "S03": "f59d6fb2e31f18426b34e8c9d230ec68480b5e553e27c102b885bc6940076ce9",
+    "S04": "2d625db4410627387909851e265c07bd3c19dd76c16fea7faf2a9336a01cdd6d",
+    "S05": "6657c5da75f1fbc29000f02862a8355598be8ec6f10db72c9d3ac09d4d30ae19",
+    "S06": "9f228b2825ebef099f76d5771cccc13814d3692c56a1464bdca02e8de9d9439f"
+  },
+  "input_sha256": {
+    "brief.json": "83af123419ce4c75374b8e1b8774d279a5e222cdb14b3808d5882cd22fb04051",
+    "deck-spec.json": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+    "reference-study.json": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+    "style-contract.json": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+  },
+  "findings_summary": {
+    "P0_open": 0,
+    "P1_open": 0,
+    "P2_open": 1,
+    "resolved_with_preserved_correction": 1
+  },
+  "open_findings": [
+    {
+      "id": "S04-TRACEABILITY",
+      "priority": "P2",
+      "page_id": "S04",
+      "category": "story-evidence-fit",
+      "finding": "The headline says “交付物可追溯”, but the page shows blank templates and a conceptual cover without sample identifiers, versions, locations, or links that demonstrate traceability. Its body and footer correctly say these are conceptual examples, so this is a limited wording-to-visual mismatch rather than a claim of real evidence.",
+      "recommendation": "Either soften the headline to describe deliverable types, or add clearly fictional IDs/version labels to show how traceability would work."
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "REFERENCE-INPUT-LABEL",
+      "priority": "P2",
+      "category": "provenance",
+      "original_finding": "The original reference-input-snapshot.json described proposal S01 and case339 as “passed to image_gen”, while all six actual tool-call records declared no attached reference images.",
+      "resolution": "resolved-with-preserved-original-and-correction",
+      "evidence": [
+        "project/provenance/reference-input-snapshot-corrected.json",
+        "project/provenance/reference-input-correction.md",
+        "project/README.md points to the correction"
+      ],
+      "verification": "The corrected snapshot says the references were viewed and their principles used in prompts, not attached. The original snapshot and freeze-record remain unchanged. The correction note states the six actual calls attached no reference images. The four frozen input hashes, six concepts, prompts, and generation records remain unchanged."
+    }
+  ],
+  "review_notes": {
+    "story_and_data": "The 12-week plan versus 14-week fictional closeout, stated delay reason, six rain records (five complete and one missing), two substrates with three repeats each (six bench trials), and budget arithmetic (1200+800+500=2500; 1180+760+420=2360; balance 140) agree across the scenario, source notes, deck, prompts, and viewed images.",
+    "fictional_labels": "Example/non-measured labels sit near the counts; S04 identifies blank templates and conceptual report material; S05 marks resource figures as simulated and not real receipts; S06 marks the case as fictional and future suggestions as unapproved. No real measurements, effect claims, seals, certifications, or approvals appear.",
+    "visual_review": "The six pages use distinct structures with a coherent natural palette. Main titles, counts, timeline, arithmetic, and key qualifiers were legible at original size; no material clipping or unsupported result graphic was seen.",
+    "hash_integrity": "For each page, the current project concept, design copy, generation-record output hash, and retained image-generation original hash match; the generation-record hashes also match the concept-generation log.",
+    "contract_history": "The current brief uses quality_profile draft. contract-normalization.json preserves the pre-generation frozen hashes and the later enum normalization; generation history remains bound to the earlier input hashes, while this review binds to the current four-file hashes above.",
+    "scope_limit": "This review covers the concept-only handoff. It does not claim PPTX assembly, formal competition verification, or user visual acceptance."
+  }
+}

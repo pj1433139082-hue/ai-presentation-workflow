@@ -1,0 +1,32 @@
+{
+  "slide_id": "S04",
+  "record_type": "actual-imagegen-edit-revision",
+  "generation_tool": "Codex built-in image_gen.imagegen",
+  "recorded_at": "2026-10-13T18:25:09.805044+08:00",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12a23-3a19-7570-91f2-105f733eefbf\\exec-da129c9b-babc-4cf4-959a-f17d63a7d1df.png",
+  "original_output_sha256": "cef7552b9b9d3a5a388f65864996f1fdd710fc0ae7a069332abb0adbd795fb91",
+  "output_path": "concept.png",
+  "output_sha256": "cef7552b9b9d3a5a388f65864996f1fdd710fc0ae7a069332abb0adbd795fb91",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "5b42e4987fb1e2680a0d9074705d09ab18bd4a609b20dc6112e3a80c6d80aafc",
+  "input_sha256": {
+    "brief.json": "aa54ecfb8d0c6cbaa8f7be6f73a4501b2f457aa8ea13c830c7bb0d136a9bf49d",
+    "deck-spec.json": "04f078d35ce37cadd4c8e4b24c50bca1523810a8e1a295f6a5d1e13e9c6fff82",
+    "reference-study.json": "bbd509772fb744f31e0f273b119ef1a679fefa5adb260eb488ea5cfe30e243c3",
+    "style-contract.json": "51660ad2941aa5b29b3363f61c522ed01737821148b991f7a43af5bb163ce6ca"
+  },
+  "referenced_images": [
+    {
+      "path": "revisions/v1/concept.png",
+      "sha256": "b4920f4c6b0739ae5d2a9c5a147a5587bbd60ca63cbe7da878f160555d4392ef"
+    }
+  ],
+  "prior_generation_record_path": "revisions/v1/generation-record.json",
+  "prior_generation_record_sha256": "1a72f034d365a5d8d5eef336314f02e6e6ce38de7615a7c95275be2cb40d1da7",
+  "visual_review": {
+    "actor": "root",
+    "method": "actual view_image of new original",
+    "user_acceptance": "not-recorded"
+  },
+  "history_note": "Original image, prompt and actual record preserved in revisions/v1. Edited with only the prior S03/S04 image, keeping frozen main slide copy."
+}

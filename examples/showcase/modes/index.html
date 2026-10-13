@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI Presentation Workflow 的三种交付模式：先看完整概念，再按需要交透明资产或自动组装 PPTX。">
+  <title>先看概念，再决定走多远 · APW</title>
+  <style>
+    :root{color-scheme:light;--ink:#1d2825;--muted:#56635e;--paper:#f1efe8;--card:#fbfaf6;--line:#d8d9d0;--green:#204e40;--green2:#dce8d9;--orange:#a55236;--orange-bg:#f5e8de;--soft:#e9e7df}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 system-ui,"Microsoft YaHei",sans-serif}
+    a{color:var(--green);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{text-decoration-thickness:2px}
+    .wrap{width:min(1480px,92vw);margin-inline:auto}.hero{background:#173b32;color:#f6f4ec;padding:56px 0 48px}.hero-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(220px,.7fr);gap:48px;align-items:end}.eyebrow,.tag{font-size:13px;letter-spacing:.13em;text-transform:uppercase}.eyebrow{color:#c9d6c5}.hero h1{max-width:950px;font-size:clamp(42px,7vw,88px);line-height:1.03;letter-spacing:-.055em;margin:24px 0 18px}.hero p{max-width:820px;color:#d3ddd4;font-size:20px;margin:0}.hero-aside{border-left:1px solid #688176;padding:12px 0 12px 24px;color:#d3ddd4}.hero-aside strong{display:block;color:#fff;font-size:34px;line-height:1.2}.hero-aside span{display:block;margin-top:8px;font-size:14px}
+    nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:32px}nav a{color:#f6f4ec;border:1px solid #688176;border-radius:3px;padding:8px 13px;text-decoration:none;font-size:14px}nav a:hover{background:#254d40}
+    main{padding:44px 0 80px}.mode{margin:0 0 56px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:22px}.section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-.035em;margin:5px 0 0}.section-head p{max-width:550px;margin:0;color:var(--muted)}.tag{color:var(--green);font-weight:700}.concept-panel{display:grid;grid-template-columns:minmax(300px,.85fr) minmax(0,1.5fr);background:var(--card);border:1px solid var(--line);padding:clamp(22px,4vw,52px);gap:34px;align-items:center}.concept-copy h3{font-size:clamp(30px,4vw,54px);line-height:1.08;letter-spacing:-.04em;margin:18px 0}.concept-copy p{color:var(--muted);max-width:480px}.badge{display:inline-block;background:var(--green2);color:#204a3d;padding:5px 10px;font-size:12px;letter-spacing:.08em;font-weight:750}.button{display:inline-block;margin-top:14px;padding:11px 16px;background:var(--green);color:white;text-decoration:none;border-radius:3px;font-weight:650}.hero-image{display:block;background:#e8e6de;border:1px solid var(--line)}.hero-image img{display:block;width:100%;height:auto}
+    .concept-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:18px}.concept-card{background:var(--card);border:1px solid var(--line);padding:12px}.concept-card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#e8e6de}.concept-card h3{font-size:18px;margin:11px 2px 3px}.concept-card p{margin:0 2px 3px;color:var(--muted);font-size:14px}.concept-card a{display:block;text-decoration:none;color:inherit}
+    .asset-intro{max-width:850px;color:var(--muted)}.asset-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.asset-card{background:var(--card);border:1px solid var(--line);padding:14px}.checker{display:grid;place-items:center;min-height:235px;background-color:#fff;background-image:linear-gradient(45deg,#d8ddd8 25%,transparent 25%,transparent 75%,#d8ddd8 75%),linear-gradient(45deg,#d8ddd8 25%,transparent 25%,transparent 75%,#d8ddd8 75%);background-position:0 0,12px 12px;background-size:24px 24px}.checker img{display:block;width:100%;height:235px;object-fit:contain}.asset-card h3{font-size:19px;margin:14px 0 3px}.asset-card p{font-size:14px;color:var(--muted);margin:3px 0 12px}.asset-meta{font-size:12px;color:var(--muted)}.download{font-weight:700}
+    .assembly{background:#e8e6df;border:1px solid #d2d0c8;padding:clamp(18px,3vw,34px)}.assembly-head{display:flex;justify-content:space-between;align-items:start;gap:20px}.assembly h3{font-size:clamp(24px,3vw,34px);margin:7px 0}.assembly p{max-width:900px;color:#4f5955}.state{white-space:nowrap;color:#68422e;background:#f4e9df;border:1px solid #d7b5a0;padding:6px 10px;font-size:12px;font-weight:750;letter-spacing:.05em}.feedback{border-left:4px solid var(--orange);background:var(--orange-bg);padding:14px 18px;margin:20px 0;color:#563b30}.feedback q{font-weight:700}.render-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}.render-card{margin:0}.render-card a{display:block;background:#d7d5ce}.render-card img{display:block;width:100%;height:auto}.render-card figcaption{font-size:13px;color:var(--muted);padding:7px 2px}.assembly-links{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:18px}.assembly-links a{font-weight:700}.small-note{font-size:13px;color:#626b66}footer{padding:24px 0 38px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+    @media(max-width:850px){.hero-grid,.concept-panel{grid-template-columns:1fr}.hero-aside{border-left:0;border-top:1px solid #688176;padding:18px 0 0}.concept-grid,.asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{display:block}.section-head p{margin-top:12px}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,1480px)}.hero{padding-top:38px}.concept-grid,.asset-grid,.render-grid{grid-template-columns:1fr}.assembly-head{display:block}.state{display:inline-block;margin-top:12px}.checker,.checker img{min-height:190px;height:190px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">AI PRESENTATION WORKFLOW · DELIVERY MODES</div>
+      <div class="hero-grid">
+        <div>
+          <h1>先看概念，<br>再决定走多远。</h1>
+          <p>先把整页想清楚。只做概念就可以交付；需要复用图像时再要透明资产；只有明确选择时，才继续自动组装 PPTX。</p>
+        </div>
+        <aside class="hero-aside"><strong>概念优先</strong><span>默认交付：完整概念与来源脉络<br>资产与拼接：按需选择</span></aside>
+      </div>
+      <nav aria-label="交付模式导航">
+        <a href="#concept">01 · 只做概念（默认）</a>
+        <a href="#assets">02 · 概念 + 透明资产</a>
+        <a href="#assembly">03 · 自动组装试验</a>
+        <a href="../industries/index.html">六行业概念图库 ↗</a>
+      <a href="../competitions/index.html">竞赛与项目答辩 · 31页</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="mode"><h2>新版：全页拆解，从空白拼回概念</h2><p>三页共66个独立对象，补齐背景、箭头、管线、金属字形、阴影反射、法兰支架与文字。<a href="../full-rebuild/index.html">打开原概念 / 重建对照与逐层开关 →</a></p><p>下方旧三张插画仅为指定素材样例；旧包没有全页拆解。新版另提供完整组件包及独立 PPTX 重建试验。</p></section>
+    <section class="mode" id="concept">
+      <div class="section-head">
+        <div><div class="tag">MODE 01 · DEFAULT</div><h2>只做概念</h2></div>
+        <p>完整页面概念本身就是一个交付点。这里先看信息层级、构图与视觉表达，不提前拆成 PNG，也不要求它已经能被机械拼回 PPT。</p>
+      </div>
+      <div class="concept-panel">
+        <div class="concept-copy">
+          <span class="badge">默认模式 · 到此即可完成</span>
+          <h3>先看整页，<br>再决定怎么做。</h3>
+          <p>六个行业现已各自补成完整故事线，共 29 页。科研六页已重新设计；各套提供逐页原图、提示词、来源与概念交付包。此前单页探索和跨行业样例仍保留作对照。</p>
+          <a class="button" href="../complete/index.html">浏览六套完整概念 · 29 页 ↗</a>
+        </div>
+        <a class="hero-image" href="../research-v3/assets/S01.png" target="_blank" rel="noopener" aria-label="查看新版科研概念封面原图">
+          <img src="../research-v3/assets/S01.png" alt="新版科研概念：从通量衰减到验证路径">
+        </a>
+      </div>
+      <div class="concept-grid"><article class="concept-card"><a href="../research-v3/index.html"><img src="../research-v3/assets/S01.png" alt="科研汇报整套概念封面"><h3>科研汇报 · 6 页完整概念</h3><p>研究问题 → 证据层次 → 方法 → 数据 → 假说 → 验证计划</p></a></article><article class="concept-card"><a href="../complete/tech/index.html"><img src="../complete/tech/概念图/01-S01.png" alt="科技产品整套概念封面"><h3>科技产品 · 5 页完整概念</h3><p>产品定位 → 问题 → 协作机制 → 使用情境 → 小范围试用</p></a></article><article class="concept-card"><a href="../complete/manufacturing/index.html"><img src="../complete/manufacturing/概念图/01-S01.png" alt="制造业整套概念封面"><h3>制造业 · 5 页完整概念</h3><p>主题 → 匹配条件 → 机制 → 实施步骤 → 验证边界</p></a></article><article class="concept-card"><a href="../complete/education/index.html"><img src="../complete/education/概念图/01-S01.png" alt="教育课程整套概念封面"><h3>教育课程 · 4 页完整概念</h3><p>课程总览 → 读图 → 拆解实作 → 作品评阅</p></a></article><article class="concept-card"><a href="../complete/brand/index.html"><img src="../complete/brand/概念图/01-S01.png" alt="消费品牌整套概念封面"><h3>消费品牌 · 5 页完整概念</h3><p>品牌故事 → 使用时刻 → 包装层次 → 品牌触点 → 体验试验</p></a></article><article class="concept-card"><a href="../complete/library/index.html"><img src="../complete/library/概念图/01-S01.png" alt="公共服务整套概念封面"><h3>公共服务 · 4 页完整概念</h3><p>借阅指南 → 完整流程 → 动作细解 → 规则与帮助入口</p></a></article></div>
+    </section>
+
+    <section class="mode" id="assets">
+      <div class="section-head">
+        <div><div class="tag">MODE 02 · ON REQUEST</div><h2>概念 + 透明资产</h2></div>
+        <p>需要复用视觉对象时，再交独立透明 PNG。下方棋盘格是网页 CSS 背景，用来显示透明像素；原 PNG 未被重绘、裁切或压缩。</p>
+      </div>
+      <p class="asset-intro">每个 PNG 都可以作为一个图片对象单独移动、缩放或替换；对象内部的设备、膜材、纹理和像素不是矢量，也不能逐个零件编辑。</p>
+      <div class="asset-grid">
+        <article class="asset-card"><div class="checker"><img src="assets/process-equipment.png" alt="余热回用示意：五个分离的工业设备透明插画"></div><h3>制造业设备群像</h3><p>五个设备作为一张独立透明图片；设备之间无可编辑管线。</p><div class="asset-meta">PNG · RGBA · 1672 × 941</div><p><a class="download" href="assets/process-equipment.png" download>下载原始 PNG ↓</a></p></article>
+        <article class="asset-card"><div class="checker"><img src="assets/research-membrane.png" alt="水流穿过膜片的科研示意透明插画"></div><h3>科研膜片示意</h3><p>一张独立透明插画；水流、颗粒和膜孔内部不可分件编辑。</p><div class="asset-meta">PNG · RGBA · 1774 × 887</div><p><a class="download" href="assets/research-membrane.png" download>下载原始 PNG ↓</a></p></article>
+        <article class="asset-card"><div class="checker"><img src="assets/tech-device.png" alt="桌面智能终端透明产品插画"></div><h3>科技产品终端</h3><p>完整终端为一张独立透明图片；屏幕内容和外壳像素不可分别编辑。</p><div class="asset-meta">PNG · RGBA · 1672 × 940</div><p><a class="download" href="assets/tech-device.png" download>下载原始 PNG ↓</a></p></article>
+      </div>
+    </section>
+
+    <section class="mode" id="assembly">
+      <div class="section-head">
+        <div><div class="tag">MODE 03 · OPT-IN EXPERIMENT</div><h2>概念 + 资产 + 自动组装</h2></div>
+        <p>这里公开的是一次真实组装试验及其问题，用来说明“技术能拼出来”与“视觉上符合用户预期”是两件事。</p>
+      </div>
+      <div class="assembly">
+        <div class="assembly-head">
+          <div><div class="tag">三页混合原生 PPTX · v4</div><h3>技术可用，用户视觉反馈未通过</h3></div>
+          <span class="state">不作为优质成品示范</span>
+        </div>
+        <p>v4 已完成 PowerPoint 实际渲染、保存后重开、原生图表数值编辑，以及代理技术/视觉检查。用户反馈：</p>
+        <blockquote class="feedback"><q>概念图不错，到你拼接就开始丑</q><br>概念表达获得肯定，拼装后的当前 PPTX 视觉结果被拒绝；此反馈绑定本次 v4，不代表未来装配已被接受。</blockquote>
+        <div class="render-grid">
+          <figure class="render-card"><a href="assembly/slide-01.png" target="_blank" rel="noopener"><img src="assembly/slide-01.png" alt="自动组装试验 v4 第1页实际 PowerPoint 渲染"></a><figcaption>第 1 页 · 实际渲染 1920 × 1080</figcaption></figure>
+          <figure class="render-card"><a href="assembly/slide-02.png" target="_blank" rel="noopener"><img src="assembly/slide-02.png" alt="自动组装试验 v4 第2页实际 PowerPoint 渲染"></a><figcaption>第 2 页 · 实际渲染 1920 × 1080</figcaption></figure>
+          <figure class="render-card"><a href="assembly/slide-03.png" target="_blank" rel="noopener"><img src="assembly/slide-03.png" alt="自动组装试验 v4 第3页实际 PowerPoint 渲染"></a><figcaption>第 3 页 · 实际渲染 1920 × 1080</figcaption></figure>
+        </div>
+        <div class="assembly-links"><a href="assembly/deck-v4.pptx" download>下载 v4 试验 PPTX ↓</a><span class="small-note">只作为可复查的失败案例，不作为设计质量推荐或正式交付。</span></div>
+      </div>
+    </section>
+  </main>
+<section class="wrap" style="padding:32px 0"><h2>三页跨行业模式样例包</h2><p><a href="https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/modes-packages-concept----.zip" download>概念模式 · 三页跨行业样例与证据 ZIP ↓</a>　<a href="https://github.com/pj1433139082-hue/ai-presentation-workflow/releases/download/showcase-2026-10-14/modes-packages-assets----.zip" download>资产模式 · 三页跨行业样例与透明资产 ZIP ↓</a></p><p>这两个旧包用来验证交付模式，不是一套完整科研演示，均不包含 PPTX。解压后的“项目证据”可用 APW 再次检查。</p></section>
+  <footer class="wrap">这些实例展示的是不同交付终点，不表示所有项目都需要走到 PPTX 组装。模式化 CLI 已实现，概念与资产模式已独立导出并复核；本页保留真实 v4 组装试验的负面视觉反馈。</footer>
+</body>
+</html>

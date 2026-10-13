@@ -1,0 +1,47 @@
+{
+  "id": "S02-text-badge-production",
+  "role": "text",
+  "text": "生产",
+  "bbox": [
+    836,
+    224,
+    107,
+    42
+  ],
+  "position": {
+    "x": 889,
+    "y": 261,
+    "anchor": "middle"
+  },
+  "font_family": "Noto Sans SC",
+  "font_weight": 800,
+  "font_size_px": 38,
+  "letter_spacing_px": 6,
+  "color": "#FFFFFF",
+  "editable": true,
+  "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+  "z": 31,
+  "representation": "native",
+  "type": "text",
+  "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+  "semantic_role": "production badge label",
+  "file": "components/text-badge-production.svg",
+  "text_width_px": 107,
+  "source_format": "editable SVG text node",
+  "sha256": "fd52b9e22c5c0bed172347ef7e72f41f0bf541dcb508a6a2e786c2781f7c2efb",
+  "asset_frame_bbox": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "svg_viewbox": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "path": "layers/S02/native-text/S02-text-badge-production.json",
+  "line_height": 1.1,
+  "text_align": "center"
+}

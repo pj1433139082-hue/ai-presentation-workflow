@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "test_scope": "copy-only PowerPoint COM experiment; not formal assembly acceptance",
+  "powerpoint_version": "16.0",
+  "original_pptx": "proof/independent-pptx/independent-reconstruction-proof-3pages.pptx",
+  "source_pptx_sha256": "6dd4bf2c740e7960aedff3a3c14d6ddb2390a393f307bbb711ad2f6427fc586e",
+  "original_sha256_before_and_after": "6dd4bf2c740e7960aedff3a3c14d6ddb2390a393f307bbb711ad2f6427fc586e",
+  "original_unchanged": true,
+  "experimental_copy": "proof/independent-pptx/experimental-editability-copy-final-source-paths.pptx",
+  "experimental_copy_sha256": "756b5f6a30aa38a83851eb0826965d67261bc49d994d9850b516cd684b65cbdc",
+  "page_count_after_reopen": 3,
+  "editable_text_shape": "S02-text-title",
+  "edited_text_persisted_after_save_reopen": true,
+  "picture_shape": "S02-flow-orange-heat-production",
+  "picture_type": 28,
+  "move_delta_pt": 2.0,
+  "undo_restored_left_pt": 0.0,
+  "undo_restored_position": true,
+  "original_picture_geometry_pt": {
+    "left": 0.0,
+    "top": 0.0,
+    "width": 960.0,
+    "height": 540.287109375
+  },
+  "reopened_picture_geometry_pt": {
+    "left_pt": 0.0,
+    "top_pt": 0.0,
+    "width_pt": 960.0,
+    "height_pt": 540.287109375
+  }
+}

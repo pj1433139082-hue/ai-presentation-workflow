@@ -1,0 +1,53 @@
+{
+  "revision_type": "post-generation-required-output-path-binding",
+  "recorded_at": "2026-10-13T18:23:58+08:00",
+  "reason": "Canonical APW concept check requires each deck-spec slide to declare concept_path.",
+  "before_deck_spec_sha256": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+  "preserved_before_deck_copy": "provenance/revisions/deck-spec-pre-concept-path-binding.json",
+  "preserved_before_deck_copy_sha256": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+  "after_deck_spec_sha256": "6dab13b9d1fc8c3ce3b5caec7035c2f857f040a5c31795977c08e614eb285ed7",
+  "changed_fields": [
+    {
+      "slide_id": "S01",
+      "field": "concept_path",
+      "value": "concepts/S01.png"
+    },
+    {
+      "slide_id": "S02",
+      "field": "concept_path",
+      "value": "concepts/S02.png"
+    },
+    {
+      "slide_id": "S03",
+      "field": "concept_path",
+      "value": "concepts/S03.png"
+    },
+    {
+      "slide_id": "S04",
+      "field": "concept_path",
+      "value": "concepts/S04.png"
+    },
+    {
+      "slide_id": "S05",
+      "field": "concept_path",
+      "value": "concepts/S05.png"
+    },
+    {
+      "slide_id": "S06",
+      "field": "concept_path",
+      "value": "concepts/S06.png"
+    }
+  ],
+  "unchanged_inputs": {
+    "brief.json": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+    "reference-study.json": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+    "style-contract.json": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+  },
+  "preserved_pre_generation_hashes": {
+    "brief.json": "520d2f74204216babc658153a83500b16e04a66b5bcb2eb3d99194d91ae8344b",
+    "deck-spec.json": "64950f22a880c9fe6b2f0670469406cd1136bcea3851ad38627370360833b1bd",
+    "reference-study.json": "29b6dd680f7ac5e619f72b6fa7db421692265d2f5740e98c911e3fbdfe7b686e",
+    "style-contract.json": "ed961a3694381e86327033da4449180b8cc41e84494f4293d5b09e32475df033"
+  },
+  "history_note": "All six images were generated from the frozen page copy and visual direction. This required binding change only names each already-generated PNG path; it does not change visible copy, story, references or style. Per-page generation records retain the original pre-generation hashes. The current APW concept log binds the present canonical document hashes without claiming that the generator consumed this later path-only edit."
+}

@@ -1,0 +1,46 @@
+{
+  "id": "S02-text-subtitle",
+  "role": "text",
+  "text": "先找到稳定热源，再匹配同时发生的用热需求。",
+  "bbox": [
+    440,
+    145,
+    800,
+    44
+  ],
+  "position": {
+    "x": 839,
+    "y": 181,
+    "anchor": "middle"
+  },
+  "font_family": "Noto Sans SC",
+  "font_weight": 500,
+  "font_size_px": 34,
+  "color": "#00152E",
+  "editable": true,
+  "font_match_approx": "Noto Sans SC (installed fallback), approximate visual match; original embedded/source font is unknown",
+  "z": 40,
+  "representation": "native",
+  "type": "text",
+  "source_match": "exact visible copy from S02 deck-spec and concept; layout/color measured or approximated",
+  "semantic_role": "Chinese subtitle",
+  "file": "components/text-subtitle.svg",
+  "text_width_px": 784,
+  "source_format": "editable SVG text node",
+  "sha256": "9ef68b66f7ba99f491c02657ee687bf654efae1039471e6e06bb544929012bd2",
+  "asset_frame_bbox": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "svg_viewbox": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "path": "layers/S02/native-text/S02-text-subtitle.json",
+  "line_height": 1.1,
+  "text_align": "center"
+}

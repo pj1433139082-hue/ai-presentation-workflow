@@ -1,0 +1,23 @@
+{
+  "industry": "brand",
+  "page_count": 5,
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05"
+  ],
+  "delivery_mode": "concept",
+  "user_visual_acceptance": "not-recorded",
+  "pptx": "not-requested",
+  "concept_hashes": {
+    "S01": "9fb9ee495bde2456fe4b43c5cf9e4d5efec4912a351b6a964d9800059b12ef8c",
+    "S02": "4527619577109cf95fe99551e76c95388ae56ecd307dfedb3d78037731c3f6d7",
+    "S03": "658d61ef36abed4c638232567dedd3dcd85afe158062734db72cdd5c102c9b15",
+    "S04": "01f0bba56bea95e51b08b3e710129bcb05fc15b665cf822be39f0e75387477f9",
+    "S05": "31c9a49b8bf692dc8db61d5fd80e018b26444be477dc1127778b1d4ac1b89623"
+  },
+  "archive_sha256": "4abeb450d9c4d8f0da8f36a1b93e6cf37faa894843d021ca728a7858811bb62f",
+  "export_verified": true
+}

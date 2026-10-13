@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "slide_id": "S03",
+  "artifact_kind": "generated-concept",
+  "actor": "agent",
+  "recorded_at_utc": "2026-10-13T00:41:01.4117476Z",
+  "generator": {
+    "tool": "built-in image_gen",
+    "mode": "generate",
+    "original_output_sha256": "658D61EF36ABED4C638232567DEDD3DCD85AFE158062734DB72CDD5C102C9B15",
+    "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec2-edd3-7810-9d9b-191f8bb39926\\exec-c6803601-4fae-4f59-a0ae-ec7ab8c9d5af.png"
+  },
+  "prompt": {
+    "sha256": "597F4EEDC7CFA5C14013B58E2E45FE728AC45AF29D86895EF1CBACBD6913E695",
+    "path": "prompt.txt"
+  },
+  "input_snapshot": {
+    "sha256": "92E14EE6A86F335956F42319AE0DB0942F865A696260E0A19209A3BD078B085B",
+    "path": "../../project/provenance/concept-input-hash-snapshot.json",
+    "inputs": {
+      "brief.json": "64b99eca979368c119f8f900a9cb4a0f345ef6865651a7bf096cdc9e1ba3251f",
+      "deck-spec.json": "6d6ea3fe6c71d8ac5adb3d264421dc9cd9adddd9ff36931576252524115f92d9",
+      "reference-study.json": "06ea7fa3cfc50b7adfd07f90750a190c6b61a8d04337fab4a2158ad9371d90cf",
+      "style-contract.json": "16927aeadcf293a3ef807847841c53749e4bbe736bfdfb99f61dae9a217eab30"
+    }
+  },
+  "references": [
+    {
+      "sha256": "9FB9EE495BDE2456FE4B43C5CF9E4D5EFEC4912A351B6A964D9800059B12EF8C",
+      "role": "style and internal project reference",
+      "id": "BRAND-S01",
+      "path": "../../project/concepts/S01.png"
+    },
+    {
+      "sha256": "98602C5EE9033E5D80C656ABC5409391B181F4D207F43E404D49A1057A2034CE",
+      "role": "analyzed external visual reference",
+      "id": "R362",
+      "path": "../../project/references/case362.jpg"
+    }
+  ],
+  "output": {
+    "copies": [
+      {
+        "sha256": "658D61EF36ABED4C638232567DEDD3DCD85AFE158062734DB72CDD5C102C9B15",
+        "path": "concept.png"
+      },
+      {
+        "sha256": "658D61EF36ABED4C638232567DEDD3DCD85AFE158062734DB72CDD5C102C9B15",
+        "path": "../../project/concepts/S03.png"
+      }
+    ],
+    "copies_are_byte_identical": true,
+    "width_px": 1672,
+    "height_px": 941
+  },
+  "visual_acceptance": "not claimed; concept-only local showcase artifact"
+}

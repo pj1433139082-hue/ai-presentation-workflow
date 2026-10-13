@@ -1,0 +1,293 @@
+{
+  "contract_version": "showcase-assets-v1",
+  "assets": [
+    {
+      "id": "S01-background",
+      "slide_id": "S01",
+      "kind": "picture",
+      "path": "layers/S01/assets/background.png",
+      "sha256": "7d0d38635b550a7707a99433b73fe3f161b945193d21bd598c3acaad57f0e4c6",
+      "requires_transparency": false,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S01/attempts/S01-bg-01.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Use case: precise-object-edit\nAsset type: full-canvas background plate for an editable slide reconstruction\nInput images: Image 1 is the original 1672×941 S01 slide and is the edit target.\nPrimary request: Rebuild only the original blue-and-coral studio background as a clean, full-canvas plate.\nScene/backdrop: Continue the rich cobalt-blue seamless studio backdrop into a satin floor across the original horizontal horizon near y=705. Preserve the source's deep blue upper field, gentle bright blue center glow, warm coral illumination entering from the upper-right, blue-to-coral floor gradient, and smooth reflective floor texture.\nEdit instructions: Remove the large Chinese wordmark, all other slide copy and footer, the complete desktop terminal, and the terminal's localized contact shadow and reflected image. Fill those regions with a coherent continuation of the surrounding studio gradient and floor. Keep only the environment plate; do not preserve or invent any text, product, icon, line, arrow, prop, or decorative object.\nComposition/framing: Retain the full 16:9 canvas and the source's horizon and light-field placement. This is an opaque full-canvas environment plate, not a finished slide.\nMaterials/textures: Smooth blue studio gradient above; subtle satin floor below; clean soft transitions, with no visible seams or repeated patches.\nConstraints: Keep the original cool-blue and warm-coral lighting balance and overall tonal distribution. Remove the device-specific floor reflection and shadow so they can be placed as a separate transparent layer. No text, no device, no reflection silhouette, no object-shaped shadow, no logo, no watermark, no frame, no border, no extra scene elements.",
+        "source_concept_path": "concepts/S01.png",
+        "source_concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+        "record_path": "layers/S01/attempts/S01-bg-01.json",
+        "record_sha256": "d2bbc0f0d8ba9ca508b88abfb34a1ce820d587ab280e0b65f093d74302eee50c"
+      },
+      "opaque_reason": "separate clean background plate; foreground content absent"
+    },
+    {
+      "id": "S01-floor-reflection",
+      "slide_id": "S01",
+      "kind": "picture",
+      "path": "layers/S01/assets/floor-reflection.png",
+      "sha256": "5f1db4147c6d3d20b6ad3ba3eb6381503e8d0c142e1f1f0415d4bf4a090e673a",
+      "requires_transparency": true,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S01/attempts/S01-reflection-02.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Use case: background-extraction\nAsset type: one independent transparent soft-light overlay for a slide\nInput images: Image 1 is the original S01 concept and provides the exact floor-reflection colors and placement.\nPrimary request: Rebuild only the diffuse blue and coral light blooms reflected directly beneath the device as a small transparent overlay.\nSubject: A shallow, horizontally stretched cluster of soft blue glow at left and pale coral-pink glow near the center and right, plus a very subtle narrow contact-shadow trace near the upper edge of the cluster. Match the restrained brightness of the source floor reflection.\nComposition/framing: Wide and low, like a soft elliptical light patch beneath the terminal. Keep it compact and localized to the device footprint, with feathered edges and generous transparent space around it.\nConstraints: Genuine transparency everywhere outside the light/shadow pixels. Show light blooms only; no floor plane, no floor texture, no horizon, no horizontal band or line, no mirrored device silhouette, no device pixels, no room, no background gradient, no text, no objects, no border, no watermark. This layer must overlay cleanly on a separately generated blue/coral studio floor.",
+        "source_concept_path": "concepts/S01.png",
+        "source_concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+        "record_path": "layers/S01/attempts/S01-reflection-02.json",
+        "record_sha256": "c67e617f424a8c46de312e9f5dc63f59cf52589e66ce54fdfe8cd947b358333b"
+      }
+    },
+    {
+      "id": "S01-contact-shadow",
+      "slide_id": "S01",
+      "kind": "picture",
+      "path": "layers/S01/assets/contact-shadow.png",
+      "sha256": "8233b6cdb7056235b565f34a9aa53253e11744375aca400126217de3ac01d27c",
+      "requires_transparency": true,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S01/attempts/S01-contact-shadow-01.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Use case: background-extraction\nAsset type: one independent transparent contact-shadow patch beneath a product illustration\nInput images: Image 1 is the original S01 concept and shows the exact device base footprint and contact shadow.\nPrimary request: Isolate only the soft narrow grounding shadow where the bottom of the aluminum device dock meets the studio floor.\nSubject: A very subtle horizontal dark-blue/navy contact shadow matching the source's device base width, with soft feathered edges and a tiny restrained blue-to-coral reflected edge near the outer ends. Keep it low contrast and physically close to the product footprint.\nComposition/framing: Wide, very shallow shadow strip, centered with transparent padding. Do not crop the shadow.\nConstraints: Genuine transparent pixels outside the shadow. No floor surface, floor texture, horizon, broad colored light bloom, device or dock pixels, reflected device, text, line, arrow, props, border, frame, or watermark. This shadow will be placed separately behind the device and above a separate background plate.",
+        "source_concept_path": "concepts/S01.png",
+        "source_concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+        "record_path": "layers/S01/attempts/S01-contact-shadow-01.json",
+        "record_sha256": "38c8cf6071b9860493c34afb3d13aad87ff912208a77e8680a61f91587e8e6ed"
+      }
+    },
+    {
+      "id": "S01-device-terminal",
+      "slide_id": "S01",
+      "kind": "picture",
+      "path": "layers/S01/assets/device.png",
+      "sha256": "fb0ea48bbbc6fb539f645b6775db6fc18ad5f6ab69e70bead53ba9c7d35d954e",
+      "requires_transparency": true,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S01/attempts/S01-device-01.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Use case: background-extraction\nAsset type: one independently movable, scalable transparent PNG product illustration\nInput images: Image 1 is the full original S01 concept and establishes the exact product appearance, lighting, and relative scale. Image 2 is the existing transparent device cutout and is the closest product-identity reference.\nPrimary request: Rebuild only the desktop knowledge-collaboration terminal as one clean isolated object on genuine transparency.\nSubject: Preserve the same wide smoked-glass display, three-quarter perspective, rounded black bezel, low brushed-aluminum dock, right circular control, display proportions, screen perspective, floating abstract document cards, and luminous blue/coral network lines visible inside the screen. Keep the internal screen illustration as part of this single device object.\nEdit instructions: Remove all exterior Chinese cover text, the studio background, horizon, floor, floor reflection, contact shadow, and every external glow patch. Retain the blue and coral light only as physical reflections and rim lighting on the device. Clean the prior cutout's red/blue fringe outside the physical silhouette without changing the silhouette or removing the colored rim light on its inside edge.\nComposition/framing: Preserve the original full terminal and all hardware, including the right circular control. Center it with generous transparent padding. Do not crop any part.\nMaterials/textures: Smoked reflective glass, crisp polished dark bezel, brushed silver aluminum, subtle blue edge light on the left and coral rim reflections on the right; retain the source's refined product-render finish.\nConstraints: Outside the complete device silhouette, pixels must be genuinely transparent, not black, white, gray, or checkerboard. One standalone device only. No extra shadow plane, environment, floor, text, logo, frame, watermark, parts, or objects. Do not redesign or simplify the device.",
+        "source_concept_path": "concepts/S01.png",
+        "source_concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+        "record_path": "layers/S01/attempts/S01-device-01.json",
+        "record_sha256": "808657afb78fb32229d27116dd9775e8db232d922a0ceea1702c06f660926918"
+      }
+    },
+    {
+      "id": "S01-wordmark",
+      "slide_id": "S01",
+      "kind": "picture",
+      "path": "layers/S01/assets/wordmark.png",
+      "sha256": "8256cf8431d75f8e1b48d54d5de1ab848924d926e861fcdb9424ee12bd62001d",
+      "requires_transparency": true,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S01/attempts/S01-wordmark-02.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Use case: background-extraction\nAsset type: one isolated transparent special-typography wordmark\nInput images: Image 1 is the original S01 concept. Copy only the wordmark from its upper-left area.\nPrimary request: Rebuild the source wordmark as exactly two Chinese glyphs: `知栈` (first 知, second 栈), with the source's wide, compact proportions and custom angular character silhouettes.\nText (verbatim): `知栈`. Exactly two characters and no other marks.\nStyle/medium: Match the source closely: broad pale-silver/white faces, subtle cool-blue shading at the left, restrained warm-coral shading at the lower right, and only a very fine clean beveled edge. Keep the type bold and crisp without deep extrusion.\nComposition/framing: Center both complete glyphs in a horizontal wordmark with generous genuine transparent padding. Keep the original character order and relative size.\nConstraints: Keep only the two glyph silhouettes. Outside the glyphs must be fully transparent. No extra characters, no dots or particles, no sparks, no stars, no floating accents, no underline, no border, no plate, no glow cloud, no perspective tilt, no watermark. This is a glyph artwork asset, not a font file.",
+        "source_concept_path": "concepts/S01.png",
+        "source_concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+        "record_path": "layers/S01/attempts/S01-wordmark-02.json",
+        "record_sha256": "6c559657b6ba3f1a7e2d00a3f79faca872ecbe2e0f0fd3ceb7ec397313a97233"
+      }
+    },
+    {
+      "id": "S02-background-paper",
+      "slide_id": "S02",
+      "kind": "picture",
+      "path": "layers/S02/components/background-plate.png",
+      "sha256": "c630a304669e61e2e098ba429ab94a35f4588c75603bf08030ff15841f04c01b",
+      "requires_transparency": false,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S02/attempts/01-background-plate/record.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Use case: source-matched engineering-paper background restoration\nAsset type: one opaque full-canvas background plate for a separately editable industrial-process diagram\nInput images: Image 1 is the exact source slide whose background must be preserved.\nPrimary request: Edit Image 1 to create the blank background plate from the original 16:9 slide.\nScene/backdrop: Preserve only the original warm ivory engineering-paper environment: subtle paper grain, fine pale drafting grid, very faint industrial blueprint sketches at the far left and right edges, the light tiled floor, and its original perspective and horizon. Retain the same overall illumination and nearly white center.\nComposition/framing: Keep the entire 1672:941 composition and all background marks in their original positions, scale and perspective. Fill each removed foreground region seamlessly with the surrounding original paper, grid and floor texture.\nConstraints: Remove every foreground item from Image 1: all five industrial machines and equipment, all orange and teal illuminated pipes, all arrowheads, all five colored label badges and their lettering, the large Chinese title, subtitle, bottom qualifier and both footer divider lines. The center must be a clean empty engineering room on paper, with no foreground equipment, glow or text. This is background reconstruction from a visual reference, not a claim of pixel-preserving extraction.\nAvoid: New machinery, replacement objects, new blueprint drawings, new lines crossing the central field, readable text, labels, arrows, icons, stamps, frame, watermark, flattened/blurred paper, dark floor shadow, changed camera perspective, changed canvas ratio.",
+        "source_concept_path": "concepts/S02.png",
+        "source_concept_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+        "record_path": "layers/S02/attempts/01-background-plate/record.json",
+        "record_sha256": "2e418a9b1cc6926b5b7ac7bad8e9b3f0130aeb4ae2e8986304d43410fd85569e"
+      },
+      "opaque_reason": "separate clean background plate; foreground content absent"
+    },
+    {
+      "id": "S02-device-heating",
+      "slide_id": "S02",
+      "kind": "picture",
+      "path": "layers/S02/components/heating-furnace-v2.png",
+      "sha256": "6142c9890b2d42970e7643eee4e524c2cc123d5134a007169cfb8392e2e887b8",
+      "requires_transparency": true,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S02/attempts/03-heating-furnace-repair/record.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Use case: focused industrial-equipment boundary repair\nAsset type: one standalone transparent PNG heating-furnace illustration for an editable industrial process diagram.\nInput images: Image 1 is the current furnace component with one observed defect; Image 2 is the approved S02 concept that defines the correct furnace boundary.\nPrimary request: Repair only the overextended pipework on Image 1. Keep the same single furnace assembly and correct its outer silhouette to match the compact furnace visible in Image 2.\nPreserve unchanged: the brushed-silver furnace body, bright rectangular orange combustion chamber, attached short fittings and valves, left-side tall exhaust stack, yellow safety platform and rails, dark support frame, base and feet, three-quarter view, materials, highlights, proportions and clean edges.\nCorrect only this defect: remove the oversized pipework loop extending far to the right of the furnace and any long tubes that reach toward neighboring equipment. Keep only compact pipe fittings that terminate close to and belong to the furnace housing. The approved furnace is the one upper-left unit in Image 2: a compact assembly with a roughly 1.3:1 width-to-height silhouette; the shared orange process route and all other equipment belong elsewhere.\nComposition: keep the whole repaired machine centered and fully visible, with clear transparent padding and no crop.\nConstraints: genuine transparent RGBA outside the furnace assembly; one machine only; no shadow plane. Keep all metal reflections and the orange fire glow attached to the device.\nAvoid: redesigning the body, moving or removing the chimney/guardrails, changing viewpoint, adding any new pipe or device, long right-side tubes, exhaust tower, production line, tank/pump, heat exchanger, external process routes, arrows, badges, labels, typography, background, floor, grid, watermark or frame.",
+        "source_concept_path": "concepts/S02.png",
+        "source_concept_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+        "record_path": "layers/S02/attempts/03-heating-furnace-repair/record.json",
+        "record_sha256": "8880df7eb6b896be1ede424c4fd286cfd2ce953d2515b1061b2d84c72922a957"
+      }
+    },
+    {
+      "id": "S02-device-production",
+      "slide_id": "S02",
+      "kind": "picture",
+      "path": "layers/S02/components/production-machine.png",
+      "sha256": "db0e232daa48df8b7abc21154c22ac1656f8847c12b6933b834061e0b10ef2ab",
+      "requires_transparency": true,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S02/attempts/04-production-machine/record.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Use case: isolated industrial-equipment component reconstruction\nAsset type: one standalone reusable transparent PNG component for an editable industrial process diagram.\nInput images: Image 1 is the approved full-slide concept; use it for the target machine's placement, silhouette, viewing angle, palette and lighting. Image 2 is the earlier transparent group of five equipment illustrations; use it only to clarify construction details of the production machine. It is reference material, not deliverable artwork.\nPrimary request: Reconstruct exactly one independent production machine/line from the references.\nSubject: the upper-center production unit only: a wide stainless-steel enclosed process line with long rectangular front panels, tall transparent inspection windows showing restrained warm-lit machinery inside, small valves and pipe fittings attached to the top, and the short foreground conveyor table with metal rollers and a dark support frame. The enclosure and its front conveyor are one production-line assembly. Preserve the compact overall footprint and the source's low frontal three-quarter view.\nStyle/medium: polished realistic industrial concept illustration, reflective brushed silver, fine dark seams, restrained amber interior light, small bolts and rollers, crisp high-detail metal rendering matching Image 1 and Image 2.\nComposition/framing: show this complete one-machine assembly centered, upright, uncropped, and with generous transparent padding. Keep its natural wide proportions; do not add a second production cell.\nLighting: neutral overhead highlights on steel with a subtle warm glow inside the inspection windows, all attached to the machinery.\nConstraints: genuine transparent RGBA outside the production machine. Keep the transparent conveyor windows transparent/glass-like as appropriate and do not fill them with text or symbols. Small fittings that physically belong to this line remain attached; external process pipes do not.\nAvoid: the heating furnace, exhaust tower, vessel/pump, heat exchanger, any connector pipe that bridges toward another device, long orange/teal process routes, glows, arrowheads, labels, badges, text, room, background, grid, floor plane, detached shadow, frame, border, watermark, cropped conveyor or changed viewpoint.",
+        "source_concept_path": "concepts/S02.png",
+        "source_concept_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+        "record_path": "layers/S02/attempts/04-production-machine/record.json",
+        "record_sha256": "d055223db87139b74bce1ac5179b9a45186adc7e41a041c8c4c787ea9f95c1c7"
+      }
+    },
+    {
+      "id": "S02-device-exhaust",
+      "slide_id": "S02",
+      "kind": "picture",
+      "path": "layers/S02/components/exhaust-tower.png",
+      "sha256": "09a7ecb8a3a54cab972ef6b7e7ecc482f2c2693caa6dff1c2e2fb34df89ba8c6",
+      "requires_transparency": true,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S02/attempts/05-exhaust-tower/record.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Use case: isolated industrial-equipment component reconstruction\nAsset type: one standalone reusable transparent PNG component for an editable industrial process diagram.\nInput images: Image 1 is the approved full-slide concept; use it for the target tower's shape, placement, view and colors. Image 2 is the earlier five-device transparent group; use it only for this tower's construction details.\nPrimary request: Reconstruct exactly one independent exhaust tower/stack from the references.\nSubject: the upper-right exhaust tower only: a tall polished stainless cylindrical chimney with a short left-facing side inlet and bolted round flange, a small golden-yellow circular safety platform/railing around its lower-middle section, and a dark charcoal steel four-leg cross-braced support frame below. Keep all these parts physically connected as one tower assembly. The side inlet must end at a clear flange so it can later connect to an editable route.\nStyle/medium: polished realistic industrial concept illustration matching the source's reflective silver metal, dark structural steel, precise seams and warm gold rail highlights, viewed from slightly above in a frontal three-quarter view.\nComposition/framing: show the complete tower upright and uncropped, centered on a portrait-like transparent canvas with ample padding on every side. Preserve its narrow vertical proportions; do not turn it into a wide machine.\nLighting: crisp neutral overhead highlights on the stack and soft warm reflections on the gold railing, all attached to the assembly.\nConstraints: outside the single exhaust-tower assembly must be genuine transparent RGBA. Include no ground plane, common shadow, other equipment or process-route line. Its own inlet tube and structural braces may remain attached.\nAvoid: heating furnace, production line, recovery vessel or pump, heat exchanger, any connector bridging to another unit, long orange/teal pipes, flow glow, arrowheads, labels, badges, text, room, paper, grid, horizon, floor, detached shadow, frame, border, watermark or cropped stack.",
+        "source_concept_path": "concepts/S02.png",
+        "source_concept_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+        "record_path": "layers/S02/attempts/05-exhaust-tower/record.json",
+        "record_sha256": "df3bde9bf0e6313af728f5e36cf21232e6d4e1b0cd21a698d011baceb2f6f497"
+      }
+    },
+    {
+      "id": "S02-device-recovery",
+      "slide_id": "S02",
+      "kind": "picture",
+      "path": "layers/S02/components/recovery-vessel-pump.png",
+      "sha256": "97fb535164ad3536ae64826b81c3836982b8f65c8a92aec8ced0192f66462551",
+      "requires_transparency": true,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S02/attempts/06-recovery-vessel-pump/record.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Use case: isolated industrial-equipment component reconstruction\nAsset type: one standalone reusable transparent PNG component for an editable industrial process diagram.\nInput images: Image 1 is the approved full-slide concept; use it for this target assembly's compact position, silhouette, proportions, colors and lighting. Image 2 is the older transparent group of five machines; use it only to clarify the tank-and-pump construction.\nPrimary request: Reconstruct exactly one heat-recovery vessel and pump assembly from the references.\nSubject: the lower-center assembly only: one upright brushed-stainless pressure vessel with rounded domed top and cylindrical shell, supported on three or four short metal legs; a compact blue industrial motor/pump mounted immediately to its right on the same low skid; one short, clearly attached metal pipe linking the tank outlet to the pump inlet, plus small local fittings. These parts are one joined equipment assembly in the source. Preserve the tank-left, pump-right relationship.\nStyle/medium: polished realistic industrial concept illustration matching the source's steel highlights, dark seams and blue motor casing, with fine fittings and realistic metal depth.\nComposition/framing: show the complete compact horizontal assembly centered, upright and uncropped on a transparent landscape canvas with generous padding. Keep the vessel visibly taller than the pump and preserve the wide arrangement; no stretching or tilting.\nLighting: crisp neutral overhead highlights on stainless steel and soft blue reflections on the pump casing, attached to the surfaces.\nConstraints: genuine transparent RGBA outside the single vessel/pump assembly. Keep its own short connecting pipe and skid; stop any pipe that would lead toward another machine at a visible flange. No environment or ground plane. A faint contact shadow may sit directly under the skid only.\nAvoid: heating furnace, production line, exhaust tower, heat exchanger, long orange or teal routes, inter-device tubes, flow glow, arrows, badges, labels, text, room, paper, grid, horizon, floor plane, detached shadow, frame, border, watermark or cropped legs.",
+        "source_concept_path": "concepts/S02.png",
+        "source_concept_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+        "record_path": "layers/S02/attempts/06-recovery-vessel-pump/record.json",
+        "record_sha256": "50b85224ab189999d8ab72a5accc3367d1f7dfef662cf84c1caee5854269c635"
+      }
+    },
+    {
+      "id": "S02-device-exchanger",
+      "slide_id": "S02",
+      "kind": "picture",
+      "path": "layers/S02/components/heat-exchanger.png",
+      "sha256": "ab4bbc68c71242cfa15dfd4d9636bebe80cbd7c36bbc53ec08042a72c7fefbfa",
+      "requires_transparency": true,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S02/attempts/07-heat-exchanger/record.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Use case: isolated industrial-equipment component reconstruction\nAsset type: one standalone reusable transparent PNG component for an editable industrial process diagram.\nInput images: Image 1 is the approved full-slide concept; use it for this heat exchanger's position, silhouette, view, colors and lighting. Image 2 is the earlier transparent group; use it only for detailed construction of the heat exchanger.\nPrimary request: Reconstruct exactly one independent plate heat exchanger assembly from the references.\nSubject: the lower-right heat exchanger only: one upright rectangular dark-blue steel frame holding a dense stack of closely spaced dark metallic plates, visible corner bolts and compact feet; attach the source's silver metal inlet/outlet fittings and short U-shaped pipe loops on both sides. The pipe bends and flanges belong to this one exchanger assembly and should end close to the frame. Preserve a frontal three-quarter view and a compact rectangular footprint.\nStyle/medium: polished realistic industrial concept illustration with reflective brushed-silver pipes, saturated cobalt-blue structural plates, charcoal fin stack, fine bolts and seams, matching the source's crisp metal rendering.\nComposition/framing: show the complete single exchanger and its own pipe fittings centered, upright and uncropped on a transparent landscape canvas. Keep the blue exchanger as the dominant focal body; keep attached side loops compact and balanced. Do not add a second machine.\nLighting: neutral overhead highlights on silver steel and subtle cool-blue reflections on the frame. Pipe interiors remain silver; no luminous fluid or colored lighting.\nConstraints: outside the single heat exchanger assembly must be genuine transparent RGBA. Include no process route connecting to another unit. Its own short pipe fittings may remain attached and terminate at visible flanges. No floor, ground plane or detached shadow.\nAvoid: furnace, production line, exhaust tower, vessel/pump, inter-device pipes or hoses, long orange/teal paths, flow glow, arrows, labels, badges, text, room, paper, grid, horizon, floor, detached shadow, frame, border, watermark, cropped tubing or a flattened front-on redesign.",
+        "source_concept_path": "concepts/S02.png",
+        "source_concept_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+        "record_path": "layers/S02/attempts/07-heat-exchanger/record.json",
+        "record_sha256": "9572e692f3de42cd0327f644176e5fa912453075c82f43b04571a04b70185e4f"
+      }
+    },
+    {
+      "id": "S03-background",
+      "slide_id": "S03",
+      "kind": "picture",
+      "path": "layers/S03/assets/background.png",
+      "sha256": "718cbf55c11f65e0cb42578efb9b1fc0e8574b1a9e6d9831f7fbc9d494bb2e54",
+      "requires_transparency": false,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S03/attempts/background-generation.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Edit the provided research presentation image into ONLY its clean paper background plate. Remove the entire heading and every text character, chart, grid, axes, data line, markers, all numbers and labels, divider, bullets, membrane/water illustration, footer callout badge and its outline. Fill their former areas seamlessly with the same warm near-white fine paper texture seen around the source page edges. Output a completely empty clean paper surface across the whole original wide canvas, no graphic marks, no ghosting. Preserve the original very subtle paper grain, white balance and even lighting. This is a separate opaque background asset, not a flattened slide. No transparency; no new decoration or typography.",
+        "source_concept_path": "concepts/S03.png",
+        "source_concept_sha256": "08157d04fa08c681ce8c6f7cf5151f4a2549e11786dd37969aa99f8da0163f90",
+        "record_path": "layers/S03/attempts/background-generation.json",
+        "record_sha256": "4cb124909d0bdbe739776bc877c7fe6a8b68e30c184def7f267b62eabc32b4c0"
+      },
+      "opaque_reason": "separate clean background plate; foreground content absent"
+    },
+    {
+      "id": "S03-membrane",
+      "slide_id": "S03",
+      "kind": "picture",
+      "path": "layers/S03/assets/membrane.png",
+      "sha256": "c8bfecda6c837c193ae3110cdce9487b501a95c88c6ceb07421f72587556b84c",
+      "requires_transparency": true,
+      "truth_status": "illustrative",
+      "source_id": "EXAMPLE",
+      "source_locator": "layers/S03/attempts/membrane-repair-generation.json",
+      "generation": {
+        "method": "built-in image_gen edit; actual reference-guided reconstruction, not lossless extraction",
+        "prompt": "Image 1 is the actual transparent membrane-and-water illustration to edit. Keep exactly the same membrane, its perspective, water ribbons, droplets, color and material. Only repair isolation/framing: reduce the entire illustration group uniformly to about 80% of the current canvas width, recenter it, complete the rightmost water-tip cleanly so nothing is clipped, and leave generous transparent padding on all four sides. Clean stray isolated specks and cyan/white edge fringes outside the illustration; keep soft translucent water within it. Do not reshape or replace the membrane, change the water arrangement, add objects/text/arrows or introduce a backdrop. Output a genuine RGBA transparent PNG, not white, black or checkerboard background. Full subject including water ends must be visible and separated from every canvas edge.",
+        "source_concept_path": "concepts/S03.png",
+        "source_concept_sha256": "08157d04fa08c681ce8c6f7cf5151f4a2549e11786dd37969aa99f8da0163f90",
+        "record_path": "layers/S03/attempts/membrane-repair-generation.json",
+        "record_sha256": "17833ba6953e4efd5f5b9a5df533ba8ca9d754c273ff65d57f06b37d3715798b"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "slide_id": "S01",
+      "asset_ids": [
+        "S01-background",
+        "S01-floor-reflection",
+        "S01-contact-shadow",
+        "S01-device-terminal",
+        "S01-wordmark"
+      ],
+      "status": "complete"
+    },
+    {
+      "slide_id": "S02",
+      "asset_ids": [
+        "S02-background-paper",
+        "S02-device-heating",
+        "S02-device-production",
+        "S02-device-exhaust",
+        "S02-device-recovery",
+        "S02-device-exchanger"
+      ],
+      "status": "complete"
+    },
+    {
+      "slide_id": "S03",
+      "asset_ids": [
+        "S03-background",
+        "S03-membrane"
+      ],
+      "status": "complete"
+    }
+  ],
+  "reconstruction": {
+    "contract_version": "apw-reconstruction-v1",
+    "map_path": "reconstruction-map.json",
+    "map_sha256": "9ebb9df8d21e68c73b741848e1a0d6d41dbcab0034e63d4454736ab69a8a563f"
+  }
+}

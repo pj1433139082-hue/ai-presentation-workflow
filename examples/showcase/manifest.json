@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-12T20:11:36.025944+08:00",
+  "scope": "independent-local-showcase",
+  "formal_release": "not-approved",
+  "cases": [
+    {
+      "id": "tech",
+      "title": "科技产品发布",
+      "maker": "/root/showcase_production_plan",
+      "independent_reviewer": "/root/showcase_acceptance_plan",
+      "slides": 5,
+      "pptx": "tech/deck-草稿.pptx",
+      "pptx_sha256": "08efee414fd08d9c961c0830dc29f6cae0922b177a38b8a8dd1955f9913161ba",
+      "bytes": 3196067,
+      "review_state": "agent-reviewed-local-draft",
+      "render": "tech/preview",
+      "assets": 2
+    },
+    {
+      "id": "operations",
+      "title": "制造业经营复盘",
+      "maker": "/root/showcase_acceptance_plan",
+      "independent_reviewer": "/root/showcase_readme",
+      "slides": 5,
+      "pptx": "operations/deck-草稿.pptx",
+      "pptx_sha256": "f549a12a73dd0938524f42de19d5274f12a9ada643d828e3cc62f51a5cd74dcb",
+      "bytes": 4602634,
+      "review_state": "agent-reviewed-local-draft",
+      "render": "operations/preview",
+      "assets": 2
+    },
+    {
+      "id": "research",
+      "title": "科研项目汇报",
+      "maker": "/root/showcase_acceptance_plan",
+      "independent_reviewer": "/root/showcase_readme",
+      "slides": 5,
+      "pptx": "research/deck-草稿.pptx",
+      "pptx_sha256": "aae978a1aae3452ce61f91eee908f0be5f6564d502d869f4aa0e1f334b6cb042",
+      "bytes": 3001537,
+      "review_state": "agent-reviewed-local-draft",
+      "render": "research/preview",
+      "assets": 2
+    },
+    {
+      "id": "health",
+      "title": "医疗健康科普",
+      "maker": "/root/showcase_production_plan",
+      "independent_reviewer": "/root/showcase_acceptance_plan",
+      "slides": 5,
+      "pptx": "health/deck-草稿.pptx",
+      "pptx_sha256": "2d30119ed03c1e0e2da4d5e24b3e77b929bb49242d8d83aa86c031fa25154b2d",
+      "bytes": 2291314,
+      "review_state": "agent-reviewed-local-draft",
+      "render": "health/preview",
+      "assets": 2
+    },
+    {
+      "id": "brand",
+      "title": "消费品牌提案",
+      "maker": "/root/showcase_readme",
+      "independent_reviewer": "/root/showcase_production_plan",
+      "slides": 5,
+      "pptx": "brand/deck-草稿.pptx",
+      "pptx_sha256": "5f4d09bda2dcf8a834bd2ed38f778418d86ac0ac872c916604f417d694a3463a",
+      "bytes": 2203084,
+      "review_state": "agent-reviewed-local-draft",
+      "render": "brand/preview",
+      "assets": 1
+    },
+    {
+      "id": "public",
+      "title": "公共服务说明",
+      "maker": "/root/showcase_readme",
+      "independent_reviewer": "/root/showcase_production_plan",
+      "slides": 5,
+      "pptx": "public/deck-草稿.pptx",
+      "pptx_sha256": "346ee1a784c207084f6ed5b11db6f38e9061fa76b0111bbae46ffb40fdcc521f",
+      "bytes": 1642545,
+      "review_state": "agent-reviewed-local-draft",
+      "render": "public/preview",
+      "assets": 1
+    }
+  ]
+}

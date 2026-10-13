@@ -1,0 +1,24 @@
+{
+  "id": "S03-title",
+  "role": "text",
+  "representation": "native",
+  "type": "text",
+  "text": "先看趋势，再讨论机理。",
+  "bbox": [
+    74,
+    31,
+    1150,
+    139
+  ],
+  "z": 30,
+  "font_family": "Noto Sans SC",
+  "font_size_px": 94,
+  "font_weight": 900,
+  "color": "#001e46",
+  "text_align": "left",
+  "line_height": 1.3,
+  "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+  "file": "components/title.json",
+  "semantic_role": "text",
+  "path": "layers/S03/native-text/S03-title.json"
+}

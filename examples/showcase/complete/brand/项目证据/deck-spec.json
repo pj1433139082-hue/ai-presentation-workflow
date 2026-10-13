@@ -1,0 +1,347 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "山间茶事",
+      "message": "开盒之后，慢下来。",
+      "concept_path": "concepts/S01.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "山间茶事",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "headline",
+          "role": "key-takeaway",
+          "text": "开盒之后，慢下来。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "sleeve",
+          "role": "caption",
+          "text": "抽象山形纸套",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "sachet",
+          "role": "caption",
+          "text": "棉纸茶样袋",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "card",
+          "role": "caption",
+          "text": "冲泡提示卡",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "虚构品牌 · 包装概念",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "导入此前已经生成的单页概念，保持其原始图像与历史提示词不变。该页展示虚构品牌包装故事，不表示真实商品、产地或已售产品。",
+      "reference_ids": [
+        "R362"
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "把一盒茶，放进三种生活时刻",
+      "message": "这是一份从具体使用情境展开的品牌提案。",
+      "concept_path": "concepts/S02.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把一盒茶，放进三种生活时刻",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "这是一份从具体使用情境展开的品牌提案。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "moment-1",
+          "role": "body",
+          "text": "独处时刻：一袋茶样，一杯慢饮",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "moment-2",
+          "role": "body",
+          "text": "午后短歇：开盒、取样、停一停",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "moment-3",
+          "role": "body",
+          "text": "朋友相聚：把一份小心意带去见面",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "情境提案 · 非用户调研",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "三个生活片刻均为品牌提案中的假想情境，不来自用户研究或市场调查。可以用生活物件与场景动作讲述，不呈现虚构用户画像数据。",
+      "reference_ids": [
+        "R362",
+        "BRAND-S01"
+      ]
+    },
+    {
+      "id": "S03",
+      "title": "拆开一盒，读懂包装层次",
+      "message": "从纸套到提示卡，逐层讲清设计意图。",
+      "concept_path": "concepts/S03.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "拆开一盒，读懂包装层次",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "从纸套到提示卡，逐层讲清设计意图。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "sleeve",
+          "role": "body",
+          "text": "纸套：抽象山形纹",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "box",
+          "role": "body",
+          "text": "内盒：收纳茶样",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "sachet",
+          "role": "body",
+          "text": "棉纸袋：独立茶样袋",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "card",
+          "role": "body",
+          "text": "提示卡：冲泡步骤",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "包装结构示意 · 虚构概念",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "用拆解视图说明一套假想包装的层次与用途。材质和结构是提案设计方向，不是已生产包装规格。",
+      "reference_ids": [
+        "R362",
+        "BRAND-S01"
+      ]
+    },
+    {
+      "id": "S04",
+      "title": "让品牌触点，连上日常动作",
+      "message": "从看见包装，到亲手冲泡，再到把茶样递给朋友。",
+      "concept_path": "concepts/S04.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "让品牌触点，连上日常动作",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "从看见包装，到亲手冲泡，再到把茶样递给朋友。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "touchpoint-1",
+          "role": "body",
+          "text": "开盒：认出山形纹与品牌名",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "touchpoint-2",
+          "role": "body",
+          "text": "冲泡：跟随一张简单提示卡",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "touchpoint-3",
+          "role": "body",
+          "text": "分享：递出一份茶样",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "触点概念 · 虚构品牌",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "将包装识别、冲泡提示与分享动作作为提案中的触点，不表示已经投放、售卖或获得顾客反馈。",
+      "reference_ids": [
+        "R362",
+        "BRAND-S01"
+      ]
+    },
+    {
+      "id": "S05",
+      "title": "下一步：把包装体验试清楚",
+      "message": "先检查开盒、冲泡与携带这三段。",
+      "concept_path": "concepts/S05.png",
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "下一步：把包装体验试清楚",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "message",
+          "role": "key-takeaway",
+          "text": "先检查开盒、冲泡与携带这三段。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "test-open",
+          "role": "body",
+          "text": "开盒：茶样是否容易找到？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "test-brew",
+          "role": "body",
+          "text": "冲泡：提示卡是否容易读懂？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "test-carry",
+          "role": "body",
+          "text": "携带：茶样袋是否方便带出？",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "disclosure",
+          "role": "source",
+          "text": "示例试验计划 · 尚未执行",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "这一页提出上市前的示例检查问题，不报告任何试用结果、样本数量、销售表现或市场结论。",
+      "reference_ids": [
+        "R362",
+        "BRAND-S01"
+      ]
+    }
+  ]
+}

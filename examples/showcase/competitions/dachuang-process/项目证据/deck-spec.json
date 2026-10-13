@@ -1,0 +1,460 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "雨序",
+      "message": "第6周阶段检查｜目标在前，记录如实",
+      "concept_path": "concepts/S01.png",
+      "reference_ids": [
+        "R-PROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "雨序",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "第6周阶段检查｜目标在前，记录如实",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "subtitle",
+          "role": "secondary",
+          "text": "校园雨水花园观察与优化",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "stage",
+          "role": "body",
+          "text": "大创 · 创新训练项目过程汇报",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "checkpoint",
+          "role": "body",
+          "text": "第6周｜阶段检查",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "过程情境示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "本套是第6周虚构过程检查情境。场景与记录图像为示意，所有状态和计数都是示例，不表示真实项目已实施。"
+    },
+    {
+      "id": "S02",
+      "title": "第6周：两份完整记录，仍有一处缺口",
+      "message": "计划目标与当前记录并列，缺口清楚呈现。",
+      "concept_path": "concepts/S02.png",
+      "reference_ids": [
+        "R-PROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "第6周：两份完整记录，仍有一处缺口",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "计划目标与当前记录并列，缺口清楚呈现。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "target",
+          "role": "body",
+          "text": "阶段目标｜3次完整降雨记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "complete",
+          "role": "body",
+          "text": "当前｜2次完整记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "missing",
+          "role": "body",
+          "text": "另有｜1条缺失读数记录（不计入完整样本）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "artifacts",
+          "role": "body",
+          "text": "样地/方案、两组装置、记录模板｜准备完成（示例）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "示例计数 · 非实测",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "展示第6周阶段目标与当前记录数量。2次完整和1条缺失读数记录均为虚构计数，不含具体读数。缺失项不能计作完整记录。"
+    },
+    {
+      "id": "S03",
+      "title": "三个阶段产物，支撑下一轮记录",
+      "message": "方案、对照装置与记录模板已准备；比较项只在基质。",
+      "concept_path": "concepts/S03.png",
+      "reference_ids": [
+        "R-PROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "三个阶段产物，支撑下一轮记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "方案、对照装置与记录模板已准备；比较项只在基质。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "site",
+          "role": "body",
+          "text": "样地与方案｜已准备（示例）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "apparatus",
+          "role": "body",
+          "text": "两组装置｜容器、植被、底部结构与记录间隔一致",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "variable",
+          "role": "body",
+          "text": "唯一比较项｜中间基质",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "template",
+          "role": "body",
+          "text": "记录模板｜已准备",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "阶段产物示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "方案、两组装置和记录模板为共享虚构情境中的阶段产物。图中的植被、容器和剖面是生成式示意，不是实物或现场证据。"
+    },
+    {
+      "id": "S04",
+      "title": "缺失读数保留在过程里",
+      "message": "完整记录单独计数；缺失项留档并明确标记。",
+      "concept_path": "concepts/S04.png",
+      "reference_ids": [
+        "R-PROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "缺失读数保留在过程里",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "完整记录单独计数；缺失项留档并明确标记。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "complete",
+          "role": "body",
+          "text": "完整记录｜2（示例计数 · 非实测）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "missing",
+          "role": "body",
+          "text": "缺失读数｜1条，原表保留并单独标记",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rule",
+          "role": "body",
+          "text": "完整样本计数｜不纳入缺失记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "body",
+          "text": "暂无实测读数；暂不作效果判断",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "chain",
+          "role": "body",
+          "text": "记录流程｜原始记录 → 完整性核对 → 异常标记",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "记录示例 · 非实测",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "只展示记录质量规则，不展示或暗示实际读数。缺失读数留在原表、单独标记，不纳入完整样本；当前不作效果结论。"
+    },
+    {
+      "id": "S05",
+      "title": "把采集窗口延到第14周",
+      "message": "记录不足带来方法与排期调整；这仍是未审批的示例目标。",
+      "concept_path": "concepts/S05.png",
+      "reference_ids": [
+        "R-PROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把采集窗口延到第14周",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "记录不足带来方法与排期调整；这仍是未审批的示例目标。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "cause",
+          "role": "body",
+          "text": "原因｜完整降雨记录不足",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "template",
+          "role": "body",
+          "text": "新增｜缺失原因栏",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "method",
+          "role": "body",
+          "text": "调整｜延长降雨收集窗口",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "target",
+          "role": "body",
+          "text": "分析与报告目标｜第12周 → 第14周",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "示例调整 · 未表示已审批",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "本页展示情境中的拟议调整：增加缺失原因栏、延长收集窗口，并把分析和报告目标从第12周调整到第14周。没有证据表明该调整已获审批。"
+    },
+    {
+      "id": "S06",
+      "title": "下一步：补齐记录，再进入分析",
+      "message": "保持条件可比，保留过程来路，并先复核记录规则。",
+      "concept_path": "concepts/S06.png",
+      "reference_ids": [
+        "R-PROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "下一步：补齐记录，再进入分析",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "保持条件可比，保留过程来路，并先复核记录规则。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "collect",
+          "role": "body",
+          "text": "补齐｜不同降雨条件下的记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "compare",
+          "role": "body",
+          "text": "对照｜两类基质保持相同条件",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "archive",
+          "role": "body",
+          "text": "归档｜原始表、缺失/异常、方法与版本",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "support",
+          "role": "body",
+          "text": "拟请求支持｜复核比较条件与记录规则（待沟通）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "计划行动示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "下一阶段行动来自共享虚构情境。支持事项是拟议表达，不表示已经向任何真实教师或学校提出请求。"
+    }
+  ]
+}

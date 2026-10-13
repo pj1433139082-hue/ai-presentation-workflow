@@ -1,0 +1,8 @@
+Use case: background-extraction
+Asset type: one finished transparent special-typography wordmark image
+Input images: Image 1 is the original S01 concept and is the edit target and exact glyph-shape reference.
+Primary request: Isolate the existing two-character Chinese wordmark, exactly `知栈`, from the upper-left title area.
+Text (verbatim): `知栈` — exactly two characters in this order: 知 then 栈. Preserve the source's distinctive heavy, geometric letterforms and close spacing. Do not substitute, omit, duplicate, or add any character.
+Style/medium: Reproduce the source's luminous pale-silver metallic gradient, with a very subtle cool-blue reflection at the left and a restrained warm-coral tint along the lower-right strokes. Keep the same bold dimensional finish and clean cut edges seen in the original wordmark.
+Composition/framing: One isolated wordmark, centered with generous transparent padding on every side. Keep both glyphs complete. Match the original horizontal proportions and glyph silhouette; no perspective tilt or rotation.
+Constraints: Request genuine transparency outside the two glyphs. Remove the blue backdrop and every other slide element. No subtitle, punctuation, Latin letters, extra symbols, underline, border, tile, plate, shadow, floor, logo icon, or watermark. This is a finished glyph artwork asset, not a font file and not ordinary editable slide text.

@@ -1,0 +1,15 @@
+Create ONE widescreen 16:9 landscape engineering concept slide for page 4 of the same fictional product proposal “桥迹”. Use the attached reference image only for elegant exploded hardware depth, dark graphite/titanium material rendering and fine editorial leader-line placement. Absolutely do not copy the smartphone, Apple marks, product parts, text, specifications, brand or composition.
+
+Render exactly these Simplified Chinese lines and nothing else:
+title: “组合构想：定距、斜照、留线索”
+large takeaway: “把三件事嵌入一次近距巡检动作。”
+callout one: “导向件｜约束近距姿态”
+callout two: “斜向光｜强调表面起伏”
+callout three: “疑点索引｜留存复看位置”
+small boundary line: “原型构想 · 原创性与效果尚待核验”
+
+Composition must be visibly different from a horizontal cutaway page: use an elegant oblique axonometric exploded view of a wholly fictional compact inspection carriage, its guide wheel bracket, oblique light assembly, imaging lens, and simple outer shell separated along one diagonal axis above a textured concrete surface. Make the three declared callouts point to the corresponding concept elements. Show their relationship as one integrated action rather than isolated product features. Include only these words; do not label any additional component. A small amber trace may connect the image capture to a simple surface-position mark, but do not invent a screen, UI, saved-data dashboard, or metrics.
+
+Visual direction: premium industrial design launch sheet, quiet ivory-tinted technical paper or very light titanium-gray field, charcoal type, graphite device, brushed metal highlights and restrained warm amber. Crisp editorial Chinese typography, large title, concise spacious annotations, sophisticated soft shadows. The device and all mechanics are an unbuilt fictional concept, not evidence or a real prototype.
+
+Avoid card templates, phone shape, brands, logos, exact measurements, material grades, battery details, numerical values, performance claims, patents, awards, school names, competition logos, pseudo-text, interface panels, collage, extra copy, or any suggestion that originality or effect has been verified.

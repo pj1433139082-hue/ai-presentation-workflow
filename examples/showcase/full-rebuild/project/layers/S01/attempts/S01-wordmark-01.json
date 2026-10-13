@@ -1,0 +1,48 @@
+{
+  "call_id": "S01-wordmark-01",
+  "item_id": "wordmark",
+  "tool": "Codex built-in image_gen",
+  "operation": "edit / special-typography isolation",
+  "prompt_path": "attempts/S01-wordmark-01.prompt.txt",
+  "prompt_sha256": "0dc3da0df0e0557f4e91eb67ffb58211dcf35383cf411e0bfe20765a58eae41f",
+  "references": [
+    {
+      "role": "edit target and exact source glyph/style",
+      "sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+      "index": 1,
+      "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\delivery-modes\\assets-three\\concepts\\S01.png"
+    }
+  ],
+  "num_last_images_to_include": 1,
+  "transparent_background_requested": true,
+  "imagegen_original_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1360c-0feb-76f1-bf15-2ea32830cb09\\exec-60eb1dc8-fd56-461a-806c-6251b5befc6e.png",
+  "imagegen_original_sha256": "bb77440ee9b7d89aa62666c9cea8fd17ade08d1570b7f162dfc48b0f8fe78743",
+  "attempt_path": "attempts/S01-wordmark-01.png",
+  "attempt_sha256": "bb77440ee9b7d89aa62666c9cea8fd17ade08d1570b7f162dfc48b0f8fe78743",
+  "source_concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+  "dimensions_px": [
+    1942,
+    809
+  ],
+  "pixel_format": "Format32bppArgb",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_counts": {
+    "fully_transparent": 1056734,
+    "low_alpha_1_to_7": 54749,
+    "partial_alpha_8_to_254": 458402,
+    "opaque": 1193
+  },
+  "visible_alpha_ge_8_bbox_xyxy": [
+    342,
+    152,
+    1599,
+    732
+  ],
+  "alpha_ge_8_touching_canvas_edge": 0,
+  "accepted": false,
+  "rejection_reason": "The two Chinese glyphs are legible, but extra floating cyan specks above the wordmark and a heavier-than-source bevel are visible; keep this attempt as history and regenerate.",
+  "inspection": "Actual image_gen result displayed; alpha metadata measured read-only."
+}

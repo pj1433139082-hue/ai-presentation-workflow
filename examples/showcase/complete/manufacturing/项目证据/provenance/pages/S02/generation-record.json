@@ -1,0 +1,39 @@
+{
+  "schema": "apw-concept-generation-record/v1",
+  "slide_id": "S02",
+  "artifact_kind": "standalone-slide-concept",
+  "actor": "agent",
+  "tool": "Codex built-in image_gen",
+  "tool_call": "image_gen.imagegen",
+  "operation": "generate",
+  "generated_at": "2026-10-13T08:41:22+08:00",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-57f8-7b41-8255-833b48138fbc\\exec-0bdcd86e-e80c-4540-9279-20047bd32492.png",
+  "original_output_sha256": "0f14042fc832e93387434376d85e76bf480cc3f69ea515de841c29cd6d49a172",
+  "output_path": "concepts/S02.png",
+  "output_sha256": "0f14042fc832e93387434376d85e76bf480cc3f69ea515de841c29cd6d49a172",
+  "dimensions_px": [
+    1672,
+    941
+  ],
+  "format": "PNG",
+  "design_concept_path": "concept.png",
+  "design_concept_sha256": "0f14042fc832e93387434376d85e76bf480cc3f69ea515de841c29cd6d49a172",
+  "prompt_path": "provenance/pages/S02/prompt.txt",
+  "prompt_sha256": "c78a4e70194dd0eb653fa7661649c7d16a0f4edb0468ca71b230a17d75984963",
+  "prompt": "Use case: productivity-visual\nAsset type: one complete 16:9 Chinese concept slide for an illustrative manufacturing heat-reuse presentation.\nScene/backdrop: warm ivory technical-paper field, minimal drafting marks, no identifiable factory location.\nSubject: a readable analysis framework that places a potential heat source and potential heat use in relation to timing and connection conditions. Use a visual question path, not a recommendation or calculation.\nStyle/medium: precise editorial engineering explainer with fine linework and the warm-heat/cool-reuse accents in the frozen project style. Keep generous breathing room and clear Chinese labels.\nComposition/framing: an asymmetrical open page with connected prompts, not four identical cards; each question should be easy to associate with its visual cue.\nText (verbatim; render each line exactly once, with no other words): “先问四件事，再谈是否匹配” “热源、用热点、时间与距离需要放在一起看。” “热源：热量来自哪一段？” “用热点：哪里同时需要热？” “时间：供给与需求何时重叠？” “距离：连接条件是否允许？” “示例分析框架 · 需现场资料验证”\nConstraints: questions are generic prompts, not findings. No numeric values or real-world site facts. Preserve exact wording and punctuation.\nAvoid: temperature/pressure/flow numbers, pipe sizes, efficiency or savings claims, unsupported feasibility conclusions, real equipment layouts, copied camera imagery, dense multi-column cards, extra text, or watermark.",
+  "input_snapshot_path": "provenance/concept-input-hash-snapshot.json",
+  "input_sha256": {
+    "brief.json": "6bde1d583820bf88222c9cf0baad6e4a5f3a79493a8d757b097ba60d1a9d2a05",
+    "deck-spec.json": "b689def7a5a464bab2448bbcff8028ea61730ec3d64379325a7d51b97c88e5a6",
+    "reference-study.json": "afc11e8f463627a2cc0f829031bc528df3477a2a065edbcfdc760e1ba5cb3286",
+    "style-contract.json": "85531d12b12559dff5ea3e28fe74be83bbaf917013f0c08b3f5337afc05e7688"
+  },
+  "input_snapshot_for_this_slide_sha256": "dcb7c8a74166f93eae3274359f2bf06afed36923b00bfa1069872ff9f24955f8",
+  "reference_ids_in_project_contract": [
+    "R70"
+  ],
+  "direct_image_inputs_sent_to_tool": [],
+  "history_note": "This image was generated after the four project inputs were frozen. The prompt uses the analyzed reference direction in words; no reference image file was passed as a direct image_gen input.",
+  "user_visual_acceptance": "not-claimed",
+  "formal_gates": "not-claimed"
+}

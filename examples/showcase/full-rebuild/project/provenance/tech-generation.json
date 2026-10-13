@@ -1,0 +1,41 @@
+{
+  "generation_tool": "built-in Codex image_gen",
+  "operation": "image edit / isolated component extraction",
+  "source_path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\industry-explorations\\A-tech\\cover-知栈-概念.png",
+  "source_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+  "imagegen_original_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-b7ab-7ad1-8e6a-e05dcb9c2b88\\exec-4b648562-9a95-479c-bada-83bd1e401aeb.png",
+  "imagegen_original_sha256": "6cc07de77b72b10b59b55481deb64e9b1cb83643c3cb7553abdd738df3a9c72b",
+  "output_path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\hybrid-sampler\\assets\\tech-device.png",
+  "output_sha256": "6cc07de77b72b10b59b55481deb64e9b1cb83643c3cb7553abdd738df3a9c72b",
+  "output_dimensions_px": [
+    1672,
+    940
+  ],
+  "transparency": {
+    "requested": true,
+    "png_has_alpha_channel": true,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "fully_transparent_pixel_count": 824988,
+    "partially_transparent_pixel_count": 745833,
+    "verified": true,
+    "visible_silhouette_alpha_threshold": 8,
+    "visible_silhouette_bbox_xyxy": [
+      325,
+      42,
+      1399,
+      900
+    ],
+    "visible_silhouette_padding_px": {
+      "left": 325,
+      "top": 42,
+      "right": 273,
+      "bottom": 40
+    },
+    "edge_note": "Only a few alpha=1 fringe pixels touch the left/bottom canvas edge; no pixels with alpha >= 8 touch the edge. The complete device silhouette has transparent padding on every side."
+  },
+  "image_role": "independently movable, scalable, replaceable raster illustration; internal device is not vector-editable",
+  "prompt": "Use case: background-extraction\nAsset type: one independently movable, scalable, replaceable transparent PNG illustration for a slide\nInput images: Image 1 is the edit target.\nPrimary request: Extract the single desktop collaboration terminal from Image 1 as a clean isolated cutout on a genuinely transparent background.\nSubject: Preserve exactly the existing terminal: its wide smoked-glass display, low brushed-aluminum dock, original outer silhouette, screen perspective, screen document cards, and luminous blue/coral light lines inside the screen. Keep the floating document cards inside the display; they may remain abstract and contain no readable wording.\nEdit instructions: Remove all external cover typography, subtitle, feature phrases, small footer label, blue/coral studio backdrop, horizon, floor, and floor reflection. Retain the original blue and coral edge lighting and color reflections on the device itself. Do not redesign, reshape, replace, add, simplify, or detach any part of the device.\nComposition/framing: Frame closely around the device with generous transparent padding on every side. Keep the entire display, dock, and right-side circular control fully in frame; do not crop any edge. Preserve the original three-quarter perspective and proportions.\nLighting/mood: Keep the original crisp blue edge light and warm coral rim reflections as they appear on the device. No new shadow plane or environment.\nConstraints: Outside the complete device silhouette, pixels must be transparent, not white, gray, or a checkerboard. Preserve fine device edges and internal screen graphics. The result is a single standalone illustration intended to be placed, resized, or replaced as one image; its internal screen and hardware are not claimed to be vector-editable.\nAvoid: Any text outside the screen, logos, labels, added parts, a new background, a floor, a border, a presentation frame, watermarks, or changes to the original device geometry."
+}

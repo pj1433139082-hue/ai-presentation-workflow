@@ -1,0 +1,55 @@
+{
+  "status": "analyzed",
+  "selected_reference_ids": [
+    "R362",
+    "BRAND-S01"
+  ],
+  "references": [
+    {
+      "id": "R362",
+      "status": "analyzed",
+      "image_path": "references/case362.jpg",
+      "sha256": "98602C5EE9033E5D80C656ABC5409391B181F4D207F43E404D49A1057A2034CE",
+      "source_locator": "Case 362, awesome-gpt-image-2 local library; https://x.com/Preda2005/status/2049846981271699685",
+      "usage_note": "真实参考案例仅用于视觉研究；内容包含一个抹茶品牌系统，不代表本项目品牌或产品事实。",
+      "transferable_rules": [
+        "自然窗光把产品与生活情境连在一起",
+        "包装材料和使用动作可以共同讲述产品故事",
+        "安静的静物构图可让细节成为叙事线索"
+      ],
+      "project_translation": [
+        "以纸盒、茶样袋和冲泡动作表达虚构品牌提案",
+        "延续温暖纸面、茶棕与克制赭红的氛围",
+        "各页按包装故事、情境、结构、触点和试验计划分别组织"
+      ],
+      "do_not_copy": [
+        "不沿用参考案例的品牌名、日文标识或菜单",
+        "不沿用其产地、认证、功效、定价或销售宣称",
+        "不沿用抹茶绿、整版触点网格和原构图"
+      ]
+    },
+    {
+      "id": "BRAND-S01",
+      "status": "analyzed",
+      "image_path": "concepts/S01.png",
+      "sha256": "9FB9EE495BDE2456FE4B43C5CF9E4D5EFEC4912A351B6A964D9800059B12EF8C",
+      "source_locator": "Imported prior single-page concept: pilots/industry-explorations/C-brand/product-story.png; original prompt and provenance retained under project/provenance/imports.",
+      "usage_note": "这是本项目复用的既有品牌概念页，仅作为后续页面的内部视觉参考，不是生产包装或真实产品照片。",
+      "transferable_rules": [
+        "以可触摸的纸材和暖光形成生活方式质感",
+        "品牌名、标题和包装标签保持安静清楚",
+        "场景对象应支撑使用故事，而非堆成产品清单"
+      ],
+      "project_translation": [
+        "新页延续暖纸、茶棕、赭红和细节摄影语言",
+        "根据情境、拆解、触点或计划故事改变页面布局",
+        "虚构品牌与产品信息保持示例标识"
+      ],
+      "do_not_copy": [
+        "不把单页静物布局套到每页",
+        "不把包装插画描述成真实商品",
+        "不追加真实茶种、产地、价格或功效"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mode": "showcase-local-draft",
+  "stage": "concept-generated-awaiting-check",
+  "human_gates": {
+    "G1": "not-claimed",
+    "G2": "not-claimed",
+    "G3": "not-claimed",
+    "G4": "not-claimed",
+    "G5": "not-claimed"
+  }
+}

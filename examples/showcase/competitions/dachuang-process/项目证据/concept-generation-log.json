@@ -1,0 +1,737 @@
+{
+  "status": "complete",
+  "recorded_at": "2026-10-13T22:32:43.0443246+08:00",
+  "user_visual_acceptance": "not-recorded",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "status": "generated",
+      "output_path": "concepts/S01.png",
+      "output_sha256": "e7f40a317bf38f884f57f2eb135cbfda13c65ef92431a93c8cb9ec3e80b966b0",
+      "input_sha256": {
+        "brief": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+        "deck_spec": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+        "reference_study": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+        "style_contract": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "雨序",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "第6周阶段检查｜目标在前，记录如实",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "subtitle",
+          "role": "secondary",
+          "text": "校园雨水花园观察与优化",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "stage",
+          "role": "body",
+          "text": "大创 · 创新训练项目过程汇报",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "checkpoint",
+          "role": "body",
+          "text": "第6周｜阶段检查",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "过程情境示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S01/generation-record.json",
+      "generation_record_sha256": "bb87e13bf4ad7e74a68f9ee8d3cc40742cc293d02e2e26610baebad9dd6635d5",
+      "prompt_path": "provenance/pages/S01/prompt.txt",
+      "prompt_sha256": "452841a7cd63b186fd4ed1f28662dabb3628ddb5c1f4529d34f03df455f51989",
+      "actual_tool_inputs": {
+        "referenced_image_paths": [
+          "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/design/S01/concept.png"
+        ],
+        "referenced_image_bindings": [
+          {
+            "role": "edit-target",
+            "path": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/design/S01/concept.png",
+            "sha256": "0ef681d2924025c79df2badb9fe26f590829e05793a46678360da0a60107c3ad",
+            "portable_project_path": "provenance/pages/S01/revisions/v1/concept.png"
+          }
+        ],
+        "transparent_background": false
+      },
+      "design_reviewed_references": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "project_path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "project_path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "history_note": "reference_images binds selected design lineage; actual_tool_inputs records the paths passed to the image tool separately."
+    },
+    {
+      "slide_id": "S02",
+      "status": "generated",
+      "output_path": "concepts/S02.png",
+      "output_sha256": "46391f0a2a0e045c4c011c5c7e8da83a861d00d5c52a74f7a9e8a28253fdab4b",
+      "input_sha256": {
+        "brief": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+        "deck_spec": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+        "reference_study": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+        "style_contract": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "第6周：两份完整记录，仍有一处缺口",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "计划目标与当前记录并列，缺口清楚呈现。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "target",
+          "role": "body",
+          "text": "阶段目标｜3次完整降雨记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "complete",
+          "role": "body",
+          "text": "当前｜2次完整记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "missing",
+          "role": "body",
+          "text": "另有｜1条缺失读数记录（不计入完整样本）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "artifacts",
+          "role": "body",
+          "text": "样地/方案、两组装置、记录模板｜准备完成（示例）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "示例计数 · 非实测",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S02/generation-record.json",
+      "generation_record_sha256": "728e88cd9cb48d23eadca674bf2de5ff00c5aa80fc96441a333a2fb7fe4a68e5",
+      "prompt_path": "provenance/pages/S02/prompt.txt",
+      "prompt_sha256": "3a9e31102df3e1ccf78dc9995b69ad3471ce09a0e2b75161a4dcecd38f691bd1",
+      "actual_tool_inputs": {
+        "referenced_image_paths": [
+          {
+            "reference_id": "R-PROPOSAL-S01",
+            "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\previous-proposal-S01.png",
+            "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+          },
+          {
+            "reference_id": "R339",
+            "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\case339.jpg",
+            "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+          }
+        ],
+        "transparent_background": false
+      },
+      "design_reviewed_references": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "project_path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "project_path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "history_note": "reference_images binds selected design lineage; actual_tool_inputs records the paths passed to the image tool separately."
+    },
+    {
+      "slide_id": "S03",
+      "status": "generated",
+      "output_path": "concepts/S03.png",
+      "output_sha256": "c3fcf820caf56dbe5f57abaa9cc8d236ab37245f7e2ce39bdb8d5ba94225943a",
+      "input_sha256": {
+        "brief": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+        "deck_spec": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+        "reference_study": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+        "style_contract": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "三个阶段产物，支撑下一轮记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "方案、对照装置与记录模板已准备；比较项只在基质。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "site",
+          "role": "body",
+          "text": "样地与方案｜已准备（示例）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "apparatus",
+          "role": "body",
+          "text": "两组装置｜容器、植被、底部结构与记录间隔一致",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "variable",
+          "role": "body",
+          "text": "唯一比较项｜中间基质",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "template",
+          "role": "body",
+          "text": "记录模板｜已准备",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "阶段产物示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S03/generation-record.json",
+      "generation_record_sha256": "08e7958d65528e057edf7170195e785e412b6c877ab7ecfd56958f493d6685a7",
+      "prompt_path": "provenance/pages/S03/prompt.txt",
+      "prompt_sha256": "093d8a4afdab4352784beb28035e2c521cb8ef4067d920f41e55d9c18118ceed",
+      "actual_tool_inputs": {
+        "referenced_image_paths": [
+          {
+            "reference_id": "R-PROPOSAL-S01",
+            "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\previous-proposal-S01.png",
+            "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+          },
+          {
+            "reference_id": "R339",
+            "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\case339.jpg",
+            "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+          }
+        ],
+        "transparent_background": false
+      },
+      "design_reviewed_references": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "project_path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "project_path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "history_note": "reference_images binds selected design lineage; actual_tool_inputs records the paths passed to the image tool separately."
+    },
+    {
+      "slide_id": "S04",
+      "status": "generated",
+      "output_path": "concepts/S04.png",
+      "output_sha256": "b2ca5b453ad93026598591d6b7660f883c58d973084c2fc9b7bc08287b19db15",
+      "input_sha256": {
+        "brief": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+        "deck_spec": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+        "reference_study": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+        "style_contract": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "缺失读数保留在过程里",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "完整记录单独计数；缺失项留档并明确标记。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "complete",
+          "role": "body",
+          "text": "完整记录｜2（示例计数 · 非实测）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "missing",
+          "role": "body",
+          "text": "缺失读数｜1条，原表保留并单独标记",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rule",
+          "role": "body",
+          "text": "完整样本计数｜不纳入缺失记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "body",
+          "text": "暂无实测读数；暂不作效果判断",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "chain",
+          "role": "body",
+          "text": "记录流程｜原始记录 → 完整性核对 → 异常标记",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "记录示例 · 非实测",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S04/generation-record.json",
+      "generation_record_sha256": "7a83864a164fa539a7eb297c1c5ef0840444efee7dae713fa9983b42fe5396c6",
+      "prompt_path": "provenance/pages/S04/prompt.txt",
+      "prompt_sha256": "858cb3f5341aa9f63343f8c32d0a08c2a5376e38e31ceac46aae53737ffda8b1",
+      "actual_tool_inputs": {
+        "referenced_image_paths": [
+          {
+            "reference_id": "R-PROPOSAL-S01",
+            "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\previous-proposal-S01.png",
+            "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+          },
+          {
+            "reference_id": "R339",
+            "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\competition-expansion-20261013\\dachuang-process\\project\\references\\case339.jpg",
+            "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+          }
+        ],
+        "transparent_background": false
+      },
+      "design_reviewed_references": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "project_path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "project_path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "history_note": "reference_images binds selected design lineage; actual_tool_inputs records the paths passed to the image tool separately."
+    },
+    {
+      "slide_id": "S05",
+      "status": "generated",
+      "output_path": "concepts/S05.png",
+      "output_sha256": "0110b3ad5b1a8fcb5d8961977859b0ec5c4d2311763f928f8f35f050f53f81f0",
+      "input_sha256": {
+        "brief": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+        "deck_spec": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+        "reference_study": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+        "style_contract": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把采集窗口延到第14周",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "记录不足带来方法与排期调整；这仍是未审批的示例目标。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "cause",
+          "role": "body",
+          "text": "原因｜完整降雨记录不足",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "template",
+          "role": "body",
+          "text": "新增｜缺失原因栏",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "method",
+          "role": "body",
+          "text": "调整｜延长降雨收集窗口",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "target",
+          "role": "body",
+          "text": "分析与报告目标｜第12周 → 第14周",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "示例调整 · 未表示已审批",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S05/generation-record.json",
+      "generation_record_sha256": "2a46ca31172ab0c365b295a3aa69588293b5cfac4c22302599fada291ad92df0",
+      "prompt_path": "provenance/pages/S05/prompt.txt",
+      "prompt_sha256": "26764dab6c657ca32ed4cfd099ddd4a6f74563874be34f2090c6a02ec7eb285b",
+      "actual_tool_inputs": {
+        "referenced_image_paths": [
+          "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/project/references/previous-proposal-S01.png",
+          "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/project/references/case339.jpg"
+        ],
+        "referenced_image_bindings": [
+          {
+            "role": "style-reference",
+            "reference_id": "R-PROPOSAL-S01",
+            "path": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/project/references/previous-proposal-S01.png",
+            "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+          },
+          {
+            "role": "style-reference",
+            "reference_id": "R339",
+            "path": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/project/references/case339.jpg",
+            "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+          }
+        ],
+        "transparent_background": false
+      },
+      "design_reviewed_references": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "project_path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "project_path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "history_note": "reference_images binds selected design lineage; actual_tool_inputs records the paths passed to the image tool separately."
+    },
+    {
+      "slide_id": "S06",
+      "status": "generated",
+      "output_path": "concepts/S06.png",
+      "output_sha256": "ab3a8a9694d0333ebc3dbcb1aa391cc85b50383171b0570548a9218042a2787a",
+      "input_sha256": {
+        "brief": "f9d2338b0dab8a7ae54fe88496747d18f7b90f34d43d6209f9f16716677f8bdc",
+        "deck_spec": "58c9650fa25ff468cba3ce4b5b5af96749c4a9613b2c31af3bc920094ecb2d00",
+        "reference_study": "f8585652e451afbdab256325b57fa4e2cbb273fc88fa027448677b1a1b01e586",
+        "style_contract": "d609aa05505ad89780aa31befb90b1b8c09fd82e10056d4b3a93446826e776aa"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "下一步：补齐记录，再进入分析",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "保持条件可比，保留过程来路，并先复核记录规则。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "collect",
+          "role": "body",
+          "text": "补齐｜不同降雨条件下的记录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "compare",
+          "role": "body",
+          "text": "对照｜两类基质保持相同条件",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "archive",
+          "role": "body",
+          "text": "归档｜原始表、缺失/异常、方法与版本",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "support",
+          "role": "body",
+          "text": "拟请求支持｜复核比较条件与记录规则（待沟通）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "truth",
+          "role": "source",
+          "text": "计划行动示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S06/generation-record.json",
+      "generation_record_sha256": "5e7757ed0fe9a79ef7f9ab262152670706c1815d02c079a5f0b106c5ab0e404b",
+      "prompt_path": "provenance/pages/S06/prompt.txt",
+      "prompt_sha256": "e76a7172c15de852e8eb018fa80a3b099b00deffb02a5b72e99dd51ca2c3f0be",
+      "actual_tool_inputs": {
+        "referenced_image_paths": [
+          "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/design/S06/revisions/v1/concept.png"
+        ],
+        "referenced_image_bindings": [
+          {
+            "role": "edit-target",
+            "path": "D:/obsidian_work/cangku/paper_work/.scratch/ai-presentation-workflow-architecture-20261012/competition-expansion-20261013/dachuang-process/design/S06/revisions/v1/concept.png",
+            "sha256": "d2ceaff22eacd490b1b77065f195cb4b2a65410ca66d6463f8de8bf1beb96ea6",
+            "portable_project_path": "provenance/pages/S06/revisions/v1/concept.png"
+          }
+        ],
+        "transparent_background": false
+      },
+      "design_reviewed_references": [
+        {
+          "reference_id": "R-PROPOSAL-S01",
+          "project_path": "references/previous-proposal-S01.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "project_path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "history_note": "reference_images binds selected design lineage; actual_tool_inputs records the paths passed to the image tool separately."
+    }
+  ]
+}

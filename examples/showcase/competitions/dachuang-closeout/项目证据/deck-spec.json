@@ -1,0 +1,586 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "雨序",
+      "message": "校园雨水花园观察与优化",
+      "concept_path": "concepts/S01.png",
+      "reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "雨序",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "校园雨水花园观察与优化",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line1",
+          "role": "body",
+          "text": "大创 · 创新训练项目结题答辩",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line2",
+          "role": "body",
+          "text": "目标、记录与边界，一次讲清",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "结题情境示例 · 非真实项目成果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "01 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "结题封面。案例、研究进展与成果均为虚构示例，不是真实项目结题结果。"
+    },
+    {
+      "id": "S02",
+      "title": "目标完成度，逐项落到材料链",
+      "message": "三个立项目标都有对应的示例交付状态。",
+      "concept_path": "concepts/S02.png",
+      "reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "目标完成度，逐项落到材料链",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "三个立项目标都有对应的示例交付状态。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "goal1",
+          "role": "body",
+          "text": "目标一｜记录降雨后水位变化",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "status1",
+          "role": "body",
+          "text": "示例进度｜6 次记录：5 次完整、1 次缺失",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "goal2",
+          "role": "body",
+          "text": "目标二｜比较两种基质入渗表现",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "status2",
+          "role": "body",
+          "text": "示例进度｜2 类基质 × 3 次重复，共 6 组台架试验",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "goal3",
+          "role": "body",
+          "text": "目标三｜提出维护与优化建议",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "status3",
+          "role": "body",
+          "text": "示例进度｜维护建议稿与研究报告（概念交付）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "结题情境示例 · 非真实项目成果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "02 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "将立项目标与虚构的结题材料逐项对应。数字和状态均为示例设定，不是实际成果。"
+    },
+    {
+      "id": "S03",
+      "title": "记录数量可核对，效果结论留白",
+      "message": "只展示示例记录数，不推导实测效果。",
+      "concept_path": "concepts/S03.png",
+      "reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "记录数量可核对，效果结论留白",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "只展示示例记录数，不推导实测效果。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rain_label",
+          "role": "section-heading",
+          "text": "降雨记录（示例）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rain_total",
+          "role": "metric",
+          "text": "6 次合计",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rain_complete",
+          "role": "body",
+          "text": "5 次完整",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rain_missing",
+          "role": "body",
+          "text": "1 次缺失，保留标记",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "trial_label",
+          "role": "section-heading",
+          "text": "基质台架对照（示例）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "trial_count",
+          "role": "body",
+          "text": "2 类基质 × 3 次重复 = 6 组台架试验",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "body",
+          "text": "未给出读数，不判断基质优劣、改善幅度或统计显著性",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "示例计数 · 非实测",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "03 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "展示示例记录计数和台架重复次数。没有水位读数，不报告效果差异、改善幅度、优劣或统计显著性。"
+    },
+    {
+      "id": "S04",
+      "title": "交付物可追溯，贡献按角色说明",
+      "message": "以空模板与概念封面展示成果结构。",
+      "concept_path": "concepts/S04.png",
+      "reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "交付物可追溯，贡献按角色说明",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "以空模板与概念封面展示成果结构。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "deliverable1",
+          "role": "body",
+          "text": "观察记录｜空白记录模板",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "deliverable2",
+          "role": "body",
+          "text": "对照数据｜空白整理表",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "deliverable3",
+          "role": "body",
+          "text": "维护建议｜概念文本",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "deliverable4",
+          "role": "body",
+          "text": "研究报告｜概念封面与目录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "roles_heading",
+          "role": "section-heading",
+          "text": "团队分工（角色示例）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "roles",
+          "role": "body",
+          "text": "样地记录 · 装置搭建 · 数据整理 · 报告撰写",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "概念交付物示意 · 非真实报告或验收材料",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "04 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "所有文档视觉均为概念封面或空白模板，不伪装为实际研究报告、检测报告或正式验收材料。角色不绑定真实姓名。"
+    },
+    {
+      "id": "S05",
+      "title": "计划顺延两周，资源账目按模拟口径说明",
+      "message": "原计划 12 周；结题情境设定为 14 周。",
+      "concept_path": "concepts/S05.png",
+      "reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "计划顺延两周，资源账目按模拟口径说明",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "原计划 12 周；结题情境设定为 14 周。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "plan_time",
+          "role": "metric",
+          "text": "原计划｜12 周",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "actual_time",
+          "role": "metric",
+          "text": "示例实际｜14 周",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "reason",
+          "role": "body",
+          "text": "顺延原因｜完整降雨记录不足，分析与报告移至第 14 周",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "budget",
+          "role": "body",
+          "text": "原预算｜材料 1,200 · 工具 800 · 调研 500 · 合计 2,500 元",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "simulated",
+          "role": "body",
+          "text": "模拟使用｜材料 1,180 + 工具 760 + 调研 420 = 2,360 元",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "balance",
+          "role": "metric",
+          "text": "余额｜140 元",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "模拟资源明细 · 非真实票据",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "05 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "时间与资源数字为模拟设定。模拟资源明细不代表真实支出、票据或报销。"
+    },
+    {
+      "id": "S06",
+      "title": "结论留有边界，后续先扩样再判断",
+      "message": "本例仅提供研究线索，不能承诺普适效果。",
+      "concept_path": "concepts/S06.png",
+      "reference_ids": [
+        "RPROPOSAL-S01",
+        "R339"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "结论留有边界，后续先扩样再判断",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "本例仅提供研究线索，不能承诺普适效果。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "scope1",
+          "role": "body",
+          "text": "样本范围｜单一虚构样地；6 次记录（5 完整、1 缺失）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "scope2",
+          "role": "body",
+          "text": "对照范围｜2 类基质，各 3 次台架重复",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "limit",
+          "role": "body",
+          "text": "结论边界｜不足以支持普适性、实际改善或显著性判断",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "next1",
+          "role": "body",
+          "text": "后续建议｜扩展样地与降雨条件；统一观测条件",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "next2",
+          "role": "body",
+          "text": "重复对照，保留缺失与异常记录，再讨论维护价值",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "结题情境示例 · 后续建议非已批准计划",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "06 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "明确虚构样地、有限样本与基质台架比较的适用边界。后续建议不是已获批准的工作计划。"
+    }
+  ]
+}

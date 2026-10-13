@@ -1,0 +1,23 @@
+{
+  "version": "sampler-v1",
+  "selected_reference_ids": [
+    "R17",
+    "R70",
+    "R341"
+  ],
+  "direction_actor": "agent",
+  "direction_reason": "用户认可三路风格后明确要求扩展行业；本次为多场景样例选集，逐页遵循其实际概念",
+  "palette": {
+    "background": "#FFFFFF"
+  },
+  "readability_profile": {
+    "font_floors_pt": {
+      "title": 42,
+      "key-takeaway": 18,
+      "body": 16,
+      "secondary": 16,
+      "source": 12
+    },
+    "minimum_contrast_ratio": 4.5
+  }
+}

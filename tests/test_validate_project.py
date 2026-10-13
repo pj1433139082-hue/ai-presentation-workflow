@@ -6,13 +6,26 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
+import warnings
 import zlib
 import zipfile
 from pathlib import Path
 from types import SimpleNamespace
+from PIL import Image, ImageDraw
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "validate_project.py"
+REVIEW_SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "render_decomposition_review.py"
+ISOLATION_SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "render_asset_isolation_review.py"
+ISOLATION_SPEC = importlib.util.spec_from_file_location("ai_presentation_isolation", ISOLATION_SCRIPT)
+ISOLATION_MODULE = importlib.util.module_from_spec(ISOLATION_SPEC)
+assert ISOLATION_SPEC.loader is not None
+ISOLATION_SPEC.loader.exec_module(ISOLATION_MODULE)
+REVIEW_SPEC = importlib.util.spec_from_file_location("ai_presentation_review", REVIEW_SCRIPT)
+REVIEW_MODULE = importlib.util.module_from_spec(REVIEW_SPEC)
+assert REVIEW_SPEC.loader is not None
+REVIEW_SPEC.loader.exec_module(REVIEW_MODULE)
 MODULE_SPEC = importlib.util.spec_from_file_location("ai_presentation_validator", SCRIPT)
 VALIDATOR_MODULE = importlib.util.module_from_spec(MODULE_SPEC)
 assert MODULE_SPEC.loader is not None
@@ -57,6 +70,60 @@ def value_sha256(value: object) -> str:
         value, ensure_ascii=False, sort_keys=True, separators=(",", ":")
     ).encode("utf-8")
     return hashlib.sha256(canonical).hexdigest()
+
+
+def refresh_fixture_decomposition_review(root: Path) -> None:
+    decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+    slide = decomposition["slides"][0]
+    items_sha = value_sha256(slide["items"])
+    packet_path = root / slide["review_packet"]["path"]
+    rows = [REVIEW_MODULE.review_row(item) for item in slide["items"]]
+    packet_path.write_text(
+        "# Fixture decomposition review\n\n"
+        f"Item SHA-256: {items_sha}\n\n"
+        "| 编号 | 盘点轮次 | 类别 | 对象 | 角色 | 对应组件/填充区 | 来源分类 | 处理决定 | 遮挡 | 叠放关系 | 裁剪留白 | 文数处理 |\n"
+        "|---|---|---|---|---|---|---|---|---|---|---|---|\n" + "\n".join(rows) + "\n",
+        encoding="utf-8",
+    )
+    review_path = root / slide["review_image"]["path"]
+    REVIEW_MODULE.build_review_image(root / slide["concept_path"], slide["items"]).save(review_path)
+    slide["review_image"]["sha256"] = hashlib.sha256(review_path.read_bytes()).hexdigest()
+    slide["review_image"]["reviewed_items_sha256"] = items_sha
+    slide["review_packet"]["reviewed_items_sha256"] = items_sha
+    slide["review_packet"]["sha256"] = hashlib.sha256(packet_path.read_bytes()).hexdigest()
+    write_json(root, "decomposition-map.json", decomposition)
+
+
+def refresh_fixture_isolation_review(root: Path) -> None:
+    manifest = json.loads((root / "asset-manifest.json").read_text(encoding="utf-8"))
+    decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+    asset = manifest["assets"][0]
+    source_items = ISOLATION_MODULE.source_items_for_asset(decomposition, asset["id"])
+    image_path = root / "reviews" / "assets" / f"{asset['id']}-isolation.png"
+    image_path.parent.mkdir(parents=True, exist_ok=True)
+    ISOLATION_MODULE.build_isolation_image(root, root / asset["output"], source_items).save(image_path)
+    packet_path = root / "reviews" / "assets" / f"{asset['id']}-isolation.md"
+    packet_path.write_text(
+        f"# {asset['id']} fixture isolation\n\n{ISOLATION_MODULE.value_sha256(source_items)}\n\n"
+        + "\n".join(ISOLATION_MODULE.review_row(item) for item in source_items)
+        + "\n",
+        encoding="utf-8",
+    )
+    asset["isolation_review"] = {
+        "status": "passed", "reviewer": "fixture-reviewer",
+        "image_path": "reviews/assets/C01-isolation.png",
+        "image_sha256": hashlib.sha256(image_path.read_bytes()).hexdigest(),
+        "packet_path": "reviews/assets/C01-isolation.md",
+        "packet_sha256": hashlib.sha256(packet_path.read_bytes()).hexdigest(),
+        "asset_sha256": asset["sha256"],
+        "reviewed_items_sha256": ISOLATION_MODULE.value_sha256(source_items),
+        "checks": {
+            "single_object": True, "no_neighbor_residue": True,
+            "no_ordinary_text_or_data": True, "edge_clean": True,
+            "concept_match": True,
+        },
+    }
+    write_json(root, "asset-manifest.json", manifest)
 
 
 def gate_decision_values(root: Path, gate: str) -> dict[str, object]:
@@ -215,11 +282,37 @@ def gate_decision_values(root: Path, gate: str) -> dict[str, object]:
             },
             "slide_specific_deviations": {"items": [], "policy": "declared"},
         }
+    if gate == "decomposition":
+        decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+        return {
+            "object_inventory": {
+                slide["slide_id"]: slide["items"] for slide in decomposition["slides"]
+            },
+            "coverage_review": {
+                slide["slide_id"]: slide["coverage_review"] for slide in decomposition["slides"]
+            },
+            "review_evidence": {
+                slide["slide_id"]: {
+                    "review_image": slide["review_image"],
+                    "review_packet": slide["review_packet"],
+                }
+                for slide in decomposition["slides"]
+            },
+        }
     if gate == "release":
         return {
             "final_render": {
                 "contact_sheet": qa.get("final_contact_sheet"),
                 "evidence_files": qa.get("evidence_files", []),
+            },
+            "qa_summary": {
+                "status": qa.get("status"),
+                "final_reviewer": qa.get("final_reviewer"),
+                "deck_checks": qa.get("deck_checks"),
+                "slides": {
+                    slide.get("slide_id"): {"status": slide.get("status"), "checks": slide.get("checks")}
+                    for slide in qa.get("slides", []) if isinstance(slide, dict)
+                } if isinstance(qa.get("slides"), list) else {},
             },
             "concept_differences": {"items": qa.get("differences", [])},
             "qa_exceptions": {
@@ -475,8 +568,8 @@ def make_valid_project(root: Path) -> None:
                             "display_scale_percent": 100,
                             "reviewer": "fixture-reviewer",
                             "path": "concepts/S01.png",
-                            "sha256": hashlib.sha256(b"placeholder-concept").hexdigest(),
-                            "reviewed_concept_sha256": hashlib.sha256(b"placeholder-concept").hexdigest(),
+                            "sha256": hashlib.sha256(transparent_png()).hexdigest(),
+                            "reviewed_concept_sha256": hashlib.sha256(transparent_png()).hexdigest(),
                         },
                     },
                 }
@@ -485,7 +578,7 @@ def make_valid_project(root: Path) -> None:
     )
     concept = root / "concepts" / "S01.png"
     concept.parent.mkdir(parents=True)
-    concept.write_bytes(b"placeholder-concept")
+    concept.write_bytes(transparent_png())
     write_json(
         root,
         "concept-generation-log.json",
@@ -507,6 +600,60 @@ def make_valid_project(root: Path) -> None:
             ]
         },
     )
+    review_image = root / "reviews" / "S01-decomposition.png"
+    review_image.parent.mkdir(parents=True, exist_ok=True)
+    review_image.write_bytes(transparent_png())
+    review_packet = root / "reviews" / "S01-decomposition.md"
+    review_packet.write_text("# Pending fixture review\n", encoding="utf-8")
+    write_json(
+        root,
+        "decomposition-map.json",
+        {
+            "version": "v1",
+            "slides": [
+                {
+                    "slide_id": "S01",
+                    "concept_path": "concepts/S01.png",
+                    "concept_sha256": hashlib.sha256(concept.read_bytes()).hexdigest(),
+                    "master_path": None,
+                    "master_sha256": None,
+                    "items": [
+                        {
+                            "id": "D01", "kind": "visual", "inventory_pass": "semantic",
+                            "label": "arrow", "role": "arrow", "source_class": "design-object",
+                            "bbox": [0.1, 0.3, 0.25, 0.2], "z": 1,
+                            "instance_id": "I01", "component_id": "C01",
+                            "treatment": "reconstruct-single", "occlusion": "none", "overlaps": [],
+                            "crop_padding": [0.01, 0.01, 0.01, 0.01],
+                            "contains_ordinary_text_or_data": False, "text_data_decision": "none",
+                        },
+                        {
+                            "id": "D02", "kind": "fill-slot", "inventory_pass": "semantic",
+                            "label": "editable title", "role": "ordinary-text",
+                            "bbox": [0.1, 0.1, 0.3, 0.1], "fill_slot_id": "F01",
+                            "treatment": "editable",
+                        },
+                    ],
+                    "review_image": {
+                        "path": "reviews/S01-decomposition.png",
+                        "sha256": hashlib.sha256(review_image.read_bytes()).hexdigest(),
+                        "reviewed_concept_sha256": hashlib.sha256(concept.read_bytes()).hexdigest(),
+                        "display_scale_percent": 100,
+                    },
+                    "review_packet": {
+                        "path": "reviews/S01-decomposition.md",
+                        "sha256": hashlib.sha256(review_packet.read_bytes()).hexdigest(),
+                    },
+                    "coverage_review": {
+                        "reviewer": "fixture-reviewer", "semantic_passed": True,
+                        "residual_passed": True, "independence_passed": True,
+                        "missing_items": [],
+                    },
+                }
+            ],
+        },
+    )
+    refresh_fixture_decomposition_review(root)
     output = root / "assets" / "S01" / "C01.png"
     output.parent.mkdir(parents=True)
     output_bytes = transparent_png()
@@ -554,11 +701,19 @@ def make_valid_project(root: Path) -> None:
                     "sha256": hashlib.sha256(output_bytes).hexdigest(),
                     "alpha": {"has_alpha": True, "transparent_pixel_ratio": 8 / 9},
                     "generation_attempts": 1,
+                    "generation_history": [{
+                        "call_id": "fixture-C01-1", "component_id": "C01",
+                        "output_path": "assets/S01/C01.png",
+                        "sha256": hashlib.sha256(output_bytes).hexdigest(),
+                        "status": "accepted",
+                    }],
+                    "extraction": {"route": "reconstruct-single"},
                     "status": "approved",
                 }
             ]
         },
     )
+    refresh_fixture_isolation_review(root)
     qa_evidence = root / "qa" / "S01-overlay.png"
     qa_evidence.parent.mkdir(parents=True)
     qa_evidence.write_bytes(transparent_png())
@@ -618,6 +773,10 @@ def make_valid_project(root: Path) -> None:
             "concepts/S01.png",
         ],
         "concept_contact_sheet": ["concepts/S01.png", "concept-generation-log.json", "deck-spec.json"],
+        "decomposition": [
+            "decomposition-map.json", "concepts/S01.png",
+            "reviews/S01-decomposition.png", "reviews/S01-decomposition.md",
+        ],
         "release": [
             "asset-manifest.json",
             "assembly-map.json",
@@ -626,6 +785,8 @@ def make_valid_project(root: Path) -> None:
             "qa/final-contact-sheet.png",
             "qa/exception-register.json",
             "qa/deliverable-index.json",
+            "reviews/assets/C01-isolation.png",
+            "reviews/assets/C01-isolation.md",
         ],
     }
     gates = {}
@@ -652,7 +813,7 @@ def make_valid_project(root: Path) -> None:
             },
         }
     )
-    for gate in ("story", "style_anchors", "concept_contact_sheet", "release"):
+    for gate in ("story", "style_anchors", "concept_contact_sheet", "decomposition", "release"):
         decision_values = gate_decision_values(root, gate)
         approval_mode = "release" if gate == "release" else "explicit"
         approval_phrase = "确认发布" if gate == "release" else f"确认 {gate} 审批包"
@@ -1131,6 +1292,15 @@ def promote_fixture_to_production(root: Path) -> None:
         },
     )
 
+    decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+    decomposition["slides"][0]["master_path"] = "components/masters/S01-v1.png"
+    decomposition["slides"][0]["master_sha256"] = hashlib.sha256(
+        component_master_path.read_bytes()
+    ).hexdigest()
+    decomposition["slides"][0]["items"][1]["bbox"] = deck_slide["fill_slots"][0]["bbox"]
+    write_json(root, "decomposition-map.json", decomposition)
+    refresh_fixture_decomposition_review(root)
+
     manifest = json.loads((root / "asset-manifest.json").read_text(encoding="utf-8"))
     manifest["assets"][0]["style_contract_sha256"] = hashlib.sha256(
         (root / "style-contract.json").read_bytes()
@@ -1169,6 +1339,11 @@ def promote_fixture_to_production(root: Path) -> None:
             "text-review/V01-v1.txt",
             "text-review/V02-v1.txt",
         ],
+        "decomposition": [
+            "decomposition-map.json", "concepts/S01.png",
+            "components/masters/S01-v1.png",
+            "reviews/S01-decomposition.png", "reviews/S01-decomposition.md",
+        ],
         "release": list(state["gates"]["release"]["approved_artifacts"]),
     }
     for gate, paths in gate_paths.items():
@@ -1198,7 +1373,7 @@ def promote_fixture_to_production(root: Path) -> None:
             for path in calibration_paths
         },
     }
-    for gate in ("story", "style_anchors", "concept_contact_sheet", "release"):
+    for gate in ("story", "style_anchors", "concept_contact_sheet", "decomposition", "release"):
         values = gate_decision_values(root, gate)
         state["gates"][gate]["approval_packet"]["decisions"] = {
             decision_id: {
@@ -1209,6 +1384,51 @@ def promote_fixture_to_production(root: Path) -> None:
             for decision_id, value in values.items()
         }
     write_json(root, "run-state.json", state)
+
+
+def add_semantic_v2_fixture(root: Path) -> None:
+    """Opt a legacy fixture into the new cross-slide semantic contract."""
+    style = json.loads((root / "style-contract.json").read_text(encoding="utf-8"))
+    style["contract_schema_version"] = 2
+    style["semantic_system"] = {
+        "version": "fixture-v2",
+        "text_roles": {
+            "action-title": {"meaning": "page claim", "readability_role": "action-title", "font_family": "Microsoft YaHei", "font_size_pt": 34, "bold": True, "color": "#F8FAFC"},
+            "key-takeaway": {"meaning": "one-line takeaway", "readability_role": "key-caption", "font_family": "Microsoft YaHei", "font_size_pt": 22, "bold": True, "color": "#F8FAFC"},
+            "status-qualifier": {"meaning": "truth boundary", "readability_role": "source-qualifier", "font_family": "Microsoft YaHei", "font_size_pt": 16, "bold": False, "color": "#CBD5E1"},
+            "body": {"meaning": "ordinary text", "readability_role": "body", "font_family": "Microsoft YaHei", "font_size_pt": 20, "bold": False, "color": "#F8FAFC"},
+        },
+        "frame_roles": {
+            "verified": {"meaning": "verified local step", "line_style": "solid", "color": "#38BDF8", "visible_label_required": True},
+            "pending": {"meaning": "unverified step", "line_style": "dashed", "color": "#94A3B8", "visible_label_required": True},
+            "evidence-placeholder": {"meaning": "empty source pane", "line_style": "none", "color": None, "visible_label_required": True},
+        },
+        "repeated_regions": {
+            "page-title": {"text_role": "action-title", "required": True, "anchor": [0.1, 0.1], "tolerance": 0.02},
+            "key-statement": {"text_role": "key-takeaway", "required": True, "anchor": [0.1, 0.8], "tolerance": 0.02},
+            "status-qualifier": {"text_role": "status-qualifier", "required": True, "anchor": [0.7, 0.8], "tolerance": 0.02},
+        },
+    }
+    write_json(root, "style-contract.json", style)
+    deck = json.loads((root / "deck-spec.json").read_text(encoding="utf-8"))
+    slide = deck["slides"][0]
+    slide["fill_slots"].extend([
+        {"id": "F02", "kind": "ordinary-text", "bbox": [0.1, 0.8, 0.55, 0.08], "content": "One key message"},
+        {"id": "F03", "kind": "ordinary-text", "bbox": [0.7, 0.8, 0.2, 0.08], "content": "Local verification only"},
+        {"id": "F04", "kind": "ordinary-text", "bbox": [0.5, 0.45, 0.3, 0.08], "content": "Verified local step"},
+    ])
+    slide["readability"]["text_regions"] = [
+        {"fill_slot_id": "F01", "role": "action-title", "font_role": "action-title", "planned_font_pt": 34, "line_count": 1},
+        {"fill_slot_id": "F02", "role": "key-caption", "font_role": "key-takeaway", "planned_font_pt": 22, "line_count": 1},
+        {"fill_slot_id": "F03", "role": "source-qualifier", "font_role": "status-qualifier", "planned_font_pt": 16, "line_count": 1},
+        {"fill_slot_id": "F04", "role": "body", "font_role": "body", "planned_font_pt": 20, "line_count": 1},
+    ]
+    slide["semantic_design"] = {
+        "region_slots": {"page-title": "F01", "key-statement": "F02", "status-qualifier": "F03"},
+        "frame_instances": [{"id": "FRAME-1", "role": "verified", "bbox": [0.49, 0.4, 0.35, 0.18], "label_slot_id": "F04"}],
+        "exceptions": [],
+    }
+    write_json(root, "deck-spec.json", deck)
 
 
 class ValidateProjectTests(unittest.TestCase):
@@ -1253,6 +1473,19 @@ class ValidateProjectTests(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             self.assertIn("PASS", result.stdout)
 
+    def test_released_stage_requires_approved_g5_even_during_assembly_validation(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["gates"]["release"]["status"] = "pending"
+            write_json(root, "run-state.json", state)
+
+            result = self.run_public_validator(root, "assembly")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("stage 'released' requires an approved G5 release gate", result.stdout)
+
     def test_valid_production_reference_first_project_passes(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -1273,6 +1506,51 @@ class ValidateProjectTests(unittest.TestCase):
 
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             self.assertIn("PASS", result.stdout)
+
+    def test_message_may_be_realized_by_multiple_visible_claims_with_human_gate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            slide = {
+                "title": "五个视图已搭起工作台，AI 能力按验收状态逐步接入",
+                "message": "展示五个一级页面与已验证的局部任务能力；通知、会议、知识与听记分流等未完成事项明确标为下一阶段。",
+            }
+            write_json(root, "storyboard.json", {"slides": [slide]})
+            sources = {"STORY01": {"kind": "approved-storyboard", "path": "storyboard.json"}}
+            copy_map = [
+                {
+                    "id": "TITLE", "role": "title", "text": slide["title"],
+                    "truth_status": "not-applicable", "storyboard_field": "title",
+                    "sources": [{"source_id": "STORY01", "locator": "slides[0].title", "quote": slide["title"], "mode": "storyboard-exact"}],
+                },
+                {
+                    "id": "VERIFIED", "role": "status", "text": "本地五页与局部任务子链",
+                    "truth_status": "verified", "status_label": "已验证", "storyboard_field": "message",
+                    "sources": [{"source_id": "STORY01", "locator": "slides[0].message", "quote": slide["message"], "mode": "approved-paraphrase"}],
+                },
+                {
+                    "id": "PENDING", "role": "status", "text": "通知、会议、知识与听记分流",
+                    "truth_status": "pending", "status_label": "待验证", "storyboard_field": "message",
+                    "sources": [{"source_id": "STORY01", "locator": "slides[0].message", "quote": slide["message"], "mode": "approved-paraphrase"}],
+                },
+            ]
+            mapping = {
+                "storyboard_message": slide["message"],
+                "copy_ids": ["VERIFIED", "PENDING"],
+                "review_note": "已验局部能力和待验四项分别上屏，完整闭环不得暗示为通过。",
+                "human_gate": "G3/G4-required",
+            }
+            validator = ProjectValidator(root, "style")
+            validator.validate_content_copy_map(copy_map, sources, slide, "copy_map", mapping)
+            self.assertEqual(validator.errors, [])
+
+            validator = ProjectValidator(root, "style")
+            validator.validate_content_copy_map(copy_map, sources, slide, "copy_map")
+            self.assertIn("non-verbatim message copy needs an explicit mapping", "\n".join(validator.errors))
+
+            mapping["copy_ids"] = ["VERIFIED"]
+            validator = ProjectValidator(root, "style")
+            validator.validate_content_copy_map(copy_map, sources, slide, "copy_map", mapping)
+            self.assertIn("copy_ids must identify every visible message realization", "\n".join(validator.errors))
 
     def test_public_concept_entry_rejects_missing_copy_lineage(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -1356,6 +1634,485 @@ class ValidateProjectTests(unittest.TestCase):
 
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             self.assertIn("PASS", result.stdout)
+
+    def test_public_assets_entry_requires_approved_decomposition(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["gates"]["decomposition"] = {"status": "pending", "approved_artifacts": {}}
+            state["artifact_versions"].pop("decomposition", None)
+            write_json(root, "run-state.json", state)
+
+            result = self.run_public_validator(root, "assets")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("decomposition", result.stdout)
+
+    def test_asset_stage_requires_current_isolation_review(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            manifest = json.loads((root / "asset-manifest.json").read_text(encoding="utf-8"))
+            manifest["assets"][0].pop("isolation_review")
+            write_json(root, "asset-manifest.json", manifest)
+
+            result = self.run_public_validator(root, "assets")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("passed human isolation review is required", result.stdout)
+
+    def test_asset_stage_rejects_two_objects_even_with_valid_alpha(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            output = root / "assets" / "S01" / "C01.png"
+            two_objects = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+            draw = ImageDraw.Draw(two_objects)
+            draw.ellipse((3, 3, 6, 6), fill=(0, 180, 255, 255))
+            draw.ellipse((10, 10, 13, 13), fill=(0, 180, 255, 255))
+            two_objects.save(output)
+            manifest = json.loads((root / "asset-manifest.json").read_text(encoding="utf-8"))
+            asset = manifest["assets"][0]
+            asset["sha256"] = hashlib.sha256(output.read_bytes()).hexdigest()
+            asset["alpha"]["transparent_pixel_ratio"] = two_objects.getchannel("A").histogram()[0] / 256
+            asset["generation_history"][0]["sha256"] = asset["sha256"]
+            write_json(root, "asset-manifest.json", manifest)
+            refresh_fixture_isolation_review(root)
+            manifest = json.loads((root / "asset-manifest.json").read_text(encoding="utf-8"))
+            manifest["assets"][0]["isolation_review"]["checks"]["single_object"] = False
+            write_json(root, "asset-manifest.json", manifest)
+
+            result = self.run_public_validator(root, "assets")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("single_object", result.stdout)
+
+    def test_asset_stage_rejects_extraction_route_different_from_approved_item(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            manifest = json.loads((root / "asset-manifest.json").read_text(encoding="utf-8"))
+            manifest["assets"][0]["extraction"]["route"] = "preserve-pixels"
+            write_json(root, "asset-manifest.json", manifest)
+
+            result = self.run_public_validator(root, "assets")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("asset extraction route must match every mapped decomposition item", result.stdout)
+
+    def test_asset_stage_rejects_isolation_review_of_old_item_identity(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            decomposition["slides"][0]["items"][0]["label"] = "different arrow identity"
+            write_json(root, "decomposition-map.json", decomposition)
+            refresh_fixture_decomposition_review(root)
+
+            result = self.run_public_validator(root, "assets")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("isolation review must bind the current asset and decomposition items", result.stdout)
+
+    def test_isolation_renderer_does_not_erase_approved_review(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+
+            result = subprocess.run(
+                [sys.executable, str(ISOLATION_SCRIPT), str(root), "--asset", "C01"],
+                capture_output=True, text=True, check=False,
+            )
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("approved isolation review is immutable", result.stderr)
+
+    def test_asset_stage_rejects_copied_concept_as_isolation_image(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            image_path = root / "reviews" / "assets" / "C01-isolation.png"
+            image_path.write_bytes((root / "concepts" / "S01.png").read_bytes())
+            manifest = json.loads((root / "asset-manifest.json").read_text(encoding="utf-8"))
+            manifest["assets"][0]["isolation_review"]["image_sha256"] = hashlib.sha256(image_path.read_bytes()).hexdigest()
+            write_json(root, "asset-manifest.json", manifest)
+
+            result = self.run_public_validator(root, "assets")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("isolation image pixels do not match current component and concept crops", result.stdout)
+
+    def test_asset_stage_requires_single_component_generation_history(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            manifest = json.loads((root / "asset-manifest.json").read_text(encoding="utf-8"))
+            manifest["assets"][0]["generation_history"][0]["component_id"] = "C02"
+            write_json(root, "asset-manifest.json", manifest)
+
+            result = self.run_public_validator(root, "assets")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("generation call must request exactly this one component", result.stdout)
+
+    def test_asset_stage_rejects_reused_generation_attempt_path(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            manifest = json.loads((root / "asset-manifest.json").read_text(encoding="utf-8"))
+            asset = manifest["assets"][0]
+            asset["generation_attempts"] = 2
+            repeated = dict(asset["generation_history"][0])
+            repeated["call_id"] = "fixture-C01-2"
+            repeated["status"] = "rejected"
+            asset["generation_history"].append(repeated)
+            write_json(root, "asset-manifest.json", manifest)
+
+            result = self.run_public_validator(root, "assets")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("generation attempt output path must be immutable and unique", result.stdout)
+
+    def test_public_inventory_entry_rejects_unmapped_connector_instance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            scene = json.loads((root / "scene-graph.json").read_text(encoding="utf-8"))
+            scene["slides"][0]["elements"].append(
+                {"instance_id": "I02", "component_id": "C01", "bbox": [0.4, 0.3, 0.2, 0.1], "z": 2}
+            )
+            write_json(root, "scene-graph.json", scene)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("unmapped scene instance", result.stdout + result.stderr)
+
+    def test_public_inventory_entry_rejects_two_objects_mapped_to_one_instance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            second = dict(decomposition["slides"][0]["items"][0])
+            second.update({"id": "D03", "label": "second independently movable object"})
+            decomposition["slides"][0]["items"].append(second)
+            write_json(root, "decomposition-map.json", decomposition)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("two independent objects cannot share one scene instance", result.stdout)
+
+    def test_public_inventory_entry_rejects_failed_human_independence_review(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            decomposition["slides"][0]["coverage_review"]["independence_passed"] = False
+            write_json(root, "decomposition-map.json", decomposition)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("human coverage and independence review must pass", result.stdout)
+
+    def test_public_assets_entry_rejects_stale_decomposition_approval(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            decomposition["slides"][0]["items"][0]["label"] = "changed after approval"
+            write_json(root, "decomposition-map.json", decomposition)
+
+            result = self.run_public_validator(root, "assets")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("approved artifact hash is stale: decomposition-map.json", result.stdout)
+
+    def test_public_assets_entry_binds_decomposition_version_not_only_file_hash(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            decomposition["version"] = "v2"
+            write_json(root, "decomposition-map.json", decomposition)
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["gates"]["decomposition"]["approved_artifacts"]["decomposition-map.json"] = hashlib.sha256(
+                (root / "decomposition-map.json").read_bytes()
+            ).hexdigest()
+            write_json(root, "run-state.json", state)
+
+            result = self.run_public_validator(root, "assets")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("decomposition approval version must match map version", result.stdout)
+
+    def test_public_inventory_entry_rejects_review_of_old_item_list(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            decomposition["slides"][0]["items"][0]["label"] = "new visual boundary"
+            write_json(root, "decomposition-map.json", decomposition)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("review evidence must bind current item inventory", result.stdout)
+
+    def test_public_inventory_entry_requires_crop_and_text_data_decisions(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            item = decomposition["slides"][0]["items"][0]
+            item.pop("crop_padding", None)
+            item.pop("contains_ordinary_text_or_data", None)
+            item.pop("text_data_decision", None)
+            write_json(root, "decomposition-map.json", decomposition)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("crop_padding", result.stdout)
+            self.assertIn("text_data_decision", result.stdout)
+
+    def test_public_inventory_entry_rejects_text_data_treatment_conflicts(self):
+        cases = (
+            ("ordinary-photo", "preserve-source", "blank-for-fill-slots", "photo with removable text/data"),
+            ("truth-sensitive", "preserve-source", "blank-for-fill-slots", "truth-sensitive text/data decision"),
+        )
+        for source_class, treatment, decision, message in cases:
+            with self.subTest(source_class=source_class), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                make_valid_project(root)
+                promote_fixture_to_production(root)
+                decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+                item = decomposition["slides"][0]["items"][0]
+                item["source_class"] = source_class
+                item["treatment"] = treatment
+                item["contains_ordinary_text_or_data"] = True
+                item["text_data_decision"] = decision
+                write_json(root, "decomposition-map.json", decomposition)
+                refresh_fixture_decomposition_review(root)
+
+                result = self.run_public_validator(root, "inventory")
+
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn(message, result.stdout)
+
+    def test_rejected_decomposition_returns_to_inventory_without_revoking_g4(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["stage"] = "inventory"
+            state["gates"]["decomposition"] = {
+                "status": "rejected", "approver": None, "approved_at": None,
+                "artifact_version": None, "approval_packet": None, "approved_artifacts": {},
+            }
+            state["artifact_versions"].pop("decomposition")
+            state["rollback"] = {
+                "trigger": "rejection", "source_gate": "decomposition",
+                "owner_stage": "inventory", "reason": "Two visual objects need separate instances",
+            }
+            write_json(root, "run-state.json", state)
+
+            inventory = self.run_public_validator(root, "inventory")
+            assets = self.run_public_validator(root, "assets")
+
+            self.assertEqual(inventory.returncode, 0, inventory.stdout + inventory.stderr)
+            self.assertNotEqual(assets.returncode, 0)
+            self.assertIn("approved decomposition is required", assets.stdout)
+            self.assertEqual(state["gates"]["concept_contact_sheet"]["status"], "approved")
+
+    def test_public_inventory_entry_rejects_changed_numbered_review(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            (root / "reviews" / "S01-decomposition.png").write_bytes(b"not-the-reviewed-image")
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("review evidence hash is stale", result.stdout)
+
+    def test_public_inventory_entry_rejects_review_image_wrong_size(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            review_image = root / "reviews" / "S01-decomposition.png"
+            Image.new("RGB", (1, 1), (0, 0, 0)).save(review_image)
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            decomposition["slides"][0]["review_image"]["sha256"] = hashlib.sha256(review_image.read_bytes()).hexdigest()
+            write_json(root, "decomposition-map.json", decomposition)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("review image dimensions must match current concept", result.stdout)
+
+    def test_public_inventory_entry_rejects_list_without_current_item_rows(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            packet = root / "reviews" / "S01-decomposition.md"
+            packet.write_text("# Looks reviewed, but no item rows\n", encoding="utf-8")
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            decomposition["slides"][0]["review_packet"]["sha256"] = hashlib.sha256(packet.read_bytes()).hexdigest()
+            write_json(root, "decomposition-map.json", decomposition)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("readable review list must include the current item hash and numbered rows", result.stdout)
+
+    def test_public_inventory_entry_rejects_id_only_review_rows(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            items = decomposition["slides"][0]["items"]
+            packet = root / "reviews" / "S01-decomposition.md"
+            packet.write_text(
+                f"# Empty review\n\n{value_sha256(items)}\n\n"
+                + "\n".join(f"| {item['id']} |" for item in items) + "\n",
+                encoding="utf-8",
+            )
+            decomposition["slides"][0]["review_packet"]["sha256"] = hashlib.sha256(packet.read_bytes()).hexdigest()
+            write_json(root, "decomposition-map.json", decomposition)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("readable review list must include full current item rows", result.stdout)
+
+    def test_public_inventory_entry_rejects_unnumbered_concept_copy(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            review_image = root / "reviews" / "S01-decomposition.png"
+            review_image.write_bytes((root / "concepts" / "S01.png").read_bytes())
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            decomposition["slides"][0]["review_image"]["sha256"] = hashlib.sha256(review_image.read_bytes()).hexdigest()
+            write_json(root, "decomposition-map.json", decomposition)
+
+            result = self.run_public_validator(root, "inventory")
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("numbered review pixels do not match declared item overlay", result.stdout)
+
+    def test_review_command_creates_full_size_numbered_image_and_readable_list(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            concept = root / "concepts" / "S01.png"
+            concept_sha = hashlib.sha256(concept.read_bytes()).hexdigest()
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["stage"] = "inventory"
+            state["gates"]["decomposition"]["status"] = "pending"
+            write_json(root, "run-state.json", state)
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            decomposition["version"] = "v2"
+            slide = decomposition["slides"][0]
+            slide["review_image"] = {"path": "reviews/S01-decomposition-v2.png"}
+            slide["review_packet"] = {"path": "reviews/S01-decomposition-v2.md"}
+            slide["coverage_review"] = {"status": "pending"}
+            write_json(root, "decomposition-map.json", decomposition)
+
+            result = subprocess.run(
+                [sys.executable, str(REVIEW_SCRIPT), str(root), "--slide", "S01"],
+                capture_output=True, text=True, check=False,
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            review = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))["slides"][0]
+            with Image.open(root / review["review_image"]["path"]) as rendered:
+                with Image.open(concept) as source:
+                    self.assertEqual(rendered.size, source.size)
+            self.assertEqual(review["review_image"]["reviewed_concept_sha256"], concept_sha)
+            self.assertEqual(review["review_image"]["reviewed_items_sha256"], value_sha256(review["items"]))
+            self.assertEqual(review["review_image"]["sha256"], hashlib.sha256(
+                (root / review["review_image"]["path"]).read_bytes()
+            ).hexdigest())
+            self.assertIn("D01", (root / review["review_packet"]["path"]).read_text(encoding="utf-8"))
+            self.assertIn("arrow", (root / review["review_packet"]["path"]).read_text(encoding="utf-8"))
+
+    def test_review_command_rejects_unreviewed_textless_master(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["gates"]["decomposition"]["status"] = "pending"
+            write_json(root, "run-state.json", state)
+            masters = json.loads((root / "component-master-manifest.json").read_text(encoding="utf-8"))
+            masters["slides"][0]["geometry_review"]["status"] = "pending"
+            write_json(root, "component-master-manifest.json", masters)
+
+            result = subprocess.run(
+                [sys.executable, str(REVIEW_SCRIPT), str(root), "--slide", "S01"],
+                capture_output=True, text=True, check=False,
+            )
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("master geometry review must pass", result.stderr)
+
+    def test_review_command_rejects_stale_g4_copy_log(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["gates"]["decomposition"]["status"] = "pending"
+            write_json(root, "run-state.json", state)
+            log = json.loads((root / "concept-generation-log.json").read_text(encoding="utf-8"))
+            log["slides"][0]["copy_map"][1]["sources"][1]["quote"] = "Changed source quote"
+            write_json(root, "concept-generation-log.json", log)
+
+            result = subprocess.run(
+                [sys.executable, str(REVIEW_SCRIPT), str(root), "--slide", "S01"],
+                capture_output=True, text=True, check=False,
+            )
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("G4 approved artifact hash is stale: concept-generation-log.json", result.stderr)
+
+    def test_review_command_rejects_incomplete_g4_decision_packet(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            promote_fixture_to_production(root)
+            state = json.loads((root / "run-state.json").read_text(encoding="utf-8"))
+            state["gates"]["decomposition"]["status"] = "pending"
+            state["gates"]["concept_contact_sheet"]["approval_packet"]["decisions"].pop("readability_review")
+            write_json(root, "run-state.json", state)
+
+            result = subprocess.run(
+                [sys.executable, str(REVIEW_SCRIPT), str(root), "--slide", "S01"],
+                capture_output=True, text=True, check=False,
+            )
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("current G4 approval packet is incomplete or stale", result.stderr)
+            self.assertIn("approval_packet must cover", result.stderr)
 
     def test_public_inventory_entry_rejects_copy_log_changed_after_g4(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -1521,6 +2278,35 @@ class ValidateProjectTests(unittest.TestCase):
 
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("attached reference IDs must match", result.stdout)
+
+    def test_material_prompt_profile_round_trip_and_rejects_stale_or_custom_prompt(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            legacy_result = self.run_public_validator(root, "inventory")
+            self.assertEqual(legacy_result.returncode, 0, legacy_result.stdout)
+
+            manifest = json.loads((root / "asset-manifest.json").read_text(encoding="utf-8"))
+            asset = manifest["assets"][0]
+            legacy_prompt = asset["prompt"]
+            asset["prompt_profile"] = "v6"
+            current_prompt = build_material_prompt(asset["role"], asset["reference_bbox"], "v6")
+            asset["prompt"] = current_prompt
+            write_json(root, "asset-manifest.json", manifest)
+            current_result = self.run_public_validator(root, "inventory")
+            self.assertEqual(current_result.returncode, 0, current_result.stdout)
+
+            for profile, prompt, expected_error in (
+                ("v6", legacy_prompt, "material prompt does not match"),
+                ("v6", current_prompt + " Add an invented metric.", "material prompt does not match"),
+                ("v999", current_prompt, "unknown material prompt profile"),
+            ):
+                with self.subTest(profile=profile, error=expected_error):
+                    asset.update(prompt_profile=profile, prompt=prompt)
+                    write_json(root, "asset-manifest.json", manifest)
+                    rejected = self.run_public_validator(root, "inventory")
+                    self.assertNotEqual(rejected.returncode, 0)
+                    self.assertIn(expected_error, rejected.stdout)
 
     def test_manifest_provider_and_adapter_must_match_registry(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -1751,6 +2537,13 @@ class ValidateProjectTests(unittest.TestCase):
                 }
             )
             write_json(root, "asset-manifest.json", manifest)
+            decomposition = json.loads((root / "decomposition-map.json").read_text(encoding="utf-8"))
+            decomposition["slides"][0]["items"][0].update({
+                "role": "source-figure", "source_class": "truth-sensitive",
+                "treatment": "preserve-source",
+            })
+            write_json(root, "decomposition-map.json", decomposition)
+            refresh_fixture_decomposition_review(root)
 
             result = self.run_validator(root, "inventory")
 
@@ -2191,6 +2984,43 @@ class ValidateProjectTests(unittest.TestCase):
             self.assertEqual(result.returncode, 1)
             self.assertIn("SHA-256", result.stdout)
             self.assertIn("valid PNG", result.stdout)
+
+    def test_png_inspection_checks_real_alpha_pixels_and_crc(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "component.png"
+            validator = ProjectValidator(Path(tmp), "assets")
+            path.write_bytes(transparent_png())
+            self.assertEqual(validator.inspect_png(path), (True, 8 / 9, True, True))
+
+            damaged = bytearray(path.read_bytes())
+            damaged[-1] ^= 1
+            path.write_bytes(damaged)
+            self.assertEqual(validator.inspect_png(path), (False, 0.0, False, False))
+
+            rgba = Image.new("RGBA", (5, 5), (0, 0, 0, 0))
+            rgba.putpixel((2, 2), (10, 20, 30, 255))
+            rgba.putpixel((0, 2), (0, 0, 0, 1))
+            rgba.save(path)
+            self.assertEqual(validator.inspect_png(path), (True, 23 / 25, True, True))
+            rgba.putpixel((0, 2), (0, 0, 0, 2))
+            rgba.save(path)
+            self.assertEqual(validator.inspect_png(path), (True, 23 / 25, False, True))
+
+            grayscale = Image.new("LA", (5, 5), (0, 0))
+            grayscale.putpixel((2, 2), (120, 255))
+            grayscale.save(path)
+            self.assertEqual(validator.inspect_png(path), (True, 24 / 25, True, True))
+
+    def test_png_pixel_limit_is_a_validation_failure_not_a_crash(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "component.png"
+            path.write_bytes(transparent_png())
+            validator = ProjectValidator(Path(tmp), "assets")
+            for pixel_limit in (4, 8):
+                with self.subTest(pixel_limit=pixel_limit):
+                    with patch.object(Image, "MAX_IMAGE_PIXELS", pixel_limit), warnings.catch_warnings():
+                        warnings.simplefilter("error", Image.DecompressionBombWarning)
+                        self.assertEqual(validator.inspect_png(path), (False, 0.0, False, False))
 
     def test_drive_relative_path_cannot_escape_project(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -2854,6 +3684,69 @@ class ValidateProjectTests(unittest.TestCase):
             result = self.run_public_validator(root, "release")
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("readability-full-size", result.stdout)
+
+    def test_semantic_v2_spec_accepts_fixed_roles_and_labeled_frame(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            add_semantic_v2_fixture(root)
+            result = self.run_public_validator(root, "spec")
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_semantic_v2_rejects_title_font_drift(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            add_semantic_v2_fixture(root)
+            deck = json.loads((root / "deck-spec.json").read_text(encoding="utf-8"))
+            deck["slides"][0]["readability"]["text_regions"][0]["planned_font_pt"] = 38
+            write_json(root, "deck-spec.json", deck)
+            result = self.run_public_validator(root, "spec")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("planned_font_pt differs from fixed semantic text role", result.stdout)
+
+    def test_semantic_v2_rejects_unlabeled_truth_frame(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            add_semantic_v2_fixture(root)
+            deck = json.loads((root / "deck-spec.json").read_text(encoding="utf-8"))
+            deck["slides"][0]["semantic_design"]["frame_instances"][0].pop("label_slot_id")
+            write_json(root, "deck-spec.json", deck)
+            result = self.run_public_validator(root, "spec")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("frame needs a visible ordinary-text label slot", result.stdout)
+
+    def test_semantic_v2_anchor_exception_needs_reason(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            add_semantic_v2_fixture(root)
+            deck = json.loads((root / "deck-spec.json").read_text(encoding="utf-8"))
+            deck["slides"][0]["fill_slots"][0]["bbox"][0] = 0.3
+            write_json(root, "deck-spec.json", deck)
+            result = self.run_public_validator(root, "spec")
+            self.assertIn("repeated region anchor differs", result.stdout)
+            deck["slides"][0]["semantic_design"]["exceptions"] = [{"region_id": "page-title", "reason": "cover composition"}]
+            write_json(root, "deck-spec.json", deck)
+            result = self.run_public_validator(root, "spec")
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_semantic_v2_requires_system_and_new_human_decisions(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            make_valid_project(root)
+            add_semantic_v2_fixture(root)
+            style = json.loads((root / "style-contract.json").read_text(encoding="utf-8"))
+            system = style.pop("semantic_system")
+            write_json(root, "style-contract.json", style)
+            result = self.run_public_validator(root, "style")
+            self.assertIn("semantic_system is required", result.stdout)
+            style["semantic_system"] = system
+            write_json(root, "style-contract.json", style)
+            result = self.run_public_validator(root, "inventory")
+            self.assertIn("cross_slide_semantics_review", result.stdout)
+            self.assertIn("semantic_system", result.stdout)
 
 
 if __name__ == "__main__":

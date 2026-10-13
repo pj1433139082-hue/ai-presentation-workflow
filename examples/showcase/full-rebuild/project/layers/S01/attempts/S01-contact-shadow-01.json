@@ -1,0 +1,51 @@
+{
+  "call_id": "S01-contact-shadow-01",
+  "item_id": "contact-shadow",
+  "tool": "Codex built-in image_gen",
+  "operation": "edit / transparent shadow reconstruction",
+  "prompt_path": "attempts/S01-contact-shadow-01.prompt.txt",
+  "prompt_sha256": "942561b4123ce7505b36368979769699452c2dcbbd0c5f639e1668723b615394",
+  "references": [
+    {
+      "role": "edit target and source footprint",
+      "index": 1,
+      "path": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\ai-presentation-workflow-architecture-20261012\\pilots\\delivery-modes\\assets-three\\concepts\\S01.png",
+      "sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e"
+    }
+  ],
+  "num_last_images_to_include": 1,
+  "transparent_background_requested": true,
+  "imagegen_original_path": "C:\\Users\\14331\\.codex\\generated_images\\01a1360c-0feb-76f1-bf15-2ea32830cb09\\exec-799800ba-efbb-4cdf-9d4e-83435d6b8ae0.png",
+  "imagegen_original_sha256": "8233b6cdb7056235b565f34a9aa53253e11744375aca400126217de3ac01d27c",
+  "attempt_path": "attempts/S01-contact-shadow-01.png",
+  "attempt_sha256": "8233b6cdb7056235b565f34a9aa53253e11744375aca400126217de3ac01d27c",
+  "accepted_asset_path": "assets/contact-shadow.png",
+  "accepted_asset_sha256": "8233b6cdb7056235b565f34a9aa53253e11744375aca400126217de3ac01d27c",
+  "source_concept_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+  "dimensions_px": [
+    2168,
+    725
+  ],
+  "pixel_format": "Format32bppArgb",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "alpha_counts": {
+    "fully_transparent": 1379504,
+    "low_alpha_1_to_7": 58480,
+    "partial_alpha_8_to_254": 133816,
+    "opaque": 0
+  },
+  "visible_alpha_ge_8_bbox_xyxy": [
+    254,
+    472,
+    1925,
+    575
+  ],
+  "alpha_ge_8_touching_canvas_edge": 0,
+  "candidate_selected": true,
+  "formal_isolation_review_passed": false,
+  "user_accepted": false,
+  "inspection": "Actual image_gen result displayed; selected as a separate low contact-shadow strip with transparent surroundings. It includes a subtle blue/coral edge bloom; alpha metadata measured read-only."
+}

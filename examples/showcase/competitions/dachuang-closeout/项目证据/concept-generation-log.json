@@ -1,0 +1,735 @@
+{
+  "status": "complete",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "status": "generated",
+      "output_path": "concepts/S01.png",
+      "output_sha256": "fb759ca0d909c309e739eab49ae536a890f2b6c1c7ed4a5807a7e6da7ae51ab4",
+      "input_sha256": {
+        "brief": "83af123419ce4c75374b8e1b8774d279a5e222cdb14b3808d5882cd22fb04051",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "雨序",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "校园雨水花园观察与优化",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line1",
+          "role": "body",
+          "text": "大创 · 创新训练项目结题答辩",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "line2",
+          "role": "body",
+          "text": "目标、记录与边界，一次讲清",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "结题情境示例 · 非真实项目成果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "01 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "RPROPOSAL-S01",
+          "path": "references/proposal-S01-style-anchor.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S01/generation-record.json",
+      "generation_record_sha256": "15a4dd627367a9142f856d31a7514c0daf33fdb5919eabe08c250c378a40b14b",
+      "history_note": "First generation used the pre-normalization frozen contract; the later APW-required quality_profile enum adjustment changed no page content or prompt. Original/current hashes and the reason are in provenance/contract-normalization.json.",
+      "generation_input_sha256": {
+        "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "prompt_path": "provenance/pages/S01/prompt.txt",
+      "prompt_sha256": "0d855b1a3560e4bcc92aca45c7b94415114f1e08e153c3a4c82b18ea837b2985"
+    },
+    {
+      "slide_id": "S02",
+      "status": "generated",
+      "output_path": "concepts/S02.png",
+      "output_sha256": "1acd5b4da7a42728b7284bdc6227de975ad293325f9b95a81f1b96750bb1cc89",
+      "input_sha256": {
+        "brief": "83af123419ce4c75374b8e1b8774d279a5e222cdb14b3808d5882cd22fb04051",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "目标完成度，逐项落到材料链",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "三个立项目标都有对应的示例交付状态。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "goal1",
+          "role": "body",
+          "text": "目标一｜记录降雨后水位变化",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "status1",
+          "role": "body",
+          "text": "示例进度｜6 次记录：5 次完整、1 次缺失",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "goal2",
+          "role": "body",
+          "text": "目标二｜比较两种基质入渗表现",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "status2",
+          "role": "body",
+          "text": "示例进度｜2 类基质 × 3 次重复，共 6 组台架试验",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "goal3",
+          "role": "body",
+          "text": "目标三｜提出维护与优化建议",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "status3",
+          "role": "body",
+          "text": "示例进度｜维护建议稿与研究报告（概念交付）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "结题情境示例 · 非真实项目成果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "02 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "RPROPOSAL-S01",
+          "path": "references/proposal-S01-style-anchor.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S02/generation-record.json",
+      "generation_record_sha256": "8750ddce74dcbc8907eda6e6367aac1e7bd35aade3433f8d5168b447144beeee",
+      "history_note": "First generation used the pre-normalization frozen contract; the later APW-required quality_profile enum adjustment changed no page content or prompt. Original/current hashes and the reason are in provenance/contract-normalization.json.",
+      "generation_input_sha256": {
+        "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "prompt_path": "provenance/pages/S02/prompt.txt",
+      "prompt_sha256": "e1aa11bfe28ddd0c6e6b413d0b50b56217948a2e928593a371696af7b6d471bb"
+    },
+    {
+      "slide_id": "S03",
+      "status": "generated",
+      "output_path": "concepts/S03.png",
+      "output_sha256": "f59d6fb2e31f18426b34e8c9d230ec68480b5e553e27c102b885bc6940076ce9",
+      "input_sha256": {
+        "brief": "83af123419ce4c75374b8e1b8774d279a5e222cdb14b3808d5882cd22fb04051",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "记录数量可核对，效果结论留白",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "只展示示例记录数，不推导实测效果。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rain_label",
+          "role": "section-heading",
+          "text": "降雨记录（示例）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rain_total",
+          "role": "metric",
+          "text": "6 次合计",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rain_complete",
+          "role": "body",
+          "text": "5 次完整",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "rain_missing",
+          "role": "body",
+          "text": "1 次缺失，保留标记",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "trial_label",
+          "role": "section-heading",
+          "text": "基质台架对照（示例）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "trial_count",
+          "role": "body",
+          "text": "2 类基质 × 3 次重复 = 6 组台架试验",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "body",
+          "text": "未给出读数，不判断基质优劣、改善幅度或统计显著性",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "示例计数 · 非实测",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "03 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "RPROPOSAL-S01",
+          "path": "references/proposal-S01-style-anchor.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S03/generation-record.json",
+      "generation_record_sha256": "e18ed37ec08c5e5c906ba43a525f550298d3337f3fbd4aa075ceef189b7a4f68",
+      "history_note": "First generation used the pre-normalization frozen contract; the later APW-required quality_profile enum adjustment changed no page content or prompt. Original/current hashes and the reason are in provenance/contract-normalization.json.",
+      "generation_input_sha256": {
+        "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "prompt_path": "provenance/pages/S03/prompt.txt",
+      "prompt_sha256": "8152cacd183a1b28f2503daed134e67fa608951c3a43381b8619f47b453a3c4f"
+    },
+    {
+      "slide_id": "S04",
+      "status": "generated",
+      "output_path": "concepts/S04.png",
+      "output_sha256": "2d625db4410627387909851e265c07bd3c19dd76c16fea7faf2a9336a01cdd6d",
+      "input_sha256": {
+        "brief": "83af123419ce4c75374b8e1b8774d279a5e222cdb14b3808d5882cd22fb04051",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "交付物可追溯，贡献按角色说明",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "以空模板与概念封面展示成果结构。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "deliverable1",
+          "role": "body",
+          "text": "观察记录｜空白记录模板",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "deliverable2",
+          "role": "body",
+          "text": "对照数据｜空白整理表",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "deliverable3",
+          "role": "body",
+          "text": "维护建议｜概念文本",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "deliverable4",
+          "role": "body",
+          "text": "研究报告｜概念封面与目录",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "roles_heading",
+          "role": "section-heading",
+          "text": "团队分工（角色示例）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "roles",
+          "role": "body",
+          "text": "样地记录 · 装置搭建 · 数据整理 · 报告撰写",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "概念交付物示意 · 非真实报告或验收材料",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "04 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "RPROPOSAL-S01",
+          "path": "references/proposal-S01-style-anchor.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S04/generation-record.json",
+      "generation_record_sha256": "32970894f4ede8847f8ec1840b0ea58bbb4b153a5104479fa3520c9024407696",
+      "history_note": "First generation used the pre-normalization frozen contract; the later APW-required quality_profile enum adjustment changed no page content or prompt. Original/current hashes and the reason are in provenance/contract-normalization.json.",
+      "generation_input_sha256": {
+        "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "prompt_path": "provenance/pages/S04/prompt.txt",
+      "prompt_sha256": "b26517ce29ed1da0b4e0058d8981511ad614487c26fd42ee218dd2594264520e"
+    },
+    {
+      "slide_id": "S05",
+      "status": "generated",
+      "output_path": "concepts/S05.png",
+      "output_sha256": "6657c5da75f1fbc29000f02862a8355598be8ec6f10db72c9d3ac09d4d30ae19",
+      "input_sha256": {
+        "brief": "83af123419ce4c75374b8e1b8774d279a5e222cdb14b3808d5882cd22fb04051",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "计划顺延两周，资源账目按模拟口径说明",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "原计划 12 周；结题情境设定为 14 周。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "plan_time",
+          "role": "metric",
+          "text": "原计划｜12 周",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "actual_time",
+          "role": "metric",
+          "text": "示例实际｜14 周",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "reason",
+          "role": "body",
+          "text": "顺延原因｜完整降雨记录不足，分析与报告移至第 14 周",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "budget",
+          "role": "body",
+          "text": "原预算｜材料 1,200 · 工具 800 · 调研 500 · 合计 2,500 元",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "simulated",
+          "role": "body",
+          "text": "模拟使用｜材料 1,180 + 工具 760 + 调研 420 = 2,360 元",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "balance",
+          "role": "metric",
+          "text": "余额｜140 元",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "模拟资源明细 · 非真实票据",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "05 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "RPROPOSAL-S01",
+          "path": "references/proposal-S01-style-anchor.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S05/generation-record.json",
+      "generation_record_sha256": "8cc4fc9f78699ec86fe05b232c8e4e508edf53852e3455dd3aa73504c933aecb",
+      "history_note": "First generation used the pre-normalization frozen contract; the later APW-required quality_profile enum adjustment changed no page content or prompt. Original/current hashes and the reason are in provenance/contract-normalization.json.",
+      "generation_input_sha256": {
+        "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "prompt_path": "provenance/pages/S05/prompt.txt",
+      "prompt_sha256": "a2adbb7cc1c047cc5d9cd417ef441282beaa16b4c6932001333f4df8fc5779dc"
+    },
+    {
+      "slide_id": "S06",
+      "status": "generated",
+      "output_path": "concepts/S06.png",
+      "output_sha256": "9f228b2825ebef099f76d5771cccc13814d3692c56a1464bdca02e8de9d9439f",
+      "input_sha256": {
+        "brief": "83af123419ce4c75374b8e1b8774d279a5e222cdb14b3808d5882cd22fb04051",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "结论留有边界，后续先扩样再判断",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "本例仅提供研究线索，不能承诺普适效果。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "scope1",
+          "role": "body",
+          "text": "样本范围｜单一虚构样地；6 次记录（5 完整、1 缺失）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "scope2",
+          "role": "body",
+          "text": "对照范围｜2 类基质，各 3 次台架重复",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "limit",
+          "role": "body",
+          "text": "结论边界｜不足以支持普适性、实际改善或显著性判断",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "next1",
+          "role": "body",
+          "text": "后续建议｜扩展样地与降雨条件；统一观测条件",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "next2",
+          "role": "body",
+          "text": "重复对照，保留缺失与异常记录，再讨论维护价值",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "source",
+          "role": "source",
+          "text": "结题情境示例 · 后续建议非已批准计划",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "page",
+          "role": "page-number",
+          "text": "06 / 06",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "RPROPOSAL-S01",
+          "path": "references/proposal-S01-style-anchor.png",
+          "sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46"
+        },
+        {
+          "reference_id": "R339",
+          "path": "references/case339.jpg",
+          "sha256": "d037ecc4476845da73dd267253762699fe30206d9091b87a9dd14f12678dc642"
+        }
+      ],
+      "generation_record_path": "provenance/pages/S06/generation-record.json",
+      "generation_record_sha256": "c58f64e99c57aef646f063584cae06f4597d16c5982a41308fbee2d12bf0a945",
+      "history_note": "First generation used the pre-normalization frozen contract; the later APW-required quality_profile enum adjustment changed no page content or prompt. Original/current hashes and the reason are in provenance/contract-normalization.json.",
+      "generation_input_sha256": {
+        "brief": "2b87284ff3836265109199144326e8746b40fd5b405337684f2464a8c4c425ff",
+        "deck_spec": "fd79ed7ed7d4178085d226b761a86ed7129647890d6d3922623e159e769a1d5e",
+        "reference_study": "29c2627f69c8bd5730c7b76579e98ed6f50e0a9fe0c0cdb7c5a81ad33258f0e9",
+        "style_contract": "a833e18c95724c3927ab3eef2424215567ac6278c91a7c54f9108016c11bade8"
+      },
+      "prompt_path": "provenance/pages/S06/prompt.txt",
+      "prompt_sha256": "e4e9933b6a0822b41fd17079c2396e27b3482e0334a17fd7ecc5dd8451a1c305"
+    }
+  ],
+  "binding_created_at": "2026-10-13T13:23:34Z",
+  "user_visual_acceptance": "not-recorded",
+  "agent_visual_review": "Initial full-page concepts visually inspected page by page; independent review remains with the parent task owner.",
+  "portable_prompt_binding_note": "Explicit project-local prompt paths added from unchanged actual generation records; original log retained in provenance. No frozen input, image, prompt or generation record changed."
+}

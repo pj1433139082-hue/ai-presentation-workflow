@@ -1,0 +1,7 @@
+Use case: logo-brand
+Asset type: one transparent decorative Chinese wordmark glyph image for a slide title
+Primary request: Create a standalone wordmark using exactly the two Chinese characters `知栈`, in that order, with the source concept's compact bold geometry and metallic blue-to-silver-to-coral finish.
+Text (verbatim): `知栈` — exactly two glyphs, 知 followed by 栈. These are the only visible marks.
+Style/medium: Heavy custom geometric Chinese lettering with broad pale-silver faces, very subtle cool-blue shading on the left, and restrained warm-coral shading at the lower right. A thin polished bevel only; no deep extrusion. The result should feel like the original concept's metallic title, not a generic font sample.
+Composition/framing: Horizontal, centered wordmark; source-like width-to-height ratio around 2.15:1; keep the full glyphs with generous transparent padding and no rotation.
+Constraints: Genuine transparent pixels everywhere outside the two glyphs. No other text or symbols. No dots, particles, sparks, stars, light streaks, floating specks, underline, border, plate, glow cloud, scenery, watermark, or font-file output. Keep the glyph silhouettes clean and readable.

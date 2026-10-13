@@ -1,0 +1,13 @@
+Asset type: Complete Chinese presentation slide concept, page 5 of 6 in a fictional undergraduate innovation-training project process check.
+
+Image 1 is the previous “雨序” project proposal cover. Image 2 is the case339 natural-history poster. Use them only for the established warm-white background, deep-green typography, natural material detail, and generous editorial whitespace. Do not copy either composition. Neither image is process evidence.
+
+Create a 16:9 landscape page in warm white (#FAFCF9), ink green (#183D2E), leaf green (#789A57), rainwater blue (#8DC9D9), with restrained terracotta (#A95B43) marking the proposed schedule extension. Keep the premium natural editorial style and legible Chinese typography.
+
+This is an adjustment-and-reason page, not a results page. Use a single open, gently curving schedule path across the page: the existing analysis/report target at week 12 continues as a clearly marked extension to week 14. Show the causal sequence through three small editorial annotations connected to the path: insufficient complete rainfall records; a newly added missing-reason field; and a longer rainfall collection window. Make the 12-to-14 change the visual focus. Keep the extension visibly proposed and unapproved. Use subtle rain marks or a blank observation-sheet detail as supporting imagery, never as data or a real project record.
+
+Text (verbatim, only these visible words): “把采集窗口延到第14周”；“记录不足带来方法与排期调整；这仍是未审批的示例目标。”；“原因｜完整降雨记录不足”；“新增｜缺失原因栏”；“调整｜延长降雨收集窗口”；“分析与报告目标｜第12周 → 第14周”；“示例调整 · 未表示已审批”。
+
+Use a distinct open timeline composition, not cards, a dashboard, the previous cover layout, the dual-track progress motif, the exploded apparatus, or the open-record-book layout. Make the headline and the proposed target easy to scan; place the example/unapproved label near the week-14 extension. Keep all exact copy readable at presentation size.
+
+Do not add dates, readings, percentages, effect claims, approvals, school or team names, logos, awards, or any other visible text. Do not imply the change has been approved or that the project has achieved an outcome. All visual scenes are illustrative, not photographs or evidence.

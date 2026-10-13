@@ -1,0 +1,224 @@
+{
+  "status": "complete",
+  "binding_role": "imported-agent-concepts-current-contract-binding",
+  "binding_created_at": "2026-10-13T00:21:31.598834+08:00",
+  "history_note": "原始生成工具输入与原始文件在逐页provenance保存；这里的hash是装配前的当前合同绑定，不伪称历史工具读取过当前JSON。",
+  "slides": [
+    {
+      "slide_id": "S01",
+      "status": "generated",
+      "output_path": "concepts/S01.png",
+      "output_sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+      "input_sha256": {
+        "brief": "5691af1f2b3799de8a6478a01fca06419d510bb4a7e5071df1d8e389626bd55e",
+        "deck_spec": "31c8df29203c74c68db12945cb81bbf29607e37b887e4622b0f4989750f3cc3f",
+        "reference_study": "13688d1ba8eb17f0467d149d1051e3020af3d78bc0f56712d4fe6c58499b9a01",
+        "style_contract": "03aa62888311e08c1920b303ceac0457dd493db49ca30b5c229526265df7013b"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "知栈",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "descriptor",
+          "role": "body",
+          "text": "桌面知识协作终端",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "让每次讨论，都接得上下一步。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "features",
+          "role": "secondary",
+          "text": "会后脉络留存 · 资料语义检索 · 任务线索串联",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "example",
+          "role": "source",
+          "text": "概念产品 · 示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R17",
+          "path": "references/case17.jpg",
+          "sha256": "97e848f6ad45cdd5b2c9f62c43725953afdcd52f3f2c261ec5869de92a730e85"
+        }
+      ]
+    },
+    {
+      "slide_id": "S02",
+      "status": "generated",
+      "output_path": "concepts/S02.png",
+      "output_sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+      "input_sha256": {
+        "brief": "5691af1f2b3799de8a6478a01fca06419d510bb4a7e5071df1d8e389626bd55e",
+        "deck_spec": "31c8df29203c74c68db12945cb81bbf29607e37b887e4622b0f4989750f3cc3f",
+        "reference_study": "13688d1ba8eb17f0467d149d1051e3020af3d78bc0f56712d4fe6c58499b9a01",
+        "style_contract": "03aa62888311e08c1920b303ceac0457dd493db49ca30b5c229526265df7013b"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把损失，接回流程。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "先找到稳定热源，再匹配同时发生的用热需求。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "heat",
+          "role": "body",
+          "text": "加热",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "production",
+          "role": "body",
+          "text": "生产",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "exhaust",
+          "role": "body",
+          "text": "排热",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "reuse",
+          "role": "body",
+          "text": "回用",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "exchange",
+          "role": "body",
+          "text": "换热",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "流程为机制示意，不构成工程设计参数。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R70",
+          "path": "references/case70.jpg",
+          "sha256": "d0e47196f79af0cab2d9c96c9495b87788d39285582a383ac7a9861c7c053d37"
+        }
+      ]
+    },
+    {
+      "slide_id": "S03",
+      "status": "generated",
+      "output_path": "concepts/S03.png",
+      "output_sha256": "08157d04fa08c681ce8c6f7cf5151f4a2549e11786dd37969aa99f8da0163f90",
+      "input_sha256": {
+        "brief": "5691af1f2b3799de8a6478a01fca06419d510bb4a7e5071df1d8e389626bd55e",
+        "deck_spec": "31c8df29203c74c68db12945cb81bbf29607e37b887e4622b0f4989750f3cc3f",
+        "reference_study": "13688d1ba8eb17f0467d149d1051e3020af3d78bc0f56712d4fe6c58499b9a01",
+        "style_contract": "03aa62888311e08c1920b303ceac0457dd493db49ca30b5c229526265df7013b"
+      },
+      "copy_map": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "先看趋势，再讨论机理。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "single",
+          "role": "body",
+          "text": "单次示例曲线，\n不能推断显著性。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "机理判断仍需重复与对照。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示数据，非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "reference_images": [
+        {
+          "reference_id": "R341",
+          "path": "references/case341.jpg",
+          "sha256": "a8e0c2d57a2c4cdd0dbbab23a7914016c219bd706ebdb430b837b506afba2c3d"
+        }
+      ]
+    }
+  ]
+}

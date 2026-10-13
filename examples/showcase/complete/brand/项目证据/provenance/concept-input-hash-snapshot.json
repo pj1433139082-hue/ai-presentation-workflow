@@ -1,0 +1,14 @@
+{
+  "snapshot_type": "pre-concept-generation-inputs",
+  "created_at": "2026-10-13T00:28:06Z",
+  "project_id": "industry-brand-v2",
+  "inputs": {
+    "brief.json": "64b99eca979368c119f8f900a9cb4a0f345ef6865651a7bf096cdc9e1ba3251f",
+    "deck-spec.json": "6d6ea3fe6c71d8ac5adb3d264421dc9cd9adddd9ff36931576252524115f92d9",
+    "reference-study.json": "06ea7fa3cfc50b7adfd07f90750a190c6b61a8d04337fab4a2158ad9371d90cf",
+    "style-contract.json": "16927aeadcf293a3ef807847841c53749e4bbe736bfdfb99f61dae9a217eab30"
+  },
+  "scope": "Five-slide concept story/copy, two analyzed references, and visual direction are frozen before new page generation. S01 is an existing imported concept; its historical prompt and prior generation record are retained separately.",
+  "authority": "agent-selected local showcase direction; not user visual acceptance or a formal gate",
+  "generation_log": "pending"
+}

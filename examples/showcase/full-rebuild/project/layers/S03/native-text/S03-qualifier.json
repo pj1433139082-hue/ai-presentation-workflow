@@ -1,0 +1,24 @@
+{
+  "id": "S03-qualifier",
+  "role": "text",
+  "representation": "native",
+  "type": "text",
+  "text": "演示数据，非实验结果",
+  "bbox": [
+    1197,
+    803,
+    424,
+    62
+  ],
+  "z": 30,
+  "font_family": "Noto Sans SC",
+  "font_size_px": 40,
+  "font_weight": 700,
+  "color": "#e22c11",
+  "text_align": "center",
+  "line_height": 1.3,
+  "font_match_approx": "System font approximation; original raster typography is not a recoverable font file",
+  "file": "components/qualifier.json",
+  "semantic_role": "text",
+  "path": "layers/S03/native-text/S03-qualifier.json"
+}

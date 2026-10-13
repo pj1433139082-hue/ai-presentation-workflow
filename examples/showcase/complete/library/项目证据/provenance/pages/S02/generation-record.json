@@ -1,0 +1,20 @@
+{
+  "slide_id": "S02",
+  "record_type": "imported-existing-concept",
+  "generation_tool": "built-in Codex image_gen (per preserved provenance.md)",
+  "prompt_path": "prompt.txt",
+  "prompt_sha256": "63fd931af2b8c606bd54d69b7832b04d1e16f7a13c581358baf13b9bce6f8ceb",
+  "output_path": "concept.png",
+  "output_sha256": "d5704b1579b78ff5ac41178708a095ffd9ec882ce5d36049c3ef0475e9ed6415",
+  "original_generation_record_path": "original-generation-record.md",
+  "original_generation_record_sha256": "232a2146fe24d63c40ec6c89b62fd2ebb862e9d6e9995a2c9963716b0fa16fa4",
+  "source_case_record_path": "../../project/provenance/reference-prompts/case469-source-record.json",
+  "source_case_record_sha256": "ad3698387aa2faf3781d7904276559ed88729bedf63da2e7638c603a01b1a2cf",
+  "current_input_sha256": {
+    "brief.json": "9c82d65f4156a37db44f86c771ad9dcd1b2217fcd0f3b26e0ed993b27f72e458",
+    "deck-spec.json": "ea4496ab3a49f7775d72021063608f9d28b7b9bb75d1922955c1e6ad225f7d88",
+    "reference-study.json": "2096fd84da1debc82497e2a0ea3004c406f83c952a47e99ec7c8e5d023709dc4",
+    "style-contract.json": "3c1cd8312323597c5f64f71a8eb347c9e1ac8a66d64d14d011ea33366508b1e7"
+  },
+  "history_note": "图像在当前项目JSON冻结前生成；现有元数据是此次导入绑定，不声称原图历史上使用了本项目JSON。原始图像、提示词和原有记录均保留。"
+}

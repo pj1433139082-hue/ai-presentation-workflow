@@ -5,7 +5,8 @@
   "quality_profile": "production",
   "delivery": {
     "formats": ["component-library"],
-    "aspect_ratio": "16:9"
+    "aspect_ratio": "16:9",
+    "speaker_notes": "not-requested"
   },
   "editability": {
     "ordinary_text": "native-editable",

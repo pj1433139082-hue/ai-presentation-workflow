@@ -1,0 +1,14 @@
+Create ONE single widescreen 16:9 landscape concept slide for page 5 of the fictional “桥迹” engineering proposal. Use the attached reference only for clean industrial-design specimen views and precise editorial annotation rhythm. Do not copy its character, packaging, dimensions, materials, labels, swatches, or composition. This slide explains a planned validation method and a wholly invented record-format example; it is NOT real evidence.
+
+Render ONLY these exact Chinese lines, with no extra text:
+large title: “验证先看漏标，也看干扰”
+takeaway: “计划：用已知标记试件，逐处对照人工标注。”
+input label: “试件设定：标记线 3 · 划痕 2 · 污迹 1”
+example output, kept directly beside its warning label: “虚构记录：候选 4 · 漏标 1 条线 · 干扰候选 2”
+warning label, clearly attached to the example output: “演示数据 · 非实验结果”
+
+Composition: a refined engineering editorial board on a softly lit pale concrete-gray field. Show one flat, clearly schematic specimen strip with exactly six abstract surface marks: three thin line-like marks, two short scratch-like marks, and one stain-like spot. Two of the line-like marks and both scratches have amber candidate rings; one line-like mark has no ring; the stain-like spot has no ring. This is an illustration of the invented mapping above, not a photograph or test result. On one side, state the input setting; on the other, give the fictional output in large legible typography. Use thin connectors and an open ledger-like composition, not cards or a chart. Keep the warning label adjacent to and visually inseparable from the example output.
+
+Palette and material: ivory-tinted engineering paper, graphite type, concrete-gray specimen, muted metal rules, restrained amber circles and lines. Strong large Chinese hierarchy; generous whitespace; no axes, no scale, no waveform, no percentages, no confidence intervals, no error bars. The boundary statement must remain comfortably readable at original size.
+
+Avoid any other numbers or text, measured values, test dates, repeat counts, accuracy, significance, product performance, official lab imagery, real bridge evidence, logos, awards, schools, patents, company names, extra marks, watermarks, or any suggestion the plan has been executed.

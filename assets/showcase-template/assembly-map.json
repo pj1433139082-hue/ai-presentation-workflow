@@ -1,0 +1,11 @@
+{
+  "contract_version": "showcase-v1",
+  "status": "pending",
+  "backend": null,
+  "render_backend": null,
+  "output": null,
+  "sha256": null,
+  "input_sha256": {},
+  "renders": [],
+  "slides": []
+}

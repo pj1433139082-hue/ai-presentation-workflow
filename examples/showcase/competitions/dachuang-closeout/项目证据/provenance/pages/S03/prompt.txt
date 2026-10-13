@@ -1,0 +1,20 @@
+Use case: editorial infographic
+Asset type: one complete full-page 16:9 Chinese slide concept for a university student innovation-training project closeout defense; local showcase concept only.
+Primary request: create a premium, polished, legible Chinese slide that fulfills this page role: 记录数量可核对，效果结论留白.
+Scene/backdrop: warm near-white background with generous clean whitespace.
+Style/medium: refined editorial information design; deep ink green typography, low-saturation leaf green and pale water blue; natural botanical materials with subtle dimensional light where appropriate. This is a fresh composition informed by a reviewed style description, not an edit or copy of any image.
+Composition/framing: landscape 16:9 full slide. Composition: a readable count-ledger page. Make a single horizontal six-unit rain-record strip: exactly five equal green units marked complete and one neutral gray unit marked missing. Beside it show two substrate labels with exactly three equal repeat marks each, six in total. The visual only represents counts; no invented readings, axes, percentages, rankings, error bars or significance marks.
+Typography: typeset Chinese as crisp, correctly written text with clear hierarchy and comfortable reading size. Preserve every numeral, punctuation mark and phrase exactly. Do not add any visible text beyond the list below.
+Text (verbatim):
+• 记录数量可核对，效果结论留白
+• 只展示示例记录数，不推导实测效果。
+• 降雨记录（示例）
+• 6 次合计
+• 5 次完整
+• 1 次缺失，保留标记
+• 基质台架对照（示例）
+• 2 类基质 × 3 次重复 = 6 组台架试验
+• 未给出读数，不判断基质优劣、改善幅度或统计显著性
+• 示例计数 · 非实测
+• 03 / 06
+Constraints: put the fictional/example status close to its claims; show all listed numbers exactly; produce a complete slide, not a mockup of a monitor or a collage. Keep the layout unique to this page role. No watermark, brand, real institution, real person, real photo evidence, certification, seal, patent, signature, invented data or pseudo-text. Do not alter the story or imply any real project work.

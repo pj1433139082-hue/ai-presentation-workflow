@@ -1,6 +1,10 @@
 # Reference-first design and production richness
 
+> Scope: Fixed reference counts, calibration rounds, anchors, and richness thresholds here belong to the legacy strict-production profile. For `showcase-v1`, follow [showcase-workflow.md](showcase-workflow.md) and choose references for relevance without treating count as quality.
+
 Use this contract before generating the first concept image. References are design evidence, not decoration and not permission to copy a finished work.
+
+When reusing or saving a personal style, load `reusable-style-library.md`. Inspect rendered PDF/PPTX pages rather than inferring appearance from extracted text or XML. A preset feeds this reference study and current same-content calibration; it does not replace either. Use `narrative-and-speaker-notes.md` to choose page structures from communication roles before selecting attractive reference layouts.
 
 ## Reference study
 
@@ -23,7 +27,7 @@ Create a numbered reference contact sheet and present 2–3 direction options. E
 
 ## Same-content concept calibration
 
-Before the three anchors, choose one representative storyboard slide and create `concept-calibration.json`. Use Codex `image_gen` to make 2–3 real 16:9 contentful review concepts. Hold the approved title, message, evidence IDs, visual intent, exact copy map, truth-status labels, and representative imagery constant. Show remaining editable regions as blank slots. Label each candidate's `direction_id`, `style_strength` (`restrained` / `balanced` / `expressive`), and `layout_density` (`airy` / `standard` / `dense`). Describe the actual difference in hierarchy, layering, whitespace, material, and image treatment; the labels alone do not establish variety. This comparison should help the user choose how strongly designed and how dense the deck should feel, not choose between different arguments.
+Before the three anchors, choose one representative storyboard slide and create `concept-calibration.json`. Use Codex `image_gen` to make 2–3 real 16:9 contentful review concepts. Hold the approved title, narrative message, evidence IDs, visual intent, exact **visible** copy map, truth-status labels, and representative imagery constant. The title is verbatim on-screen; a longer storyboard message may be realized by one or more concise visible claims, recorded in `message_mapping` and reviewed at G3/G4. Do not shrink text or imagery merely to render the complete narrative message verbatim. Show remaining editable regions as blank slots. Label each candidate's `direction_id`, `style_strength` (`restrained` / `balanced` / `expressive`), and `layout_density` (`airy` / `standard` / `dense`). Describe the actual difference in hierarchy, layering, whitespace, material, and image treatment; the labels alone do not establish variety. This comparison should help the user choose how strongly designed and how dense the deck should feel, not choose between different arguments.
 
 Record the exact prompt, attached local reference images and hashes, tool/model, output file/hash, a contact sheet, recommended candidate, reason, and impact. Show the real images side by side. The human may pick a candidate, reject all, or request a hybrid; a hybrid is a new candidate to generate and review. Save a hash-bound `calibration_selection` approval before producing anchors. The final style contract records the selected candidate ID, direction ID, strength, and density. The three anchors and every later concept inherit that selection. G4 remains a separate review of the whole deck's visual rhythm.
 

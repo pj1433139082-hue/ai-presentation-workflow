@@ -1,0 +1,48 @@
+{
+  "schema": "apw-concept-generation-record/v1",
+  "slide_id": "S01",
+  "artifact_kind": "imported-existing-concept",
+  "current_project_binding": {
+    "recorded_at_utc": "2026-10-13T00:28:06Z",
+    "note": "This APW project binding was created after the historical concept image; it does not claim that the current brief/deck/reference/style JSON preceded or caused the original image generation.",
+    "input_snapshot_path": "project/provenance/concept-input-hash-snapshot.json",
+    "input_snapshot_sha256": "92E14EE6A86F335956F42319AE0DB0942F865A696260E0A19209A3BD078B085B"
+  },
+  "original_generation": {
+    "tool": "Codex built-in image_gen (historical provenance record)",
+    "actor": "historical agent; not separately identified in retained provenance",
+    "created_at": "2026-10-12T23:11:08+08:00",
+    "saved_artifact_path": "pilots/industry-explorations/C-brand/product-story.png",
+    "saved_artifact_sha256": "9FB9EE495BDE2456FE4B43C5CF9E4D5EFEC4912A351B6A964D9800059B12EF8C",
+    "original_tool_temporary_output_path": null,
+    "note": "The retained original provenance did not preserve the temporary generated_images path; it is not reconstructed or invented."
+  },
+  "current_artifact": {
+    "path": "concepts/S01.png",
+    "sha256": "9FB9EE495BDE2456FE4B43C5CF9E4D5EFEC4912A351B6A964D9800059B12EF8C",
+    "format": "PNG",
+    "dimensions_px": [
+      1672,
+      940
+    ],
+    "color_mode": "RGB",
+    "byte_copy_verified": true
+  },
+  "historical_prompt": {
+    "path": "design/S01/prompt.txt",
+    "copied_from": "pilots/industry-explorations/C-brand/prompt.md",
+    "sha256": "0F81F7682CF6C8E9DEB3A10550983F2161C5F7D41B0882CC5101846BE789EE9E"
+  },
+  "historical_reference": {
+    "id": "R362",
+    "path": "references/case362.jpg",
+    "sha256": "98602C5EE9033E5D80C656ABC5409391B181F4D207F43E404D49A1057A2034CE",
+    "source_case_metadata": "provenance/imports/case362-source.json"
+  },
+  "current_review_state": {
+    "origin": "imported",
+    "user_visual_acceptance": "not claimed",
+    "formal_gates": "not claimed",
+    "source_copy_hash_matches_original": true
+  }
+}

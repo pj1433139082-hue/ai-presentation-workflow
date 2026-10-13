@@ -1,0 +1,181 @@
+{
+  "status": "industry-concept-exploration",
+  "user_feedback": "not-recorded-for-these-six-pages",
+  "files": [
+    {
+      "path": "A-process/generation-prompt.txt",
+      "sha256": "9d3b8b909f1117ed1e5a4d10c6d05c617413ddb2c3a99598fd1babe82c82fe34",
+      "bytes": 3086
+    },
+    {
+      "path": "A-process/mechanism-余热回用-概念.png",
+      "sha256": "337ef5ec2615899852f05287d64c3f9ad0f9e8bdf7a1c5993e1dcf2cdc1e5be4",
+      "bytes": 2359895
+    },
+    {
+      "path": "A-process/provenance.json",
+      "sha256": "444a54e2951f771f18dc14c57db5965628ebbd87bbf62c6f95e7b10379defdb4",
+      "bytes": 1693
+    },
+    {
+      "path": "A-process/provenance.md",
+      "sha256": "72e9c01d20fef9cc8fde017ee94745b657382fda0dc699419b61de81ca456014",
+      "bytes": 1061
+    },
+    {
+      "path": "A-process/reference-case70.jpg",
+      "sha256": "d0e47196f79af0cab2d9c96c9495b87788d39285582a383ac7a9861c7c053d37",
+      "bytes": 176071
+    },
+    {
+      "path": "A-process/selected-case-original-prompt.txt",
+      "sha256": "1f18e74b0e10ca3da838e9fdb49611b0150a1570838283d987cd1f9096a8f04d",
+      "bytes": 2477
+    },
+    {
+      "path": "A-tech/cover-知栈-概念.png",
+      "sha256": "3f23a0939d73bd38a30d63f9ef3b5dbe3da3bf03b92d20059da2c0466943c70e",
+      "bytes": 1732669
+    },
+    {
+      "path": "A-tech/generation-prompt.txt",
+      "sha256": "39acf69c59de9da0a3b58f7f7a5616404dca3b169ba06665ad0d6f42678b5d12",
+      "bytes": 2959
+    },
+    {
+      "path": "A-tech/provenance.json",
+      "sha256": "4d64d640499c18461f4d5e673ce452930cb39eb4ae853a84569461510440f1e1",
+      "bytes": 1641
+    },
+    {
+      "path": "A-tech/provenance.md",
+      "sha256": "def51ece95a00b7725ca32b953db8bf0d87246319e4680d45e28e8e28f17782a",
+      "bytes": 1031
+    },
+    {
+      "path": "A-tech/reference-case17.jpg",
+      "sha256": "97e848f6ad45cdd5b2c9f62c43725953afdcd52f3f2c261ec5869de92a730e85",
+      "bytes": 145789
+    },
+    {
+      "path": "A-tech/selected-case-original-prompt.txt",
+      "sha256": "44b543953f22d8613eb4e1051d6bdc71c194d1760d55182a742ffaf61d2f2fca",
+      "bytes": 2152
+    },
+    {
+      "path": "B-education/case-analysis.md",
+      "sha256": "ced4eda1b09015028812122787628927e2b1f0618a3a42925e9aac4686e424a7",
+      "bytes": 769
+    },
+    {
+      "path": "B-education/generation-record.md",
+      "sha256": "2f33cc329da9c858dc1089ac27d26ea6e0a480d47f027e6df4c34aeef272d690",
+      "bytes": 1237
+    },
+    {
+      "path": "B-education/prompt.md",
+      "sha256": "da86d7e9edec04a140f08a8611e698b47e0863c62ba0c38bf420297cd4a9ade5",
+      "bytes": 2499
+    },
+    {
+      "path": "B-education/references/case469.jpg",
+      "sha256": "0d63ea96b6f5be08ae0c9ff8040eeb90597d116bebf9958680b5171ed6c7b12d",
+      "bytes": 469487
+    },
+    {
+      "path": "B-education/slide.png",
+      "sha256": "b2ae250c8df800f9898b48a01c45daea62f6dd9582e390a8cf4de8406e3d6a24",
+      "bytes": 2782857
+    },
+    {
+      "path": "B-education/source-cases.json",
+      "sha256": "79245fafd94d9b118e1815c7940fb73cef9d9d781f41ef0b2c6b0fb1102e7916",
+      "bytes": 4866
+    },
+    {
+      "path": "B-research/case-analysis.md",
+      "sha256": "e15450b1dcdcd31ab417fa8b05a6aac1af82b6de32bd77fe2c4b14afa528868f",
+      "bytes": 846
+    },
+    {
+      "path": "B-research/generation-record.md",
+      "sha256": "ced95bc17b9080b8ad387375e82e02bf80c165746dba4cd4cc7464325e6c6d4b",
+      "bytes": 1236
+    },
+    {
+      "path": "B-research/prompt.md",
+      "sha256": "974b9af696fe79e1ad019a93fce15b64b31c4d3ffa016333fc75a85ad3830f59",
+      "bytes": 2632
+    },
+    {
+      "path": "B-research/references/case341.jpg",
+      "sha256": "a8e0c2d57a2c4cdd0dbbab23a7914016c219bd706ebdb430b837b506afba2c3d",
+      "bytes": 308989
+    },
+    {
+      "path": "B-research/slide.png",
+      "sha256": "08157d04fa08c681ce8c6f7cf5151f4a2549e11786dd37969aa99f8da0163f90",
+      "bytes": 1824387
+    },
+    {
+      "path": "B-research/source-cases.json",
+      "sha256": "da01b3466fc7b3860933bbbeb17d3d92075b36d42b7b1ca03cdc38f6f3886388",
+      "bytes": 1533
+    },
+    {
+      "path": "C-brand/product-story.png",
+      "sha256": "9fb9ee495bde2456fe4b43c5cf9e4d5efec4912a351b6a964d9800059b12ef8c",
+      "bytes": 2596752
+    },
+    {
+      "path": "C-brand/prompt.md",
+      "sha256": "0f81f7682cf6c8e9deb3a10550983f2161c5f7d41b0882cc5101846be789ee9e",
+      "bytes": 2887
+    },
+    {
+      "path": "C-brand/provenance.md",
+      "sha256": "d96b438ee5f34c5e7f1fcdd49bd42f93204cfe83930eaf309f0f7e24cf6407a6",
+      "bytes": 2296
+    },
+    {
+      "path": "C-brand/source-case.json",
+      "sha256": "679cbe2a6da9b399a1e4e0e9469cbf152c8bb16c7e543ed9aceb5ab06b506c89",
+      "bytes": 2117
+    },
+    {
+      "path": "C-brand/source-case362.jpg",
+      "sha256": "98602c5ee9033e5d80c656abc5409391b181f4d207f43e404d49a1057a2034ce",
+      "bytes": 1447657
+    },
+    {
+      "path": "C-library/library-flow.png",
+      "sha256": "d5704b1579b78ff5ac41178708a095ffd9ec882ce5d36049c3ef0475e9ed6415",
+      "bytes": 2231998
+    },
+    {
+      "path": "C-library/prompt.md",
+      "sha256": "63fd931af2b8c606bd54d69b7832b04d1e16f7a13c581358baf13b9bce6f8ceb",
+      "bytes": 3145
+    },
+    {
+      "path": "C-library/provenance.md",
+      "sha256": "232a2146fe24d63c40ec6c89b62fd2ebb862e9d6e9995a2c9963716b0fa16fa4",
+      "bytes": 2221
+    },
+    {
+      "path": "C-library/source-case.json",
+      "sha256": "ad3698387aa2faf3781d7904276559ed88729bedf63da2e7638c603a01b1a2cf",
+      "bytes": 5108
+    },
+    {
+      "path": "C-library/source-case469.jpg",
+      "sha256": "0d63ea96b6f5be08ae0c9ff8040eeb90597d116bebf9958680b5171ed6c7b12d",
+      "bytes": 469487
+    },
+    {
+      "path": "index.html",
+      "sha256": "e39812b4256274790f020823e8c61c87009fb3cb3e01a91820b460e81b929afe",
+      "bytes": 5573
+    }
+  ]
+}

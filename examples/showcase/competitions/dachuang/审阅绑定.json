@@ -1,0 +1,205 @@
+{
+  "reviewer": "/root/showcase_acceptance_plan",
+  "reviewed_at": "2026-10-13T18:42:44+08:00",
+  "scope": "独立视觉与表达审阅；只覆盖7张本地概念图，不是PPTX组装/实渲验收、赛事规则认证或用户接受。",
+  "page_count": 7,
+  "pages": [
+    {
+      "slide_id": "S01",
+      "concept_path": "design/S01/concept.png",
+      "concept_sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "99dc39dc589a7d26008813a71085005d7c52660d99c2b4d7cb18813a1f4e8295",
+      "generation_record_output_sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S01.png",
+      "project_copy_sha256": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S02",
+      "concept_path": "design/S02/concept.png",
+      "concept_sha256": "577cfaf8b66d5443ab4da776e7f7b1dd541998a03f4ab00556edc98ac006e489",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "8eccce16946b722885cb4ca64ad90f548f7f9dca2d8003c26fd6545d50bbba20",
+      "generation_record_output_sha256": "577cfaf8b66d5443ab4da776e7f7b1dd541998a03f4ab00556edc98ac006e489",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S02.png",
+      "project_copy_sha256": "577cfaf8b66d5443ab4da776e7f7b1dd541998a03f4ab00556edc98ac006e489",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S03",
+      "concept_path": "design/S03/concept.png",
+      "concept_sha256": "6ee993d1f99ae525e203525d8cc0210b592813c90c96a778a2a4184f8cfafa5d",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "a2a967cd3a939bb25c758b2ef11e1a1fb179d20755d8c837aa1c6ea7abb33b57",
+      "generation_record_output_sha256": "6ee993d1f99ae525e203525d8cc0210b592813c90c96a778a2a4184f8cfafa5d",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S03.png",
+      "project_copy_sha256": "6ee993d1f99ae525e203525d8cc0210b592813c90c96a778a2a4184f8cfafa5d",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S04",
+      "concept_path": "design/S04/concept.png",
+      "concept_sha256": "cef7552b9b9d3a5a388f65864996f1fdd710fc0ae7a069332abb0adbd795fb91",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "adf2d943499acca5097bdbac8236899ae5bbcef2e035987d446c10f84c3bbcef",
+      "generation_record_output_sha256": "cef7552b9b9d3a5a388f65864996f1fdd710fc0ae7a069332abb0adbd795fb91",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S04.png",
+      "project_copy_sha256": "cef7552b9b9d3a5a388f65864996f1fdd710fc0ae7a069332abb0adbd795fb91",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S05",
+      "concept_path": "design/S05/concept.png",
+      "concept_sha256": "168ca5d61c8947e06d8a4f2ac660713755944c20c301bca46d5519746684857e",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "7b43c054658c055c8618bd802a001111dd4ebde34dc73fea06e881d9edeeb1db",
+      "generation_record_output_sha256": "168ca5d61c8947e06d8a4f2ac660713755944c20c301bca46d5519746684857e",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S05.png",
+      "project_copy_sha256": "168ca5d61c8947e06d8a4f2ac660713755944c20c301bca46d5519746684857e",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S06",
+      "concept_path": "design/S06/concept.png",
+      "concept_sha256": "36984d7e2be9efc3d526e69ca8c790266fe6d3ae6b8d27fae37bc302a9802d12",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "aea8fc60abd3a0dd0189550033dda9c062c78f9c0728d5191aaf8c460e4ab5e5",
+      "generation_record_output_sha256": "36984d7e2be9efc3d526e69ca8c790266fe6d3ae6b8d27fae37bc302a9802d12",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S06.png",
+      "project_copy_sha256": "36984d7e2be9efc3d526e69ca8c790266fe6d3ae6b8d27fae37bc302a9802d12",
+      "project_copy_matches_current": true
+    },
+    {
+      "slide_id": "S07",
+      "concept_path": "design/S07/concept.png",
+      "concept_sha256": "2a142a55b887a6c5a0f0edf7bbf5a0bedcf33536dbfc39ae8703726deb42e275",
+      "dimensions_px": [
+        1672,
+        941
+      ],
+      "generation_record_sha256": "8cbe40f6b97c41bf322966872c8f7eb23d32ac4cdc5fe9fda03b8ae72032fc35",
+      "generation_record_output_sha256": "2a142a55b887a6c5a0f0edf7bbf5a0bedcf33536dbfc39ae8703726deb42e275",
+      "generation_record_matches_current": true,
+      "project_concept_path": "concepts/S07.png",
+      "project_copy_sha256": "2a142a55b887a6c5a0f0edf7bbf5a0bedcf33536dbfc39ae8703726deb42e275",
+      "project_copy_matches_current": true
+    }
+  ],
+  "source_sha256": {
+    "sources/source-notes.md": "db2f9772686eb13e35c88e565d8849f4d3b9bd392e66272d05a86b6bf01a9b43"
+  },
+  "open_findings": [],
+  "resolved_findings": [
+    {
+      "id": "S03-P2-control-visual-ambiguity",
+      "original_finding": "v1两组装置的植被和基质层次同时不同，难以看出对照因素。",
+      "status": "resolved-on-current-image",
+      "current_sha256": "6ee993d1f99ae525e203525d8cc0210b592813c90c96a778a2a4184f8cfafa5d",
+      "revision_evidence": {
+        "slide_id": "S03",
+        "previous_concept_sha256": "d78ca1908ada700cb823e48d7a90976f0b5b87e90eeea80575c7ad6de3675ed5",
+        "previous_record_sha256": "ac549df68c4dcdfe986a957f11b81dcebf00513213c2132ed661359701db15c8",
+        "current_concept_sha256": "6ee993d1f99ae525e203525d8cc0210b592813c90c96a778a2a4184f8cfafa5d",
+        "current_record_sha256": "a2a967cd3a939bb25c758b2ef11e1a1fb179d20755d8c837aa1c6ea7abb33b57",
+        "current_record_references_previous_image": true,
+        "prior_generation_record_binding_matches": true,
+        "prior_record_output_matches_preserved_image": true
+      },
+      "disposition": "当前容器、植被和底层结构趋于一致，差异集中在基质；没有结果数值。原P2已闭合。"
+    },
+    {
+      "id": "S04-P1-generated-numeric-readout",
+      "original_finding": "v1日志插画自带10:20、12.6 mm、8.3 cm等具体读数，易被看作实测记录。",
+      "status": "resolved-on-current-image",
+      "current_sha256": "cef7552b9b9d3a5a388f65864996f1fdd710fc0ae7a069332abb0adbd795fb91",
+      "revision_evidence": {
+        "slide_id": "S04",
+        "previous_concept_sha256": "b4920f4c6b0739ae5d2a9c5a147a5587bbd60ca63cbe7da878f160555d4392ef",
+        "previous_record_sha256": "1a72f034d365a5d8d5eef336314f02e6e6ce38de7615a7c95275be2cb40d1da7",
+        "current_concept_sha256": "cef7552b9b9d3a5a388f65864996f1fdd710fc0ae7a069332abb0adbd795fb91",
+        "current_record_sha256": "adf2d943499acca5097bdbac8236899ae5bbcef2e035987d446c10f84c3bbcef",
+        "current_record_references_previous_image": true,
+        "prior_generation_record_binding_matches": true,
+        "prior_record_output_matches_preserved_image": true
+      },
+      "disposition": "具体数值已替换为待记录字段；“记录模板·非实测”就在日志表格旁，原P1已闭合。"
+    }
+  ],
+  "user_acceptance": "not-recorded",
+  "human_gates": {
+    "G1": "not-claimed",
+    "G2": "not-claimed",
+    "G3": "not-claimed",
+    "G4": "not-claimed",
+    "G5": "not-claimed"
+  },
+  "provenance_checks": {
+    "all_current_images_match_generation_records": true,
+    "all_current_images_match_project_concept_copies": true,
+    "revision_history": [
+      {
+        "slide_id": "S03",
+        "previous_concept_sha256": "d78ca1908ada700cb823e48d7a90976f0b5b87e90eeea80575c7ad6de3675ed5",
+        "previous_record_sha256": "ac549df68c4dcdfe986a957f11b81dcebf00513213c2132ed661359701db15c8",
+        "current_concept_sha256": "6ee993d1f99ae525e203525d8cc0210b592813c90c96a778a2a4184f8cfafa5d",
+        "current_record_sha256": "a2a967cd3a939bb25c758b2ef11e1a1fb179d20755d8c837aa1c6ea7abb33b57",
+        "current_record_references_previous_image": true,
+        "prior_generation_record_binding_matches": true,
+        "prior_record_output_matches_preserved_image": true
+      },
+      {
+        "slide_id": "S04",
+        "previous_concept_sha256": "b4920f4c6b0739ae5d2a9c5a147a5587bbd60ca63cbe7da878f160555d4392ef",
+        "previous_record_sha256": "1a72f034d365a5d8d5eef336314f02e6e6ce38de7615a7c95275be2cb40d1da7",
+        "current_concept_sha256": "cef7552b9b9d3a5a388f65864996f1fdd710fc0ae7a069332abb0adbd795fb91",
+        "current_record_sha256": "adf2d943499acca5097bdbac8236899ae5bbcef2e035987d446c10f84c3bbcef",
+        "current_record_references_previous_image": true,
+        "prior_generation_record_binding_matches": true,
+        "prior_record_output_matches_preserved_image": true
+      }
+    ]
+  },
+  "limitations": "概念图审阅；未检查可编辑PPTX、实际PowerPoint渲染或赛事正式要求。",
+  "reviewer_role": "agent/reviewer",
+  "full": true,
+  "concept_sha256": {
+    "S01": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46",
+    "S02": "577cfaf8b66d5443ab4da776e7f7b1dd541998a03f4ab00556edc98ac006e489",
+    "S03": "6ee993d1f99ae525e203525d8cc0210b592813c90c96a778a2a4184f8cfafa5d",
+    "S04": "cef7552b9b9d3a5a388f65864996f1fdd710fc0ae7a069332abb0adbd795fb91",
+    "S05": "168ca5d61c8947e06d8a4f2ac660713755944c20c301bca46d5519746684857e",
+    "S06": "36984d7e2be9efc3d526e69ca8c790266fe6d3ae6b8d27fae37bc302a9802d12",
+    "S07": "2a142a55b887a6c5a0f0edf7bbf5a0bedcf33536dbfc39ae8703726deb42e275"
+  },
+  "input_sha256": {
+    "brief.json": "aa54ecfb8d0c6cbaa8f7be6f73a4501b2f457aa8ea13c830c7bb0d136a9bf49d",
+    "deck-spec.json": "04f078d35ce37cadd4c8e4b24c50bca1523810a8e1a295f6a5d1e13e9c6fff82",
+    "reference-study.json": "bbd509772fb744f31e0f273b119ef1a679fefa5adb260eb488ea5cfe30e243c3",
+    "style-contract.json": "51660ad2941aa5b29b3363f61c522ed01737821148b991f7a43af5bb163ce6ca"
+  }
+}

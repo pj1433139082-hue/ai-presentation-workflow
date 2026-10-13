@@ -1,0 +1,15 @@
+Create one complete landscape 16:9 Chinese presentation concept slide, S03 of the same fictional campus reuse service pitch. Maintain the warm, bright, tactile editorial language of S01, but compose this page as a new visual idea rather than repeating the cover or the S02 two-situation scene.
+
+Show one believable close-up documentary-style campus service moment: a clean used desk lamp and storage box on a shared wooden table, hands photographing an item, checking its condition, writing a simple tag, then a second student receiving it in the sunlit background. Make the process feel like a single continuous path across the page, with a subtle winding paper strip or thin hand-drawn route guiding the eye. Do not use a four-card grid, app screen, fake website, official seal, or staged proof. Use editorial typography and clear hierarchy. Keep the image warm and human, with deep green and terracotta accents on light paper. The provided cookbook reference is only for information hierarchy; do not depict food, a cookbook, nutrition facts, or its multi-column layout.
+
+Render exactly the following Chinese copy, legibly and without adding any other readable text:
+主标题：把旧物循环，设计成一条看得见的服务路径
+核心句：登记、检查、匹配、交接，每一步都留下清楚信息。
+步骤一：登记：照片与基本信息
+步骤二：检查：清洁后标注成色
+步骤三：匹配：按需求预约
+步骤四：交接：校内当面确认
+差异点：状态说明统一 · 校内就近流转 · 交接留记录
+页脚说明：服务机制示意 · 未上线
+
+Keep all copy within safe margins and presentation-readable. Compose the four steps along one organic continuous route around the central real-world object, not as equal tiles. One finished 16:9 slide only, no storyboard, no multiple slides, no mockup, no invented statistics or testimonials.

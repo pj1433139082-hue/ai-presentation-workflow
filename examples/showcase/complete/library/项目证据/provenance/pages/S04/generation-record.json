@@ -1,0 +1,39 @@
+{
+  "schema": "apw-concept-generation-record/v1",
+  "slide_id": "S04",
+  "artifact_kind": "standalone-slide-concept",
+  "actor": "agent",
+  "tool": "Codex built-in image_gen",
+  "tool_call": "image_gen.imagegen",
+  "operation": "generate",
+  "generated_at": "2026-10-13T08:54:03+08:00",
+  "original_output_path": "C:\\Users\\14331\\.codex\\generated_images\\01a12ec3-57f8-7b41-8255-833b48138fbc\\exec-7e726f6d-eb6c-4b82-95ee-b0f5468958d4.png",
+  "original_output_sha256": "107bd5d1e527f2daf993a0ca29e26ceae17619c1f6548fef4a61ef853a9ca32b",
+  "output_path": "concepts/S04.png",
+  "output_sha256": "107bd5d1e527f2daf993a0ca29e26ceae17619c1f6548fef4a61ef853a9ca32b",
+  "dimensions_px": [
+    1672,
+    941
+  ],
+  "format": "PNG",
+  "design_concept_path": "concept.png",
+  "design_concept_sha256": "107bd5d1e527f2daf993a0ca29e26ceae17619c1f6548fef4a61ef853a9ca32b",
+  "prompt_path": "provenance/pages/S04/prompt.txt",
+  "prompt_sha256": "0c15b4a51ff5dd6c99d04457227de0db94093362c19252cfb514b7bc5e2d65b7",
+  "prompt": "Use case: productivity-visual\nAsset type: one complete 16:9 Chinese information-guide concept slide for a fictional neighborhood library presentation.\nScene/backdrop: a bright and calm public library setting with open space, warm paper texture, navy typography and small blue-green wayfinding accents.\nSubject: show how a visitor can find the rules for their own library and ask for help if something is unclear.\nStyle/medium: approachable civic-culture editorial illustration, clean wayfinding symbols, readable Chinese text; no institutional branding and no official notice styling.\nComposition/framing: a simple two-route information path linking a formal service explanation and an in-person service desk. The page should feel like a useful help page, not another route overview or policy poster.\nText (verbatim; render each line exactly once, with no other words): “不确定时，先核对规则入口” “以所在图书馆发布的信息或现场答复为准。” “优先查看所在图书馆的正式服务说明” “核对办理、借期与续借等事项” “信息不清时，到服务台询问” “本页未指定任何馆规、费用或期限” “通用信息入口 · 非某馆官方通知”\nConstraints: mention only a general advice path. Do not imply that a particular website, self-service channel, policy, or rule exists for every library.\nAvoid: named institutions, municipal seals, opening hours, fees, due dates, renewal limits, fines, real website mockups, extra labels, or watermark.",
+  "input_snapshot_path": "provenance/concept-input-hash-snapshot.json",
+  "input_sha256": {
+    "brief.json": "9c82d65f4156a37db44f86c771ad9dcd1b2217fcd0f3b26e0ed993b27f72e458",
+    "deck-spec.json": "ea4496ab3a49f7775d72021063608f9d28b7b9bb75d1922955c1e6ad225f7d88",
+    "reference-study.json": "2096fd84da1debc82497e2a0ea3004c406f83c952a47e99ec7c8e5d023709dc4",
+    "style-contract.json": "3c1cd8312323597c5f64f71a8eb347c9e1ac8a66d64d14d011ea33366508b1e7"
+  },
+  "input_snapshot_for_this_slide_sha256": "70decca5e6998f36a6af5fb44b48afecd23839efe433ad622487f0fa1ef6f063",
+  "reference_ids_in_project_contract": [
+    "R469"
+  ],
+  "direct_image_inputs_sent_to_tool": [],
+  "history_note": "This image was generated after the four project inputs were frozen. The prompt uses the analyzed reference direction in words; no reference image file was passed as a direct image_gen input.",
+  "user_visual_acceptance": "not-claimed",
+  "formal_gates": "not-claimed"
+}

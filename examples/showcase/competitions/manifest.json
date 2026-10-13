@@ -1,0 +1,79 @@
+{
+  "delivery_mode": "concept",
+  "set_count": 5,
+  "page_count": 31,
+  "sets": [
+    {
+      "id": "dachuang",
+      "label": "大创立项答辩",
+      "pages": 7,
+      "gallery": "dachuang/index.html",
+      "concept_hashes": {
+        "S01": "a4a83d50d0b88e336ecfb3c09b99346ccf99f8fec1c11cabf85411db63002c46",
+        "S02": "577cfaf8b66d5443ab4da776e7f7b1dd541998a03f4ab00556edc98ac006e489",
+        "S03": "6ee993d1f99ae525e203525d8cc0210b592813c90c96a778a2a4184f8cfafa5d",
+        "S04": "cef7552b9b9d3a5a388f65864996f1fdd710fc0ae7a069332abb0adbd795fb91",
+        "S05": "168ca5d61c8947e06d8a4f2ac660713755944c20c301bca46d5519746684857e",
+        "S06": "36984d7e2be9efc3d526e69ca8c790266fe6d3ae6b8d27fae37bc302a9802d12",
+        "S07": "2a142a55b887a6c5a0f0edf7bbf5a0bedcf33536dbfc39ae8703726deb42e275"
+      }
+    },
+    {
+      "id": "dachuang-process",
+      "label": "大创过程汇报",
+      "pages": 6,
+      "gallery": "dachuang-process/index.html",
+      "concept_hashes": {
+        "S01": "e7f40a317bf38f884f57f2eb135cbfda13c65ef92431a93c8cb9ec3e80b966b0",
+        "S02": "46391f0a2a0e045c4c011c5c7e8da83a861d00d5c52a74f7a9e8a28253fdab4b",
+        "S03": "c3fcf820caf56dbe5f57abaa9cc8d236ab37245f7e2ce39bdb8d5ba94225943a",
+        "S04": "b2ca5b453ad93026598591d6b7660f883c58d973084c2fc9b7bc08287b19db15",
+        "S05": "0110b3ad5b1a8fcb5d8961977859b0ec5c4d2311763f928f8f35f050f53f81f0",
+        "S06": "ab3a8a9694d0333ebc3dbcb1aa391cc85b50383171b0570548a9218042a2787a"
+      }
+    },
+    {
+      "id": "dachuang-closeout",
+      "label": "大创结题答辩",
+      "pages": 6,
+      "gallery": "dachuang-closeout/index.html",
+      "concept_hashes": {
+        "S01": "fb759ca0d909c309e739eab49ae536a890f2b6c1c7ed4a5807a7e6da7ae51ab4",
+        "S02": "1acd5b4da7a42728b7284bdc6227de975ad293325f9b95a81f1b96750bb1cc89",
+        "S03": "f59d6fb2e31f18426b34e8c9d230ec68480b5e553e27c102b885bc6940076ce9",
+        "S04": "2d625db4410627387909851e265c07bd3c19dd76c16fea7faf2a9336a01cdd6d",
+        "S05": "6657c5da75f1fbc29000f02862a8355598be8ec6f10db72c9d3ac09d4d30ae19",
+        "S06": "9f228b2825ebef099f76d5771cccc13814d3692c56a1464bdca02e8de9d9439f"
+      }
+    },
+    {
+      "id": "tech-innovation",
+      "label": "科技创新作品答辩",
+      "pages": 6,
+      "gallery": "tech-innovation/index.html",
+      "concept_hashes": {
+        "S01": "436b4b5e9eda1aae89c3b5deefc792b3d4097ae45ab87c17bdd844af9cd314e2",
+        "S02": "bf43efeab767b95c033781ceeaa84ea6aafc4b0f63c5d192ed0a78128a438fe7",
+        "S03": "31f0e6bfa10ec4d50573f94a8d0d115b8150add1c5f1eecb8d7b9bfafb3359a0",
+        "S04": "ec75c0e4edab0002bfb0beca3113153ce952d97873775196a605fec2436a7631",
+        "S05": "2332ea9f88d1f7021f129347f729785e5da27babb0c9078543406a38d8cc4f6e",
+        "S06": "24c0642ec16058ffc25ab9933b93794fc39d3ce895673523d0d8670e41c40977"
+      }
+    },
+    {
+      "id": "entrepreneurship",
+      "label": "创新创业路演",
+      "pages": 6,
+      "gallery": "entrepreneurship/index.html",
+      "concept_hashes": {
+        "S01": "1e0e00c7b41da6e72c72fba314cc4d952e46b3c1de56c990ffe4d0931ec349a5",
+        "S02": "0954a2e0c128c347fce534a62a705652f9b946667f9ea816a448ca532b1f84af",
+        "S03": "a00418f1c5ade78f41650313c2a95d7ceb73281de95bc6611d2264564d588352",
+        "S04": "2d8bbde87f4fee920ad82a7cd016cfc7592d6d71f8dc4a6b08500776b0628907",
+        "S05": "25ff7e18a199cf2324408668554fce6b5ec328bcdeb98279e4ebb595e2ccea74",
+        "S06": "10f35528ed8ccd1a7d2fd0fc398b8b2b6f1d7f9e4e533dbe748cafb95d216a08"
+      }
+    }
+  ],
+  "user_visual_acceptance": "not-recorded"
+}

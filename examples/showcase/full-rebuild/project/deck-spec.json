@@ -1,0 +1,211 @@
+{
+  "slides": [
+    {
+      "id": "S01",
+      "title": "知栈",
+      "message": "让每次讨论，都接得上下一步。",
+      "concept_path": "concepts/S01.png",
+      "reference_ids": [
+        "R17"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "知栈",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "descriptor",
+          "role": "body",
+          "text": "桌面知识协作终端",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "让每次讨论，都接得上下一步。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "features",
+          "role": "secondary",
+          "text": "会后脉络留存 · 资料语义检索 · 任务线索串联",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "example",
+          "role": "source",
+          "text": "概念产品 · 示例",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "本地展示试点。图像为AI示意，示例数据不代表真实产品、设备或实验结果。普通文案与关系线/图表/表格为原生对象；独立设备插画内部像素不承诺可编辑。"
+    },
+    {
+      "id": "S02",
+      "title": "把损失，接回流程。",
+      "message": "先找到稳定热源，再匹配同时发生的用热需求。",
+      "concept_path": "concepts/S02.png",
+      "reference_ids": [
+        "R70"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "把损失，接回流程。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "先找到稳定热源，再匹配同时发生的用热需求。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "heat",
+          "role": "body",
+          "text": "加热",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "production",
+          "role": "body",
+          "text": "生产",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "exhaust",
+          "role": "body",
+          "text": "排热",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "reuse",
+          "role": "body",
+          "text": "回用",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "exchange",
+          "role": "body",
+          "text": "换热",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "流程为机制示意，不构成工程设计参数。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "本地展示试点。图像为AI示意，示例数据不代表真实产品、设备或实验结果。普通文案与关系线/图表/表格为原生对象；独立设备插画内部像素不承诺可编辑。"
+    },
+    {
+      "id": "S03",
+      "title": "先看趋势，再讨论机理。",
+      "message": "机理判断仍需重复与对照。",
+      "concept_path": "concepts/S03.png",
+      "reference_ids": [
+        "R341"
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "先看趋势，再讨论机理。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "single",
+          "role": "body",
+          "text": "单次示例曲线，\n不能推断显著性。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "takeaway",
+          "role": "key-takeaway",
+          "text": "机理判断仍需重复与对照。",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "boundary",
+          "role": "source",
+          "text": "演示数据，非实验结果",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "chart-heading",
+          "role": "body",
+          "text": "归一化通量（示例数据）",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        },
+        {
+          "id": "chart-labels",
+          "role": "body",
+          "text": "J/J₀ · 时间（min） · 0, 20, 40, 60 · 1.00, 0.93, 0.85, 0.78",
+          "truth_status": "illustrative",
+          "source_ids": [
+            "EXAMPLE"
+          ]
+        }
+      ],
+      "speaker_notes": "本地展示试点。图像为AI示意，示例数据不代表真实产品、设备或实验结果。普通文案与关系线/图表/表格为原生对象；独立设备插画内部像素不承诺可编辑。"
+    }
+  ]
+}
