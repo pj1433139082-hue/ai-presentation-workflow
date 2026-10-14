@@ -7,6 +7,10 @@ description: Create, redesign, or resume presentation concepts, requested visual
 
 Use this skill when the task is to plan, create, redesign, or resume a presentation. The AI Presentation Workflow (APW) keeps content truth, design evidence, requested editability, and review authority connected to the selected deliverable; PPTX assembly is included only when the project selects that mode. A technically valid deck is not automatically visually accepted.
 
+## Pause for feedback at each produced stage
+
+After producing the complete current batch of **concepts**, **transparent assets and independent components**, or **assembled PPTX**, first finish its internal checks, show the actual version and ask the user whether it needs adjustment. Then pause the task and wait for an explicit reply before starting the next production stage or closing the selected delivery. Requested revisions return to that same stage for another consolidated review. Ask once per stage batch; the selected modes require one, two, or three checkpoints respectively. Follow [references/stage-feedback.md](references/stage-feedback.md) for review packets, prompts, reply scope and records. Technical readiness and agent QA do not supply the user's response; earlier authorization to continue work does not waive these stage checkpoints. A waiver requires a later explicit user instruction for the named scope.
+
 ## Select the route
 
 First inspect the brief and supplied material. Establish the audience, intended use, factual sources, delivery form, editability needs, and whether the user authorized a local draft, a formal production deliverable, or a component library.
@@ -23,22 +27,24 @@ If the requested route or required editability is unclear and materially changes
 
 For a new local showcase, use the least extensive deliverable that satisfies the request. The default is **concept only**. Moving to asset production or automatic assembly requires the user to request that deliverable; concept exploration itself must not be constrained by the future PPTX object model, transparent cutouts, exact component boundaries, or assembly layout.
 
-1. **`concept` — complete concepts only (default):** study the brief and references, then deliver contentful page concepts with source/reference lineage. This mode is complete at the concept handoff. Do not force cutout generation, object maps, PPTX assembly, or assembly review.
+1. **`concept` — complete concepts only (default):** study the brief and references, then present contentful page concepts with source/reference lineage for the concept-stage feedback checkpoint. After the user's confirmation, finish the concept handoff. Do not force cutout generation, object maps, PPTX assembly, or assembly review.
 2. **`assets` — concepts plus requested independent assets:** deliver the concepts and the separately movable visual assets requested for reuse. If the user asks to reconstruct the whole page from blank, select `brief.delivery.asset_scope: full-slide` and read [full-slide-reconstruction.md](references/full-slide-reconstruction.md): inventory background, connectors, arrowheads, ordinary copy, special glyph art and residual details, then render from independent sources to check coverage. Background plates may be opaque; only promised cutouts require alpha. This mode ends at the asset handoff; it does not imply completed PPTX assembly or require the legacy component-first approval sequence unless that project separately selected that route.
 3. **`assembly` — concepts, transparent assets, and automatic assembly:** create the requested assets, map meaningful content to tested native PPTX objects or picture objects, and assemble the deck. Review the current saved and reopened PPTX, actual renders, edit operations, and visual quality. This mode is opt-in; technical and agent checks never substitute for user visual acceptance.
 
-In `assembly`, use the selected concept as the visual baseline. Preserve its composition, proportions, hierarchy, typography, and material choices where possible; do not impose a uniform card template or force a rearrangement to make native objects easier to assemble. Compare each current PPTX render side by side with its concept. Record visible regression as a visual miss; technical success does not count as visual success. The concept and requested assets remain valid handoffs at their own mode boundaries. This comparison does not add a human approval gate to other modes.
+In `assembly`, use the selected concept as the visual baseline. Preserve its composition, proportions, hierarchy, typography, and material choices where possible; do not impose a uniform card template or force a rearrangement to make native objects easier to assemble. Compare each current PPTX render side by side with its concept. Record visible regression as a visual miss; technical success does not count as visual success. The concept and requested assets remain valid handoffs at their own mode boundaries, subject to their respective stage feedback checkpoints.
 
 The local showcase CLI implements these modes. `python scripts/apw.py init ROOT` defaults to `concept`; `--mode assets` and `--mode assembly` explicitly select the other endpoints. The selection is stored in `delivery-mode.json`. `status` reports the selected completion point; `check ROOT --stage concept|assets` validates those stages; `build` is assembly-only; and `export` packages or verifies the selected endpoint. Concept/assets builds stop at the mode boundary. Existing showcase projects without `delivery-mode.json` keep legacy assembly behavior and are not silently migrated. See the [three-mode examples](examples/showcase/modes/index.html) and [apw.py entry point](scripts/apw.py); inspect its `--help` output for the current command syntax.
 
 ## Preserve the evidence chain
 
+CLI completion and export eligibility indicate technical readiness; the CLI does not enforce these conversational checkpoints or verify user replies. The agent must show the current stage batch and wait as specified above.
+
 For every route, keep the applicable relationships inspectable. All modes preserve the brief, factual sources, reference observations, and concept lineage. Continue along the branch selected by the requested deliverable:
 
 ```text
-concept:  brief and sources → reference study → complete contentful concepts → concept handoff
-assets:   brief and sources → reference study → complete contentful concepts → requested transparent assets → asset handoff
-assembly: brief and sources → reference study → complete contentful concepts → requested assets/object map → current PPTX → actual renders → technical and visual review
+concept:  brief and sources → reference study → complete concepts → user feedback / revise → concept handoff
+assets:   brief and sources → reference study → complete concepts → user feedback / revise → requested assets → user feedback / revise → asset handoff
+assembly: brief and sources → reference study → complete concepts → user feedback / revise → requested assets → user feedback / revise → PPTX and actual renders → user feedback / revise → final handoff
 ```
 
 A contentful concept uses the slide's current copy, source-backed values or visible example labels, and real visual structure. A full-page concept image is valid as a design artifact; it is not a promise that its pixels are editable or that it can be mechanically reproduced by PPTX assembly. A final PPTX screenshot cannot be relabeled as a prior concept. In every mode, distinguish a single-page style exploration from a complete presentation. For a complete set, first establish the story and planned pages, then create and review a concept for every planned page. Declare their ordered IDs in `brief.delivery.expected_slide_ids`; the showcase check compares that optional declaration with the deck. This verifies declared coverage, not narrative quality or user acceptance. In `assembly` mode, each assembled slide needs its own prior concept; a representative pilot does not stand in for the other pages. Choose page count and representative roles from the brief, not a global five-page or three-page template.

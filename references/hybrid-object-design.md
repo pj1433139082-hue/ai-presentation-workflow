@@ -4,6 +4,8 @@ Use this guide only when the selected deliverable includes automatic PPTX assemb
 
 The local showcase modes stop at different points: `concept` (default) delivers concepts without object mapping or forced asset splitting; `assets` adds only the requested transparent visual components and stops without PPTX assembly; `assembly` continues into the object choices below. Do not apply assembly constraints to concept exploration.
 
+Apply [stage-feedback.md](stage-feedback.md): confirm the complete concept batch before asset production, confirm the asset batch before PPTX assembly, then show the current actual PPTX renders and wait for feedback before the final handoff. Object-level verification remains internal to each consolidated stage review.
+
 ## Select an object from the user's editing need
 
 Before assembly, map each meaningful concept region to its content, source, PPTX object type, and promised edit operation. Prefer the simplest object that preserves both the visual relationship and the requested editing behavior.

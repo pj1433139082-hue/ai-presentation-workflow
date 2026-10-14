@@ -12,6 +12,10 @@ _Avoid_: every showcase must assemble, transparent assets by default, inferred p
 The project-scoped workflow contract used for a deck. `contract_version: showcase-v1` with `purpose: showcase` selects the local showcase procedure. This metadata identifies the procedure; it does not grant external-release authority or prove user approval.
 _Avoid_: automatic permission, human approval
 
+**Stage feedback checkpoint**:
+A consolidated user review of the current concept batch, independent asset batch or actual assembled PPTX renders. After internal checks, show that stage's real artifacts, ask whether adjustment is needed and wait for an explicit reply before producing the next stage or closing the selected handoff. Concept/assets/assembly modes have one/two/three checkpoints. Revisions return to the same checkpoint; confirmation binds only the version and scope shown. CLI completion labels indicate technical readiness and do not prove a reply. See [stage-feedback.md](references/stage-feedback.md).
+_Avoid_: agent QA as user acceptance, silence as confirmation, earlier continue instruction as a waiver
+
 **Contentful concept**:
 A versioned design for a slide with its current copy, factual/example status, source lineage, and visual composition. It is a complete deliverable in `concept` mode and can guide assembly when assembly is selected. It is not the final editable slide or proof that the user has reviewed it.
 _Avoid_: final render used as prior concept, flattened slide background

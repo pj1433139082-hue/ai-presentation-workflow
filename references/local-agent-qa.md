@@ -2,6 +2,8 @@
 
 > Scope: This record format is the authorized low-friction QA path within the legacy G1–G5 production pipeline. `showcase-v1` uses its own actual-render review record and does not populate this schema or claim formal QA/G5.
 
+This QA policy does not waive the concept, asset and final-PPTX pauses in [stage-feedback.md](stage-feedback.md). Present the current stage batch and wait for the user's actual feedback before crossing its boundary or closing delivery; existing questions covering the same current scope may be combined. Agent QA and a technically eligible draft export do not supply that reply.
+
 Use this only after actual inspection of every current assembled page and whole-deck contact sheet, under `run-state.json.local_review_policy: {"mode": "continuous-local", "authorized_by": "user"}`. Never fill records just to make export pass. `prepare_deck_qa.py` prepares verifiable evidence, not an inspection verdict. Preserve its pending-human `qa-report.json`; the agent record never finalizes formal QA or G5.
 
 ## Current scoped replies and review actors
