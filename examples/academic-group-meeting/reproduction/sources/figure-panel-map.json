@@ -1,0 +1,242 @@
+{
+  "source_pdf": "sources/paper.pdf",
+  "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+  "source_render_scale": 4,
+  "crop_coordinates": "2x rendered page-pixel boxes converted to PDF points; direct 4x PDF clipping; source PDF SHA-256 matched. fig3c/fig3h use verified same-PDF coordinates from the skill reference map.",
+  "panels": [
+    {
+      "panel_id": "fig2d",
+      "source_path": "sources/paper.pdf",
+      "source_page": 4,
+      "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+      "crop_box_on_2x_page_render_px": [
+        940,
+        88,
+        1088,
+        322
+      ],
+      "output_path": "sources/figure-panels/fig2d.png",
+      "output_size_px": [
+        296,
+        468
+      ],
+      "output_sha256": "cc86fdd73e68c5d0d343643eb7c1ef54483665e48a912ca5dae58d49ff1338f1",
+      "source_status": "unaltered raster crop from supplied PDF figure",
+      "page_render_size_px_at_2x": [
+        1191,
+        1582
+      ],
+      "render_method": "direct 4x PDF clip; 2x inspected-page pixel coordinates divided by 2 to PDF points",
+      "visual_review_status": "agent-reviewed; final page review recorded in reviews/root-final-review.md",
+      "coordinate_source": "independent visual review of supplied PDF page render at 2x"
+    },
+    {
+      "panel_id": "fig2f",
+      "source_path": "sources/paper.pdf",
+      "source_page": 4,
+      "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+      "crop_box_on_2x_page_render_px": [
+        410,
+        330,
+        1090,
+        566
+      ],
+      "output_path": "sources/figure-panels/fig2f.png",
+      "output_size_px": [
+        1360,
+        472
+      ],
+      "output_sha256": "29d5e262b78f60e7d1807e7865092ed07edede66d7a2dfc1bf43caf15f46afa2",
+      "source_status": "unaltered raster crop from supplied PDF figure",
+      "page_render_size_px_at_2x": [
+        1191,
+        1582
+      ],
+      "render_method": "direct 4x PDF clip; 2x inspected-page pixel coordinates divided by 2 to PDF points",
+      "visual_review_status": "agent-reviewed; final page review recorded in reviews/root-final-review.md",
+      "coordinate_source": "independent visual review of supplied PDF page render at 2x"
+    },
+    {
+      "panel_id": "fig2g",
+      "source_path": "sources/paper.pdf",
+      "source_page": 4,
+      "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+      "crop_box_on_2x_page_render_px": [
+        60,
+        565,
+        400,
+        815
+      ],
+      "output_path": "sources/figure-panels/fig2g.png",
+      "output_size_px": [
+        680,
+        500
+      ],
+      "output_sha256": "ab9c52d18de2648f54c56faee10f0b8860bff88723105c62f88924d1b9dd6eec",
+      "source_status": "unaltered raster crop from supplied PDF figure",
+      "page_render_size_px_at_2x": [
+        1191,
+        1582
+      ],
+      "render_method": "direct 4x PDF clip; 2x inspected-page pixel coordinates divided by 2 to PDF points",
+      "visual_review_status": "agent-reviewed; final page review recorded in reviews/root-final-review.md",
+      "coordinate_source": "independent visual review of supplied PDF page render at 2x"
+    },
+    {
+      "panel_id": "fig2i",
+      "source_path": "sources/paper.pdf",
+      "source_page": 4,
+      "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+      "crop_box_on_2x_page_render_px": [
+        755,
+        560,
+        1095,
+        808
+      ],
+      "output_path": "sources/figure-panels/fig2i.png",
+      "output_size_px": [
+        680,
+        496
+      ],
+      "output_sha256": "755152eac072f82cac7bea51f5b22d049881be62362ac26f28c5a9fb4dc2af45",
+      "source_status": "unaltered raster crop from supplied PDF figure",
+      "page_render_size_px_at_2x": [
+        1191,
+        1582
+      ],
+      "render_method": "direct 4x PDF clip; 2x inspected-page pixel coordinates divided by 2 to PDF points",
+      "visual_review_status": "agent-reviewed; final page review recorded in reviews/root-final-review.md",
+      "coordinate_source": "independent visual review of supplied PDF page render at 2x"
+    },
+    {
+      "panel_id": "fig3c",
+      "source_path": "sources/paper.pdf",
+      "source_page": 6,
+      "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+      "crop_box_on_2x_page_render_px": [
+        134,
+        450,
+        449,
+        701
+      ],
+      "output_path": "sources/figure-panels/fig3c.png",
+      "output_size_px": [
+        630,
+        502
+      ],
+      "output_sha256": "b7909d296d4989f59c5ab9b06a1fd2fd835d610c65cf755c62fddfe9b848cd46",
+      "source_status": "unaltered raster crop from supplied PDF figure",
+      "page_render_size_px_at_2x": [
+        1191,
+        1582
+      ],
+      "render_method": "direct 4x PDF clip; 2x inspected-page pixel coordinates divided by 2 to PDF points",
+      "visual_review_status": "agent-reviewed; final page review recorded in reviews/root-final-review.md",
+      "coordinate_source": "ai-presentation-workflow/examples/academic-group-meeting/composition-map.json; matched source PDF SHA256"
+    },
+    {
+      "panel_id": "fig3h",
+      "source_path": "sources/paper.pdf",
+      "source_page": 6,
+      "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+      "crop_box_on_2x_page_render_px": [
+        767,
+        713.1,
+        1090,
+        970
+      ],
+      "output_path": "sources/figure-panels/fig3h.png",
+      "output_size_px": [
+        646,
+        514
+      ],
+      "output_sha256": "964d0ecd957ae59aefc31bd03e25aabae74d42822ad96d70bf89e4db214c187b",
+      "source_status": "unaltered raster crop from supplied PDF figure",
+      "page_render_size_px_at_2x": [
+        1191,
+        1582
+      ],
+      "render_method": "direct 4x PDF clip; 2x inspected-page pixel coordinates divided by 2 to PDF points",
+      "visual_review_status": "agent-reviewed; final page review recorded in reviews/root-final-review.md",
+      "coordinate_source": "ai-presentation-workflow/examples/academic-group-meeting/composition-map.json; matched source PDF SHA256"
+    },
+    {
+      "panel_id": "fig4f",
+      "source_path": "sources/paper.pdf",
+      "source_page": 7,
+      "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+      "crop_box_on_2x_page_render_px": [
+        780,
+        990,
+        1090,
+        1320
+      ],
+      "output_path": "sources/figure-panels/fig4f.png",
+      "output_size_px": [
+        620,
+        660
+      ],
+      "output_sha256": "d240851173415d6187b412107a2d0ce838c7649c1a2a144d66452ae69aad54f6",
+      "source_status": "unaltered raster crop from supplied PDF figure",
+      "page_render_size_px_at_2x": [
+        1191,
+        1582
+      ],
+      "render_method": "direct 4x PDF clip; 2x inspected-page pixel coordinates divided by 2 to PDF points",
+      "visual_review_status": "agent-reviewed; final page review recorded in reviews/root-final-review.md",
+      "coordinate_source": "independent visual review of supplied PDF page render at 2x"
+    },
+    {
+      "panel_id": "fig5d",
+      "source_path": "sources/paper.pdf",
+      "source_page": 9,
+      "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+      "crop_box_on_2x_page_render_px": [
+        620,
+        372,
+        1080,
+        520
+      ],
+      "output_path": "sources/figure-panels/fig5d.png",
+      "output_size_px": [
+        920,
+        296
+      ],
+      "output_sha256": "a29bfec5a612cf9ea7c590b7c0a707978fcd5f58d105d644736a63730d2b5dce",
+      "source_status": "unaltered raster crop from supplied PDF figure",
+      "page_render_size_px_at_2x": [
+        1191,
+        1582
+      ],
+      "render_method": "direct 4x PDF clip; 2x inspected-page pixel coordinates divided by 2 to PDF points",
+      "visual_review_status": "agent-reviewed; final page review recorded in reviews/root-final-review.md",
+      "coordinate_source": "independent visual review of supplied PDF page render at 2x"
+    },
+    {
+      "panel_id": "fig5f",
+      "source_path": "sources/paper.pdf",
+      "source_page": 9,
+      "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+      "crop_box_on_2x_page_render_px": [
+        615,
+        710,
+        1095,
+        985
+      ],
+      "output_path": "sources/figure-panels/fig5f.png",
+      "output_size_px": [
+        960,
+        550
+      ],
+      "output_sha256": "5dfe22e22f8ea19055fa889d485972190f940e413af3a274f91652d91285a02b",
+      "source_status": "unaltered raster crop from supplied PDF figure",
+      "page_render_size_px_at_2x": [
+        1191,
+        1582
+      ],
+      "render_method": "direct 4x PDF clip; 2x inspected-page pixel coordinates divided by 2 to PDF points",
+      "visual_review_status": "agent-reviewed; final page review recorded in reviews/root-final-review.md",
+      "coordinate_source": "independent visual review of supplied PDF page render at 2x"
+    }
+  ]
+}

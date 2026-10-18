@@ -1,0 +1,6 @@
+{
+  "tool": "academic_group_meeting.py",
+  "profile": "academic-group-meeting-v1",
+  "source_reference_sha256": "38325a34b1fd6ae689225c02f4b1d84bdbbe1cb335ccffadb7f1bea66c613640",
+  "scope": "scaffold only; not generated concepts, asset extraction, or an APW/G4 check pass"
+}

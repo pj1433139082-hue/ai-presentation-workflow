@@ -1,0 +1,169 @@
+{
+  "ok": true,
+  "errors": [],
+  "slide_count": 11,
+  "seconds": 900,
+  "s04_preserved": true,
+  "published_panels": [
+    {
+      "slide": "S05",
+      "panel": "fig2d",
+      "sha256": "be4b3b0dc3fec27d923ff39b9a9752c818df0fe8a3d66ee9f73142519326e579",
+      "rectangle": [
+        977,
+        195,
+        310,
+        500
+      ],
+      "operation": "unchanged source image rendered with contain; no generated data"
+    },
+    {
+      "slide": "S06",
+      "panel": "fig2f",
+      "sha256": "11956d09e88d98865315cfd75b049dab88912dbfad7852c58ebaef61ce753869",
+      "rectangle": [
+        540,
+        220,
+        1015,
+        360
+      ],
+      "operation": "unchanged source image rendered with contain; no generated data"
+    },
+    {
+      "slide": "S08",
+      "panel": "fig3c",
+      "sha256": "b7909d296d4989f59c5ab9b06a1fd2fd835d610c65cf755c62fddfe9b848cd46",
+      "rectangle": [
+        80,
+        350,
+        660,
+        350
+      ],
+      "operation": "unchanged source image rendered with contain; no generated data"
+    },
+    {
+      "slide": "S08",
+      "panel": "fig3h",
+      "sha256": "964d0ecd957ae59aefc31bd03e25aabae74d42822ad96d70bf89e4db214c187b",
+      "rectangle": [
+        835,
+        350,
+        660,
+        350
+      ],
+      "operation": "unchanged source image rendered with contain; no generated data"
+    },
+    {
+      "slide": "S09",
+      "panel": "fig5f",
+      "sha256": "df42b9fbbc165bd94eb602f896cc346454d64151116125aeb2f62f1b4008bad4",
+      "rectangle": [
+        900,
+        378,
+        650,
+        330
+      ],
+      "operation": "unchanged source image rendered with contain; no generated data"
+    }
+  ],
+  "browser_resources": [
+    {
+      "id": "S01",
+      "broken": [],
+      "evidence": []
+    },
+    {
+      "id": "S02",
+      "broken": [],
+      "evidence": []
+    },
+    {
+      "id": "S03",
+      "broken": [],
+      "evidence": []
+    },
+    {
+      "id": "S05",
+      "broken": [],
+      "evidence": [
+        {
+          "source": "fig2d",
+          "width": 296,
+          "height": 477,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "broken": [],
+      "evidence": [
+        {
+          "source": "fig2f",
+          "width": 1360,
+          "height": 464,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "broken": [],
+      "evidence": []
+    },
+    {
+      "id": "S08",
+      "broken": [],
+      "evidence": [
+        {
+          "source": "fig3c",
+          "width": 630,
+          "height": 502,
+          "fit": "contain"
+        },
+        {
+          "source": "fig3h",
+          "width": 646,
+          "height": 514,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "broken": [],
+      "evidence": [
+        {
+          "source": "fig5f",
+          "width": 888,
+          "height": 520,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "broken": [],
+      "evidence": []
+    },
+    {
+      "id": "S11",
+      "broken": [],
+      "evidence": []
+    }
+  ],
+  "scope": "browser concept renders; not PPTX",
+  "visual_review": "separate human/agent record required",
+  "assets": "not-started",
+  "pptx": "not-started",
+  "review_links_ok": true,
+  "revision_images_local": 11,
+  "additional_errors": [],
+  "human_feedback": "complete academic-v6 concepts accepted",
+  "human_batch_feedback": {
+    "status": "accepted",
+    "date": "2026-10-18",
+    "record": "provenance/user-acceptance.json",
+    "scope": "complete academic-v6 concepts"
+  }
+}

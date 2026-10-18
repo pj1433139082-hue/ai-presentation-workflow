@@ -9,3 +9,5 @@ Historical generation records can contain the original local input/output paths 
 `.gitattributes` preserves raw file bytes, including text line endings, so a checkout does not invalidate evidence hashes. Public distribution excludes caches, local backups, internal root reports, and superseded experimental PPTX copies. The disposable copy used by the current editability evidence is retained.
 
 The complete industry and competition sets end at concept mode. The three-page PPTX is an independent reconstruction experiment; publication does not change its user-acceptance or formal-assembly status.
+
+The academic group-meeting preset adds the accepted 11-page reference and a separately generated, user-accepted 11-page reproduction for the same Jiang et al. paper. Both are concept-only. The reproduction includes its original-paper PDF/panels, prompts, actual generated revisions, composition records and hash-bound user response; private scratch inspection crops and one-off scripts that reset draft states are excluded. New-image generation remains stochastic. Publication does not imply that other topics, assets or assembled PPTX files have been visually accepted.

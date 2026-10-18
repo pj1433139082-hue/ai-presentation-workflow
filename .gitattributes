@@ -1,3 +1,4 @@
 # Project evidence hashes bind raw bytes, including text line endings.
 # Preserve those bytes during Git add/checkout on every operating system.
 * -text
+*.pdf binary

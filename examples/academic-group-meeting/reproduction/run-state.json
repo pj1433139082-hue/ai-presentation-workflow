@@ -1,0 +1,13 @@
+{
+  "mode": "showcase-local-draft",
+  "stage": "concept-user-accepted",
+  "human_gates": {
+    "G1": "not-claimed",
+    "G2": "not-claimed",
+    "G3": "not-claimed",
+    "G4": "not-claimed",
+    "G5": "not-claimed"
+  },
+  "user_visual_acceptance": "accepted; provenance/user-acceptance.json",
+  "notes": "11页概念已获用户明确认可，并指定为主要科研展示风格。素材与PPTX未开始。"
+}

@@ -13,6 +13,8 @@ After producing the complete current batch of **concepts**, **transparent assets
 
 ## Select the route
 
+For a **research group meeting, graduate journal club, paper deep-read presentation, or scientific progress deck**, read [references/academic-group-meeting.md](references/academic-group-meeting.md). This user-accepted preset designs complete scientific concepts for every page from actual visual references, preserves source-data panels and uses local prompt edits; it does not fix the page count or treat an accepted concept as an accepted PPTX.
+
 First inspect the brief and supplied material. Establish the audience, intended use, factual sources, delivery form, editability needs, and whether the user authorized a local draft, a formal production deliverable, or a component library.
 
 - **Local design showcase:** Use `project-kind.json` with `contract_version: showcase-v1` and `purpose: showcase` only for an explicitly scoped, reversible local showcase. This declares the project route; it does not itself grant permission, represent user acceptance, or authorize publication. Read [references/showcase-workflow.md](references/showcase-workflow.md).

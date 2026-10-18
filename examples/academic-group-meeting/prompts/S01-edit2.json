@@ -1,0 +1,20 @@
+{
+  "id": "S01",
+  "operation": "local-edit",
+  "prompt": "Only change the gold experimental-feedback loop in the upper large graphical-abstract panel. Remove the current entire gold loop under encoder/embedding, which incorrectly points into representation learning. Instead make a SHORT local gold loop solely beneath the RIGHTMOST candidate-and-experiment box, tail from experiment, arrowhead to candidate selection; label 实验反馈更新候选选择. Do not connect this return into input database, encoder or embedding. Everything else, including full page layout, all typography, bottom three question panels, science icons and 16:9 canvas must remain.",
+  "output": {
+    "path": "history/S01-edit2.png",
+    "sha256": "d5f75ff3b9ba821187cc5113a48629518259a5ff6c4ab8af71896b038661e295"
+  },
+  "original_tool_output_hint": "Generated images are saved to C:\\Users\\14331\\.codex\\generated_images\\01a12a23-3a19-7570-91f2-105f733eefbf as C:\\Users\\14331\\.codex\\generated_images\\01a12a23-3a19-7570-91f2-105f733eefbf\\exec-5c1910b5-33be-4c5d-aee8-eed3aa417f5a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "style_reference": "concepts/S04.png",
+  "parent_record": "S01-edit1.json",
+  "inputs": [
+    {
+      "role": "edit-target",
+      "path": "history/S01-edit1.png",
+      "sha256": "9a6442a6cc75908d503eaa96542eabf80b2bb1d900e276ae833b92b67d1c4e33"
+    }
+  ],
+  "historical_reference_path_do_not_execute": "C:/Users/14331/.codex/generated_images/01a12a23-3a19-7570-91f2-105f733eefbf/exec-5577daf6-6c76-49e6-a0f3-bd509f2940ca.png"
+}

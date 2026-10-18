@@ -1,5 +1,11 @@
 # Third-party notices
 
+## Scientific group-meeting example
+
+Chang Jiang et al., “Transfer learning guided discovery of efficient perovskite oxide for alkaline water oxidation,” Nature Communications 15, 6301 (2024), [doi:10.1038/s41467-024-50605-5](https://doi.org/10.1038/s41467-024-50605-5). The article is distributed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); the bundled PDF and figure panels retain source attribution and their original credits. Panels are cropped from the source PDF, scaled without aspect-ratio distortion and placed alongside clearly identified explanatory schematics. The repository's code license does not replace the article's license or third-party credit lines. Generated slide concepts are explanatory presentations, not original experimental evidence.
+
+## Image prompt references
+
 Reference case prompts and images attributed to [awesome-gpt-image-2](https://github.com/freestylefly/awesome-gpt-image-2) retain their per-case source records. Its repository license is reproduced below.
 
 MIT License

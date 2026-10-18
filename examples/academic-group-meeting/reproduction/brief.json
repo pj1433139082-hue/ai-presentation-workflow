@@ -1,0 +1,61 @@
+{
+  "profile": "academic-group-meeting-v1",
+  "paper_title": "Transfer learning guided discovery of efficient perovskite oxide for alkaline water oxidation",
+  "audience": "研究生学术组会听众；已了解基础电催化和机器学习术语",
+  "intent": "论文精读",
+  "duration_seconds": 900,
+  "delivery_mode": "concept",
+  "expected_slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11"
+  ],
+  "source_map": [
+    {
+      "id": "paper-pdf",
+      "kind": "provided-primary-research-article",
+      "truth_status": "verified",
+      "path": "sources/paper.pdf",
+      "sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+      "locator": "指定全文 PDF，pp.1–15；Jiang et al., Nature Communications 15, Article 6301 (2024), DOI 10.1038/s41467-024-50605-5",
+      "role": "唯一事实来源；未加载补充材料或外部网页"
+    }
+  ],
+  "style_reference": {
+    "path": "style-reference/S04.png",
+    "sha256": "38325a34b1fd6ae689225c02f4b1d84bdbbe1cb335ccffadb7f1bea66c613640",
+    "authority": "技能包内已认可风格参考；只约束视觉语法，不作为本论文的科学事实"
+  },
+  "page_plan": "基于本轮读取的指定 PDF 独立编排；11 页 15 分钟，不复用已认可样例的完整版式/成品页。",
+  "facts": "所有论文事实限定在指定 PDF pp.1–15；汇报者建议明确标注为建议；补充材料、作者代码和外部复现实验未核查。",
+  "project_id": "academic-workflow-reproduction-20261018-independent-deck",
+  "goal": "15 分钟中文论文精读，解释迁移学习/集成/主动学习如何提出碱性析氧钙钛矿候选，并审视材料与模型证据边界",
+  "quality_profile": "draft",
+  "language": "zh-CN",
+  "delivery": {
+    "format": "complete-contentful-concept-pngs",
+    "aspect_ratio": "16:9",
+    "scope": "local-showcase-only",
+    "expected_slide_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S11"
+    ]
+  }
+}

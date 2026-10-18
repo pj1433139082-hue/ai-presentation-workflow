@@ -1,0 +1,321 @@
+{
+  "scope": "historical accepted concept reconstruction, not a new-generation guarantee",
+  "slides": [
+    {
+      "slide": "S01",
+      "base": {
+        "path": "history/S01-edit2.png",
+        "sha256": "d5f75ff3b9ba821187cc5113a48629518259a5ff6c4ab8af71896b038661e295"
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "panels": [],
+      "published_concept": {
+        "path": "concepts/S01.png",
+        "sha256": "b3f051fd91eeaaacc269609faae7cdf71746375b754739d5ff01f10845aca2c4"
+      },
+      "operation": "browser image-fit composition; source panels are inserted AFTER image generation/editing; never sent for generative redrawing"
+    },
+    {
+      "slide": "S02",
+      "base": {
+        "path": "history/S02-generation.png",
+        "sha256": "02c279e73e8ba7d9f4505291e679c470c84fe93c99f403550dcd0d6e2cdbc5ed"
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "panels": [],
+      "published_concept": {
+        "path": "concepts/S02.png",
+        "sha256": "101ec5929751166070e38104c2d23962485a5eccfcef10281a1f744b3940077c"
+      },
+      "operation": "browser image-fit composition; source panels are inserted AFTER image generation/editing; never sent for generative redrawing"
+    },
+    {
+      "slide": "S03",
+      "base": {
+        "path": "history/S03-edit2.png",
+        "sha256": "a4bb75a4bf90e97598f0e5ce950c5255d36701055cf93b093d2dbc23845a0c79"
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "panels": [],
+      "published_concept": {
+        "path": "concepts/S03.png",
+        "sha256": "2e64e5180a93774ab90e30c3ce2169b05d3cf4efc38a12b29755b221cf88f565"
+      },
+      "operation": "browser image-fit composition; source panels are inserted AFTER image generation/editing; never sent for generative redrawing"
+    },
+    {
+      "slide": "S04",
+      "base": {
+        "path": "concepts/S04.png",
+        "sha256": "38325a34b1fd6ae689225c02f4b1d84bdbbe1cb335ccffadb7f1bea66c613640"
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "panels": [],
+      "published_concept": {
+        "path": "concepts/S04.png",
+        "sha256": "38325a34b1fd6ae689225c02f4b1d84bdbbe1cb335ccffadb7f1bea66c613640"
+      },
+      "operation": "browser image-fit composition; source panels are inserted AFTER image generation/editing; never sent for generative redrawing"
+    },
+    {
+      "slide": "S05",
+      "base": {
+        "path": "history/S05-edit1.png",
+        "sha256": "3d916808de5048e273b21213e6eda4fa9695d7fad46eab7daeeccd9caf8644f8"
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "panels": [
+        {
+          "slide": "S05",
+          "panel": "fig2d",
+          "sha256": "be4b3b0dc3fec27d923ff39b9a9752c818df0fe8a3d66ee9f73142519326e579",
+          "rectangle": [
+            977,
+            195,
+            310,
+            500
+          ],
+          "operation": "unchanged source image rendered with contain; no generated data",
+          "path": "sources/fig2d.png",
+          "pdf_origin": {
+            "page": 4,
+            "clip_points": [
+              471,
+              45,
+              545,
+              164.2
+            ],
+            "render_scale": 4,
+            "pdf_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+            "attribution": "Jiang et al. 2024; CC BY 4.0"
+          }
+        }
+      ],
+      "published_concept": {
+        "path": "concepts/S05.png",
+        "sha256": "c1105e55d01a181136c869c07d627f7c2ddf756d98d0a75bd440989b53eb80e5"
+      },
+      "operation": "browser image-fit composition; source panels are inserted AFTER image generation/editing; never sent for generative redrawing"
+    },
+    {
+      "slide": "S06",
+      "base": {
+        "path": "history/S06-generation.png",
+        "sha256": "7407733c8694fbc2b5540dd4517cc209d3f2381bbb6a6e185a5248920b182efd"
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "panels": [
+        {
+          "slide": "S06",
+          "panel": "fig2f",
+          "sha256": "11956d09e88d98865315cfd75b049dab88912dbfad7852c58ebaef61ce753869",
+          "rectangle": [
+            540,
+            220,
+            1015,
+            360
+          ],
+          "operation": "unchanged source image rendered with contain; no generated data",
+          "path": "sources/fig2f.png",
+          "pdf_origin": {
+            "page": 4,
+            "clip_points": [
+              204,
+              164.5,
+              544,
+              280.5
+            ],
+            "render_scale": 4,
+            "pdf_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+            "attribution": "Jiang et al. 2024; CC BY 4.0"
+          }
+        }
+      ],
+      "published_concept": {
+        "path": "concepts/S06.png",
+        "sha256": "af964f42dead8810916a2739c95a528d44327e2f6e18f2ee56d61b86be1d01cd"
+      },
+      "operation": "browser image-fit composition; source panels are inserted AFTER image generation/editing; never sent for generative redrawing"
+    },
+    {
+      "slide": "S07",
+      "base": {
+        "path": "history/S07-edit1.png",
+        "sha256": "95cfe642cded901e42b7cc7ab4354c5eda8c1f105850ae9b4dbbc6a56f4e9143"
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "panels": [],
+      "published_concept": {
+        "path": "concepts/S07.png",
+        "sha256": "aacf2dd302c7782d6abee2d3127b41a2ca0f258e4e59c5036f053e030cf006da"
+      },
+      "operation": "browser image-fit composition; source panels are inserted AFTER image generation/editing; never sent for generative redrawing"
+    },
+    {
+      "slide": "S08",
+      "base": {
+        "path": "history/S08-edit1.png",
+        "sha256": "30e21a4cdbafa6cd9087716f44d7b1650f13b2747fbb9d7dd81b0e89c3c16725"
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "panels": [
+        {
+          "slide": "S08",
+          "panel": "fig3c",
+          "sha256": "b7909d296d4989f59c5ab9b06a1fd2fd835d610c65cf755c62fddfe9b848cd46",
+          "rectangle": [
+            80,
+            350,
+            660,
+            350
+          ],
+          "operation": "unchanged source image rendered with contain; no generated data",
+          "path": "sources/fig3c.png",
+          "pdf_origin": {
+            "page": 6,
+            "clip_points": [
+              67,
+              225,
+              224.5,
+              350.5
+            ],
+            "render_scale": 4,
+            "pdf_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+            "attribution": "Jiang et al. 2024; CC BY 4.0"
+          }
+        },
+        {
+          "slide": "S08",
+          "panel": "fig3h",
+          "sha256": "964d0ecd957ae59aefc31bd03e25aabae74d42822ad96d70bf89e4db214c187b",
+          "rectangle": [
+            835,
+            350,
+            660,
+            350
+          ],
+          "operation": "unchanged source image rendered with contain; no generated data",
+          "path": "sources/fig3h.png",
+          "pdf_origin": {
+            "page": 6,
+            "clip_points": [
+              383.5,
+              356.55,
+              545,
+              485
+            ],
+            "render_scale": 4,
+            "pdf_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+            "attribution": "Jiang et al. 2024; CC BY 4.0"
+          }
+        }
+      ],
+      "published_concept": {
+        "path": "concepts/S08.png",
+        "sha256": "f0a4afaf02a8a88c30ce70a959623cdc7152d3944e9a3172a0c050b9b40abe2d"
+      },
+      "operation": "browser image-fit composition; source panels are inserted AFTER image generation/editing; never sent for generative redrawing"
+    },
+    {
+      "slide": "S09",
+      "base": {
+        "path": "history/S09-edit1.png",
+        "sha256": "05422980e713b7c1a71595ba480c6249e990e379111b8a6aa0a780619c439585"
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "panels": [
+        {
+          "slide": "S09",
+          "panel": "fig5f",
+          "sha256": "df42b9fbbc165bd94eb602f896cc346454d64151116125aeb2f62f1b4008bad4",
+          "rectangle": [
+            900,
+            378,
+            650,
+            330
+          ],
+          "operation": "unchanged source image rendered with contain; no generated data",
+          "path": "sources/fig5f.png",
+          "pdf_origin": {
+            "page": 9,
+            "clip_points": [
+              322,
+              355,
+              544,
+              485
+            ],
+            "render_scale": 4,
+            "pdf_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+            "attribution": "Jiang et al. 2024; CC BY 4.0"
+          }
+        }
+      ],
+      "published_concept": {
+        "path": "concepts/S09.png",
+        "sha256": "903b5f670afad614e6aaaa0081f449ca77065d33842a2b5cb9dabcbd20aee53b"
+      },
+      "operation": "browser image-fit composition; source panels are inserted AFTER image generation/editing; never sent for generative redrawing"
+    },
+    {
+      "slide": "S10",
+      "base": {
+        "path": "history/S10-edit1.png",
+        "sha256": "2af045fef463dcc91141625d0dbd4c0a6bd30d0969deb930396e6aa6e4174139"
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "panels": [],
+      "published_concept": {
+        "path": "concepts/S10.png",
+        "sha256": "fcfdc8039baf5982d6df27255ae3cb37a0060ad7989ef1be1e2683cc8e11a148"
+      },
+      "operation": "browser image-fit composition; source panels are inserted AFTER image generation/editing; never sent for generative redrawing"
+    },
+    {
+      "slide": "S11",
+      "base": {
+        "path": "history/S11-edit2.png",
+        "sha256": "40286727c738564b420c0899426ce0d306e8a15a96b8edde831fd85217320ffb"
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "panels": [],
+      "published_concept": {
+        "path": "concepts/S11.png",
+        "sha256": "4f6b7e962f2b18104945a10a85ff53869499501f80456ef1fb515580dfe5ebd0"
+      },
+      "operation": "browser image-fit composition; source panels are inserted AFTER image generation/editing; never sent for generative redrawing"
+    }
+  ]
+}

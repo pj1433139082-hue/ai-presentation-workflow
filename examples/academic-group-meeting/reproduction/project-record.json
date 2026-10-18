@@ -1,0 +1,29 @@
+{
+  "task": "Independent APW academic group-meeting reproduction",
+  "source_original": "D:\\obsidian_work\\cangku\\paper_work\\.scratch\\academic-group-meeting-20261017\\sources\\Jiang-2024-Nature-Communications.pdf",
+  "source_copy": "sources/paper.pdf",
+  "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+  "source_pages": 15,
+  "style_reference": "style-reference/S04.png",
+  "style_reference_sha256": "38325a34b1fd6ae689225c02f4b1d84bdbbe1cb335ccffadb7f1bea66c613640",
+  "route": "showcase-v1",
+  "delivery_mode": "concept",
+  "slide_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11"
+  ],
+  "duration_seconds": 900,
+  "generation_status": "11 fresh concepts generated and user accepted; 9 source panels composed",
+  "user_feedback": "没问题这个 这个可以作为 ppt 的主要展示风格 很完美",
+  "authorization_boundary": "No assets package, no PPTX, no prompt to user from this subtask.",
+  "acceptance_record": "provenance/user-acceptance.json"
+}

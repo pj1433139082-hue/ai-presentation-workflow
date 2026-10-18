@@ -1,0 +1,1544 @@
+{
+  "version": "independent-concept-v1",
+  "slides": [
+    {
+      "id": "S01",
+      "title": "迁移学习辅助碱性析氧钙钛矿发现",
+      "message": "把广泛组成数据转成可迭代的 OER 候选筛选",
+      "seconds": 30,
+      "role": "opening",
+      "purpose": "把广泛组成数据转成可迭代的 OER 候选筛选",
+      "concept_path": "concepts/S01.png",
+      "reference_ids": [
+        "S04-style-anchor"
+      ],
+      "source_refs": [
+        {
+          "source_id": "paper-pdf",
+          "locator": "摘要、pp.4–6、11",
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A5"
+          ]
+        }
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "迁移学习辅助碱性析氧钙钛矿发现",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "key",
+          "role": "key-takeaway",
+          "text": "把广泛组成数据转成可迭代的 OER 候选筛选",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-01",
+          "role": "supporting-label",
+          "text": "论文精读 · 研究生组会 · 15 分钟",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-02",
+          "role": "supporting-label",
+          "text": "Chang Jiang et al. | Nature Communications 15, 6301 (2024)",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-03",
+          "role": "supporting-label",
+          "text": "DOI: 10.1038/s41467-024-50605-5",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-04",
+          "role": "supporting-label",
+          "text": "16,050 个组成 → 36 个新样品 → 13 个纯相",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-05",
+          "role": "supporting-label",
+          "text": "PSCFM：315 mV @ 10 mA cm⁻²",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "source-footer",
+          "role": "source-footer",
+          "text": "Jiang et al. · Nature Communications 15, 6301 (2024) · 摘要、pp.4–6、11 · 01/11",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A5"
+          ]
+        }
+      ],
+      "scientific_relationships": "封面式图形摘要：用一条由左向右上扬的弧线连接组成矩阵、二维嵌入点云、合成坩埚与电化学槽；右上角用四个小型数字标记呈现研究量级与主结果。顶部保留大标题和简短论文出处。晶格只画作明确标注“结构示意”的抽象单胞，不像真实显微图。",
+      "layout_intent": "封面式图形摘要：用一条由左向右上扬的弧线连接组成矩阵、二维嵌入点云、合成坩埚与电化学槽；右上角用四个小型数字标记呈现研究量级与主结果。顶部保留大标题和简短论文出处。晶格只画作明确标注“结构示意”的抽象单胞，不像真实显微图。",
+      "original_evidence_panels": [],
+      "visual_truth_boundary": "生成图仅作关系示意；列明面板均为指定论文原图裁切并直接嵌入。",
+      "footer": "Jiang et al. · Nature Communications 15, 6301 (2024) · 摘要、pp.4–6、11 · 01/11"
+    },
+    {
+      "id": "S02",
+      "title": "组合空间远大于可用的 OER 标签",
+      "message": "跨来源测试条件差异让小样本预测更难泛化",
+      "seconds": 75,
+      "role": "research-question",
+      "purpose": "跨来源测试条件差异让小样本预测更难泛化",
+      "concept_path": "concepts/S02.png",
+      "reference_ids": [
+        "S04-style-anchor"
+      ],
+      "source_refs": [
+        {
+          "source_id": "paper-pdf",
+          "locator": "pp.1–2",
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        }
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "组合空间远大于可用的 OER 标签",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "key",
+          "role": "key-takeaway",
+          "text": "跨来源测试条件差异让小样本预测更难泛化",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "body-01",
+          "role": "supporting-label",
+          "text": "94 条 OER 记录",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "body-02",
+          "role": "supporting-label",
+          "text": "46 条非 OER 钙钛矿记录",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "body-03",
+          "role": "supporting-label",
+          "text": "负载 · 电解液 · 基底存在差异",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "body-04",
+          "role": "supporting-label",
+          "text": "预测目标：η @ 10 mA cm⁻²",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "body-05",
+          "role": "supporting-label",
+          "text": "问题：如何借用更广的组成知识？",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "source-footer",
+          "role": "source-footer",
+          "text": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.1–2 · 02/11",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        }
+      ],
+      "scientific_relationships": "空间不均衡的研究问题地图：左侧是密集的钙钛矿组成组合网格，右侧是稀疏且条件标签不一的 OER 数据点，中间用放大的漏斗展示可用标签被实验条件切分。不要绘制数值坐标图；将 94 与 46 用两组实体符号表示，并在底部清楚标出本文预测目标。",
+      "layout_intent": "空间不均衡的研究问题地图：左侧是密集的钙钛矿组成组合网格，右侧是稀疏且条件标签不一的 OER 数据点，中间用放大的漏斗展示可用标签被实验条件切分。不要绘制数值坐标图；将 94 与 46 用两组实体符号表示，并在底部清楚标出本文预测目标。",
+      "original_evidence_panels": [],
+      "visual_truth_boundary": "生成图仅作关系示意；列明面板均为指定论文原图裁切并直接嵌入。",
+      "footer": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.1–2 · 02/11"
+    },
+    {
+      "id": "S03",
+      "title": "本文把组成迁移、局部建模与全局集成连起来",
+      "message": "额外数据进入表示学习，OER 标签负责下游活性预测",
+      "seconds": 60,
+      "role": "related-work",
+      "purpose": "额外数据进入表示学习，OER 标签负责下游活性预测",
+      "concept_path": "concepts/S03.png",
+      "reference_ids": [
+        "S04-style-anchor"
+      ],
+      "source_refs": [
+        {
+          "source_id": "paper-pdf",
+          "locator": "pp.1–2",
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        }
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "本文把组成迁移、局部建模与全局集成连起来",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "key",
+          "role": "key-takeaway",
+          "text": "额外数据进入表示学习，OER 标签负责下游活性预测",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "body-01",
+          "role": "supporting-label",
+          "text": "传统试错：覆盖慢",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "body-02",
+          "role": "supporting-label",
+          "text": "高通量 DFT：有算法与计算成本",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "body-03",
+          "role": "supporting-label",
+          "text": "简化描述符：可能丢信息",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "body-04",
+          "role": "supporting-label",
+          "text": "本文：迁移组成表征 + 聚类集成 + 实验闭环",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "body-05",
+          "role": "supporting-label",
+          "text": "输入信息：组成与反应条件",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        },
+        {
+          "id": "source-footer",
+          "role": "source-footer",
+          "text": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.1–2 · 03/11",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A2"
+          ]
+        }
+      ],
+      "scientific_relationships": "三条路线在视觉上并列：经验搜索、DFT 计算、数据驱动；它们汇入一个新设计的表示学习模块，再连接聚类模型和候选实验。用不同线型表示既有瓶颈与本文增量；不要画卡片墙，不要写领域优先性或未经文献比较的“首次”。",
+      "layout_intent": "三条路线在视觉上并列：经验搜索、DFT 计算、数据驱动；它们汇入一个新设计的表示学习模块，再连接聚类模型和候选实验。用不同线型表示既有瓶颈与本文增量；不要画卡片墙，不要写领域优先性或未经文献比较的“首次”。",
+      "original_evidence_panels": [],
+      "visual_truth_boundary": "生成图仅作关系示意；列明面板均为指定论文原图裁切并直接嵌入。",
+      "footer": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.1–2 · 03/11"
+    },
+    {
+      "id": "S04",
+      "title": "非 OER 数据改善了组成重建",
+      "message": "更好的低维表示是中间证据，不等于 OER 预测已获验证",
+      "seconds": 105,
+      "role": "representation-evidence",
+      "purpose": "更好的低维表示是中间证据，不等于 OER 预测已获验证",
+      "concept_path": "concepts/S04.png",
+      "reference_ids": [
+        "S04-style-anchor"
+      ],
+      "source_refs": [
+        {
+          "source_id": "paper-pdf",
+          "locator": "p.2, Fig.2c–d",
+          "evidence_ids": [
+            "A2",
+            "A3"
+          ]
+        }
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "非 OER 数据改善了组成重建",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "id": "key",
+          "role": "key-takeaway",
+          "text": "更好的低维表示是中间证据，不等于 OER 预测已获验证",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "id": "body-01",
+          "role": "supporting-label",
+          "text": "20 维阳离子编码 → 2 维嵌入 → 重建 20 维特征",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "id": "body-02",
+          "role": "supporting-label",
+          "text": "测试集 R² = 0.77",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "id": "body-03",
+          "role": "supporting-label",
+          "text": "全数据 R² = 0.96",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "id": "body-04",
+          "role": "supporting-label",
+          "text": "非 OER 重建 RMSE：3.25 → 1.05",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "id": "body-05",
+          "role": "supporting-label",
+          "text": "重建 RMSE 与 OER 过电位 RMSE 不同",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A3"
+          ]
+        },
+        {
+          "id": "source-footer",
+          "role": "source-footer",
+          "text": "Jiang et al. · Nature Communications 15, 6301 (2024) · p.2, Fig.2c–d · 04/11",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A3"
+          ]
+        }
+      ],
+      "scientific_relationships": "从左侧 20 个组成特征的编码带收缩到中间二维嵌入，再扩展到右侧重建向量；下方或右侧设置有充分留白的原文证据窗供后期嵌入 Fig.2d 原面板。测试/全数据 R² 仅作简短标注，不画新的假数据图。页脚明确两个 RMSE 任务不同。",
+      "layout_intent": "从左侧 20 个组成特征的编码带收缩到中间二维嵌入，再扩展到右侧重建向量；下方或右侧设置有充分留白的原文证据窗供后期嵌入 Fig.2d 原面板。测试/全数据 R² 仅作简短标注，不画新的假数据图。页脚明确两个 RMSE 任务不同。",
+      "original_evidence_panels": [
+        {
+          "id": "fig2d",
+          "caption": "Fig. 2d 原始重建 RMSE 面板"
+        }
+      ],
+      "visual_truth_boundary": "生成图仅作关系示意；列明面板均为指定论文原图裁切并直接嵌入。",
+      "footer": "Jiang et al. · Nature Communications 15, 6301 (2024) · p.2, Fig.2c–d · 04/11"
+    },
+    {
+      "id": "S05",
+      "title": "8.90 mV 的全局集成结果需要按原文口径解读",
+      "message": "模型比较支持分簇集成，但不能直接读成未知材料的外部误差",
+      "seconds": 75,
+      "role": "model-evaluation",
+      "purpose": "模型比较支持分簇集成，但不能直接读成未知材料的外部误差",
+      "concept_path": "concepts/S05.png",
+      "reference_ids": [
+        "S04-style-anchor"
+      ],
+      "source_refs": [
+        {
+          "source_id": "paper-pdf",
+          "locator": "pp.2–4, Fig.2f",
+          "evidence_ids": [
+            "A2",
+            "A4"
+          ]
+        }
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "8.90 mV 的全局集成结果需要按原文口径解读",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A4"
+          ]
+        },
+        {
+          "id": "key",
+          "role": "key-takeaway",
+          "text": "模型比较支持分簇集成，但不能直接读成未知材料的外部误差",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A4"
+          ]
+        },
+        {
+          "id": "body-01",
+          "role": "supporting-label",
+          "text": "整库 refit：42.79 mV",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A4"
+          ]
+        },
+        {
+          "id": "body-02",
+          "role": "supporting-label",
+          "text": "13 簇局部预测：29.8 mV",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A4"
+          ]
+        },
+        {
+          "id": "body-03",
+          "role": "supporting-label",
+          "text": "晶相分簇局部预测：33.45 mV",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A4"
+          ]
+        },
+        {
+          "id": "body-04",
+          "role": "supporting-label",
+          "text": "多种分簇全局集成：8.90 mV",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A4"
+          ]
+        },
+        {
+          "id": "body-05",
+          "role": "supporting-label",
+          "text": "作者提示各策略的 RMSE 计算有差别",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A4"
+          ]
+        },
+        {
+          "id": "source-footer",
+          "role": "source-footer",
+          "text": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.2–4, Fig.2f · 05/11",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A2",
+            "A4"
+          ]
+        }
+      ],
+      "scientific_relationships": "主视觉为由“整库拟合—局部模型—全局集成”三段组成的模型结构剖面，原文 Fig.2f 作为完整证据窗占据视觉重心；数值只在图外以少量文字锚点补充。用金色边注标出“RMSE 口径不同”，不要重画柱状图或把所有误差画成同一独立测试集。",
+      "layout_intent": "主视觉为由“整库拟合—局部模型—全局集成”三段组成的模型结构剖面，原文 Fig.2f 作为完整证据窗占据视觉重心；数值只在图外以少量文字锚点补充。用金色边注标出“RMSE 口径不同”，不要重画柱状图或把所有误差画成同一独立测试集。",
+      "original_evidence_panels": [
+        {
+          "id": "fig2f",
+          "caption": "Fig. 2f 原始预测误差比较面板"
+        }
+      ],
+      "visual_truth_boundary": "生成图仅作关系示意；列明面板均为指定论文原图裁切并直接嵌入。",
+      "footer": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.2–4, Fig.2f · 05/11"
+    },
+    {
+      "id": "S06",
+      "title": "第一轮：模型提出 PSCF，实验测得 327 mV",
+      "message": "前瞻候选的实测结果进入后续模型迭代",
+      "seconds": 100,
+      "role": "first-experiment",
+      "purpose": "前瞻候选的实测结果进入后续模型迭代",
+      "concept_path": "concepts/S06.png",
+      "reference_ids": [
+        "S04-style-anchor"
+      ],
+      "source_refs": [
+        {
+          "source_id": "paper-pdf",
+          "locator": "pp.4–5, Fig.2g",
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        }
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "第一轮：模型提出 PSCF，实验测得 327 mV",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "key",
+          "role": "key-takeaway",
+          "text": "前瞻候选的实测结果进入后续模型迭代",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-01",
+          "role": "supporting-label",
+          "text": "7,050 个四元/五元配方",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-02",
+          "role": "supporting-label",
+          "text": "30 个化学式入选合成",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-03",
+          "role": "supporting-label",
+          "text": "PSCF：Pr₀.₁Sr₀.₉Co₀.₅Fe₀.₅O₃",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-04",
+          "role": "supporting-label",
+          "text": "实测：327 mV @ 10 mA cm⁻²",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-05",
+          "role": "supporting-label",
+          "text": "将 PSCF 的编码信息回填训练集",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "source-footer",
+          "role": "source-footer",
+          "text": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.4–5, Fig.2g · 06/11",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        }
+      ],
+      "scientific_relationships": "把第一轮画成一张由“7,050 组成候选池”经筛选到“30 个实验配方”再到一颗 PSCF 样品的向前路径；在独立的原文证据窗嵌入 Fig.2g。实测点与模型散点不能混画；把“回填模型”作为实验之后的反馈箭头，箭头只回到训练/预测模块。",
+      "layout_intent": "把第一轮画成一张由“7,050 组成候选池”经筛选到“30 个实验配方”再到一颗 PSCF 样品的向前路径；在独立的原文证据窗嵌入 Fig.2g。实测点与模型散点不能混画；把“回填模型”作为实验之后的反馈箭头，箭头只回到训练/预测模块。",
+      "original_evidence_panels": [
+        {
+          "id": "fig2g",
+          "caption": "Fig. 2g 第一轮 PSCF 预测与实测面板"
+        }
+      ],
+      "visual_truth_boundary": "生成图仅作关系示意；列明面板均为指定论文原图裁切并直接嵌入。",
+      "footer": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.4–5, Fig.2g · 06/11"
+    },
+    {
+      "id": "S07",
+      "title": "第二轮扩展到六元配方，获得 PSCFM",
+      "message": "搜索空间也改变了，不能把轮次差异全归因于主动学习",
+      "seconds": 85,
+      "role": "second-experiment",
+      "purpose": "搜索空间也改变了，不能把轮次差异全归因于主动学习",
+      "concept_path": "concepts/S07.png",
+      "reference_ids": [
+        "S04-style-anchor"
+      ],
+      "source_refs": [
+        {
+          "source_id": "paper-pdf",
+          "locator": "摘要、p.5, Fig.2i",
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        }
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "第二轮扩展到六元配方，获得 PSCFM",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "key",
+          "role": "key-takeaway",
+          "text": "搜索空间也改变了，不能把轮次差异全归因于主动学习",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-01",
+          "role": "supporting-label",
+          "text": "9,000 个六元配方",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-02",
+          "role": "supporting-label",
+          "text": "6 个候选进入实验",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-03",
+          "role": "supporting-label",
+          "text": "PSCFM：Pr₀.₁Sr₀.₉Co₀.₅Fe₀.₃Mn₀.₂O₃",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-04",
+          "role": "supporting-label",
+          "text": "实测：315 mV @ 10 mA cm⁻²",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "body-05",
+          "role": "supporting-label",
+          "text": "两轮合计 16,050 个化学式；36 个新样品中 13 个纯相",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        },
+        {
+          "id": "source-footer",
+          "role": "source-footer",
+          "text": "Jiang et al. · Nature Communications 15, 6301 (2024) · 摘要、p.5, Fig.2i · 07/11",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A4",
+            "A5"
+          ]
+        }
+      ],
+      "scientific_relationships": "以第二轮候选化学式的三元 B 位组合为核心，呈现 Pr/Sr 固定的 A 位与 B 位三元素替换；再接到六个实验候选和 PSCFM 结果。Fig.2i 原面板放在一个独立证据窗中。页脚加一条方法边界：第二轮搜索空间从四/五元扩展到六元。",
+      "layout_intent": "以第二轮候选化学式的三元 B 位组合为核心，呈现 Pr/Sr 固定的 A 位与 B 位三元素替换；再接到六个实验候选和 PSCFM 结果。Fig.2i 原面板放在一个独立证据窗中。页脚加一条方法边界：第二轮搜索空间从四/五元扩展到六元。",
+      "original_evidence_panels": [
+        {
+          "id": "fig2i",
+          "caption": "Fig. 2i 第二轮 PSCFM 预测与实测面板"
+        }
+      ],
+      "visual_truth_boundary": "生成图仅作关系示意；列明面板均为指定论文原图裁切并直接嵌入。",
+      "footer": "Jiang et al. · Nature Communications 15, 6301 (2024) · 摘要、p.5, Fig.2i · 07/11"
+    },
+    {
+      "id": "S08",
+      "title": "PSCFM 在本文条件下兼具更低过电位与更稳运行",
+      "message": "1 M KOH 中 PSCFM 的 10 mA cm⁻² 过电位为 315 mV",
+      "seconds": 100,
+      "role": "performance",
+      "purpose": "1 M KOH 中 PSCFM 的 10 mA cm⁻² 过电位为 315 mV",
+      "concept_path": "concepts/S08.png",
+      "reference_ids": [
+        "S04-style-anchor"
+      ],
+      "source_refs": [
+        {
+          "source_id": "paper-pdf",
+          "locator": "pp.5–6, Fig.3c/h",
+          "evidence_ids": [
+            "A5",
+            "A6"
+          ]
+        }
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "PSCFM 在本文条件下兼具更低过电位与更稳运行",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A5",
+            "A6"
+          ]
+        },
+        {
+          "id": "key",
+          "role": "key-takeaway",
+          "text": "1 M KOH 中 PSCFM 的 10 mA cm⁻² 过电位为 315 mV",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A5",
+            "A6"
+          ]
+        },
+        {
+          "id": "body-01",
+          "role": "supporting-label",
+          "text": "1 M KOH · 10 mA cm⁻²",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A5",
+            "A6"
+          ]
+        },
+        {
+          "id": "body-02",
+          "role": "supporting-label",
+          "text": "PSCFM：315 mV",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A5",
+            "A6"
+          ]
+        },
+        {
+          "id": "body-03",
+          "role": "supporting-label",
+          "text": "PSCF：327 mV",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A5",
+            "A6"
+          ]
+        },
+        {
+          "id": "body-04",
+          "role": "supporting-label",
+          "text": "IrO₂：375 mV",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A5",
+            "A6"
+          ]
+        },
+        {
+          "id": "body-05",
+          "role": "supporting-label",
+          "text": "两电极约 50 h：PSCFM +1.3%；PSCF +2.3%",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A5",
+            "A6"
+          ]
+        },
+        {
+          "id": "body-06",
+          "role": "supporting-label",
+          "text": "LSV 与两电极全槽电压来自不同测试配置",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A5",
+            "A6"
+          ]
+        },
+        {
+          "id": "source-footer",
+          "role": "source-footer",
+          "text": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.5–6, Fig.3c/h · 08/11",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A5",
+            "A6"
+          ]
+        }
+      ],
+      "scientific_relationships": "左右两幅原文证据并列但不共用坐标：左为三电极 iR 校正 LSV（Fig.3c），右为两电极全槽约 50 h 稳定性（Fig.3h）。中间用一条细分隔线明确测试配置不同。短说明中指出阴极 20 wt% Pt/C；不把全槽电压与三电极过电位放入同一排名。",
+      "layout_intent": "左右两幅原文证据并列但不共用坐标：左为三电极 iR 校正 LSV（Fig.3c），右为两电极全槽约 50 h 稳定性（Fig.3h）。中间用一条细分隔线明确测试配置不同。短说明中指出阴极 20 wt% Pt/C；不把全槽电压与三电极过电位放入同一排名。",
+      "original_evidence_panels": [
+        {
+          "id": "fig3c",
+          "caption": "Fig. 3c 原始 LSV 面板"
+        },
+        {
+          "id": "fig3h",
+          "caption": "Fig. 3h 原始两电极稳定性面板"
+        }
+      ],
+      "visual_truth_boundary": "生成图仅作关系示意；列明面板均为指定论文原图裁切并直接嵌入。",
+      "footer": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.5–6, Fig.3c/h · 08/11"
+    },
+    {
+      "id": "S09",
+      "title": "证据支持 AEM 与 LOM 在两种催化剂上并存",
+      "message": "同位素 DEMS 检出混合氧，提示晶格氧参与 O–O 偶联",
+      "seconds": 90,
+      "role": "mechanism-aem-lom",
+      "purpose": "同位素 DEMS 检出混合氧，提示晶格氧参与 O–O 偶联",
+      "concept_path": "concepts/S09.png",
+      "reference_ids": [
+        "S04-style-anchor"
+      ],
+      "source_refs": [
+        {
+          "source_id": "paper-pdf",
+          "locator": "pp.7–8, Fig.4b/f",
+          "evidence_ids": [
+            "A7"
+          ]
+        }
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "证据支持 AEM 与 LOM 在两种催化剂上并存",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A7"
+          ]
+        },
+        {
+          "id": "key",
+          "role": "key-takeaway",
+          "text": "同位素 DEMS 检出混合氧，提示晶格氧参与 O–O 偶联",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A7"
+          ]
+        },
+        {
+          "id": "body-01",
+          "role": "supporting-label",
+          "text": "¹⁶O–¹⁶O（m/z 32）：吸附物路径信号",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A7"
+          ]
+        },
+        {
+          "id": "body-02",
+          "role": "supporting-label",
+          "text": "¹⁶O–¹⁸O（m/z 34）：检测到晶格氧参与",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A7"
+          ]
+        },
+        {
+          "id": "body-03",
+          "role": "supporting-label",
+          "text": "AEM 与 LOM 并存，不是只有 LOM",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A7"
+          ]
+        },
+        {
+          "id": "body-04",
+          "role": "supporting-label",
+          "text": "PSCFM 的 OH⁻亲和力更强（MOR 电流约 2.5 倍）",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A7"
+          ]
+        },
+        {
+          "id": "body-05",
+          "role": "supporting-label",
+          "text": "原文 Fig.4f 同位素 DEMS",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A7"
+          ]
+        },
+        {
+          "id": "source-footer",
+          "role": "source-footer",
+          "text": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.7–8, Fig.4b/f · 09/11",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A7"
+          ]
+        }
+      ],
+      "scientific_relationships": "用两条并行但不互相排斥的反应线表示吸附物演化与晶格氧参与，最终在 O₂ 产物处汇合；右侧嵌入原文 Fig.4f 面板。标题和箭头用“支持/提示”而非“证明唯一机制”。不要绘制未给出的谱线或分子数据；补充证据以短标签呈现。",
+      "layout_intent": "用两条并行但不互相排斥的反应线表示吸附物演化与晶格氧参与，最终在 O₂ 产物处汇合；右侧嵌入原文 Fig.4f 面板。标题和箭头用“支持/提示”而非“证明唯一机制”。不要绘制未给出的谱线或分子数据；补充证据以短标签呈现。",
+      "original_evidence_panels": [
+        {
+          "id": "fig4f",
+          "caption": "Fig. 4f 原始同位素 DEMS 面板"
+        }
+      ],
+      "visual_truth_boundary": "生成图仅作关系示意；列明面板均为指定论文原图裁切并直接嵌入。",
+      "footer": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.7–8, Fig.4b/f · 09/11"
+    },
+    {
+      "id": "S10",
+      "title": "Mn–O–Co 结构线索关联更低 Co 溶出与更易补氧",
+      "message": "多种实验证据和 DFT 计算支持作者提出的稳定性解释",
+      "seconds": 110,
+      "role": "stability-mechanism",
+      "purpose": "多种实验证据和 DFT 计算支持作者提出的稳定性解释",
+      "concept_path": "concepts/S10.png",
+      "reference_ids": [
+        "S04-style-anchor"
+      ],
+      "source_refs": [
+        {
+          "source_id": "paper-pdf",
+          "locator": "pp.9–10, Fig.5d/f",
+          "evidence_ids": [
+            "A8"
+          ]
+        }
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "Mn–O–Co 结构线索关联更低 Co 溶出与更易补氧",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A8"
+          ]
+        },
+        {
+          "id": "key",
+          "role": "key-takeaway",
+          "text": "多种实验证据和 DFT 计算支持作者提出的稳定性解释",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A8"
+          ]
+        },
+        {
+          "id": "body-01",
+          "role": "supporting-label",
+          "text": "10 h 稳定性后电解液 Co：PSCF 7.59 ppb；PSCFM 4.01 ppb",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A8"
+          ]
+        },
+        {
+          "id": "body-02",
+          "role": "supporting-label",
+          "text": "Co–Vₒ–Co 补氧自由能：−2.46 eV",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A8"
+          ]
+        },
+        {
+          "id": "body-03",
+          "role": "supporting-label",
+          "text": "Co–Vₒ–Mn 补氧自由能：−2.63 eV",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A8"
+          ]
+        },
+        {
+          "id": "body-04",
+          "role": "supporting-label",
+          "text": "Mn–O–Co 电荷重排与氧空位补充是作者解释",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A8"
+          ]
+        },
+        {
+          "id": "body-05",
+          "role": "supporting-label",
+          "text": "计算自由能不是实测速率或动力学能垒",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A8"
+          ]
+        },
+        {
+          "id": "source-footer",
+          "role": "source-footer",
+          "text": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.9–10, Fig.5d/f · 10/11",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A8"
+          ]
+        }
+      ],
+      "scientific_relationships": "将原文 Fig.5d 的 Co 溶出柱形证据与 Fig.5f 的晶格氧补充结构示意分别放在左右两区；两者之间用一条带“作者解释”字样的细连线，而非直接因果箭头。下方呈现 Co–VO–Co 与 Co–VO–Mn 两个结构对照，并保留 −2.46 / −2.63 eV 的计算自由能标签。明确“示意/DFT”。",
+      "layout_intent": "将原文 Fig.5d 的 Co 溶出柱形证据与 Fig.5f 的晶格氧补充结构示意分别放在左右两区；两者之间用一条带“作者解释”字样的细连线，而非直接因果箭头。下方呈现 Co–VO–Co 与 Co–VO–Mn 两个结构对照，并保留 −2.46 / −2.63 eV 的计算自由能标签。明确“示意/DFT”。",
+      "original_evidence_panels": [
+        {
+          "id": "fig5d",
+          "caption": "Fig. 5d 原始 ICP-MS Co 溶出面板"
+        },
+        {
+          "id": "fig5f",
+          "caption": "Fig. 5f 原始氧空位补充示意与自由能面板"
+        }
+      ],
+      "visual_truth_boundary": "生成图仅作关系示意；列明面板均为指定论文原图裁切并直接嵌入。",
+      "footer": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.9–10, Fig.5d/f · 10/11"
+    },
+    {
+      "id": "S11",
+      "title": "结果有说服力，泛化边界仍值得追问",
+      "message": "用固定外部评估和可复现实验检验下一轮模型增益",
+      "seconds": 70,
+      "role": "discussion-next-step",
+      "purpose": "用固定外部评估和可复现实验检验下一轮模型增益",
+      "concept_path": "concepts/S11.png",
+      "reference_ids": [
+        "S04-style-anchor"
+      ],
+      "source_refs": [
+        {
+          "source_id": "paper-pdf",
+          "locator": "pp.2–5、10–13",
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A8",
+            "A9"
+          ]
+        }
+      ],
+      "copy": [
+        {
+          "id": "title",
+          "role": "title",
+          "text": "结果有说服力，泛化边界仍值得追问",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A8",
+            "A9"
+          ]
+        },
+        {
+          "id": "key",
+          "role": "key-takeaway",
+          "text": "用固定外部评估和可复现实验检验下一轮模型增益",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A8",
+            "A9"
+          ]
+        },
+        {
+          "id": "body-01",
+          "role": "supporting-label",
+          "text": "本文贡献：迁移表征 + 聚类集成 + 实验回填",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A8",
+            "A9"
+          ]
+        },
+        {
+          "id": "body-02",
+          "role": "supporting-label",
+          "text": "证据边界：140 条组成记录；RMSE 口径不同",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A8",
+            "A9"
+          ]
+        },
+        {
+          "id": "body-03",
+          "role": "supporting-label",
+          "text": "实验注记：Faraday 效率测量仅进行一次",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A8",
+            "A9"
+          ]
+        },
+        {
+          "id": "body-04",
+          "role": "supporting-label",
+          "text": "作者后续方向：扩充数据集；增强模型可解释性",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A8",
+            "A9"
+          ]
+        },
+        {
+          "id": "body-05",
+          "role": "supporting-label",
+          "text": "汇报者建议：按化学家族留出外部测试，并重复合成验证",
+          "truth_status": "hypothetical",
+          "source_ids": [],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A8",
+            "A9"
+          ]
+        },
+        {
+          "id": "body-06",
+          "role": "supporting-label",
+          "text": "讨论：预算只够 6 个样品时，如何平衡活性、不确定性与成相？",
+          "truth_status": "hypothetical",
+          "source_ids": [],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A8",
+            "A9"
+          ]
+        },
+        {
+          "id": "source-footer",
+          "role": "source-footer",
+          "text": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.2–5、10–13 · 11/11",
+          "truth_status": "verified",
+          "source_ids": [
+            "paper-pdf"
+          ],
+          "evidence_ids": [
+            "A1",
+            "A4",
+            "A8",
+            "A9"
+          ]
+        }
+      ],
+      "scientific_relationships": "结束页采用一个开放式决策三角或三条并列证据轴：模型表现、实验复现、机制解释；中间以“下一轮六个样品如何选？”作为讨论焦点。作者明确提出的未来方向和汇报者建议使用不同颜色与标签，不用金色把未完成建议包装成论文结论。",
+      "layout_intent": "结束页采用一个开放式决策三角或三条并列证据轴：模型表现、实验复现、机制解释；中间以“下一轮六个样品如何选？”作为讨论焦点。作者明确提出的未来方向和汇报者建议使用不同颜色与标签，不用金色把未完成建议包装成论文结论。",
+      "original_evidence_panels": [],
+      "visual_truth_boundary": "生成图仅作关系示意；列明面板均为指定论文原图裁切并直接嵌入。",
+      "footer": "Jiang et al. · Nature Communications 15, 6301 (2024) · pp.2–5、10–13 · 11/11"
+    }
+  ]
+}

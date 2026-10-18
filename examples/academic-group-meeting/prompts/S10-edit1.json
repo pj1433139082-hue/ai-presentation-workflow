@@ -1,0 +1,20 @@
+{
+  "id": "S10",
+  "operation": "local-edit",
+  "prompt": "Locally edit this full 16:9 scientific slide, retaining its approved S04-derived navy/white/pale-blue style, overall composition and correct text and values. Do not redesign it. Required precise scientific/detail corrections: Correct lower middle heading 纯相筛选（XRD / LSV / XPS） to 合成与表征证据, with three distinct compact labels: XRD：物相 / LSV：活性 / XPS：价态; only XRD is phase evidence. In gold feedback line tail must start at 新合成与表征测量, with one arrowhead returning to candidate/model-selection, not from the illustrative error curve. Add concise visible （示意） to generic drawn error, convergence and characterization mini-graphs; do not add quantitative values. Preserve all proposed-review wording and avoid claiming fixed external testing was performed by the paper.",
+  "output": {
+    "path": "history/S10-edit1.png",
+    "sha256": "2af045fef463dcc91141625d0dbd4c0a6bd30d0969deb930396e6aa6e4174139"
+  },
+  "original_tool_output_hint": "Generated images are saved to C:\\Users\\14331\\.codex\\generated_images\\01a12a23-3a19-7570-91f2-105f733eefbf as C:\\Users\\14331\\.codex\\generated_images\\01a12a23-3a19-7570-91f2-105f733eefbf\\exec-5b9dd1b6-38cf-4055-a729-5e04d5751307.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "style_reference": "concepts/S04.png",
+  "parent_record": "S10-generation.json",
+  "inputs": [
+    {
+      "role": "edit-target",
+      "path": "history/S10-generation.png",
+      "sha256": "6161b79dbc1cadbcfbc2f47ee5abf87a480fa6c4b28a49f02c4d3c3077bf9803"
+    }
+  ],
+  "historical_reference_path_do_not_execute": null
+}

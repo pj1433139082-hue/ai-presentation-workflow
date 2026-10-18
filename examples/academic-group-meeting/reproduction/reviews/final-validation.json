@@ -1,0 +1,20 @@
+{
+  "result": "passed",
+  "checks": {
+    "source_pdf_sha256_matches_brief_and_composition": true,
+    "11_pages_present_dimensions_and_hashes_match_composition_map": true,
+    "9_source_panels_present_and_hashes_match_panel_map": true,
+    "storyboard_total_seconds_matches_brief": true,
+    "contact_sheet_and_main_agent_review_present": true,
+    "user_acceptance_claimed": false
+  },
+  "slide_count": 11,
+  "source_panel_count": 9,
+  "duration_seconds": 900,
+  "source_pdf_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+  "contact_sheet_sha256": "12d490a9c664017af3c829d2b9704fd4fbcbedc33fa59849ae4f6aab9ea2630a",
+  "review_index": "reviews/index.html",
+  "manifest": "reviews/final-manifest.json",
+  "validation_scope": "Technical checks above predate the human response; current concept acceptance is separately recorded in ../provenance/user-acceptance.json.",
+  "acceptance_record": "../provenance/user-acceptance.json"
+}

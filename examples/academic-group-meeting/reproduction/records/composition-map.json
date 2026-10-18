@@ -1,0 +1,619 @@
+{
+  "method": "Pillow deterministic contain composition; evidence panels inserted after all image_gen work",
+  "canvas_px": [
+    1672,
+    941
+  ],
+  "source_pdf": "sources/paper.pdf",
+  "source_pdf_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+  "source_panels_unmodified": true,
+  "generated_page_as_input_to_image_gen": false,
+  "slides": [
+    {
+      "slide": "S01",
+      "background_path": "records/revisions/S01-edit-01.png",
+      "background_sha256": "0dbb610a61a47a98889ace541dbce547e0820a20abcd40c76481b05eb8d771fc",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "duplicate_page_index_removed_px": [
+        1578,
+        891,
+        1637,
+        908
+      ],
+      "background_placeholder_masks_px": [],
+      "source_panels_inserted": [],
+      "output_path": "concepts/S01.png",
+      "output_sha256": "d4116828c1319ef336b7e7640e89f059a1cc7fa01baabccc81009b61c2e4da08",
+      "output_size_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "slide": "S02",
+      "background_path": "concepts/base/S02.png",
+      "background_sha256": "17a0ae4a386f8e2b5032cdf7b4be214e0b1efcfc48538411a1f3c8181671d0ae",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "duplicate_page_index_removed_px": [
+        1590,
+        913,
+        1640,
+        926
+      ],
+      "background_placeholder_masks_px": [],
+      "source_panels_inserted": [],
+      "output_path": "concepts/S02.png",
+      "output_sha256": "ee84b435364895e3d7a7224f94c9046cf99dd301ca56bc5c380aa5a6110e1373",
+      "output_size_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "slide": "S03",
+      "background_path": "records/revisions/S03-edit-02.png",
+      "background_sha256": "2632c93d715af2e908c402906d6a24621591d908d4b76c74dd8b6fb436123937",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "duplicate_page_index_removed_px": [
+        1585,
+        906,
+        1637,
+        921
+      ],
+      "background_placeholder_masks_px": [],
+      "source_panels_inserted": [],
+      "output_path": "concepts/S03.png",
+      "output_sha256": "d19b781a81b92267ad480cbfe48f63832d1fadbcb2054c9965bdb80496689aa7",
+      "output_size_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "slide": "S04",
+      "background_path": "concepts/base/S04.png",
+      "background_sha256": "c8384ac99a08b58a66163421a890bef67b01f627ca415d539a4134679a526b22",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "duplicate_page_index_removed_px": [
+        1591,
+        909,
+        1650,
+        924
+      ],
+      "background_placeholder_masks_px": [
+        [
+          1180,
+          193,
+          1634,
+          760
+        ]
+      ],
+      "source_panels_inserted": [
+        {
+          "panel_id": "fig2d",
+          "source_path": "sources/figure-panels/fig2d.png",
+          "source_sha256": "cc86fdd73e68c5d0d343643eb7c1ef54483665e48a912ca5dae58d49ff1338f1",
+          "source_page": 4,
+          "source_box_on_2x_render_px": [
+            940,
+            88,
+            1088,
+            322
+          ],
+          "source_pdf_clip_points": [
+            470.0,
+            44.0,
+            544.0,
+            161.0
+          ],
+          "target_contain_rect_px": [
+            1188,
+            202,
+            1626,
+            753
+          ],
+          "actual_placement_px": [
+            1233,
+            202,
+            1581,
+            753
+          ],
+          "aspect_ratio_preserved": true
+        }
+      ],
+      "output_path": "concepts/S04.png",
+      "output_sha256": "68402ecf5c4659ae925821ac610ead0229b3dd6bbd218ebde3b5fb4afe9b348e",
+      "output_size_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "slide": "S05",
+      "background_path": "records/revisions/S05-edit-01.png",
+      "background_sha256": "fb2cbdda3fd7320e56d47bdc3f2b8801443766b165708df97ccbc92d94002624",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "duplicate_page_index_removed_px": [
+        1591,
+        906,
+        1644,
+        921
+      ],
+      "background_placeholder_masks_px": [
+        [
+          80,
+          575,
+          760,
+          874
+        ]
+      ],
+      "source_panels_inserted": [
+        {
+          "panel_id": "fig2f",
+          "source_path": "sources/figure-panels/fig2f.png",
+          "source_sha256": "29d5e262b78f60e7d1807e7865092ed07edede66d7a2dfc1bf43caf15f46afa2",
+          "source_page": 4,
+          "source_box_on_2x_render_px": [
+            410,
+            330,
+            1090,
+            566
+          ],
+          "source_pdf_clip_points": [
+            205.0,
+            165.0,
+            545.0,
+            283.0
+          ],
+          "target_contain_rect_px": [
+            80,
+            574,
+            760,
+            875
+          ],
+          "actual_placement_px": [
+            80,
+            606,
+            760,
+            842
+          ],
+          "aspect_ratio_preserved": true
+        }
+      ],
+      "output_path": "concepts/S05.png",
+      "output_sha256": "9d92b3c5680e931a50f71a9ca9d9e1282b8c1c155ea7cca8ad3d7c80adbe5341",
+      "output_size_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "slide": "S06",
+      "background_path": "concepts/base/S06.png",
+      "background_sha256": "3d61b5deb7d5488e1f35420442f91acfb54d5c3de3af9692c7d1851936dabfec",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "duplicate_page_index_removed_px": [
+        1587,
+        904,
+        1638,
+        917
+      ],
+      "background_placeholder_masks_px": [
+        [
+          1293,
+          169,
+          1634,
+          515
+        ]
+      ],
+      "source_panels_inserted": [
+        {
+          "panel_id": "fig2g",
+          "source_path": "sources/figure-panels/fig2g.png",
+          "source_sha256": "ab9c52d18de2648f54c56faee10f0b8860bff88723105c62f88924d1b9dd6eec",
+          "source_page": 4,
+          "source_box_on_2x_render_px": [
+            60,
+            565,
+            400,
+            815
+          ],
+          "source_pdf_clip_points": [
+            30.0,
+            282.5,
+            200.0,
+            407.5
+          ],
+          "target_contain_rect_px": [
+            1292,
+            168,
+            1633,
+            516
+          ],
+          "actual_placement_px": [
+            1292,
+            216,
+            1633,
+            467
+          ],
+          "aspect_ratio_preserved": true
+        }
+      ],
+      "output_path": "concepts/S06.png",
+      "output_sha256": "a772eb8edeb2ecf0cff4733d3c8df2d20b021768d05b1a8982b7bb62c8d47b46",
+      "output_size_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "slide": "S07",
+      "background_path": "records/revisions/S07-edit-03.png",
+      "background_sha256": "a02384489ec0099e4384f8e4dc75b98d46daf3eef27de1f17a6f475f40286a7a",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "duplicate_page_index_removed_px": [
+        1589,
+        910,
+        1641,
+        926
+      ],
+      "background_placeholder_masks_px": [
+        [
+          625,
+          550,
+          1017,
+          819
+        ]
+      ],
+      "source_panels_inserted": [
+        {
+          "panel_id": "fig2i",
+          "source_path": "sources/figure-panels/fig2i.png",
+          "source_sha256": "755152eac072f82cac7bea51f5b22d049881be62362ac26f28c5a9fb4dc2af45",
+          "source_page": 4,
+          "source_box_on_2x_render_px": [
+            755,
+            560,
+            1095,
+            808
+          ],
+          "source_pdf_clip_points": [
+            377.5,
+            280.0,
+            547.5,
+            404.0
+          ],
+          "target_contain_rect_px": [
+            625,
+            548,
+            1017,
+            819
+          ],
+          "actual_placement_px": [
+            635,
+            548,
+            1007,
+            819
+          ],
+          "aspect_ratio_preserved": true
+        }
+      ],
+      "output_path": "concepts/S07.png",
+      "output_sha256": "711b2456a1e12bc78d4b242f46c131fe7cd8443522ab18678f08dc0e0246abd8",
+      "output_size_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "slide": "S08",
+      "background_path": "records/revisions/S08-edit-02.png",
+      "background_sha256": "f22d7d17bd11e8e0ea64613eefeed15ede7c5b73456d568df8e65f7d3c70528b",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "duplicate_page_index_removed_px": [
+        1583,
+        910,
+        1635,
+        927
+      ],
+      "background_placeholder_masks_px": [
+        [
+          38,
+          218,
+          445,
+          541
+        ],
+        [
+          889,
+          219,
+          1309,
+          542
+        ]
+      ],
+      "source_panels_inserted": [
+        {
+          "panel_id": "fig3c",
+          "source_path": "sources/figure-panels/fig3c.png",
+          "source_sha256": "b7909d296d4989f59c5ab9b06a1fd2fd835d610c65cf755c62fddfe9b848cd46",
+          "source_page": 6,
+          "source_box_on_2x_render_px": [
+            134,
+            450,
+            449,
+            701
+          ],
+          "source_pdf_clip_points": [
+            67.0,
+            225.0,
+            224.5,
+            350.5
+          ],
+          "target_contain_rect_px": [
+            38,
+            218,
+            445,
+            541
+          ],
+          "actual_placement_px": [
+            39,
+            218,
+            444,
+            541
+          ],
+          "aspect_ratio_preserved": true
+        },
+        {
+          "panel_id": "fig3h",
+          "source_path": "sources/figure-panels/fig3h.png",
+          "source_sha256": "964d0ecd957ae59aefc31bd03e25aabae74d42822ad96d70bf89e4db214c187b",
+          "source_page": 6,
+          "source_box_on_2x_render_px": [
+            767,
+            713.1,
+            1090,
+            970
+          ],
+          "source_pdf_clip_points": [
+            383.5,
+            356.55,
+            545.0,
+            485.0
+          ],
+          "target_contain_rect_px": [
+            889,
+            219,
+            1309,
+            542
+          ],
+          "actual_placement_px": [
+            896,
+            219,
+            1302,
+            542
+          ],
+          "aspect_ratio_preserved": true
+        }
+      ],
+      "output_path": "concepts/S08.png",
+      "output_sha256": "3c816f164514873650977aee3f530da9d11ab10f65b0c13a519a2eb2f9eec03a",
+      "output_size_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "slide": "S09",
+      "background_path": "records/revisions/S09-edit-02.png",
+      "background_sha256": "90f1967f4c61948d49a096106c521c1e2c1cf50e4820a8f5d21cc487b7955630",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "duplicate_page_index_removed_px": [
+        1586,
+        915,
+        1641,
+        933
+      ],
+      "background_placeholder_masks_px": [
+        [
+          1155,
+          214,
+          1630,
+          616
+        ]
+      ],
+      "source_panels_inserted": [
+        {
+          "panel_id": "fig4f",
+          "source_path": "sources/figure-panels/fig4f.png",
+          "source_sha256": "d240851173415d6187b412107a2d0ce838c7649c1a2a144d66452ae69aad54f6",
+          "source_page": 7,
+          "source_box_on_2x_render_px": [
+            780,
+            990,
+            1090,
+            1320
+          ],
+          "source_pdf_clip_points": [
+            390.0,
+            495.0,
+            545.0,
+            660.0
+          ],
+          "target_contain_rect_px": [
+            1155,
+            214,
+            1630,
+            616
+          ],
+          "actual_placement_px": [
+            1203,
+            214,
+            1581,
+            616
+          ],
+          "aspect_ratio_preserved": true
+        }
+      ],
+      "output_path": "concepts/S09.png",
+      "output_sha256": "6a35999f92e6e188567b0e3d7c74e0af6ceab94c9fa720440ae6d6ba5a278686",
+      "output_size_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "slide": "S10",
+      "background_path": "concepts/base/S10.png",
+      "background_sha256": "c272dde984f80bc26f4f288adca045ae45d0007d869eebf7a3b7b4e16290b2ea",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "duplicate_page_index_removed_px": [
+        1589,
+        906,
+        1640,
+        919
+      ],
+      "background_placeholder_masks_px": [
+        [
+          60,
+          172,
+          387,
+          436
+        ],
+        [
+          398,
+          267,
+          740,
+          436
+        ],
+        [
+          958,
+          170,
+          1638,
+          438
+        ]
+      ],
+      "source_panels_inserted": [
+        {
+          "panel_id": "fig5d",
+          "source_path": "sources/figure-panels/fig5d.png",
+          "source_sha256": "a29bfec5a612cf9ea7c590b7c0a707978fcd5f58d105d644736a63730d2b5dce",
+          "source_page": 9,
+          "source_box_on_2x_render_px": [
+            620,
+            372,
+            1080,
+            520
+          ],
+          "source_pdf_clip_points": [
+            310.0,
+            186.0,
+            540.0,
+            260.0
+          ],
+          "target_contain_rect_px": [
+            78,
+            252,
+            741,
+            438
+          ],
+          "actual_placement_px": [
+            120,
+            252,
+            698,
+            438
+          ],
+          "aspect_ratio_preserved": true
+        },
+        {
+          "panel_id": "fig5f",
+          "source_path": "sources/figure-panels/fig5f.png",
+          "source_sha256": "5dfe22e22f8ea19055fa889d485972190f940e413af3a274f91652d91285a02b",
+          "source_page": 9,
+          "source_box_on_2x_render_px": [
+            615,
+            710,
+            1095,
+            985
+          ],
+          "source_pdf_clip_points": [
+            307.5,
+            355.0,
+            547.5,
+            492.5
+          ],
+          "target_contain_rect_px": [
+            960,
+            171,
+            1637,
+            437
+          ],
+          "actual_placement_px": [
+            1066,
+            171,
+            1530,
+            437
+          ],
+          "aspect_ratio_preserved": true
+        }
+      ],
+      "output_path": "concepts/S10.png",
+      "output_sha256": "e6ac1ad93971f4fc826364826d9370dc26597ff49ea3c40d9753de0d07586f2d",
+      "output_size_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "slide": "S11",
+      "background_path": "concepts/base/S11.png",
+      "background_sha256": "f0688fcd38a01a9e51c505e65474bac798dace2506db7635ffd61836ef42de37",
+      "canvas_px": [
+        1672,
+        941
+      ],
+      "duplicate_page_index_removed_px": [
+        1593,
+        915,
+        1643,
+        932
+      ],
+      "background_placeholder_masks_px": [],
+      "source_panels_inserted": [],
+      "output_path": "concepts/S11.png",
+      "output_sha256": "289a8d02e1a876fd8cf63e60d8e86dfed99e5005c8970ed4d392f5ebd12d8ecf",
+      "output_size_px": [
+        1672,
+        941
+      ]
+    }
+  ]
+}

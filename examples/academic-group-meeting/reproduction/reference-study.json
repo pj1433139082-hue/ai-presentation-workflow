@@ -1,0 +1,42 @@
+{
+  "status": "analyzed",
+  "references": [
+    {
+      "id": "S04-style-anchor",
+      "status": "analyzed",
+      "image_path": "style-reference/S04.png",
+      "sha256": "38325a34b1fd6ae689225c02f4b1d84bdbbe1cb335ccffadb7f1bea66c613640",
+      "source_locator": "内置已认可参考包：ai-presentation-workflow/examples/academic-group-meeting/concepts/S04.png",
+      "usage_note": "已查看实际图像；只作为一页科研图解的视觉语法锚点，和指定论文的事实来源完全分离。",
+      "observed": {
+        "composition": "上部方法路径与下部预测/实验路径，清楚展示输入、变换、输出和回流；主要视觉对象承担解释工作。",
+        "hierarchy": "海军蓝大标题、编号分区标题、细蓝框线和粗细有别的方向箭头形成阅读次序。",
+        "density": "密集但成组，白底保留边距，标签优先短语，不把整页塞成段落。",
+        "materials": "矢量感科学示意、浅蓝透明分区与少量金色反馈线。"
+      },
+      "transferable_rules": [
+        "采用白底、海军蓝标题、浅蓝分区、蓝色方向箭头和克制金色强调。",
+        "图形承担方法关系；每页按信息关系重排，不把 S04 的双行结构当通用模板。",
+        "保留真实原始结果图面板，概念示意与原文证据明确区分。"
+      ],
+      "project_translation": [
+        "S01 用开场图形摘要；S02 用组合空间与标签稀疏图；S04–S07 用不同的模型/实验构图；S08–S10 按原图证据安排不等分证据窗。",
+        "色彩语义：蓝色表示学习/测量流程，金色表示回流或待复核，红/绿只沿用原始证据面板原有图例。"
+      ],
+      "do_not_copy": [
+        "不复制参考页的两行网格、原图结构、原文文案或研究数据。",
+        "不将参考图里的任意点云、材料组成或误差结果作为本论文证据。",
+        "不画生成式谱线、显微图或定量图表冒充真实原始图件。"
+      ]
+    }
+  ],
+  "selected_reference_ids": [
+    "S04-style-anchor"
+  ],
+  "not_selected_after_review": [
+    {
+      "id": "S10-approved-example",
+      "reason": "曾查看作为讨论页信息层级的比较实例，但未选择为生成输入；当前项目只使用 S04 参考。"
+    }
+  ]
+}

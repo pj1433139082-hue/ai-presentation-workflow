@@ -1,0 +1,36 @@
+{
+  "version": "draft",
+  "selected_reference_ids": [
+    "S04-style-anchor"
+  ],
+  "style_decision": {
+    "status": "agent-chosen",
+    "reason": "沿用任务授权可复用的已认可科研组会视觉语法，并按本论文每页关系独立选择构图。",
+    "layout_policy": "页面布局随沟通角色变化；至少包含封面图形摘要、问题地图、流程、结果证据、机制分支、讨论决策图。",
+    "palette": {
+      "background": "#FFFFFF",
+      "navy": "#14345A",
+      "blue": "#3A8DCC",
+      "pale_blue": "#EAF4FB",
+      "gold": "#D6A33A",
+      "body": "#1D2B39"
+    },
+    "typography": "清晰的中文无衬线字；标题与关键数值优先，短标签完整可读。",
+    "truth_rules": [
+      "论文结果以原始图件或明确来源标签呈现。",
+      "示意结构/流程明确标注示意。",
+      "模型内部误差、实测过电位、计算自由能分别标识，不互换概念。",
+      "作者解释、汇报者建议和已观察结果使用不同标签。"
+    ]
+  },
+  "readability_profile": {
+    "viewing_context": "16:9 学术组会投影；概念 PNG 按全页缩放预览。",
+    "font_floors_pt": {
+      "title": 24,
+      "body": 16,
+      "source": 10
+    },
+    "minimum_contrast_ratio": 4.5,
+    "note": "概念图不是 native PPTX 文本，阈值为项目审阅下限；最终以全页原尺寸目视判断。"
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "project": "Independent APW academic group-meeting reproduction",
+  "source_pdf_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+  "duration_seconds": 900,
+  "slide_count": 11,
+  "source_panel_count": 9,
+  "stage": "concept-user-accepted",
+  "user_visual_acceptance": "accepted; ../provenance/user-acceptance.json",
+  "assets_status": "not-started",
+  "assembly_status": "not-started",
+  "contact_sheet": {
+    "path": "final-contact-sheet.png",
+    "sha256": "12d490a9c664017af3c829d2b9704fd4fbcbedc33fa59849ae4f6aab9ea2630a",
+    "size_px": [
+      1674,
+      1440
+    ]
+  },
+  "slides": [
+    {
+      "id": "S01",
+      "title": "迁移学习辅助碱性析氧钙钛矿发现",
+      "role": "opening",
+      "seconds": 30,
+      "path": "../concepts/S01.png",
+      "sha256": "d4116828c1319ef336b7e7640e89f059a1cc7fa01baabccc81009b61c2e4da08",
+      "size_px": [
+        1672,
+        941
+      ],
+      "source_panels": []
+    },
+    {
+      "id": "S02",
+      "title": "组合空间远大于可用的 OER 标签",
+      "role": "research-question",
+      "seconds": 75,
+      "path": "../concepts/S02.png",
+      "sha256": "ee84b435364895e3d7a7224f94c9046cf99dd301ca56bc5c380aa5a6110e1373",
+      "size_px": [
+        1672,
+        941
+      ],
+      "source_panels": []
+    },
+    {
+      "id": "S03",
+      "title": "本文把组成迁移、局部建模与全局集成连起来",
+      "role": "related-work",
+      "seconds": 60,
+      "path": "../concepts/S03.png",
+      "sha256": "d19b781a81b92267ad480cbfe48f63832d1fadbcb2054c9965bdb80496689aa7",
+      "size_px": [
+        1672,
+        941
+      ],
+      "source_panels": []
+    },
+    {
+      "id": "S04",
+      "title": "非 OER 数据改善了组成重建",
+      "role": "representation-evidence",
+      "seconds": 105,
+      "path": "../concepts/S04.png",
+      "sha256": "68402ecf5c4659ae925821ac610ead0229b3dd6bbd218ebde3b5fb4afe9b348e",
+      "size_px": [
+        1672,
+        941
+      ],
+      "source_panels": [
+        "sources/figure-panels/fig2d.png"
+      ]
+    },
+    {
+      "id": "S05",
+      "title": "8.90 mV 的全局集成结果需要按原文口径解读",
+      "role": "model-evaluation",
+      "seconds": 75,
+      "path": "../concepts/S05.png",
+      "sha256": "9d92b3c5680e931a50f71a9ca9d9e1282b8c1c155ea7cca8ad3d7c80adbe5341",
+      "size_px": [
+        1672,
+        941
+      ],
+      "source_panels": [
+        "sources/figure-panels/fig2f.png"
+      ]
+    },
+    {
+      "id": "S06",
+      "title": "第一轮：模型提出 PSCF，实验测得 327 mV",
+      "role": "first-experiment",
+      "seconds": 100,
+      "path": "../concepts/S06.png",
+      "sha256": "a772eb8edeb2ecf0cff4733d3c8df2d20b021768d05b1a8982b7bb62c8d47b46",
+      "size_px": [
+        1672,
+        941
+      ],
+      "source_panels": [
+        "sources/figure-panels/fig2g.png"
+      ]
+    },
+    {
+      "id": "S07",
+      "title": "第二轮扩展到六元配方，获得 PSCFM",
+      "role": "second-experiment",
+      "seconds": 85,
+      "path": "../concepts/S07.png",
+      "sha256": "711b2456a1e12bc78d4b242f46c131fe7cd8443522ab18678f08dc0e0246abd8",
+      "size_px": [
+        1672,
+        941
+      ],
+      "source_panels": [
+        "sources/figure-panels/fig2i.png"
+      ]
+    },
+    {
+      "id": "S08",
+      "title": "PSCFM 在本文条件下兼具更低过电位与更稳运行",
+      "role": "performance",
+      "seconds": 100,
+      "path": "../concepts/S08.png",
+      "sha256": "3c816f164514873650977aee3f530da9d11ab10f65b0c13a519a2eb2f9eec03a",
+      "size_px": [
+        1672,
+        941
+      ],
+      "source_panels": [
+        "sources/figure-panels/fig3c.png",
+        "sources/figure-panels/fig3h.png"
+      ]
+    },
+    {
+      "id": "S09",
+      "title": "证据支持 AEM 与 LOM 在两种催化剂上并存",
+      "role": "mechanism-aem-lom",
+      "seconds": 90,
+      "path": "../concepts/S09.png",
+      "sha256": "6a35999f92e6e188567b0e3d7c74e0af6ceab94c9fa720440ae6d6ba5a278686",
+      "size_px": [
+        1672,
+        941
+      ],
+      "source_panels": [
+        "sources/figure-panels/fig4f.png"
+      ]
+    },
+    {
+      "id": "S10",
+      "title": "Mn–O–Co 结构线索关联更低 Co 溶出与更易补氧",
+      "role": "stability-mechanism",
+      "seconds": 110,
+      "path": "../concepts/S10.png",
+      "sha256": "e6ac1ad93971f4fc826364826d9370dc26597ff49ea3c40d9753de0d07586f2d",
+      "size_px": [
+        1672,
+        941
+      ],
+      "source_panels": [
+        "sources/figure-panels/fig5d.png",
+        "sources/figure-panels/fig5f.png"
+      ]
+    },
+    {
+      "id": "S11",
+      "title": "结果有说服力，泛化边界仍值得追问",
+      "role": "discussion-next-step",
+      "seconds": 70,
+      "path": "../concepts/S11.png",
+      "sha256": "289a8d02e1a876fd8cf63e60d8e86dfed99e5005c8970ed4d392f5ebd12d8ecf",
+      "size_px": [
+        1672,
+        941
+      ],
+      "source_panels": []
+    }
+  ],
+  "source_panels": [
+    {
+      "id": "fig2d",
+      "path": "../sources/figure-panels/fig2d.png",
+      "sha256": "cc86fdd73e68c5d0d343643eb7c1ef54483665e48a912ca5dae58d49ff1338f1"
+    },
+    {
+      "id": "fig2f",
+      "path": "../sources/figure-panels/fig2f.png",
+      "sha256": "29d5e262b78f60e7d1807e7865092ed07edede66d7a2dfc1bf43caf15f46afa2"
+    },
+    {
+      "id": "fig2g",
+      "path": "../sources/figure-panels/fig2g.png",
+      "sha256": "ab9c52d18de2648f54c56faee10f0b8860bff88723105c62f88924d1b9dd6eec"
+    },
+    {
+      "id": "fig2i",
+      "path": "../sources/figure-panels/fig2i.png",
+      "sha256": "755152eac072f82cac7bea51f5b22d049881be62362ac26f28c5a9fb4dc2af45"
+    },
+    {
+      "id": "fig3c",
+      "path": "../sources/figure-panels/fig3c.png",
+      "sha256": "b7909d296d4989f59c5ab9b06a1fd2fd835d610c65cf755c62fddfe9b848cd46"
+    },
+    {
+      "id": "fig3h",
+      "path": "../sources/figure-panels/fig3h.png",
+      "sha256": "964d0ecd957ae59aefc31bd03e25aabae74d42822ad96d70bf89e4db214c187b"
+    },
+    {
+      "id": "fig4f",
+      "path": "../sources/figure-panels/fig4f.png",
+      "sha256": "d240851173415d6187b412107a2d0ce838c7649c1a2a144d66452ae69aad54f6"
+    },
+    {
+      "id": "fig5d",
+      "path": "../sources/figure-panels/fig5d.png",
+      "sha256": "a29bfec5a612cf9ea7c590b7c0a707978fcd5f58d105d644736a63730d2b5dce"
+    },
+    {
+      "id": "fig5f",
+      "path": "../sources/figure-panels/fig5f.png",
+      "sha256": "5dfe22e22f8ea19055fa889d485972190f940e413af3a274f91652d91285a02b"
+    }
+  ],
+  "acceptance_record": "../provenance/user-acceptance.json"
+}

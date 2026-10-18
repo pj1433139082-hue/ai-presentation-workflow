@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-18",
+  "actor": "user",
+  "question_call": "call_09a3c95f572648de91421f37677137dc",
+  "reply": "这次很不错 这个流程可以固定下来 你看看怎么固定下来复现这个 这个可以作为组会汇报 ppt 的模版了",
+  "version": "academic-v6",
+  "scope": "complete ordered 11-slide concept batch",
+  "concept_hashes": {
+    "S01": "b3f051fd91eeaaacc269609faae7cdf71746375b754739d5ff01f10845aca2c4",
+    "S02": "101ec5929751166070e38104c2d23962485a5eccfcef10281a1f744b3940077c",
+    "S03": "2e64e5180a93774ab90e30c3ce2169b05d3cf4efc38a12b29755b221cf88f565",
+    "S04": "38325a34b1fd6ae689225c02f4b1d84bdbbe1cb335ccffadb7f1bea66c613640",
+    "S05": "c1105e55d01a181136c869c07d627f7c2ddf756d98d0a75bd440989b53eb80e5",
+    "S06": "af964f42dead8810916a2739c95a528d44327e2f6e18f2ee56d61b86be1d01cd",
+    "S07": "aacf2dd302c7782d6abee2d3127b41a2ca0f258e4e59c5036f053e030cf006da",
+    "S08": "f0a4afaf02a8a88c30ce70a959623cdc7152d3944e9a3172a0c050b9b40abe2d",
+    "S09": "903b5f670afad614e6aaaa0081f449ca77065d33842a2b5cb9dabcbd20aee53b",
+    "S10": "fcfdc8039baf5982d6df27255ae3cb37a0060ad7989ef1be1e2683cc8e11a148",
+    "S11": "4f6b7e962f2b18104945a10a85ff53869499501f80456ef1fb515580dfe5ebd0"
+  },
+  "assets": "not-started",
+  "pptx": "not-started",
+  "followup": "integrate reusable workflow into existing skill and independently reproduce it"
+}

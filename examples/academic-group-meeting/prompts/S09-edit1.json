@@ -1,0 +1,20 @@
+{
+  "id": "S09",
+  "operation": "local-edit",
+  "prompt": "Edit the attached complete scientific slide concept locally. Preserve its full-slide composition, typography, title, white/navy/pale-blue visual language, all scientific values, other labels and empty original-plot window positions. Change only the following scientific/topological details: Remove the invented spectral peaks from the DEMS monitor; use a simple gas/molecule detection symbol labeled 同位素检测示意, no plotted peaks or axes. Change electrochemical cell label from ¹⁸O标记电解液 to 示意装置 (do not assert where isotope was introduced). Remove the vertical arrow linking DEMS to Co-solution analysis: these are parallel evidence lines, not one causing the other. Connect each evidence box independently toward the 作者解释 panel. Keep Co 7.59/4.01 ppb, AEM/LOM coexist, motifs, right empty original Fig.5f window and all other layout unchanged.\nKeep a 16:9 whole-slide result. This is concept revision, not an asset extraction.",
+  "output": {
+    "path": "history/S09-edit1.png",
+    "sha256": "05422980e713b7c1a71595ba480c6249e990e379111b8a6aa0a780619c439585"
+  },
+  "original_tool_output_hint": "Generated images are saved to C:\\Users\\14331\\.codex\\generated_images\\01a12a23-3a19-7570-91f2-105f733eefbf as C:\\Users\\14331\\.codex\\generated_images\\01a12a23-3a19-7570-91f2-105f733eefbf\\exec-e42d8ea5-4024-4f62-a77f-964f9d3672c1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "style_reference": "concepts/S04.png",
+  "parent_record": "S09-generation.json",
+  "inputs": [
+    {
+      "role": "edit-target",
+      "path": "history/S09-generation.png",
+      "sha256": "9b3092965d67c1d415d0a678032fa991ae4737b59d6d25d18d2784668a6e0989"
+    }
+  ],
+  "historical_reference_path_do_not_execute": null
+}

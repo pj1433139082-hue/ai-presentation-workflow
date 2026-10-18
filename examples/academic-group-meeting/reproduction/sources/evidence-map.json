@@ -1,0 +1,123 @@
+{
+  "current_paper": "Transfer learning guided discovery of efficient perovskite oxide for alkaline water oxidation",
+  "source_id": "paper-pdf",
+  "source_path": "sources/paper.pdf",
+  "source_sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+  "claims": [
+    {
+      "id": "A1",
+      "claim": "作者整理到 94 条 OER 记录并补充 46 条非 OER 钙钛矿记录；OER 条件存在差异。",
+      "locator": "pp.1–2"
+    },
+    {
+      "id": "A2",
+      "claim": "组成编码为 20 维，AESC 学习二维表示；测试/全数据 R² 为 0.77/0.96，非 OER 重建 RMSE 从 3.25 降至 1.05。",
+      "locator": "p.2, Fig.2c–d"
+    },
+    {
+      "id": "A3",
+      "claim": "非 OER 重建误差与 OER 过电位预测误差是不同任务，不可混读。",
+      "locator": "p.2, Fig.2d"
+    },
+    {
+      "id": "A4",
+      "claim": "最终选择的多种分簇全局集成报告 RMSE 8.90 mV；作者提示不同方案误差计算存在细节差异，最终效能需要实验验证。",
+      "locator": "pp.3–4, Fig.2f"
+    },
+    {
+      "id": "A5",
+      "claim": "第一轮 7,050 个四/五元配方选 30 个实验；第二轮 9,000 个六元配方选 6 个实验；PSCF/PSCFM 实测 327/315 mV @ 10 mA cm−2。",
+      "locator": "pp.4–6, Fig.2g–i, Fig.3c"
+    },
+    {
+      "id": "A6",
+      "claim": "两电极约 50 h 稳定性测试 PSCFM 电压增幅 1.3%，PSCF 2.3%；与三电极过电位分属不同测试配置。",
+      "locator": "p.6, Fig.3h"
+    },
+    {
+      "id": "A7",
+      "claim": "同位素 DEMS 的 m/z 34 混合氧信号支持晶格氧参与；结合其他证据，作者提出 AEM 与 LOM 并存。",
+      "locator": "pp.7–8, Fig.4f"
+    },
+    {
+      "id": "A8",
+      "claim": "PSCF/PSCFM 的电解液 Co 含量为 7.59/4.01 ppb；DFT 的 Co–VO–Co/Co–VO–Mn 补氧自由能为 −2.46/−2.63 eV。作者将其关联于 Mn–O–Co 稳定性解释。",
+      "locator": "pp.9–10, Fig.5d–f"
+    },
+    {
+      "id": "A9",
+      "claim": "作者提出扩充数据集并加强可解释性；Faraday 效率测量仅进行一次。",
+      "locator": "pp.11, 13"
+    }
+  ],
+  "original_panels": [
+    {
+      "id": "fig2d",
+      "source_id": "paper-pdf",
+      "locator": "PDF p.4, Fig.2d",
+      "path": "sources/figure-panels/fig2d.png",
+      "handling": "原页渲染后按面板边界裁切，不重绘数值/坐标"
+    },
+    {
+      "id": "fig2f",
+      "source_id": "paper-pdf",
+      "locator": "PDF p.4, Fig.2f",
+      "path": "sources/figure-panels/fig2f.png",
+      "handling": "原页渲染后按面板组边界裁切，不重绘数值/坐标"
+    },
+    {
+      "id": "fig2g",
+      "source_id": "paper-pdf",
+      "locator": "PDF p.4, Fig.2g",
+      "path": "sources/figure-panels/fig2g.png",
+      "handling": "原页渲染后按面板边界裁切，不重绘散点/误差条"
+    },
+    {
+      "id": "fig2i",
+      "source_id": "paper-pdf",
+      "locator": "PDF p.4, Fig.2i",
+      "path": "sources/figure-panels/fig2i.png",
+      "handling": "原页渲染后按面板边界裁切，不重绘散点/误差条"
+    },
+    {
+      "id": "fig3c",
+      "source_id": "paper-pdf",
+      "locator": "PDF p.6, Fig.3c",
+      "path": "sources/figure-panels/fig3c.png",
+      "handling": "源图裁切保留坐标、图例和 iR 校正说明"
+    },
+    {
+      "id": "fig3h",
+      "source_id": "paper-pdf",
+      "locator": "PDF p.6, Fig.3h",
+      "path": "sources/figure-panels/fig3h.png",
+      "handling": "源图裁切保留双面板、坐标与电极配置文字"
+    },
+    {
+      "id": "fig4f",
+      "source_id": "paper-pdf",
+      "locator": "PDF p.7, Fig.4f",
+      "path": "sources/figure-panels/fig4f.png",
+      "handling": "源图裁切保留信号图例、坐标与两样品曲线"
+    },
+    {
+      "id": "fig5d",
+      "source_id": "paper-pdf",
+      "locator": "PDF p.9, Fig.5d",
+      "path": "sources/figure-panels/fig5d.png",
+      "handling": "源图裁切保留 Co、Sr 数据的单位与样品标注"
+    },
+    {
+      "id": "fig5f",
+      "source_id": "paper-pdf",
+      "locator": "PDF p.9, Fig.5f",
+      "path": "sources/figure-panels/fig5f.png",
+      "handling": "源图裁切保留结构标识、两种自由能与反应箭头"
+    }
+  ],
+  "unverified_items": [
+    "补充信息未随指定文件提供，未逐项核查 SI。",
+    "未访问或运行作者 GitHub 代码。",
+    "未独立重复论文实验或外部测试集。"
+  ]
+}

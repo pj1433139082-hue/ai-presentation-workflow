@@ -1,0 +1,16 @@
+{
+  "mode": "concept",
+  "concept": {
+    "status": "user-accepted",
+    "human_accepted": true,
+    "acceptance_record": "provenance/user-acceptance.json"
+  },
+  "assets": {
+    "status": "not-started",
+    "human_accepted": false
+  },
+  "assembly": {
+    "status": "not-started",
+    "human_accepted": false
+  }
+}

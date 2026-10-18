@@ -1,0 +1,5 @@
+Edit the current evidence-free S09 concept slide image. Preserve the overall layout, typography, colors, atom schematics, all unrelated labels, and the empty right-side Fig.4f placeholder. This is a provenance correction, not a redesign.
+
+Keep the two upper mechanism callouts restricted to what is shown in original Fig.4f: ¹⁶O¹⁸O (I₃₄ / m/z 34), measured mixed oxygen; and ¹⁸O¹⁸O (I₃₆ / m/z 36), measured signal. The lower-left key-findings card should also keep these as the two signals from Fig.4f, under the condition line “¹⁸O 标记电极；1 M KOH + H₂¹⁶O”.
+
+Add one clearly separated, compact source-boundary note in the lower-left card: “正文机制段另报告 ¹⁶O¹⁶O（m/z 32）强峰；来源为补充图 29，非本页 Fig.4f。” This is a real main-text report, so do not say m/z 32 was unobserved; make clear that it is not from the embedded Fig.4f. Repack this lower-left card if necessary so the text stays legible and does not collide. Do not add or fabricate any spectrum. Keep the page's existing cautious takeaway that isotope DEMS supports lattice-oxygen participation and that AEM and LOM coexist. Do not change the footer.

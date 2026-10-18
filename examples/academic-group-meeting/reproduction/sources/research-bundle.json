@@ -1,0 +1,24 @@
+{
+  "mode": "source-only",
+  "reason": "用户指定的完整 15 页原始论文足以支撑本次 15 分钟精读；不为 checklist 虚构搜索。",
+  "query_history": [],
+  "opened_sources": [
+    {
+      "source_id": "paper-pdf",
+      "path": "sources/paper.pdf",
+      "sha256": "41d9a7845ca800b9cf0f6b3d3c96d2da29d5074d95634546a2f7286bad8b2c8a",
+      "inspection": "PyMuPDF 提取 pp.1–15 全文；渲染检查 PDF pp.4–7、9；未浏览外部页面"
+    }
+  ],
+  "claim_mapping": "见 sources/evidence-map.json；每页事实绑定 A1–A9 和 PDF 页码。",
+  "gaps": [
+    "未获取补充信息文件；涉及 SI 的结果不作为本概念的新事实。",
+    "未访问/运行作者 GitHub 代码。",
+    "未独立重复论文实验或外部测试集。"
+  ],
+  "assumptions": [
+    "PDF 页码以阅读器从 1 开始计数，对应期刊印刷页码 1–15。",
+    "Pr/Sr/Co/Fe/Mn 化学式按原文摘要和正文转写。"
+  ],
+  "rejected_sources": []
+}

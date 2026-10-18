@@ -8,6 +8,23 @@
 
 [![知栈产品发布概念](examples/showcase/complete/tech/概念图/01-S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/showcase/complete/tech/)
 
+## 科研组会与论文精读：已确认的主展示风格
+
+以 Jiang 等发表于 Nature Communications 的原创论文为例，提供 **15 分钟、完整 11 页**的科学图解概念。原模板和另一名 agent 独立重新生成的整套概念均获用户认可；后续科研组会、论文精读与科研进展默认沿用这套视觉语言，页数、构图和内容按当前材料调整。
+
+[![独立复现的组会封面](examples/academic-group-meeting/reproduction/concepts/S01.png)](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/academic-group-meeting/reproduction/reviews/)
+
+[**查看独立复现的 11 页**](https://pj1433139082-hue.github.io/ai-presentation-workflow/examples/academic-group-meeting/reproduction/reviews/) · [原始已认可模板](examples/academic-group-meeting/index.html) · [复现流程](references/academic-group-meeting.md) · [参数化提示词](assets/academic-group-meeting/prompt-template.md)
+
+流程是证据梳理 → 实际参考图 → 逐页完整科学概念 → 局部提示词修订 → 原文图保真合入 → 整套科学与视觉检查 → 用户反馈。示例保留真实提示词、生成与编辑图像、来源裁切、确定性合图脚本、哈希和当次用户确认。已验证同一论文的完整再生成与其他主题的启动流程；跨学科视觉质量仍随新任务检验，不保证新生成逐像素相同。当前两套仅完成概念认可，独立素材和最终 PPTX 未制作验收。
+
+```powershell
+python scripts/academic_group_meeting.py init OUTPUT --paper-title "当前论文题名" --minutes 15 --mode concept
+python scripts/academic_group_meeting.py verify-template
+```
+
+新项目助手建立草稿和待填提纲，不自动生成图；不覆盖已有项目，不带入旧论文结果或接受状态。概念、素材、最终组装仍分别展示并等待反馈。
+
 ## 不同行业，不同的表达
 
 六套完整概念共 **29 页**。每套先组织故事线，再逐页设计。页面里的产品、项目、方案与数据为明确标注的示例。
